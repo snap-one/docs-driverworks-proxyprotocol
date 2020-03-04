@@ -1,0 +1,19 @@
+## SET OUTPUT INPUT
+
+Specify input and output selection of device.
+
+
+### Signature
+
+`C4:SET_OUTPUT_INPUT ()`
+
+
+| Parameter | Description |
+| --- | --- |
+| int | Input Binding ID |
+| int | Output Binding ID |
+
+
+### Returns
+
+`None`
