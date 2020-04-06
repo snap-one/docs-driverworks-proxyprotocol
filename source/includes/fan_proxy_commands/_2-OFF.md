@@ -1,6 +1,6 @@
 ## OFF
 
-Turn the fan oFF.
+Turn the fan OFF.
 
 ### Signature
 

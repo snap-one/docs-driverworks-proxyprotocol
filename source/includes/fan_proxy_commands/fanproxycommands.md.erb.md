@@ -2,7 +2,7 @@
 # FAN PROXY COMMANDS
 
 \<%= partial "includes/fan\_proxy\_commands/1-ON” %\>
-\<%= partial "includes/fan\_proxy\_commands/2-OFFT” %\>
+\<%= partial "includes/fan\_proxy\_commands/2-OFF” %\>
 \<%= partial "includes/fan\_proxy\_commands/3-TOGGLE” %\>
 \<%= partial "includes/fan\_proxy\_commands/4-DESIGNATEPRESET” %\>
 \<%= partial "includes/fan\_proxy\_commands/5-SETSPEED” %\>
