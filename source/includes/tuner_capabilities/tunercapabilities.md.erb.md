@@ -1,19 +1,19 @@
-tuner_capabilities.md.erb_
+tuner\_capabilities.md.erb\_
 
 # tuner Capabilities
 
-\<%= partial "includes/tuner_capabilities/1-AUDIOCONSUMERCOUNT” %\>
-\<%= partial "includes/tuner_capabilities/2-AUDIOPROVIDERCOUNT” %\>
-\<%= partial "includes/tuner_capabilities/3-HASCHANNELUPDOWN” %\>
-\<%= partial "includes/tuner_capabilities/4-HASDISCRETECHANNELSELECT” %\>_ 
-\<%= partial "includes/tuner_capabilities/5-HASDISCRETEINPUTSELECT” %\>
-\<%= partial "includes/tuner_capabilities/6-HASDISCRETEPRESET” %\>
-\<%= partial "includes/tuner_capabilities/7-HASFEEDBACK” %\>
-\<%= partial "includes/tuner_capabilities/8-HASPROVIDERCOUNT” %\>
-\<%= partial "includes/tuner_capabilities/9-HASPRESETUPDOWN” %\>
-\<%= partial "includes/tuner_capabilities/10-HASTOADINPUTSELECT” %\>
-\<%= partial "includes/tuner_capabilities/11-HASTUNEUPDOWN” %\>
-\<%= partial "includes/tuner_capabilities/12-PRESETCOUNT” %\>
-\<%= partial "includes/tuner_capabilities/13-SELECTIONDELAY” %\>
-\<%= partial "includes/tuner_capabilities/14-VIDEOCONSUMERCOUNT” %\>
-\<%= partial "includes/tuner_capabilities/15-PREFACEBANDWITHTUNERCAPABILITY” %\>
+\<%= partial "includes/tuner\_capabilities/1-AUDIOCONSUMERCOUNT” %\>
+\<%= partial "includes/tuner\_capabilities/2-AUDIOPROVIDERCOUNT” %\>
+\<%= partial "includes/tuner\_capabilities/3-HASCHANNELUPDOWN” %\>
+\<%= partial "includes/tuner\_capabilities/4-HASDISCRETECHANNELSELECT” %\> 
+\<%= partial "includes/tuner\_capabilities/5-HASDISCRETEINPUTSELECT” %\>
+\<%= partial "includes/tuner\_capabilities/6-HASDISCRETEPRESET” %\>
+\<%= partial "includes/tuner\_capabilities/7-HASFEEDBACK” %\>
+\<%= partial "includes/tuner\_capabilities/8-HASPROVIDERCOUNT” %\>
+\<%= partial "includes/tuner\_capabilities/9-HASPRESETUPDOWN” %\>
+\<%= partial "includes/tuner\_capabilities/10-HASTOADINPUTSELECT” %\>
+\<%= partial "includes/tuner\_capabilities/11-HASTUNEUPDOWN” %\>
+\<%= partial "includes/tuner\_capabilities/12-PRESETCOUNT” %\>
+\<%= partial "includes/tuner\_capabilities/13-SELECTIONDELAY” %\>
+\<%= partial "includes/tuner\_capabilities/14-VIDEOCONSUMERCOUNT” %\>
+\<%= partial "includes/tuner\_capabilities/15-PREFACEBANDWITHTUNERCAPABILITY” %\>

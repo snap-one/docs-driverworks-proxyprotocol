@@ -1,10 +1,9 @@
-audio_switch_proxy_commands.md.erb_
+audio\_switch\_proxy\_commands.md.erb\_
 
 # Audio Switch Proxy Commands
 
-\<%= partial "includes/audio_switch_proxy_commands/1-BACK” %\>
-\<%= partial "includes/audio_switch_proxy_commands/2-CANCEL” %\>
-\<%= partial "includes/audio_switch_proxy_commands/3-DASH” %\>
-\<%= partial "includes/audio_switch_proxy_commands/4-DISCONNECTOUTPUT” %\>
-\<%= partial "includes/audio_switch_proxy_commands/5-SETLOUDNESS” %\>
-
+\<%= partial "includes/audio\_switch\_proxy\_commands/1-BACK” %\>
+\<%= partial "includes/audio\_switch\_proxy\_commands/2-CANCEL” %\>
+\<%= partial "includes/audio\_switch\_proxy\_commands/3-DASH” %\>
+\<%= partial "includes/audio\_switch\_proxy\_commands/4-DISCONNECTOUTPUT” %\>
+\<%= partial "includes/audio\_switch\_proxy\_commands/5-SETLOUDNESS” %\>

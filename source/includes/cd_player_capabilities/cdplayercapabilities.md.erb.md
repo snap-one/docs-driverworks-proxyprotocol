@@ -1,5 +1,5 @@
-cd_player_capabilities.md.erb_ 
+cd\_player\_capabilities.md.erb\_ 
 # CD Player Capabilities
 
-\<%= partial "includes/cd_player_capabilities/1-MEDIACOUNT” %\>
-\<%= partial "includes/cd_player_capabilities/2-MEDIATYPE” %\>
+\<%= partial "includes/cd\_player\_capabilities/1-MEDIACOUNT” %\>
+\<%= partial "includes/cd\_player\_capabilities/2-MEDIATYPE” %\>

@@ -1,4 +1,4 @@
-copyright.md.erb_ 
+copyright.md.erb\_ 
 # Copyright
 
 \<%= partial "includes/copyright/1-Copyright” %\>

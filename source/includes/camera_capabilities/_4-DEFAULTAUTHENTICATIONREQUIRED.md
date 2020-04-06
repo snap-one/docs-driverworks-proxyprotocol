@@ -1,0 +1,17 @@
+## default authentication required
+
+Defaults to false.
+
+
+### Signature
+
+`<default_authentication_required></default_authentication_required`
+
+
+### Example
+
+```
+<capabilities>
+    <default_authentication_required>false</default_authentication_required>
+</capabilities>
+```

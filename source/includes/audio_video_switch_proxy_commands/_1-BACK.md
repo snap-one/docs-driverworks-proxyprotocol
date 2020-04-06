@@ -1,6 +1,6 @@
 ## BACK
 
-Pulse Back button
+Pulse the Back button.
 
 
 ### Signature
