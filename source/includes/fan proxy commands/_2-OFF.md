@@ -1,11 +1,10 @@
-## BACK
+## OFF
 
-Pulse Back button.
-
+Turn the fan oFF.
 
 ### Signature
 
-`C4:BACK ()`
+`C4:OFF ()`
 
 
 ### Parameters
