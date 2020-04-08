@@ -1,0 +1,3 @@
+## Overview
+
+This section describes describe the basic functionality of the Keypad Proxy. This proxy was introduced into the system in version 2.5.0, along with the gen3 lighting drivers. It is designed to be fairly generic, but there are a few capabilities that only Control4 keypads use such as `track_previous_button`. It should also work for fixed multi-row keypads. Configurable multi-row keypads are not supported with this proxy.
