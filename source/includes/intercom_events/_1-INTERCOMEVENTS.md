@@ -1,6 +1,6 @@
 ## Intercom Events
 
-The following Events are supported by the Intercom Proxy. itself. They include:
+The following Events are supported by the Intercom Proxy. They include:
 
 `Incoming Call` Fired when there is a new incoming call. 
 
