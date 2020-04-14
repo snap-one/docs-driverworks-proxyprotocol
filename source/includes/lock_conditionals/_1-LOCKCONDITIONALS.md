@@ -1,7 +1,7 @@
 ## LOCK CONDITIONALS
 
 
-The lock Proxy supports the following conditionals:
+The Lock Proxy supports the following conditionals:
 
 `IS_LOCKED`
 
