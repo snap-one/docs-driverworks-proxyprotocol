@@ -1,0 +1,97 @@
+## GET STATE
+
+Obtains the pool’s state..
+
+### Example
+
+```
+<pool_state>
+    <spamode>Off</spamode>
+    <pumpmode>On</pumpmode>
+    <pool_setpoint>86</pool_setpoint>
+    <spa_setpoint>102</spa_setpoint>
+    <pool_temp>79</pool_temp>
+    <spa_temp>-1</spa_temp>
+    <scale>F</scale>
+    <air_temp>79</air_temp>
+    <aux_state>
+        <item>
+            <id>1</id>
+            <mode>ON</mode>
+        </item>
+        <item>
+            <id>2</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>3</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>4</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>5</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>6</id>
+            <mode>ON</mode>
+            <selected>75%</selected>
+        </item>
+        <item>
+            <id>7</id>
+            <mode>ON</mode>
+        </item>
+        <item>
+            <id>8</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>9</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>10</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>11</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>12</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>13</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>14</id>
+            <mode>OFF</mode>
+        </item>
+        <item>
+            <id>15</id>
+            <mode>OFF</mode>
+        </item>
+    </aux_state>
+    <pool_heatstate>
+        <item>
+            <id>set_pool_heater</id>
+            <mode>ON</mode>
+        </item>
+        <item>
+            <id>set_solar_heater</id>
+            <mode>OFF</mode>
+        </item>
+    </pool_heatstate>
+    <spa_heatstate>
+        <item>
+            <id>set_spa_heater</id>
+            <mode>OFF</mode>
+        </item>
+    </spa_heatstate>
+</pool_state>
+```
