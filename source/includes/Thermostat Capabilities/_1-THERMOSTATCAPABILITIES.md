@@ -371,6 +371,7 @@ Integer indicating the lowest temperature the single setpoint can be configured 
 Integer indicating the lowest temperature the single setpoint can be configured as. Default is 38. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
+
 `<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
 Double indicating the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
