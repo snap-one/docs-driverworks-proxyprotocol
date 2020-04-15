@@ -9,13 +9,11 @@ The value has been initialized. OnBindingChanged will cause this command to be s
 
 `C4:VALUE_INITIALIZED ()`
 
+
 | Parameter | Description |
 | --- | --- |
-STATUS (str)
-default is the status after first loading a driver and the value has never been set.
-active - Status if the value is active
-last_known - The Last value received. The device either went offline or it has not been heard from since a reboot.
-TIMESTAMP - Timestamp of when the change occurred.
+| str | STATUS: Default is the status after first loading a driver and the value has never been set. `active` - Status if the value is active. `last_known` - The Last value received. The device either went offline or it has not been heard from since a reboot. |
+| int | TIMESTAMP:  Timestamp of when the change occurred. |
 
 
 
@@ -25,23 +23,25 @@ The value has changed.
 
 ### Signature
 
-`C4:VALUE_INITIALIZED ()`
+`C4:VALUE_CHANGED ()`
+
 
 | Parameter | Description |
 | --- | --- |
-VALUE - Integer
-TIMESTAMP - Timestamp of when the change occurred.
+| int | VALUE |
+| int | TIMESTAMP:  Timestamp of when the change occurred. |
 
 
 
 
-## VALUE UNAVAILABLE_ ### Signature
-
-`C4:VALUE_INITIALIZED ()`
-
-| Parameter | Description |
-| --- | --- |
-
+## VALUE UNAVAILABLE
 The value is possibly no longer accurate. OnBindingChanged, device went Offline, etc
-Parameters
-STATUS - (str) offline - Device went offline or was unbound
+
+### Signature
+
+`C4:VALUE_UNAVAILABLE ()`
+
+
+| Parameter | Description |
+| --- | --- |
+| str | STATUS: offline - Device went offline or was unbound. |

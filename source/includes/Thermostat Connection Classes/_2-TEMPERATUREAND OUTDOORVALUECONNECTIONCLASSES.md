@@ -1,4 +1,4 @@
-## TEMPERATURE VALUE CONNECTION CLASSES
+## TEMPERATURE AND OUTDOOR VALUE CONNECTION CLASSES
 
 **Commands**
 
@@ -8,6 +8,7 @@ The value has been initialized. OnBindingChanged will cause this command to be s
 ### Signature
 
 `C4:VALUE_INITIALIZED ()`
+
 
 | Parameter | Description |
 | --- | --- |
@@ -23,9 +24,10 @@ The value has changed.
 
 `C4:VALUE_CHANGED ()`
 
+
 | Parameter | Description |
 | --- | --- |
-| int | CELCIUS - Float - Celsius temperature value. |
+| int | CELSIUS - Float - Celsius temperature value. |
 | int | FAHRENHEIT - Float - Fahrenheit temperature value.  |
 | int | TIMESTAMP - Timestamp When the change occurred. |
 
@@ -37,6 +39,7 @@ The value is possibly no longer accurate. OnBindingChanged, device went Offline,
 ### Signature
 
 `C4:VALUE_CHANGED ()`
+
 
 | Parameter | Description |
 | --- | --- |
