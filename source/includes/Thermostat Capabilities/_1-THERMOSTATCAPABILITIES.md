@@ -30,7 +30,6 @@ This is older functionality that indicated to UI's and Programming that the devi
 
 
 `<can_do_auto></can_do_auto>`
-
  Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 ### Usage Note:  
@@ -79,16 +78,20 @@ Boolean indicating if the thermostat will support the `SET_EVENTS` commands for 
 Double indicating the maximum temperature that the thermostat will report in C. Default is 48.
 
 
+
 `<current_temperature_min_c></current_temperature_min_c>`
 Double indicating the minimum temperature that the thermostat will report in C. Default is -40.
+
 
 
 `<current_temperature_max_f></current_temperature_max_f>`
 Double indicating the maximum temperature that the thermostat will report in F. Default is 120.
 
 
+
 `<current_temperature_min_f></current_temperature_min_f>`
 Double indicating the minimum temperature that the thermostat will report in F. Default is -40.
+
 
 
 
@@ -107,16 +110,20 @@ Double indicating the increments that the temperature will follow, such as .2, .
 This is a comma delimited list of possible fan modes this thermostat supports. For example: Auto, Low, Medium, High with no spaces after the comma. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
+
 `<fan_states></fan_states>`
 This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
 
 
 `<has_humidity></has_humidity>`
 Boolean indicating if the device can report the current humidity. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
+
 `<has_extras></has_extras>`
 Boolean indicating if the device has extras commands support. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
 
 
 `<has_connection_status></has_connection_status>`
@@ -126,6 +133,7 @@ Boolean indicating if the device reports online/offline status of the hardware d
 
 `<has_outdoor_temperature></has_outdoor_temperature>`
 Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
 
 
 `<has_remote_sensor></has_remote_sensor>`
@@ -140,6 +148,7 @@ Indicates if this thermostat has a remote sensor. Valid values: True/False.
 This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file. 
 
 
+
 `<has_temperature></has_temperature>`
 Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
@@ -148,6 +157,7 @@ Boolean indicating if the device can provide a temperature of the thermostat/roo
 `<has_vacation_mode></has_vacation_mode>`
 Indicates if this thermostat supports vacation mode Valid values: True/False
 The capability `has_vacation_mode` must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.
+
 
 
 `<hold_modes></hold_modes>`
@@ -164,12 +174,15 @@ A comma separated list of all the modes the device supports. For example: "Off,H
  A comma separated list of all the modes the device supports. Usually something like "Off,Humidifying,Dehumidifying", with no spaces after the commas.
 
 
+
 `<hvac_modes></hvac_modes>`
 A comma separated list of all the modes the device supports. For example:  "Off,Heat,Cool", with no spaces after the commas.
 
 
+
 `<hvac_states></hvac_states>`
 This is a comma delimited list that represents all of the possible states that the HVAC system supports. For example: Off, Heat, Cool, Heating, Stage 1 Cool, etc with no spaces after the commas
+
 
 
 `<outdoor_temperature_resolution_c></outdoor_temperature_resolution_c>`
@@ -189,8 +202,10 @@ XML of fields for settings that are potentially unique to the protocol driver, y
 Please see the Samples folder delivered in this SDK for Thermostat (V2) code examples.
 
 
+
 `<scheduling></scheduling>`
 A boolean indicating if the device supports a programmed schedule. If it is true, it should have a `schedule_default entry` in its c4z file. Also mutually exclusive to Preset Scheduling and use of this is discouraged.
+
 
 
 `<schedule_default></schedule_default>`
@@ -230,85 +245,133 @@ There is one of these entries for each schedule entry during the day. In the exa
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. If used,`_f `and `_c` do not need to be set but since this value is Celsius x 10, it will result in a potentially undesired Fahrenheit conversion.  This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_cool_max_c></setpoint_cool_max_c>`
+Integer indicating the highest temperature the cool setpoint can be configured as. Default is 90. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
 
-`<></>`
+`<setpoint_cool_max_c></setpoint_cool_max_c>`
+Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
-
-`<></>`
-
-`<></>`
-
-`<></>`
 
 
-`<></>`
+`<setpoint_cool_min></setpoint_cool_min>`
+Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 39. If used,`_f` and `_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_cool_min_c></setpoint_cool_min_c>`
+ Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. If used, `_f` and `_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
 
-`<></>`
+`<setpoint_cool_min_f></setpoint_cool_min_f>`
+Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
 
-`<></>`
-
-`<></>`
-
-`<></>`
-
-`<></>`
+`<setpoint_cool_resolution_c></setpoint_cool_resolution_c>`
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_cool_resolution_f></setpoint_cool_resolution_f>`
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
 
-`<></>`
+`<setpoint_heat_max></setpoint_heat_max>`
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, `_f `and`_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_heat_max_c></setpoint_heat_max_c>`
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 31. Best to use `_f `and `_c` and not the older celsius x 10 capability.  This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_heat_max_f></setpoint_heat_max_f>`
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 89. Best to use `_f `and `_c` and not the older celsius x 10 capability.  This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
-`<></>`
-
-`<></>`
-
-`<></>`
+`<setpoint_heat_min></setpoint_heat_min>`
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 40. If used, `_f` and `_c `do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
 
 
-`<></>`
+`<setpoint_heat_min_c></setpoint_heat_min_c>`
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 4. Best to use `_f `and _``_c and not the older Celsius x 10 capability. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_heat_min_f></setpoint_heat_min_f>`
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 38. Best to use `_f` and `_c` and not the older celsius x 10 capability.
 
 
-`<></>`
+
+`<setpoint_heat_resolution_c></setpoint_heat_resolution_c>`
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_dehumidify_max></setpoint_dehumidify_max>`
+Integer indicating the highest dehumidify setpoint, default 100.  This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
 
 
-`<></>`
+
+`<setpoint_dehumidify_min></setpoint_dehumidify_min>`
+Integer indicating the lowest dehumidify setpoint, default 0.  This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_humidify_min></setpoint_humidify_min>`
+Integer indicating the lowest humidify setpoint, default 0. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_humidify_max></setpoint_humidify_max>`
+Integer indicating the highest humidify setpoint, default 100. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_humidify_resolution></setpoint_humidify_resolution>`
+Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+
+`<setpoint_dehumidify_resolution></setpoint_dehumidify_resolution>`
+ Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_single_max_c></setpoint_single_max_c>`
+Integer indicating the highest temperature the single setpoint can be configured as. Default is 32. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_single_max_f></setpoint_single_max_f>`
+Integer indicating the highest temperature the single setpoint can be configured as. Default is 90. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+`<setpoint_single_min_c></setpoint_single_min_c>`
+Integer indicating the lowest temperature the single setpoint can be configured as. Default is 4. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+
+`<setpoint_single_min_f></setpoint_single_min_f>`
+Integer indicating the lowest temperature the single setpoint can be configured as. Default is 38. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
+`<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
+Double indicating the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a `DYNAMIC_CAPBILITIES_CHANGED` notification.
+
+
