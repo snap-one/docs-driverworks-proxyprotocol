@@ -1,5 +1,4 @@
-## THERMOSTATCAPABILITIES
-
+## THERMOSTAT CAPABILITIES
 
 The following Capabilities are supported with the Thermostat Proxy:
 

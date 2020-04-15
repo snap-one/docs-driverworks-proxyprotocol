@@ -1,5 +1,4 @@
-## THERMOSTATCONDITIONALS
-
+## THERMOSTAT CONDITIONALS
 
 The following Conditionals are supported with the Thermostat Proxy and can be used in ComposerPro Programming.
 
