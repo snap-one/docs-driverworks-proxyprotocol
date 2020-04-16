@@ -1,6 +1,6 @@
 ## HVAC STATE CHANGED
 
-Notification sent when the mode of the HVAC system has changed. Changes the variable `HVAC_MODE`.
+Notification that should be sent to the proxy when the HVAC state has changed. Changes the variable `HVAC_STATE`.
 
 
 ### Signature
@@ -10,9 +10,10 @@ Notification sent when the mode of the HVAC system has changed. Changes the vari
 
 | Parameter | Description |
 | --- | --- |
-| str | MODE: One of the supported modes for example: Off, Heat,Cool, Auto, Emergency |
+| str | STATE: One of the supported HVAC states for example: Off, Heat, Cool |
 
 
 ### Returns
 
 `None`
+
