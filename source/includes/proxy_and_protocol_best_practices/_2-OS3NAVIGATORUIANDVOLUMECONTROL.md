@@ -1,0 +1,9 @@
+## OS 3 NAVIGATOR UI AND VOLUME CONTROL
+
+In conjunction with OS 3, a new volume control slider is available on the Control4 UI. The use of this slider to set or change volume results in devices receiving volume adjustment commends every 750 milliseconds by default. This represents a sampling of the continuous volume commands that are being sent by the Navigator to the device. The Room Driver has the ability to throttle these commands being sent in order to ensure that volume behaves properly and that volume commands are not received faster than they can be processed and remain in the queue. This command throttling is managed through a new capability:` <throttled_vol_ms_rate></throttled_vol_ms_rate>`
+ 
+This capability designates the amount of time (in milliseconds) that volume change commands are sent from the Navigator to the driver. For example: `<throttled_vol_ms_rate>600</throttled_vol_ms_rate>` will result in volume commands being sent very 600 milliseconds.
+ 
+In the event that a volume control device cannot process commands fast enough to accommodate the default use of the new volume control slider (750 milliseconds), this capability can be added to the driver's `<capabilities></capabilities>` XML and an increased millisecond value be used.
+ 
+Conversely, if a volume-control device driver can process volume commands fast enough to allow more commands being sent in a smaller millisecond time frame; it can use this capability to lower the time (increase the sampling) and provide a smoother volume control experience for the end user. For example, if the device is capable, a value of 250 milliseconds will provide a good volume slider experience. Values less than 200 milliseconds are not recommended.
