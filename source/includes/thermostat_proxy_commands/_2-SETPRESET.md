@@ -1,0 +1,20 @@
+## SET PRESET
+
+Runs a Preset regardless if there is an event scheduled for it.
+
+
+### Signature
+
+`C4:SET_PRESET ()`
+
+
+| Parameter | Description |
+| --- | --- |
+| str | NAME |
+
+
+### Returns
+
+`None`
+
+
