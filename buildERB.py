@@ -20,10 +20,22 @@ for root, dirs, files in os.walk (sourceDir):
 		shallowRootMatch = re_include.match (root)
 		if (shallowRootMatch):
 			shallowRoot = shallowRootMatch.group (1)
-			print (shallowRoot)
+			erb = []
 
+			for file in fileList:
+				if (file == '_index.md.erb'):
+					continue
 
+				noMdMatch = re_mdName.match (file)
+				if (noMdMatch):
+					noMd = noMdMatch.group (1)
+					line = '<%= partial "' + shallowRoot + '/' + noMd + '" %>'
+					erb.append (line)
+					erb.append ('\r\n')
 
-	#<%= partial "includes/ir/1-SendIR" %>
-
+			if (len (erb) > 0):
+				erbName = os.path.join (baseDir, 'source', shallowRoot, '_index.md.erb')
+				f = open (erbName, 'w')
+				f.writelines (erb)
+				f.close ()
 
