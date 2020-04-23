@@ -23,4 +23,5 @@ _yardoc
 doc/
 .idea/
 source/includes/test/_1-TestAPI.md
+
 *.plist
