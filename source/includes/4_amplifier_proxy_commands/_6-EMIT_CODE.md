@@ -1,6 +1,6 @@
 ## EMIT CODE
 
-Emit IR/Serial code (used by AVGen IR/Serial Proxy)
+Emit IR/Serial code. This is used by the AVGen IR/Serial Proxy.
 
 
 ### Signature
