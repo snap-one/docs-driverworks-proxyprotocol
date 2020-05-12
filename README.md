@@ -1,4 +1,4 @@
-![Documentation deployed][image-1]
+![Documentation deployed?][image-1]
 
 [GitHub Pages deployed docs][1]
 
