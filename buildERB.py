@@ -45,8 +45,7 @@ for root, dirs, files in os.walk (sourceDir):
 
 indexList = sorted_alphanumeric (indexList)
 
-indexErb = '''
----
+indexErb = '''---
 title: Driverworks Reference
 
 language_tabs:
