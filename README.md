@@ -1,3 +1,7 @@
-![Build Slate docs and deploy to Github Pages](https://github.com/control4/docs-driverworks-proxyprotocol/workflows/Build%20Slate%20docs%20and%20deploy%20to%20Github%20Pages/badge.svg)
+![Documentation deployed][image-1]
 
-[GitHub Pages deployed docs](https://control4.github.io/docs-driverworks-proxyprotocol/#introduction)
+[GitHub Pages deployed docs][1]
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#introduction
+
+[image-1]:	https://github.com/control4/docs-driverworks-proxyprotocol/workflows/Build%20Slate%20docs%20and%20deploy%20to%20Github%20Pages/badge.svg
