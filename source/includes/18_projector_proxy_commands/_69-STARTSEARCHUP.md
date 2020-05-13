@@ -1,9 +1,9 @@
-## START SEARCH DOWN
+## START SEARCH UP
 
 Begin tuning search UP.
 
 
-###  Signature
+### Signature
 
 `C4:START_SEARCH_UP ()`
 
