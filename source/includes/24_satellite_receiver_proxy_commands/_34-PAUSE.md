@@ -1,9 +1,9 @@
-## PAuse
+## Pause
 
 Place device in pause state.
 
 
-###  Signature
+### Signature
 
 `C4:PAUSE ()`
 
