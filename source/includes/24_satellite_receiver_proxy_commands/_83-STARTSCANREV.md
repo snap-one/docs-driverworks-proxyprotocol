@@ -1,9 +1,9 @@
 ## START SCAN REV
 
-Initiate scan forward within track/chapter.
+Initiate scan backward within track/chapter.
 
 
-###  Signature
+### Signature
 
 `C4:START_SCAN_REV ()`
 
@@ -15,5 +15,5 @@ Initiate scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`
