@@ -1,6 +1,6 @@
 ## STOP VOL DOWN
 
-Stop ramping the volume down
+Stop ramping the volume down.
 
 ### Signature
 
