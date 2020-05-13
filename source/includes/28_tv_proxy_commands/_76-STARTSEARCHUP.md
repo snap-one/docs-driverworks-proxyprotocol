@@ -1,4 +1,4 @@
-## START SEARCH DOWN
+## START SEARCH UP
 
 Begin tuning search UP.
 
