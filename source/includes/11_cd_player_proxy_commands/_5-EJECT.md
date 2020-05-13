@@ -1,6 +1,6 @@
 ## EJECT
 
-Eject disc/tape.
+Eject disc.
 
 
 ### Signature
