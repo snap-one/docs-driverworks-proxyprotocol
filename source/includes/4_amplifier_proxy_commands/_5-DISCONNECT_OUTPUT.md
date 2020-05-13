@@ -1,4 +1,3 @@
-@ _5-DISCONNECT OUTPUT
 ## DISCONNECT OUTPUT
 
 Disconnect (turn off) selected output on device

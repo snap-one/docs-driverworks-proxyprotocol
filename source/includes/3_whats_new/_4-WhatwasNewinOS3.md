@@ -1,5 +1,4 @@
 
-\@:\_4-WhatwasNewinOS3
 ## What was New in O.S.3
 
 **Proxies that were Modified**

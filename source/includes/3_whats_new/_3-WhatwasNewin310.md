@@ -1,5 +1,4 @@
 
-\@:\_3-WhatwasNewin310
 ## What was New in 3.1.0
 
 **Proxies that were Modified**
