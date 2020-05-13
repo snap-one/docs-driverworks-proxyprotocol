@@ -1,6 +1,6 @@
 ## START CHANNEL UP
 
-Start ramping channel down.
+Start ramping channel up.
 
 
 ### Signature
