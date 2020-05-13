@@ -1,6 +1,6 @@
 ## has provider count
 
-Count of number of video providers (outputs) of the device
+Count of number of video providers (outputs) of the device.
 
 ### Signature
 
@@ -14,8 +14,6 @@ Count of number of video providers (outputs) of the device
 
 ### Example
 
-```
-<capabilities>
-   <has_provider_count>8</has_provider_count>
-</capabilities>
-```
+	<capabilities>
+	   <has_provider_count>8</has_provider_count>
+	</capabilities>
