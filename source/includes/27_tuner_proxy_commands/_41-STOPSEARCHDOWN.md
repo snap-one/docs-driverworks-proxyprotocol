@@ -1,9 +1,9 @@
 ## STOP SEARCH DOWN
 
-Stop tuning search.
+Stop tuning search down.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_SEARCH_DOWN ()`
 
@@ -15,5 +15,5 @@ Stop tuning search.
 
 ### Returns
 
-`None
-`
+\`None
+\`
