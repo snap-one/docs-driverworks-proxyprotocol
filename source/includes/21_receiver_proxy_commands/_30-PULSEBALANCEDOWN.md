@@ -1,6 +1,6 @@
 ## PULSE BALANCE DOWN
 
-Pulse balance down (Left)
+Pulse balance down.
 
 
 ### Signature

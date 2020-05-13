@@ -1,6 +1,6 @@
 ## PULSE BASS UP
 
-Pulse bass up (Right)
+Pulse bass up.
 
 
 ### Signature

@@ -1,6 +1,6 @@
 ## PULSE BALANCE UP
 
-Pulse balance up (Right)
+Pulse balance up
 
 
 ### Signature

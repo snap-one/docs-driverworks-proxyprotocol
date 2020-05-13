@@ -1,6 +1,6 @@
 ## RIGHT
 
-Pulse RIGHT NAVIGATION
+Pulse RIGHT Navigation.
 
 
 ### Signature

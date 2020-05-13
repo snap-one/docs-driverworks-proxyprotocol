@@ -1,6 +1,6 @@
 ## PULSE BASS DOWN
 
-Pulse bass down (Left)
+Pulse bass down.
 
 
 ### Signature
