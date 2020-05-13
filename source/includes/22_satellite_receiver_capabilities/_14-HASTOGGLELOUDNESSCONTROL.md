@@ -1,4 +1,4 @@
-## has TOGGLE loudness control
+## has toggle loudness control
 
 Capable of toggling ON/OFF loudness control.
 
@@ -15,8 +15,6 @@ Capable of toggling ON/OFF loudness control.
 
 ### Example
 
-```
-<capabilities>
-   <has_toggle_loudness_control>true</has_toggle_loudness_control>
-</capabilities>
-```
+	<capabilities>
+	   <has_toggle_loudness_control>true</has_toggle_loudness_control>
+	</capabilities>
