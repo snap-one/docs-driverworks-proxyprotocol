@@ -1,4 +1,4 @@
-## VOLUMNE LEVEL CHANGED
+##  VOLUME LEVEL CHANGED
 
 Selected volume level has changed.
 
