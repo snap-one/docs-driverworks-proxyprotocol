@@ -1,9 +1,9 @@
 ## SET UP DOWN SWAP
 
-Swap page UP/DOWN buttons (used by AVGen)
+Swap page UP/DOWN buttons.
 
 
-###  Signature
+### Signature
 
 `C4:POUND ()`
 
@@ -15,5 +15,5 @@ Swap page UP/DOWN buttons (used by AVGen)
 
 ### Returns
 
-`None
-`
+\`None
+\`
