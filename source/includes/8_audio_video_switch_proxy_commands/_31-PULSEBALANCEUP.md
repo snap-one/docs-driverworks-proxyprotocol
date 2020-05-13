@@ -5,7 +5,7 @@ Pulse balance up (Right)
 
 ### Signature
 
-`C4:PULSE_BALNCE_RIGHT ()`
+`C4:PULSE_BALNCE_UP ()`
 
 
 | Parameter | Description |
