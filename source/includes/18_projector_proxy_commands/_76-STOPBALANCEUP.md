@@ -1,6 +1,6 @@
-## STOP BASS DOWN
+## STOP BALANCE UP
 
-Stop ramping bass 
+Stop ramping balance up.
 
 
 ### Signature
