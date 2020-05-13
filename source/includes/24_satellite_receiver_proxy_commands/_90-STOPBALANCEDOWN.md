@@ -1,6 +1,6 @@
 ## STOP BALANCE DOWN
 
-Start ramping balance.
+Start ramping balance down.
 
 
 ### Signature

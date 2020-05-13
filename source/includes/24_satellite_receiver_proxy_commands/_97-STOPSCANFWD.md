@@ -1,9 +1,9 @@
-## STop SCAN FWD
+## STOP SCAN FWD
 
 Stop scan forward within track/chapter.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_SCAN_FWD ()`
 

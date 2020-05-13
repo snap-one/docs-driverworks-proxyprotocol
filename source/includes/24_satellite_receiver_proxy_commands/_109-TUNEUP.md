@@ -1,9 +1,9 @@
-## TUNE DOWN
+## TUNE UP
 
 Toggle (cycle UP) frequency or channel
 
 
-###  Signature
+### Signature
 
 `C4:TUNE_UP ()`
 

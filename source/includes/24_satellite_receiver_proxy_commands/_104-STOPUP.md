@@ -1,9 +1,9 @@
-## STOP LEFT
+## STOP UP
 
 Stop up arrow navigation.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_UP ()`
 
