@@ -1,4 +1,4 @@
-## \#\# MUTE CHANGED
+## MUTE CHANGED
 
 MUTE state (On/Off) has changed.
 
