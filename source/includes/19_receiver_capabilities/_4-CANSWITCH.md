@@ -1,4 +1,4 @@
-## can switch separately 
+## can switch 
 
 Device specific capability that when set to True designates switching capability on the receiver. 
 
@@ -14,8 +14,6 @@ Device specific capability that when set to True designates switching capability
 
 ### Example
 
-```
-<capabilities>
-   <can_switch>true</can_switch>
-</capabilities>
-```
+	<capabilities>
+	   <can_switch>true</can_switch>
+	</capabilities>
