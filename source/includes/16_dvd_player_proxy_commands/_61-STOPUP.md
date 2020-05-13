@@ -1,9 +1,9 @@
 ## STOP UP
 
-Stop menu Page down.
+Stop menu Page up.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_UP ()`
 
@@ -15,5 +15,5 @@ Stop menu Page down.
 
 ### Returns
 
-`None
-`
+\`None
+\`
