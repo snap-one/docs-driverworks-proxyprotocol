@@ -1,4 +1,4 @@
-## has discrete balance control
+## has audio
 
 Television is capable of producing audio.
 
@@ -15,8 +15,6 @@ Television is capable of producing audio.
 
 ### Example
 
-```
-<capabilities>
-   <has_audio>true</has_audio>
-</capabilities>
-```
+	<capabilities>
+	   <has_audio>true</has_audio>
+	</capabilities>
