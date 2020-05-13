@@ -1,4 +1,4 @@
-## STOP BASS DOWN
+## STOP BALANCE UP
 
 Stop ramping bass 
 

@@ -1,4 +1,4 @@
-## STOP SEARCH DOWN
+## STOP SEARCH UP
 
 Stop tuning search UP.
 
