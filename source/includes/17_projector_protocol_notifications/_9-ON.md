@@ -1,4 +1,4 @@
-## \## ON
+## ON
 
 Device has turned on.
 
@@ -8,7 +8,7 @@ Device has turned on.
 `C4:ON ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 
