@@ -1,6 +1,6 @@
 ## video consumer count
 
-Count of number of vidoe consumers (inputs) of the device. This value must match the number of connections in the driver.
+Count of number of video consumers (inputs) of the device. This value must match the number of connections in the driver.
 
 
 ### Signature
@@ -15,8 +15,6 @@ Count of number of vidoe consumers (inputs) of the device. This value must match
 
 ### Example
 
-```
-<capabilities>
-   <video_consumer_count>8</video_consumer_count>
-</capabilities>
-```
+	<capabilities>
+	   <video_consumer_count>8</video_consumer_count>
+	</capabilities>
