@@ -1,4 +1,4 @@
-## HAS DISCRETE DISC ACCESS
+## has discreet disc access
 
 Capable of seeking directly to a specified disc (and specified track on that disc).
 

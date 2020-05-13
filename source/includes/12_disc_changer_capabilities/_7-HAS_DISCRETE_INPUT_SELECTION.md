@@ -1,4 +1,4 @@
-## HAS DISCREET INPUT SELECTION
+## has discreet input selection
 
 Capable of directly selecting specified input.
 

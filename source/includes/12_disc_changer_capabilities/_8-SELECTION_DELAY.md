@@ -1,4 +1,4 @@
-## SELECTION DELAY
+## selection delay
 
 Delay time in milliseconds before new tuner selection is online.
 

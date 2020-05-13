@@ -1,4 +1,4 @@
-## HAS DISCRETE DISC BUTTON
+## has discreet disc button
 
 Capable of seeking directly to a specified disc.
 
