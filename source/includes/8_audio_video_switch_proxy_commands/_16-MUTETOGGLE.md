@@ -1,4 +1,4 @@
-## MUTE ON
+## MUTE TOGGLE
 
 Toggle muting on/off.
 
