@@ -1,6 +1,6 @@
 ## MUTE OFF
 
-Toggle loudness on/off.
+Turn muting off.
 
 
 ### Signature
