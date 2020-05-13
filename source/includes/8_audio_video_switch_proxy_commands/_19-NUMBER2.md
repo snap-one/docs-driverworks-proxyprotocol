@@ -1,4 +1,3 @@
-@ \_19-NUMBER2
 ## NUMBER 2
 
 Pulse ‘2’ button
