@@ -1,6 +1,6 @@
 ## STOP BASS DOWN
 
-Stop ramping bass 
+Stop ramping bass down.
 
 ### Signature
 
