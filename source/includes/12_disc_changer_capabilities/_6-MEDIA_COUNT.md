@@ -5,7 +5,7 @@ Number of discs available within the changer.
 
 ### Signature
 
-`<media_type></media_type>`
+`<media_count></media_count>`
 
 
 | Parameter | Description |

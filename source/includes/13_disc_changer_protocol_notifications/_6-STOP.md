@@ -4,10 +4,10 @@ Device has entered a stopped state.
 
 ### Signature
 
-`C4:PLAY ()`
+`C4:STOP ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 
