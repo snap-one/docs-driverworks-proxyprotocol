@@ -5,7 +5,7 @@ Number of discs available within the changer
 
 ### Signature
 
-`<media_count></medai_count>`
+`<media_count></media_count>`
 
 
 | Parameter | Description |
@@ -14,8 +14,6 @@ Number of discs available within the changer
 
 ### Example
 
-```
-<capabilities>
-   <media_count>12</media_count>
-</capabilities>
-```
+	<capabilities>
+	   <media_count>12</media_count>
+	</capabilities>
