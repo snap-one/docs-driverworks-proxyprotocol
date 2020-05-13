@@ -1,4 +1,4 @@
-##  ON
+## ON
 
 Device has turned on.
 
