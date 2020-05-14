@@ -20,8 +20,10 @@ Media that the device is capable of playing. Bitmask values include:
 
 ### Example
 
-	<capabilities>
-	   <media_type>0X2</media_type>
-	</capabilities>
-	
+```xml
+<capabilities>
+   <media_type>0X2</media_type>
+</capabilities>
+```
+
 
