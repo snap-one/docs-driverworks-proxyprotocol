@@ -3,7 +3,7 @@
 Stop menu page down.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_PAGE_DOWN ()`
 
@@ -15,5 +15,4 @@ Stop menu page down.
 
 ### Returns
 
-`None
-`
+`None`

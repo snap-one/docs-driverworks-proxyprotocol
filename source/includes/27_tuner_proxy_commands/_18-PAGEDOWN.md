@@ -3,7 +3,7 @@
 Pulse menu Page down.
 
 
-###  Signature
+### Signature
 
 `C4:PAGE_DOWN ()`
 
@@ -15,5 +15,4 @@ Pulse menu Page down.
 
 ### Returns
 
-`None
-`
+`None`

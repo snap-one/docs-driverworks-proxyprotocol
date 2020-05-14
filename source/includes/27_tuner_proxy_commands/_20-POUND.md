@@ -3,7 +3,7 @@
 Pulse # button.
 
 
-###  Signature
+### Signature
 
 `C4:POUND ()`
 
@@ -15,5 +15,4 @@ Pulse # button.
 
 ### Returns
 
-`None
-`
+`None`

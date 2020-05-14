@@ -3,7 +3,7 @@
 Pulse Recall button.
 
 
-###  Signature
+### Signature
 
 `C4:RECALL ()`
 
@@ -15,5 +15,4 @@ Pulse Recall button.
 
 ### Returns
 
-`None
-`
+`None`

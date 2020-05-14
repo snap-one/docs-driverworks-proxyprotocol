@@ -15,5 +15,4 @@ Stop tuning search down.
 
 ### Returns
 
-\`None
-\`
+`None`

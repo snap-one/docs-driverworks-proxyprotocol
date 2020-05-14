@@ -15,5 +15,4 @@ Stop menu page up.
 
 ### Returns
 
-\`None
-\`
+`None`

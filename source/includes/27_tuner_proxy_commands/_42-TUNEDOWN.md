@@ -3,7 +3,7 @@
 Toggle (cycle down) frequency or channel
 
 
-###  Signature
+### Signature
 
 `C4:TUNE_DOWN ()`
 
@@ -15,5 +15,4 @@ Toggle (cycle down) frequency or channel
 
 ### Returns
 
-`None
-`
+`None`

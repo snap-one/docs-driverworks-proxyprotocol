@@ -3,7 +3,7 @@
 Pulse tuning search down
 
 
-###  Signature
+### Signature
 
 `C4:SEARCH_DOWN ()`
 
@@ -15,5 +15,4 @@ Pulse tuning search down
 
 ### Returns
 
-`None
-`
+`None`

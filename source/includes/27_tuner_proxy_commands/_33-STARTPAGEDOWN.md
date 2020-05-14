@@ -3,7 +3,7 @@
 Start menu Page down.
 
 
-###  Signature
+### Signature
 
 `C4:START_PAGE_DOWN ()`
 
@@ -15,5 +15,4 @@ Start menu Page down.
 
 ### Returns
 
-`None
-`
+`None`

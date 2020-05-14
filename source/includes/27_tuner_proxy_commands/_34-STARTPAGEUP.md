@@ -3,7 +3,7 @@
 Start menu Page up.
 
 
-###  Signature
+### Signature
 
 `C4:START_PAGE_UP ()`
 
@@ -15,5 +15,4 @@ Start menu Page up.
 
 ### Returns
 
-`None
-`
+`None`

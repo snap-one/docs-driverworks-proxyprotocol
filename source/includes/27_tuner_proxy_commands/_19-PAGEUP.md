@@ -3,7 +3,7 @@
 Pulse menu Page up.
 
 
-###  Signature
+### Signature
 
 `C4:PAGE_UP ()`
 
@@ -15,5 +15,4 @@ Pulse menu Page up.
 
 ### Returns
 
-`None
-`
+`None`
