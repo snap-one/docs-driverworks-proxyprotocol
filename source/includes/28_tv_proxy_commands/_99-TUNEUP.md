@@ -15,5 +15,4 @@ Toggle (cycle down) frequency or channel.
 
 ### Returns
 
-`None
-`
+`None`

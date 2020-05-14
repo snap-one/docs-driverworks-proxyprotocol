@@ -15,5 +15,4 @@ Pulse tuning search down
 
 ### Returns
 
-`None
-`
+`None`

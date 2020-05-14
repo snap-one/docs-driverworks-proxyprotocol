@@ -15,5 +15,4 @@ Pulse Recall button.
 
 ### Returns
 
-`None
-`
+`None`

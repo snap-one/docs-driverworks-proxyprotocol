@@ -15,5 +15,4 @@ Toggle TV/video input.
 
 ### Returns
 
-`None
-`
+`None`

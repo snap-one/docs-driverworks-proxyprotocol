@@ -16,7 +16,7 @@ Specify the default input selection of device.
 
 ### Returns
 
-\`None
+`None`
 
 ### Usage Note
 
