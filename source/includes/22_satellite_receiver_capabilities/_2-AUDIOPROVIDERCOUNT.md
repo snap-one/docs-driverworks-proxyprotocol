@@ -15,7 +15,7 @@ Count of number of audio providers (outputs) of the device. This value must matc
 
 ### Example
 
-```
+```xml
 <capabilities>
    <audio_provider_count>8</audio_provider_count>
 </capabilities>

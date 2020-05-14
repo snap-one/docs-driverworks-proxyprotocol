@@ -15,7 +15,7 @@ Count of number of vidoe consumers (inputs) of the device. This value must match
 
 ### Example
 
-```
+```xml
 <capabilities>
    <video_consumer_count>8</video_consumer_count>
 </capabilities>

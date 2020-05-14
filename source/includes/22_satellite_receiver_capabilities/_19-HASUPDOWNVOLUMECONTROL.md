@@ -15,7 +15,7 @@ Has capability of handling volume UP and DOWN adjustments.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_up_down_volume_control>true</has_up_down_volume_control>
 </capabilities>

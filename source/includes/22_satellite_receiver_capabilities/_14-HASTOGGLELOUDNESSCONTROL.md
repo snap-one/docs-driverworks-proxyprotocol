@@ -15,6 +15,8 @@ Capable of toggling ON/OFF loudness control.
 
 ### Example
 
-	<capabilities>
-	   <has_toggle_loudness_control>true</has_toggle_loudness_control>
-	</capabilities>
+```xml
+<capabilities>
+   <has_toggle_loudness_control>true</has_toggle_loudness_control>
+</capabilities>
+```
