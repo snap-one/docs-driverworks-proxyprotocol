@@ -25,7 +25,7 @@ Integer representing the enumeration of a type of blind. If set in a driver, the
 
 ### Example
 
-```
+```xml
 <capabilities>
     <type>6</type>
 </capabilities>
