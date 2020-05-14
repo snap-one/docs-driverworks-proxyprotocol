@@ -8,7 +8,7 @@ Pulses the ‘-’ button.
 `C4:DASH ()`
 
 
-Parameter 
+### Parameters
 
 `None`
 
