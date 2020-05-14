@@ -3,7 +3,7 @@
 Stop scan forward within track/chapter.
 
 
-###  Signature
+### Signature
 
 `C4:STOP_SCAN_REV ()`
 
@@ -15,5 +15,4 @@ Stop scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+`None`
