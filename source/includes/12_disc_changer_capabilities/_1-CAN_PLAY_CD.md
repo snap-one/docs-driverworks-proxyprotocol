@@ -15,3 +15,12 @@ Disc Changer is capable of playing CD audio formats.
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <can_play_cd>true</can_play_cd>
+</capabilities>
+```
