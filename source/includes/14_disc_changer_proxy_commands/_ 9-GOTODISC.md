@@ -1,4 +1,3 @@
-@ _9-GOTODISC
 ## GO TO DISC
 
 Select specified disc.
