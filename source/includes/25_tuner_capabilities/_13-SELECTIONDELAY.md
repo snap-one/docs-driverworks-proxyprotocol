@@ -15,7 +15,7 @@ Delay time in milliseconds before new tuner selection is online.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <selection_delay>true</selection_delay>
 </capabilities>

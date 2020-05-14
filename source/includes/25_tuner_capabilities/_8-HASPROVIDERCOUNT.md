@@ -14,6 +14,8 @@ Count of number of video providers (outputs) of the device.
 
 ### Example
 
-	<capabilities>
-	   <has_provider_count>8</has_provider_count>
-	</capabilities>
+```xml
+<capabilities>
+   <has_provider_count>8</has_provider_count>
+</capabilities>
+```

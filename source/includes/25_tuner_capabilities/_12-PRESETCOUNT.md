@@ -15,7 +15,7 @@ Number of Tuner presets available.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <preset_count>6</preset_count>
 </capabilities>

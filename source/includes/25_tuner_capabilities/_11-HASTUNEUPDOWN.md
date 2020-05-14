@@ -15,7 +15,7 @@ Tuner can cycle up or down through tuning frequencies or channels
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_tune_up_down>true</has_tune_up_down>
 </capabilities>

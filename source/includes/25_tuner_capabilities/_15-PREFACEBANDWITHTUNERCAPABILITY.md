@@ -15,7 +15,7 @@ Specifies if the device can switch to the Tuner input (AM, FM..) and then send t
 
 ### Example
 
-```
+```xml
 <capabilities>
    <preface_bandwith_tuner_capability>true</preface_bandwith_tuner_capability>
 </capabilities>

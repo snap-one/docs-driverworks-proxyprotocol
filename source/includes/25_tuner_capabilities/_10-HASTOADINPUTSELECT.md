@@ -15,6 +15,8 @@ Capability of toggling through inputs
 
 ### Example
 
-	<capabilities>
-	   <has_toad_input_select>true</has_toad_input_select>
-	</capabilities>
+```xml
+<capabilities>
+   <has_toad_input_select>true</has_toad_input_select>
+</capabilities>
+```

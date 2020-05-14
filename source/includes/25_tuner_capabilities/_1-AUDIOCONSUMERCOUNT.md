@@ -14,7 +14,7 @@ Count of number of audio consumers (inputs) of the device. This value must match
 
 ### Example
 
-```
+```xml
 <capabilities>
    <audio_consumer_count>8</audio_consumer_count>
 </capabilities>

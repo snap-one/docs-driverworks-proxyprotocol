@@ -15,7 +15,7 @@ Device has the ability to report back the tuner channel. Required so the Tuner c
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_feedback>true</has_feedback>
 </capabilities>
