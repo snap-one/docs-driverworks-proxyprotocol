@@ -15,7 +15,7 @@ Specifies if the A/V switch can up convert. For example: Composite -\> S-Video
 
 ### Example
 
-```
+```xml
 <capabilities>
    <can_upclass>true</can_upclass>
 </capabilities>

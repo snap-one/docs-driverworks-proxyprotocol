@@ -15,7 +15,7 @@ Count of number of video providers (outputs) of the device. This value must matc
 
 ### Example
 
-```
+```xml
 <capabilities>
    <video_provider_count>8</video_provider_count>
 </capabilities>

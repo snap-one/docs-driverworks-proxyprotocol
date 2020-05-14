@@ -15,7 +15,7 @@ Specifies AV switching is capable of sensing audio on an input.  This is useful 
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_audio_signal_sense>true</has_audio_signal_sense>
 </capabilities>

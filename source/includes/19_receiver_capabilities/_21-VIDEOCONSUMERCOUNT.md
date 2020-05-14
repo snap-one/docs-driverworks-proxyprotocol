@@ -15,6 +15,8 @@ Count of number of video consumers (inputs) of the device. This value must match
 
 ### Example
 
-	<capabilities>
-	   <video_consumer_count>8</video_consumer_count>
-	</capabilities>
+```xml
+<capabilities>
+   <video_consumer_count>8</video_consumer_count>
+</capabilities>
+```
