@@ -14,8 +14,7 @@ Configuration Notification used by the protocol to inform the proxy that the dri
 | int | LEVEL CLOSED - Closed value. Blinds without feedback and without a stop function should use 1.  Blinds without feedback but with stop function should use 2 as the value of 1 is to indicate an unknown state in the case that someone pressed up or down and then pressed stop before the blind was able to get to the target open/close state. |
 | bool | HAS LEVEL CLOSED SECONDARY - Boolean indicating if the blind is using a secondary closed level |
 | int | LEVEL CLOSED SECONDARY - Secondary closed value for blinds that can go both directions from an Open state. |
-| bool | LEVEL DISCRETE CONTROL - Boolean indicating if the blind control has discrete level input. If false a UI will only send the specific `level_closed` and` level_open` values to the proxy/driver but a driver can still notify of various levels interpolated based on movement duration/time in each direction or using another formula.
-If true, the driver should support all level values in the range.  This could be discrete percentages or even include using level values of 1,2,3,... to execute presets but the driver should always be developed for close (`level_close`) and open (`level_open`) levels respectively. |
+| bool | LEVEL DISCRETE CONTROL - Boolean indicating if the blind control has discrete level input. If false a UI will only send the specific `level_closed` and` level_open` values to the proxy/driver but a driver can still notify of various levels interpolated based on movement duration/time in each direction or using another formula. If true, the driver should support all level values in the range.  This could be discrete percentages or even include using level values of 1,2,3,... to execute presets but the driver should always be developed for close (`level_close`) and open (`level_open`) levels respectively. |
 
 
 ### Returns
