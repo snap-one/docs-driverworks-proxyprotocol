@@ -22,6 +22,7 @@ State Notification Used by the protocol to inform the proxy the blinds have star
 ### Usage Note
 
 This Notification Fires Director Event: Moving. Sends DataToUI:  "Moving" including:
-`level` - Where the blind is starting from.
-`level_target` - Where the blind is going to.
-`ramp_rate` - The number of milliseconds it will take the blind to reach this position.
+
+- `level` - Where the blind is starting from.
+- `level_target` - Where the blind is going to.
+- `ramp_rate` - The number of milliseconds it will take the blind to reach this position.
