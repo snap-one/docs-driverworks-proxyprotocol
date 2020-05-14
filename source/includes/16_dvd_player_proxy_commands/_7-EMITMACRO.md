@@ -1,6 +1,6 @@
 ## EMIT MACRO
 
-Emit IR/Serial code macro (used by AVGen IR/Serial Proxy)
+Emit IR/Serial code macro.
 
 
 ### Signature
