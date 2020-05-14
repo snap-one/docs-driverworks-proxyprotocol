@@ -15,8 +15,8 @@ Turn device Off.
 
 ### Returns
 
-`None
-`
+`None`
+
 
 ### Usage Note
 
