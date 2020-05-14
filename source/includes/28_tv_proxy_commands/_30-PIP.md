@@ -15,5 +15,4 @@ Pulse menu PIP button..
 
 ### Returns
 
-`None
-`
+`None`
