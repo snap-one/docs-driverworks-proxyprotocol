@@ -15,7 +15,7 @@ Capable of handling ON/OFF mute control.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_toggle_mute_control>true</has_toggle_mute_control>
 </capabilities>

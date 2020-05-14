@@ -19,9 +19,11 @@ This capability is not related with the requires separate switching capability. 
 
 ### Example
 
-	<capabilities>
-	   <can_switch_separately>true</can_switch_separately>
-	</capabilities>
+```xml
+<capabilities>
+   <can_switch_separately>true</can_switch_separately>
+</capabilities>
+```
 
 
 

@@ -15,7 +15,7 @@ Device specific capability that when set to True notifies Director of the existe
 
 ### Example
 
-```
+```xml
 <capabilities>
    <requires_separate_switching>true</requires_separate_switching>
 </capabilities>

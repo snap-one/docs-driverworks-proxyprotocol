@@ -15,7 +15,7 @@ Capable of directly specifying a treble setting.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_up_down_treble_control>true</has_up_down_treble_control>
 </capabilities>

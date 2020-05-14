@@ -15,7 +15,7 @@ Specifies if the A/V switch can down convert. For example: S-Video -\> Composite
 
 ### Example
 
-```
+```xml
 <capabilities>
    <can_downclass>true</can_downclass>
 </capabilities>

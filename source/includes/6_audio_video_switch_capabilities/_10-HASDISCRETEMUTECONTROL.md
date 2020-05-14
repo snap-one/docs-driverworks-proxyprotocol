@@ -15,7 +15,7 @@ Capable of directly specifying mute ON or OFF setting.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_mute_control>true</has_discrete_mute_control>
 </capabilities>

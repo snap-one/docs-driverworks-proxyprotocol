@@ -15,7 +15,7 @@ Capable of handling ON/OFF loudness control.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_loudness_control>true</has_discrete_loudness_control>
 </capabilities>

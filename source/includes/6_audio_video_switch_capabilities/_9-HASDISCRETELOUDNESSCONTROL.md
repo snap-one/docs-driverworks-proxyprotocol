@@ -15,7 +15,7 @@ Capable of directly specifying a loudness setting.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_loudness_control>true</has_discrete_loudness_control>
 </capabilities>

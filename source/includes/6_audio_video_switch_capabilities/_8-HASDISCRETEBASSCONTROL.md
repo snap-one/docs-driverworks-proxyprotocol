@@ -15,7 +15,7 @@ Capable of directly specifying a bass setting.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_bass_control>true</has_discrete_bass_control>
 </capabilities>
