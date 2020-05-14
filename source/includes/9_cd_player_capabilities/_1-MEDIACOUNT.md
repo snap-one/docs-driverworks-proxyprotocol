@@ -14,6 +14,8 @@ Number of discs available within the changer
 
 ### Example
 
-	<capabilities>
-	   <media_count>12</media_count>
-	</capabilities>
+```xml
+<capabilities>
+   <media_count>12</media_count>
+</capabilities>
+```
