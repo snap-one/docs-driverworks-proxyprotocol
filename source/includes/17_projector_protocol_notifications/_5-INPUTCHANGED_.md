@@ -26,7 +26,9 @@ Selected input has changed.
 
 If the BANDTYPE is not supplied, as in older drivers, the INPUT binding # will be used to determine which band the tuner is on. All DriverWorks drivers need to use the BANDTYPE parameter if they want the band to propagate up to Navigator to display the channel properly. If the DriverWorks driver does not know the current channel and the “hasfeedback” capability is not set to “True”, none of this matters and everything will keep working as it previously has.
 
-A `CHANNEL_CHANGED` must be issued immediately after the `INPUT_CHANGED` in order for the UI to update. For example:
+A `CHANNEL_CHANGED` must be issued immediately after the `INPUT_CHANGED` in order for the UI to update. 
+
+### Example
 
 ```lua
 C4:SendToproxy(5002,'INPUTCHANGED' {INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,MAXCHANNEL=10790,CHANNELSPACING=20})
