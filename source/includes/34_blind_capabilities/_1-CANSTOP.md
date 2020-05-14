@@ -20,7 +20,7 @@ This capability was delivered pre-2.9.0. It is still supported by the latest ver
 
 ### Example
 
-```
+```xml
 <capabilities>
    <can_stop>true</can_stop>
 </capabilities>
