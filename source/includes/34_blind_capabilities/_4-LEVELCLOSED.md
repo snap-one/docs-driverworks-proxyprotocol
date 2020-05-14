@@ -10,8 +10,8 @@ Integer indicating the closed level of the control surface. Default to 0. This c
 
 ### Example
 
-\<capabilities\>
-```
+```xml
+<capabilities\>
     <level_closed>true</level_closed>
 </capabilities>
 ```

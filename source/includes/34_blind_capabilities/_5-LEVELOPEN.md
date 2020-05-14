@@ -10,7 +10,7 @@ Integer indicating the open level of the control surface.  Defaults to 1 and mus
 
 ### Example
 
-```
+```xml
 <capabilities>
     <level_open>1</level_open>
 </capabilities>

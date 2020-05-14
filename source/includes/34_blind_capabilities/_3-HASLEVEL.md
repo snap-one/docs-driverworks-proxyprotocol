@@ -23,7 +23,7 @@ Reporting discrete values is possible even if accepting discrete commands is not
 
 ### Example
 
-```
+```xml
 <capabilities>
     <has_level>true</has_level>
 </capabilities>

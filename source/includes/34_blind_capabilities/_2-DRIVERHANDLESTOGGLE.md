@@ -23,7 +23,7 @@ The blind proxy has logic that treats toggle the same as lights in Control4.  I
 
 ### Example
 
-```
+```xml
 <capabilities>
    <driver_handles_toggle>true</driver_handles_toggle>
 </capabilities>

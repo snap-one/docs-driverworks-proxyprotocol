@@ -14,7 +14,7 @@ If true, the driver should support all level values in the level range. This cou
 
 ### Example
 
-```
+```xml
 <capabilities>
     <level_discrete_control>true</level_discrete_control>
 </capabilities>

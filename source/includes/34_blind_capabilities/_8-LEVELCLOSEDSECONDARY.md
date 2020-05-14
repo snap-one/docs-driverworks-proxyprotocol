@@ -12,7 +12,7 @@ An example case is a full range louver with 11 positions (0% to 100% with 10% re
 
 ### Example
 
-```
+```xml
 <capabilities>
     <level_closed_secondary>11</level_closed_secondary>
 </capabilities>

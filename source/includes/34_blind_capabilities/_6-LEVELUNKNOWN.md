@@ -11,8 +11,8 @@ Integer indicating the level value that is to be specified as "unknown blind pos
 ### Example
 
 
-\<capabilities\>
-```
+```xml
+<capabilities\>
     <level_unknown>11</level_unknown>
 </capabilities>
 ```

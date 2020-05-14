@@ -20,7 +20,7 @@ Integer enumeration of a movement function for the blind.  If set in the driver
 
 ### Example
 
-```
+```xml
 <capabilities>
     <movememt>4</movememt>
 </capabilities>
