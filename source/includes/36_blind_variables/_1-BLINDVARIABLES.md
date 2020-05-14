@@ -1,4 +1,3 @@
-## Blind Variables
 
 Registered Variables included in post 2.9.0 releases include:
 

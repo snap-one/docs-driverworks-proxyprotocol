@@ -1,4 +1,3 @@
-## Blind Events
 
 The following Events are included with the 2.9.0 and later releases. The events fired by the proxy  have to deal with changes in the blind itself. They include:
 
