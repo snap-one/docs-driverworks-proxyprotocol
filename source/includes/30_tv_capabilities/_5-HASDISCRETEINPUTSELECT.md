@@ -15,7 +15,7 @@ Capability of directly selecting specified input.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_input_select>true</has_discrete_input_select>
 </capabilities>

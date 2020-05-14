@@ -15,7 +15,7 @@ When set to True, the TV proxy will first switch the input and then select the c
 
 ### Example
 
-```
+```xml
 <capabilities>
    <requires_channel_after_input>true</requires_channel_after_input>
 </capabilities>

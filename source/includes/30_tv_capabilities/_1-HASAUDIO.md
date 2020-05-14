@@ -15,6 +15,8 @@ Television is capable of producing audio.
 
 ### Example
 
-	<capabilities>
-	   <has_audio>true</has_audio>
-	</capabilities>
+```xml
+<capabilities>
+   <has_audio>true</has_audio>
+</capabilities>
+```

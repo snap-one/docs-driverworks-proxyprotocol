@@ -15,7 +15,7 @@ Capability of direcretly selecting specified channel.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_discrete_channel_select>true</has_discrete_channel_select>
 </capabilities>
