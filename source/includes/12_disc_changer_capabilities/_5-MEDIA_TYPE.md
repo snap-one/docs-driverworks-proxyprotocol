@@ -21,3 +21,12 @@ Media that the device is capable of playing. Bitmask of:
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <media_type>true</media_type>
+</capabilities>
+```
