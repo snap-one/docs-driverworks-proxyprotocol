@@ -27,11 +27,12 @@ A `CHANNEL CHANGED` must be issued immediately after the `INPUT_CHANGED` in orde
 
 ### Example
 
+
 ```lua
-C4:SendToproxy(5002,'INPUT_CHANGED',{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
-MAXCHANNEL=10790,CHANNELSPACING=20})
-C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
+C4:SendToproxy(5002,'INPUTCHANGED' {INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,MAXCHANNEL=10790,CHANNELSPACING=20})
+    C4:SendToProxy(5002,'CHANNELCHANGED',CHANNEL=10290)
 ```
+
 
 Note that in the example to the right, 5002 is the ProxyBindingID for the Tuner. INPUT 3009 is the ID for the FM Antenna on the 5002 Tuner.
 
