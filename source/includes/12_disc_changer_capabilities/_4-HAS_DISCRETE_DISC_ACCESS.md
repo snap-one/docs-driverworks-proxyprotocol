@@ -15,3 +15,12 @@ Capable of seeking directly to a specified disc (and specified track on that dis
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <has_discreet_disc_access>true</has_discreet_disc_access>
+</capabilities>
+```
