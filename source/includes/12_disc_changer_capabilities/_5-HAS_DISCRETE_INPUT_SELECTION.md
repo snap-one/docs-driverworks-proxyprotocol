@@ -16,3 +16,12 @@ Capable of directly selecting specified input.
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <has_discreet_disc_button>true</has_discreet_disc_button>
+</capabilities>
+```
