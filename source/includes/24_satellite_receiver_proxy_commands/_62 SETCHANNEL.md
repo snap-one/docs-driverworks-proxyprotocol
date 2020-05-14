@@ -43,7 +43,7 @@ In the FM example, channel 96.3 has been selected in the tuner protocol. The 96.
 
 It is important to note that if the bandwidth type (AM, FM) is not provided (and the proxy in question is not TV) a manner in which to identify the bandwidth type will need to be developed. An example of this code follows:
 
-```
+```lua
 
 if tParams['BANDTYPE'] == nil then
        if (string.find(tParams['CHANNEL'],"%p") ~= nil) then
