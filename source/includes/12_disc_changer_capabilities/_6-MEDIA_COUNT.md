@@ -16,3 +16,12 @@ Number of discs available within the changer.
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <media_count>true</media_count>
+</capabilities>
+```
