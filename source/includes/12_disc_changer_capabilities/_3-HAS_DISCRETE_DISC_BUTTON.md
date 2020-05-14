@@ -15,3 +15,12 @@ Capable of seeking directly to a specified disc.
 ### Returns
 
 `None`
+
+
+### Example
+
+```xml
+<capabilities>
+   <has_discreet_disc_button>true</has_discreet_disc_button>
+</capabilities>
+```
