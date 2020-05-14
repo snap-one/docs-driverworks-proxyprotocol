@@ -12,6 +12,7 @@ Configuration Notification used by the protocol to inform the proxy that the dri
 | int | Enumeration of the blind  movement type. |
 
 Movement Types:
+
 - 0 - Open/Close (Open/Close)
 - 1 - Up to Down (Up is open, Down is closed)
 - 2 - Down to Up (Down is open, Up is Closed)
