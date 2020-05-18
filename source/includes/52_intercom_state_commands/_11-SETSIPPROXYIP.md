@@ -20,7 +20,7 @@ This command established the IP Address of the SIP Proxy.
 
 ### Example
 
-```
+```lua
 <SET_SIP_PROXY_IP>
    <sipproxyip>[192.168.1.13]</sipproxyip>
 </SET_SIP_PROXY_IP>

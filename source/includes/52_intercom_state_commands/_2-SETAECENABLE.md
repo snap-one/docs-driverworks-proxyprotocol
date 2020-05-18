@@ -1,4 +1,4 @@
-## SET AEC ENABLE 
+## SET AEC ENABLE
 
 This command is issued to enable or disable automatic echo cancellation on intercom devices that support this capability.
 
@@ -20,7 +20,7 @@ This command is issued to enable or disable automatic echo cancellation on inter
 
 ### Example
 
-```
+```lua
 <SET_AEC_ENABLED>
     <aecEnabled>[0]</aecEnabled>
 </SET_AEC_ENABLED>

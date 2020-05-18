@@ -20,7 +20,7 @@ This command is issued by a proxy consumer to cause the current speaker volume s
 
 ### Example
 
-```
+```lua
 <SET_SPEAKER_VOLUME>
 <speakerVol>[50]</speakerVol>
 </SET_SPEAKER_VOLUME>

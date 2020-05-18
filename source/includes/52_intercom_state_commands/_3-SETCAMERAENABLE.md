@@ -1,4 +1,4 @@
-## SET CAMERA ENABLE 
+## SET CAMERA ENABLE
 
 This command is issued to enable or disable the camera on an intercom device.
 
@@ -20,7 +20,7 @@ This command is issued to enable or disable the camera on an intercom device.
 
 ### Example
 
-```
+```lua
 <SET_CAMERA_ENABLED>
     <cameraEnable>[true]</cameraEnabled>
 </SET_CAMERA_ENABLED>

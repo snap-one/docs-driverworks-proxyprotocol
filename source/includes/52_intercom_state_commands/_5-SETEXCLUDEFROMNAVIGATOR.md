@@ -1,4 +1,4 @@
-## SET EXCLUDE FROM NAVIGATOR 
+## SET EXCLUDE FROM NAVIGATOR
 
 This command is issued to toggle the visibility of the intercom endpoint in a proxy user interface. This command will result in an `EXCLUDE_FROM_NAVIGATOR_CHANGED` notification to the proxy.
 
@@ -20,7 +20,7 @@ This command is issued to toggle the visibility of the intercom endpoint in a pr
 
 ### Example
 
-```
+```lua
 <SET_EXCLUDE_FROM_NAV>
    <excludeFromNav>[1]</excludeFromNav>
 </SET_EXCLUDE_FROM_NAV>

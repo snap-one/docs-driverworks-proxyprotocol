@@ -20,7 +20,7 @@ This command will result in a `MONITOR_MODE_CHANGED` notification to the proxy c
 
 ### Example
 
-```
+```lua
 <SET_MONITOR_MODE>
     <monitorMode>[0]</monitorMode>
 </SET_MONITOR_MODE>

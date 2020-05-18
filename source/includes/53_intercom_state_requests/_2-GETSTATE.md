@@ -13,13 +13,15 @@ This request is issued to obtain the device state of a specified intercom endpoi
 | idDevice | This request is issued to obtain the device state of a specified intercom endpoint. |
 
 
+
 ### Request Prototype
 
-```
+```lua
 <GET_STATE>
    <idDevice>[17]</idDevice>
 </GET_STATE>
 ```
+
 
 
 ### Response Parameters
@@ -46,7 +48,7 @@ This request is issued to obtain the device state of a specified intercom endpoi
 
 Response Prototype
 
-```
+```lua
 <device_state proxyid=”[integer value]”>
    <excludeFromNav>[integer value]</excludeFromNav>
    <playDoorChime>[integer value]</playDoorChime>

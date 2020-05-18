@@ -19,7 +19,7 @@ This command is issued to toggle the “Do Not Disturb” setting of the interco
 
 ### Example
 
-```
+```lua
 <SET_AUTO_ANSWER>
    <autoAnswer>[0]</autoAnswer>
 </SET_AUTO_ANSWER>

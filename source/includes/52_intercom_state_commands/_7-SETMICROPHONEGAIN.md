@@ -20,7 +20,7 @@ This command is issued by a proxy consumer to cause the microphone gain for the 
 
 ### Example
 
-```
+```lua
 <SET_MICROPHONE_GAIN>
     <microphoneGain>[0]</microphoneGain>
 </SET_MICROPHONE_GAIN>

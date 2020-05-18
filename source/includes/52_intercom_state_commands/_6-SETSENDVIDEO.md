@@ -20,7 +20,7 @@ This command is issued by a proxy consumer to cause the state of the send video 
 
 ### Example
 
-```
+```lua
 <SET_SEND_VIDEO>
    <sendVideo>[1]</sendVideo>
 </SET_SEND_VIDEO>

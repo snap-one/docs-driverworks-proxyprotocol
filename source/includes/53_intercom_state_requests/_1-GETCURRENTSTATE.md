@@ -23,7 +23,7 @@ This request is issued to obtain the current device state of the intercom endpoi
 
 Response Prototype
 
-```
+```lua
 <device_state proxyid=”[10]”>
    <currentState>[2]</currentState>
 </device_state>

@@ -20,7 +20,7 @@ This command is issued to cause the ringer volume setting to be changed for the 
 
 ### Example
 
-```
+```lua
 <SET_RINGER_VOLUME>
    <ringerVol>[1]</ringerVol>
 </SET_RINGER_VOLUME>
