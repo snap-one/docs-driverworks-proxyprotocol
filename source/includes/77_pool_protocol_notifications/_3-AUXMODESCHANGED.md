@@ -1,6 +1,6 @@
 ## AUX MODE CHANGED
 
-Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify.  Mode Y is On, N is Off.
+Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify. Mode Y is On, N is Off.
 
 
 ### Signature
