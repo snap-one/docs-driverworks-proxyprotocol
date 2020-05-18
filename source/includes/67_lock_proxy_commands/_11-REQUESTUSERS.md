@@ -1,4 +1,4 @@
-## REQUEST USERSS
+## REQUEST USERS
 
 This command results in the Protocol Notification `USERS` being sent from the Protocol to the Proxy.
 
