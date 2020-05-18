@@ -1,6 +1,6 @@
 ## has buttons
 
-This capability specifies whether this device type has custom buttons. Its value is a Boolean string. (e.g. “True” or “False”) 
+This capability specifies whether this device type has custom buttons. Its value is a Boolean string. For example: “True” or “False”
 
 
 ### Signature
@@ -15,7 +15,7 @@ This capability specifies whether this device type has custom buttons. Its value
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_buttons>True</has_buttons>
 </capabilities>

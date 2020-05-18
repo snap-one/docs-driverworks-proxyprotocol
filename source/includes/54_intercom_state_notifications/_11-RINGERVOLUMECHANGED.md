@@ -16,7 +16,7 @@ This notification is issued by the proxy when the endpoint’s Monitor Mode sett
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
     <ringerVoL>[0]</ringerVoL>
 </device_state>

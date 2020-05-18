@@ -16,7 +16,7 @@ This request is issued to obtain the group list of all of intercom call groups i
 
 ### Example
 
-```
+```lua
 <groups>
   <group>
    <id>[3]</id>

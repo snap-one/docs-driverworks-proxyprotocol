@@ -10,7 +10,7 @@ This request is issued to obtain the device state of all of intercom endpoints i
 
 ### Request Prototype
 
-```
+```lua
 <state_list>
    <device_state id=”Id1”> 
      See GET_STATE response format

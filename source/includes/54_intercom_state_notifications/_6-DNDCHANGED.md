@@ -16,7 +16,7 @@ This notification is issued by the proxy when the endpoint’s Do Not Disturb se
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
     <dndSetting>[1]</dndSetting>
 </device_state>

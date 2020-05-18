@@ -20,7 +20,7 @@ This command is issued to create  a new intercom call group. Note that the text 
 
 ### Example
 
-```
+```lua
 <CREATE_GROUP>
   <name>[mydevice]</name>
 </CREATE_GROUP>

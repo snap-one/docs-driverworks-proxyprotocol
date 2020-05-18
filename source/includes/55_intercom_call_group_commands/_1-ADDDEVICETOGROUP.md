@@ -20,7 +20,7 @@ This command is issued to add the specified intercom endpoint to the specified c
 
 ### Example
 
-```
+```lua
 ADD_DEVICE_TO_GROUP>
   <name>[mydevice]</name>
   <idDevice>[10]</idDevice>

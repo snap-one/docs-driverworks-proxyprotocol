@@ -27,7 +27,7 @@ This notification is issued by the proxy when the endpoint’s current state has
 
 ### Example
 
-```
+```lua
 <DEVICE_STATE_CHANGED>
    <excludeFromNav>[1]</excludeFromNav>
    <playDoorChime>[0]</playDoorChime>

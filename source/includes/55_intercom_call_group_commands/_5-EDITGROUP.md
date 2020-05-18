@@ -20,7 +20,7 @@ This command is issued to rename the specified intercom call group. Note that th
 
 ### Example
 
-```
+```lua
 <EDIT_GROUP>
   <name>[mydevice]</name>
   <newName>[mynewdevice]</newName>

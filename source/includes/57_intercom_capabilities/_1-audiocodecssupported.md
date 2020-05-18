@@ -1,6 +1,6 @@
 ## audio codecs supported
 
-This capability specifies the audio codecs supported by this device type. Its value is a comma delimited string. (e.g. “G711 ULAW, G711 ALAW”)
+This capability specifies the audio codecs supported by this device type. Its value is a comma delimited string. For example: “G711 ULAW, G711 ALAW”
 
 
 ### Signature
@@ -15,7 +15,7 @@ This capability specifies the audio codecs supported by this device type. Its va
 
 ### Example
 
-```
+```xml
 <capabilities>
    <audio_codecs_supported>G711 ULAW, G711 ALAW</audio_codecs_supported>
 </capabilities>

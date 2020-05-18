@@ -20,7 +20,7 @@ This command is issued to remove the specified intercom endpoint from the specif
 
 ### Example
 
-```
+```lua
 <DELETE_DEVICE_FROM_GROUP>
   <name>[mydevice]</name>
   <idDevice>[10]</idDevice>

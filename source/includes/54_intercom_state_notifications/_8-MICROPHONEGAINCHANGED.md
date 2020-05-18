@@ -16,7 +16,7 @@ This notification is issued by the proxy when the endpoint’s Microphone Gain s
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
     <microphoneGain>[0]</microphoneGain>
 </device_state>

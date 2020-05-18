@@ -20,7 +20,7 @@ This command is issued to delete an intercom call group. Note that the “All”
 
 ### Example
 
-```
+```lua
 <DELETE_GROUP>
   <name>[mydevice]</name>
 </DELETE_GROUP>

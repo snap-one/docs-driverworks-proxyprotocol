@@ -11,12 +11,12 @@ This notification is issued by the proxy when the endpoint’s Camera Enabled se
 | Parameter | Description |
 | --- | --- |
 | int | The proxy device id of the intercom endpoint whose device state information is being returned |
-| int | cameaEnabled: Boolean flag indicating the current state for this setting. (0=false, 1=true) |
+| int | cameraEnabled: Boolean flag indicating the current state for this setting. (0=false, 1=true) |
 
 
 ### Example
 
-```
+```lua
 <device_state id=[10]>
    <cameraEnabled>[1]</cameraEnabled>
 </device_state>

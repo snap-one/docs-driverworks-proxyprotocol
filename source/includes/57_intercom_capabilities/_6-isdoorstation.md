@@ -1,6 +1,6 @@
 ## is doorstation
 
-This capability specifies whether this device type is a door station. Its value is a Boolean string. (e.g. “True” or “False”) 
+This capability specifies whether this device type is a door station. Its value is a Boolean string. For example: “True” or “False”
 
 
 ### Signature
@@ -15,7 +15,7 @@ This capability specifies whether this device type is a door station. Its value 
 
 ### Example
 
-```
+```xml
 <capabilities>
    <is_doorstation>True</is_doorstation>
 </capabilities>

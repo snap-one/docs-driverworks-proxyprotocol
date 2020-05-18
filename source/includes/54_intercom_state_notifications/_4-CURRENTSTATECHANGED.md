@@ -15,7 +15,7 @@ This notification is issued by the proxy when the endpoint’s current state has
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
    <currentState>[2]</currentState>
 </device_state>

@@ -16,7 +16,7 @@ This notification is issued when a call is accepted, it is sent to the initiator
 
 ### Example
 
-```
+```lua
 <device_state id=[10]>
    <autoAnswer>[1]</autoAnswer>
 </device_state>

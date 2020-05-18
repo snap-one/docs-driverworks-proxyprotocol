@@ -1,6 +1,6 @@
 ## has display
 
-This capability specifies whether this device type has a video display. Its value is a Boolean string. (e.g. “True” or “False”) 
+This capability specifies whether this device type has a video display. Its value is a Boolean string. For example:  “True” or “False”
 
 
 ### Signature
@@ -15,7 +15,7 @@ This capability specifies whether this device type has a video display. Its valu
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_display>True</has_display>
 </capabilities>

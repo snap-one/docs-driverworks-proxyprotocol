@@ -16,7 +16,7 @@ This notification is issued by the proxy when the endpoint’s Speaker Volume se
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
     <speakerVol>[0]</speakerVol>
 </device_state>

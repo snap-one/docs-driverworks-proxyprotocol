@@ -16,7 +16,7 @@ This notification is issued by the proxy when the endpoint’s Exclude from Navi
 
 ### Example
 
-```
+```lua
 <device_state proxyid =[10]>
     <excludeFromNav>[0]</excludeFromNav>
 </device_state>
