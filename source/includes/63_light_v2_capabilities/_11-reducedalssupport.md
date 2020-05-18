@@ -10,7 +10,7 @@ Whether the driver can be in an advanced lighting scene in a reduced capacity\>
 
 ### Example
 
-```
+```xml
 <capabilities>
    <reduced_als_support>true</reduced_als_support>
 </capabilities>

@@ -10,7 +10,7 @@ Determines whether commands to directly turn the light on/off appear in Composer
 
 ### Example
 
-```
+```xml
 <capabilities>
    <non_off>true</on_off>
 </capabilities>

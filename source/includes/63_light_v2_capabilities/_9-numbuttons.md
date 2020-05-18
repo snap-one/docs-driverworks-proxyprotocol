@@ -15,7 +15,7 @@ Indicates the number of buttons the driver supports. The options are:
 
 ### Example
 
-```
+```xml
 <capabilities>
    <num_buttons>2</num_buttons>
 </capabilities>

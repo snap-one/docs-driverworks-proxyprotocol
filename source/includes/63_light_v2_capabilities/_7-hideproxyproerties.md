@@ -10,7 +10,7 @@ Whether the proxies properties (level change and buttons events) should appear i
 
 ### Example
 
-```
+```xml
 <capabilities>
    <hide_proxy_properties>true</hide_proxy_properties>
 </capabilities>

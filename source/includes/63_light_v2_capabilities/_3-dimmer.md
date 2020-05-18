@@ -10,7 +10,7 @@ When set to true the device is a dimmer. If true, the capabilities listed in the
 
 ### Example
 
-```
+```xml
 <capabilities>
    <dimmer>true</dimmer>
 </capabilities>

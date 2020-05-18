@@ -10,7 +10,7 @@ Determines whether properties appear in Composer allowing the user to set LED co
 
 ### Example
 
-```
+```xml
 <capabilities>
    <has_leds>true</has_leds>
 </capabilities>

@@ -10,7 +10,7 @@ Whether the driver has full support for being in advanced lighting scenes.
 
 ### Example
 
-```
+```xml
 <capabilities>
    <advanced_scene_support>true</advanced_scene_support>
 </capabilities>
