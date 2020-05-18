@@ -22,7 +22,7 @@ Adds a new Preset Schedule Preset (If protocol driver has the `can_preset_schedu
 
 ### Example
 
-```
+```lua
 <preset_fields>
   <field id="heat_setpoint_f" value="65">
   <field id="cool_setpoint_f" value="75">

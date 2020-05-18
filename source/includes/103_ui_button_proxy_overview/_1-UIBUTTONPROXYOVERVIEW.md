@@ -9,26 +9,28 @@ The XML name of the proxy is "UI Button". For example:
 `</proxies>`
 
 
-The following is an example of the connection information required to use the UI Button Proxy:
+To the right is an example of the connection information required to use the UI Button Proxy:
 
- `<connections>
-`    ` <connection>
-`        `<id>5001</id>
-`        `<facing>6</facing>
-`        `<connectionname>UIBUTTON</connectionname>
-`       ` <type>2</type>
-`       ` <consumer>False</consumer>
-`        `<audiosource>False</audiosource>
-`       ` <videosource>False</videosource>
-`        `<linelevel>False</linelevel>
-`        `<classes>
-`            `<class>
-`                `<classname>UIBUTTON</classname>
-`           ` </class>
-`       ` </classes>
-`    `</connection>
-``</connections>
-`
+```xml
+ <connections>
+    <connection>
+        <id>5001</id>
+        <facing>6</facing>
+        <connectionname>UIBUTTON</connectionname>
+        <type>2</type>
+        <consumer>False</consumer>
+        <audiosource>False</audiosource>
+        <videosource>False</videosource>
+        <linelevel>False</linelevel>
+        <classes>
+            <class>
+               <classname>UIBUTTON</classname>
+         </class>
+       </classes>
+    </connection>
+</connections>
+```
+
 
 Note that OS Release 2.10.0 enhanced this Proxy with the capability to allow for URL manipulation of Navigator's web module feature through the use of the HTML Web View.
 
@@ -57,7 +59,10 @@ HTML WebView Overview is Implemented through the use of the `web_view_url` Capab
 `web_view_url`
 Optional Capability which, when added contains the default URL that is associated with the shortcut. For example:
 
-`<capabilities>
-``<webviewurl proxybindingid="5000">http://youtube.com</webviewurl>
-``</capabilities>
-`
+```xml
+<capabilities>
+   <webviewurl proxybindingid="5000">http://youtube.com</webviewurl>
+</capabilities>
+
+```
+
