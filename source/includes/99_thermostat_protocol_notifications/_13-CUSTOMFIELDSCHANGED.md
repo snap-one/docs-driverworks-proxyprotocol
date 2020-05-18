@@ -16,12 +16,12 @@ Update the template Custom Fields that UI's display for a new Preset Event.
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 ### Example
 
-```
+```xml
 <preset_custom_fields>
  <field id="TemperatureSensor" type="list" label="Temperature Sensor:" default="Primary: Built-In Sensor, Secondary: None">
    <list>
