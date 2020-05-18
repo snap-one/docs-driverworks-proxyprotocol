@@ -13,7 +13,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
    <discrete_levels>1</discrete_levels>
 </capabilities>

@@ -13,7 +13,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
    <can_reverse>true</can_reverse>
 </capabilities>

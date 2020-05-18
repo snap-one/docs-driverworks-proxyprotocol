@@ -13,7 +13,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
    <preset_speed>1</preset_speed>
 </capabilities>

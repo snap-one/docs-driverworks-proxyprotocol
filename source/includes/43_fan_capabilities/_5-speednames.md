@@ -18,7 +18,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
    <speed_names>3</speed_names>
 </capabilities>

@@ -13,7 +13,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
    <can_set_preset>true</an_set_preset>
 </capabilities>
