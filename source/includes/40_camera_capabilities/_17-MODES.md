@@ -16,7 +16,7 @@
 
 ### Example
 
-```
+```xml
 <capabilities>
     <modes>MJPEG</modes>
 </capabilities>

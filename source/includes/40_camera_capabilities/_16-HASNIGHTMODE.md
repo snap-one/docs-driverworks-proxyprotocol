@@ -10,7 +10,7 @@ True/False. Default is False.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <has_night_mode>false</has_night_mode>
 </capabilities>

@@ -18,7 +18,7 @@ Default is True.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <show_test_url>true</show_test_url>
 </capabilities>

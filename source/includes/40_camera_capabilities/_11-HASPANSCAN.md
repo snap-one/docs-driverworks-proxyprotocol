@@ -10,7 +10,7 @@ True/False. Default is False.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <has_span_scan>false</has_span_scan>
 </capabilities>

@@ -10,7 +10,7 @@ The expected ratio that the camera will use at start up. The value in the `defa
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_aspect_ratio>false</default_aspect_ratio>
 </capabilities>

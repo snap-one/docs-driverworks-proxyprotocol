@@ -10,7 +10,7 @@ Defaults to “username”.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_username>username</default_username>
 </capabilities>

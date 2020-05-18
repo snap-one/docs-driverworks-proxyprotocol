@@ -10,7 +10,7 @@ Defaults to 554.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_rtsp_port>554</default_rtsp_port>
 </capabilities>

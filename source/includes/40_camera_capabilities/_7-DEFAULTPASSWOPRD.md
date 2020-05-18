@@ -10,7 +10,7 @@ Defaults to “password”.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_password>80</default_password>
 </capabilities>

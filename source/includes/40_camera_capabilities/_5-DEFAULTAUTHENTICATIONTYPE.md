@@ -10,7 +10,7 @@ Defaults to BASIC.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_authentication_type>BASIC</default_authentication_type>
 </capabilities>

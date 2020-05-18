@@ -10,7 +10,7 @@ Defaults to 80.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_http_port>80</default_http_port>
 </capabilities>

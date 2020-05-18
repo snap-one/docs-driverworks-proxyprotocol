@@ -10,7 +10,7 @@ Defaults to false.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <address_readonly>false</address_readonly>
 </capabilities>

@@ -10,7 +10,7 @@ True/False. Default is False.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <has_home>false</has_home>
 </capabilities>

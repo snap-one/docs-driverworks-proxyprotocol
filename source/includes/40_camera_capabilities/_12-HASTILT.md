@@ -10,7 +10,7 @@ True/False. Default is False.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <has_tilt>false</has_tilt>
 </capabilities>

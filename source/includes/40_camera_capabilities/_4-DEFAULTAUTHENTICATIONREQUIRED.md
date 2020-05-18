@@ -10,7 +10,7 @@ Defaults to false.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <default_authentication_required>false</default_authentication_required>
 </capabilities>

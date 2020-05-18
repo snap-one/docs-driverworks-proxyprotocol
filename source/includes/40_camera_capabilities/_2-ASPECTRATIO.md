@@ -10,7 +10,7 @@ Comma-delimited list of possible aspect ratios that the camera supports. If this
 
 ### Example
 
-```
+```xml
 <capabilities>
     <aspect_ratio>false</aspect_ratio>
 </capabilities>

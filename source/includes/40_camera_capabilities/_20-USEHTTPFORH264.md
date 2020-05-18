@@ -18,7 +18,7 @@ Default is False.
 
 ### Example
 
-```
+```xml
 <capabilities>
     <use_http_for_h264>true</use_http_for_h264>
 </capabilities>

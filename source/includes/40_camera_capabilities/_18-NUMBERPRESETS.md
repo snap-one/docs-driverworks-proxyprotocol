@@ -18,7 +18,7 @@ Default is 0. Note that Navigator devices will truncate this value to a number i
 
 ### Example
 
-```
+```xml
 <capabilities>
     <number_presets>6</number_presets>
 </capabilities>
