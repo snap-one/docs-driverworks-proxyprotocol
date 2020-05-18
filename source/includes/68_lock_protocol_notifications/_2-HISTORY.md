@@ -20,7 +20,7 @@ Sent in response to the command `REQUEST_HISTORY`.
 
 ### Example
 
-```
+```lua
 <lock_history>
 	<history_item>
 		<history_id>history-ID INT</history_id>
