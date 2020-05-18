@@ -20,7 +20,7 @@ Used to get all the information about the proxy. Note that even if certain funct
 ### Usage Note
 Return Data:
 
-```
+```lua
 <State>
     <HOLD_RATE_UP>x</HOLD_RATE_UP>
     <HOLD_RATE_DOWN>x</HOLD_RATE_DOWN>
