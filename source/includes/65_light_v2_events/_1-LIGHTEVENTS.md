@@ -4,9 +4,10 @@ If any of the registered variables change value an event is fired. However, thos
 
 1. An event is fired when the light level changes. This fires an event with number 5000.
 
-2. An event is fired when something happens to one of the buttons on the device. The pattern for determining the event number is:  5001 + action + (`btnID * 5`). 
+2. An event is fired when something happens to one of the buttons on the device. The pattern for determining the event number is:  5001 + action + (`btnID * 5`).
 
 The actions are
+
 - Release = 0
 - Push = 1
 - Single Click = 2
