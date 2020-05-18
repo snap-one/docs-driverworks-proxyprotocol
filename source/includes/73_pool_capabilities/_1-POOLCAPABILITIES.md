@@ -34,7 +34,7 @@ Should be entered as Fahrenheit value, it is automatically adjusted to Celsiu
 
 The example capabilities XML is from the Jandy Aqualink driver.
 
-```
+```xml
 <capabilities>
          <pool_pumpmodes>Off,On</pool_pumpmodes>
          <spa_pumpmodes>Off,On</spa_pumpmodes>
