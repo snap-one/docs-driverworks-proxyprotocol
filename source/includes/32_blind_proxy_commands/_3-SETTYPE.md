@@ -13,6 +13,7 @@ Sets the blind type for the proxy.
 | INT | Enumeration of the blind  type. |
 
 Blind Types:
+
 - 0 - Shade (Default as all coverings are considered to be Shades in the industry)
 - 1 - Group
 - 2 - Blind (Since a blind has slates/louvers that often move, a blind can be bound to a louver movement for association)

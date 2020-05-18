@@ -16,4 +16,4 @@ Command that is initiated in Composer Pro and immediately returns a block of XML
 
 ### Returns
 
-XML: `<snapshot_query_string>url-query-string</snapshot_query_string> `
+XML: `<snapshot_query_string>url-query-string</snapshot_query_string>`
