@@ -21,5 +21,4 @@ Sent to the proxy to indicate that there is a Spa available on this controller. 
 ### Example
 
 `C4:SendToProxy(5001, "HASSPA_CHANGED", {HASSPA = "True"})`
- `
-`
+ 

@@ -22,8 +22,8 @@ Notification sent to the proxy to indicate whether Aux Buttons on the right side
 
 ### Example
 
-```
-XML:
+```xml
+
 <aux_state>
     <item>
         <id>1</id>
