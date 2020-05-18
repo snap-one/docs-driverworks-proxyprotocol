@@ -12,7 +12,7 @@ Sent in when a lock status changes for any reason.
 | --- | --- |
 | str |LOCK STATUS: Required parameter: unknown, locked, unlocked, or fault. |
 | str |LAST ACTION DESCRIPTION: Optional parameter. |
-| str |SOURCE: 0ptional parameter: the source that affected the status change. |
+| str |SOURCE: Optional parameter: the source that affected the status change. |
 | bool |MANUAL: Optional parameter: true|false, assumed false if not specified. |
 
 
