@@ -8,7 +8,7 @@ This request is issued to obtain the current timeout setting for manually answer
 `C4:GET_TIMEOUT ()`
 
 
-###  Parameter 
+### Parameter
 
 `None`
 
@@ -22,9 +22,9 @@ This request is issued to obtain the current timeout setting for manually answer
 
 Response Prototype
 
-```
+```lua
 <timeout>
-  <value>[integer value] </value>
+  <value>[integer value]</value>
 </timeout>
 ```
 
