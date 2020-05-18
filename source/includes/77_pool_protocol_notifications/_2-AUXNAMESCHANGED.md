@@ -20,8 +20,8 @@ This notification provides a way to override capabilities.
 
 ### Example
 
-```
-XML:
+```xml
+
 <items>
     <item>
         <id>1</id>
