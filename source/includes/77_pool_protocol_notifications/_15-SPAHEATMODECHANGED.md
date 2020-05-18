@@ -20,7 +20,7 @@ Sent to the proxy to indicate that the spa heat mode has changed.
 
 ### Example
 
-```
+```xml
 XML:
 id: from <command>
 mode: OFF | ON | ENABLED

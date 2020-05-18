@@ -20,7 +20,7 @@ Sent to the proxy to indicate that the pool heat mode list has changed.
 
 ### Example
 
-```
+```xml
 <pool_heat_modes>
     <mode>
         <id>1</id>

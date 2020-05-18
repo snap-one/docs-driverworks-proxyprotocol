@@ -20,7 +20,7 @@ This notification provides a way to override capabilities. It is sent to the pro
 
 ### Example
 
-```
+```xml
 XML
 <spa_heat_modes>
     <mode>
