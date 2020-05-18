@@ -7,8 +7,8 @@ The following Notifications are supported by the Security System Controller Part
 When specifying a parameters value that is a number with a decimal, the value must be sent as a String. For example, if PARAM=1.5, the proxy will get the value of 1 from the protocol driver. PARAM="1.5" will result in the proxy getting the value of 1.5. This applies for temperatures, setpoints, and all other parameters that are part of a Notify message.  If you hare using a lua variable that is a number, consider doing PARAM=""..num to force the parameter to be a string.
 
 
-## ALARM`	
-`Set the alarm state to “ALARM” and fire event.
+## ALARM\`
+\`Set the alarm state to “ALARM” and fire event.
 
 
 
@@ -105,7 +105,7 @@ Set the armed state to “Armed Home” and fire event.
 
 
 
-## INTERFACE ID 
+## INTERFACE ID
 A unique identifier string that identifies which the interfaces should respond.  Usually this would be the InterfaceID parameter from the last command. An empty string would mean that all the interfaces could or should respond to this request.
 
 | Parameter | Description |
@@ -131,7 +131,7 @@ Sent when partition state changes.
 
 | Parameter | Description |
 | --- | --- |
-| str | STATE: Valid values: `DISARMED_READY, DISARMED_NOT_READY, EXIT_DELAY, ARMED, ENTRY_DELAY,ALARM` |
+| str | STATE: Valid values: `DISARMED_READY, DISARMED_NOT_READY, EXIT_DELAY, ARMED, ENTRY_DELAY, ALARM` |
 | str | TYPE: For use with the ARMED or ALARM states. Specifies the type of arming or alarm that the system is changing to. |
 | int | DELAY TIME TOTAL: Optional. For use with the `ENTRY_DELAY` or `EXIT_DELAY` states.  The total number of seconds that the current delay will last. If this parameter isn't included, the proxy will assume a value of 0. |
 | int | DELAY TIME REMAINING: Optional. For use with the `ENTRY_DELAY` or `EXIT_DELAY` states. The number of seconds remaining in the current delay. If this parameter isn't included, the proxy will assume a value of 0. |
@@ -144,7 +144,7 @@ Sent when partition state changes however no programming events will fire from t
 
 | Parameter | Description |
 | --- | --- |
-| str |STATE: Valid values: `DISARMED_READY, DISARMED_NOT_READY, EXIT_DELAY, ARMED, ENTRY_DELAY,ALARM_` |
+| str |STATE: Valid values: `DISARMED_READY, DISARMED_NOT_READY, EXIT_DELAY, ARMED, ENTRY_DELAY, ALARM` |
 
 
 
@@ -170,7 +170,7 @@ Tells the partition proxy to ask for more information from the UIs. Often this 
 
 
 
-## TROUBLE	
+## TROUBLE
 | Parameter | Description |
 | --- | --- |
 | str | DATA STRING: Display Text to show in the Trouble Text Window. |
