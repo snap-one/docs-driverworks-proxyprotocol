@@ -6,7 +6,7 @@ If your Receiver and TV driver intends to use Auto-Binding feature in ComposerPr
 
 For example:
 
-```
+```xml
    <connection proxybindingid="5000">
       <id>7000</id>
       <facing>6</facing>
