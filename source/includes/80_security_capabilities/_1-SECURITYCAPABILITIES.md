@@ -11,6 +11,8 @@ Defines buttons to be displayed on UI panel along with IDs for Keypad. locCode d
 | True/False |
 
 
+
+
 `display_type`
 Define GUI display location and width.
 
@@ -27,6 +29,8 @@ Define GUI display location and width.
 
 
 
+
+
 `has_alrm_cleared_event`
 Alarm capable of generating an event when alarm is cleared.
 
@@ -36,12 +40,16 @@ Alarm capable of generating an event when alarm is cleared.
 
 
 
+
+
 `has_alrm_event`
 Alarm capable of generating an event when activated
 
 | Parameter | 
 | --- | --- |
 | True/False |
+
+
 
 
 

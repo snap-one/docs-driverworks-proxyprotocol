@@ -40,7 +40,7 @@ Alarm display text notification
 
 | Parameter | Description |
 | --- | --- |
-| data payload | \<text\>szDisplayText\</text\> |
+| data payload | `<text>szDisplayText</text>` |
 
 
 
