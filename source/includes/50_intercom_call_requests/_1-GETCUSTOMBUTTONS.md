@@ -15,7 +15,7 @@ The Intercom Proxy provides the ability to define two (2) custom buttons for eac
 
 ### Example
 
-```
+```lua
 <GET_CUSTOM_BUTTONS>
    <idDevice>[22]</idDevice>
 </GET_CUSTOM_BUTTONS>
@@ -34,7 +34,7 @@ The Intercom Proxy provides the ability to define two (2) custom buttons for eac
 
 Response Prototype
 
-```
+```lua
 <custom_buttons id=”[integer value]”>
   <custom_button>
    <index>[integer value]</index>

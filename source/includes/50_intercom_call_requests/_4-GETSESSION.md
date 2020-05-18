@@ -29,7 +29,7 @@ This request is issued to obtain the active session information for the requesti
 
 Response Prototype
 
-```
+```lua
 <device_session id=”[integer value]”>
    <sessionId>[integer value]</sessionId>
    <videoMode>[integer value]</videoMode>

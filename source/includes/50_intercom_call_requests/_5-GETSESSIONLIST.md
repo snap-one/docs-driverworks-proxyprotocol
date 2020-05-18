@@ -23,7 +23,7 @@ This request is issued to obtain the session information of all of sessions on t
 
 Response Prototype
 
-```
+```lua
 <session_list>
   <device_session id=”Id1”>
    [see the GET_SESSION response format]

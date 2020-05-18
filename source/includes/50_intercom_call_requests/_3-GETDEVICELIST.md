@@ -23,7 +23,7 @@ This request is issued to obtain the device properties of all of the intercom en
 
 Response Prototype
 
-```
+```lua
 <device_list>
    <device_props id=”Id1”>
     [see the GET_DEVICE response format]

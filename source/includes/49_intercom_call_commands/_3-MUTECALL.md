@@ -20,7 +20,7 @@ This command can be issued by either the initiator or receiver; the endpoint of 
 
 ### Example
 
-```
+```lua
 <MUTE_CALL>
    <muteAudio>[0]</muteAudio>
 </MUTE_CALL>

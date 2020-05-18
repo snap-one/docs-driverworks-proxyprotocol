@@ -15,7 +15,7 @@ This request is issued to obtain the device properties of a specified intercom e
 
 ### Example
 
-```
+```lua
 <GET_DEVICE>
   <idDevice>[integer value]</idDevice>
 </GET_DEVICE>
@@ -37,7 +37,7 @@ This request is issued to obtain the device properties of a specified intercom e
 
 Response Prototype
 
-```
+```lua
 <device_props id=”[integer value]”>
     <proxyId>[integer value]</proxyId>
     <protocolId>[integer value]</protocolId>
@@ -50,5 +50,6 @@ Response Prototype
     <sipAOR>[string value]</sipAOR>
 </device_props>
 ```
+
 
 
