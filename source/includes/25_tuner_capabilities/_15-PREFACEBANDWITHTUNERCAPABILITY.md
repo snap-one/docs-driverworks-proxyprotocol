@@ -1,6 +1,7 @@
 ## preface band with tuner capability
 
-Specifies if the device can switch to the Tuner input (AM, FM..) and then send the `SET_CHANNEL` command.
+Specifies if the device can switch to the Tuner input (AM, FM..) and then send the
+ `SET_CHANNEL` command.
 
 
 ### Signature
