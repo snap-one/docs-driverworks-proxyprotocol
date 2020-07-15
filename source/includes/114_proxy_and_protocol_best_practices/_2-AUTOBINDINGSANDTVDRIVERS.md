@@ -1,4 +1,4 @@
-## AUTOBINDINGS AND TV DRIVERS
+## AUTOBINDINGS in Receiver an TV DRIVERS
 
 Usage Note on the use of Auto-Bindings in conjunction with the Receiver and TV Proxies:
 
