@@ -16,6 +16,8 @@ This request is issued to obtain the device state of a specified intercom endpoi
 
 ### Request Prototype
 
+_See example to the right._
+
 ```lua
 <GET_STATE>
    <idDevice>[17]</idDevice>
