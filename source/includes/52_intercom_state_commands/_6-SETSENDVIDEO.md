@@ -1,6 +1,6 @@
 ## SET SEND VIDEO
 
-This command is issued by a proxy consumer to cause the state of the send video setting to change.  This command will result in a `SEND_VIDEO_CHANGED`
+This command is issued by a proxy consumer to cause the state of the send video setting to change.  This command will result in a [`SEND_VIDEO_CHANGED`][1]
 
 
 ### Signature
@@ -25,3 +25,5 @@ This command is issued by a proxy consumer to cause the state of the send video 
    <sendVideo>[1]</sendVideo>
 </SET_SEND_VIDEO>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#send-video-changed
