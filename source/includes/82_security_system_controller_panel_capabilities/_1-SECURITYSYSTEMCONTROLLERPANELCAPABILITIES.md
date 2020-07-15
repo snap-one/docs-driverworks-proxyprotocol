@@ -1,4 +1,3 @@
-## SECURITY SYSTEM CONTROLLER PANEL CAPABILITIES
 
 The following Capabilities are supported with the Security System Controller Panel:
 
