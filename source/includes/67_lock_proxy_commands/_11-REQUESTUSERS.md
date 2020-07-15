@@ -1,6 +1,6 @@
 ## REQUEST USERS
 
-This command results in the Protocol Notification `USERS` being sent from the Protocol to the Proxy.
+This command results in the Protocol Notification [`USERS`][1] being sent from the Protocol to the Proxy.
 
 
 ### Signature
@@ -16,3 +16,5 @@ This command results in the Protocol Notification `USERS` being sent from the Pr
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#users

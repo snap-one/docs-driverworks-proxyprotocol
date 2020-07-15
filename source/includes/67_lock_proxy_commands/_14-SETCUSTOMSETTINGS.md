@@ -1,6 +1,6 @@
 ## SET CUSTOM SETTINGS
 
-This command results in the Protocol Notification `CUSTOM_SETTINGS` being sent from the Protocol to the Proxy.
+This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being sent from the Protocol to the Proxy.
 
 
 ### Signature
@@ -19,3 +19,5 @@ This command results in the Protocol Notification `CUSTOM_SETTINGS` being sent f
 `None`
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#custom-settings
