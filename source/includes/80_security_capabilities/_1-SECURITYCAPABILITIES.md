@@ -4,6 +4,7 @@ The following Capabilities are supported by the Security Proxy:
 
 
 `button_list`
+
 Defines buttons to be displayed on UI panel along with IDs for Keypad. locCode defines button's column (A...Z) and row (1...9). For example, A3 indicates column 1 row 3. Width defines button width (in columns).
 
 | Parameter | 
@@ -14,6 +15,7 @@ Defines buttons to be displayed on UI panel along with IDs for Keypad. locCode d
 
 
 `display_type`
+
 Define GUI display location and width.
 
 | Parameter | Description |
@@ -32,6 +34,7 @@ Define GUI display location and width.
 
 
 `has_alrm_cleared_event`
+
 Alarm capable of generating an event when alarm is cleared.
 
 | Parameter | 
@@ -43,6 +46,7 @@ Alarm capable of generating an event when alarm is cleared.
 
 
 `has_alrm_event`
+
 Alarm capable of generating an event when activated
 
 | Parameter | 
@@ -54,6 +58,7 @@ Alarm capable of generating an event when activated
 
 
 `has_trouble_event`
+
 Alarm capable of generating an event when alarm trouble is detected.
 
 | Parameter | 
