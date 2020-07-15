@@ -14,6 +14,7 @@ The actions are
 - Double Click = 3
 - Triple Click = 4
 
+
 The button IDs are determined by the protocol driver, but the standard ordering is:
 
 Top = 0
