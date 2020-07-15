@@ -1,4 +1,3 @@
-## SECURITY SYSTEM CONTROLLER PARTITION EVENTS
 
 The following Events are supported with the Security System Controller Partition. 
 

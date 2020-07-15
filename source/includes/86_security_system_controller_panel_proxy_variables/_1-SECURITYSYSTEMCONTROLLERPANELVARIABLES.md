@@ -1,4 +1,3 @@
-## SECURITY SYSTEM CONTROLLER PANEL VARIABLES
 
 The Security System Controller Panel supports the following variable:
 

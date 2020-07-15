@@ -1,4 +1,3 @@
-## SECURITY SYSTEM CONTROLLER PARTITION CONDITIONALS
 
 The following Conditionals are supported with the Security System Controller Partition. System programming conditionals are handled by the proxy and return a true or false:
 
