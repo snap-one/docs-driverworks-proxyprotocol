@@ -20,4 +20,6 @@ Composer Pro command to set whether or not authentication is required
 
 ### Usage Note
 
-Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for Webservice API: urlPOST for Authentication information.
+Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for URL Interface API: [POST][1] for Authentication information.
+
+[1]:	https://control4.github.io/docs-driverworks-api/#post

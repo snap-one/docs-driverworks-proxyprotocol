@@ -1,6 +1,6 @@
 ## Address Changed
 
-Notification that the camera's address has a changed. Sent from OnNetworkBindingChanged
+Notification that the camera's address has a changed. Sent from the API [OnNetworkBindingChanged][1].
 
 
 ### Signature
@@ -16,3 +16,5 @@ Notification that the camera's address has a changed. Sent from OnNetworkBinding
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-api/#onnetworkbindingchanged

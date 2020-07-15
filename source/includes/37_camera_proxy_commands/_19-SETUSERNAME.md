@@ -20,4 +20,6 @@ Composer Pro command to set the Authentication username.
 
 ### Usage Note
 
-See the DriverWorks API documentation for Webservice API: urlPOST for Authentication information.
+See the DriverWorks API documentation for URL Interface API: [POST][1] for Authentication information.
+
+[1]:	https://control4.github.io/docs-driverworks-api/#post
