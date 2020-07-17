@@ -37,7 +37,7 @@ Note that OS Release 2.10.0 enhanced this Proxy with the capability to allow for
 ### HTML WebView Overview
 Adding the HTML WebView functionality to an Experience (UIbutton) driver enables the driver developer to specify a web URL that can provide an HTML interface for the end user. The web UI is launched within an embedded browser on the Control4 T3 touch screen. There is no support for WebView in the On Screen Navigator, the Flash Navigator or the mobile applications (iOS and Android).
 
-HTML WebView Usage Best Practice Recommendations
+### HTML WebView Usage Best Practice Recommendations
 The Driver Developer should implement the proxy interfaces that Control4 provides as a standard part of the user experience to the full extent that these apply to the device. The web interface should be considered supplementary to the proxy interface.
 
 The Driver Developer should be able to implement the driver using a URI to a hosted web UI. This web UI can be hosted on the device itself or in the cloud. The web UI should not be hosted on the Control4 controller.
