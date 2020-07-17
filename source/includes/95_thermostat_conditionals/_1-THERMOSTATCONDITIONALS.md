@@ -2,7 +2,7 @@
 
 The following Conditionals are supported with the Thermostat Proxy and can be used in ComposerPro Programming.
 
-`IF_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. No manipulation is done on the units for the temperature. If the thermostat is configured to be celsius, the value to compare it against should be in Celsius as well.
+`IF_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. No manipulation is done on the units for the temperature. If the thermostat is configured to be celsius, the value to compare it with should be in Celsius as well.
 
 `IF_HEAT_SETPOINT` - simple integer test against the current heat setpoint.
 
@@ -20,7 +20,7 @@ The following Conditionals are supported with the Thermostat Proxy and can be us
 
 `IF_VACATION_MODE` - simple boolean test to see if the vacation mode is on/off.
 
-`IF_OUTDOOR_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. Not manipulation is done on the units for the temperature. If the thermostat is configured to be Celsius, the value to compare it against should be in Celsius as well.
+`IF_OUTDOOR_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. Not manipulation is done on the units for the temperature. If the thermostat is configured to be Celsius, the value to compare it with should be in Celsius as well.
 
 `IF_HEAT_SETPOINT` - simple integer test against the current heat setpoint.
 
