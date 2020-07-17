@@ -14,38 +14,23 @@ Boolean to enable/disable Navigator UIs and ComposerPro from being able to chang
 
 
 `<can_cool></can_cool>`
-Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][3] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][3] notification.This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_dehumidify></can_dehumidify>`
-Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][4] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][4] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_do_auto></can_do_auto>`
- Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][5] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+ Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][5] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_heat></can_heat>`
-Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][6] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][6] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_humidify></can_humidify>`
-Boolean to enable/disable `can_humidity` capability, if the device supports this feature, default is True.  This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][7] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Boolean to enable/disable `can_humidity` capability, if the device supports this feature, default is True.  This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][7] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_inc_dec_setpoints></can_inc_dec_setpoints>`
@@ -117,10 +102,7 @@ Indicates if this thermostat has a remote sensor. Valid values: True/False.
 
 
 `<has_single_setpoint></has_single_setpoint>`
- Boolean indicating if the device is single setpoint.  `can_heat, can_cool` and `can_auto` should be set to false if this option is used. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][16] notification.
-
-### Usage Note:  
-This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+ Boolean indicating if the device is single setpoint.  `can_heat, can_cool` and `can_auto` should be set to false if this option is used. This capability can be changed through a [`DYNAMIC_CAPBILITIES_CHANGED`][16] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<has_temperature></has_temperature>`
