@@ -9,10 +9,12 @@ The minimum dehumidify setpoint has changed.
 
 | Parameter | Description |
 | --- | --- |
-| int | MINIMUM SETPOINT: (0-100). To UI comes through as `setpoint_dehumidify_min` capability. Defaults to 0. |
-
+| int | MINIMUM SETPOINT: (0-100). To UI comes through as [`setpointdehumidifymin`][1]` capability. Defaults to 0. |
+`
 
 ### Returns
 
-`None
-`
+\`None
+\`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

@@ -1,6 +1,6 @@
 ## HAS OUTDOOR TEMPERATURE
 
-Boolean to enable/disable `has_outdoor_temperature` capability, if the device supports this feature, default is false
+Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the device supports this feature, default is false
 
 
 ### Signature
@@ -16,3 +16,5 @@ Boolean to enable/disable `has_outdoor_temperature` capability, if the device su
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

@@ -9,8 +9,8 @@ The  dehumidify setpoint resolution has changed.
 
 | Parameter | Description |
 | --- | --- |
-| int | What increment to use (ie 1,3,5,10,etc), will do the same thing as the `setpoint_dehumidify_resolution` capability, default 1 |
-
+| int | What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpointdehumidifyresolution`][1]` capability, default 1 |
+`
 
 ### Returns
 
@@ -19,3 +19,5 @@ The  dehumidify setpoint resolution has changed.
 
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

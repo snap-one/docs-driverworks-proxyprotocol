@@ -1,6 +1,6 @@
 ## HAS HUMIDITY
 
-Boolean to enable/disable `has_humidity` capability. If the device supports this feature, default is false
+Boolean to enable/disable [`has_humidity`][1] capability. If the device supports this feature, default is false
 
 
 ### Signature
@@ -16,3 +16,5 @@ Boolean to enable/disable `has_humidity` capability. If the device supports this
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
