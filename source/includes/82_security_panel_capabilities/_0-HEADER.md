@@ -1,1 +1,1 @@
-# Security System Controller Panel Capabilities
+# Security Panel Capabilities

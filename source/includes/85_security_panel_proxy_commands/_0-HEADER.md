@@ -1,1 +1,1 @@
-# Security System Controller Proxy Commands
+# Security Panel Proxy Commands

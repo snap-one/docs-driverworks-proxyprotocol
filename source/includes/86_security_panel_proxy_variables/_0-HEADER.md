@@ -1,1 +1,1 @@
-# Security System Controller Proxy Variables
+# Security Panel Variables

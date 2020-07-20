@@ -1,1 +1,1 @@
-# Security System Controller Partition States
+# Security Partition States

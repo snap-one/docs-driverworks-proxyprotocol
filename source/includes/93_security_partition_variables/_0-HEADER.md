@@ -1,1 +1,1 @@
-# Security System Controller Partition Variables
+# Security Variables

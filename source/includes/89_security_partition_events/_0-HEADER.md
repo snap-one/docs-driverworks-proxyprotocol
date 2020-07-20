@@ -1,1 +1,1 @@
-# Security System Controller Partition Events
+# Security Partition Events

@@ -1,1 +1,1 @@
-# Security System Controller Partition Proxy Commands
+# Security Proxy Commands

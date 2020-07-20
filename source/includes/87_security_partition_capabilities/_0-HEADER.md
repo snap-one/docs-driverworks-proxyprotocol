@@ -1,1 +1,1 @@
-# Security System Controller Partition Capabilities
+# Security Partition Capabilities

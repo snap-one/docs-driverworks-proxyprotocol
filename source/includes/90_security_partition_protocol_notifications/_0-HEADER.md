@@ -1,1 +1,1 @@
-# Security System Controller Protocol Notifications
+# Security Protocol Notifications

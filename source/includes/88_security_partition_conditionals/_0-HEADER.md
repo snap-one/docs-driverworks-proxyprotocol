@@ -1,1 +1,1 @@
-# Security System Controller Partition Conditionals
+# Security Partition Conditionals
