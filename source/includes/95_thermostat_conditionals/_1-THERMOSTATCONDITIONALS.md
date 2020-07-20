@@ -1,6 +1,6 @@
 ## THERMOSTAT CONDITIONALS
 
-The following Conditionals are supported with the Thermostat Proxy and can be used in ComposerPro Programming.
+The following Conditionals are supported with the Thermostat Proxy and can be used in ComposerPro Programming. Please see the Samples folder delivered in this SDK for Thermostat (V2) code examples.
 
 `IF_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. No manipulation is done on the units for the temperature. If the thermostat is configured to be celsius, the value to compare it with should be in Celsius as well.
 

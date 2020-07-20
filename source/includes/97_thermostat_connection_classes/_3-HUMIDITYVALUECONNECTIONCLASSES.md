@@ -1,5 +1,7 @@
 ## HUMIDITY VALUE CONNECTION CLASSES
 
+Please see the Samples folder delivered in this SDK for Thermostat (V2) code examples.
+
 **Commands**
 
 ## VALUE INITIALIZED
