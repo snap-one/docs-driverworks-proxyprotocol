@@ -1,1 +1,1 @@
-# Non-Proxy Device: Relay Commands
+# Non-Proxy Relay Commands

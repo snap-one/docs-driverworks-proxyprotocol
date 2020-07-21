@@ -1,1 +1,1 @@
-# Non-Proxy Device: Contact Notifications
+# Non-Proxy Contact Notifications

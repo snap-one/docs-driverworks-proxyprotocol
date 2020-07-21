@@ -1,1 +1,1 @@
-# Non-Proxy Device: Relay Overview
+# Non-Proxy Relay Overview

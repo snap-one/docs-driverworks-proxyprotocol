@@ -1,1 +1,1 @@
-# Proxy and Protocol Best Practices
+# Best Practices

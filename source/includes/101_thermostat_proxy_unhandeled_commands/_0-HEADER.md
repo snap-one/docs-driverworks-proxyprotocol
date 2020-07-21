@@ -1,1 +1,1 @@
-# Thermostat Proxy Unhandled Commands
+# Thermostat Unhandled Commands

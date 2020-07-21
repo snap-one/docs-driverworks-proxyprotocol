@@ -1,1 +1,1 @@
-# Non-Proxy Device: Relay Notifications
+# Non-ProxyRelay Notifications

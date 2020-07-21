@@ -1,1 +1,1 @@
-# Thermostat Protocol Notifications
+# Thermostat Notifications

@@ -1,1 +1,1 @@
-# Security System Controller Panel Events
+# Security Panel Events
