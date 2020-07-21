@@ -1,1 +1,1 @@
-# Non-Proxy Contact Notifications
+# Contact Notifications

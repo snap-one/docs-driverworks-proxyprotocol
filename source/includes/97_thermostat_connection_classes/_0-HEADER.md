@@ -1,1 +1,1 @@
-# Thermostat Connection Classes
+# Thermostat Connections

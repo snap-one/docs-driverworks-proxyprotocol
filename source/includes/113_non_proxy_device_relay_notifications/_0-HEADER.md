@@ -1,1 +1,1 @@
-# Non-ProxyRelay Notifications
+# Relay Notifications

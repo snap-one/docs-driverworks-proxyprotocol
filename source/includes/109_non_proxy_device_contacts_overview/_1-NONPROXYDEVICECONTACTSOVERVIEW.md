@@ -1,4 +1,4 @@
-## NON-PROXY CONTACTS OVERVIEW
+## CONTACTS OVERVIEW
 
 This area of the Proxy and Protocol Guide contains information for a developing a Contact driver. Contacts are unique in how they are handled within Control4's architecture. Contact drivers do not rely upon a proxy as most traditional drivers do. In the most simple use case, a contact driver is added to a project to provide icons on devices running Navigator for the contacts' state (open and close) or a change to that state. An example of this type of driver can be seen in the `contactsingle_contactswitch.c4i` file. In a typical ComposerPro installation, this driver can be found in the following directory:
 
