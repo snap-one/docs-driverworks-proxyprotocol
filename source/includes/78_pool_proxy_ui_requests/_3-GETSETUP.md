@@ -1,10 +1,10 @@
 ## GET SETUP
 
-Obtains the driver’s setup information
+Obtains the driver’s setup information.
 
 ### Example
 
-```
+```xml
 pool_setup>
     <temp_min>34</temp_min>
     <temp_max>104</temp_max>

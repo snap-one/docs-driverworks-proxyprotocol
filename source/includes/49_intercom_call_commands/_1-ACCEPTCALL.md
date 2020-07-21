@@ -1,6 +1,6 @@
 ## ACCEPT CALL
 
-This command may be issued by the receiver of a call invitation (i.e. an `INCOMING_CALL notification`) and causes the call associated with the given session id to be accepted. This command will result in a `CALL_ACCEPTED` notification being sent to both the initiator and the receiver of the call.
+This command may be issued by the receiver of a call invitation (i.e. an [`INCOMING_CALL notification`][1]) and causes the call associated with the given session id to be accepted. This command will result in a [`CALL_ACCEPTED`][2] notification being sent to both the initiator and the receiver of the call.
 
 
 ### Signature
@@ -20,3 +20,6 @@ This command may be issued by the receiver of a call invitation (i.e. an `INCOMI
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#incoming-call
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#call-accepted

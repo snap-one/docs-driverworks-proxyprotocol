@@ -15,12 +15,12 @@ Command handled by the proxy driver.  Immediately returns a block of XML informa
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 ### Example
 
-```
+```xml
 <fan_state>
   <current_speed>3</current_speed>
   <is_reversed>false</is_reversed>

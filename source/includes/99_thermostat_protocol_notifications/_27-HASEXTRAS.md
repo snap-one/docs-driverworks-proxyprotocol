@@ -1,6 +1,6 @@
 ## HAS EXTRAS
 
-Boolean to enable/disable `has_extras capability`.  If the device supports this feature, default is false
+Boolean to enable/disable [`has_extras capability`][1].  If the device supports this feature, default is false
 Updates the XML that will be consumed by the Navigator UI’s.
 
 
@@ -19,8 +19,10 @@ Updates the XML that will be consumed by the Navigator UI’s.
 `None`
 
 
-HAS_EXTRAS - boolean to enable/disable has_extras capability, if the device supports this feature, default is false
+HAS\_EXTRAS - boolean to enable/disable has\_extras capability, if the device supports this feature, default is false
 Updates the XML that will be consumed by the Navigator UI's
 
 Parameters
 XML text string of XML that matches the Preset Schedule API.
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

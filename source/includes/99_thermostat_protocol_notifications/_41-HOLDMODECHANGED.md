@@ -1,6 +1,6 @@
 ## HOLD MODE CHANGED
 
-Notification that should be sent to the proxy when hold mode has changed. Changes the variables `HOLD_MODE`, `ANA_HOLDMODE`. Fires event `HOLD_MODE_CHANGED`.
+Notification that should be sent to the proxy when hold mode has changed. Changes the variables [`HOLD_MODE`][1], [`ANA_HOLDMODE`][2]. Fires event [`HOLD_MODE_CHANGED`][3].
 
 
 ### Signature
@@ -18,3 +18,7 @@ Notification that should be sent to the proxy when hold mode has changed. Change
 
 `None`
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables

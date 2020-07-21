@@ -23,20 +23,20 @@ Tune device to the specified channel.
 The examples to the right detail the table of information that is received from the proxy when a channel is selected:
 
 ```
-	FM:
-	ReceivedFromProxy:	SET_CHANNEL
-	BindingID           5002
-	CHANNEL             96.3
-	INPUT   		    3028
-	OUTPUT              0
+FM:
+ReceivedFromProxy:	SET_CHANNEL
+BindingID           5002
+CHANNEL             96.3
+INPUT               3028
+OUTPUT              0
 
-	AM:
-	ReceivedFromProxy: SET_CHANNEL
-	INPUT              3027
-	BindingID          5002
-	CHANNEL            1100
-	INPUT              3027
-	OUTPUT             0
+AM:
+ReceivedFromProxy: SET_CHANNEL
+INPUT              3027
+BindingID          5002
+CHANNEL            1100
+INPUT              3027
+OUTPUT             0
 ```
 
 In the FM example, channel 96.3 has been selected in the tuner protocol. The 96.3 value is passed into the data table as a string.

@@ -2,7 +2,7 @@
 
 Boolean indicating if a control surface can be set by a COMMAND to something other than the level for closed and the level for open.
 
-If false, a UI will only send `level_closed and level_open` integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.
+If false, a UI will only send [level_closed][1] and [level_open][2] integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.
 
 If true, the driver should support all level values in the level range. This could be discrete percentages or even include using level values of 1,2,3,... to execute presets.  However, the min (0) and max (X) should always be programmed for close and open levels respectively.
 
@@ -19,3 +19,6 @@ If true, the driver should support all level values in the level range. This cou
     <level_discrete_control>true</level_discrete_control>
 </capabilities>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#level-closed
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#level-open

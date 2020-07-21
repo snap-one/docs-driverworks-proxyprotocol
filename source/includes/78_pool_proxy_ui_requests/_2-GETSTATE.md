@@ -1,10 +1,10 @@
 ## GET STATE
 
-Obtains the pool’s state..
+Obtains the pool’s state.
 
 ### Example
 
-```
+```xml
 <pool_state>
     <spamode>Off</spamode>
     <pumpmode>On</pumpmode>

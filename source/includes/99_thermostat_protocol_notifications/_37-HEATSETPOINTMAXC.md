@@ -1,6 +1,6 @@
 ## HEAT SETPOINT MAX C
 
-Maximum Setpoint, int 0-100 that will do the same thing as the `setpoint_heat_max` capability.
+Maximum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_max`][1] capability.
 
 
 ### Signature
@@ -16,3 +16,5 @@ Maximum Setpoint, int 0-100 that will do the same thing as the `setpoint_heat_ma
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

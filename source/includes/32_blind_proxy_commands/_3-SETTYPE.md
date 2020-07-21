@@ -26,7 +26,7 @@ Blind Types:
 - 9 - Door
 - 10 - Screen
 
-If set to -1 then a dealer can select a choice from a pulldown in the proxy property control.This Notification sends DataToUI of blind setup xml.
+If set to -1 then a dealer can select a choice from a pulldown in the proxy property control. This Notification sends DataToUI of blind setup xml.
 
 
 ### Returns

@@ -1,7 +1,6 @@
 ## SET DND
 
-This command is issued to toggle the “Do Not Disturb” setting of the intercom. This command will result in a `DND_CHANGED` notification to the proxy.
-
+This command is issued to toggle the “Do Not Disturb” setting of the intercom. 
 
 ### Signature
 

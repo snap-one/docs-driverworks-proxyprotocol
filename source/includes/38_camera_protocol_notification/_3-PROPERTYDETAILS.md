@@ -1,6 +1,6 @@
 ## PROPERTY DETAILS
 
-Notification sent from the protocol driver through `ON_DRIVER_LATE_INIT` containing the camera's default properties
+Notification sent from the protocol driver through [ON DRIVER LATE INIT][1] containing the camera's default properties
 
 
 ### Signature
@@ -21,3 +21,5 @@ Notification sent from the protocol driver through `ON_DRIVER_LATE_INIT` contain
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-api/#ondriverlateinit

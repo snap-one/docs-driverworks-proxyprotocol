@@ -1,6 +1,6 @@
 ## CONNECTION
 
-Boolean to enable/disable `can_dehumidify` capability. If the device supports this feature, default is False.
+Boolean to enable/disable [`can_dehumidify`][1] capability. If the device supports this feature, default is False.
 
 
 ### Signature
@@ -20,3 +20,5 @@ Boolean to enable/disable `can_dehumidify` capability. If the device supports th
 `None`
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

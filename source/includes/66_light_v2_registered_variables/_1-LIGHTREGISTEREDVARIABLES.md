@@ -1,12 +1,12 @@
 ## Light Proxy Registered Variables
 
 Lights that used the new v2 Lighting Proxy have several registered variables that can be manipulated. Note that for a switch, only the Light State variable exists.
-﻿
-Light State (ID=1000) - Boolean indicating if the light is on/off. If you set this variable to true on a dimmer, it will go to the `preset_level.`
+
+Light State (ID=1000) - Boolean indicating if the light is on/off. If you set this variable to true on a dimmer, it will go to the preset level.
 
 Light Level (ID=1001) - Integer indicating the current level for a dimmer. The value should be between 0-100.
 
-Click Rate Up (ID=1002) - Integer indicating the number of milliseconds for a dimmer to ramp from 0% to 100% if it is 'clicked'. It is possible for a protocol to hide this variable after using the `hide_proxy_properties`capability in the c4i/c4z file. 
+Click Rate Up (ID=1002) - Integer indicating the number of milliseconds for a dimmer to ramp from 0% to 100% if it is 'clicked'. It is possible for a protocol to hide this variable after using the [`hide_proxy_properties`][1]capability in the c4i/c4z file. 
 
 Click Rate Down (ID=1003) - Integer indicating the number of milliseconds for a dimmer to ramp from 100% to 0% if it is 'clicked'. It is possible for a protocol to hide this variable after using the `hide_proxy_properties`capability in the c4i/c4z file. 
 
@@ -27,3 +27,5 @@ Cold Start Time (ID=1010) - Integer indicating the amount of time in millisecond
 ### Usage Note
 
 If a protocol driver doesn't support a particular capability (e.g., doesn't support cold-start), the corresponding registered variables won't exist. Even if certain variables don't exist it will not affect the IDs of the remaining variables.
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#hide-proxy-properties

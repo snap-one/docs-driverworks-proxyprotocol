@@ -8,13 +8,15 @@ This request is issued to obtain the device state of a specified intercom endpoi
 `C4:GET_STATE ()`
 
 
-### | Request Parameter | Description |
+| Request Parameter | Description |
 | --- | --- |
 | idDevice | This request is issued to obtain the device state of a specified intercom endpoint. |
 
 
 
 ### Request Prototype
+
+_See example to the right._
 
 ```lua
 <GET_STATE>

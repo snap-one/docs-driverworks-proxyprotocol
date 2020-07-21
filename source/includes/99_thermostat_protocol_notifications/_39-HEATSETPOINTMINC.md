@@ -1,6 +1,6 @@
 ## HEAT SETPOINT MIN C
 
-Minimum Setpoint, int 0-100 that will do the same thing as the `setpoint_heat_min` capability.
+Minimum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_min`][1] capability.
 
 
 ### Signature
@@ -16,3 +16,5 @@ Minimum Setpoint, int 0-100 that will do the same thing as the `setpoint_heat_mi
 ### Returns
 
 `None`
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

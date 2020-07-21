@@ -1,6 +1,6 @@
 ## FAN MODE CHANGED
 
-Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: `FAN_MODE`, `V1 FANMODE, ANA_FANMODE`.
+Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: [`FAN_MODE`][1], [`V1 FANMODE,`][2] [ANA_FANMODE``][3].
 
 
 ### Signature
@@ -18,3 +18,7 @@ Notification that should be sent to the proxy when Fan mode has changed. Changes
 `None`
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
