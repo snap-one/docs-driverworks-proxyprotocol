@@ -1,4 +1,4 @@
-## CAN COOL
+## CAN DEHUMIDIFY
 
 Boolean to enable/disable `can_dehumidify` capability. If the device supports this feature, default is False.
 
