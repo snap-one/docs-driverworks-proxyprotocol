@@ -5,7 +5,7 @@ This command is received from the partition proxies.
 
 ### Signature
 
-`C4:SET_PARTITION_ENABLED_FLAG ()`
+`SET_PARTITION_ENABLED_FLAG ()`
 
 
 | Parameter | Description |
@@ -16,6 +16,8 @@ This command is received from the partition proxies.
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example
 

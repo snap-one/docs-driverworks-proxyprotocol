@@ -5,7 +5,7 @@ This command is received from the partition proxies.
 
 ### Signature
 
-`C4:SET_PARTITION_NAME ()`
+`SET_PARTITION_NAME ()`
 
 
 | Parameter | Description |
@@ -16,6 +16,7 @@ This command is received from the partition proxies.
 
 ### Returns
 
-`None
-`
+\`None
 
+
+### Example

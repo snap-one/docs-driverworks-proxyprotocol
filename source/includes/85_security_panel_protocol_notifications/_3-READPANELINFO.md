@@ -5,4 +5,17 @@ Forces the driver to re-query its hardware for partition and zone settings. This
 
 ### Signature
 
-`C4:READ_PANEL_INFO ()`
+`READ_PANEL_INFO ()`
+
+
+### Parameters
+
+\`None
+
+
+### Returns
+
+\`None
+
+
+### Example

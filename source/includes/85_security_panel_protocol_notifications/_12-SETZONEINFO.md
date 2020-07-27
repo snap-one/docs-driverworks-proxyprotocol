@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:SET_ZONE_INFO ()`
+`SET_ZONE_INFO ()`
 
 
 | Parameter | Description |
@@ -17,5 +17,7 @@
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example

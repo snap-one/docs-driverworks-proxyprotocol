@@ -5,7 +5,7 @@ Command sent directly to the various partition proxies that passes the ID of the
 
 ### Signature
 
-`C4:SET_PANEL_PROXY_DEVICE_ID ()`
+`SET_PANEL_PROXY_DEVICE_ID ()`
 
 
 | Parameter | Description |
@@ -15,7 +15,9 @@ Command sent directly to the various partition proxies that passes the ID of the
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example
 
 

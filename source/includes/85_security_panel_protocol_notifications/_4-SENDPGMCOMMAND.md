@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:SEND_PGM_COMMAND ()`
+`SEND_PGM_COMMAND ()`
 
 
 | Parameter | Description |
@@ -14,9 +14,12 @@
 
 ### Returns
 
-`None
-`
+\`None
+
 
 ### Usage Note
 
 PGM refers to ProGraMable input or output.
+
+
+### Example

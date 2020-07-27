@@ -5,7 +5,7 @@ Command sent directly to the various partition proxies that passes the name of t
 
 ### Signature
 
-`C4:SET_PANEL_NAME ()`
+`SET_PANEL_NAME ()`
 
 
 | Parameter | Description |
@@ -15,9 +15,12 @@ Command sent directly to the various partition proxies that passes the name of t
 
 ### Returns
 
-`None
-`
+\`None
+
 
 ### Usage Note
 
 PGM refers to ProGraMable input or output.
+
+
+### Example

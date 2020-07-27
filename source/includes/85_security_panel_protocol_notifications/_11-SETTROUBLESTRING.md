@@ -5,7 +5,7 @@ Tell the various partitions to display the given string as trouble text.
 
 ### Signature
 
-`C4:SET_TROUBLE_STRING ()`
+`SET_TROUBLE_STRING ()`
 
 
 | Parameter | Description |
@@ -15,6 +15,7 @@ Tell the various partitions to display the given string as trouble text.
 
 ### Returns
 
-`None
-`
+\`None
 
+
+### Example

@@ -5,7 +5,7 @@ Command sent directly to the various partition proxies that passes the ID of the
 
 ### Signature
 
-`C4:SET_PANEL_TIME_DATE ()`
+`SET_PANEL_TIME_DATE ()`
 
 
 | Parameter | Description |
@@ -21,5 +21,8 @@ Command sent directly to the various partition proxies that passes the ID of the
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example
+

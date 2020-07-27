@@ -5,7 +5,7 @@ This command is received from the UI and then forwarded to send new information 
 
 ### Signature
 
-`C4:ADDITIONAL_PANEL_INFO ()`
+`ADDITIONAL_PANEL_INFO ()`
 
 
 | Parameter | Description |
@@ -18,3 +18,6 @@ This command is received from the UI and then forwarded to send new information 
 ### Returns
 
 `None`
+
+
+### Example

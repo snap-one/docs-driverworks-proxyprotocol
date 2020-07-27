@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:TOGGLE_ZONE_CONTROL ()`
+`TOGGLE_ZONE_CONTROL ()`
 
 
 | Parameter | Description |
@@ -14,5 +14,7 @@
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example

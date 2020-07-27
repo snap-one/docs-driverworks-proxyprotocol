@@ -5,7 +5,7 @@ This command is received from the UI and then forwarded to the protocol driver t
 
 ### Signature
 
-`C4:SET_PARTITION_ENABLED ()`
+`SET_PARTITION_ENABLED ()`
 
 
 | Parameter | Description |
@@ -17,5 +17,7 @@ This command is received from the UI and then forwarded to the protocol driver t
 
 ### Returns
 
-`None
-`
+\`None
+
+
+### Example
