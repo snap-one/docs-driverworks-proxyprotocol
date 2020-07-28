@@ -1,1 +1,1 @@
-# Security Partition Protocol Notifications
+# Security Partition Notifications
