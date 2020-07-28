@@ -19,3 +19,10 @@ It's possible to have partitions defined on a panel that aren't enabled. They st
 
 
 ### Example
+
+```lua
+function SetPartitionEnabled(PartitionID, Enabled)
+	local TargetBindingID = PartitionID + 5001
+	C4:SendToProxy(TargetBindingID, "PARTITION_ENABLED", { ENABLED = tostring(Enabled) }, "NOTIFY")
+end
+```
