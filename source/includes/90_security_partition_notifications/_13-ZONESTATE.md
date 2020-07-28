@@ -21,3 +21,7 @@ Reports if a specific zone is open/closed and bypassed/unbypassed.
 
 
 ### Example
+
+```lua
+C4:SendToProxy(TargetBindingID, "ZONE_STATE", { ZONE_ID = 1, ZONE_OPEN = true, ZONE_BYPASSSED = false }, "NOTIFY")
+```

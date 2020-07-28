@@ -1,4 +1,4 @@
-## REMOVE_ZONE_
+## REMOVE\_ZONE\_
 
 Tells the proxy that a particular zone is no longer a part of this partition.
 
@@ -10,7 +10,7 @@ Tells the proxy that a particular zone is no longer a part of this partition.
 
 | Parameter | Description |
 | --- | --- |
-| num | ZONE_ID: The zone ID of the zone to be removed from the partition's zone list. |
+| num | ZONE\_ID: The zone ID of the zone to be removed from the partition's zone list. |
 
 
 ### Returns
@@ -19,3 +19,7 @@ Tells the proxy that a particular zone is no longer a part of this partition.
 
 
 ### Example
+
+```lua
+C4:SendToProxy(TargetBindingID, "REMOVE_ZONE", { ZONE_ID = 1 }, "NOTIFY")
+```

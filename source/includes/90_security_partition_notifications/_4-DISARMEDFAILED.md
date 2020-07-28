@@ -20,8 +20,6 @@ An attempt to disarm the panel failed typically due to  an invalid user code.
 
 ### Example
 
-
 ```lua
 C4:SendToProxy(TargetBindingID, "DISARM_FAILED", { INTEERFACEF_ID = tostring(ID) }, "NOTIFY")
-
 ```

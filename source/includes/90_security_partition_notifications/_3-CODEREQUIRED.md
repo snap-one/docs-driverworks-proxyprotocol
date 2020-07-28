@@ -23,5 +23,4 @@ Sets a flag that Navigator will use when an arm command is attempted.  If the fl
 
 ```lua
 C4:SendToProxy(TargetBindingID, "CODE_REQUIRED", { CODE_REQUIRED_TO_ARM = true }, "NOTIFY")
-
 ```

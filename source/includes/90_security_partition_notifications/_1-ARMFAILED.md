@@ -26,5 +26,4 @@ An attempt to arm the partition failed.  The two most common reasons are because
 
 ```lua
 C4:SendToProxy(TargetBindingID, "ARM_FAILED", { ACTION = tostring(bypass) }, "NOTIFY")
-end
 ```

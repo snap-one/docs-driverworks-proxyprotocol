@@ -22,5 +22,4 @@ Tells the proxy that a particular zone is part of this partition.
 
 ```lua
 C4:SendToProxy(TargetBindingID, "HAS_ZONE", { ZONE_ID = 2 }, "NOTIFY")
-
 ```

@@ -21,8 +21,6 @@ An emergency was triggered, either from a sensor or by the user hitting one of t
 
 ### Example
 
-
 ```lua
 C4:SendToProxy(TargetBindingID, "EMERRGENCY_TRIGGERED", { TYPE = tostring(FIRE) }, "NOTIFY")
-
 ```
