@@ -25,5 +25,5 @@ An attempt to arm the partition failed.  The two most common reasons are because
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "ARM_FAILED", { ACTION = tostring(bypass) }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "ARM_FAILED", { ACTION = "bypass" }, "NOTIFY")
 ```

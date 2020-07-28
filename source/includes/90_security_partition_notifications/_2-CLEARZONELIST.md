@@ -21,5 +21,5 @@ Removes all the zones from a partition's list.  Usually precedes new messages th
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "CLEAR_ZONE_LIST" "NOTIFY")
+C4:SendToProxy(TargetBindingID, "CLEAR_ZONE_LIST", {}, "NOTIFY")
 ```

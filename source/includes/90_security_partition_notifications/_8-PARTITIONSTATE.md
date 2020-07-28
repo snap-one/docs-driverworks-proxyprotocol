@@ -25,5 +25,5 @@ Specifies which state the partition is currently in.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PARTITION_STATE", { STATE = tostring(ALARM), TYPE = tostring(BURGLARY)}, DELAY_TIME_TOTAL = 5, DELAY_TIME_TOTAL = 2, CODE_REQUIRED_TO_CLEAR = true, = "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PARTITION_STATE", { STATE = "ALARM", TYPE = "BURGLARY", DELAY_TIME_TOTAL = 5, DELAY_TIME_TOTAL = 2, CODE_REQUIRED_TO_CLEAR = true }, "NOTIFY")
 ```

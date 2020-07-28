@@ -1,6 +1,6 @@
 ## DISARM FAILED
 
-An attempt to disarm the panel failed typically due to  an invalid user code.
+Notification sent when an attempt to disarm the panel failed. This is typically due to an invalid user code.
 
 
 ### Signature
@@ -21,5 +21,5 @@ An attempt to disarm the panel failed typically due to  an invalid user code.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "DISARM_FAILED", { INTEERFACEF_ID = tostring(ID) }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "DISARM_FAILED", { INTERFACE_ID = ID }, "NOTIFY")
 ```

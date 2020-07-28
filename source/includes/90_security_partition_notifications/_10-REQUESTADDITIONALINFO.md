@@ -25,5 +25,6 @@ This notification allowS two-way communication with the keypad.  This command wi
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "REQUEST_ADDITIONAL_INFO", { PROMPT = tostring(promptstring), INFO_STRING = tostring(infostring)}, FUNCTION_NAME = tostring(functionstring), MASK_DATA = true, INTERFACE_ID = tostring(interfaceid, = "NOTIFY")
+C4:SendToProxy(TargetBindingID, "REQUEST_ADDITIONAL_INFO", { PROMPT = 
+promptstring, INFO_STRING = infostring, FUNCTION_NAME = functionstring, MASK_DATA = true, INTERFACE_ID = interfaceid }, "NOTIFY")
 ```

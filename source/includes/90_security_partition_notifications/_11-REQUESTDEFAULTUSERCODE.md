@@ -25,5 +25,5 @@ The proxy code stores the default user code if it exists for the partition.  Whe
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "REQUEST_DEFAULT_USER_CODE", {"NOTIFY")
+C4:SendToProxy(TargetBindingID, "REQUEST_DEFAULT_USER_CODE", {}, "NOTIFY")
 ```
