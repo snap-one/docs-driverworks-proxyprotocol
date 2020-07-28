@@ -1,11 +1,11 @@
-## PARTITION STATE
+## PARTITION STATE INIT
 
-Specifies which state the partition is currently in.
+Specifies which state the partition is currently in but will not cause any of the programming to be fired.  
 
 
 ### Signature
 
-`PARTITION_STATE ()`
+`PARTITION_STATE_INIT ()`
 
 
 | Parameter | Description |
