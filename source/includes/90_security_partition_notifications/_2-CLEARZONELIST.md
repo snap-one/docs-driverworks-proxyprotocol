@@ -1,4 +1,4 @@
-## CLEAR_ZONE_LIST
+## CLEAR\_ZONE\_LIST
 
 Removes all the zones from a partition's list.  Usually precedes new messages that will build that list back up.
 
@@ -19,3 +19,9 @@ Removes all the zones from a partition's list.  Usually precedes new messages th
 
 
 ### Example
+
+```lua
+	
+	C4:SendToProxy(TargetBindingID, "CLEAR_ZONE_LIST" "NOTIFY")
+
+```

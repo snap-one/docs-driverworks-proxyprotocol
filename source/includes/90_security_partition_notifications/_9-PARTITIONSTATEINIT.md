@@ -23,3 +23,7 @@ Specifies which state the partition is currently in but will not cause any of th
 
 
 ### Example
+
+```lua
+C4:SendToProxy(TargetBindingID, "PARTITION_STATE_INIT", { STATE = tostring(ALARM), TYPE = tostring(BURGLARY)}, DELAY_TIME_TOTAL = 5, DELAY_TIME_TOTAL = 2, CODE_REQUIRED_TO_CLEAR = true, = "NOTIFY")
+```
