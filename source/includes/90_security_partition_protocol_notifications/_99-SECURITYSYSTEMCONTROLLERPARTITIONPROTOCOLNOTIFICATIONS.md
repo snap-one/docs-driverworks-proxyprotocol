@@ -1,4 +1,4 @@
-## SECURITY SYSTEM CONTROLLER PARTITION PROTOCOL NOTIFICATIONS
+## SECURITY PARTITION PROTOCOL NOTIFICATIONS
 
 The following Notifications are supported by the Security System Controller Partition:
 
