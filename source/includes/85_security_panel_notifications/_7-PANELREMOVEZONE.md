@@ -3,19 +3,9 @@
 Remove a zone from the panel.  
 
 
-### Signature
-
-`PANEL_REMOVE_ZONE ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | num | ID: ID of the target zone. |
-
-
-### Returns
-
-`None`
 
 
 ### Example

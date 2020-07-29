@@ -3,19 +3,10 @@
 List trouble that the panel is having on the Composer Property Page and on each of the Navigator partition screens.  
 
 
-### Signature
-
-`TROUBLE_START ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | str | TROUBLE\_TEXT: Text listing the type of trouble. “For example: “Battery", "Communication", etc.)  |
 | num | IDENTIFIER:  Unique number for this instance of trouble. | \_ 
-
-### Returns
-
-`None`
 
 
 ### Example

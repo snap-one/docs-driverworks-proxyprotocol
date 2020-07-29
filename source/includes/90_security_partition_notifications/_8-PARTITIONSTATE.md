@@ -3,11 +3,6 @@
 Specifies which state the partition is currently in.
 
 
-### Signature
-
-`PARTITION_STATE ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | str | STATE: Supported values include: "ARMED" "ALARM" "OFFLINE" "EXIT\_DELAY" "ENTRY\_DELAY" "DISARMED\_READY" "DISARMED\_NOT\_READY" "CONFIRMATION\_REQUIRED"  |
@@ -15,11 +10,6 @@ Specifies which state the partition is currently in.
 | num | DELAY\_TIME\_TOTAL:  For Entry or Exit delays. The total time of the delay. |
 | num | DELAY\_TIME\_REMAINING: For Entry or Exit delays, the time remaining in the delay. |
 | bool | CODE\_REQUIRED\_TO\_CLEAR: "true" if a user code is now required from Navigator to change from the current state. |
-
-
-### Returns
-
-`None`
 
 
 ### Example

@@ -3,19 +3,9 @@
 Add a PGM (relay) to the panel.
 
 
-### Signature
-
-`PANEL_ADD_PGM ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | num | PGM\_ID: ID of the new PGM |
-
-
-### Returns
-
-`None`
 
 
 ### Example

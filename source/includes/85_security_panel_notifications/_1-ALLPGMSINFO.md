@@ -3,19 +3,9 @@
 Sends and XML string of all PGMs (relays) and respective PGM information.
 
 
-### Signature
-
-`ALL_PGMS_INFO ()`
-
-
 | Parameter | Description |
 | --- | --- |
-| xml | XML data. See example. | |
-
-
-### Returns
-
-`None`
+| xml | XML data. See example. |
 
 
 ### Example

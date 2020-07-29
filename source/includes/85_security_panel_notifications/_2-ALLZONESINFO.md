@@ -3,19 +3,9 @@
 Sends and XML string of all zones and respective zone information.
 
 
-### Signature
-
-`ALL_ZONES_INFO ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | xml | XML data. See example. | |
-
-
-### Returns
-
-`None`
 
 
 ### Example

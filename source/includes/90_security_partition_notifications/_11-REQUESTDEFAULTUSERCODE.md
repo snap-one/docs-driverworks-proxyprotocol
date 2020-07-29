@@ -5,19 +5,7 @@ The proxy code stores the default user code if it exists for the partition.  Whe
 #### Available from 3.2.0
 
 
-
-### Signature
-
-`REQUEST_DEFAULT_USER_CODE ()`
-
-
-
 ### Parameters
-
-`None`
-
-
-### Returns
 
 `None`
 

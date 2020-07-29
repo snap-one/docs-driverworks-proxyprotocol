@@ -3,11 +3,6 @@
 Information about a given zone that Navigator or Composer can display.  
 
 
-### Signature
-
-`PANEL_ZONE_INFO ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | num | ID: ID of the target zone. |
@@ -31,11 +26,6 @@ Information about a given zone that Navigator or Composer can display.
 | | GARAGE\_DOOR = 15 | \_
 | str | PARTITIONS: Comma-delimited string of numbers indicating which partitions this zone is a  member of.  For example, if this zone is included in both partitions 1 and 3, the string would be "1,3" | 
 | bool | IS\_OPEN: "true" = open. "false" = closed. |\_
-
-
-### Returns
-
-`None`
 
 
 ### Example
