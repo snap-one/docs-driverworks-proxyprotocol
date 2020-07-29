@@ -15,13 +15,14 @@ This capability adds the ability to display device state icons for the button. A
     <navigator_display_option proxybindingid="5001">
         <display_icons>
             <!-- Default Icon -->
-            <Icon width="300"     height="300">controller://driver/shortcutTest/icons/msp_ico_settings/msp_ico_settings_300.png</Icon>
+            <Icon width="300" height="300">controller://driver/shortcutTest/icons/msp_ico_settings/msp_ico_settings_300.png</Icon>
             <!-- On State -->
-            <state id="Settings-on"<Icon width="300"   height="300">controller://driver/shortcutTest/icons/msp_ico_settings_a/                        msp_ico_settings_a_300.png</Icon>
+            <state id="Settings-on">
+            <Icon width="300" height="300">controller://driver/shortcutTest/icons/msp_ico_settings_a/msp_ico_settings_a_300.png</Icon>
             </state>
-            <!-- Off State -->
-            <state id="Settings-off">
-                <Icon width="300"                                                         height="300">controller://driver/shortcutTest/icons/msp_ico_settings/msp_ico_settings_a_300.png</Icon>
+              <!-- Off State -->
+              <state id="Settings-off">
+              <Icon width="300" height="300">controller://driver/shortcutTest/icons/msp_ico_settings/msp_ico_settings_a_300.png</Icon>
             </state>     
         </display_icons>
     </navigator_display_option>
