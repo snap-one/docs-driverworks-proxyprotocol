@@ -23,5 +23,5 @@ Current status of a PGM (relay): open or closed
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_PGM_STATE", { PGM_ID = 1, PGM_OPEN = true, INITIALIZING = false }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_PGM_STATE", { PGM_ID = 1, PGM_OPEN = true, INITIALIZING = false } "NOTIFY")
 ```

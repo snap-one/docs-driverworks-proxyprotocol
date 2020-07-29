@@ -23,5 +23,5 @@ Lets the panel know the state of the given partition.  This is used in the  Prop
 ### Example
 
 ```lua
-C4:SendToProxy(5001, "PANEL PARTITION_STATE", {PARTITION_ID = "2", STATE = "ARMED", TYPE = "Stay",}, "NOTIFY")
+C4:SendToProxy(5001, "PANEL_PARTITION_STATE", {PARTITION_ID = 2, STATE = "ARMED", TYPE = "Stay",} "NOTIFY")
 ```

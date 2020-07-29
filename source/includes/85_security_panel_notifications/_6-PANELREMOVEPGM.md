@@ -21,5 +21,5 @@ Remove a PGM (relay) from the panel.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_REMOVE_PGM", { PGM_ID = 1 }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_REMOVE_PGM", { PGM_ID = 1 } "NOTIFY")
 ```

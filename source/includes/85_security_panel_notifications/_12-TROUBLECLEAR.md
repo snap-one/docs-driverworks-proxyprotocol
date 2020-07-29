@@ -10,7 +10,7 @@ Clear the trouble flag.
 
 | Parameter | Description |
 | --- | --- |
-| num | IDENTIFIER:  Unique number for the trouble instance that has been resolved. | _ 
+| num | IDENTIFIER:  Unique number for the trouble instance that has been resolved. | \_ 
 
 ### Returns
 
@@ -20,6 +20,6 @@ Clear the trouble flag.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "TROUBLE_CLEAR", { IDENTIFIER = 10, }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "TROUBLE_CLEAR", { IDENTIFIER = 10, } "NOTIFY")
 ```
 
