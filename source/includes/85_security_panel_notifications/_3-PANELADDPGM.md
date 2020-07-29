@@ -21,5 +21,5 @@ Add a PGM (relay) to the panel.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_ADD_PGM", { PGM_ID = 1 } "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_ADD_PGM", { PGM_ID = 1 }, "NOTIFY")
 ```

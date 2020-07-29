@@ -20,6 +20,6 @@ Clear the trouble flag.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "TROUBLE_CLEAR", { IDENTIFIER = 10, } "NOTIFY")
+C4:SendToProxy(TargetBindingID, "TROUBLE_CLEAR", { IDENTIFIER = 10 }, "NOTIFY")
 ```
 

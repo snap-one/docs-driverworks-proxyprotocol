@@ -41,5 +41,5 @@ Information about a given zone that Navigator or Composer can display.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_ZONE_INFO", { ID = 2, NAME = "ENTRYWAY", TYPE_ID = 5, PARTITIONS = "1,3", IS_OPEN = true} "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_ZONE_INFO", { ID = 2, NAME = "ENTRYWAY", TYPE_ID = 5, PARTITIONS = "1,3", IS_OPEN = true}, "NOTIFY")
 ```

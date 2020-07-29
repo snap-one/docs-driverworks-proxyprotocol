@@ -21,5 +21,5 @@ Remove a zone from the panel.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_REMOVE_ZONE", { ID = 2,} "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_REMOVE_ZONE", { ID = 2}, "NOTIFY")
 ```

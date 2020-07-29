@@ -23,5 +23,5 @@ Sends the current status of a zone:  open or closed.
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "PANEL_ZONE_STATE", { ZONE_ID = 1, ZONE_OPEN = true, INITIALIZING = false } "NOTIFY")
+C4:SendToProxy(TargetBindingID, "PANEL_ZONE_STATE", { ZONE_ID = 1, ZONE_OPEN = true, INITIALIZING = false }, "NOTIFY")
 ```
