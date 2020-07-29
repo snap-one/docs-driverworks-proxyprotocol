@@ -27,7 +27,7 @@ This is a notification that can allow two-way communication with the keypad.  Th
 
 ```lua
 C4:SendToProxy(TargetBindingID, "REQUEST_ADDITIONAL_PANEL_INFO", { PROMPT = 
-promptstring, INFO_STRING = infostring, FUNCTION_NAME = functionstring, MASK_DATA = true, INTERFACE_ID = "interfaceid" }, "NOTIFY")
+promptstring, INFO_STRING = infostring, FUNCTION_NAME = functionstring, MASK_DATA = true, INTERFACE_ID = interfaceid }, "NOTIFY")
 ```
 
 
