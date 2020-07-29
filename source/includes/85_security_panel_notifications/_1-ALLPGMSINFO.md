@@ -1,4 +1,4 @@
-## ALL_PGMS_INFO
+## ALL\_PGMS\_INFO
 
 Sends and XML string of all PGMs (relays) and respective PGM information.
 

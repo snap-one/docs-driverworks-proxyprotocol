@@ -1,4 +1,4 @@
-## ALL_ZONES_INFO
+## ALL\_ZONES\_INFO
 
 Sends and XML string of all zones and respective zone information.
 

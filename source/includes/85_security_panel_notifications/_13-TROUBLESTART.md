@@ -10,8 +10,8 @@ List trouble that the panel is having on the Composer Property Page and on each 
 
 | Parameter | Description |
 | --- | --- |
-| str | TROUBLE_TEXT: Text listing the type of trouble. “For example: “Battery", "Communication", etc.)  |
-| num | IDENTIFIER:  Unique number for this instance of trouble. | _ 
+| str | TROUBLE\_TEXT: Text listing the type of trouble. “For example: “Battery", "Communication", etc.)  |
+| num | IDENTIFIER:  Unique number for this instance of trouble. | \_ 
 
 ### Returns
 

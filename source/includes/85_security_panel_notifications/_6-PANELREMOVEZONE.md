@@ -1,4 +1,4 @@
-## PANEL_REMOVE_ ZONE
+## PANEL\_REMOVE\_ ZONE
 
 Remove a zone from the panel.  
 
