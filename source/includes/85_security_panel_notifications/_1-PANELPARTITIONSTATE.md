@@ -1,0 +1,27 @@
+## PANEL PARTITION STATE
+
+Lets the panel know the state of the given partition.  This is used in the  Properties display in ComposerPro.
+
+
+### Signature
+
+`PANEl_PARTITION_STATE ()`
+
+
+| Parameter | Description |
+| --- | --- |
+| num | PARTITION_ID: ID of the target partition. |
+| str | STATE: A string listing its state. Supported values include: "ARMED" "ALARM" "OFFLINE" "EXIT_DELAY" "ENTRY_DELAY" "DISARMED_READY" "DISARMED_NOT_READY" "CONFIRMATION_REQUIRED" |
+| str | TYPE:  Further information on the state. For example, it could be "Stay" for a type of ARMED. It could be "Burglary" for a type of ALARM. Can be "" if not needed. |
+
+
+### Returns
+
+`None`
+
+
+### Example
+
+```lua
+C4:SendToProxy(5001, "PANEL PARTITION_STATE", {PARTITION_ID = "2", STATE = "ARMED", TYPE = "Stay",}, "NOTIFY")
+```
