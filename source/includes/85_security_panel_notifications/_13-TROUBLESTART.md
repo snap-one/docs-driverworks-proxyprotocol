@@ -21,6 +21,6 @@ List trouble that the panel is having on the Composer Property Page and on each 
 ### Example
 
 ```lua
-C4:SendToProxy(TargetBindingID, "TROUBLE_START", { TROUBLE_TEXT = "Battery", IDENTIFIER = 10, }, "NOTIFY")
+C4:SendToProxy(TargetBindingID, "TROUBLE_START", { TROUBLE_TEXT = "Battery", IDENTIFIER = 10, } "NOTIFY")
 ```
 
