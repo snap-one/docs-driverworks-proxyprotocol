@@ -5,7 +5,7 @@ Selected disc has changed.
 
 ### Signature
 
-`C4:DISC_CHANGED ()`
+`DISC_CHANGED ()`
 
 
 | Parameter | Description |
