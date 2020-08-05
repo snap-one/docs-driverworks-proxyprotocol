@@ -5,7 +5,7 @@ Select specified track.
 
 ### Signature
 
-`C4:GO_TO_TRACK ()`
+`GO_TO_TRACK ()`
 
 
 | Parameter | Description |

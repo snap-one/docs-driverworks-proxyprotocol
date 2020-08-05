@@ -3,9 +3,9 @@
 Pulse ‘2’ button
 
 
-###  Signature
+### Signature
 
-`C4:Number_2 ()`
+`Number_2 ()`
 
 
 ### Parameters

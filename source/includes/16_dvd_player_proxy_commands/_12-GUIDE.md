@@ -5,7 +5,7 @@ Navigate Guide key.
 
 ### Signature
 
-`C4:GUIDE ()`
+`GUIDE ()`
 
 
 ### Parameters

@@ -3,9 +3,9 @@
 Place device in stop state.
 
 
-###  Signature
+### Signature
 
-`C4:PAUSE ()`
+`PAUSE ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Place device in stop state.
 
 ### Returns
 
-`None
-`
+\`None
+\`

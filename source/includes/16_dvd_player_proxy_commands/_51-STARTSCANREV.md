@@ -3,9 +3,9 @@
 Initiate scan forward within track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:START_SCAN_REV ()`
+`START_SCAN_REV ()`
 
 
 ### Parameters

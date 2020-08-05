@@ -5,7 +5,7 @@ Select specified disc.
 
 ### Signature
 
-`C4:GO_TO_DISC ()`
+`GO_TO_DISC ()`
 
 
 | Parameter | Description |

@@ -3,9 +3,9 @@
 Initiate right-arrow navigation.
 
 
-###  Signature
+### Signature
 
-`C4:START_RIGHT ()`
+`START_RIGHT ()`
 
 
 ### Parameters
