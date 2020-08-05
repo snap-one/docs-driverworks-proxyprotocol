@@ -1,11 +1,11 @@
-## NEW KEYPAD BUTTON 
+## NEW KEYPAD BUTTON
 
 Used to inform the proxy about the existence of a new button on the keypad. If the specified button already exists, this notification will do nothing.
 
 
 ### Signature
 
-`C4:NEW_KEYPAD_BUTTON ()`
+`NEW_KEYPAD_BUTTON ()`
 
 
 | Parameter | Description |

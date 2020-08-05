@@ -5,7 +5,7 @@ Used to set the color for all buttons on a keypad.
 
 ### Signature
 
-`C4:KEYPAD_ALL_BUTTON_COLOR ()`
+`KEYPAD_ALL_BUTTON_COLOR ()`
 
 
 | Parameter | Description |

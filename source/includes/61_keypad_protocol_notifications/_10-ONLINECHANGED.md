@@ -6,10 +6,10 @@ Used by the protocol to notify the proxy if the device is online or offline. The
 
 ### Signature
 
-`C4:ONLINE_CHANGED ()`
+`ONLINE_CHANGED ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 

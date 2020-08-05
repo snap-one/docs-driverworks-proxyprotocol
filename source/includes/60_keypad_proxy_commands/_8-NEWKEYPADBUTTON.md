@@ -5,7 +5,7 @@ Used to create a new button on the keypad. This is sent to the protocol by the p
 
 ### Signature
 
-`C4: NEW_KEYPAD_BUTTON ()`
+`NEW_KEYPAD_BUTTON ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Used by the protocol to inform the proxy of a change in color for every button o
 
 ### Signature
 
-`C4:KEYPAD_ALL_BUTTON_COLOR ()`
+`KEYPAD_ALL_BUTTON_COLOR ()`
 
 
 | Parameter | Description |

@@ -4,7 +4,7 @@ Used to send remote commands to the keypad to have it act as if a button on the 
 
 ### Signature
 
-`C4:KEYPAD_BUTTON_ACTION ()`
+`KEYPAD_BUTTON_ACTION ()`
 
 
 | Parameter | Description |

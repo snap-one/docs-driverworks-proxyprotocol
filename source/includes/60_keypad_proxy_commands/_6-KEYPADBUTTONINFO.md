@@ -5,7 +5,7 @@ Used to change the settings on a particular button.
 
 ### Signature
 
-`C4:KEYPAD_BUTTON_INFO ()`
+`KEYPAD_BUTTON_INFO ()`
 
 
 | Parameter | Description |

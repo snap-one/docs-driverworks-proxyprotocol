@@ -5,7 +5,7 @@ Used to inform (or update) the proxy of a button behavior name
 
 ### Signature
 
-`C4:BEHAVIOR_NAME ()`
+`BEHAVIOR_NAME ()`
 
 
 | Parameter | Description |

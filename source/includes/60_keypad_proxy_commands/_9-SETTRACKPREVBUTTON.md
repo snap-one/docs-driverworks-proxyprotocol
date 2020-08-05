@@ -5,7 +5,7 @@ Indicates whether the keypad should track the previous button being used. This m
 
 ### Signature
 
-`C4:SET_TRACK_PREV_BUTTON N ()`
+`SET_TRACK_PREV_BUTTON N ()`
 
 
 | Parameter | Description |

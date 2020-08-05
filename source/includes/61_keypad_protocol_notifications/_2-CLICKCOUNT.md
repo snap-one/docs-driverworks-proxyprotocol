@@ -5,7 +5,7 @@ Used to inform the proxy that a button has been clicked multiple times. This is 
 
 ### Signature
 
-`C4:CLICK_COUNT ()`
+`CLICK_COUNT ()`
 
 
 | Parameter | Description |

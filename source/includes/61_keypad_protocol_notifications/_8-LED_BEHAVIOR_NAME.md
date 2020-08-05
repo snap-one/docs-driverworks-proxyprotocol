@@ -5,7 +5,7 @@ Used to inform (or update) the proxy of a LED's behavior name
 
 ### Signature
 
-`C4:LED_BEHAVIOR_NAME ()`
+`LED_BEHAVIOR_NAME ()`
 
 
 | Parameter | Description |

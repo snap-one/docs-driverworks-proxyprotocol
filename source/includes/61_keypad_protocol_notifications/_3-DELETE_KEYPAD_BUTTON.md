@@ -5,7 +5,7 @@ Used to inform the proxy that a button is being deleted
 
 ### Signature
 
-`C4:DELETE_KEYPAD_BUTTON ()`
+`DELETE_KEYPAD_BUTTON ()`
 
 
 | Parameter | Description |

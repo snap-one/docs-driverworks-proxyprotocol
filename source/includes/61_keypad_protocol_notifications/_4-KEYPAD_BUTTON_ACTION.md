@@ -5,7 +5,7 @@ Used by the protocol to inform the proxy that some type of action occurred on a 
 
 ### Signature
 
-`C4:KEYPAD_BUTTON_ACTION ()`
+`KEYPAD_BUTTON_ACTION ()`
 
 
 | Parameter | Description |

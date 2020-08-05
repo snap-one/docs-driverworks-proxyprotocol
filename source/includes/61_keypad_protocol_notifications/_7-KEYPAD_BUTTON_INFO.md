@@ -5,7 +5,7 @@ Used by the protocol to inform the proxy of a changed setting for a particular b
 
 ### Signature
 
-`C4:KEYPAD_BUTTON_INFO ()`
+`KEYPAD_BUTTON_INFO ()`
 
 
 | Parameter | Description |

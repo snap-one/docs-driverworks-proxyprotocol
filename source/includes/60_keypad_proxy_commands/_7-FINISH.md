@@ -16,7 +16,7 @@ Valid values are:
 
 ### Signature
 
-`C4:FINISH ()`
+`FINISH ()`
 
 
 ### Returns
