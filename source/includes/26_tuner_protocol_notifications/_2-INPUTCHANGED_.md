@@ -5,7 +5,7 @@ Selected input has changed.
 
 ### Signature
 
-`C4:INPUT_CHANGED ()`
+`INPUT_CHANGED ()`
 
 
 | Parameter | Description |
@@ -33,6 +33,7 @@ A `CHANNEL_CHANGED` must be issued immediately after the `INPUT_CHANGED` in orde
 ```lua
 C4:SendToproxy(5002,'INPUTCHANGED',{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
   MAXCHANNEL=10790,CHANNELSPACING=20})
+
 C4:SendToProxy(5002,'CHANNELCHANGED',CHANNEL=10290)
 ```
 

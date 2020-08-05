@@ -5,7 +5,7 @@ Selected disc has changed.
 
 ### Signature
 
-`C4:CHANNEL_CHANGED ()`
+`CHANNEL_CHANGED ()`
 
 
 | Parameter | Description |
@@ -28,6 +28,7 @@ A CHANNEL CHANGED must be issued immediately after the INPUT CHANGED in order fo
 ```lua
 C4:SendToproxy(5002,'INPUT_CHANGED',{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
 MAXCHANNEL=10790,CHANNELSPACING=20})
+
 C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 ```
 

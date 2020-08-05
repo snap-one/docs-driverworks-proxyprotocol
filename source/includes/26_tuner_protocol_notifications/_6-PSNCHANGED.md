@@ -4,7 +4,7 @@ Text from PSN has changed.
 
 ### Signature
 
-`C4:PSN_CHANGED ()`
+`PSN_CHANGED ()`
 
 
 | Parameter | Description |

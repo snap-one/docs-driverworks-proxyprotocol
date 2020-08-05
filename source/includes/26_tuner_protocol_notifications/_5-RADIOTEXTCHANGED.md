@@ -4,7 +4,7 @@ Text from RDS has changed.
 
 ### Signature
 
-`C4:RADIO_TEXT_CHANGED ()`
+`RADIO_TEXT_CHANGED ()`
 
 
 | Parameter | Description |
