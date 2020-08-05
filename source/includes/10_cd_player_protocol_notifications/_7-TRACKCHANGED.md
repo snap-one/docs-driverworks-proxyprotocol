@@ -5,7 +5,7 @@ Selected track has changed.
 
 ### Signature
 
-`C4:TRACK_CHANGED ()`
+`TRACK_CHANGED ()`
 
 
 | Parameter | Description |

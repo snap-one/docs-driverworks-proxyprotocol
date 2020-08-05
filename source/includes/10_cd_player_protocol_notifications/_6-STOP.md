@@ -4,7 +4,7 @@ Device has entered a stopped state.
 
 ### Signature
 
-`C4:STOP ()`
+`STOP ()`
 
 
 ### Parameter

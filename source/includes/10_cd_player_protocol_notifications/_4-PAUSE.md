@@ -4,10 +4,10 @@ Device is paused.
 
 ### Signature
 
-`C4:PAUSE ()`
+`PAUSE ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 
