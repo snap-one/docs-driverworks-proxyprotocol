@@ -5,7 +5,7 @@ Composer Pro command to set the HTTP Port
 
 ### Signature
 
-`C4: SET_HTTP_PORT ()`
+`SET_HTTP_PORT ()`
 
 
 | Parameter | Description |

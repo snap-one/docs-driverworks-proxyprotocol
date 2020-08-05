@@ -5,7 +5,7 @@ Pan to the left.
 
 ### Signature
 
-`C4:PAN_LEFT ()`
+`PAN_LEFT ()`
 
 
 ### Parameters

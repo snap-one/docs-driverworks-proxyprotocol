@@ -5,7 +5,7 @@ Move the camera to its home position.
 
 ### Signature
 
-`C4:HOME ()`
+`HOME ()`
 
 
 ### Parameters

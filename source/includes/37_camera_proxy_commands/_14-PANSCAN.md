@@ -5,7 +5,7 @@ Have the camera execute a complete scan from left to right.
 
 ### Signature
 
-`C4:PAN_SCAN ()`
+`PAN_SCAN ()`
 
 
 ### Parameters

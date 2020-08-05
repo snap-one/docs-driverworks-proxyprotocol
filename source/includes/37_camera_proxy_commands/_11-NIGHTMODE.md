@@ -5,7 +5,7 @@ Enable/disable night mode.
 
 ### Signature
 
-`C4:NIGHT_MODE ()`
+`NIGHT_MODE ()`
 
 
 | Parameter | Description |

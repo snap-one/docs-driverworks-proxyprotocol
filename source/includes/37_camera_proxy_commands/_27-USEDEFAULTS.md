@@ -1,10 +1,10 @@
-## USE DEFULTS
+## USE DEFAULTS
 
 Command to use the camera's factory defaults as defined by the driver capabilities.
 
 ### Signature
 
-`C4:USE_DEFAULTS ()`
+`USE_DEFAULTS ()`
 
 
 ### Parameters

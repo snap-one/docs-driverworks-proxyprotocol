@@ -5,7 +5,7 @@ Composer Pro command used in the Camera Test/Validation area. Verifies the camer
 
 ### Signature
 
-`C4:CHECK_ADDRESS_PORT ()`
+`CHECK_ADDRESS_PORT ()`
 
 
 | Parameter | Description |

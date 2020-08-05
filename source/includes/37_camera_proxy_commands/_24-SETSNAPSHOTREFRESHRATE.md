@@ -5,7 +5,7 @@ Sets image refresh rate in seconds.
 
 ### Signature
 
-`C4: SET_SNAPSHOT_REFRESH_RATE ()`
+`SET_SNAPSHOT_REFRESH_RATE ()`
 
 
 | Parameter | Description |

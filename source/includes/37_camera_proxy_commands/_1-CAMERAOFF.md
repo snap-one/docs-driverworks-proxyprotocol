@@ -5,7 +5,7 @@ Command to turn camera image capturing off.
 
 ### Signature
 
-`C4:CAMERA_OFF ()`
+`CAMERA_OFF ()`
 
 
 ### Parameters

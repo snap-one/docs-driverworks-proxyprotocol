@@ -5,7 +5,7 @@ Composer Pro command to set whether or not the camera can be accessed from publi
 
 ### Signature
 
-`C4: SET_PUBLICLY_ACCESSIBLE ()`
+`SET_PUBLICLY_ACCESSIBLE ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Tilt camera down.
 
 ### Signature
 
-`C4:TILT_UP ()`
+`TILT_UP ()`
 
 
 ### Parameters

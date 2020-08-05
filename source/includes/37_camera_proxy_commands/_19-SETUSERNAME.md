@@ -5,7 +5,7 @@ Composer Pro command to set the Authentication username.
 
 ### Signature
 
-`C4: SET_USERNAME ()`
+`SET_USERNAME ()`
 
 
 | Parameter | Description |

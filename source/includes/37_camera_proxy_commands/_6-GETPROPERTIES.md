@@ -5,7 +5,7 @@ Command called once by a UI entity to learn how to access a camera. It returns a
 
 ### Signature
 
-`C4:GET_PROPERTIES ()`
+`GET_PROPERTIES ()`
 
 
 ### Returns

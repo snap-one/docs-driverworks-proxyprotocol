@@ -5,7 +5,7 @@ Have the camera move to location x and y within the specified window.
 
 ### Signature
 
-`C4: MOVE_TO ()`
+`MOVE_TO ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Command that is initiated in Composer Pro and immediately returns a block of XML
 
 ### Signature
 
-`C4:GET_MJPEG_QUERY ()`
+`GET_MJPEG_QUERY ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Set the camera to preset location.
 
 ### Signature
 
-`C4:NIGHT_MODE ()`
+`NIGHT_MODE ()`
 
 
 | Parameter | Description |

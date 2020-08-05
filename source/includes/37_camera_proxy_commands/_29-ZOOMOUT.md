@@ -4,7 +4,7 @@ Zoom camera out.
 
 ### Signature
 
-`C4:ZOOM_OUT ()`
+`ZOOM_OUT ()`
 
 
 ### Parameters

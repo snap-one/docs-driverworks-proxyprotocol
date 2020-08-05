@@ -5,7 +5,7 @@ Composer Pro command to set whether or not authentication is required
 
 ### Signature
 
-`C4: SET_AUTHENTICATION_TYPE ()`
+`SET_AUTHENTICATION_TYPE ()`
 
 
 | Parameter | Description |

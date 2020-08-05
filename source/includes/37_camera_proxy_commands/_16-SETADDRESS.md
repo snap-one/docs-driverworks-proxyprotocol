@@ -5,7 +5,7 @@ Set the camera address.
 
 ### Signature
 
-`C4:SET_ADDRESS ()`
+`SET_ADDRESS ()`
 
 
 | Parameter | Description |

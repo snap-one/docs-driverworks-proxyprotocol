@@ -5,7 +5,7 @@ Command to turn camera image capturing on.
 
 ### Signature
 
-`C4:CAMERA_ON ()`
+`CAMERA_ON ()`
 
 
 ### Parameters

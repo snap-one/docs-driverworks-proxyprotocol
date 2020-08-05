@@ -5,7 +5,7 @@ Composer Pro Command to set the Rapid Spanning Tree Protocol port.
 
 ### Signature
 
-`C4: SET_RSTP_PORT ()`
+`SET_RSTP_PORT ()`
 
 
 | Parameter | Description |

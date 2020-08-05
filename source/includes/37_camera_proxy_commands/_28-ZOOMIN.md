@@ -4,7 +4,7 @@ Zoom canera in.
 
 ### Signature
 
-`C4:ZOOM_IN ()`
+`ZOOM_IN ()`
 
 
 ### Parameters
