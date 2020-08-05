@@ -39,7 +39,7 @@ pool_setup>
             <type>LIST</type>
             <provides_selected_item>false</provides_selected_item>
             <name>Light Dimmer Jandy Colors</name>
-            <items>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Garnet Red,Violet,Color Splash</			items>
+            <items>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Garnet Red,Violet,Color Splash</items>
         </aux_type>
         <aux_type>
             <type>LIST</type>
@@ -51,13 +51,13 @@ pool_setup>
             <type>LIST</type>
             <provides_selected_item>false</provides_selected_item>
             <name>Light Dimmer Hayward Color Logic</name>
-            <items>Off,Voodoo Lounge,Deep Blue Sea,Afternoon Skies,Emerald,Sangria,Cloud White,Twilight,Tranquility,Gemstone,USA,Mardi Gras,Cool Cabaret</			items>
+            <items>Off,Voodoo Lounge,Deep Blue Sea,Afternoon Skies,Emerald,Sangria,Cloud White,Twilight,Tranquility,Gemstone,USA,Mardi Gras,Cool Cabaret</items>
         </aux_type>
         <aux_type>
             <type>LIST</type>
             <provides_selected_item>false</provides_selected_item>
             <name>Light Dimmer Jandy LED Water Colors</name>
-            <items>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Violet,Slow Color Splash,Fast 		Color Splash,USA,Fat Tuesday,Disco Tech</items>
+            <items>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Violet,Slow Color Splash,Fast Color Splash,USA,Fat Tuesday,Disco Tech</items>
         </aux_type>
         <aux_type>
             <type>LIST</type>
