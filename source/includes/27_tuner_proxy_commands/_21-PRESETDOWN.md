@@ -5,7 +5,7 @@ Toggle (cycle down) tuning preset.
 
 ### Signature
 
-`C4:PRESET_DOWN ()`
+`PRESET_DOWN ()`
 
 
 ### Parameters

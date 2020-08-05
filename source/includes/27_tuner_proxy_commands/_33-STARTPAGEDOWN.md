@@ -5,7 +5,7 @@ Start menu Page down.
 
 ### Signature
 
-`C4:START_PAGE_DOWN ()`
+`START_PAGE_DOWN ()`
 
 
 ### Parameters

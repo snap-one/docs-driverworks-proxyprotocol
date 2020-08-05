@@ -5,7 +5,7 @@ Pulse Back button
 
 ### Signature
 
-`C4:BACK ()`
+`BACK ()`
 
 
 ### Parameters

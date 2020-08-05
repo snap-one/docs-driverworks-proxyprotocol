@@ -3,9 +3,9 @@
 Stop ramping channel down.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_CH_DOWN ()`
+`STOP_CH_DOWN ()`
 
 
 ### Parameters

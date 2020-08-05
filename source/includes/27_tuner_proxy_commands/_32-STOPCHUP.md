@@ -3,9 +3,9 @@
 StOP ramping channel UP.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_CH_UP ()`
+`STOP_CH_UP ()`
 
 
 ### Parameters

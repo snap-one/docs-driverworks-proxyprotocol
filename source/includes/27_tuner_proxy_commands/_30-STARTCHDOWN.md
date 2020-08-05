@@ -3,9 +3,9 @@
 Start ramping channel down.
 
 
-###  Signature
+### Signature
 
-`C4:START_CH_DOWN ()`
+`START_CH_DOWN ()`
 
 
 ### Parameters

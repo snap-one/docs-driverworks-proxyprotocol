@@ -3,9 +3,9 @@
 Start ramping channel UP.
 
 
-###  Signature
+### Signature
 
-`C4:START_CH_UP ()`
+`START_CH_UP ()`
 
 
 ### Parameters
