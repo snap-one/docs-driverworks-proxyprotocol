@@ -152,9 +152,8 @@ An XML block indicating the default schedule for the device.  Mutually exclusive
 
 
 `<schedule_entry></schedule_entry>`
-There is one of these entries for each schedule entry during the day. In the example used here, there are six of them. Name indicates the name of the entry that will show up in composer and navigator. Time indicates what time during the day this entry will become active. The time units are minutes since midnight, so 360 means 6:00AM. Enabled indicates whether or not this entry is initially enabled or not. Valid values: True/False. 
+There is one of these entries for each schedule entry during the day. In the example used here, there are six of them. Name indicates the name of the entry that will show up in composer and navigator. Time indicates what time during the day this entry will become active. The time units are minutes since midnight, so 360 means 6:00AM. Enabled indicates whether or not this entry is initially enabled or not. Valid values: True/False. See example to the right.
 
-### Example
 
 ```xml
 <schedule_day_info>
