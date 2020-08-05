@@ -3,9 +3,9 @@
 Pulse menu Page down.
 
 
-###  Signature
+### Signature
 
-`C4:PAGE_DOWN ()`
+`PAGE_DOWN ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Toggle loudness on/off.
 
 ### Signature
 
-`C4:LOUDNESS_TOGGLE ()`
+`LOUDNESS_TOGGLE ()`
 
 
 | Parameter | Description |

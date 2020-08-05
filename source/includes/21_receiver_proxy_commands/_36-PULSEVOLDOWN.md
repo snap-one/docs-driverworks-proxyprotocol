@@ -5,7 +5,7 @@ Pulse volume level down.
 
 ### Signature
 
-`C4:PULSE_VOL_DOWN`
+`PULSE_VOL_DOWN`
 
 
 | Parameter | Description |

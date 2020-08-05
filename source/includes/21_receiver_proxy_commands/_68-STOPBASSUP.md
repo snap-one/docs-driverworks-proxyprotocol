@@ -5,7 +5,7 @@ Stop ramping bass
 
 ### Signature
 
-`C4:STOP_BASS_UP ()`
+`STOP_BASS_UP ()`
 
 
 | Parameter | Description |

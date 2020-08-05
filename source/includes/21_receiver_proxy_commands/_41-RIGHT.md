@@ -5,7 +5,7 @@ Pulse RIGHT Navigation.
 
 ### Signature
 
-`C4:RIGHT ()`
+`RIGHT ()`
 
 
 ### Parameters

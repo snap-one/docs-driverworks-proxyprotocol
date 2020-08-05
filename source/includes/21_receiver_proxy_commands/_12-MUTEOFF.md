@@ -5,7 +5,7 @@ Toggle loudness on/off.
 
 ### Signature
 
-`C4:MUTE_OFF ()`
+`MUTE_OFF ()`
 
 
 | Parameter | Description |

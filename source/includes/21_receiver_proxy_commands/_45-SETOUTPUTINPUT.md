@@ -5,7 +5,7 @@ Specify input and output selection of device.
 
 ### Signature
 
-`C4:SET_OUTPUT_INPUT ()`
+`SET_OUTPUT_INPUT ()`
 
 
 | Parameter | Description |

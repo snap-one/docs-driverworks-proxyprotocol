@@ -5,7 +5,7 @@ Pulse bass up.
 
 ### Signature
 
-`C4:PULSE_BASS_UP ()`
+`PULSE_BASS_UP ()`
 
 
 ### Parameters
