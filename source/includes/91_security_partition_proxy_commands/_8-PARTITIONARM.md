@@ -3,11 +3,6 @@
 Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. Specifies the user code to use with the arm command (if needed).
 
 
-### Signature
-
-`C4:PARTITION_ARM()`
-
-
 | Parameter | Description |
 | --- | --- |
 | str | ArmType: Request the partition to arm. |

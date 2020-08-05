@@ -3,11 +3,6 @@
 Display the given string in the trouble text field.
 
 
-### Signature
-
-`C4:SET_ZONE_INFO ()`
-
-
 | Parameter | Description |
 | --- | --- |
 | int | ID: ID of the targeted zone. |
