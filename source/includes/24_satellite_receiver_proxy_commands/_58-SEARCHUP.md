@@ -3,9 +3,9 @@
 Pulse tuning search UP
 
 
-###  Signature
+### Signature
 
-`C4: SEARCH_UP ()`
+`SEARCH_UP ()`
 
 
 ### Parameters

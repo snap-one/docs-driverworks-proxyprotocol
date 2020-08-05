@@ -5,7 +5,7 @@ Pulse info button.
 
 ### Signature
 
-`C4:GUIDE ()`
+`GUIDE ()`
 
 
 ### Parameters

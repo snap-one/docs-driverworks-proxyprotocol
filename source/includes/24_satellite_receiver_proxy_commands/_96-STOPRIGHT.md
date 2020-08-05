@@ -3,9 +3,9 @@
 Stop right arrow navigation.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_RIGHT ()`
+`STOP_RIGHT ()`
 
 
 ### Parameters

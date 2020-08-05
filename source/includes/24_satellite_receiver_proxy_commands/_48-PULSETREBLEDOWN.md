@@ -1,11 +1,11 @@
-##  PULSE TREBLE DOWN
+## PULSE TREBLE DOWN
 
 Pulse treble down.
 
 
 ### Signature
 
-`C4:PULSE_TREBLE_DOWN ()`
+`PULSE_TREBLE_DOWN ()`
 
 
 | Parameter | Description |

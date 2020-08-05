@@ -3,9 +3,9 @@
 Pulse/scan forward within track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:SCAN_FWD ()`
+`SCAN_FWD ()`
 
 
 ### Parameters

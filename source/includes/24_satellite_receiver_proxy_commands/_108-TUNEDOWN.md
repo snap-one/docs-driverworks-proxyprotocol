@@ -3,9 +3,9 @@
 Toggle (cycle down) frequency or channel
 
 
-###  Signature
+### Signature
 
-`C4:TUNE_DOWN ()`
+`TUNE_DOWN ()`
 
 
 ### Parameters

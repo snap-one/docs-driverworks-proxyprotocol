@@ -6,7 +6,7 @@ PULSE DOWN NAVIGATION
 
 ### Signature
 
-`C4:DOWN ()`
+`DOWN ()`
 
 
 ### Parameter

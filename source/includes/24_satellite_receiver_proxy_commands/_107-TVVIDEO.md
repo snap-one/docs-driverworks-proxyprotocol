@@ -5,7 +5,7 @@ Toggle TV/video input.
 
 ### Signature
 
-`C4:TV_VIDEO ()`
+`TV_VIDEO ()`
 
 
 ### Parameters

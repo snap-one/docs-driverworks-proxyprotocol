@@ -3,9 +3,9 @@
 Open/Close disc tray.
 
 
-###  Signature
+### Signature
 
-`C4:OPEN_CLOSE ()`
+`OPEN_CLOSE ()`
 
 
 ### Parameters

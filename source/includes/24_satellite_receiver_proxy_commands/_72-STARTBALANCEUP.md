@@ -5,7 +5,7 @@ Start ramping balance up (right).
 
 ### Signature
 
-`C4:START_BALANCE_UP ()`
+`START_BALANCE_UP ()`
 
 
 | Parameter | Description |

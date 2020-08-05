@@ -5,7 +5,7 @@ Start ramping channel up.
 
 ### Signature
 
-`C4:START_CHANNEL_UP ()`
+`START_CHANNEL_UP ()`
 
 
 ### Parameter

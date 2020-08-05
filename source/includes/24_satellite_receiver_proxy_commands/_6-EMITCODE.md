@@ -5,7 +5,7 @@ Emit IR/Serial code.
 
 ### Signature
 
-`C4:EMIT_CODE ()`
+`EMIT_CODE ()`
 
 
 | Parameter | Description |

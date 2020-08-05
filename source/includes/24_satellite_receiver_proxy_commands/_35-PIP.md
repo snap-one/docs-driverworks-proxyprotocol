@@ -3,9 +3,9 @@
 Pulse menu PIP button.
 
 
-###  Signature
+### Signature
 
-`C4:PIP ()`
+`PIP ()`
 
 
 | Parameter | Description |

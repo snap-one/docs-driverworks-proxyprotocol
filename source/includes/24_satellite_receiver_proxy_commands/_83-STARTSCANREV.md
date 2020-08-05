@@ -5,7 +5,7 @@ Initiate scan backward within track/chapter.
 
 ### Signature
 
-`C4:START_SCAN_REV ()`
+`START_SCAN_REV ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Initiate scan backward within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None
+`

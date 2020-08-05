@@ -5,7 +5,7 @@ Set specified tuning preset
 
 ### Signature
 
-`C4:SET_PRESET () `
+`SET_PRESET () `
 
 
 | Parameter | Description |

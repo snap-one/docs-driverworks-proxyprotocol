@@ -5,7 +5,7 @@ Toggle muting on/off.
 
 ### Signature
 
-`C4:MUTE_TOGGLE ()`
+`MUTE_TOGGLE ()`
 
 
 | Parameter | Description |

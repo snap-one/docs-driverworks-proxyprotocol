@@ -3,9 +3,9 @@
 Pulse scan reverse within track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:SCAN_REV ()`
+`SCAN_REV ()`
 
 
 ### Parameters

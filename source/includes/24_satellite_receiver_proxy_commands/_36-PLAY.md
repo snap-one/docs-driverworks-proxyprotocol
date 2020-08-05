@@ -3,9 +3,9 @@
 Place device in a playback state.
 
 
-###  Signature
+### Signature
 
-`C4:PLAY ()`
+`PLAY ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Place device in pause state.
 
 ### Signature
 
-`C4:PAUSE ()`
+`PAUSE ()`
 
 
 ### Parameters

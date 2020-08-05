@@ -3,9 +3,9 @@
 Initiate tuning search up.
 
 
-###  Signature
+### Signature
 
-`C4:START_SEARCH_UP ()`
+`START_SEARCH_UP ()`
 
 
 ### Parameters

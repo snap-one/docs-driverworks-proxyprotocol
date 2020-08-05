@@ -3,9 +3,9 @@
 Swap page UP/DOWN buttons (used by AVGen)
 
 
-###  Signature
+### Signature
 
-`C4:POUND ()`
+`POUND ()`
 
 
 | Parameter | Description |

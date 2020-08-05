@@ -5,7 +5,7 @@ Pulse left navigation button.
 
 ### Signature
 
-`C4:LEFT ()`
+`LEFT ()`
 
 
 ### Parameters

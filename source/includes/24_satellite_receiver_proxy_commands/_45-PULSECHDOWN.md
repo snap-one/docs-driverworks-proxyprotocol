@@ -5,7 +5,7 @@ Pulse channel value down.
 
 ### Signature
 
-`C4:PULSE_CHANNEL_DOWN ()`
+`PULSE_CHANNEL_DOWN ()`
 
 
 ### Parameters
