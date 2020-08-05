@@ -5,7 +5,7 @@ Selected balance level has changed.
 
 ### Signature
 
-`C4:BALANCE_LEVEL_CHANGED ()`
+`BALANCE_LEVEL_CHANGED ()`
 
 
 | Parameter | Description |
