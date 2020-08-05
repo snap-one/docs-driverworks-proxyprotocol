@@ -3,9 +3,9 @@
 Pulse Right Navigation button.
 
 
-###  Signature
+### Signature
 
-`C4:RIGHT ()`
+`RIGHT ()`
 
 
 ### Parameters

@@ -3,9 +3,9 @@
 Terminate scan forward within track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_SCAN_FWD ()`
+`STOP_SCAN_FWD ()`
 
 
 ### Parameters

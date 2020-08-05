@@ -3,9 +3,9 @@
 Seek to previous track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:SKIP_REV ()`
+`SKIP_REV ()`
 
 
 ### Parameters

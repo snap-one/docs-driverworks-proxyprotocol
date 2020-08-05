@@ -3,9 +3,9 @@
 Pulse ‘7’ button
 
 
-###  Signature
+### Signature
 
-`C4:Number_7 ()`
+`Number_7 ()`
 
 
 ### Parameters

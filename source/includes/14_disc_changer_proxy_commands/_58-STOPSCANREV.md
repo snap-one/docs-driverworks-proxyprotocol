@@ -3,9 +3,9 @@
 Terminate reverse scan within track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_SCAN_REV ()`
+`STOP_SCAN_REV ()`
 
 
 ### Parameters

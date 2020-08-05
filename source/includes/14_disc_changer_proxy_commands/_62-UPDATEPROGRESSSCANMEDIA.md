@@ -5,7 +5,7 @@ Notification of the progress of the current media scan
 
 ### Signature
 
-`C4: UPDATE_PROGRESS_SCAN_MEDIA ()`
+`UPDATE_PROGRESS_SCAN_MEDIA ()`
 
 
 | Parameter | Description |

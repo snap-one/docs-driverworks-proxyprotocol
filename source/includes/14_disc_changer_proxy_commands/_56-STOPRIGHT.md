@@ -3,9 +3,9 @@
 Terminate RIGHT navigation.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_RIGHT ()`
+`STOP_RIGHT ()`
 
 
 ### Parameters
@@ -15,5 +15,4 @@ Terminate RIGHT navigation.
 
 ### Returns
 
-`None
-`
+`None`

@@ -3,9 +3,9 @@
 Advance to next track/chapter.
 
 
-###  Signature
+### Signature
 
-`C4:SKIP_FWD ()`
+`CSKIP_FWD ()`
 
 
 ### Parameters

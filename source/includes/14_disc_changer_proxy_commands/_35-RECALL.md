@@ -3,9 +3,9 @@
 Pulse Recall button.
 
 
-###  Signature
+### Signature
 
-`C4:RECALL ()`
+`RECALL ()`
 
 
 ### Parameters

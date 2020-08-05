@@ -5,7 +5,7 @@ Navigate menu.
 
 ### Signature
 
-`C4:MENU ()`
+`MENU ()`
 
 
 ### Parameters
