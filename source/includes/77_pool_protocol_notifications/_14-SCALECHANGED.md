@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the Temperature scale has changed.
 
 ### Signature
 
-`C4:SCALE_CHANGED ()`
+`SCALE_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the air temperature has changed
 
 ### Signature
 
-`C4:AIR_TEMP_CHANGED ()`
+`AIR_TEMP_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Sent to the proxy to indicate that there is a Pool available on this controller.
 
 ### Signature
 
-`C4:HAS_POOL_CHANGED ()`
+`HAS_POOL_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the spa temperature has changed.
 
 ### Signature
 
-`C4:SPA_TEMP_CHANGED ()`
+`SPA_TEMP_CHANGED ()`
 
 
 | Parameter | Description |

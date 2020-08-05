@@ -5,7 +5,7 @@ Received from the proxy when the auxiliary mode has been changed.
 
 ### Signature
 
-`C4:SET_AUX_MODE ()`
+`SET_AUX_MODE ()`
 
 
 | Parameter | Description |

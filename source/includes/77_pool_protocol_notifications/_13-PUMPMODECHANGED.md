@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the pump mode has changed.
 
 ### Signature
 
-`C4:PUMP_MODE_CHANGED ()`
+`PUMP_MODE_CHANGED ()`
 
 
 | Parameter | Description |

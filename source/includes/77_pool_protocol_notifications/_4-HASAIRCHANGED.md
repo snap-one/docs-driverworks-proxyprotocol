@@ -5,7 +5,7 @@ Sent to the proxy to indicate that there is an outdoor air temperature available
 
 ### Signature
 
-`C4:HAS_AIR_CHANGED ()`
+`HAS_AIR_CHANGED ()`
 
 
 | Parameter | Description |

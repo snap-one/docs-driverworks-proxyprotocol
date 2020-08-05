@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the setpoint on the pool controller has chang
 
 ### Signature
 
-`C4:POOL_SETPOINT_CHANGED ()`
+`POOL_SETPOINT_CHANGED ()`
 
 
 | Parameter | Description |

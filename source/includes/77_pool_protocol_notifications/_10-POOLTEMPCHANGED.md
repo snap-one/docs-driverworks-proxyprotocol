@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the pool temperature has changed.
 
 ### Signature
 
-`C4:POOL_TEMP_CHANGED ()`
+`POOL_TEMP_CHANGED ()`
 
 
 | Parameter | Description |

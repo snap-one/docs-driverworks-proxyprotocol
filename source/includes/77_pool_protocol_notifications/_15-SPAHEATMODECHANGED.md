@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the spa heat mode has changed.
 
 ### Signature
 
-`C4:SPA_HEATMODE_CHANGED ()`
+`SPA_HEATMODE_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro
 
 ### Signature
 
-`C4:POOL_PUMPMODES_LIST_CHANGED ()`
+`POOL_PUMPMODES_LIST_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro
 
 ### Signature
 
-`C4:NUM_AUXS_CHANGED ()`
+`NUM_AUXS_CHANGED ()`
 
 
 | Parameter | Description |

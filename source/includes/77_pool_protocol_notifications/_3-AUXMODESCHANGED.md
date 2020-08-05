@@ -5,7 +5,7 @@ Notification sent to the proxy to indicate whether Aux Buttons on the right side
 
 ### Signature
 
-`C4:AUX_MODE_CHANGED ()`
+`AUX_MODE_CHANGED ()`
 
 
 | Parameter | Description |

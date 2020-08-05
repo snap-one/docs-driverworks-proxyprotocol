@@ -5,7 +5,7 @@ Sent to the proxy to indicate whether the ‘Spa’ Aux button on the right side
 
 ### Signature
 
-`C4:SPA_MODE_CHANGED ()`
+`SPA_MODE_CHANGED ()`
 
 
 | Parameter | Description |

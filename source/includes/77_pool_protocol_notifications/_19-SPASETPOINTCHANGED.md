@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the temperature setpoint on the spa controlle
 
 ### Signature
 
-`C4:SPA_SETPOINT_CHANGED ()`
+`SPA_SETPOINT_CHANGED ()`
 
 
 | Parameter | Description |

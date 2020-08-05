@@ -5,7 +5,7 @@ This notification provides a way to override capabilities.
 
 ### Signature
 
-`C4:AUX_NAMES_CHANGED ()`
+`AUX_NAMES_CHANGED ()`
 
 
 | Parameter | Description |

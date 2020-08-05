@@ -5,7 +5,7 @@ Sent to the proxy to indicate that the pool heat mode has changed.
 
 ### Signature
 
-`C4:POOL_HEATMODE_CHANGED ()`
+`POOL_HEATMODE_CHANGED ()`
 
 
 | Parameter | Description |
