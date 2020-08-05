@@ -5,7 +5,7 @@ Contact remains in the opened state.
 
 ### Signature
 
-`C4:STATE_OPENED ()` 
+`STATE_OPENED ()` 
 
 
 ### Parameters

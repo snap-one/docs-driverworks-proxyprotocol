@@ -5,7 +5,7 @@ Function that supports the ability for the driver to dynamically change the web 
 
 ### Signature
 
-`C4:URL_CHANGED ()` 
+`URL_CHANGED ()` 
 
 
 | Parameter | Description |

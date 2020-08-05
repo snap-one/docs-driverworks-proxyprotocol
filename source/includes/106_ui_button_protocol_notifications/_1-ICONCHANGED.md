@@ -5,7 +5,7 @@ Command sent to the proxy when the icon state has changed.
 
 ### Signature
 
-`C4:ICON_CHANGED ()` 
+`ICON_CHANGED ()` 
 
 
 | Parameter | Description |
@@ -22,4 +22,5 @@ Command sent to the proxy when the icon state has changed.
 ### Example
 
 `C4:SendToProxy(5001, "ICON_CHANGED", {icon="Settings-on", icon_description="Settings are on"})`
+
 

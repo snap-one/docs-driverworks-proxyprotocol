@@ -5,7 +5,7 @@ OPEN relay.
 
 ### Signature
 
-`C4:OPEN ()` 
+`OPEN ()` 
 
 
 ### Parameters

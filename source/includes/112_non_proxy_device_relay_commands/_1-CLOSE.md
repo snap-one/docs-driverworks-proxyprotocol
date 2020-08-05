@@ -5,7 +5,7 @@ Close relay.
 
 ### Signature
 
-`C4:CLOSE ()` 
+`CLOSE ()` 
 
 
 ### Parameters

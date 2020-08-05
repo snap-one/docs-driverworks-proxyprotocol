@@ -5,7 +5,7 @@ Contact has opened.
 
 ### Signature
 
-`C4:OPENED ()` 
+`OPENED ()` 
 
 
 ### Parameters

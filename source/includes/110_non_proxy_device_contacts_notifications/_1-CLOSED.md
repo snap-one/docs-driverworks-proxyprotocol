@@ -5,7 +5,7 @@ Contact has closed.
 
 ### Signature
 
-`C4:CLOSED ()` 
+`CLOSED ()` 
 
 
 ### Parameters

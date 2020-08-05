@@ -5,7 +5,7 @@ This command comes from the UI when a user selects the shortcut for the button. 
 
 ### Signature
 
-`C4:SELECT ()`
+`SELECT ()`
 
 
 | Parameter | Description |

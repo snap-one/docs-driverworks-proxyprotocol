@@ -5,7 +5,7 @@ TOGGLE relay.
 
 ### Signature
 
-`C4:TOGGLE ()` 
+`TOGGLE ()` 
 
 
 ### Parameters

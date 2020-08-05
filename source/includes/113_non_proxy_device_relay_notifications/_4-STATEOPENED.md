@@ -5,7 +5,7 @@ Relay remains in the open state. Does not indicate a change in state.
 
 ### Signature
 
-`C4:STATE_OPENED ()` 
+`STATE_OPENED ()` 
 
 
 ### Parameters

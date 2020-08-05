@@ -5,7 +5,7 @@ TRIGGER relay.
 
 ### Signature
 
-`C4:TRIGGER ()` 
+`TRIGGER ()` 
 
 
 | Parameter | Description |
