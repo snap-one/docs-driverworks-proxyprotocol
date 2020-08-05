@@ -4,7 +4,7 @@ Received from the protocol when the power goes from on to off.  Would not be req
 
 ### Signature
 
-`C4:OFF ()`
+`OFF ()`
 
 
 ### Parameters

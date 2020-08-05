@@ -5,7 +5,7 @@ Received from the protocol driver when the fan speed changes. This would also ha
 
 ### Signature
 
-`C4:CURRENT_SPEED ()`
+`CURRENT_SPEED ()`
 
 
 | Parameter | Description |

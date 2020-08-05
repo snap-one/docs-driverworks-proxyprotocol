@@ -5,7 +5,7 @@ Received from the protocol driver when the fan direction changes.
 
 ### Signature
 
-`C4:DIRECTION ()`
+`DIRECTION ()`
 
 
 | Parameter | Description |

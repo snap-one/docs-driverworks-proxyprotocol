@@ -5,7 +5,7 @@ Received from the proxy when the preset speed changes.
 
 ### Signature
 
-`C4:PRESET_SPEED ()`
+`PRESET_SPEED ()`
 
 
 | Parameter | Description |

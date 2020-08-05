@@ -5,7 +5,7 @@ Received from the protocol when the power goes from off to on. The proxy would a
 
 ### Signature
 
-`C4:ON ()`
+`ON ()`
 
 
 ### Parameters
