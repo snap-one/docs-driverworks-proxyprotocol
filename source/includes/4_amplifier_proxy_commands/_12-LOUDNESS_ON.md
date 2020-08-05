@@ -5,7 +5,7 @@
 
 ### Signature
 
-`C4:LOUDNESS_ON ()`
+`LOUDNESS_ON ()`
 
 
 | Parameter | Description |

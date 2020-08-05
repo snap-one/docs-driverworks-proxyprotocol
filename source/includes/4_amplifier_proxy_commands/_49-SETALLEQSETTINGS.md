@@ -5,7 +5,7 @@ Set balance to a specified position.
 
 ### Signature
 
-`C4:SET_ALL_EQ_SETTINGS ()`
+`SET_ALL_EQ_SETTINGS ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Used with the v.3 amp to turn digital inputs off.
 
 ### Signature
 
-`C4:SET_DIGI_OFF ()`
+`SET_DIGI_OFF ()`
 
 
 ### Parameters

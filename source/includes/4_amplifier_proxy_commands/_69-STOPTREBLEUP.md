@@ -4,7 +4,7 @@ Stop ramping the treble up.
 
 ### Signature
 
-`C4:STOP_TREBLE_UP ()`
+`STOP_TREBLE_UP ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Stop ramping volume down.
 
 ### Signature
 
-`C4:SET_VOL_DOWN ()`
+`SET_VOL_DOWN ()`
 
 
 | Parameter | Description |

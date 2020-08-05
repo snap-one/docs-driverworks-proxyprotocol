@@ -5,7 +5,7 @@ Used with the v.3 amp to turn digital inputs on.
 
 ### Signature
 
-`C4:SET_DIGI_ON ()`
+`SET_DIGI_ON ()`
 
 
 ### Parameters

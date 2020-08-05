@@ -5,7 +5,7 @@ Select specified surround mode preset on device.
 
 ### Signature
 
-`C4:SET_SURROUND_MODE ()`
+`SET_SURROUND_MODE ()`
 
 
 | Parameter | Description |

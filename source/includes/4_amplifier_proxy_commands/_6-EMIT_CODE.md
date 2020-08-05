@@ -5,7 +5,7 @@ Emit IR/Serial code. This is used by the AVGen IR/Serial Proxy.
 
 ### Signature
 
-`C4:EMIT_CODE ()`
+`EMIT_CODE ()`
 
 
 | Parameter | Description |

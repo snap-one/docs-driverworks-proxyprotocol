@@ -5,8 +5,8 @@ Pulse ‘-’ button
 
 ### Signature
 
-`C4:HYPHEN ()`
-
+HYPHEN ()`
+`
 
 ### Parameters
 

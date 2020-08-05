@@ -5,7 +5,7 @@ Set maximum allowable volume level
 
 ### Signature
 
-`C4:SET_MAX_VOLUME ()`
+`SET_MAX_VOLUME ()`
 
 
 | Parameter | Description |

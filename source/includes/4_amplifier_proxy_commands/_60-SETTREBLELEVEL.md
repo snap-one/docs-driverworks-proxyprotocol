@@ -5,7 +5,7 @@ Set treble to a specified level.
 
 ### Signature
 
-`C4:SET_TREBLE_LEVEL ()`
+`SET_TREBLE_LEVEL ()`
 
 
 | Parameter | Description |
