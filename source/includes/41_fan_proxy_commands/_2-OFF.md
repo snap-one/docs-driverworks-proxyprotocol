@@ -2,9 +2,10 @@
 
 Turn the fan OFF.
 
+
 ### Signature
 
-`C4:OFF ()`
+`OFF ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Bump the fan down to the next lower speed from its current setting. It would be 
 
 ### Signature
 
-`C4:CYCLE_SPEED_DOWN ()`
+`CYCLE_SPEED_DOWN ()`
 
 
 ### Parameters

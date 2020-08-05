@@ -5,7 +5,7 @@ Tell the fan which direction to spin.  This command would only be valid if the `
 
 ### Signature
 
-`C4:SET_DIRECTION ()`
+`SET_DIRECTION ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Command handled by the proxy driver.  Immediately returns a block of XML informa
 
 ### Signature
 
-`C4:GET_STATE ()`
+`GET_STATE ()`
 
 
 ### Parameters

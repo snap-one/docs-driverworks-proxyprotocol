@@ -5,7 +5,7 @@ Bump the fan up to the next higher speed from its current setting. It would be u
 
 ### Signature
 
-`C4:CYCLE_SPEED_UP ()`
+`CYCLE_SPEED_UP ()`
 
 
 ### Parameters

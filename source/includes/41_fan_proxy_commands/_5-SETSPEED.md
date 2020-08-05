@@ -5,7 +5,7 @@ Set the current speed of the fan to the designated level.  Setting to 0 will tur
 
 ### Signature
 
-`C4:SET_SPEED ()`
+`SET_SPEED ()`
 
 
 | Parameter | Description |

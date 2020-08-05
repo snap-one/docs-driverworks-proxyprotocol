@@ -5,7 +5,7 @@ Reverse the direction which the fan is currently spinning.  This command would o
 
 ### Signature
 
-`C4:TOGGLE_DIRECTION ()`
+`TOGGLE_DIRECTION ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Specifies which fan preset value should be the default one to go to when an ON o
 
 ### Signature
 
-`C4:DESIGNATE_PRESET ()`
+`DESIGNATE_PRESET ()`
 
 
 | Parameter | Description |

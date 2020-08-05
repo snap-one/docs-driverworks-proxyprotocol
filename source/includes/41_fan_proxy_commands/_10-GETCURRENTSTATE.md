@@ -5,7 +5,7 @@ Tell the protocol to report its current values. This wouldn’t be available thr
 
 ### Signature
 
-`C4:GET_CURRENT_STATE ()`
+`GET_CURRENT_STATE ()`
 
 
 ### Parameters
