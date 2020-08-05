@@ -5,7 +5,7 @@ This command is issued by a proxy consumer to cause the current speaker volume s
 
 ### Signature
 
-`C4: SET_SPEAKER_VOLUME ()`
+`SET_SPEAKER_VOLUME ()`
 
 
 | Parameter | Description |
@@ -22,7 +22,7 @@ This command is issued by a proxy consumer to cause the current speaker volume s
 
 ```lua
 <SET_SPEAKER_VOLUME>
-<speakerVol>[50]</speakerVol>
+   <speakerVol>[50]</speakerVol>
 </SET_SPEAKER_VOLUME>
 ```
 
