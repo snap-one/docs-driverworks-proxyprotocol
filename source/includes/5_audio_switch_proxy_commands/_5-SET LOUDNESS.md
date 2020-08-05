@@ -5,7 +5,7 @@ Turn loudness on.
 
 ### Signature
 
-`C4:SET_LOUDNESS ()`
+`SET_LOUDNESS ()`
 
 
 | Parameter | Description |

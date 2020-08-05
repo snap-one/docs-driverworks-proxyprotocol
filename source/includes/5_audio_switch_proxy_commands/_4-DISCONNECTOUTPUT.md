@@ -6,7 +6,7 @@ Disconnect (turn off) selected output on device
 
 ### Signature
 
-`C4:DISCONNECT_OUTPUT ()`
+`DISCONNECT_OUTPUT ()`
 
 
 | Parameter | Description |
