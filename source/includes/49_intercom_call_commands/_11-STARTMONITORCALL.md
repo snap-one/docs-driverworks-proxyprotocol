@@ -2,9 +2,10 @@
 
 This command is issued by the initiator of a new monitoring call to a specified receiver.  The receiver must be in monitor mode.  The command will result in an `OUTGOING_CALL` notification to the initiator and an `INCOMING_CALL` notification to the receiver
 
+
 ### Signature
 
-`C4:START_MONITOR_CALL ()`
+`START_MONITOR_CALL ()`
 
 
 | Parameter | Description |

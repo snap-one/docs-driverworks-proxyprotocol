@@ -5,7 +5,7 @@ This command can be issued by either the initiator or receiver; the endpoint of 
 
 ### Signature
 
-`C4:MUTE_CALL ()`
+`MUTE_CALL ()`
 
 
 | Parameter | Description |

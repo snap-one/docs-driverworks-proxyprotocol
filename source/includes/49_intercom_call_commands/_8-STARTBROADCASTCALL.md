@@ -5,7 +5,7 @@ This command is issued by the initiator of a new broadcast call to a pre-defined
 
 ### Signature
 
-`C4:START_BROADCAST_CALL ()`
+`START_BROADCAST_CALL ()`
 
 
 | Parameter | Description |

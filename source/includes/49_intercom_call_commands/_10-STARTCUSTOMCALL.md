@@ -5,7 +5,7 @@ Handles the start monitor call command
 
 ### Signature
 
-`C4:START_CUSTOM_CALL ()`
+`START_CUSTOM_CALL ()`
 
 
 | Parameter | Description |

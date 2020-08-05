@@ -5,7 +5,7 @@ This command may be issued by the receiver of a call invitation and causes the c
 
 ### Signature
 
-`C4:REJECT_CALL ()`
+`REJECT_CALL ()`
 
 
 | Parameter | Description |

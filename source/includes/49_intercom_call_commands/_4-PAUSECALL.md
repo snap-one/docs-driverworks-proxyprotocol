@@ -5,7 +5,7 @@ This command can be issued by either the initiator or receiver and causes the ca
 
 ### Signature
 
-`C4:PAUSE_CALL ()`
+`PAUSE_CALL ()`
 
 
 | Parameter | Description |

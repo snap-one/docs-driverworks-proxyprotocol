@@ -5,7 +5,7 @@ This command can be issued by either the initiator or receiver and causes the in
 
 ### Signature
 
-`C4:END_CALL ()`
+`END_CALL ()`
 
 
 | Parameter | Description |

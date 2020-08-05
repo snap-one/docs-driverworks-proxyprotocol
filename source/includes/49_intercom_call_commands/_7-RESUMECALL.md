@@ -5,7 +5,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 ### Signature
 
-`C4:RESUME_CALL ()`
+`RESUME_CALL ()`
 
 
 | Parameter | Description |

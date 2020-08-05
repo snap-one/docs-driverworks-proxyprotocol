@@ -5,7 +5,7 @@ Handles the start call command.
 
 ### Signature
 
-`C4:START_CALL ()`
+`START_CALL ()`
 
 
 | Parameter | Description |

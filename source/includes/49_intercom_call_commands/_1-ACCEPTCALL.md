@@ -5,7 +5,7 @@ This command may be issued by the receiver of a call invitation (i.e. an [`INCOM
 
 ### Signature
 
-`C4:ACCEPT_CALL ()`
+`ACCEPT_CALL ()`
 
 
 | Parameter | Description |
