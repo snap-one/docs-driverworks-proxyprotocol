@@ -5,7 +5,7 @@ Adds a Preset Schedule Preset Event to be run at the specified day/time (If prot
 
 ### Signature
 
-`C4:PRESET_EVENT_ADD ()`
+`PRESET_EVENT_ADD ()`
 
 
 | Parameter | Description |

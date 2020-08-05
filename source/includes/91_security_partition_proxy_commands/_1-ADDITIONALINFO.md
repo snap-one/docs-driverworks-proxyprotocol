@@ -5,7 +5,7 @@ Command from the UI to the Proxy and then forwarded on to the Protocol. Has no R
 
 ### Signature
 
-`C4:ADDITIONAL_INFO ()`
+`ADDITIONAL_INFO ()`
 
 
 | Parameter | Description |

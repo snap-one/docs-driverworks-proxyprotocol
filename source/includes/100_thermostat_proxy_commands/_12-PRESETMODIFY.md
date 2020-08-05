@@ -5,7 +5,7 @@ Modifies an existing Preset Schedule Event (If protocol driver has the `can_pres
 
 ### Signature
 
-`C4:PRESET_MODIFY ()`
+`PRESET_MODIFY ()`
 
 
 | Parameter | Description |

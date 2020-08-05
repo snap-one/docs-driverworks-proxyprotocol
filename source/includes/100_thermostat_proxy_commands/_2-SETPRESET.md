@@ -5,7 +5,7 @@ Runs a Preset regardless if there is an event scheduled for it.
 
 ### Signature
 
-`C4:SET_PRESET ()`
+`SET_PRESET ()`
 
 
 | Parameter | Description |

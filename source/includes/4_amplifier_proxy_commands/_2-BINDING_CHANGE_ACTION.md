@@ -5,7 +5,7 @@ Command sent when a bound binding changes. Performs any actions needed to the pr
 
 ### Signature
 
-`C4:BINDING_CHANGE_ACTION ()`
+`BINDING_CHANGE_ACTION ()`
 
 | Parameter | Description |
 | --- | --- |

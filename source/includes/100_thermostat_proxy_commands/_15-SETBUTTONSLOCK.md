@@ -5,7 +5,7 @@ Used to indicate if the buttons on the thermostat should be locked out from cont
 
 ### Signature
 
-`C4:SET_BUTTONS_LOCK ()`
+`SET_BUTTONS_LOCK ()`
 
 
 | Parameter | Description |

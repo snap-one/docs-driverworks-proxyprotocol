@@ -5,10 +5,10 @@ Used to increase the heat set point by 1. This command is handled by the proxy, 
 
 ### Signature
 
-`C4:INC_SETPOINT_HEAT ()`
+`INC_SETPOINT_HEAT ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 

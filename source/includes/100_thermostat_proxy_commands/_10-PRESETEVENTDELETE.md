@@ -5,7 +5,7 @@ Deletes a Preset Schedule Preset if the protocol driver has the `can_preset_sche
 
 ### Signature
 
-`C4:PRESET_EVENT_DELETE ()`
+`PRESET_EVENT_DELETE ()`
 
 
 | Parameter | Description |

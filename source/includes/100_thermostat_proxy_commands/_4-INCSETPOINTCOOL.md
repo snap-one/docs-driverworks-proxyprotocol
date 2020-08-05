@@ -5,10 +5,10 @@ Used to increase the cool set point by 1. This command is handled by the proxy, 
 
 ### Signature
 
-`C4:INC_SETPOINT_COOL ()`
+`INC_SETPOINT_COOL ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 

@@ -6,7 +6,7 @@ Adds a new Preset Schedule Preset (If protocol driver has the `can_preset_schedu
 
 ### Signature
 
-`C4:PRESET_ADD ()`
+`PRESET_ADD ()`
 
 
 | Parameter | Description |

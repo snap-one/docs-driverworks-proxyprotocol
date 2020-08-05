@@ -5,10 +5,10 @@ Used to decrease the cool set point by 1. This command is handled by the proxy, 
 
 ### Signature
 
-`C4:DEC_SETPOINT_COOL ()`
+`DEC_SETPOINT_COOL ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 
