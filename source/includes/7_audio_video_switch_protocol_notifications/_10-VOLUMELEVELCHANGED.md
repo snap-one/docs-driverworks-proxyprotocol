@@ -1,11 +1,11 @@
-##  VOLUME LEVEL CHANGED
+## VOLUME LEVEL CHANGED
 
 Selected volume level has changed.
 
 
 ### Signature
 
-`C4:VOLUME_LEVEL_CHANGED ()`
+`VOLUME_LEVEL_CHANGED ()`
 
 
 | Parameter | Description |
