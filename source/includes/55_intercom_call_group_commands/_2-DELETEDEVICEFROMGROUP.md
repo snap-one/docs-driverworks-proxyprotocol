@@ -4,7 +4,7 @@ This command is issued to remove the specified intercom endpoint from the specif
 
 ### Signature
 
-`C4:DELETE_DEVICE_FROM_GROUP ()`
+`DELETE_DEVICE_FROM_GROUP ()`
 
 
 | Parameter | Description |

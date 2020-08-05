@@ -4,7 +4,7 @@ This command is issued to add the specified intercom endpoint to the specified c
 
 ### Signature
 
-`C4:ADD_DEVICE_TO_GROUP ()`
+`ADD_DEVICE_TO_GROUP ()`
 
 
 | Parameter | Description |

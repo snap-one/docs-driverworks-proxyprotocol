@@ -4,7 +4,7 @@ This command is issued to delete an intercom call group. Note that the “All”
 
 ### Signature
 
-`C4:DELETE_GROUP ()`
+`DELETE_GROUP ()`
 
 
 | Parameter | Description |

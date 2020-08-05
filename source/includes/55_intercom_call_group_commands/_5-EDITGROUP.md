@@ -4,7 +4,7 @@ This command is issued to rename the specified intercom call group. Note that th
 
 ### Signature
 
-`C4:EDIT_GROUP ()`
+`EDIT_GROUP ()`
 
 
 | Parameter | Description |

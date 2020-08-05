@@ -4,7 +4,7 @@ This command is issued to create  a new intercom call group. Note that the text 
 
 ### Signature
 
-`C4:CREATE_GROUP ()`
+`CREATE_GROUP ()`
 
 
 | Parameter | Description |
