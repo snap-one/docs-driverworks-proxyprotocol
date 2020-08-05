@@ -5,7 +5,7 @@ This request is issued to obtain the group list of all of intercom call groups i
 
 ### Signature
 
-`C4:GET_CUSTOM_BUTTONS ()`
+`GET_CUSTOM_BUTTONS ()`
 
 
 | Request Parameter | Description |
