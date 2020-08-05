@@ -4,7 +4,7 @@ Configuration Notification used by the protocol to inform the proxy that the dri
 
 ### Signature
 
-`C4:SET_HAS_LEVEL ()`
+`SET_HAS_LEVEL ()`
 
 
 | Parameter | Description |

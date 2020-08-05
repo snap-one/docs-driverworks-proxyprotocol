@@ -4,7 +4,7 @@ State Notification used by the protocol to inform the proxy the blinds have stop
 
 ### Signature
 
-`C4:STOPPED ()`
+`STOPPED ()`
 
 
 | Parameter | Description |

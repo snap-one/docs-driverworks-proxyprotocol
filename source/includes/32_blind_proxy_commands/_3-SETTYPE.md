@@ -5,7 +5,7 @@ Sets the blind type for the proxy.
 
 ### Signature
 
-`C4:SET_TYPE ()`
+`SET_TYPE ()`
 
 
 | Parameter | Description |

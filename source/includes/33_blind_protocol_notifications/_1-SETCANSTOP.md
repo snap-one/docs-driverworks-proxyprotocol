@@ -4,7 +4,7 @@ Configuration Notification used by the protocol to inform the proxy if the blind
 
 ### Signature
 
-`C4:SET_CAN_STOP ()`
+`SET_CAN_STOP ()`
 
 
 | Parameter | Description |

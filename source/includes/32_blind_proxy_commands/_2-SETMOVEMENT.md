@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:SET_MOVEMENT ()`
+`SET_MOVEMENT ()`
 
 
 | Parameter | Description |

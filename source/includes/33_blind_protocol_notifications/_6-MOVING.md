@@ -4,7 +4,7 @@ State Notification Used by the protocol to inform the proxy the blinds have star
 
 ### Signature
 
-`C4:MOVING ()`
+`MOVING ()`
 
 
 | Parameter | Description |

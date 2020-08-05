@@ -5,7 +5,7 @@ Requests a blind to go to a different position.
 
 ### Signature
 
-`C4:SET_LEVEL_TARGET ()`
+`SET_LEVEL_TARGET ()`
 
 
 | Parameter | Description |

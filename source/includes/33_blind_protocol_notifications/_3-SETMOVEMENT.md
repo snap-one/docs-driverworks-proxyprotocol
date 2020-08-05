@@ -4,7 +4,7 @@ Configuration Notification used by the protocol to inform the proxy that the dri
 
 ### Signature
 
-`C4:SET_MOVEMENT ()`
+`SET_MOVEMENT ()`
 
 
 | Parameter | Description |
