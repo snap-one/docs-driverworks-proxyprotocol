@@ -5,7 +5,7 @@ Begin tuning search UP.
 
 ### Signature
 
-`C4:START_SEARCH_UP ()`
+`START_SEARCH_UP ()`
 
 
 ### Parameters

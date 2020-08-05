@@ -5,7 +5,7 @@ Pulse tuning search down
 
 ### Signature
 
-`C4:SEARCH_DOWN ()`
+`SEARCH_DOWN ()`
 
 
 ### Parameters

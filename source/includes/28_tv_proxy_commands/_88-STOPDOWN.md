@@ -5,7 +5,7 @@ Stop down-arrow navigation.
 
 ### Signature
 
-`C4:STOP_DOWN ()`
+`STOP_DOWN ()`
 
 
 ### Parameters

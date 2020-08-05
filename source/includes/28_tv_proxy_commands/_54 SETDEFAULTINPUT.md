@@ -5,7 +5,7 @@ Specify the default input selection of device.
 
 ### Signature
 
-`C4:SET_DEAFULT_INPUT ()`
+`SET_DEAFULT_INPUT ()`
 
 
 | Parameter | Description |

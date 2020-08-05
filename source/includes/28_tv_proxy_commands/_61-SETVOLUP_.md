@@ -4,7 +4,8 @@ Begin ramping volume up.
 
 
 ### Signature
-`C4:SET_VOL_UP ()`
+
+`SET_VOL_UP ()`
 
 
 | Parameter | Description |

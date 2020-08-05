@@ -5,7 +5,7 @@ Start ramping volume down.
 
 ### Signature
 
-`C4:START_VOL_DOWN ()`
+`START_VOL_DOWN ()`
 
 
 | Parameter | Description |

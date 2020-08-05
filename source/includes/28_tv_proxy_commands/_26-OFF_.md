@@ -5,7 +5,7 @@ Turn device Off.
 
 ### Signature
 
-`C4:OFF ()`
+`OFF ()`
 
 
 ### Parameters

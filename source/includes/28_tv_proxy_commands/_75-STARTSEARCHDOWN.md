@@ -5,7 +5,7 @@ Begin tuning search down.
 
 ### Signature
 
-`C4:START_SEARCH_DOWN ()`
+`START_SEARCH_DOWN ()`
 
 
 ### Parameters

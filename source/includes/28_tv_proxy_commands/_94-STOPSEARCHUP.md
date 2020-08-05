@@ -5,7 +5,7 @@ Stop tuning search UP.
 
 ### Signature
 
-`C4:STOP_SEARCH_UP ()`
+`STOP_SEARCH_UP ()`
 
 
 ### Parameters

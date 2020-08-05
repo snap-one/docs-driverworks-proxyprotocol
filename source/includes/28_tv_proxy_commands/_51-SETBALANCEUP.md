@@ -5,7 +5,7 @@ Set balance to a specified position.
 
 ### Signature
 
-`C4:SET_BALANCE_UP ()`
+`SET_BALANCE_UP ()`
 
 
 | Parameter | Description |

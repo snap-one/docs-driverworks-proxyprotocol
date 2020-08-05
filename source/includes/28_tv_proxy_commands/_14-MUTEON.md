@@ -5,7 +5,7 @@ Turn muting on.
 
 ### Signature
 
-`C4:MUTE_ON ()`
+`MUTE_ON ()`
 
 
 | Parameter | Description |

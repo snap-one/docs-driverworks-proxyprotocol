@@ -5,7 +5,7 @@ Toggle (cycle down) frequency or channel.
 
 ### Signature
 
-`C4:TUNE_UP ()`
+`TUNE_UP ()`
 
 
 ### Parameters

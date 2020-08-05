@@ -5,7 +5,7 @@ Pulse # button.
 
 ### Signature
 
-`C4:POUND ()`
+`POUND ()`
 
 
 ### Parameters

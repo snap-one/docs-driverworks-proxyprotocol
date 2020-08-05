@@ -5,7 +5,7 @@ Pulse treble up.
 
 ### Signature
 
-`C4:PULSE_TREBLE_UP ()`
+`PULSE_TREBLE_UP ()`
 
 
 | Parameter | Description |

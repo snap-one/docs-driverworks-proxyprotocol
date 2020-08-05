@@ -5,7 +5,7 @@ Start ramping bass down.
 
 ### Signature
 
-`C4:START_BASS_DOWN ()`
+`START_BASS_DOWN ()`
 
 
 | Parameter | Description |

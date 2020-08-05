@@ -5,7 +5,7 @@ Stop ramping channel up.
 
 ### Signature
 
-`C4:STOP_CH_UP ()`
+`STOP_CH_UP ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Toggle (cycle though) aspect ratio.
 
 ### Signature
 
-`C4:PULSE_ASPECT_RATIO ()`
+`PULSE_ASPECT_RATIO ()`
 
 
 ### Parameters

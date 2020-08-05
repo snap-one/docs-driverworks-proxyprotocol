@@ -5,7 +5,7 @@ Pulse PVR button.
 
 ### Signature
 
-`C4:PVR ()`
+`PVR ()`
 
 
 ### Parameters

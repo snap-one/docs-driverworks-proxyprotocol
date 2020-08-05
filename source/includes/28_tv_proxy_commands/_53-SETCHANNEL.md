@@ -5,7 +5,7 @@ Tune device to the specified channel.
 
 ### Signature
 
-`C4:SET_CHANNEL ()`
+`SET_CHANNEL ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Initiate left-arrow navigation.
 
 ### Signature
 
-`C4:START_LEFT ()`
+`START_LEFT ()`
 
 
 ### Parameters

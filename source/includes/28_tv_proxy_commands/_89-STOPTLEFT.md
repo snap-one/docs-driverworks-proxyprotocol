@@ -5,7 +5,7 @@ Stop left-arrow navigation.
 
 ### Signature
 
-`C4:STOP_LEFT ()`
+`STOP_LEFT ()`
 
 
 ### Parameters

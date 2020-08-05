@@ -5,7 +5,7 @@ Initiate up-arrow navigation.
 
 ### Signature
 
-`C4:STOP_UP ()`
+`STOP_UP ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Set volume to a specified level.
 
 ### Signature
 
-`C4:SET_VOLUME_LEVEL () `
+`SET_VOLUME_LEVEL () `
 
 
 | Parameter | Description |

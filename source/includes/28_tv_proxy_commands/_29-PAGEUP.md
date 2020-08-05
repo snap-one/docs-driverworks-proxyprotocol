@@ -5,7 +5,7 @@ Pulse menu Page up.
 
 ### Signature
 
-`C4:PAGE_UP ()`
+`PAGE_UP ()`
 
 
 ### Parameters

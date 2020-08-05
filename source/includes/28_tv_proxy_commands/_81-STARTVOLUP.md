@@ -5,7 +5,7 @@ Start ramping volume up.
 
 ### Signature
 
-`C4:START_VOL_UP ()`
+`START_VOL_UP ()`
 
 
 | Parameter | Description |

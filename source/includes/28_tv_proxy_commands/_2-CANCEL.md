@@ -5,7 +5,7 @@ Pulse Cancel button
 
 ### Signature
 
-`C4:CANCEL ()`
+`CANCEL ()`
 
 
 ### Parameters

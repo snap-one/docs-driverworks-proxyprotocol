@@ -5,7 +5,7 @@ Pulses the ‘-’ button.
 
 ### Signature
 
-`C4:DASH ()`
+`DASH ()`
 
 
 Parameter 

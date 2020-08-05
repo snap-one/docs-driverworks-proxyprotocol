@@ -5,7 +5,7 @@ Pulse ‘1’ button
 
 ### Signature
 
-`C4:Number_1 ()`
+`Number_1 ()`
 
 
 ### Parameters
