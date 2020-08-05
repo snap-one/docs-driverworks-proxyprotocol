@@ -5,7 +5,7 @@ Selected inputs & outputs have changed.
 
 ### Signature
 
-`C4:INPUT_OUTPUT_CHANGED ()`
+`INPUT_OUTPUT_CHANGED ()`
 
 
 | Parameter | Description |
