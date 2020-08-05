@@ -5,7 +5,7 @@ Notification that the camera's address has a changed. Sent from the API [OnNetwo
 
 ### Signature
 
-`C4:ADDRESS_CHANGED ()`
+`ADDRESS_CHANGED ()`
 
 
 | Parameter | Description |
