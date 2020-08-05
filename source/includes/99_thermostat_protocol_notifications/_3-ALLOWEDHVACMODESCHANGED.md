@@ -5,7 +5,7 @@ Changes the value of the variable `HVAC_MODES_LIST`
 
 ### Signature
 
-`C4:ALLOWED_HVAC_MODES_CHANGED ()`
+`ALLOWED_HVAC_MODES_CHANGED ()`
 
 
 | Parameter | Description |

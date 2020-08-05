@@ -5,7 +5,7 @@ Fires event: `Heat_Setpoint_Changed`.
 
 ### Signature
 
-`C4:HEAT_SETPOINT ()`
+`HEAT_SETPOINT ()`
 
 
 ### Parameters

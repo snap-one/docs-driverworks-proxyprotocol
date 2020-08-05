@@ -5,7 +5,7 @@ Maximum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_m
 
 ### Signature
 
-`C4:HEAT_SETPOINT_MAX_F ()` 
+`HEAT_SETPOINT_MAX_F ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Update the template Custom Fields that UI's display for a new Preset Event.
 
 ### Signature
 
-`C4:CUSTOM FIELDS CHANGED ()`
+`CUSTOM FIELDS CHANGED ()`
 
 
 | Parameter | Description |
@@ -16,8 +16,8 @@ Update the template Custom Fields that UI's display for a new Preset Event.
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 ### Example
 

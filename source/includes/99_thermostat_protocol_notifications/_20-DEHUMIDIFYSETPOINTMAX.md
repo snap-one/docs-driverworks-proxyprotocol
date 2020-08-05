@@ -4,7 +4,7 @@ The maximun dehumidify setpoint has changed.
 
 ### Signature
 
-`C4:DEHUMIDIFY_SETPOINT_MAX ()`
+`DEHUMIDIFY_SETPOINT_MAX ()`
 
 
 | Parameter | Description |
@@ -14,7 +14,7 @@ The maximun dehumidify setpoint has changed.
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

@@ -4,7 +4,7 @@ Update the Extras Setup, displayed in the UI 
 
 ### Signature
 
-`C4:EXTRAS_SETUP_CHANGED ()`
+`EXTRAS_SETUP_CHANGED ()`
 
 
 | Parameter | Description |

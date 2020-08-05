@@ -5,7 +5,7 @@ Notification sent when the mode of the HVAC system has changed. Changes the vari
 
 ### Signature
 
-`C4:HVAC_MODE_CHANGED ()` 
+`HVAC_MODE_CHANGED ()` 
 
 
 | Parameter | Description |

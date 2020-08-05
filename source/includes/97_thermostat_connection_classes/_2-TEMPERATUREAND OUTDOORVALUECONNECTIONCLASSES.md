@@ -1,13 +1,12 @@
-## TEMPERATURE AND OUTDOOR VALUE CONNECTION CLASSES
+## TEMPERATURE AND OUTDOOR VALUE CONNECTION CLASS COMMANDS
 
-**Commands**
 
 ## VALUE INITIALIZED
 The value has been initialized. OnBindingChanged will cause this command to be sent automatically when the sending device goes Online.
 
 ### Signature
 
-`C4:VALUE_INITIALIZED ()`
+`VALUE_INITIALIZED ()`
 
 
 | Parameter | Description |
@@ -17,12 +16,12 @@ The value has been initialized. OnBindingChanged will cause this command to be s
 
 
 
-## VALUE CHANGED 
+## VALUE CHANGED
 The value has changed.
 
 ### Signature
 
-`C4:VALUE_CHANGED ()`
+`VALUE_CHANGED ()`
 
 
 | Parameter | Description |
@@ -38,7 +37,7 @@ The value is possibly no longer accurate. OnBindingChanged, device went Offline,
 
 ### Signature
 
-`C4:VALUE_CHANGED ()`
+`VALUE_CHANGED ()`
 
 
 | Parameter | Description |

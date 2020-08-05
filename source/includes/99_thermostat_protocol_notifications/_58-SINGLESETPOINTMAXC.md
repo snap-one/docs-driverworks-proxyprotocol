@@ -7,7 +7,7 @@ Maximum Setpoint. Will do the same thing as the `setpoint_single_max` capability
  
 ### Signature
 
-`C4:SINGLE_SETPOINT_MAX_C ()` 
+`SINGLE_SETPOINT_MAX_C ()` 
 
 
 | Parameter | Description |

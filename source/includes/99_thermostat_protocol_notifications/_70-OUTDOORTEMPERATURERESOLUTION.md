@@ -5,7 +5,7 @@ What increment to use (ie .1, .5, 1, 3, 5, 10,etc), will do the same thing as th
 
 ### Signature
 
-`C4:OUTDOOR_TEMPERATURE_RESOLUTION ()` 
+`OUTDOOR_TEMPERATURE_RESOLUTION ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when the cooling setpoint has chan
 
 ### Signature
 
-`C4:COOL_SETPOINT_CHANGED ()`
+`COOL_SETPOINT_CHANGED ()`
 
 
 | Parameter | Description |
@@ -16,8 +16,8 @@ Notification that should be sent to the proxy when the cooling setpoint has chan
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 
 

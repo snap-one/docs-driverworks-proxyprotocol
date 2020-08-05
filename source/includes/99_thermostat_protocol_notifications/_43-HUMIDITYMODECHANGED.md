@@ -5,7 +5,7 @@ MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). T
 
 ### Signature
 
-`C4:HUMIDITY_MODE_CHANGED ()` 
+`HUMIDITY_MODE_CHANGED ()` 
 
 
 | Parameter | Description |

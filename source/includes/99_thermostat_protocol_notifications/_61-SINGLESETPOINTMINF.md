@@ -7,7 +7,7 @@ Minimum Setpoint. Will do the same thing as the `setpoint_single_min` capability
  
 ### Signature
 
-`C4:SINGLE_SETPOINT_MIN_F ()` 
+`SINGLE_SETPOINT_MIN_F ()` 
 
 
 | Parameter | Description |

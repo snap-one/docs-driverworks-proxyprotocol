@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when hold mode has changed. Change
 
 ### Signature
 
-`C4:HOLD_MODE_CHANGED ()` 
+`HOLD_MODE_CHANGED ()` 
 
 
 | Parameter | Description |

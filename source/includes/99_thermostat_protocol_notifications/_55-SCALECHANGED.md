@@ -5,7 +5,7 @@ Changes the scale the proxy tracks for the temperature.  This is primarily impo
 
 ### Signature
 
-`C4:SCALE_CHANGED ()` 
+`SCALE_CHANGED ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when vacation mode is turned on or
 
 ### Signature
 
-`C4:VACATION_MODE ()` 
+`VACATION_MODE ()` 
 
 
 | Parameter | Description |
@@ -18,7 +18,7 @@ Notification that should be sent to the proxy when vacation mode is turned on or
 `None`
 
 
-### Usage Note 
+### Usage Note
 The capability `has_vacation_mode`  must be set to true for the vacation commands and notifications to be executed. Not to be used with Preset Scheduling.
 
 

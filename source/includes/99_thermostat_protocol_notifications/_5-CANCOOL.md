@@ -5,7 +5,7 @@ Boolean to enable/disable `can_cool` capability. If the device supports this fea
 
 ### Signature
 
-`C4:CAN_COOL ()`
+`CAN_COOL ()`
 
 
 | Parameter | Description |

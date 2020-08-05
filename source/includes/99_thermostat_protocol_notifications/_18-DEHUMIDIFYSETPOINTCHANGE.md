@@ -4,7 +4,7 @@ The dehumidify setpoint has changed.
 
 ### Signature
 
-`C4:DEHUMIDIFY_SETPOINT_CHANGE ()`
+`DEHUMIDIFY_SETPOINT_CHANGE ()`
 
 
 | Parameter | Description |

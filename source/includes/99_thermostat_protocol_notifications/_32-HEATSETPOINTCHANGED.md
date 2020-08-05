@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when the heating setpoint has chan
 
 ### Signature
 
-`C4:HEAT_SETPOINT_CHANGED ()`
+`HEAT_SETPOINT_CHANGED ()`
 
 
 | Parameter | Description |

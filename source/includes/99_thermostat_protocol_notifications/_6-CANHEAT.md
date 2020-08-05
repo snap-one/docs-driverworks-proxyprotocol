@@ -5,7 +5,7 @@ Boolean to enable/disable `can_heat` capability. If the device supports this fea
 
 ### Signature
 
-`C4:CAN_HEAT ()`
+`CAN_HEAT ()`
 
 
 | Parameter | Description |

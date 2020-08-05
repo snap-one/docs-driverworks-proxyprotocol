@@ -5,7 +5,7 @@ Boolean to enable/disable `has_heat_pump`. If the device supports this feature, 
 
 ### Signature
 
-`C4: HAS_HEAT_PUMP ()`
+`HAS_HEAT_PUMP ()`
 
 
 | Parameter | Description |

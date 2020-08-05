@@ -5,7 +5,7 @@ Boolean to enable/disable [`can_dehumidify`][1] capability. If the device suppor
 
 ### Signature
 
-`C4:CONNECTION ()`
+`CONNECTION ()`
 
 
 | Parameter | Description |

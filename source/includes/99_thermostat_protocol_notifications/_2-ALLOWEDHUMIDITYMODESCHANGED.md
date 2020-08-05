@@ -5,7 +5,7 @@ Changes the value of the variable `HUMIDITY_MODES_LIST`
 
 ### Signature
 
-`C4:ALLOWED_HUMIDITY_MODES_CHANGED ()`
+`ALLOWED_HUMIDITY_MODES_CHANGED ()`
 
 
 | Parameter | Description |

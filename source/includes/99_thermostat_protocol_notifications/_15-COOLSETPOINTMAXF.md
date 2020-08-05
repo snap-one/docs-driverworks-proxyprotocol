@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:COOL_SETPOINT_ MAX_F ()`
+`COOL_SETPOINT_ MAX_F ()`
 
 
 | Parameter | Description |
@@ -13,7 +13,7 @@
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

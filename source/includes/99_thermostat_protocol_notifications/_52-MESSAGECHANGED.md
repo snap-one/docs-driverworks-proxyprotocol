@@ -5,7 +5,7 @@ Update the text message displayed in the UI.  Multiple lines can be specified b
 
 ### Signature
 
-`C4:MESSAGE_CHANGED ()` 
+`MESSAGE_CHANGED ()` 
 
 
 | Parameter | Description |

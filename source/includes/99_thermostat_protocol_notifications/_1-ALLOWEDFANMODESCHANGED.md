@@ -5,7 +5,7 @@ Changes the value of the variable `FAN_MODES_LIST`.
 
 ### Signature
 
-`C4:ALLOWED_FAN_MODES_CHANGED ()`
+`ALLOWED_FAN_MODES_CHANGED ()`
 
 
 | Parameter | Description |

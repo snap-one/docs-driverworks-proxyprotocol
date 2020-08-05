@@ -5,7 +5,7 @@
 
 ### Signature
 
-`C4:HUMIDITY_SETPOINT_DEADBAND ()` 
+`HUMIDITY_SETPOINT_DEADBAND ()` 
 
 
 | Parameter | Description |

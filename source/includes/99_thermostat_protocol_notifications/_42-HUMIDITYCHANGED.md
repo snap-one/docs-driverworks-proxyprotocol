@@ -5,7 +5,7 @@ The actual humidity percent (integer 0-100) value detected by the thermostat has
 
 ### Signature
 
-`C4:HUMIDITY_CHANGED ()` 
+`HUMIDITY_CHANGED ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ What increment to use (ie 1,3,5,10,etc), will do the same thing as the `setpoint
 
 ### Signature
 
-`C4:SINGLE_SETPOINT_RESOLUTION_C ()` 
+`SINGLE_SETPOINT_RESOLUTION_C ()` 
 
 
 | Parameter | Description |

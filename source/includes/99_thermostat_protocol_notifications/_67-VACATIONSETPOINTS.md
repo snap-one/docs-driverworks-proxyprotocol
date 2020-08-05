@@ -6,7 +6,7 @@ Notification that should be sent to the proxy when setpoints have been changed f
 
 ### Signature
 
-`C4:VACATION_ SETPOINTS ()` 
+`VACATION_ SETPOINTS ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Minimum Setpoint, int 0-100 that will do the same thing as the `setpoint_humidif
 
 ### Signature
 
-`C4:HUMIDITY_SETPOINT_MIN ()` 
+`HUMIDITY_SETPOINT_MIN ()` 
 
 
 | Parameter | Description |

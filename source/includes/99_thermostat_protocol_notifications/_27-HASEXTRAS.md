@@ -6,7 +6,7 @@ Updates the XML that will be consumed by the Navigator UI’s.
 
 ### Signature
 
-`C4:HAS_EXTRAS ()`
+`HAS_EXTRAS ()`
 
 
 | Parameter | Description |

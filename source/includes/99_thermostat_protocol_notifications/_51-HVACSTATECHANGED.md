@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when the HVAC state has changed. C
 
 ### Signature
 
-`C4:HVAC_STATE_CHANGED ()` 
+`HVAC_STATE_CHANGED ()` 
 
 
 | Parameter | Description |

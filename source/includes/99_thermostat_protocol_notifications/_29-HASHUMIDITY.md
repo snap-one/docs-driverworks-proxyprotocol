@@ -5,7 +5,7 @@ Boolean to enable/disable [`has_humidity`][1] capability. If the device supports
 
 ### Signature
 
-`C4: HAS_ HUMIDITY ()`
+`HAS_ HUMIDITY ()`
 
 
 | Parameter | Description |

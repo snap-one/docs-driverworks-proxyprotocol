@@ -6,7 +6,7 @@ Updates the  Preset FIELDS TEMPLATE that UIs display for a Preset Event. To UI c
 
 ### Signature
 
-`C4:PRESET_FIELDS_CHANGED ()` 
+`PRESET_FIELDS_CHANGED ()` 
 
 
 | Parameter | Description |

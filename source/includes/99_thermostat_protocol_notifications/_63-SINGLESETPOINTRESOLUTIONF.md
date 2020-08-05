@@ -5,7 +5,7 @@ Indicates the increments that the setpoint will follow, such as .2, .5, 1, 2, 5,
 
 ### Signature
 
-`C4:SINGLE_SETPOINT_RESOLUTION_F ()` 
+`SINGLE_SETPOINT_RESOLUTION_F ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Minimum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_m
 
 ### Signature
 
-`C4:HEAT_SETPOINT_MIN_F ()` 
+`HEAT_SETPOINT_MIN_F ()` 
 
 
 | Parameter | Description |

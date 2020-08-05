@@ -6,7 +6,7 @@ Used to inform the proxy that the single setpoint has changed. This notification
  
 ### Signature
 
-`C4:SINGLE_SETPOINT_CHANGED ()` 
+`SINGLE_SETPOINT_CHANGED ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when a change is made to the HVAC 
  
 ### Signature
 
-`C4:SCHEDULE_ENTRY_CHANGED ()` 
+`SCHEDULE_ENTRY_CHANGED ()` 
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Boolean to enable/disable `can_dehumidify` capability. If the device supports th
 
 ### Signature
 
-`C4:CAN_DEHUMIDIFY ()`
+`CAN_DEHUMIDIFY ()`
 
 
 | Parameter | Description |

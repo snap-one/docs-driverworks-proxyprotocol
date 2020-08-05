@@ -5,7 +5,7 @@ Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the devi
 
 ### Signature
 
-`C4:HAS_OUTDOOR_TEMPERATURE ()`
+`HAS_OUTDOOR_TEMPERATURE ()`
 
 
 | Parameter | Description |

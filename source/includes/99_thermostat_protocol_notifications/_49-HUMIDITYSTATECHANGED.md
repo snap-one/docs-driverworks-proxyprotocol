@@ -5,7 +5,7 @@ State has changed on the thermostat. To UI comes through as `humidity_state`.
 
 ### Signature
 
-`C4:HUMIDITY_STATE_CHANGED ()` 
+`HUMIDITY_STATE_CHANGED ()` 
 
 
 | Parameter | Description |

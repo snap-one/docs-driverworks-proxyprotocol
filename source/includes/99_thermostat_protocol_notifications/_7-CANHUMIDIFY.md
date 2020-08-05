@@ -5,7 +5,7 @@ Boolean to enable/disable `can_humidify` capability. If the device supports this
 
 ### Signature
 
-`C4:CAN_HUMIDIFY ()`
+`CAN_HUMIDIFY ()`
 
 
 | Parameter | Description |

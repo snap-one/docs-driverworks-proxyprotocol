@@ -5,7 +5,7 @@ What increment to use (ie .1,.5,1,3,5,10,etc), will do the same thing as the `te
 
 ### Signature
 
-`C4:TEMPERATURE_RESOLUTION ()` 
+`TEMPERATURE_RESOLUTION ()` 
 
 
 | Parameter | Description |

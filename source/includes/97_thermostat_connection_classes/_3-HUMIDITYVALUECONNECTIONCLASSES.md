@@ -1,15 +1,14 @@
-## HUMIDITY VALUE CONNECTION CLASSES
+## HUMIDITY VALUE CONNECTION CLASS COMMANDS
 
 Please see the Samples folder delivered in this SDK for Thermostat (V2) code examples.
 
-**Commands**
 
 ## VALUE INITIALIZED
 The value has been initialized. OnBindingChanged will cause this command to be sent automatically when the sending device goes Online.
 
 ### Signature
 
-`C4:VALUE_INITIALIZED ()`
+`VALUE_INITIALIZED ()`
 
 
 | Parameter | Description |
@@ -25,7 +24,7 @@ The value has changed.
 
 ### Signature
 
-`C4:VALUE_CHANGED ()`
+`VALUE_CHANGED ()`
 
 
 | Parameter | Description |
@@ -41,7 +40,7 @@ The value is possibly no longer accurate. OnBindingChanged, device went Offline,
 
 ### Signature
 
-`C4:VALUE_UNAVAILABLE ()`
+`VALUE_UNAVAILABLE ()`
 
 
 | Parameter | Description |

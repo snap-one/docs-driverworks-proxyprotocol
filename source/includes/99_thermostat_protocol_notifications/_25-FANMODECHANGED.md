@@ -1,11 +1,11 @@
 ## FAN MODE CHANGED
 
-Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: [`FAN_MODE`][1], [`V1 FANMODE,`][2] [ANA_FANMODE``][3].
+Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: [`FAN_MODE`][1], [`V1 FANMODE,`][2] [ANA\_FANMODE\`\`][3].
 
 
 ### Signature
 
-`C4:FAN_MODE_CHANGED ()`
+`FAN_MODE_CHANGED ()`
 
 
 | Parameter | Description |

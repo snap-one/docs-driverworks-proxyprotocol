@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when the temperature has changed.
 
 ### Signature
 
-`C4:TEMPERATURE_CHANGED ()` 
+`TEMPERATURE_CHANGED ()` 
 
 
 | Parameter | Description |

@@ -6,7 +6,7 @@ Minimum Setpoint difference between heat and will do the same thing as `setpoint
 
 ### Signature
 
-`C4:HEATCOOL_SETPOINT_DEADBAND_F ()` 
+`HEATCOOL_SETPOINT_DEADBAND_F ()` 
 
 
 | Parameter | Description |

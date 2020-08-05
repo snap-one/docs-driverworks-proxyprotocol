@@ -3,7 +3,7 @@
 
 ### Signature
 
-`C4:COOL_SETPOINT_RESOLUTION_F ()`
+`COOL_SETPOINT_RESOLUTION_F ()`
 
 
 | Parameter | Description |
