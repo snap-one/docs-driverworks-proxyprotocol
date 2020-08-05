@@ -4,10 +4,10 @@ Device has entered a playback state.
 
 ### Signature
 
-`C4:PLAY ()`
+`PLAY ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 

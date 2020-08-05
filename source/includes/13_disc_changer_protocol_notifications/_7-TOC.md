@@ -4,10 +4,10 @@ Issued when scanning the table of contents for a particular disc or cd.  Direct
 
 ### Signature
 
-`C4:TOC ()`
+`TOC ()`
 
 
-### Parameter 
+### Parameter
 
 | Parameter | Description |
 | --- | --- |
