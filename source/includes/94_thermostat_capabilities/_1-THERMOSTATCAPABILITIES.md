@@ -150,22 +150,6 @@ A boolean indicating if the device supports a programmed schedule. If it is true
 `<schedule_default></schedule_default>`
 An XML block indicating the default schedule for the device.  Mutually exclusive to Preset Scheduling and use of this is discouraged.
 
-### Example:
-
-```xml
-<schedule_default>
-    <schedule_day_info Entries="6" DefaultHeat="200" DefaultCool="278">
-      <schedule_entry Name="Wake" Time="360" Enabled="True" />
-      <schedule_entry Name="Leave" Time="480" Enabled="True" />
-      <schedule_entry Name="Return" Time="1080" Enabled="True" />
-     <schedule_entry Name="Sleep" Time="1320" Enabled="True" />
-     <schedule_entry Name="Custom 1" Time="1380" Enabled="False" />
-     <schedule_entry Name="Custom 2" Time="1380" Enabled="False" />
-   </schedule_day_info>
-</schedule_default>
-```
-
-
 
 `<schedule_entry></schedule_entry>`
 There is one of these entries for each schedule entry during the day. In the example used here, there are six of them. Name indicates the name of the entry that will show up in composer and navigator. Time indicates what time during the day this entry will become active. The time units are minutes since midnight, so 360 means 6:00AM. Enabled indicates whether or not this entry is initially enabled or not. Valid values: True/False. 
