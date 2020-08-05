@@ -5,7 +5,7 @@ Swap page UP/DOWN buttons.
 
 ### Signature
 
-`C4:POUND ()`
+`POUND ()`
 
 
 | Parameter | Description |

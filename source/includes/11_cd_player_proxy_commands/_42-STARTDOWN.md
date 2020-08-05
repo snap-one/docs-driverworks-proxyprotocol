@@ -3,9 +3,9 @@
 Initiate down arrow navigation.
 
 
-###  Signature
+### Signature
 
-`C4:START_DOWN ()`
+`START_DOWN ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Initiate down arrow navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

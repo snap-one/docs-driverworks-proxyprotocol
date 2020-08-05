@@ -3,9 +3,9 @@
 Pulse left navigation.
 
 
-###  Signature
+### Signature
 
-`C4:START_LEFT ()`
+`START_LEFT ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Pulse left navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

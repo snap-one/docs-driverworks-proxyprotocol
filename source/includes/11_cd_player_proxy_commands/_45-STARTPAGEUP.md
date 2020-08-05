@@ -3,9 +3,9 @@
 Start menu Page up.
 
 
-###  Signature
+### Signature
 
-`C4:START_PAGE_UP ()`
+`START_PAGE_UP ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Start menu Page up.
 
 ### Returns
 
-`None
-`
+\`None
+\`

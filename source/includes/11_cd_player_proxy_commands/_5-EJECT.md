@@ -5,7 +5,7 @@ Eject disc.
 
 ### Signature
 
-`C4:EJECT ()`
+`EJECT ()`
 
 
 ### Parameters

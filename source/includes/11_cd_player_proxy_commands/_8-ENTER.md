@@ -5,7 +5,7 @@ Navigate Enter key
 
 ### Signature
 
-`C4:Enter ()`
+`Enter ()`
 
 
 ### Parameters

@@ -3,9 +3,9 @@
 Terminate down-arrow navigation.
 
 
-###  Signature
+### Signature
 
-`C4:STOP_DOWN ()`
+`STOP_DOWN ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Terminate down-arrow navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

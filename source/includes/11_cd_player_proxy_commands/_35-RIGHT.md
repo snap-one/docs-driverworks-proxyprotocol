@@ -3,9 +3,9 @@
 Pulse right navigation button.
 
 
-###  Signature
+### Signature
 
-`C4:RIGHT ()`
+`RIGHT ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Pulse right navigation button.
 
 ### Returns
 
-`None
-`
+\`None
+\`

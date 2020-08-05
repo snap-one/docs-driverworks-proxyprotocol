@@ -5,7 +5,7 @@ Emit IR/Serial code macro.
 
 ### Signature
 
-`C4:EMIT_MACRO ()`
+`EMIT_MACRO ()`
 
 
 | Parameter | Description |

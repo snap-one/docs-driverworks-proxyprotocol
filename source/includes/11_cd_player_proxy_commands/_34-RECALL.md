@@ -3,9 +3,9 @@
 Pulse the recall button.
 
 
-###  Signature
+### Signature
 
-`C4:RECALL ()`
+`RECALL ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Pulse the recall button.
 
 ### Returns
 
-`None
-`
+\`None
+\`
