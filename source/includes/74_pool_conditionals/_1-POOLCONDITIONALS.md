@@ -1,5 +1,3 @@
-## POOL CONDITIONALS
-
 
 The Pool Proxy supports the following conditionals:
 

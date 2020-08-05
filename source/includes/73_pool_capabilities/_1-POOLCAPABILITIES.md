@@ -1,4 +1,3 @@
-## POOL CAPABILITIES
 
 The following Capabilities are supported with the Pool Proxy:
 

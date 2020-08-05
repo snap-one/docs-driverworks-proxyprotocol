@@ -1,4 +1,3 @@
-## POOL EVENTS
 
 The Pool Proxy fires the following events:
 
