@@ -5,7 +5,7 @@ Specify the input selection of device.
 
 ### Signature
 
-`C4:SET_INPUT ()`
+`SET_INPUT ()`
 
 
 | Parameter | Description |
@@ -16,8 +16,8 @@ Specify the input selection of device.
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 ### Usage Note
 

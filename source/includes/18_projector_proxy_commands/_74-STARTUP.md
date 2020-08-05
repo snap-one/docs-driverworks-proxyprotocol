@@ -3,9 +3,9 @@
 Initiate up-arrow navigation.
 
 
-###  Signature
+### Signature
 
-`C4:START_UP ()`
+`START_UP ()`
 
 
 ### Parameters

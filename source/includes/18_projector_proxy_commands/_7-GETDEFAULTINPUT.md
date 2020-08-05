@@ -5,7 +5,7 @@ Command sent to the protocol during the proxy initialization. Returns the input 
 
 ### Signature
 
-`C4:GET_DEFAULT_INPUT ()`
+`GET_DEFAULT_INPUT ()`
 
 
 ### Parameters

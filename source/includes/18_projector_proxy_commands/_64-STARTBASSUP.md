@@ -5,7 +5,7 @@ Start ramping bass up.
 
 ### Signature
 
-`C4:START_BASS_UP ()`
+`START_BASS_UP ()`
 
 
 | Parameter | Description |

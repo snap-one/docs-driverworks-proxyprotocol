@@ -5,7 +5,7 @@ Turn loudness off.
 
 ### Signature
 
-`C4:LOUDNESS_OFF ()`
+`LOUDNESS_OFF ()`
 
 
 | Parameter | Description |

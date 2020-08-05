@@ -5,7 +5,7 @@ Pulse volume level up.
 
 ### Signature
 
-`C4:PULSE_VOL_UP`
+`PULSE_VOL_UP`
 
 
 | Parameter | Description |

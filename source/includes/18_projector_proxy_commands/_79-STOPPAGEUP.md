@@ -5,7 +5,7 @@ Stop menu page up.
 
 ### Signature
 
-`C4:STOP_PAGE_UP ()`
+`STOP_PAGE_UP ()`
 
 
 ### Parameters
@@ -15,5 +15,5 @@ Stop menu page up.
 
 ### Returns
 
-\`None
-\`
+`None
+`

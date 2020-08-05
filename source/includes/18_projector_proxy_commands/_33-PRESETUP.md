@@ -3,9 +3,9 @@
 Toggle (cycle UP) tuning preset.
 
 
-###  Signature
+### Signature
 
-`C4:PRESET_UP ()`
+`PRESET_UP ()`
 
 
 ### Parameters
@@ -15,5 +15,4 @@ Toggle (cycle UP) tuning preset.
 
 ### Returns
 
-`None
-`
+`None`

@@ -5,7 +5,7 @@ Pulse bass down (Left)
 
 ### Signature
 
-`C4:PULSE_BASS_DOWN ()`
+`PULSE_BASS_DOWN ()`
 
 
 | Parameter | Description |

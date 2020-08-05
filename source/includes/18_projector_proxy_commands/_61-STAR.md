@@ -3,9 +3,9 @@
 Pulse `*` button.
 
 
-###  Signature
+### Signature
 
-`C4:STAR ()`
+`STAR ()`
 
 
 ### Parameters
