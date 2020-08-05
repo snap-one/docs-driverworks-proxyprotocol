@@ -5,7 +5,7 @@ This command is issued by a proxy consumer to cause the microphone gain for the 
 
 ### Signature
 
-`C4: SET_MICROPHONE_GAIN ()`
+`SET_MICROPHONE_GAIN ()`
 
 
 | Parameter | Description |

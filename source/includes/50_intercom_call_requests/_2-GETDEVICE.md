@@ -5,7 +5,7 @@ This request is issued to obtain the device properties of a specified intercom e
 
 ### Signature
 
-`C4:GET_DEVICE ()`
+`GET_DEVICE ()`
 
 
 | Parameter | Description |
@@ -50,6 +50,7 @@ Response Prototype
     <sipAOR>[string value]</sipAOR>
 </device_props>
 ```
+
 
 
 

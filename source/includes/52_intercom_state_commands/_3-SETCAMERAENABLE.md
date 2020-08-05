@@ -5,7 +5,7 @@ This command is issued to enable or disable the camera on an intercom device.
 
 ### Signature
 
-`C4: SET_CAMERA_ENABLE  ()`
+`SET_CAMERA_ENABLE  ()`
 
 
 | Parameter | Description |

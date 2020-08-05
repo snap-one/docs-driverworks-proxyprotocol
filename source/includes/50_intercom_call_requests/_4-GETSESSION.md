@@ -5,7 +5,7 @@ This request is issued to obtain the active session information for the requesti
 
 ### Signature
 
-`C4:GET_SESSION ()`
+`GET_SESSION ()`
 
 
 ### Parameters

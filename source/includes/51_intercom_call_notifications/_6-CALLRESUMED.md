@@ -5,7 +5,7 @@ This notification is issued when a session is resumed, it is sent to the initiat
 
 ### Signature
 
-`C4:CALL_ RESUMED ()`
+`CALL_ RESUMED ()`
 
 
 | Parameter | Description |

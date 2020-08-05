@@ -5,7 +5,7 @@ This command will result in a [`MONITOR_MODE_CHANGED`][1] notification to the pr
 
 ### Signature
 
-`C4: SET_ MONITOR_MODE ()`
+`SET_ MONITOR_MODE ()`
 
 
 | Parameter | Description |

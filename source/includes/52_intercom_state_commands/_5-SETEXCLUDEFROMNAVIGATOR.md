@@ -5,7 +5,7 @@ This command is issued to toggle the visibility of the intercom endpoint in a pr
 
 ### Signature
 
-`C4: SET_EXCLUDE_FROM_NAVIGATOR ()`
+`SET_EXCLUDE_FROM_NAVIGATOR ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ This notification is issued when a session is ended, it is sent to the initiator
 
 ### Signature
 
-`C4:CALL_ENDED ()`
+`CALL_ENDED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ This request is issued to obtain the session information of all of sessions on t
 
 ### Signature
 
-`C4:GET_SESSION_LIST ()`
+`GET_SESSION_LIST ()`
 
 
 ### Parameters

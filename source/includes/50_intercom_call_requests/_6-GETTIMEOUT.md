@@ -5,7 +5,7 @@ This request is issued to obtain the current timeout setting for manually answer
 
 ### Signature
 
-`C4:GET_TIMEOUT ()`
+`GET_TIMEOUT ()`
 
 
 ### Parameter

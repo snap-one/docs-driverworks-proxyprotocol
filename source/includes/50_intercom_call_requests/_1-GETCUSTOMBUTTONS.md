@@ -5,7 +5,7 @@ The Intercom Proxy provides the ability to define two (2) custom buttons for eac
 
 ### Signature
 
-`C4:GET_CUSTOM_BUTTONS ()`
+`GET_CUSTOM_BUTTONS ()`
 
 
 | Parameter | Description |

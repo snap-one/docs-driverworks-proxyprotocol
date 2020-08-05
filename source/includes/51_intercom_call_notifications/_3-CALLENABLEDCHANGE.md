@@ -5,7 +5,7 @@ Notification sent to the proxy  when the camera enabled value of the intercom ha
 
 ### Signature
 
-`C4:CALL_ENABLED_CHANGE ()`
+`CALL_ENABLED_CHANGE ()`
 
 
 | Parameter | Description |

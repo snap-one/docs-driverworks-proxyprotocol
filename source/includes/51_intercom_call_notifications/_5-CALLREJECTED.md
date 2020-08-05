@@ -5,7 +5,7 @@ This notification is issued when a call is rejected, it is sent to the initiator
 
 ### Signature
 
-`C4:CALL_REJECTED ()`
+`CALL_REJECTED ()`
 
 
 | Parameter | Description |

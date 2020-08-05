@@ -5,7 +5,7 @@ This command is issued by a proxy consumer to cause the state of the send video 
 
 ### Signature
 
-`C4: SET_SEND_VIDEO ()`
+`SET_SEND_VIDEO ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ This command is issued to toggle the “Do Not Disturb” setting of the interco
 
 ### Signature
 
-`C4: SET_AUTO_ANSWER ()`
+`SET_AUTO_ANSWER ()`
 
 
 | Parameter | Description |

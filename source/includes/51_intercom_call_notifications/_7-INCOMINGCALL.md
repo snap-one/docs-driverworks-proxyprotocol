@@ -5,7 +5,7 @@ This notification is issued when a call invite is received; it is only sent to t
 
 ### Signature
 
-`C4:INCOMING_CALL ()`
+`INCOMING_CALL ()`
 
 
 | Parameter | Description |

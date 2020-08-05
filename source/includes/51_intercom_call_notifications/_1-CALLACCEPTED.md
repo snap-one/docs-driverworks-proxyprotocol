@@ -5,7 +5,7 @@ This notification is issued when a call is accepted, it is sent to the initiator
 
 ### Signature
 
-`C4:CALL_ACCEPTED ()`
+`CALL_ACCEPTED ()`
 
 
 | Parameter | Description |

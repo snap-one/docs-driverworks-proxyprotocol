@@ -5,7 +5,7 @@ This command established the IP Address of the SIP Proxy.
 
 ### Signature
 
-`C4: SET_SIP_PROXY_IP ()`
+`SET_SIP_PROXY_IP ()`
 
 
 | Parameter | Description |

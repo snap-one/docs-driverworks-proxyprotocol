@@ -5,7 +5,7 @@ This request is issued to obtain the device properties of all of the intercom en
 
 ### Signature
 
-`C4:GET_DEVICE_LIST ()`
+`GET_DEVICE_LIST ()`
 
 
 ### Parameters

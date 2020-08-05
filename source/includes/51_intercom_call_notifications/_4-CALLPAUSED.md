@@ -5,7 +5,7 @@ This notification is issued when a session is paused, it is sent to the initiato
 
 ### Signature
 
-`C4:CALL_PAUSED ()`
+`CALL_PAUSED ()`
 
 
 | Parameter | Description |

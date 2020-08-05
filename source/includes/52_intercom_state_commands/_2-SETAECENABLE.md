@@ -5,7 +5,7 @@ This command is issued to enable or disable automatic echo cancellation on inter
 
 ### Signature
 
-`C4: SET_AEC_ENABLE  ()`
+`SET_AEC_ENABLE  ()`
 
 
 | Parameter | Description |

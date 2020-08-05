@@ -4,7 +4,7 @@ This command is issued to toggle the “Do Not Disturb” setting of the interco
 
 ### Signature
 
-`C4: SET_DND ()`
+`SET_DND ()`
 
 
 | Parameter | Description |
