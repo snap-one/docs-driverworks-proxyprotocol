@@ -5,7 +5,7 @@ Device has turned on.
 
 ### Signature
 
-`C4:ON ()`
+`ON ()`
 
 
 ### Parameter

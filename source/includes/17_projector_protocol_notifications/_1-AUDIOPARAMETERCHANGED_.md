@@ -5,7 +5,7 @@ Audio parameter has changed
 
 ### Signature
 
-`C4:AUDIO_PARAMETER_CHANGED ()`
+`AUDIO_PARAMETER_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Selected input has changed.
 
 ### Signature
 
-`C4:INPUT_CHANGED ()`
+`INPUT_CHANGED ()`
 
 
 | Parameter | Description |

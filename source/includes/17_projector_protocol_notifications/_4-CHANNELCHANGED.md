@@ -5,7 +5,7 @@ Selected channel has changed
 
 ### Signature
 
-`C4:CHANNEL_CHANGED ()`
+`CHANNEL_CHANGED ()`
 
 
 | Parameter | Description |
