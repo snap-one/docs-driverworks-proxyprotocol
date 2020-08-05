@@ -5,7 +5,7 @@ This notification is issued when a call is accepted, it is sent to the initiator
 
 ### Signature
 
-`C4:AUTO_ANSWER_CHANGED ()`
+`AUTO_ANSWER_CHANGED ()`
 
 
 | Parameter | Description |

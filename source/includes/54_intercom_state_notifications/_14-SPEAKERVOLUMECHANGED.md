@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Speaker Volume se
 
 ### Signature
 
-`C4:SPEAKER_VOLUME_CHANGED ()`
+`SPEAKER_VOLUME_CHANGED ()`
 
 
 | Parameter | Description |

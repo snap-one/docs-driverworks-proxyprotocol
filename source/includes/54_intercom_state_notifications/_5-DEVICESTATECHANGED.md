@@ -4,7 +4,7 @@ This notification is issued by the proxy when the endpoint’s current state has
 
 ### Signature
 
-`C4:DEVICE_STATE__CHANGED ()`
+`DEVICE_STATE__CHANGED ()`
 
 
 | Parameter | Description |

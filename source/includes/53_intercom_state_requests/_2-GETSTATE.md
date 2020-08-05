@@ -5,7 +5,7 @@ This request is issued to obtain the device state of a specified intercom endpoi
 
 ### Signature
 
-`C4:GET_STATE ()`
+`GET_STATE ()`
 
 
 | Request Parameter | Description |

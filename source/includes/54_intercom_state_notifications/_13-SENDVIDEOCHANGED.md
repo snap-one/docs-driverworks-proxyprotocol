@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Monitor Mode sett
 
 ### Signature
 
-`C4:SEND_VIDEO_CHANGED ()`
+`SEND_VIDEO_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification sent to the proxy  when the use camera value of the intercom has ch
 
 ### Signature
 
-`C4:USE_CAMERA_CHANGED ()`
+`USE_CAMERA_CHANGED ()`
 
 
 | Parameter | Description |

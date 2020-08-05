@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Microphone Gain s
 
 ### Signature
 
-`C4:MICROPHONE_GAIN_CHANGED ()`
+`MICROPHONE_GAIN_CHANGED ()`
 
 
 | Parameter | Description |

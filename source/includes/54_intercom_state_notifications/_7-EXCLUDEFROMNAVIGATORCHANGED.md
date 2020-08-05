@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Exclude from Navi
 
 ### Signature
 
-`C4:EXCLUDE_FROM_NAVIGATOR_CHANGED ()`
+`EXCLUDE_FROM_NAVIGATOR_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification sent to the proxy  when the conservative aec enabled value of the i
 
 ### Signature
 
-`C4:CONSERVATIVE_AEC_CHANGED ()`
+`CONSERVATIVE_AEC_CHANGED ()`
 
 
 | Parameter | Description |

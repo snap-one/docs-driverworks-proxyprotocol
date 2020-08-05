@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Monitor Mode sett
 
 ### Signature
 
-`C4:MONITOR_MODE_CHANGED ()`
+`MONITOR_MODE_CHANGED ()`
 
 
 | Parameter | Description |

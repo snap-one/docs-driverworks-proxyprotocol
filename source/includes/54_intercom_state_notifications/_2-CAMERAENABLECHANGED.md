@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Camera Enabled se
 
 ### Signature
 
- `C4:CAMERA_ENABLED_CHANGED ()`
+ `CAMERA_ENABLED_CHANGED ()`
 
 
 | Parameter | Description |

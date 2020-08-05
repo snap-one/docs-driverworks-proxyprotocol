@@ -5,7 +5,7 @@ Notification sent to the proxy  when the audio muted value of the intercom has c
 
 ### Signature
 
-`C4:MUTE_AUDIO_CHANGED ()`
+`MUTE_AUDIO_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Do Not Disturb se
 
 ### Signature
 
-`C4:DND_CHANGED ()`
+`DND_CHANGED ()`
 
 
 | Parameter | Description |

@@ -5,12 +5,13 @@ This request is issued to obtain the device state of all of intercom endpoints i
 
 ### Signature
 
-`C4:GET_STATE_LIST ()`
+`GET_STATE_LIST ()`
 
 
 ### Request Prototype
 
-See example to the right._ 
+See example to the right.
+
 ```lua
 <state_list>
    <device_state id=”Id1”> 

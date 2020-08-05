@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s current state has
 
 ### Signature
 
-`C4:CURRENT_STATE__CHANGED ()`
+`CURRENT_STATE__CHANGED ()`
 
 
 | Parameter | Description |

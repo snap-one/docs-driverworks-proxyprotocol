@@ -5,7 +5,7 @@ Notification sent to the proxy  when the SIP username value of the intercom has 
 
 ### Signature
 
-`C4:SIP_USERNAME_CHANGED ()`
+`SIP_USERNAME_CHANGED ()`
 
 
 | Parameter | Description |

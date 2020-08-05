@@ -5,7 +5,7 @@ This request is issued to obtain the current device state of the intercom endpoi
 
 ### Signature
 
-`C4:GET_CURRENT_STATE ()`
+`GET_CURRENT_STATE ()`
 
 
 ### Request Parameters

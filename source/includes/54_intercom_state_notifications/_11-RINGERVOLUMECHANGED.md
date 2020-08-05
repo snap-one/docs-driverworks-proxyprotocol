@@ -5,7 +5,7 @@ This notification is issued by the proxy when the endpoint’s Monitor Mode sett
 
 ### Signature
 
-`C4:RINGER_VOLUME_CHANGED ()`
+`RINGER_VOLUME_CHANGED ()`
 
 
 | Parameter | Description |
