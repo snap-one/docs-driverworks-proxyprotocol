@@ -5,7 +5,7 @@ Set bass to a specified level.
 
 ### Signature
 
-`C4:SET_BASS_LEVEL`
+`SET_BASS_LEVEL`
 
 
 | Parameter | Description |

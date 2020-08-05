@@ -5,7 +5,7 @@ Numerical value of the output. Switch the output to passed ID.
 
 ### Signature
 
-`C4:CONNECT OUTPUT ()`
+`CONNECT OUTPUT ()`
 
 
 | Parameter | Description |

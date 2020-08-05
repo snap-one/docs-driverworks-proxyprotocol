@@ -5,7 +5,7 @@ Command sent to the protocol during the proxy initialization. Returns available 
 
 ### Signature
 
-`C4:GET_AUDIO_INPUTS ()`
+`GET_AUDIO_INPUTS ()`
 
 
 ### Parameters

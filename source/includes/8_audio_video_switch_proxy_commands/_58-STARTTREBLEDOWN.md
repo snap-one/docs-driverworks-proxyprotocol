@@ -5,7 +5,7 @@ Start ramping treble down.
 
 ### Signature
 
-`C4:START_TREBLE_DOWN ()`
+`START_TREBLE_DOWN ()`
 
 
 | Parameter | Description |

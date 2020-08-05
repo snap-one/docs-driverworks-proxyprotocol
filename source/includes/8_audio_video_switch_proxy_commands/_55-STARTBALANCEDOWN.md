@@ -5,7 +5,7 @@ Start ramping balance down (left).
 
 ### Signature
 
-`C4:START_BALANCE_DOWN ()`
+`START_BALANCE_DOWN ()`
 
 
 | Parameter | Description |
