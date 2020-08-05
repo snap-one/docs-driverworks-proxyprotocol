@@ -5,7 +5,7 @@ Satellite Digital Audio Radio Service
 
 ### Signature
 
-`C4:XMARDS_ID ()`
+`XMARDS_ID ()`
 
 
 | Parameter | Description |

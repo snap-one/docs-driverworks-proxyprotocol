@@ -5,7 +5,7 @@ Displays strength of signal.
 
 ### Signature
 
-`C4:SIGNAL_STRENGTH ()`
+`SIGNAL_STRENGTH ()`
 
 
 | Parameter | Description |

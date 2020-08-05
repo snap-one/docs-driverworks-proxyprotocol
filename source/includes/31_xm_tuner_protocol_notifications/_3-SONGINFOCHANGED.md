@@ -5,7 +5,7 @@ Displays current song information.
 
 ### Signature
 
-`C4:SONG_INFO_CHANGED ()`
+`SONG_INFO_CHANGED ()`
 
 
 | Parameter | Description |

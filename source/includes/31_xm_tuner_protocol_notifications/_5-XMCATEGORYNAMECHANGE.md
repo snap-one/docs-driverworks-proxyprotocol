@@ -5,7 +5,7 @@ Displays current station name.
 
 ### Signature
 
-`C4:XM_CATEGORY_NAME_CHANGE ()`
+`XM_CATEGORY_NAME_CHANGE ()`
 
 
 | Parameter | Description |
