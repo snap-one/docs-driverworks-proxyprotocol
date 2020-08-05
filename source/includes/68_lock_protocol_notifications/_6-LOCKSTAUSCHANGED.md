@@ -5,7 +5,7 @@ Sent in when a lock status changes for any reason.
 
 ### Signature
 
-`C4:LOCK_STAUS_CHANGED ()`
+`LOCK_STAUS_CHANGED ()`
 
 
 | Parameter | Description |

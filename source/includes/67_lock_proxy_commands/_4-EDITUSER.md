@@ -5,7 +5,7 @@ Edits the user's schedule and status.
 
 ### Signature
 
-`C4:ADD_USER ()`
+`ADD_USER ()`
 
 
 | Parameter | Description |

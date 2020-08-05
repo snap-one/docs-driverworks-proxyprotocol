@@ -5,7 +5,7 @@ Sent in when a custom setting changes
 
 ### Signature
 
-`C4:CUSTOM_SETTINGS_CHANGED ()`
+`CUSTOM_SETTINGS_CHANGED ()`
 
 
 ### Parameter

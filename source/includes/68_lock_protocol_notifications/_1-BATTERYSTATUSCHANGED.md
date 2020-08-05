@@ -5,7 +5,7 @@ Sent when battery status changed.
 
 ### Signature
 
-`C4: BATTERY_STATUS_CHANGED ()`
+`BATTERY_STATUS_CHANGED ()`
 
 
 | Parameter | Description |

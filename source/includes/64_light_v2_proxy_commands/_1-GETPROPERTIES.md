@@ -5,7 +5,7 @@ Used to get all the information about the proxy. Note that even if certain funct
 
 ### Signature
 
-`C4:GET_PROPERTIES ()`
+`GET_PROPERTIES ()`
 
 
 ### Parameters

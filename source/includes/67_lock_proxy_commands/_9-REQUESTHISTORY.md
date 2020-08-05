@@ -5,7 +5,7 @@ This command results in the Protocol Notification [`HISTORY`][1] being sent from
 
 ### Signature
 
-`C4:REQUEST_HISTORY ()`
+`REQUEST_HISTORY ()`
 
 
 ### Parameters

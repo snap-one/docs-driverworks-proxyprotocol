@@ -5,7 +5,7 @@ Sent in response to the command `REQUEST_HISTORY`.
 
 ### Signature
 
-`C4:HISTORY ()`
+`HISTORY ()`
 
 
 ### Parameter

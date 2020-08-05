@@ -5,7 +5,7 @@ Sent when a user setting is deleted.
 
 ### Signature
 
-`C4: USER_DELETED ()`
+`USER_DELETED ()`
 
 
 | Parameter | Description |

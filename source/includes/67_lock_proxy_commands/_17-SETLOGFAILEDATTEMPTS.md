@@ -5,7 +5,7 @@ For lock’s that have internal log storage, sets whether or not to log failed a
 
 ### Signature
 
-`C4:SET_LOG_FAILED_ATTEMPTS ()`
+`SET_LOG_FAILED_ATTEMPTS ()`
 
 
 | Parameter | Description |

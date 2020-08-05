@@ -5,7 +5,7 @@ For locks that have internal log storage, set the maximum number of log items to
 
 ### Signature
 
-`C4:SET_NUMBER_LOG_ITEMS ()`
+`SET_NUMBER_LOG_ITEMS ()`
 
 
 | Parameter | Description |

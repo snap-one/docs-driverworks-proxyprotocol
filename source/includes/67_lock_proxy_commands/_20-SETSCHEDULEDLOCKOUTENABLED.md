@@ -5,7 +5,7 @@ Disable or enable all user passcode access.
 
 ### Signature
 
-`C4:SET_SCHEDULED_LOCKOUT_ENABLED ()`
+`SET_SCHEDULED_LOCKOUT_ENABLED ()`
 
 
 | Parameter | Description |

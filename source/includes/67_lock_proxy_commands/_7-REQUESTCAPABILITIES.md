@@ -1,11 +1,11 @@
 ## REQUEST CAPABILITIES
 
-This command results in the Protocol Notification [`CAPABILITIESCHANGED`][1]` being sent from the Protocol to the Proxy.
-`
+This command results in the Protocol Notification [`CAPABILITIESCHANGED`][1]\` being sent from the Protocol to the Proxy.
+\`
 
 ### Signature
 
-`C4:REQUEST_CAPABILITIES ()`
+`REQUEST_CAPABILITIES ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Sent when a user is added.
 
 ### Signature
 
-`C4: USER_ADDED ()`
+`USER_ADDED ()`
 
 
 | Parameter | Description |

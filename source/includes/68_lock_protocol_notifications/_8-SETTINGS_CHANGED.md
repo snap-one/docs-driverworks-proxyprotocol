@@ -5,7 +5,7 @@ Sent when a setting changes.
 
 ### Signature
 
-`C4:SETTINGS_CHANGED ()`
+`SETTINGS_CHANGED ()`
 
 
 | Parameter | Description |

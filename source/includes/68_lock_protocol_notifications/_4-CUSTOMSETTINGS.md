@@ -5,7 +5,7 @@ Sent in response to the command `REQUEST_CUSTOM_SETTINGS`.
 
 ### Signature
 
-`C4:CUSTOM_SETTINGS ()`
+`CUSTOM_SETTINGS ()`
 
 
 ### Parameter

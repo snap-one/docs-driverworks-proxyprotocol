@@ -5,7 +5,7 @@ Toggle the state of the lock. If the lock status is unknown or default, the resu
 
 ### Signature
 
-`C4:TOGGLE ()`
+`TOGGLE ()`
 
 
 ### Parameter

@@ -5,7 +5,7 @@ This command results in the Protocol Notification [`USERS`][1] being sent from t
 
 ### Signature
 
-`C4:REQUEST_USERS ()`
+`REQUEST_USERS ()`
 
 
 ### Parameters

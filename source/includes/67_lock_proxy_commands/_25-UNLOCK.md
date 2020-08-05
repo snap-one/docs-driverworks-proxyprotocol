@@ -4,7 +4,7 @@ Unlock if status is locked.
 
 ### Signature
 
-`C4: UNLOCK ()`
+`UNLOCK ()`
 
 
 ### Parameter

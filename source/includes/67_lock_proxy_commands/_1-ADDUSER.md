@@ -5,7 +5,7 @@ Adds a user.
 
 ### Signature
 
-`C4:ADD_USER ()`
+`ADD_USER ()`
 
 
 | Parameter | Description |

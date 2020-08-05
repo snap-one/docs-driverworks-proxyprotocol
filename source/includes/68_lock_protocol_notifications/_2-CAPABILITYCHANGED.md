@@ -5,7 +5,7 @@ Sent when a capability changes; or when requested by the protocol driver command
 
 ### Signature
 
-`C4: CAPABILITY_CHANGED ()`
+`CCAPABILITY_CHANGED ()`
 
 
 | Parameter | Description |

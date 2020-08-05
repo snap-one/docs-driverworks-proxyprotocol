@@ -5,7 +5,7 @@ Sent in response to the command `REQUEST_SETTINGS`.
 
 ### Signature
 
-`C4:SETTINGS ()`
+`SETTINGS ()`
 
 
 ### Parameters

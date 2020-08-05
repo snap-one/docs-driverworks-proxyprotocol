@@ -5,7 +5,7 @@ Set the number of seconds to wait after wrong code attempts has been reached. Ra
 
 ### Signature
 
-`C4:SET_SHUT_OUT_TIMER ()`
+`SET_SHUT_OUT_TIMER ()`
 
 
 | Parameter | Description |

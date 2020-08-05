@@ -5,7 +5,7 @@ Sent when a user setting is changed.
 
 ### Signature
 
-`C4: USER_CHANGED ()`
+`USER_CHANGED ()`
 
 
 | Parameter | Description |

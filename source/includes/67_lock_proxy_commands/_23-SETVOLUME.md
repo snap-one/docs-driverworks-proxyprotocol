@@ -5,7 +5,7 @@ Sets the lock’s volume.
 
 ### Signature
 
-`C4:SET_ VOLUME ()`
+`SET_ VOLUME ()`
 
 
 | Parameter | Description |

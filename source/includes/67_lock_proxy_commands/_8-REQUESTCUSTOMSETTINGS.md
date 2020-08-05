@@ -5,7 +5,7 @@ This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being s
 
 ### Signature
 
-`C4:REQUEST_CUSTUM_SETTINGS ()`
+`REQUEST_CUSTUM_SETTINGS ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Set whether or not keypad activation will extend bolt if unlocked.
 
 ### Signature
 
-`C4:SET_ONE_TOUCH_LOCKING ()`
+`SET_ONE_TOUCH_LOCKING ()`
 
 
 | Parameter | Description |

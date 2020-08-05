@@ -5,7 +5,7 @@ Deletes a user.
 
 ### Signature
 
-`C4:DELETE_USER ()`
+`DELETE_USER ()`
 
 
 ### Parameters

@@ -5,7 +5,7 @@ Set the number of seconds to wait before locking automatically after unlocked. A
 
 ### Signature
 
-`C4: SET_AUTO_LOCK_SECONDS ()`
+`SET_AUTO_LOCK_SECONDS ()`
 
 
 | Parameter | Description |
