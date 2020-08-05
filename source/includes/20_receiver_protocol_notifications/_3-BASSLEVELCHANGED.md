@@ -5,7 +5,7 @@ Selected bass level has changed
 
 ### Signature
 
-`C4:BASS_LEVEL_CHANGED ()`
+`BASS_LEVEL_CHANGED ()`
 
 
 | Parameter | Description |

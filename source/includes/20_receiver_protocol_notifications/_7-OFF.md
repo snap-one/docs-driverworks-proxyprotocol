@@ -5,10 +5,10 @@ Device has turned off.
 
 ### Signature
 
-`C4:OFF ()`
+`OFF ()`
 
 
-### Parameter 
+### Parameter
 
 `None`
 

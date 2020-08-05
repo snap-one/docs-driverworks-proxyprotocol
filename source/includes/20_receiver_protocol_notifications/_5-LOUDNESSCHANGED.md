@@ -5,7 +5,7 @@ Loudness state (On/Off) has changed.
 
 ### Signature
 
-`C4:LOUDNESS_CHANGED ()`
+`LOUDNESS_CHANGED ()`
 
 
 | Parameter | Description |
