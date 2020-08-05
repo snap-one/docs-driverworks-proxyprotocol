@@ -5,7 +5,7 @@ MUTE state (On/Off) has changed.
 
 ### Signature
 
-`C4:MUTE_CHANGED ()`
+`MUTE_CHANGED ()`
 
 
 | Parameter | Description |
