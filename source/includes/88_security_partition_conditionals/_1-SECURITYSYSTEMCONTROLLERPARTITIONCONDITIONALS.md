@@ -7,7 +7,7 @@ The following Conditionals are supported with the Security System Controller Par
 | --- | --- |
 | == | equal |
 | != | not equal |
-| ARM STATE | One of the possible arm states listed in the `arm_states` configuration entry. 
+| ARM STATE | One of the possible arm states listed in the `arm_states` configuration entry. These values are defined in the partition driver’s capabilities XML. See [arm_states][1] for more information.
 
 `IS_ALARM`
 Returns true if the current state is ALARM.
@@ -37,4 +37,7 @@ Same as `CURRENT_ARM_STATUS` but used to compares with the arm status before the
 | --- | --- |
 | == | equal |
 | != | not equal |
-| ARM STATE | One of the possible arm states listed in the `arm_states` configuration entry. |
+| ARM STATE | One of the possible arm states listed in the `arm_states` configuration entry. These values are defined in the partition driver’s capabilities XML. See [arm_states][2] for more information._|
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
