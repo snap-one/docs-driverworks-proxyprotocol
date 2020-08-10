@@ -30,7 +30,7 @@ Returns true if the current state is ENTRY DELAY
 `IS_IN_EXIT_DELAY`
 Returns true if the current state is EXIT DELAY
 
-`PREVIOUS_ARM\STATUS`
+`PREVIOUS_ARM_STATUS`
 Same as `CURRENT_ARM_STATUS` but used to compares with the arm status before the last state change. 
 
 | Parameter | Description |
