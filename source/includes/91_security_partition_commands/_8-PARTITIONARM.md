@@ -1,4 +1,4 @@
-## PARTITION ARM
+## PARTITION_ARM
 
 Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. Specifies the user code to use with the arm command (if needed).
 
