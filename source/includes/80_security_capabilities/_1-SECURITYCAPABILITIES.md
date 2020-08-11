@@ -1,4 +1,4 @@
-## SECURITY CAPABILITIES
+
 
 The following Capabilities are supported by the Security Proxy:
 
