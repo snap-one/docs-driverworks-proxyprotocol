@@ -1,0 +1,5 @@
+## GET\_PANEL\_SETUP
+
+Calls GET\_ALL\_PARTITION\_INFO\_
+
+

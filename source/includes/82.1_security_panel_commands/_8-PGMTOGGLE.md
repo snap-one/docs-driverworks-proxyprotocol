@@ -1,4 +1,4 @@
-## PGM_TOGGLE
+## PGM\_TOGGLE
 
 Sends an ‘toggle’ command to the targeted PGM.
 
