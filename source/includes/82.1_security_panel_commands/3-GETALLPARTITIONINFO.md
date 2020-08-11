@@ -1,4 +1,4 @@
-## GET_ALL_PARTITION_INFO_
+## GET\_ALL\_PARTITION\_INFO\\
 
 Request to return information to the panel proxy about each of its partitions.  The information consists of its id, if it’s enabled, its binding id, and its current state.
 

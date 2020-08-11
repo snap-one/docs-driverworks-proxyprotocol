@@ -1,4 +1,4 @@
-## PGM_CLOSE_
+## PGM\_CLOSE\\
 
 Sends an ‘close’ command to the targeted PGM.
 

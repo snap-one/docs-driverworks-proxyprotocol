@@ -1,4 +1,4 @@
-## PGM_OPEN_
+## PGM\_OPEN\\
 
 Sends an ‘open’ command to the targeted PGM.
 

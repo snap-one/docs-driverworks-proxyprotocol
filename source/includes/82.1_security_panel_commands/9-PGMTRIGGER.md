@@ -1,4 +1,4 @@
-## PGM_TRIGGER_
+## PGM\_TRIGGER\\
 
 Sends an ‘trigger’ command to the targeted PGM.
 
