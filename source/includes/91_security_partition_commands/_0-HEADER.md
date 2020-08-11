@@ -1,1 +1,1 @@
-# Security Proxy Commands
+# Security Partition Commands
