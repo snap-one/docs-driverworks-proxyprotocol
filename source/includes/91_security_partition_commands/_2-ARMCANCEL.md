@@ -1,4 +1,6 @@
-## ARM_CANCEL
+## ARM_CANCEL_
+
+Cancel an uncompleted arm command.
 
 
 | Parameter | Description |
