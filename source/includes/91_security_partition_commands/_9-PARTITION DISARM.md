@@ -1,4 +1,4 @@
-## PARTITION DISARM
+## PARTITION_DISARM
 
 Specifies the user code to use with the DISARM command (if needed).
 

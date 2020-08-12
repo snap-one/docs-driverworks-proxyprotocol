@@ -1,7 +1,6 @@
 ## EXECUTE\_FUNCTION
 
-Request the partition to execute a function event of the type listed in the functions capability. The function parameter would be one of the function strings listed in the `GET_SETUP` xml.
-
+Request the partition to execute a function event of the type listed in the functions capability. The function parameter would be one of the function strings listed in the [\<functions\>][1] capability
 
 | Parameter | Description |
 | --- | --- |
@@ -13,3 +12,5 @@ Request the partition to execute a function event of the type listed in the func
 
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
