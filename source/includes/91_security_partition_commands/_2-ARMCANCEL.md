@@ -1,4 +1,4 @@
-## ARM_CANCEL_
+## ARM\_CANCEL\_
 
 Cancel an uncompleted arm command.
 
@@ -8,8 +8,5 @@ Cancel an uncompleted arm command.
 | str | InterfaceID: A unique string to identify which interface is sending this command. |
 
 
-### Returns
-
-`None`
 
 

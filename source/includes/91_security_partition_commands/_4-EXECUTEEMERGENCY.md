@@ -1,6 +1,6 @@
-## EXECUTE_EMERGENCY
+## EXECUTE\_EMERGENCY
 
-Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. Requests the partition to execute an emergency event of the type specified by the EmergencyType parameter. Valid values are: Fire, Medical, Police, and Panic.
+Requests the partition to execute an emergency event of the type specified by the EmergencyType parameter. Valid values are: Fire, Medical, Police, and Panic.
 
 
 | Parameter | Description |
@@ -10,9 +10,7 @@ Command from the UI to the Proxy and then forwarded on to the Protocol. Has no R
 
 
 
-### Returns
 
-`None`
 
 
 

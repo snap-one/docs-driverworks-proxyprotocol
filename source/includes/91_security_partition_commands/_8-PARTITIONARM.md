@@ -1,6 +1,6 @@
-## PARTITION_ARM
+## PARTITION\_ARM
 
-Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. Specifies the user code to use with the arm command (if needed).
+Specifies the user code to use with the arm command (if needed).
 
 
 | Parameter | Description |
@@ -11,8 +11,6 @@ Command from the UI to the Proxy and then forwarded on to the Protocol. Has no R
 | str | InterfaceID: A unique string to identify which interface is sending this command. |
 
 
-### Returns
 
-`None`
 
 

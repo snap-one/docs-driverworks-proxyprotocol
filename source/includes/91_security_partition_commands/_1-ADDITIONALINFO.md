@@ -1,6 +1,6 @@
 ## ADDITIONAL\_INFO
 
-Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. This command will only be sent after having received a [`REQUEST_ADDITIONAL_INFO`][1] notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a `request_additional_info` DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the `REQUEST_ADDITIONAL_INFO` notification.
+This command will only be sent after having received a [`REQUEST_ADDITIONAL_INFO`][1] notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a `request_additional_info` DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the `REQUEST_ADDITIONAL_INFO` notification.
 
 
 | Parameter | Description |
@@ -11,9 +11,7 @@ Command from the UI to the Proxy and then forwarded on to the Protocol. Has no R
 | str | InterfaceID: A unique (str) to identify which interface is sending this command. |
 
 
-### Returns
 
-`None`
 
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info
