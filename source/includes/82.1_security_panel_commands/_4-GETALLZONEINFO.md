@@ -1,4 +1,4 @@
-## GET\_ALL\_ZONE\_INFO\\
+## GET\_ALL\_ZONE\_INFO
 
 Request to return information about each zone on the panel. The information consists of its id, name, type\_id, and  a list of partitions the zone is included in, a flag indicating if it can be bypassed, and a flag indicating if it is currently opened.
 
