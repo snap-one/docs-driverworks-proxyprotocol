@@ -1,17 +1,17 @@
-## GET SNAPSHOT4 QUERY STRING
+## GET SNAPSHOT QUERY STRING
 
 Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for HTTP snapshot request.
 
 
 ### Signature
 
-`GET_SNAPSHOT_QUERY ()`
+`GET_SNAPSHOT_QUERY_STRING ()`
 
 
 | Parameter | Description |
 | --- | --- |
-| num | The desired resolution x-axis value. |
-| num | The desired resolution y-axis value. |
+| SIZE_X | The desired resolution x-axis value. |
+| SIZE_Y | The desired resolution y-axis value. |
 
 
 ### Returns
