@@ -1,4 +1,4 @@
-# 3.2.0 Light V2 Variables
+# Light V2 Variables
 
 | Variable Name | ID | Description |
 | --- | --- |

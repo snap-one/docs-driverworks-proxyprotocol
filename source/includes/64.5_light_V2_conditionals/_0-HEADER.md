@@ -1,4 +1,4 @@
-# 3.2.0 Light V2 Conditionals
+# Light V2 Conditionals
 
 The following Conditionals are used for Composer Programming to perform logic comparisons of Variables.  This functionality is managed by the Proxy and Director.
 

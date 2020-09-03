@@ -1,3 +1,3 @@
-# 3.2.0 Light V2 Commands
+# Light V2 Commands
 
 This section lists the Commands (Bound Call, aka SendToDevice in Lua) that the Light V2 proxy supports.  These are for use by Navigators, Composer Programming and other services like Voice Control.  The thing to remember with proxies is that many of the commands are passed on to the protocol, and it is the protocol drivers responsibility to ripple the commands result back up to the proxy using a 'Notify' command. This allows the protocol to optionally make slight adjustments to commands for its unique driver or hardware, and then inform the proxy of the change.
