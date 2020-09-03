@@ -3,7 +3,7 @@
 
 | **Variable Name** | **ID** | **Description** |
 | --- | --- |
-| Light State | 1000 | Boolean indicating if the light Brightness is not at the Off preset. If you set this variable to true on a dimmer, it will go to the On preset. (On a switch, only the first variable exists) |
+| Light State | 1000 | Boolean indicating if the light Brightness is not at the Off preset. If you set this variable to true on a dimmer, it will go to the On preset. On a switch, only the first variable exists. |
 | Light Brightness Percent | 1001 | An integer indicating the current brightness for a dimmer. The value should be between 0-100. | Click Rate Up | 1002 | An integer indicating the number of milliseconds. (Used in "On" Preset) |
 | Click Rate Down | 1003 | An integer indicating the number of milliseconds. (Used in "Off" Preset) |
 | Hold Rate Up | 1004 | An integer indicating the number of milliseconds. (Used in "Slow On" Preset) |
