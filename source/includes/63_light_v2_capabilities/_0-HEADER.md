@@ -1,1 +1,1 @@
-# Light V2 Capabilities
+# 3.2.0 Light V2 Capabilities

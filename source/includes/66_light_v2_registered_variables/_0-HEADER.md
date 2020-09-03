@@ -1,1 +1,0 @@
-# Light V2 Registered Variables
