@@ -1,5 +1,12 @@
 
 
+
+| Parameter | Description |
+| --- | --- |
+| str | PASSCODE |
+
+
+
 | **Variable Name** | **ID** | **Description** |
 | --- | --- |
 | Light State | 1000 | Boolean indicating if the light Brightness is not at the Off preset. If you set this variable to true on a dimmer, it will go to the On preset. On a switch, only the first variable exists. |
