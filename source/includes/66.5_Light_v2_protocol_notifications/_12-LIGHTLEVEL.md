@@ -7,6 +7,7 @@ Used to inform the proxy that the light level has changed.  This notify should n
 `C4:LIGHT_LEVEL ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
 | int | LEVEL: Percent from 0-100 of the current light level. |

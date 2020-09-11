@@ -7,6 +7,7 @@ Used to inform the proxy that the online status of the device has changed.  Due 
 `C4:ONLINE_CHANGED ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
 | bool | STATE: True/False. Whether the device is online or not. |

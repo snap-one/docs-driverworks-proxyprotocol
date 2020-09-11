@@ -7,6 +7,7 @@ Used to inform the proxy that the hardware Cold Start level has changed. This is
 `C4:COLD_START_LEVEL ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
 | int | BRIGHTNESS: Percent from 0-99 for the Min On brightness to be remapped to. |

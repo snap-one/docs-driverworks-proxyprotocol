@@ -7,9 +7,10 @@ Used to inform the proxy that a button state has changed on the device.  Note th
 `C4:BUTTON_ACTION ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
-| int | BUTTON_ID: Index of the button being controlled. |
+| int | BUTTON\_ID: Index of the button being controlled. |
 | int | ACTION: The Event Type which include: |
 | | 0 - Release |
 | | 1 - Push |

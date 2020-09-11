@@ -7,6 +7,7 @@ Used to inform the proxy that the hardware minimum On level has changed.  This i
 `C4:MIN_ON ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
 | int | BRIGHTNESS: Percent from 0-99 for the Min On brightness to be remapped to. |

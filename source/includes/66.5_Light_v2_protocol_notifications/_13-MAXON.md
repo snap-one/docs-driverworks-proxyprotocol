@@ -7,6 +7,7 @@ Used to inform the proxy that the hardware maximum On level has changed.  This i
 `C4:MAX_ON ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
 | int | BRIGHTNESS: Percent from 1-100 for the Max On brightness to be remapped to. |

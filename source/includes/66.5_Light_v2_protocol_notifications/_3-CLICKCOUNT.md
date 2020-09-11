@@ -7,9 +7,10 @@ Used to tell the proxy that a button has been clicked multiple times.
 `C4:CLICK_COUNT ()`
 
 
+
 | Parameter | Description |
 | --- | --- |
-| int | BUTTON_ID: Index of the button being controlled. |_
+| int | BUTTON\_ID: Index of the button being controlled. |\_
 | int | COUNT: Number of clicks. |
 
 
