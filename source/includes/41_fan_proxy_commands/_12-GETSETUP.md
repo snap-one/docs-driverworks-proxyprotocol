@@ -15,8 +15,8 @@ Command handled by the proxy driver.  Immediately returns a block of XML informa
 
 ### Returns
 
-`None
-`
+`None`
+
 
 ### Example
 
