@@ -1,6 +1,6 @@
 ## Intercom Conditionals
 
-The following Conditionals are supported by the Intercom Proxy. itself. They include:
+The following Conditionals are supported by the Intercom Proxy itself. They include:
 
 `Remote Name Matched` Returns true if there is an incoming/outgoing call to a specified endpoint. 
 
