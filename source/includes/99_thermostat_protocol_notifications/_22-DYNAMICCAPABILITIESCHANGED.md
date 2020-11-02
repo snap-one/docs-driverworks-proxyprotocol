@@ -9,8 +9,8 @@ Dynamic Capabilities is a way for a protocol driver to send updates about some c
 
 | Parameter | Description |
 | --- | --- |
-| bool | `HAS_OUTDOOR_TEMPERATURE`: boolean to enable/disable \`hasoutdoortemperature capability, if the device supports this feature, default is false. |
-`| bool |`CAN\_CHANGE\_SCALE\`: boolean to enable/disable Navigators UI's and composer from being able to change the scale of the hardware. |
+| bool | `HAS_OUTDOOR_TEMPERATURE`: boolean to enable/disable `hasoutdoortemperature` capability, if the device supports this feature, default is false. |
+| bool | `CAN\_CHANGE\_SCALE`: boolean to enable/disable Navigators UI's and composer from being able to change the scale of the hardware. |
 | bool | `HAS_HUMIDITY`: boolean to enable/disable \`\`[`has_humidity`][1] capability, if the device supports this feature, default is false |
 | bool | `HAS_SINGLE_SETPOINT`: Boolean used to turn single setpoint mode to on or off. Defaults to false (off). |
 | int | `HUMIDIFY_SETPOINT_MIN`: Minimum Setpoint, int 0-100 that will do the same thing as the [`setpoint_humidify_min`][2] capability, default 0 |
