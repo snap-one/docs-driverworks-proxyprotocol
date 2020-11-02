@@ -7,31 +7,31 @@ Indicates if the device is capable of calibrating itself. Enables `SET_CALIBRATI
 
 
 `<can_change_scale></can_change_scale>` 
-Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][1] notification.
+Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][1] notification.
 
 
 `<can_cool></can_cool>`
-Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][2] notification.This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][2] notification.This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_dehumidify></can_dehumidify>`
-Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][3] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][3] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_do_auto></can_do_auto>`
- Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][4] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+ Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][4] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_heat></can_heat>`
-Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][5] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][5] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_humidify></can_humidify>`
-Boolean to enable/disable `can_humidity` capability, if the device supports this feature, default is True.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][6] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
+Boolean to enable/disable `can_humidity` capability, if the device supports this feature, default is True.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][6] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 `<can_inc_dec_setpoints></can_inc_dec_setpoints>`
-Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a [`SET_SETPOINT_HEAT`][7] command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.
+Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a [`DYNAMIC_CAPABILITIES_CHANGED` ][7] command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.
 
 
 `<can_lock_buttons></can_lock_buttons>`
@@ -39,7 +39,7 @@ Boolean indicating if the device has internal commands to increment and decremen
 
 
 `<can_preset></can_preset>`
-Boolean indicating if the device supports the preset functionality including `custom_fields`. This does not including scheduling as `preset_scheduling` is a feature that is currently not supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED`][8] notification.
+Boolean indicating if the device supports the preset functionality including `custom_fields`. This does not including scheduling as `preset_scheduling` is a feature that is currently not supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][8] notification.
 
 
 `<can_preset_schedule></can_preset_schedule>`
@@ -274,14 +274,14 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-unhandled-commands
-[8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
 [9]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [10]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [11]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
