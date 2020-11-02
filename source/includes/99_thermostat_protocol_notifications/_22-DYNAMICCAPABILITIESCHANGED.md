@@ -1,4 +1,4 @@
-## DYNAMIC CAPABILITIES CHANGED
+## DYNAMIC CAPABILITIES CHANGED TSTAT
 
 Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max and resolution of changes are for the setpoint. 
 
