@@ -295,7 +295,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 [19]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [20]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [21]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
-[22]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
+[22]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
 [23]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [24]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
 [25]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed
