@@ -29,7 +29,7 @@ This capability adds the ability to display device state icons for the button. A
 </capabilities>
 ```
 
-Note, the example to the right does not include all of the icon sizes for brevity.
+Note, the example to the right does not include all icon sizes for brevity.
 
 
 
