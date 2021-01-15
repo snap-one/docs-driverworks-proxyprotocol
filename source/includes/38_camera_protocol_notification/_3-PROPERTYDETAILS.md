@@ -1,11 +1,11 @@
-## PROPERTY DETAILS
+## PROPERTY DEFAULTS
 
 Notification sent from the protocol driver through [ON DRIVER LATE INIT][1] containing the camera's default properties
 
 
 ### Signature
 
-`PROPERTY_DETAILS ()`
+`Property_defaults ()`
 
 
 | Parameter | Description |
