@@ -1,6 +1,19 @@
 ## SET BRIGHTNESS TARGET
 
-Used to set the target brightness of where the light is being requested to go.
+Used to set the target brightness of where the light is being requested to go. 
+
+All Lights have the following Presets at minimum and can be used by UI's, Voice Control, Programming, etc so a UI does not have to look up common Presets and/or levels for general control.
+
+"On" - This is the Preset that should be used when turning a light on.  The level and rate that matches what a Top "Click" press would activate.  The Level was imported from the PRESET LEVEL value in previous OS releases._ 
+"Off" - This is the Preset that should be used when turning a light off.  This presets level and rate matches what the bottom 
+
+"Click" on a physical device would be.
+
+"Slow On" - This is the level and rate that matches what a Top button "Hold" press would be.
+
+"Slow Off" - This is the level and rate that matches what a Bottom button "Hold" press would be.
+
+Additional presets can be added via the C4TYPE PRESET API.  This will allow drivers that have common "20% 40% 60% 80%" presets to define these presets and the LightV2 proxy will automatically take care of creating keypad bindings and managing LED status tracking of those presets and keypad button status.
 
 
 ### Signature
@@ -22,3 +35,14 @@ Used to set the target brightness of where the light is being requested to go.
 `None`
 
 
+### Usage Note
+
+Control4 is discouraging the use of the following commands as they will be deprecated. The SET BRIGHTNESS TARGET API should be used in their place:
+
+ON: Use SET BRIGHTNESS TARGET with the param PRESET =  "On".
+
+OFF: Use SET BRIGHTNESS TARGET with the param PRESET =  "Off".
+
+SET LIGHT LEVEL: Use SET BRIGHTNESS TARGET with the param RATE of 0.
+
+RAMP TO LEVEL: Use SET BRIGHTNESS TARGET with RATE in milliseconds.
