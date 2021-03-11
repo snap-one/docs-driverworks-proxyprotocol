@@ -5,7 +5,7 @@ Used to inform the proxy that the light level has changed.
 
 ### Signature
 
-`C4:LIGHT_LEVEL ()`
+`LIGHT_LEVEL ()`
 
 
 

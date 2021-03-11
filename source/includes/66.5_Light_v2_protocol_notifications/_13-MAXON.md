@@ -4,7 +4,7 @@ Used to inform the proxy that the hardware maximum On level has changed.  This i
 
 ### Signature
 
-`C4:MAX_ON ()`
+`MAX_ON ()`
 
 
 

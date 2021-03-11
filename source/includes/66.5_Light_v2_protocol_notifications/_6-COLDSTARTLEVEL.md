@@ -4,7 +4,7 @@ Used to inform the proxy that the hardware Cold Start level has changed. This is
 
 ### Signature
 
-`C4:COLD_START_LEVEL ()`
+`COLD_START_LEVEL ()`
 
 
 

@@ -4,7 +4,7 @@ Used to update capabilities and proxy functionality without requiring a differen
 
 ### Signature
 
-`C4:DYANAMIC_CAPABILITIES_CHANGED ()`
+`DYANAMIC_CAPABILITIES_CHANGED ()`
 
 
 ### Parameters

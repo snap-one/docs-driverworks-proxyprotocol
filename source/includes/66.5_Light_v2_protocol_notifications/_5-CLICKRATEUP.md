@@ -4,7 +4,7 @@ Used to inform the proxy that the hardware click rate for the "On" Brightness pr
 
 ### Signature
 
-`C4:CLICK_RATE_UP ()`
+`CLICK_RATE_UP ()`
 
 
 

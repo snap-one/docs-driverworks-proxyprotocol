@@ -4,13 +4,13 @@ Used to inform the proxy that the hardware Cold Start level has changed.  This i
 
 ### Signature
 
-`C4:COLD_START_TIME ()`
+`COLD_START_TIME ()`
 
 
 
 | Parameter | Description |
 | --- | --- |
-| int | BRIGHTNESS: Number of milliseconds that the light is turned on to the COLD_START_LEVEL value. |
+| int | BRIGHTNESS: Number of milliseconds that the light is turned on to the COLD\_START\_LEVEL value. |
 
 
 ### Returns

@@ -4,7 +4,7 @@ Used to inform the proxy that a button state has changed on the device.  Note th
 
 ### Signature
 
-`C4:BUTTON_ACTION ()`
+`BUTTON_ACTION ()`
 
 
 

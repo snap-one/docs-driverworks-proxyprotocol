@@ -4,7 +4,7 @@ Used to inform the proxy that a status of a button LED has changed.  Color strin
 
 ### Signature
 
-`C4:BUTTON_INFO ()`
+`BUTTON_INFO ()`
 
 
 

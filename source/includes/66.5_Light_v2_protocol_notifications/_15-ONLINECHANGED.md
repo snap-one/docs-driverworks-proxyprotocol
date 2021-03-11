@@ -4,7 +4,7 @@ Used to inform the proxy that the online status of the device has changed.  Due 
 
 ### Signature
 
-`C4:ONLINE_CHANGED ()`
+`ONLINE_CHANGED ()`
 
 
 

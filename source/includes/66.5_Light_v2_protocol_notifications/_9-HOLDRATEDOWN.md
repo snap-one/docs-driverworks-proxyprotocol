@@ -5,7 +5,7 @@ Used to inform the proxy that the hardware click rate for the "Slow Off" Brightn
 
 ### Signature
 
-`C4:HOLD_RATE_DOWN ()`
+`HOLD_RATE_DOWN ()`
 
 
 

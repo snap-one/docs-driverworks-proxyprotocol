@@ -4,7 +4,7 @@ Used to inform the proxy that the hardware minimum On level has changed.  This i
 
 ### Signature
 
-`C4:MIN_ON ()`
+`MIN_ON ()`
 
 
 
