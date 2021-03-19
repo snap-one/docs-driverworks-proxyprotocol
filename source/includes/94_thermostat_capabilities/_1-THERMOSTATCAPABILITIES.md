@@ -200,6 +200,14 @@ Double indicating the increments that the setpoint will follow, such as .1, .5, 
 `<setpoint_cool_resolution_f></setpoint_cool_resolution_f>`
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][28] notification.
 
+`<setpoint_heatcool_deadband_c_></setpoint_heatcool_deadband_c>`
+Double indicating the deadband range in Celcius that the hardware requires between heat and cool.  Default is 2.  Default is 2.  Post operating system 2.7.0, UI's will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI's will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.
+
+
+`<setpoint_heatcool_deadband_f_></setpoint_heatcool_deadband_f>`
+Double indicating the deadband range in Fahrenheit  that the hardware requires between heat and cool.  Default is 2.  Post operating system 2.7.0, UI's will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI's will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.
+
+
 
 `<setpoint_heat_max></setpoint_heat_max>`
 Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, `_f `and`_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][29] notification.
