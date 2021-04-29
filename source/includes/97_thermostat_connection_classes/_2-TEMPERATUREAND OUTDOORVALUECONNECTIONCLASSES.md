@@ -44,3 +44,15 @@ The value is possibly no longer accurate. OnBindingChanged, device went Offline,
 | --- | --- |
 | str | STATUS: offline - Device went offline or was unbound |
 
+
+
+
+## GET_SENSOR_VALUE
+Used to requre remote temperature sensor data via control input connection binding.
+
+**NOTE: Command handling is not implemented in some drivers with a temperature control output connection. Sensor data can not be requested from that kind of drivers.**
+
+| Parameter |
+
+`None`
+
