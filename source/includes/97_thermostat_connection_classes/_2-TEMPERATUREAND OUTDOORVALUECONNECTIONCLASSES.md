@@ -1,6 +1,20 @@
 ## TEMPERATURE AND OUTDOOR VALUE CONNECTION CLASS COMMANDS
 
 
+## GET SENSOR VALUE
+Used to require remote temperature sensor data via the control input connection binding. Note that command handling is not implemented in some drivers with a temperature control output connection. Sensor data cannot be be requested from these drivers.
+
+### Signature
+
+`GET_SENSOR_VALUE ()`
+
+
+| Parameter |
+
+`None`
+
+
+
 ## VALUE INITIALIZED
 The value has been initialized. OnBindingChanged will cause this command to be sent automatically when the sending device goes Online.
 
@@ -43,16 +57,4 @@ The value is possibly no longer accurate. OnBindingChanged, device went Offline,
 | Parameter | Description |
 | --- | --- |
 | str | STATUS: offline - Device went offline or was unbound |
-
-
-
-
-## GET_SENSOR_VALUE
-Used to requre remote temperature sensor data via control input connection binding.
-
-**NOTE: Command handling is not implemented in some drivers with a temperature control output connection. Sensor data can not be requested from that kind of drivers.**
-
-| Parameter |
-
-`None`
 
