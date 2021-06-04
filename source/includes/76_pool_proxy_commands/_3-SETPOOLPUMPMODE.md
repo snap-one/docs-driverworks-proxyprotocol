@@ -11,7 +11,6 @@ Received from the proxy when pool pump mode has been changed.
 | Parameter | Description |
 | --- | --- |
 | `PUMPMODE` | From : `<pool_pumpmodes>` capability. |
-| `VALUE` | ON/OFF |
 
 
 ### Returns

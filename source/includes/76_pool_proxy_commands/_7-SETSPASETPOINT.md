@@ -10,7 +10,7 @@ Received from the proxy when Spa Setpoint has been changed.
 
 | Parameter | Description |
 | --- | --- |
-| `SETPOINTE` | int: Temperature |
+| `SETPOINT` | int: Temperature |
 
 
 ### Returns

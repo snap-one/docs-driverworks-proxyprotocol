@@ -10,7 +10,7 @@ Received from the proxy when pool temperature etpoint has been changed.
 
 | Parameter | Description |
 | --- | --- |
-| `SETPOINTE` | int: Temperature |
+| `SETPOINT` | int: Temperature |
 
 
 ### Returns
