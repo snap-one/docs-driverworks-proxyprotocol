@@ -5,7 +5,7 @@ Received from the proxy when pool pump mode has been changed.
 
 ### Signature
 
-`SET_POOL_PUMP_MODE ()`
+`SET_POOL_PUMPMODE ()`
 
 
 | Parameter | Description |

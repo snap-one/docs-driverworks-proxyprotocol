@@ -5,7 +5,7 @@ Received from the proxy when pool het mode has been changed.
 
 ### Signature
 
-`SET_POOL_HEAT_MODE ()`
+`SET_POOL_HEATMODE ()`
 
 
 | Parameter | Description |

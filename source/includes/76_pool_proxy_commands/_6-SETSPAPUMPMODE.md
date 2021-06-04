@@ -5,7 +5,7 @@ Received from the proxy when spa pump mode has been changed.
 
 ### Signature
 
-`SET_SPA_PUMP_MODE ()`
+`SET_SPA_PUMPMODE ()`
 
 
 | Parameter | Description |
