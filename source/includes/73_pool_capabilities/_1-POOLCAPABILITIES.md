@@ -28,6 +28,10 @@ Should be entered as Fahrenheit value, it is automatically adjusted to Celsiu
 `<temp_min></temp_min>`
 Should be entered as Fahrenheit value, it is automatically adjusted to Celsius when the pool is set to Celsius.
 
+`<provides_aux_list></provides_aux_list>`
+Should be true (false by default) when the pool controller device provides aux list to the driver.
+
+This capability disables name and type changes in Auxiliary Controls card in Composer Pro.
 
 ### Example
 
@@ -35,6 +39,7 @@ The example capabilities XML is from the Jandy Aqualink driver.
 
 ```xml
 <capabilities>
+	 <provides_aux_list>True</provides_aux_list>
          <pool_pumpmodes>Off,On</pool_pumpmodes>
          <spa_pumpmodes>Off,On</spa_pumpmodes>
          <temp_min>34</temp_min>
