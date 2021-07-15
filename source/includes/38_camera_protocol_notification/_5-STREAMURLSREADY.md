@@ -1,12 +1,12 @@
 ## STREAM URLS READY
 
-Notify used for following up to a GET_STREAM_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
+Notify used for following up to a GET\_STREAM\_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
 
 
 
 ### Signature
 
-`STREAM_URLS_READY ()`
+`stream_urls_ready ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Notification that the HTTP port has changed. Used rarely but applicable in insta
 
 ### Signature
 
-`HTTP_PORT_CHANGED ()`
+`http_port_changed ()`
 
 
 ### Parameters
