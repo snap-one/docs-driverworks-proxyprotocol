@@ -5,7 +5,7 @@ Notification sent from the protocol driver through [ON DRIVER LATE INIT][1] cont
 
 ### Signature
 
-`Property_defaults ()`
+`PROPERTY_DEFAULTS ()`
 
 
 | Parameter | Description |

@@ -5,7 +5,7 @@ Used to update the proxy to tell it to generate HTTPS URLs instead of HTTP URLs.
 
 ### Signature
 
-`use_https_changed ()`
+`USE_HTTPS_CHANGED ()`
 
 
 | Parameter | Description |

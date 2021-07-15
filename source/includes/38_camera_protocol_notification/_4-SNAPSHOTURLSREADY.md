@@ -5,7 +5,7 @@ Notify used for following up to a GET\_SNAPSHOT\_URLS Synchronous call.  This No
 
 ### Signature
 
-`snapshot_urls_ready ()`
+`SNAPSHOT_URLS_READY ()`
 
 
 | Parameter | Description |

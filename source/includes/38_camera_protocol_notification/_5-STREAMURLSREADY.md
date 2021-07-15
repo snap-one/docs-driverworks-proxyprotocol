@@ -6,7 +6,7 @@ Notify used for following up to a GET\_STREAM\_URLS Synchronous call.  This Noti
 
 ### Signature
 
-`stream_urls_ready ()`
+`STREAM_URLS_READY ()`
 
 
 | Parameter | Description |
