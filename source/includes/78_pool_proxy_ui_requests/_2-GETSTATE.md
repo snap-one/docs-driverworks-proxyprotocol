@@ -1,6 +1,10 @@
 ## GET STATE
 
-Obtains the pool’s state.
+Obtains the pool’s state. Aux state should contain states and id-s of all circuits
+
+that are shown in Auxiliary Controls window in Composer Pro. In pair with the request
+
+protocol command GET_STATE_HANDLED should be received.
 
 ### Example
 

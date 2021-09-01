@@ -1,21 +1,22 @@
-## GET PROPERTIES
+## GET AUX LIST
 
-Obtains the pool driver’s property information.
+Obtains the aux list that will appear in Choose Auxiliary window in Composer Pro.
 
-Aux Circuits will appear in the Auxiliary Controls card in Composer Pro.
+Choose Auxiliary window pops up when + icon is clicked in Auxiliary Contreol card.
 
-Those Aux Circuits will be shown in Control4 Customer Interface, sorted by id and named by item text.
+UI request will be received when user clicks on the + icon in Auxiliary Contreol card.
 
-Type of the Aux is the type defined in drivers xml file.
+Drivers should response with a xml that contains aux id, aux name in Control4 Customer Interface and
+
+aux type defined in driver xml file.
+
+Aux Circuits will be sorted in the Choose Auxiliary window by id asigned in the xml sent by driver.
 
 ### Example
 
-	<pool_properties>
-	    <hasair>True</hasair>
-	    <hasspa>True</hasspa>
-	    <haspool>True</haspool>
-	    <aux_list>
-	        <items>
+```xml
+	<aux_list>
+		<items>
 	            <item>
 	                <id>1</id>
 	                <item_text>Auxiliary Control 1</item_text>
@@ -55,8 +56,7 @@ Type of the Aux is the type defined in drivers xml file.
 	                <id>8</id>
 	                <item_text>Auxiliary Control 8</item_text>
 	                <type>Toggle</type>
-	            </item>
-	        </items>
-	    </aux_list>
-	</pool_properties>
-
+		    </item>
+		</items>
+	</aux_list>
+```
