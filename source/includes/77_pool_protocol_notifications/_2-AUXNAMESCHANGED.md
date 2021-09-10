@@ -1,6 +1,7 @@
 ## AUX NAMES CHANGED
 
-This notification provides a way to override capabilities.
+This notification provides a way to dinamically add auxiliaries from the driver.
+The \<type\> should be one of the \<aux\_types\> defined in the driver's \<capabilities\>
 
 
 ### Signature
@@ -10,8 +11,8 @@ This notification provides a way to override capabilities.
 
 | Parameter | Description |
 | --- | --- |
-| `AUXNAMES` | XML UPDATE LIST - True | False. Whole new list or a partial list to update existing names |
-
+| `AUXNAMES` | XML (see example)|
+| `UPDATE_LIST` | (optional) True/False (default). When set to True, finds an existing item and changes its name only. Otherwise creates a new list based on the XML.|
 
 ### Returns
 
