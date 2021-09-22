@@ -8,8 +8,7 @@ The [Amplifier][1] and [AV Switch][2] Proxies have been enhanced to support the 
 
 **Dynamic Transport Controls on Navigators**
 
-AV drivers now have the ability to define which [transport controls][3] are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.
+AV drivers now have the ability to define which transport controls are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq
 [2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator
