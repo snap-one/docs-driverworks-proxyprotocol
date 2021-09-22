@@ -12,4 +12,4 @@ AV drivers now have the ability to define which [transport controls][3] are disp
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq
 [2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq
-[3]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.2.3-beta/#dynamic-transport-controls-in-navigator
+[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator
