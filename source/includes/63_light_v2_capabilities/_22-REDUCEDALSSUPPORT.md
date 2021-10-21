@@ -1,6 +1,6 @@
-## reduced\_als\_support
+## reduced_als_support
 
-Advanced Lighting Scene capability indicating whether the driver has limited support for being in an advanced lighting scene.  This primarily means it cannot participate in scene ramping via broadcast zigbee mibs. Defaults to false.
+Advanced Lighting Scene capability indicating whether the driver has limited support for being in an advanced lighting scene.  This primarily means it cannot participate in scene ramping via broadcast zigbee mibs. This capability defaults to false.
 
 
 ### Signature
