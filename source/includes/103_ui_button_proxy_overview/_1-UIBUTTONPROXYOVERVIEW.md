@@ -40,8 +40,6 @@ Adding the HTML WebView functionality to an Experience (UIbutton) driver enables
 ### HTML WebView Usage Best Practice Recommendations
 The Driver Developer should implement the proxy interfaces that Control4 provides as a standard part of the user experience to the full extent that these apply to the device. The web interface should be considered supplementary to the proxy interface.
 
-The Driver Developer should be able to implement the driver using a URI to a hosted web UI. This web UI can be hosted on the device itself or in the cloud. The web UI should not be hosted on the Control4 controller.
-
 The Driver Developer should keep the Web UI as simple as reasonably possible.
  
 HTML WebView Usage Guidelines (rules)
