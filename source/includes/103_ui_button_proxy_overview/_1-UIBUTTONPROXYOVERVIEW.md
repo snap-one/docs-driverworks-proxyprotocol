@@ -65,8 +65,7 @@ The Proxy has also been enhanced to  provide a [JavaScript API][1] that allows D
 
 In addition to the APIs, a new capability has been added: [mobile\_webview\_enabled][2]
 
-
-A sample Driver: Javascript API Demo.  To use the demo driver:
+A sample Driver: JavascriptAPIDemo.c4z is also available. To use the demo driver:
 
 1. Download the Javascript API driver from the JS demo Driver folder from the DiverWorks Github repository and add it to your project.
 2. Under the Project’s System Design, select the room where the driver was added.
