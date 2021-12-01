@@ -1,4 +1,4 @@
-## UI BUTTON CAPABILITIES
+
 
 `<navigator_display_options></navigator_display_options>` 
 
