@@ -1,4 +1,4 @@
-## UI BUTTON PROXY VARIABLES
+
 
 `LAST_MENU_SELECTED`
 String value of the name of the menu where the menu was selected.  Possible values are: "listen", "watch", "security", "comfort", "service".
