@@ -71,7 +71,7 @@ Three new [JavaScript APIs][2].
 
 A sample Driver: Javascript API Demo.  To use the demo driver:
 
-1. Download the Javascript API driver from the Github repository and add it to your project.
+1. Download the Javascript API driver from the JS demo Driver folder from the DiverWorks Github repository and add it to your project.
 2. Under the Project’s System Design, select the room where the driver was added.
 3. Under the Room’s Properties select Navigator.
 4. Note the that the demo driver (UI Button) is listed under the Device column in the following Experience Menus: Comfort, Listen, Security and Watch.
