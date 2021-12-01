@@ -1,4 +1,3 @@
-## UI BUTTON PROXY OVERVIEW
 
 The UI Button Proxy was delivered in OS 2.9.0. The proxy supports the display of a configurable button within Navigator. The button and can be placed onto any experience menu such as Listen, Watch, Security, Comfort. Navigator menu configuration for shortcuts supported by the button is done through ComposerPro's standard room menu controls.The button's icon can also change to reflect the state of the device that the button controls.
 
