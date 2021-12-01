@@ -1,4 +1,3 @@
-
 ## URL\_CHANGED
 
 Notification that supports the ability for the driver to dynamically change the web URL. This is useful in cases such as changing ports, load balancing and driver-delivered controller hosted UI content. This function is sent to the proxy when the URL changes. Note that if the parameter value is empty, then the URL is considered disabled and the web view will not be shown in navigator. Also, note, Navigator will not change the URL of an open web view.
