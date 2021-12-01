@@ -44,3 +44,27 @@ Optional Capability which, when added contains the default URL that is associate
    <web_view_url proxybindingid="5000">http://youtube.com</web_view_url>
 </capabilities>
 ```
+
+
+
+### web\_view\_url
+
+`<web_view_url></web_view_url>`
+
+<i>Optional</i> Capability which points to the c4z-delivered web application. The controller://driver/driver\_name construct (I.e., the Controller URL Scheme) connects at the driver's www directory as the root of the path. Note that the driver name **MUST** be the same as the driver's filename. 
+
+#### Example
+
+```xml
+<capabilities>
+   <web_view_url proxybindingid="5001">controller://driver/JavascriptAPIDemo/contents/index.html</web_view_url>
+</capabilities>
+```
+
+
+
+### mobile\_web\_view\_enabled
+
+`<mobile_web_view_enabled></mobile_web_view_enabled>`
+
+<i>Optional</i> Boolean. Indicates that the driver can be shown in mobile clients when the `web_view_url` capability is also present. Applicable to O.S. 3.0.0 and later.
