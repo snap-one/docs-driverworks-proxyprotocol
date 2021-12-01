@@ -34,6 +34,7 @@ Note, the example to the right does not include all icon sizes for brevity.
 
 
 
+
 `<web_view_url></web_view_url>`
 Optional Capability which, when added contains the default URL that is associated with the shortcut.
 
@@ -44,6 +45,8 @@ Optional Capability which, when added contains the default URL that is associate
    <web_view_url proxybindingid="5000">http://youtube.com</web_view_url>
 </capabilities>
 ```
+
+
 
 
 
@@ -60,6 +63,8 @@ Optional Capability which, when added contains the default URL that is associate
    <web_view_url proxybindingid="5001">controller://driver/JavascriptAPIDemo/contents/index.html</web_view_url>
 </capabilities>
 ```
+
+
 
 
 
