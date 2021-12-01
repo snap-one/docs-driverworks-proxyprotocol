@@ -61,13 +61,10 @@ If a call comes to our support, we MAY instruct the dealer to remove the driver,
 
 ### JavaScript API
 
-The Proxy has also been enhanced to  provide a JavaScript API that allows Driver hosted web views to send commands, subscribe to DATA\_TO\_UIs and variables using the existing mobile communication channels.
+The Proxy has also been enhanced to  provide a [JavaScript API][1] that allows Driver hosted web views to send commands, subscribe to DATA\_TO\_UIs and variables using the existing mobile communication channels.
 
-In addition to the standard UI Button Proxy functionality, the enhancement includes:
+In addition to the APIs, a new capability has been added: [mobile\_webview\_enabled][2]
 
-A new capability: [mobile\_webview\_enabled][1]
-
-Three new [JavaScript APIs][2].
 
 A sample Driver: Javascript API Demo.  To use the demo driver:
 
@@ -160,6 +157,6 @@ The following HTML/CSS components and versions are shipped with the T3 and T4 to
 - Chrome 66.0.3359.158 
 - Safari/537.36
 
-[1]:	#mobile_web_view_enabled
-[2]:	#ui-button-proxy-webview-javascript-api
+[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-webview-javascript-api
+[2]:	#mobile_web_view_enabled
 [3]:	#web_view_url
