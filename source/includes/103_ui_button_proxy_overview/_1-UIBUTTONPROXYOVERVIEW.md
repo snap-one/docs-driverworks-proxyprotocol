@@ -64,6 +64,8 @@ The Proxy has also been enhanced to  provide a [JavaScript API][1] that allows D
 
 In addition to the APIs, a new capability has been added: [mobile\_webview\_enabled][2]
 
+This functionality is available for all customers running mobile app version 321.46 (or later) and running OS 3.1.3 (or later).
+
 A sample Driver: JavascriptAPIDemo.c4z is also available. To use the demo driver:
 
 1. Download the Javascript API driver from the JS demo Driver folder from the DiverWorks Github repository and add it to your project.
