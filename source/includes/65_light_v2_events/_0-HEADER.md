@@ -3,8 +3,30 @@
 The following are System Events that are provided and managed by the Proxy.  These can be used for Composer Programming or other drivers to monitor the changes of a values reflected in a LightV2 proxy.
 
 
-`Light_Brightness_Changed`
-The brightness of the light has changed and is at the final brightness. Event ID = 5000.
+
+`Light On`
+Light has turned On. Event ID = 5100.
+
+
+`Light Off`
+Light has turned Off. Event ID = 5101.
+
+
+`Light Brightness Changed`
+The brightness of the light has changed. Event ID = 4001.
+
+
+`Light Brightness Changing`
+The brightness of the light is changing. Event ID = 4000.
+
+
+`Light Color Changed`
+The color of the light has changed. Event ID = 4003
+
+
+`Light Color Changing`
+The color of the light is changing. Event ID = 4002
+
 
 
 
