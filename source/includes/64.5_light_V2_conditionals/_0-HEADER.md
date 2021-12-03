@@ -2,7 +2,11 @@
 
 The following Conditionals are used for Composer Programming to perform logic comparisons of Variables.  This functionality is managed by the Proxy and Director.
 
-`IS_ON`
+`IS_COLOR`
+
+Boolean. If the color of the light matches the color. `
+`
+``IS_ON```
 
 Boolean. If the light is on at any level.
 
