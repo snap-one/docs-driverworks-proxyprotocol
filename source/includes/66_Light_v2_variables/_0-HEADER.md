@@ -56,7 +56,7 @@ ID=1300. An XML string containing all of the Color Presets that are configured i
 
 
 
-**Color Active Agents**
+**Color Active Presets**
 ID=1301. An XML string containing all of the presets that are currently active. For UI use only.
 
  **Example**
