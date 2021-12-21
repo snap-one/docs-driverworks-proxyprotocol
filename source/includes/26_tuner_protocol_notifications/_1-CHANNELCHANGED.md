@@ -26,13 +26,12 @@ A CHANNEL CHANGED must be issued immediately after the INPUT CHANGED in order fo
 ### Example
 
 ```lua
-C4:SendToproxy(5002,'INPUT_CHANGED',{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
-MAXCHANNEL=10790,CHANNELSPACING=20})
-
-C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
+C4:SendToProxy(5002, "INPUT_CHANGED", {INPUT=3014,BANDTYPE='FMBand',MINCHANNEL=8750,MAXCHANNEL=10450,CHANNELSPACING=10})
+ 
+C4:SendToProxy(5002, "CHANNEL_CHANGED", {CHANNEL=8780})
 ```
 
-Note that in the example to the right, 5002 is the ProxyBindingID for the Tuner. INPUT 3009 is the ID for the FM Antenna on the 5002 Tuner.
+Note that in the example to the right, 5002 is the ProxyBindingID for the Tuner. INPUT 3014 is the ID for the FM Antenna on the 5002 Tuner.
 
 Navigator determines AM/FM/XM with the following rule:
 
