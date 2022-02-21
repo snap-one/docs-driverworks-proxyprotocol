@@ -28,3 +28,7 @@ As of Operating System 3.3.0, drivers should no longer send incremental notifies
 - Excessive Zigbee traffic and often incorrect keypad button LED status.
 - Inconsistent slider movement in Navigators.
 - Excessive triggering and sometimes incorrect Composer programming being fired.
+
+See the [LIGHT\_BRIGHTNESS\_CHANGING][1] notification for additional information.
+
+[1]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-brightness-changing
