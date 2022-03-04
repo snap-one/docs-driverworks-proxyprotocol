@@ -5,13 +5,13 @@ True/False. Default is False.
 
 ### Signature
 
-`<has_span></has_span>`
+`<has_pan></has_pan>`
 
 
 ### Example
 
 ```xml
 <capabilities>
-    <has_span>false</has_span>
+    <has_pan>false</has_pan>
 </capabilities>
 ```
