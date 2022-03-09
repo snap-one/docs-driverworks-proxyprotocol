@@ -5,9 +5,7 @@ The following Capabilities are supported with the Lock Proxy. Note that these ca
 
 The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. See the example to the right. 
 
-```lua
-C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED',  { shutout_timer_values = '...', shutout_timer_display_values = '...' }, 'NOTIFY')
-```
+`C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED',  { shutout_timer_values = '...',` `shutout_timer_display_values = '...' }, 'NOTIFY')`
 
 `<auto_lock_time_display_values></auto_lock_time_display_values>`
 Comma delimited list of correlating display values: str
