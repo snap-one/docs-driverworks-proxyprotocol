@@ -5,7 +5,6 @@ The following Capabilities are supported with the Lock Proxy. Note that these ca
 
 The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. See the example to the right. 
 
-
 ```lua
 C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED',  { shutout_timer_values = '...', shutout_timer_display_values = '...' }, 'NOTIFY')
 ```
@@ -15,7 +14,6 @@ Comma delimited list of correlating display values: str
 
 `<auto_lock_time_values></auto_lock_time_values>`
  Comma delimited list of increasing values: int
-
 
 `<has_admin_code></has_admin_code>`
 Defines whether the lock has an admin code that must be entered to access lock management.  true|false 
@@ -80,7 +78,7 @@ Comma delimited list of increasing values: int
 `<max_users></max_users>`
 The maximum number of user that can be added to a lock: int
 
-`<shutout_timer_display_values></shutout_timer_values>`
+`<shutout_timer_display_values></shutout_timer_display_values>`
  Comma delimited list of correlating display values: str
 
 `<shutout_timer_values></shutout_timer_values>`
