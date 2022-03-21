@@ -22,6 +22,6 @@ No
 
 ```xml
 <capabilities>
-    <click_rate_min>false</click_rate_min>
+    <click_rate_min>0</click_rate_min>
 </capabilities>
 ```
