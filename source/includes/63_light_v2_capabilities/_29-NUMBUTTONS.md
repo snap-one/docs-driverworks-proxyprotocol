@@ -29,6 +29,6 @@ No
 
 ```xml
 <capabilities>
-    <num_buttons>0</num_buttons>
+    <num_buttons>3</num_buttons>
 </capabilities>
 ```
