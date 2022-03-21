@@ -21,6 +21,6 @@ No
 
 ```xml
 <capabilities>
-    <click_rate_max>0</click_rate_max>
+    <click_rate_max>1</click_rate_max>
 </capabilities>
 ```
