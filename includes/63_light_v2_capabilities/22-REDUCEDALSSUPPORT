@@ -1,0 +1,12 @@
+<h2 id='_22-reducedalssupport'>_22-REDUCEDALSSUPPORT</h2><h2 id='reduced_als_support'>reduced_als_support</h2>
+<p>Advanced Lighting Scene capability indicating whether the driver has limited support for being in an advanced lighting scene.  This primarily means it cannot participate in scene ramping via broadcast zigbee mibs. This capability defaults to false.</p>
+<h3 id='signature'>Signature</h3>
+<p><code>&lt;reduced_als_support&gt;&lt;/reduced_als_support&gt;</code></p>
+<h3 id='type'>Type</h3>
+<p>Boolean</p>
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+<p>No</p>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;reduced_als_support&gt;</span>false<span class="nt">&lt;/reduced_als_support&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
