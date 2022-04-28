@@ -5,7 +5,10 @@ The following Capabilities are supported with the Lock Proxy. Note that these ca
 
 The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. For example:
 
-`C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED',  { shutout_timer_values = '...',` `shutout_timer_display_values = '...' }, 'NOTIFY')`
+
+`C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_values', VALUE = '10, 30' } , 'NOTIFY')`
+ 
+`C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_display_values', VALUE = '10s, 30s' }, 'NOTIFY') `
 
 
 ### Capabilities
