@@ -3,12 +3,14 @@
 
 The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators. 
 
-The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. For example:
+The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. For example see the lua code to the right which uses name/value pairs:
 
 
-`C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_values', VALUE = '10, 30' } , 'NOTIFY')`
+```xml
+C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_values', VALUE = '10, 30' } , 'NOTIFY')
  
-`C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_display_values', VALUE = '10s, 30s' }, 'NOTIFY') `
+C4:SendToProxy(5001, 'CAPABILITY_CHANGED', { NAME = 'shutout_timer_display_values', VALUE = '10s, 30s' }, 'NOTIFY') 
+```
 
 
 ### Capabilities
