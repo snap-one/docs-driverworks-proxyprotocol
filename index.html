@@ -30687,8 +30687,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h3 id='returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;fan_state&gt;</span>
   <span class="nt">&lt;current_speed&gt;</span>3<span class="nt">&lt;/current_speed&gt;</span>
@@ -36611,89 +36610,115 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators. </p>
 
-<p>The correct way to update these capabilities when a driver is updated is with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed">DYNAMIC_CAPABILITY_CHANGED</a> notification. For example:</p>
+<p>The correct way to update these capabilities when a driver is updated is with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed">DYNAMIC_CAPABILITY_CHANGED</a> notification. For example see the lua code to the right which uses name/value pairs:</p>
 
-<p><code>C4:SendToProxy(PROXY_BINDING, &#39;DYNAMIC_CAPABILITIES_CHANGED&#39;,  { shutout_timer_values = &#39;...&#39;,</code> <code>shutout_timer_display_values = &#39;...&#39; }, &#39;NOTIFY&#39;)</code></p>
+<p><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_values&#39;, VALUE = &#39;10, 30&#39; } , &#39;NOTIFY&#39;)</p>
 
-<h3 id='capabilities'>Capabilities</h3>
+<p>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_display_values&#39;, VALUE = &#39;10s, 30s&#39; }, &#39;NOTIFY&#39;) 
+</code></pre></div><h3 id='capabilities'>Capabilities</h3>
+<p><code>&lt;auto_lock_time_display_values&gt;&lt;/auto_lock_time_display_values&gt;</code></p></p>
 
-<p><code>&lt;auto_lock_time_display_values&gt;&lt;/auto_lock_time_display_values&gt;</code>
-Comma delimited list of correlating display values: str</p>
+<p>Comma delimited list of correlating display values: str</p>
 
-<p><code>&lt;auto_lock_time_values&gt;&lt;/auto_lock_time_values&gt;</code>
- Comma delimited list of increasing values: int</p>
+<p><code>&lt;auto_lock_time_values&gt;&lt;/auto_lock_time_values&gt;</code></p>
 
-<p><code>&lt;has_admin_code&gt;&lt;/has_admin_code&gt;</code>
-Defines whether the lock has an admin code that must be entered to access lock management.  true|false </p>
+<p>Comma delimited list of increasing values: int</p>
 
-<p><code>&lt;has_auto_lock_time&gt;&lt;/has_auto_lock_time&gt;</code>
-Defines whether a lock has an auto lock setting. A lock can auto lock after a set amount of time or not auto lock if time set to 0 – OFF: true|false</p>
+<p><code>&lt;has_admin_code&gt;&lt;/has_admin_code&gt;</code></p>
 
-<p><code>&lt;has_custom_settings&gt;&lt;/has_custom_settings&gt;</code>
-Defines whether the lock supports any custom settings that should be added to the list of standard proxy defined settings. See <code>lock_custom_settings</code> data-to-ui:  true|false </p>
+<p>Defines whether the lock has an admin code that must be entered to access lock management.  true|false </p>
 
-<p><code>&lt;has_date_range_schedule&gt;&lt;/has_date_range_schedule&gt;</code>
-Defines whether the lock supports a date range schedule for users:  true|false </p>
+<p><code>&lt;has_auto_lock_time&gt;&lt;/has_auto_lock_time&gt;</code></p>
 
-<p><code>&lt;has_daily_schedule&gt;&lt;/has_daily_schedule&gt;</code>
-Defines whether the lock supports a daily schedule for users:  true|false </p>
+<p>Defines whether a lock has an auto lock setting. A lock can auto lock after a set amount of time or not auto lock if time set to 0 – OFF: true|false</p>
 
-<p><code>&lt;has_internal_history&gt;&lt;/has_internal_history&gt;</code>
-Defines whether the lock maintains its own list of log / history items:  true|false </p>
+<p><code>&lt;has_custom_settings&gt;&lt;/has_custom_settings&gt;</code></p>
 
-<p><code>&lt;has_language&gt;&lt;/has_language&gt;</code>
-Defines whether the lock has a setting for different languages:  true|false </p>
+<p>Defines whether the lock supports any custom settings that should be added to the list of standard proxy defined settings. See <code>lock_custom_settings</code> data-to-ui:  true|false </p>
 
-<p><code>&lt;has_log_item_count&gt;&lt;/has_log_item_count&gt;</code>
-Defines whether a lock has a setting for the number of log items to store for internal logging/history:  true|false </p>
+<p><code>&lt;has_date_range_schedule&gt;&lt;/has_date_range_schedule&gt;</code></p>
 
-<p><code>&lt;has_log_failed_attempts&gt;&lt;/has_log_failed_attempts&gt;</code>
-Defines whether a lock has a setting for logging failed keypad unlock attempts:  true|false </p>
+<p>Defines whether the lock supports a date range schedule for users:  true|false </p>
 
-<p><code>&lt;has_lock_modes&gt;&lt;/has_lock_modes&gt;</code>
-Defines whether the lock has a setting for different modes. Vacation mode prevents users from opening a lock using the keypad. Privacy mode prevents users from opening a lock using the keypad. However, if a key is used during privacy mode the lock resets to normal mode. Not all modes have to be supported.  true|false </p>
+<p><code>&lt;has_daily_schedule&gt;&lt;/has_daily_schedule&gt;</code></p>
 
-<p><code>&lt;has_one_touch_locking&gt;&lt;/has_one_touch_locking&gt;</code>
-Defines whether the lock has a setting to allow one touch locking at the keypad without entering full key code:  true|false </p>
+<p>Defines whether the lock supports a daily schedule for users:  true|false </p>
 
-<p><code>&lt;has_schedule_lockout&gt;&lt;/has_schedule_lockout&gt;</code>
-Defines whether a lock has a schedule lockout setting. The schedule lockout can be used to prevent all users from manually unlocking a lock using the lock&#39;s keypad. This is similar to privacy mode:  true|false </p>
+<p><code>&lt;has_internal_history&gt;&lt;/has_internal_history&gt;</code></p>
 
-<p><code>&lt;has_settings&gt;&lt;/has_settings&gt;</code>
-Defines whether the lock supports any settings:  true|false </p>
+<p>Defines whether the lock maintains its own list of log / history items:  true|false</p>
 
-<p><code>&lt;has_shutout_timer&gt;&lt;/has_shutout_timer&gt;</code>
-Defines whether the lock has a setting for how long to disable lock keypad after failed attempts:  true|false </p>
+<p><code>&lt;has_language&gt;&lt;/has_language&gt;</code></p>
 
-<p><code>&lt;has_volume&gt;&lt;/has_volume&gt;</code>
-Defines whether the lock has a setting for volume:  true|false </p>
+<p>Defines whether the lock has a setting for different languages:  true|false</p>
 
-<p><code>&lt;has_wrong_code_attempts&lt;/has_wrong_code_attempts&gt;</code>
-Defines whether the lock has a setting for the number of failed unlock attempts to allow before temporarily disabling the lock: true|false </p>
+<p><code>&lt;has_log_item_count&gt;&lt;/has_log_item_count&gt;</code></p>
 
-<p><code>&lt;is_management_only&gt;&lt;/is_management_only&gt;</code>
-Defines whether the lock is only used for managing users A lock that is management only does not support the LOCK, UNLOCK, and TOGGLE commands:  true|false </p>
+<p>Defines whether a lock has a setting for the number of log items to store for internal logging/history:  true|false</p>
 
-<p><code>&lt;language_values&gt;&lt;/language_values&gt;</code>
-English, French, Spanish …:  str</p>
+<p><code>&lt;has_log_failed_attempts&gt;&lt;/has_log_failed_attempts&gt;</code></p>
 
-<p><code>&lt;lock_modes_values&gt;&lt;/lock_modes_values&gt;</code>
-normal, vacation, privacy: str</p>
+<p>Defines whether a lock has a setting for logging failed keypad unlock attempts:  true|false</p>
 
-<p><code>&lt;log_item_count_values&gt;&lt;/log_item_count_values&gt;</code>
-Comma delimited list of increasing values: int </p>
+<p><code>&lt;has_lock_modes&gt;&lt;/has_lock_modes&gt;</code></p>
 
-<p><code>&lt;max_users&gt;&lt;/max_users&gt;</code>
-The maximum number of user that can be added to a lock: int</p>
+<p>Defines whether the lock has a setting for different modes. Vacation mode prevents users from opening a lock using the keypad. Privacy mode prevents users from opening a lock using the keypad. However, if a key is used during privacy mode the lock resets to normal mode. Not all modes have to be supported.  true|false </p>
 
-<p><code>&lt;shutout_timer_display_values&gt;&lt;/shutout_timer_display_values&gt;</code>
- Comma delimited list of correlating display values: str</p>
+<p><code>&lt;has_one_touch_locking&gt;&lt;/has_one_touch_locking&gt;</code></p>
 
-<p><code>&lt;shutout_timer_values&gt;&lt;/shutout_timer_values&gt;</code>
-Comma delimited list of increasing values: int</p>
+<p>Defines whether the lock has a setting to allow one touch locking at the keypad without entering full key code:  true|false</p>
 
-<p><code>&lt;wrong_code_attempts_values&gt; &lt;/wrong_code_attempts_values&gt;</code>
- Comma delimited list of increasing values: int</p>
+<p><code>&lt;has_schedule_lockout&gt;&lt;/has_schedule_lockout&gt;</code></p>
+
+<p>Defines whether a lock has a schedule lockout setting. The schedule lockout can be used to prevent all users from manually unlocking a lock using the lock&#39;s keypad. This is similar to privacy mode:  true|false</p>
+
+<p><code>&lt;has_settings&gt;&lt;/has_settings&gt;</code></p>
+
+<p>Defines whether the lock supports any settings:  true|false </p>
+
+<p><code>&lt;has_shutout_timer&gt;&lt;/has_shutout_timer&gt;</code></p>
+
+<p>Defines whether the lock has a setting for how long to disable lock keypad after failed attempts:  true|false </p>
+
+<p><code>&lt;has_volume&gt;&lt;/has_volume&gt;</code></p>
+
+<p>Defines whether the lock has a setting for volume:  true|false </p>
+
+<p><code>&lt;has_wrong_code_attempts&lt;/has_wrong_code_attempts&gt;</code></p>
+
+<p>Defines whether the lock has a setting for the number of failed unlock attempts to allow before temporarily disabling the lock: true|false </p>
+
+<p><code>&lt;is_management_only&gt;&lt;/is_management_only&gt;</code></p>
+
+<p>Defines whether the lock is only used for managing users A lock that is management only does not support the LOCK, UNLOCK, and TOGGLE commands:  true|false </p>
+
+<p><code>&lt;language_values&gt;&lt;/language_values&gt;</code></p>
+
+<p>English, French, Spanish …:  str</p>
+
+<p><code>&lt;lock_modes_values&gt;&lt;/lock_modes_values&gt;</code></p>
+
+<p>normal, vacation, privacy: str</p>
+
+<p><code>&lt;log_item_count_values&gt;&lt;/log_item_count_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int </p>
+
+<p><code>&lt;max_users&gt;&lt;/max_users&gt;</code></p>
+
+<p>The maximum number of user that can be added to a lock: int</p>
+
+<p><code>&lt;shutout_timer_display_values&gt;&lt;/shutout_timer_display_values&gt;</code></p>
+
+<p>Comma delimited list of correlating display values: str</p>
+
+<p><code>&lt;shutout_timer_values&gt;&lt;/shutout_timer_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
+
+<p><code>&lt;wrong_code_attempts_values&gt; &lt;/wrong_code_attempts_values&gt;</code></p>
+
+<p>Comma delimited list of increasing values: int</p>
 <h1 id='lock-conditionals'>Lock Conditionals</h1>
 
 <h2 id='lock-conditionals'>LOCK CONDITIONALS</h2>
