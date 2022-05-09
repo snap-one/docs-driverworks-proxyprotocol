@@ -2,7 +2,7 @@
 
 **Audio Equalization available on Navigators**
 
-The [Amplifier][1] and [AV Switch][2] Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this feature.
+The [Amplifier][1] and [AV Switch][2] Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.
 
 
 
