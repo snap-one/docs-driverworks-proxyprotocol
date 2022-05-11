@@ -138,24 +138,30 @@ See the [web\_view\_url][3] capability
 
 The following HTML/CSS components and versions are shipped with the T3 and T4 touchscreens:
 
-**T3:**
+**T4:** (OS 3.2.1 or above)
 
 - Mozilla 5.0
+- Android 9 Mobile rv:96.0   
+- Gecko/96.0 
+- Firefox/96.0
+
+
+**T3:** (OS 3.1.3 or above)
+
+- Mozilla 5.0
+- Android 4.4.2 Mobile rv: 96.0   
+- Gecko 96.0 
+- Firefox 96.0
+
+
+**T3:** (OS 3.1.2 or below)
+
+-  Mozilla 5.0
 - Linux for Android 4.4.2 rk3188 Build KOT49H 
 - AppleWebKit 537.36 
 - KHTML, like Gecko Version 4.0 
 - Chrome 30.0.0.0 
 - Safari 537.36
-
-
-**T4:**
-
-- Mozilla 5.0
-- Linux for Android 4.4.2 rk3188 Build KOT49H 
-- AppleWebKit 537.36
-- KHTML, like Gecko Version 4.0 
-- Chrome 66.0.3359.158 
-- Safari/537.36
 
 [1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-webview-javascript-api
 [2]:	#mobile_web_view_enabled
