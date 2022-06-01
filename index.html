@@ -4654,6 +4654,38 @@
               </ul>
           </li>
           <li>
+            <a href="#light-v2-conversion-commands" class="toc-h1 toc-link" data-title="Light V2 Conversion Commands">Light V2 Conversion Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#understanding-chromaticity" class="toc-h2 toc-link" data-title="Understanding Chromaticity">Understanding Chromaticity</a>
+                  </li>
+                  <li>
+                    <a href="#colorccttoxy" class="toc-h2 toc-link" data-title="ColorCCTtoXY">ColorCCTtoXY</a>
+                  </li>
+                  <li>
+                    <a href="#colorhsvtorgb" class="toc-h2 toc-link" data-title="ColorHSVtoRGB">ColorHSVtoRGB</a>
+                  </li>
+                  <li>
+                    <a href="#colorhsvtoxy" class="toc-h2 toc-link" data-title="ColorHSVtoXY">ColorHSVtoXY</a>
+                  </li>
+                  <li>
+                    <a href="#colorrgbtohsv" class="toc-h2 toc-link" data-title="ColorRGBtoHSV">ColorRGBtoHSV</a>
+                  </li>
+                  <li>
+                    <a href="#colorrgbtoxy" class="toc-h2 toc-link" data-title="ColorRGBtoXY">ColorRGBtoXY</a>
+                  </li>
+                  <li>
+                    <a href="#colorxytocct" class="toc-h2 toc-link" data-title="ColorXYtoCCT">ColorXYtoCCT</a>
+                  </li>
+                  <li>
+                    <a href="#colorxytohsv" class="toc-h2 toc-link" data-title="ColorXYtoHSV">ColorXYtoHSV</a>
+                  </li>
+                  <li>
+                    <a href="#colorxytorgb" class="toc-h2 toc-link" data-title="ColorXYtoRGB">ColorXYtoRGB</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#light-v2-conditionals" class="toc-h1 toc-link" data-title="Light V2 Conditionals">Light V2 Conditionals</a>
           </li>
           <li>
@@ -35085,6 +35117,474 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
   <span class="nt">&lt;hide_proxy_properties&gt;</span>false<span class="nt">&lt;/hide_proxy_properties&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div></p>
+<h1 id='light-v2-conversion-commands'>Light V2 Conversion Commands</h1>
+
+<p>This section lists the Commands used for converting to/from hue, saturation and lightness (HSV) and red, blue and green (RGB).</p>
+
+<p>Control4 OS 3.3.0 and later releases include native support for Color Chromaticity and Color Correlated Temperature (CCT) functionality. Navigators, the Light V2 Proxy, and the Advanced Lighting Scene (ALS) agent use this new color architecture. This means that Drivers written against the 3.3.0 Light V2 Proxy can now implement native color support.</p>
+
+<p>Color API&#39;s between the proxy, ALS agent and drivers are based on the CIE 1931 XY Chromaticity standard for visible color.</p>
+
+<p>Beginning with O.S. 3.3.0, all drivers (including non-color) should implement the new Brightness Target API for communicating brightness to the Light V2 proxy.</p>
+
+<h2 id='understanding-chromaticity'>Understanding Chromaticity</h2>
+
+<p>Currently, no bulb or LED strip can produce all of the colors seen by the human eye. However, the range of colors lighting devices can produce is constantly growing. In addition to this, most lighting devices do not produce the same range of colors as other devices. In order to provide a consistent color experience in a home which could include various brands and models of bulbs or strip lighting; the Control4 color API needs to support all possible visible colors. Also, RGB and Hue/Saturation data values are not universal. The same RGB and Hue/Saturation data value across different lighting devices will often produce different actual visible colors. The use of  Chromaticity can solve these issues. </p>
+
+<p>Chromaticity allows for communicating a color using XY coordinates that is universal and can be computationally converted to various other color spaces, formats, and their respective data values. Below is a diagram showing all visible light wavelengths and their reference points according to the CIE 1931 Chromaticity standard. All visible colors can be specified by an XY coordinate.</p>
+
+<p><img src="images/64_2-01.png"/></p>
+
+<h3 id='the-use-of-gamuts'>The Use of Gamuts</h3>
+
+<p>Most light driver developers are familiar with Hue and Saturation or RGB values. Hue and Saturation are a data representation of how much of a color something is in relation to how much it can be in total. RGB is similar but also includes how much of its total brightness is used. Neither of these provide a way to verify if two different lighting devices are producing the same viewable color as seen by a home owner. </p>
+
+<p>However, if a devices’ gamut value for the RGB or Hue/Sat value is known, it is possible to compare this device with a different device’s gamut values making it possible to understand how the two device&#39;s colors relate. Below are the gamut triangles of three different LED chips, used in a lighting products.</p>
+
+<p><img src="images/64_3-02.png"/></p>
+
+<p>In the image above, you can see that Gamut B (the smaller Red triangle) can produce a far smaller range of colors than the Gamut A (Black) triangle. If we were to send the RGB data of &quot;0,255,0&quot; to two different devices (one device using Gamut A LED chips and another device using Gamut B LED chips) the actual visible green color light produced by both devices would be very different. </p>
+
+<p>For example, consider a home owner wants to set two different light device colors to &quot;White&quot; or the center of each triangle:  255,255,255 for RGB and the device gamut values are not used in their respective drivers. The resulting visual white color that the home owner would see would be very different between the two light devices. In this case, the device using Gamut B LED chips would be a much lower Color Correlated Temperature (CCT). In fact, the difference between the two devices would be over 1000. This could certainly annoy many home owners. This is why it&#39;s very useful to know the gamut of your device if it is possible to obtain it</p>
+
+<p>Driver developers that know the gamut of their LED chips also know that there are standard mathematical formulas for transitioning any RGB value to/from the more universal XY Chromaticity color space.</p>
+
+<p>For driver developers who do not know their LED chips gamut or aren&#39;t interested in color accuracy the provided RGB↔XY  lua conversion function can be used. Be aware that these calls map RGB and Hue/Saturation data values to the generic sRGB gamut and that the color a home owner or dealer selects on UIs may not match the color produced by the LED chips. Below is graphical representation for the sRGB gamut for reference.</p>
+
+<p><img src="images/64_2-03.png"/></p>
+
+<h3 id='lack-brightness-values'>Lack Brightness Values</h3>
+
+<p>Chromaticity does not include a data value for brightness. Reasons for this include:</p>
+
+<ul>
+<li><p>Many users prefer to adjust color and brightness individually, such as selecting a color then ramping brightness or picking a brightness and changing colors.</p></li>
+<li><p>If Color presets included brightness it would result in multiple presets of the same Red color. However, they would be at different brightness levels. This would make color preset navigation and selection for home owners cumbersome.</p></li>
+<li><p>Programming Event firing and Conditional checks would be very convoluted. For example, White at 50% is not be the same as White at 100%. And ultimately,  all the user wanted to check is if the color was &quot;White&quot;.</p></li>
+<li><p>Similar to Programming complexity, Lighting Scene tracking would become unmanageable. Advanced Lighting Scene creation is more configurable and provides better ways for dealers to meet customers needs.</p></li>
+</ul>
+
+<h3 id='color-correlated-temperature-cct'>Color Correlated Temperature (CCT)</h3>
+
+<p>Many colored lighting devices are designed to fulfill just the CCT implementation of color. Drivers do have the ability to specify if they support CCT, Full Color or both. Different configuration and UI features are available based on capabilities specified by the driver. Most all &quot;full color&quot; lights will inherently support CCT, as the image below shows. </p>
+
+<p><img src="images/64_4-03.png"/></p>
+
+<p>Note that Control4 OS Color APIs also allow specifying if a color is CCT or &quot;Full Color&quot;. This helps the device know if the user is trying to control the light in one mode vs another.</p>
+
+<h2 id='colorccttoxy'>ColorCCTtoXY</h2>
+
+<p>This function converts a CCT (color temperature in Kelvin) color to the CIE-1931 xy 
+chromaticity.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorCCTtoXY (k)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing Kelvin temperature.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing x component of the CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing y component of the CIE-1931 xy chromaticity.</td>
+</tr>
+</tbody></table>
+
+<h2 id='colorhsvtorgb'>ColorHSVtoRGB</h2>
+
+<p>This function converts an HSV color to the RGB color space.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorHSVtoRGB (h, s, v, rgbScale)</code> </p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing hue component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing saturation component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing value component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>(Optional) Number representing RGB scale (1 to 255), default value 255.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the red component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the green component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the blue component of RGB (in given scale).</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">lua</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">C4</span><span class="p">:</span><span class="n">ColorHSVtoRGB</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span>
+</code></pre></div>
+<h2 id='colorhsvtoxy'>ColorHSVtoXY</h2>
+<p>This function converts an HSV color to a CIE-1931 xy chromaticity.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorHSVtoXY (h, s, v)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing hue component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing saturation component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing value component of HSV.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the x component of the CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the y component of the CIE-1931 xy chromaticity.</td>
+</tr>
+</tbody></table>
+
+<h2 id='colorrgbtohsv'>ColorRGBtoHSV</h2>
+
+<p>This function converts an RGB color to the HSV color space.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorRGBtoHSV (r, g, b, rgbScale)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the red component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the green component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the blue component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>(Optional) Number representing RGB scale (1 to 255), default value 255.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing hue component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing saturation component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing value component of HSV.</td>
+</tr>
+</tbody></table>
+
+<h2 id='colorrgbtoxy'>ColorRGBtoXY</h2>
+
+<p>This function converts an RGB color to a CIE-1931 xy chromaticity.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorRGBtoXY (r, g, b, rgbScale)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the red component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the green component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the blue component of RGB (in given scale).</td>
+</tr>
+<tr>
+<td>num</td>
+<td>(Optional) Number representing RGB scale (1 to 255). The default value is 255.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the x component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the y component of a CIE-1931 xy chromaticity.</td>
+</tr>
+</tbody></table>
+
+<h2 id='colorxytocct'>ColorXYtoCCT</h2>
+
+<p>This function converts from a CIE-1931 xy chromaticity to a CCT (color temperature in Kelvin) color.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorXYtoCCT (x, y)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the x component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the y component of a CIE-1931 xy chromaticity.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the CIE-1931 xy chromaticity as a Kelvin temperature.</td>
+</tr>
+</tbody></table>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>This function will return a color temperature for any value provided. This includes color values that fall outside of the usual white/CCT colors.</p>
+
+<h2 id='colorxytohsv'>ColorXYtoHSV</h2>
+
+<p>This function converts a CIE-1931 xy chromaticity to the HSV color space.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorXYtoHSV (x, y)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the x component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the y component of a CIE-1931 xy chromaticity.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the hue component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the saturation component of HSV.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the value component of HSV.</td>
+</tr>
+</tbody></table>
+
+<h2 id='colorxytorgb'>ColorXYtoRGB</h2>
+
+<p>This function converts a CIE-1931 xy chromaticity to the RGB color space.</p>
+
+<p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:ColorXYtoRGB (x, y, rgbScale)</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the x component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the x component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>(Optional) Number representing RGB scale (1 to 255). The default value is 255.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>Number representing the red component of RGB in given scale.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the green component of RGB in given scale.</td>
+</tr>
+<tr>
+<td>num</td>
+<td>Number representing the blue component of RGB in given scale.</td>
+</tr>
+</tbody></table>
 <h1 id='light-v2-conditionals'>Light V2 Conditionals</h1>
 
 <p>The following Conditionals are used for Composer Programming to perform logic comparisons of Variables.  This functionality is managed by the Proxy and Director.</p>
