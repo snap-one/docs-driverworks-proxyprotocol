@@ -27,6 +27,24 @@ The color of the light has changed. Event ID = 4003
 `Light Color Changing`
 The color of the light is changing. Event ID = 4002
 
+`Old Light Level Changed`
+The light level of the light has changed and is at the final brightness. Event ID = 5000.
+
+
+
+
+
+
+
+
+
+
+0.
+
+
+
+
+
 
 
 
