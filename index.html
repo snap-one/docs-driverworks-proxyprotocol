@@ -4556,6 +4556,21 @@
                     <a href="#cold_start" class="toc-h2 toc-link" data-title="cold_start">cold_start</a>
                   </li>
                   <li>
+                    <a href="#color_correlated_temperature_max" class="toc-h2 toc-link" data-title="color_correlated_temperature_max">color_correlated_temperature_max</a>
+                  </li>
+                  <li>
+                    <a href="#color_correlated_temperature_min" class="toc-h2 toc-link" data-title="color_correlated_temperature_min">color_correlated_temperature_min</a>
+                  </li>
+                  <li>
+                    <a href="#color_rate_behavior" class="toc-h2 toc-link" data-title="color_rate_behavior">color_rate_behavior</a>
+                  </li>
+                  <li>
+                    <a href="#color_rate_max" class="toc-h2 toc-link" data-title="color_rate_max">color_rate_max</a>
+                  </li>
+                  <li>
+                    <a href="#color_rate_min" class="toc-h2 toc-link" data-title="color_rate_min">color_rate_min</a>
+                  </li>
+                  <li>
                     <a href="#has_fixed_ramp_rate" class="toc-h2 toc-link" data-title="has_fixed_ramp_rate">has_fixed_ramp_rate</a>
                   </li>
                   <li>
@@ -4569,6 +4584,12 @@
                   </li>
                   <li>
                     <a href="#click_rate_max" class="toc-h2 toc-link" data-title="click_rate_max">click_rate_max</a>
+                  </li>
+                  <li>
+                    <a href="#color_trace_tolerance" class="toc-h2 toc-link" data-title="color_trace_tolerance">color_trace_tolerance</a>
+                  </li>
+                  <li>
+                    <a href="#has_extras" class="toc-h2 toc-link" data-title="has_extras">has_extras</a>
                   </li>
                   <li>
                     <a href="#hold_rates" class="toc-h2 toc-link" data-title="hold_rates">hold_rates</a>
@@ -4602,6 +4623,33 @@
                   </li>
                   <li>
                     <a href="#num_buttons" class="toc-h2 toc-link" data-title="num_buttons">num_buttons</a>
+                  </li>
+                  <li>
+                    <a href="#supports_color" class="toc-h2 toc-link" data-title="supports_color">supports_color</a>
+                  </li>
+                  <li>
+                    <a href="#supports_color_correlated_temperature" class="toc-h2 toc-link" data-title="supports_color_correlated_temperature">supports_color_correlated_temperature</a>
+                  </li>
+                  <li>
+                    <a href="#supports_default_on" class="toc-h2 toc-link" data-title="supports_default_on">supports_default_on</a>
+                  </li>
+                  <li>
+                    <a href="#ramp_level" class="toc-h2 toc-link" data-title="ramp_level">ramp_level</a>
+                  </li>
+                  <li>
+                    <a href="#advanced_scene_support" class="toc-h2 toc-link" data-title="advanced_scene_support">advanced_scene_support</a>
+                  </li>
+                  <li>
+                    <a href="#reduced_als_support" class="toc-h2 toc-link" data-title="reduced_als_support">reduced_als_support</a>
+                  </li>
+                  <li>
+                    <a href="#supports_broadcast_scenes" class="toc-h2 toc-link" data-title="supports_broadcast_scenes">supports_broadcast_scenes</a>
+                  </li>
+                  <li>
+                    <a href="#supports_multichannel_scenes" class="toc-h2 toc-link" data-title="supports_multichannel_scenes">supports_multichannel_scenes</a>
+                  </li>
+                  <li>
+                    <a href="#hide_proxy_properties" class="toc-h2 toc-link" data-title="hide_proxy_properties">hide_proxy_properties</a>
                   </li>
               </ul>
           </li>
@@ -34050,13 +34098,13 @@ Valid values are:</p>
 <li>Parsing and using XML received from the PUSH_SCENE command that is sent, when the device comes online, to know what the scene involvement is for the light.</li>
 <li>Support scenes with multiple elements.</li>
 <li>For performance, only sends one(1) level update Notify when load hardware is at final scene level. -- We highly recommend all existing and new drivers be moved over to the BRIGHTNESS TARGET API design for performance reasons and better UI tracking of level during ramping.</li>
-<li>ALS Commands:</li>
+<li>The following ALS Commands:</li>
 <li>PUSH_SCENE</li>
 <li>ACTIVATE_SCENE</li>
 <li>RAMP_SCENE_UP</li>
 <li>RAMP_SCENE_DOWN</li>
-<li>STOP_SCENE_RAMP</li>
-<li>Optionally - These commands were used as workarounds for lights in early Advanced Lighting Scene agent times (pre 3.0.0) but are no longer needed, as long as the driver properly handles the PUSH_SCENE command changes.</li>
+<li>STOP_SCENE_RAMP
+Optionally - These commands were used as workarounds for lights in early Advanced Lighting Scene agent times (pre 3.0.0) but are no longer needed, as long as the driver properly handles the PUSH_SCENE command changes.</li>
 <li>SYNC_SCENE</li>
 <li>SYNC_ALL_SCENES</li>
 </ul>
@@ -34404,6 +34452,104 @@ Used to set the color of a button, this command name can be unique or non-existe
     <span class="nt">&lt;cold_start&gt;</span>true<span class="nt">&lt;/cold_start&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h2 id='color_correlated_temperature_max'>color_correlated_temperature_max</h2>
+<p>Maximum CCT (aka Kelvin) degrees supported by the driver.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_correlated_temperature_max&gt;&lt;/color_correlated_temperature_max&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer: Defaults to 20000.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_correlated_temperature_max&gt;</span>20000<span class="nt">&lt;/color_correlated_temperature_max&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color_correlated_temperature_min'>color_correlated_temperature_min</h2>
+<p>Minimum CCT (aka Kelvin) degrees supported by the driver.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_correlated_temperature_min&gt;&lt;/color_correlated_temperature_min&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer: Defaults to 1000.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_correlated_temperature_min&gt;</span>1000<span class="nt">&lt;/color_correlated_temperature_min&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color_rate_behavior'>color_rate_behavior</h2>
+<p>Supported color rate behaviors include: </p>
+
+<p>0 - Unchangeable Rate.
+1 - Device only supports one rate for brightness and color.
+2 - Device supports ramping brightness and color at two different rates.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_rate_behavior&gt;&lt;/color_rate_behavior&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer: Defaults to 0.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_rate_behavior&gt;</span>2<span class="nt">&lt;/color_rate_behavior&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color_rate_max'>color_rate_max</h2>
+<p>The maximum color rate (in milliseconds) supported for transitioning from one color to another. This capability should always be set for any color light driver, even if the transition rate is unchangeable. This capability is not intended use user-defined values. Values are supplied  by the driver developer to ensure proper behavior.</p>
+
+<p>These values are consumed by Advanced Lighting Scenes agent and custom programming actions to ensure that the color ramp rate specified is within the bounds set by the driver.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_rate_max&gt;&lt;/color_rate_max&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer: Defaults to 0.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_rate_max&gt;</span>200<span class="nt">&lt;/color_rate_max&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color_rate_min'>color_rate_min</h2>
+<p>The minimum color rate (in milliseconds) supported for transitioning from one color to another. This capability should always be set for any color light driver, even if the transition rate is unchangeable. This capability is not intended use user-defined values. Values are supplied  by the driver developer to ensure proper behavior.</p>
+
+<p>These values are consumed by Advanced Lighting Scenes agent and custom programming actions to ensure that the color ramp rate specified is within the bounds set by the driver.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_rate_min&gt;&lt;/color_rate_min&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer: Defaults to 0.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_rate_min&gt;</span>200<span class="nt">&lt;/color_rate_min&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h2 id='has_fixed_ramp_rate'>has_fixed_ramp_rate</h2>
 <p>Ramping API indicating if the light has a fixed ramp rate and can not be changed via driver. Defaults to false.</p>
 <h3 id='signature'>Signature</h3>
@@ -34492,6 +34638,51 @@ Used to set the color of a button, this command name can be unique or non-existe
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;click_rate_max&gt;</span>1<span class="nt">&lt;/click_rate_max&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color_trace_tolerance'>color_trace_tolerance</h2>
+<p>If converting to RGB or HSV color spaces it is worth noting that these two are not as accurate in resolution as the CIE xy chromaticity color space.</p>
+
+<p>Because of this, there can be a loss of accuracy when converting to them or between them. For example, a Control4 Customer Interface sends the color&#39;s Hue and Saturation. If a device operates in RGB color spaces, the reported color might differ because of a rounding issue when converting between the RGB and HSV color space. This capability is used to add a tolerance when the Control4 system compares if two colors are equal.</p>
+
+<p>The LightV2 proxy internally stores color as xy chromaticity. Two colors are treated equal if they are within Euclid distance specified by the color_trace_tolerance capability.</p>
+
+<p>The following are pre-calculated tolerances for some of the mostly used color spaces. If the device uses one of the color spaces listed bellow to set and report color, use its tolerance as the capability:</p>
+
+<p>RGB: 0.006
+HSV 0.001</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_trace_tolerance&gt;&lt;/color_trace_tolerance&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Float: Defaults to 0.006</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_trace_tolerance&gt;</span>0.006<span class="nt">&lt;/color_trace_tolerance&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has_extras'>has_extras</h2>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_extras&gt;</span>true<span class="nt">&lt;/has_extras&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='hold_rates'>hold_rates</h2>
@@ -34698,8 +34889,170 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 
 <p>No</p>
 
-<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;num_buttons&gt;</span>3<span class="nt">&lt;/num_buttons&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='supports_color'>supports_color</h2>
+<p>Whether the device can show a broad range of colors. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_color&gt;&lt;/supports_color&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;supports_color&gt;</span>false<span class="nt">&lt;/supports_color&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='supports_color_correlated_temperature'>supports_color_correlated_temperature</h2>
+<p>Whether the device has native support for color correlated temperature reporting in Kelvin. Set this capability to False if the driver can only do predefined color temperatures. If enabled via dynamic capability, it will be necessary  to Notify the proxy of the current color immediately after the capability is enabled. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_color_correlated_temperature&gt;&lt;/supports_color_correlated_temperature&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;supports_color_correlated_temperature&gt;</span>false<span class="nt">&lt;supports_color_correlated_temperature&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='supports_default_on'>supports_default_on</h2>
+<p>This feature is for lights that support a default ON brightness in their firmware. When enabled, the Light Proxy sends a SET_PRESET_LEVEL command to drivers when the brightness &quot;On” preset is updated in the proxy through Composer or the PRESET_LEVEL system variable. This enables light switches that respond to local button presses to go to the same default ON level as what the Control4 system uses when a light is turned on or toggled via Navigators, Composer Programming, and keypad buttons. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_default_on&gt;&lt;/supports_default_on&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;supports_default_on&gt;</span>false<span class="nt">&lt;supports_default_on&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='ramp_level'>ramp_level</h2>
+<p>Whether the light supports commands being told to ramp to a brightness. Advanced Lighting Scenes also uses this to determine if the light can be dimmed in ALS.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;ramp_level&gt;&lt;/ramp_level&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;ramp_level&gt;</span>false<span class="nt">&lt;/ramp_level&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='advanced_scene_support'>advanced_scene_support</h2>
+<p>Whether the device supports the full Advanced Lighting Scenes driver commands and API&#39;s.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;advanced_scene_support&gt;&lt;/advanced_scene_support&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;advanced_scene_support&gt;</span>false<span class="nt">&lt;/advanced_scene_support&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='reduced_als_support'>reduced_als_support</h2>
+<p>If the advanced_scene_support capability is false, a driver can use this reduced_als_support capability for Advanced Lighting Scene support. The device will be allowed into a scene, but the device can&#39;t participate in scene ramping and can only have either 0 or 1 elements in a scene. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;reduced_als_support&gt;&lt;/reduced_als_support&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;reduced_als_support&gt;</span>false<span class="nt">&lt;/reduced_als_support&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='supports_broadcast_scenes'>supports_broadcast_scenes</h2>
+<p>Whether the device supports broadcasts.  This includes Zigbee, ZWave, UDP. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_broadcast_scenes&gt;&lt;/supports_broadcast_scenes&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;supports_broadcast_scenes&gt;</span>false<span class="nt">&lt;/supports_broadcast_scenes&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='supports_multichannel_scenes'>supports_multichannel_scenes</h2>
+<p>Causes the LightV2 proxy to send the &quot;EXECUTE_SCENE&quot; command to the device rather than a set level command.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_multichannel_scenes&gt;&lt;/supports_multichannel_scenes&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;supports_multichannel_scenes&gt;</span>false<span class="nt">&lt;/supports_multichannel_scenes&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='hide_proxy_properties'>hide_proxy_properties</h2>
+<p>Whether to show all proxy properties in composer.  This is primarily only used for extremely limited hardware that can&#39;t ramp or do much else except turn on and off.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;hide_proxy_properties&gt;&lt;/hide_proxy_properties&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+  <span class="nt">&lt;hide_proxy_properties&gt;</span>false<span class="nt">&lt;/hide_proxy_properties&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div></p>
 <h1 id='light-v2-conditionals'>Light V2 Conditionals</h1>
