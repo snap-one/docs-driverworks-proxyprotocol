@@ -4690,6 +4690,9 @@
                     <a href="#set-click-rate-up" class="toc-h2 toc-link" data-title="SET CLICK RATE UP">SET CLICK RATE UP</a>
                   </li>
                   <li>
+                    <a href="#set_color_target" class="toc-h2 toc-link" data-title="SET_COLOR_TARGET">SET_COLOR_TARGET</a>
+                  </li>
+                  <li>
                     <a href="#set-hold-rate-up" class="toc-h2 toc-link" data-title="SET HOLD RATE UP">SET HOLD RATE UP</a>
                   </li>
                   <li>
@@ -4721,6 +4724,15 @@
                   </li>
                   <li>
                     <a href="#group-stop-ramp" class="toc-h2 toc-link" data-title="GROUP STOP RAMP">GROUP STOP RAMP</a>
+                  </li>
+                  <li>
+                    <a href="#update_color_preset" class="toc-h2 toc-link" data-title="UPDATE_COLOR_PRESET">UPDATE_COLOR_PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#set_click_rate_up" class="toc-h2 toc-link" data-title="SET_CLICK_RATE_UP">SET_CLICK_RATE_UP</a>
+                  </li>
+                  <li>
+                    <a href="#set_click_rate_down" class="toc-h2 toc-link" data-title="SET_CLICK_RATE_DOWN">SET_CLICK_RATE_DOWN</a>
                   </li>
               </ul>
           </li>
@@ -35388,6 +35400,42 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 
 <p><code>None</code></p>
 
+<h2 id='set_color_target'>SET_COLOR_TARGET</h2>
+
+<p>Sent to drivers to control it to change the color. Once drivers begin to change color, they should send a COLOR_CHANGING Notify. Then once the color has finished changing it should send a COLOR_CHANGED Notify.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_TARGET()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>LIGHT_COLOR_TARGET_X</code> = X Coordinate of CIE 1931 Chromaticity Diagram</td>
+<td></td>
+</tr>
+<tr>
+<td><code>LIGHT_COLOR_TARGET_Y</code> = Y Coordinate of CIE 1931 Chromaticity Diagram</td>
+<td></td>
+</tr>
+<tr>
+<td><code>LIGHT_COLOR_TARGET_MODE</code> = Integer of: 0 full color, 1 color correlated temperature. Default is 0.  Most Bulb, LED strip and their drivers can likely ignore this. This is provided in the case that some bulbs or drivers need to track if they are in working in a cct mode or color mode. We recommend all drivers stick to only operating in full_color mode if possible.</td>
+<td></td>
+</tr>
+<tr>
+<td>RATE</td>
+<td>Integer. Optional Parameter of milliseconds to ramp over. Will use driver default if parameter is not used.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='set-hold-rate-up'>SET HOLD RATE UP</h2>
 
 <p>Used to set the hold rate up for the device.</p>
@@ -35677,6 +35725,114 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 <tr>
 <td>String</td>
 <td>GROUP_ID Driver ID of the Load Group</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update_color_preset'>UPDATE_COLOR_PRESET</h2>
+
+<p>Having a mandatory On color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;default on&#39; color behavior. Without this feature, it&#39;s almost certain that different brands and models of lights would turn on to different colors or color temperatures.</p>
+
+<p>In addition to the On color preset, having a mandatory Dim color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;warm dim&#39; color behavior. </p>
+
+<p>The &#39;On&#39; color preset is the color that a light should generate at its &#39;Default On Brightness&#39; level.</p>
+
+<p>The &#39;Dim&#39; color preset is the color that a light should generate at 1% brightness. </p>
+
+<p>For example, consider a lights Default On Brightness is set to 80%. The On preset color is 4000CCT and the Dim preset color is 2000CCT. If the light was then set to a brightness level of 40%, the lights color would be 3000CCT. Also, if the lights brightness is set to 80% or higher, the color would always be 4000CCT. This formula would be used when a light is turned on (from off level) via a SET_BRIGHTNESS_TARGET and if no SET_COLOR_TARGET is additionally used. </p>
+
+<p>Any further time that SET_BRIGHTNESS_TARGET is used, the driver should use the formula to calculate the new color and also set that color when the brightness is changed via SET_BRIGHTNESS_TARGET. If a SET_COLOR_TARGET command is used after the light has been turned on, then the formula for warm-dim functionality should no longer occur and the color should not be auto-adjusted until the light is turned off and back on again.</p>
+
+<p>When all drivers follow this formula there will be consistent On and Warm Dim lighting experiences for customers.</p>
+
+<p>In 3.3.0, the LightV2 Proxy &#39;Dim&#39; and &#39;On&#39; color presets can be changed in Composer and Navigator. Composer currently has a checkbox to &#39;enable&#39; the Dim color, although this checkbox is not an &#39;enable dim color&#39; feature. It is a &#39;hide the dim color preset in Composer&#39; feature. </p>
+
+<p>Upon &#39;disabling&#39; the Dim color Composer is actually setting the Dim preset color to the On preset color. The LightV2 Proxy always has an On and Dim preset defined regardless of the checkbox in Composer being checked or unchecked. There isn&#39;t a 100% sure way for a driver to know if this checkbox is &#39;checked’.  However, a driver could consider it potentially checked if the Dim and On preset colors are not the same color.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_COLOR_PRESET()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>COMMAND</td>
+<td>String - This will be one of the following strings: <code>&quot;ADDED&quot;, &quot;MODIFIED&quot; &quot;REMOVED&quot;</code></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number. Preset ID</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>String. Name of the preset.</td>
+</tr>
+<tr>
+<td>COLOR_X</td>
+<td>Double - CIE 1931 Chromaticity Color.</td>
+</tr>
+<tr>
+<td>COLOR\Y</td>
+<td>Double - CIE 1931 Chromaticity Color.</td>
+</tr>
+<tr>
+<td>COLOR_MODE</td>
+<td>UInt. Color Mode (0 Full Color, 1 CCT)</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set_click_rate_up'>SET_CLICK_RATE_UP</h2>
+
+<p>Used to set the click rate up for the device.  When a driver gets this command, it MUST send a CLICK_RATE_UP notification with the value that the driver accepted.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_CLICK_RATE_UP()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RATE</td>
+<td>Integer - In milliseconds</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set_click_rate_down'>SET_CLICK_RATE_DOWN</h2>
+
+<p>Used to set the click rate down for the device.  When a driver gets this command, it MUST send a CLICK_RATE_DOWN notification with the value that the driver accepted.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_CLICK_RATE_DOWN()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RATE</td>
+<td>Integer - In milliseconds</td>
 </tr>
 </tbody></table>
 
