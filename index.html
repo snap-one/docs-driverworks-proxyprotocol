@@ -875,6 +875,9 @@
             <a href="#audio-output-bindings-and-proxy-events" class="toc-h1 toc-link" data-title="Audio Output Bindings and Proxy Events">Audio Output Bindings and Proxy Events</a>
           </li>
           <li>
+            <a href="#display-adjustable-av-switch-bindings" class="toc-h1 toc-link" data-title="Display Adjustable AV Switch Bindings">Display Adjustable AV Switch Bindings</a>
+          </li>
+          <li>
             <a href="#audio-video-switch-proxy-commands" class="toc-h1 toc-link" data-title="Audio Video Switch Proxy Commands">Audio Video Switch Proxy Commands</a>
               <ul class="toc-list-h2">
                   <li>
@@ -10287,6 +10290,60 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
 <p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<h1 id='display-adjustable-av-switch-bindings'>Display Adjustable AV Switch Bindings</h1>
+
+<p>O.S. releases 3.3.0 and later provides the ability to hide AV Switch Bindings that are not in use. This feature has been provided to better manage the UI display in ComposerPro. This is especially useful for AV Switch devices that have a large number of bindings. Displaying all of the bindings for these devices can make the use of UI cumbersome.</p>
+
+<p><strong>Assumptions:</strong></p>
+
+<ul>
+<li>All applicable bindings are correctly defined in the driver’s XML.<br></li>
+<li>Driver developers already have the ability to create control bindings using <a href="https://control4.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding">C4:AddDynamicBinding()</a></li>
+<li>The driver file specifies bindings to be hidden by the proxy through the use of a new XML element delivered in O.S. 3.3.0:  <code>&lt;ExtraInfo&gt;D2&lt;/ExtraInfo&gt;</code> <em>See below for more information.</em></li>
+<li>Resizing of the bindings list is possible only if a new capability delivered in O.S. 3.3.0 is set to true: <code>&lt;allow_dynamic_resize&gt;</code>  <em>See below for more information.</em></li>
+</ul>
+
+<p><strong>AV Switch Proxy Functionality Using Display Adjustable Bindings</strong></p>
+
+<ul>
+<li>Bindings that are bound and then unbound in ComposerPro will only be hidden after a Director restart.</li>
+<li>The Proxy will increase the amount of displayed bindings based on the last unhidden, bound binding. For example,  bindings 1 through 10 are all bound and unhidden. ComposerPro will display all of those bindings and in addition, binding 11 through 13 assuming they are also unhidden.</li>
+<li>The largest Binding amount will be shown ACROSS ALL SECTIONS at the same time.  For example, RX, TX, Audio, Video will all be expanded to the largest bound set of any of the section. If RX has 10 bound connections that means Audio will also display 10, regardless of binding status.</li>
+<li>The driver developer is responsible for handling the configuration use case of virtual director or when the device is not available and ensuring that the solution is documented and appropriate for these scenarios.</li>
+</ul>
+
+<p><strong>Driver XML to Support Hidden Bindings</strong></p>
+
+<p>To allow the AV Switch Proxy to auto hide/unhide a binding, the driver needs to have a new XML tag included in the each connection in the driver’s XML: <code>&lt;ExtraInfo&gt;D2&lt;/ExtraInfo&gt;</code>.</p>
+
+<p>The ExtraInfo tag must include the value of <code>D2</code> as the parameter for each connection. For example, see the XML for connection 3096 to the right.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connection&gt;</span>
+     <span class="nt">&lt;id&gt;</span>3096<span class="nt">&lt;/id&gt;</span>
+     <span class="nt">&lt;type&gt;</span>6<span class="nt">&lt;/type&gt;</span>
+     <span class="nt">&lt;ExtraInfo&gt;</span>D2<span class="nt">&lt;/ExtraInfo&gt;</span>
+     <span class="nt">&lt;connectionname&gt;</span>TX 96<span class="nt">&lt;/connectionname&gt;</span>
+     <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+<span class="nt">&lt;/connection&gt;</span>
+</code></pre></div>
+
+<p><strong> Capability to Support Hidden Bindings</strong></p>
+
+<p><strong>allow_dynamic_resize</strong></p>
+
+<p>Capability that allows for AV Switch bindings to be hidden in ComposerPro. Defaults to false.</p>
+
+<p><strong> Signature</strong></p>
+
+<p><code>&lt;allow_dynamic_resize&gt;false&lt;/allow_dynamic_resize&gt;</code></p>
+
+<p><strong>Additional Information and Expected Limitations</strong></p>
+
+<ul>
+<li>The driver developer is responsible for persisting and recreating any non-binding connections when director starts up.</li>
+<li>The driver developer must recreate the bindings in the proper order before director loads and creates the connection. This is done by the driver developer by persisting the binding information and creating the bindings on execution of the main driver code.</li>
+<li>The driver must handle the &quot;virtual&quot; or device not available case appropriately based on the expected use case for configuring the device. If the connections aren&#39;t defined in xml, and the device isn&#39;t available, the installer may have a limited experience. The driver developer needs to take this into consideration.</li>
+</ul>
 <h1 id='audio-video-switch-proxy-commands'>Audio Video Switch Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
