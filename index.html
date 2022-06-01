@@ -4516,6 +4516,23 @@
               </ul>
           </li>
           <li>
+            <a href="#advanced-lighting-scene-agent" class="toc-h1 toc-link" data-title="Advanced Lighting Scene Agent">Advanced Lighting Scene Agent</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#capabilities" class="toc-h2 toc-link" data-title="Capabilities">Capabilities</a>
+                  </li>
+                  <li>
+                    <a href="#variables" class="toc-h2 toc-link" data-title="Variables">Variables</a>
+                  </li>
+                  <li>
+                    <a href="#events" class="toc-h2 toc-link" data-title="Events">Events</a>
+                  </li>
+                  <li>
+                    <a href="#asynchronous-commands" class="toc-h2 toc-link" data-title="Asynchronous Commands">Asynchronous Commands</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#keypad-button-link-bindings" class="toc-h1 toc-link" data-title="Keypad Button Link Bindings">Keypad Button Link Bindings</a>
               <ul class="toc-list-h2">
                   <li>
@@ -34015,6 +34032,230 @@ Valid values are:</p>
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+<h1 id='advanced-lighting-scene-agent'>Advanced Lighting Scene Agent</h1>
+
+<h2 id='capabilities'>Capabilities</h2>
+
+<p>Capabilities provide a way for protocol driver to tell an agent what functionality the driver and/or hardware has. Capabilities need to be defined in the drivers c4i or c4z configuration file or updated via a Dynamic Capabilities Changed Notify. </p>
+
+<p>Only capacities that are different from the defaults need to be specified.</p>
+
+<h3 id='advanced_scene_support'>advanced_scene_support</h3>
+
+<p>Whether the device supports the full Advanced Lighting Scenes commands and API&#39;s. This capability is primarily useful for drivers that want to support multi-scene elements. Additionally, Zigbee and zWave devices can take advantage of broadcast packets to avoid each driver needing to send a unicast packet, as would be done with reduced_als_support.</p>
+
+<p>If this capability is true, drivers must include full support of the following:</p>
+
+<ul>
+<li>Parsing and using XML received from the PUSH_SCENE command that is sent, when the device comes online, to know what the scene involvement is for the light.</li>
+<li>Support scenes with multiple elements.</li>
+<li>For performance, only sends one(1) level update Notify when load hardware is at final scene level. -- We highly recommend all existing and new drivers be moved over to the BRIGHTNESS TARGET API design for performance reasons and better UI tracking of level during ramping.</li>
+<li>ALS Commands:</li>
+<li>PUSH_SCENE</li>
+<li>ACTIVATE_SCENE</li>
+<li>RAMP_SCENE_UP</li>
+<li>RAMP_SCENE_DOWN</li>
+<li>STOP_SCENE_RAMP</li>
+<li>Optionally - These commands were used as workarounds for lights in early Advanced Lighting Scene agent times (pre 3.0.0) but are no longer needed, as long as the driver properly handles the PUSH_SCENE command changes.</li>
+<li>SYNC_SCENE</li>
+<li>SYNC_ALL_SCENES</li>
+</ul>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;advanced_scene_support&gt;&lt;/advanced_scene_support&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>If a driver is using the light v1 proxy and doesn&#39;t have either of the advanced_scene_support or reduced_als_support capabilities in its c4i file, the agent assumes that reduced_als_support is true. This allows existing 3rd party lights into advanced scenes. The v1 proxy was modified to abstract away the important differences from the protocol drivers. If a 3rd party driver does want full scene support, it must use the Light V2 proxy.</p>
+
+<p>If any lights have full ALS support then only the &quot;New&quot; broadcast MIB is sent, otherwise the older ZCL MIB is sent, as according to logic in ALS &quot;activate&quot; function.</p>
+
+<h3 id='reduced_als_support'>reduced_als_support</h3>
+
+<p>If the advanced_scene_support capability is false, a driver can use this reduced_als_support capability for most Advanced Lighting Scene support and inclusion. Most drivers will find this sufficient for ALS support and using this option greatly reduces development time and complexity for driver developers, as less than 1% of Control4 systems have implemented multi-element scenes. Specifying this option will cause ALS to send individual SET_BRIGHTNESS_TARGET and SET_COLOR_TARGET commands to a driver when a scene is activated. This means drivers do not have to implement PUSH_SCENE, ACTIVATE_SCENE, SYNC_SCENE, SCENE_ALL_SCENES, manage XML table lookups, or multi-element scenes that advanced_scene_support=true does require.</p>
+
+<p>The device will be allowed into ALS scenes, but with the following limitations:</p>
+
+<ul>
+<li>No Multi Element support</li>
+<li>No Flash Support</li>
+</ul>
+
+<p>If this capability is true, drivers must include support for the following:</p>
+
+<ul>
+<li>SET_BRIGHTNESS_TARGET</li>
+<li>RAMP_SCENE_UP</li>
+<li>RAMP_SCENE_DOWN</li>
+<li>STOP_SCENE_RAMP</li>
+<li>Optional:</li>
+<li>SET_COLOR_TARGET</li>
+</ul>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;reduced_als_support&gt;&lt;/reduced_als_support&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>If a driver is using the light v1 proxy and doesn&#39;t have either of the advanced_scene_support or reduced_als_support capabilities in its c4i file, the agent assumes that reduced_als_support is true. This allows existing 3rd party lights into advanced scenes. The v1 proxy was modified to abstract away the important differences from the protocol drivers. If a 3rd party driver does want full scene support, it must use the Light V2 proxy.</p>
+
+<p>If any lights have full ALS support then only the &quot;New&quot; broadcast MIB is sent, otherwise the older ZCL MIB is sent, as according to logic in ALS &quot;activate&quot; function.</p>
+
+<h3 id='supports_broadcast_scenes'>supports_broadcast_scenes</h3>
+
+<p>Whether the device supports broadcasts.  This includes Zigbee, ZWave, UDP. If supports_broadcast_scenes and supports_multicast_scenes are both false, the light V2 proxy will send a SYNC_SCENES command to the Protocol Driver with TIME and STATE parameters, when the device comes online.</p>
+
+<p>If set to true, ALS assumes the device is always a zigbee device.</p>
+
+<p>If set to true, LightV2 Proxy assumes the device is always a zigbee device.</p>
+
+<p>Forces an OnZigbeeDeviceOnline(Offline) to occur when the standard DeviceOnline(Offline) command is called.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;support_broadcast_scenes&gt;&lt;/support_broadcast_scenes&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='supports_multichannel_scenes'>supports_multichannel_scenes</h3>
+
+<p>Causes the LightV2 proxy to send the &quot;EXECUTE_SCENE&quot; command to the device rather than a set level command. If supports_broadcast_scenes and supports_multicast_scenes are both false, the light V2 proxy will send a SYNC_SCENES command to the Protocol Driver with TIME and STATE parameters, when the device comes online.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;support_multichannel_scenes&gt;&lt;/support_ multichannel_scenes&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h2 id='variables'>Variables</h2>
+
+<p>Note: Advanced Lighting Scene Agent does not currently have any enabled variables.</p>
+
+<h2 id='events'>Events</h2>
+
+<p>The following are System Events that are provided and managed by the Proxy.  These can be used for Composer Programming or other drivers to monitor the changes of a values reflected in a LightV2 proxy.</p>
+
+<h3 id='scene-activated'>Scene Activated</h3>
+
+<p>This event is fired when the scene changes from the inactive to the active state. </p>
+
+<h3 id='id'>ID</h3>
+
+<p>(sceneID * *5)</p>
+
+<h3 id='scene-deactivated'>Scene DeActivated</h3>
+
+<p>This event is fired when the scene changes from the active to the inactive state. </p>
+
+<h3 id='id'>ID</h3>
+
+<p>(sceneID * *5) + 1</p>
+
+<h3 id='all-members-100'>All Members 100%</h3>
+
+<p>This event is fired when all the members are at 100%. This event is not exposed to Composer, so the user can&#39;t do programming off it.</p>
+
+<h3 id='id'>ID</h3>
+
+<p>(sceneID * 5) + 2</p>
+
+<h3 id='all-members-0'>All Members 0%</h3>
+
+<p>This event is fired when all the members are at 0%. This event is not exposed to Composer, so the user can&#39;t do programming off it.</p>
+
+<h3 id='id'>ID</h3>
+
+<p>(sceneID * 5) + 3</p>
+
+<h3 id='scene-invoked'>Scene Invoked</h3>
+
+<p>This event is fired when the agent is told to activate a scene. This will fire even if the scene already active.</p>
+
+<h3 id='id'>ID</h3>
+
+<p>(sceneID * 5) + 4</p>
+
+<h2 id='asynchronous-commands'>Asynchronous Commands</h2>
+
+<p>This section lists the Commands (Bound Call, aka SendToDevice in Lua) that the Proxy supports.  These are for use by Navigators, Composer Programming and other services like Voice Control.  The thing to remember with Proxies is that many of the commands are passed on to the Protocol and it is the Protocol drivers responsibility to ripple the commands result back up to the Proxy using a &#39;Notify&#39; command. This allows the Protocol to optionally make slight adjustments to commands for its unique driver or hardware and then inform the Proxy of the change.</p>
+
+<h3 id='ramp_scene_up'>RAMP_SCENE_UP</h3>
+
+<p>Used to ramp a scene up until it is told to stop.</p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. Which scene to ramp up.</p>
+
+<h3 id='ramp_scene_down'>RAMP_SCENE_DOWN</h3>
+
+<p>Used to ramp a scene down until it is told to stop.</p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. Which scene to ramp down.</p>
+
+<h3 id='stop_ramp_scene'>STOP_RAMP_SCENE</h3>
+
+<p>Used to ramp a scene down until it is told to stop.</p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. Which scene to stop ramping.</p>
+
+<h3 id='activate_scene'>ACTIVATE_SCENE</h3>
+
+<p>Activates a scene.  This scene will always be run and events fired, even if the scene is already active.</p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. ID of the scene to activate.</p>
+
+<h3 id='deactivate_scene'>DEACTIVATE_SCENE</h3>
+
+<p>Always activates the scene that is referenced as the Toggle ID, even if the toggle scene is active.  Common use case is to set two scenes toggle scenes to each other but it is possible to link multiple scenes to a single &quot;Off&quot; toggle scene or even create loops of multiple scenes that will activate the next scene in the scene loop when &quot;Toggle Scene&quot; is ran. </p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. ID of the scene to deactivate.</p>
+
+<h3 id='toggle_scene'>TOGGLE_SCENE</h3>
+
+<p>Will activate the scene ID specified if it is inactive. If the scene ID specified is active then the toggle scene ID will be activated.</p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>SCENE_ID - Integer. Integer. ID of the scene that will have its toggle scene activated.</p>
 <h1 id='keypad-button-link-bindings'>Keypad Button Link Bindings</h1>
 
 <h2 id='keypad-button-link-bindings'>KEYPAD BUTTON LINK BINDINGS</h2>
