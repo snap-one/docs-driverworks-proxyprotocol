@@ -4536,6 +4536,32 @@
               </ul>
           </li>
           <li>
+            <a href="#light-driver-development-best-practices" class="toc-h1 toc-link" data-title="Light Driver Development Best Practices">Light Driver Development Best Practices</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#brightness-target-api" class="toc-h2 toc-link" data-title="Brightness Target API">Brightness Target API</a>
+                  </li>
+                  <li>
+                    <a href="#brightness-and-color-changing-api" class="toc-h2 toc-link" data-title="Brightness and Color Changing API">Brightness and Color Changing API</a>
+                  </li>
+                  <li>
+                    <a href="#enforcing-min-max-capabilities" class="toc-h2 toc-link" data-title="Enforcing min/max capabilities">Enforcing min/max capabilities</a>
+                  </li>
+                  <li>
+                    <a href="#handling-consecutive-brightness-and-color-commands" class="toc-h2 toc-link" data-title="Handling Consecutive Brightness and Color commands">Handling Consecutive Brightness and Color commands</a>
+                  </li>
+                  <li>
+                    <a href="#default-on-and-dim-colors" class="toc-h2 toc-link" data-title="Default On and Dim Colors">Default On and Dim Colors</a>
+                  </li>
+                  <li>
+                    <a href="#setting-color-while-the-light-is-off" class="toc-h2 toc-link" data-title="Setting Color while the Light is Off">Setting Color while the Light is Off</a>
+                  </li>
+                  <li>
+                    <a href="#warm-dim" class="toc-h2 toc-link" data-title="Warm Dim">Warm Dim</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#keypad-button-link-bindings" class="toc-h1 toc-link" data-title="Keypad Button Link Bindings">Keypad Button Link Bindings</a>
               <ul class="toc-list-h2">
                   <li>
@@ -34545,6 +34571,88 @@ Optionally - These commands were used as workarounds for lights in early Advance
 <h3 id='parameters'>Parameters</h3>
 
 <p>SCENE_ID - Integer. Integer. ID of the scene that will have its toggle scene activated.</p>
+<h1 id='light-driver-development-best-practices'>Light Driver Development Best Practices</h1>
+
+<p>The purpose of this section is to provide best practice advice for driver developers developing lighting drivers. By following these recommendations, developers will ensure consistent behavior from their driver and other lighting drivers. Additionally, implementing these guidelines will greatly improve driver interaction with other components in the Control4 OS such as Agents, Customer Interfaces, Programming, etc.</p>
+
+<h2 id='brightness-target-api'>Brightness Target API</h2>
+
+<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the supports_target capability. The API includes the SET_BRIGHTNESS_TARGET proxy command and LIGHT_BRIGHTNESS_CHANGED and LIGHT_BRIGHTNESS_CHANGING proxy notifies.</p>
+
+<p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
+
+<p>Using the LIGHT_BRIGHTNESS_CHANGING notify command allows drivers to inform the proxy of brightness transitions. Customer Interfaces monitor LIGHT_BRIGHTNESS_CHANGING events and will display a brightness changing animation depending on the provided current brightness, target brightness and rate. This can be useful for devices that do not send intermediate status notifications when transitioning between brightness levels. It is also recommended to send brightness changing notify command in cases where the final level is unknown, such as holding a button to ramp a light, scene or group up or down. For example, if a customer holds a button to slow-ramp a light on, the driver should notify the proxy that the brightness is changing to 100%. This will in turn show a brightness changing animation on Customer Interfaces. Once the customer releases the button (e.g. at 30%), the driver should send a LIGHT_BRIGHTNESS_CHANGED notify to indicate where the light ramping stopped.</p>
+
+<p>Previously, drivers had to &#39;emulate&#39; slider movements on Customer Interfaces by sending periodic, incremental light level notifies during brightness transitions (e.g. every 20ms). These updates cause performance issues including:</p>
+
+<ul>
+<li>Slow performance in proxies, director, customer interfaces and Advanced Lighting Scene agent.</li>
+<li>Potentially inaccurate states for Advanced Lighting Scene tracking.</li>
+<li>Excessive zigbee traffic and often incorrect keypad button LED status.</li>
+<li>Inconsistent slider movement in Customer Interfaces.</li>
+<li>Excessive triggering and potentially incorrect Composer Programming being fired.</li>
+</ul>
+
+<h2 id='brightness-and-color-changing-api'>Brightness and Color Changing API</h2>
+
+<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (LIGHT_COLOR_CHANGING) or brightness (LIGHT_BRIGHTNESS_CHANGING) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
+
+<p>Using these notifies also allows additional Programming:</p>
+
+<ul>
+<li>Events: Brightness Begins to ramp and Color begins to ramp.</li>
+<li>Conditionals and Loops: Is Brightness Target and Is Color Target.</li>
+</ul>
+
+<h2 id='enforcing-min-max-capabilities'>Enforcing min/max capabilities</h2>
+
+<p>Beginning with OS 3.3.0, Advanced Lighting Scenes Agent, Customer Interfaces, Programming and other system components strictly enforce min/max and other capability settings in LightV2 Proxy drivers. It is recommended to verify if these capabilities are correct in your drivers.  Existing out-of-range settings (e.g. in Advanced Lighting Scenes agent, Programming, etc.) will not be forcibly changed on upgrades but any new settings will enforce min/max capabilities.</p>
+
+<p>For example, in pre-OS 3.3.0, Composer and the proxy only enforced click_rate_min/max capabilities in a driver&#39;s Properties. In the Advanced Lighting Scene Agent and Programming, it was possible to set a rate that was out of the click_rate_min/max range. In OS 3.3.0 and later, it will not be possible to set a rate out of this range. If these capabilities are not correct, partners and customers will not be able to use correct range when specifying ramp rates.</p>
+
+<h2 id='handling-consecutive-brightness-and-color-commands'>Handling Consecutive Brightness and Color commands</h2>
+
+<p>The Light V2 Proxy has independent commands to set color (chromaticity) only (SET_COLOR_TARGET) and brightness (SET_BRIGHTNESS_TARGET). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
+
+<p>Driver developers must make sure that consecutive color and brightness commands are handled correctly. If the device does not support consecutive commands, a best practice is to have a debouncing (and/or queuing) mechanism in the driver so that commands can be combined.</p>
+
+<h2 id='default-on-and-dim-colors'>Default On and Dim Colors</h2>
+
+<p>All colored lights have a mandatory Default On Color and Default Dim Color presets. These provide a consistent behavior when turning the light on or off. Furthermore, these presets can be used as &#39;hooks&#39; for other agents/drivers in the system that might want to change color that the light should turn on to or transition to while turning off.</p>
+
+<p>Default On Color should be set whenever the devices turns on through SET_BRIGHTNESS_TARGET command, Button Click and Hold actions, etc.</p>
+
+<p>Default Dim color should be used while the light is turning off, except in cases when the final level is unknown. For example, color should not be changed while dimming down using button hold since it is not known when the dimming will be stopped. For example, it is not known if the customer is dimming to turn off the light or to only lower the brightness.</p>
+
+<h2 id='setting-color-while-the-light-is-off'>Setting Color while the Light is Off</h2>
+
+<p>The Light V2 proxy allows sending SET_COLOR_TARGET commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
+
+<h2 id='warm-dim'>Warm Dim</h2>
+
+<p>Warm Dim technology allows LED lights to dim down to a warmer color temperature. This replicates the effect of incandescent and halogen light bulbs. With color and color temperature support in OS 3.3.0, driver developers can &#39;emulate&#39; Warm Dim behavior in their drivers. The following section explains how Warm Dimming is implemented for a Philips Hue driver. However, this approach is recommended for other drivers that support this behavior.</p>
+
+<p><strong>Principle of Operation for Philips Hue</strong>
+This feature is only available for lights that support color correlated temperature (CCT) control. Warm Dimming can be enabled or disabled on the Lighting Extras view on the Customer Interfaces or on the driver&#39;s Advanced Properties page in Composer. When enabled, a change to the light&#39;s brightness level will automatically change the color temperature of the light so that lower brightness results in warmer colors and vise versa.</p>
+
+<p>When Warm Dimming is active, color correlated temperature of the light will follow a linear function of brightness, between the &#39;Warm Dimming CCT At Min Brightness&#39; and &#39;Warm Dimming CCT At Max Brightness&#39; Advanced Properties. &#39;Warm Dimming CCT At Min Brightness&#39; and &#39;Warm Dimming CCT At Max Brightness&#39; are color correlated temperatures of the light at 1% and 100% brightness, respectively:</p>
+
+<p><code>cct = WarmDimmingCCTatMinBrightness + (targetBrightness - 1) * (WarmDimmingCCTatMaxBrightness - WarmDimmingCCTatMinBrightness) / 99</code></p>
+
+<p>Enabling Warm Dimming does not change Default On Color and Default Dim Color settings. The light will turn on at the Default On Brightness and CCT will be the value for Default On Brightness on the warm dimming function.</p>
+
+<p>The Following graph displays a Warm Dimming CCT change as function of brightness for the following settings:</p>
+
+<ul>
+<li>Warm Dimming CCT At Min Brightness = 2000K</li>
+<li>Warm Dimming CCT At Max Brightness = 6000K</li>
+<li>Default On Brightness = 50%</li>
+<li>With brightness change to 1%, CCT will also be set by the driver to 2000K. At full brightness (100%), CCT will be 6000K. When the light is turned on, CCT will be 3980K (at Default On Brightness of 50%).</li>
+</ul>
+
+<p><img src="images/62_2-01-6b7761c0.png"/></p>
+
+<p>Warm Dimming will be active only while changing brightness of the light. Changing the CCT does not affect brightness. Furthermore, if any color is selected (including CCT,  e.g. via Customer Interfaces, Advanced Lighting Scenes, Programming) the light will transition to the specified color and will exit the &#39;emulated warm dimming&#39; mode. To return a light to the emulated warm dimming mode, it must be turned off and then turned back on.</p>
 <h1 id='keypad-button-link-bindings'>Keypad Button Link Bindings</h1>
 
 <h2 id='keypad-button-link-bindings'>KEYPAD BUTTON LINK BINDINGS</h2>
