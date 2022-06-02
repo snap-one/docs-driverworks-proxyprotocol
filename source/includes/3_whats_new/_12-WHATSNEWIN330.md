@@ -1,8 +1,6 @@
-## What’s New in 3.3.0 
+## What’s New in 3.3.0
 
-**Light Proxy Color Enhancements**
-
-
+## Light Proxy Color Enhancements
 This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:
 
 ### Light V2 Proxy Capabilities
@@ -68,6 +66,8 @@ New supporting [documentation][21].
  
 New supporting [documentation][22].
 
+### Light Driver Development Best Practices
+A new section has been added to the Light V2 proxy content including best practice recommendations for light driver developers.
 
 ### Audio Video Switch Display Adjustable Bindings
 
