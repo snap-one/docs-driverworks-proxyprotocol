@@ -1,5 +1,4 @@
 ## What’s New in 3.3.0
-
 ## Light Proxy Color Enhancements
 This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:
 
@@ -67,11 +66,11 @@ New supporting [documentation][21].
 New supporting [documentation][22].
 
 ### Light Driver Development Best Practices
-A new section has been added to the Light V2 proxy content including best practice recommendations for light driver developers.
+A new section has been added to the Light V2 proxy content including [best practice recommendations][23] for light driver developers.
 
 ### Audio Video Switch Display Adjustable Bindings
 
-O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][23] that are not being used. This feature has been provided to better manage the UI display within ComposerPro.
+O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][24] that are not being used. This feature has been provided to better manage the UI display within ComposerPro.
 
 
 
@@ -97,4 +96,5 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][23] that a
 [20]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-v2-variables
 [21]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-v2-extras-interface-library
 [22]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#capabilities
-[23]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#display-adjustable-av-switch-bindings
+[23]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices
+[24]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#display-adjustable-av-switch-bindings
