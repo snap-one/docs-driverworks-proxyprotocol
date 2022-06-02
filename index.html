@@ -4548,7 +4548,7 @@
                     <a href="#brightness-and-color-changing-api" class="toc-h2 toc-link" data-title="Brightness and Color Changing API">Brightness and Color Changing API</a>
                   </li>
                   <li>
-                    <a href="#enforcing-min-max-capabilities" class="toc-h2 toc-link" data-title="Enforcing min/max capabilities">Enforcing min/max capabilities</a>
+                    <a href="#enforcing-min-max-capabilities" class="toc-h2 toc-link" data-title="Enforcing min/max Capabilities">Enforcing min/max Capabilities</a>
                   </li>
                   <li>
                     <a href="#handling-consecutive-brightness-and-color-commands" class="toc-h2 toc-link" data-title="Handling Consecutive Brightness and Color commands">Handling Consecutive Brightness and Color commands</a>
@@ -6141,7 +6141,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <h3 id='light-driver-development-best-practices'>Light Driver Development Best Practices</h3>
 
-<p>A new section has been added to the Light V2 proxy content including best practice recommendations for light driver developers.</p>
+<p>A new section has been added to the Light V2 proxy content including <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices">best practice recommendations</a> for light driver developers.</p>
 
 <h3 id='audio-video-switch-display-adjustable-bindings'>Audio Video Switch Display Adjustable Bindings</h3>
 
@@ -34582,9 +34582,9 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='brightness-target-api'>Brightness Target API</h2>
 
-<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the supports_target capability. The API includes the SET_BRIGHTNESS_TARGET proxy command and LIGHT_BRIGHTNESS_CHANGED and LIGHT_BRIGHTNESS_CHANGING proxy notifies.</p>
+<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. The API includes the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
 
-<p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
+<p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use LIGHT_BRIGHTNESS_CHANGING and LIGHT_BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
 
 <p>Using the LIGHT_BRIGHTNESS_CHANGING notify command allows drivers to inform the proxy of brightness transitions. Customer Interfaces monitor LIGHT_BRIGHTNESS_CHANGING events and will display a brightness changing animation depending on the provided current brightness, target brightness and rate. This can be useful for devices that do not send intermediate status notifications when transitioning between brightness levels. It is also recommended to send brightness changing notify command in cases where the final level is unknown, such as holding a button to ramp a light, scene or group up or down. For example, if a customer holds a button to slow-ramp a light on, the driver should notify the proxy that the brightness is changing to 100%. This will in turn show a brightness changing animation on Customer Interfaces. Once the customer releases the button (e.g. at 30%), the driver should send a LIGHT_BRIGHTNESS_CHANGED notify to indicate where the light ramping stopped.</p>
 
@@ -34600,7 +34600,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='brightness-and-color-changing-api'>Brightness and Color Changing API</h2>
 
-<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (LIGHT_COLOR_CHANGING) or brightness (LIGHT_BRIGHTNESS_CHANGING) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
+<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a>) or brightness (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a>) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
 
 <p>Using these notifies also allows additional Programming:</p>
 
@@ -34609,15 +34609,15 @@ Optionally - These commands were used as workarounds for lights in early Advance
 <li>Conditionals and Loops: Is Brightness Target and Is Color Target.</li>
 </ul>
 
-<h2 id='enforcing-min-max-capabilities'>Enforcing min/max capabilities</h2>
+<h2 id='enforcing-min-max-capabilities'>Enforcing min/max Capabilities</h2>
 
-<p>Beginning with OS 3.3.0, Advanced Lighting Scenes Agent, Customer Interfaces, Programming and other system components strictly enforce min/max and other capability settings in LightV2 Proxy drivers. It is recommended to verify if these capabilities are correct in your drivers.  Existing out-of-range settings (e.g. in Advanced Lighting Scenes agent, Programming, etc.) will not be forcibly changed on upgrades but any new settings will enforce min/max capabilities.</p>
+<p>Beginning with OS 3.3.0, Advanced Lighting Scenes Agent, Customer Interfaces, Programming and other system components strictly enforce min/max and other capability settings in LightV2 Proxy drivers. It is recommended to verify if these capabilities are correct in your drivers.  Existing out-of-range settings (e.g. in <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">Advanced Lighting Scenes agent</a>, Programming, etc.) will not be forcibly changed on upgrades but any new settings will enforce min/max capabilities.</p>
 
-<p>For example, in pre-OS 3.3.0, Composer and the proxy only enforced click_rate_min/max capabilities in a driver&#39;s Properties. In the Advanced Lighting Scene Agent and Programming, it was possible to set a rate that was out of the click_rate_min/max range. In OS 3.3.0 and later, it will not be possible to set a rate out of this range. If these capabilities are not correct, partners and customers will not be able to use correct range when specifying ramp rates.</p>
+<p>For example, in pre-OS 3.3.0, Composer and the proxy only enforced <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities">click_rate_min/max capabilities</a> in a driver&#39;s Properties. In the Advanced Lighting Scene Agent and Programming, it was possible to set a rate that was out of the click_rate_min/max range. In OS 3.3.0 and later, it will not be possible to set a rate out of this range. If these capabilities are not correct, partners and customers will not be able to use correct range when specifying ramp rates.</p>
 
 <h2 id='handling-consecutive-brightness-and-color-commands'>Handling Consecutive Brightness and Color commands</h2>
 
-<p>The Light V2 Proxy has independent commands to set color (chromaticity) only (SET_COLOR_TARGET) and brightness (SET_BRIGHTNESS_TARGET). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
+<p>The Light V2 Proxy has independent commands to set color (chromaticity) (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a>) and brightness (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a>). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
 
 <p>Driver developers must make sure that consecutive color and brightness commands are handled correctly. If the device does not support consecutive commands, a best practice is to have a debouncing (and/or queuing) mechanism in the driver so that commands can be combined.</p>
 
@@ -34625,13 +34625,13 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <p>All colored lights have a mandatory Default On Color and Default Dim Color presets. These provide a consistent behavior when turning the light on or off. Furthermore, these presets can be used as &#39;hooks&#39; for other agents/drivers in the system that might want to change color that the light should turn on to or transition to while turning off.</p>
 
-<p>Default On Color should be set whenever the devices turns on through SET_BRIGHTNESS_TARGET command, Button Click and Hold actions, etc.</p>
+<p>Default On Color should be set whenever the devices turns on through <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> command, Button Click and Hold actions, etc.</p>
 
 <p>Default Dim color should be used while the light is turning off, except in cases when the final level is unknown. For example, color should not be changed while dimming down using button hold since it is not known when the dimming will be stopped. For example, it is not known if the customer is dimming to turn off the light or to only lower the brightness.</p>
 
 <h2 id='setting-color-while-the-light-is-off'>Setting Color while the Light is Off</h2>
 
-<p>The Light V2 proxy allows sending SET_COLOR_TARGET commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
+<p>The Light V2 proxy allows sending <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a> commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
 
 <h2 id='warm-dim'>Warm Dim</h2>
 
