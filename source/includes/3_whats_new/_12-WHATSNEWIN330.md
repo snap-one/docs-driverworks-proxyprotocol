@@ -96,5 +96,5 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][24] that a
 [20]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-v2-variables
 [21]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-v2-extras-interface-library
 [22]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#capabilities
-[23]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices
+[23]:	https://control4.github.io/docs-driverworks-proxyprotocol/#brightness-target-api
 [24]:	https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#display-adjustable-av-switch-bindings
