@@ -63,22 +63,22 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][19] that a
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_correlated_temperature_max
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_correlated_temperature_min
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_rate_behavior
-[4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_rate_max
-[5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_rate_min
-[6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_trace_tolerance
-[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#supports_color
-[8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#supports_color_correlated_temperature
-[9]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target
-[10]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands
-[11]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
-[12]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-color-changed
-[13]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-color-changing
-[14]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-events
-[15]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-events
-[16]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library
-[17]:	https://control4.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent
-[18]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices
-[19]:	https://control4.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_correlated_temperature_max
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_correlated_temperature_min
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_rate_behavior
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_rate_max
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_rate_min
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_trace_tolerance
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_color
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_color_correlated_temperature
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#capabilities
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-target-api
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindingss
