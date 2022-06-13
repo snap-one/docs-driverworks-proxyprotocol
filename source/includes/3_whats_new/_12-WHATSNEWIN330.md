@@ -69,7 +69,7 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][19] that a
 [4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_rate_max
 [5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_rate_min
 [6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#color_trace_tolerance
-[7]:	hhttps://control4.github.io/docs-driverworks-proxyprotocol/#supports_color
+[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#supports_color
 [8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#supports_color_correlated_temperature
 [9]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target
 [10]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands
