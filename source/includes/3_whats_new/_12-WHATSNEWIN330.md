@@ -81,4 +81,4 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][19] that a
 [16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library
 [17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#capabilities
 [18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-target-api
-[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindingss
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings
