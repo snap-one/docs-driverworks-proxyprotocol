@@ -13,4 +13,4 @@ Request the partition to execute a function event of the type listed in the func
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities

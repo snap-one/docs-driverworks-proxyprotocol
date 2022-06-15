@@ -18,4 +18,4 @@ This command results in the Protocol Notification [`CAPABILITIESCHANGED`][1]\` 
 `None`
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#capability-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#capability-changed

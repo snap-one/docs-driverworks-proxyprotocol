@@ -21,4 +21,4 @@ Boolean to enable/disable [`can_dehumidify`][1] capability. If the device suppor
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

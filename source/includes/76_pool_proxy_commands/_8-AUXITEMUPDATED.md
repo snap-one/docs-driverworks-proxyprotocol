@@ -18,4 +18,4 @@ Received from the proxy when the auxiliary id is changed in Auxiliary Controls c
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#pool-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities

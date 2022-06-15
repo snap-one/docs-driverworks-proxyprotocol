@@ -5,7 +5,7 @@ What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoin
 
 ### Signature
 
-`HEAT_SETPOINT_RESOLUTION_F ()` 
+`HEAT_SETPOINT_RESOLUTION_F ()`
 
 
 | Parameter | Description |
@@ -17,4 +17,4 @@ What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoin
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

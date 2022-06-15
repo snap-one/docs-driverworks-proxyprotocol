@@ -5,7 +5,7 @@ O.S. releases 3.3.0 and later provides the ability to hide AV Switch Bindings th
 
 **Assumptions:**
 
-- All applicable bindings are correctly defined in the driver’s XML.  
+- All applicable bindings are correctly defined in the driver’s XML.
 - Driver developers already have the ability to create control bindings using [C4:AddDynamicBinding()][1]
 - The driver file specifies bindings to be hidden by the proxy through the use of a new XML element delivered in O.S. 3.3.0:  `<ExtraInfo>D2</ExtraInfo>` _See below for more information._
 - Resizing of the bindings list is possible only if a new capability delivered in O.S. 3.3.0 is set to true: `<allow_dynamic_resize>`  _See below for more information._
@@ -55,4 +55,4 @@ Capability that allows for AV Switch bindings to be hidden in ComposerPro. Defau
 - The driver developer must recreate the bindings in the proper order before director loads and creates the connection. This is done by the driver developer by persisting the binding information and creating the bindings on execution of the main driver code.
 - The driver must handle the "virtual" or device not available case appropriately based on the expected use case for configuring the device. If the connections aren't defined in xml, and the device isn't available, the installer may have a limited experience. The driver developer needs to take this into consideration.
 
-[1]:	https://control4.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding
+[1]:	https://snap-one.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding

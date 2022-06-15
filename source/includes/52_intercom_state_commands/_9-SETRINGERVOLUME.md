@@ -26,4 +26,4 @@ This command is issued to cause the ringer volume setting to be changed for the 
 </SET_RINGER_VOLUME>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed

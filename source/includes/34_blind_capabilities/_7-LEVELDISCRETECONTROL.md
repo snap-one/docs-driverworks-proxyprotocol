@@ -20,5 +20,5 @@ If true, the driver should support all level values in the level range. This cou
 </capabilities>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#level-closed
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#level-open
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-open

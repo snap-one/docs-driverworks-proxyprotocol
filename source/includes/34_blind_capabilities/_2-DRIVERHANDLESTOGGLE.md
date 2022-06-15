@@ -30,5 +30,5 @@ The blind proxy has logic that treats toggle the same as lights in Control4.  I
 ```
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set-level-target
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set-level-target
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target

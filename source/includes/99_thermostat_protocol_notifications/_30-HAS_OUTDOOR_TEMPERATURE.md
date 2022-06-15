@@ -17,4 +17,4 @@ Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the devi
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

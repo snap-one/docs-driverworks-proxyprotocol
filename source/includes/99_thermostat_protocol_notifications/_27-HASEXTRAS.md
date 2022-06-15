@@ -25,4 +25,4 @@ Updates the XML that will be consumed by the Navigator UI's
 Parameters
 XML text string of XML that matches the Preset Schedule API.
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

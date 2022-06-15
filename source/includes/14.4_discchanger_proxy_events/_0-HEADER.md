@@ -5,6 +5,6 @@ Note: Audio Output binding ID values defined in drivers written in conjunction w
 
 For a list of valid Binding ID values please see the [Connections][1] section of the DriverWorks Fundamentals Guide.
 
- 
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+
+[1]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

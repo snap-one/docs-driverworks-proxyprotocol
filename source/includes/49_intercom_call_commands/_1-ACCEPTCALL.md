@@ -21,5 +21,5 @@ This command may be issued by the receiver of a call invitation (i.e. an [`INCOM
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#incoming-call
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#call-accepted
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted

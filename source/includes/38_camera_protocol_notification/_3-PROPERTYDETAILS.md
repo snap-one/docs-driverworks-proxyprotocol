@@ -22,4 +22,4 @@ Notification sent from the protocol driver through [ON DRIVER LATE INIT][1] cont
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-api/#ondriverlateinit
+[1]:	https://snap-one.github.io/docs-driverworks-api/#ondriverlateinit

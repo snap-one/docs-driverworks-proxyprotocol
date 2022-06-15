@@ -26,4 +26,4 @@ This command is issued to toggle the visibility of the intercom endpoint in a pr
 </SET_EXCLUDE_FROM_NAV>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#exclude-from-navigator-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#exclude-from-navigator-changed

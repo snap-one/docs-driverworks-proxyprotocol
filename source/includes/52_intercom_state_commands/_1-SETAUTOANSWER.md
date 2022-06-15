@@ -25,4 +25,4 @@ This command is issued to toggle the “Do Not Disturb” setting of the interco
 </SET_AUTO_ANSWER>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#auto-answer-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#auto-answer-changed

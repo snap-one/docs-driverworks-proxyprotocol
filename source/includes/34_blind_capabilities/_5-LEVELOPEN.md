@@ -16,4 +16,4 @@ Integer indicating the open level of the control surface.  Defaults to 1 and mus
 </capabilities>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#has-level
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-level

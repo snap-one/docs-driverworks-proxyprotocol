@@ -17,4 +17,4 @@ Received from the proxy when an auxiliary item is removed by clicking on the - i
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#pool-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities

@@ -31,7 +31,7 @@ Returns true if the current state is ENTRY DELAY
 Returns true if the current state is EXIT DELAY
 
 `PREVIOUS_ARM_STATUS`
-Same as `CURRENT_ARM_STATUS` but used to compares with the arm status before the last state change. 
+Same as `CURRENT_ARM_STATUS` but used to compares with the arm status before the last state change.
 
 | Parameter | Description |
 | --- | --- |
@@ -39,5 +39,5 @@ Same as `CURRENT_ARM_STATUS` but used to compares with the arm status before the
 | != | not equal |
 | ARM STATE | One of the possible arm states listed in the `arm_states` configuration entry. These values are defined in the partition driver’s capabilities XML. See [arm_states][2] for more information._|
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities

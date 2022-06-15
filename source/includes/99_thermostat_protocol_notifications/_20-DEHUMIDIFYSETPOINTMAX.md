@@ -17,4 +17,4 @@ The maximun dehumidify setpoint has changed.
 `None
 `
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

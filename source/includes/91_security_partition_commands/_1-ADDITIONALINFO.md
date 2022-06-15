@@ -14,4 +14,4 @@ This command will only be sent after having received a [`REQUEST_ADDITIONAL_INFO
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info

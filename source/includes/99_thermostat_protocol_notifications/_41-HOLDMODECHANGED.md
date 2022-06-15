@@ -5,7 +5,7 @@ Notification that should be sent to the proxy when hold mode has changed. Change
 
 ### Signature
 
-`HOLD_MODE_CHANGED ()` 
+`HOLD_MODE_CHANGED ()`
 
 
 | Parameter | Description |
@@ -19,6 +19,6 @@ Notification that should be sent to the proxy when hold mode has changed. Change
 `None`
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables

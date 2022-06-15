@@ -14,4 +14,4 @@ Return true if the fan is spinning in reverse. This would only be available if t
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#can-reverse
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#can-reverse

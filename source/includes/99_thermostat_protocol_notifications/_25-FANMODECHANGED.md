@@ -19,6 +19,6 @@ Notification that should be sent to the proxy when Fan mode has changed. Changes
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables

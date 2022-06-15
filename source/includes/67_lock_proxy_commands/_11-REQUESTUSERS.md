@@ -17,4 +17,4 @@ This command results in the Protocol Notification [`USERS`][1] being sent from t
 
 `None`
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#users
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#users

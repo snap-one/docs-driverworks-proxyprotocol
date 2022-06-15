@@ -24,4 +24,4 @@ See the DriverWorks API documentation for URL Interface API: [POST][1] for Authe
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-api/#post
+[1]:	https://snap-one.github.io/docs-driverworks-api/#post

@@ -26,4 +26,4 @@ This command will result in a [`MONITOR_MODE_CHANGED`][1] notification to the pr
 </SET_MONITOR_MODE>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#monitor-mode-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#monitor-mode-changed

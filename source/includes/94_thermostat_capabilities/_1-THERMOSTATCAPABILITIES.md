@@ -2,11 +2,11 @@
 
 The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.
 
-`<can_calibrate></can_calibrate>` 
-Indicates if the device is capable of calibrating itself. Enables `SET_CALIBRATION` command. Valid values: True/False. 
+`<can_calibrate></can_calibrate>`
+Indicates if the device is capable of calibrating itself. Enables `SET_CALIBRATION` command. Valid values: True/False.
 
 
-`<can_change_scale></can_change_scale>` 
+`<can_change_scale></can_change_scale>`
 Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][1] notification.
 
 
@@ -43,7 +43,7 @@ Boolean indicating if the device supports the preset functionality including `cu
 
 
 `<can_preset_schedule></can_preset_schedule>`
-Boolean indicating if the thermostat will support the `SET_EVENTS` commands for running presets based on scheduling created in Navigators. 
+Boolean indicating if the thermostat will support the `SET_EVENTS` commands for running presets based on scheduling created in Navigators.
 
 
 `<current_temperature_max_c></current_temperature_max_c>`
@@ -282,48 +282,48 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[9]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[10]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[11]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[12]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[13]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[14]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[15]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[16]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[17]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[18]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[19]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[20]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[21]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[22]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[23]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[24]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[25]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[26]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[27]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[28]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[29]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[30]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[31]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[32]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[33]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[34]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[35]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[36]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[37]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[38]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[39]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[40]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[41]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[42]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[43]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[44]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
-[45]:	https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[20]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[21]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[22]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[23]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[24]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[25]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[26]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[27]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[28]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[29]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[30]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[31]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[32]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[33]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[34]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[35]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[36]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[37]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[38]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[39]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[40]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[41]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[42]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[43]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[44]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat
+[45]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat

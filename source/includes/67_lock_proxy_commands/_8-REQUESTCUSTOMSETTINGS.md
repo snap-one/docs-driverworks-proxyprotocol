@@ -18,4 +18,4 @@ This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being s
 `None`
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#custom-settings
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings

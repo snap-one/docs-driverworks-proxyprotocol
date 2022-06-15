@@ -70,15 +70,15 @@ The Following graph displays a Warm Dimming CCT change as function of brightness
 Warm Dimming will be active only while changing brightness of the light. Changing the CCT does not affect brightness. Furthermore, if any color is selected (including CCT,  e.g. via Customer Interfaces, Advanced Lighting Scenes, Programming) the light will transition to the specified color and will exit the 'emulated warm dimming' mode. To return a light to the emulated warm dimming mode, it must be turned off and then turned back on.
 
 
-[1]:	https://control4.github.io/docs-driverworks-proxyprotocol/#supports_target
-[2]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed
-[4]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing
-[5]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-color-changing
-[6]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing
-[7]:	https://control4.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent
-[8]:	https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities
-[9]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target
-[10]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
-[11]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
-[12]:	https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_target
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
