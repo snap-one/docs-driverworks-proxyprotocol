@@ -6115,11 +6115,11 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p><strong>Audio Equalization available on Navigators</strong></p>
 
-<p>The <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq">Amplifier</a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq">AV Switch</a> Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.</p>
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq">Amplifier</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq">AV Switch</a> Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.</p>
 
 <p><strong>Dynamic Transport Controls on Navigators</strong></p>
 
-<p>Audio Video drivers now have the ability to define which <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator">transport controls</a> are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.</p>
+<p>Audio Video drivers now have the ability to define which <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator">transport controls</a> are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.</p>
 
 <h2 id='what-s-new-in-3-2-2'>What’s New in 3.2.2</h2>
 
@@ -6131,10 +6131,10 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p><h2 id='what-s-new-in-3-2-0'>What’s New in 3.2.0</h2><h3 id='proxies-that-were-modified'>Proxies that were Modified** </h3>
 <p><strong>Security Proxy</strong>
-The <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#request_default_user_code_">REQUEST_DEFAULT_USER_CODE</a> partition notification was added as a mechanism for the protocol driver
+The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#request_default_user_code_">REQUEST_DEFAULT_USER_CODE</a> partition notification was added as a mechanism for the protocol driver
 to initiate the communication to get that default user code upon driver update.</p></p>
 
-<p>The following Security Protocol Notifications were deprecated from the SDK: ALARM, ALARM_CLEAR, AWAY, DISARM, HOME, TROUBLE. Please see the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications">Security Panel Notification</a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications">Security Partition Notification</a> areas for the latest list of Notifies.</p>
+<p>The following Security Protocol Notifications were deprecated from the SDK: ALARM, ALARM_CLEAR, AWAY, DISARM, HOME, TROUBLE. Please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications">Security Panel Notification</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications">Security Partition Notification</a> areas for the latest list of Notifies.</p>
 
 <p><h2 id='what-was-new-in-3-1-2'>What was New in 3.1.2</h2><h3 id='proxies-that-were-deprecated'>Proxies that were Deprecated** </h3>
 <p>The following Proxies were deprecated from the Proxy and Protocol Guide:</p></p>
@@ -6923,11 +6923,11 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 
 <h2 id='introduction'>Introduction</h2>
 
-<p>The ability to display audio equalization controls on devices running Navigator was added in conjunction with Operating System 3.2.3. Currently, the only Proxies that support Navigator EQ controls are the Amplifier and AV Switch Proxies. </p>
+<p>The ability to display audio equalization controls on devices running Navigator was added in conjunction with Operating System 3.2.3. Currently, the only Proxies that support Navigator EQ controls are the Amplifier and AV Switch Proxies.</p>
 
 <p>The majority of the of the commands, notifications and capabilities defined here must be implemented in your driver to display EQ controls. Several commands are optional including SET_AUDIOMODE_BYPASS, SET_AUDIOMODE_EQ and SET_AUDIOMODE_TONECONTROL as these have been included to suspect legacy Audio Matrix Switches.</p>
 
-<p>Note that this functionality is disabled by default. The <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
+<p>Note that this functionality is disabled by default. The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
 
 <h2 id='navigator-eq-proxy-commands'>Navigator EQ Proxy Commands</h2>
 
@@ -7553,7 +7553,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='amplifier-proxy-commands'>Amplifier Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -9960,11 +9960,11 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h2 id='introduction'>Introduction</h2>
 
-<p>The ability to display audio equalization controls on devices running Navigator was added in conjunction with Operating System 3.2.3. Currently, the only Proxies that support Navigator EQ controls are the Amplifier and AV Switch Proxies. </p>
+<p>The ability to display audio equalization controls on devices running Navigator was added in conjunction with Operating System 3.2.3. Currently, the only Proxies that support Navigator EQ controls are the Amplifier and AV Switch Proxies.</p>
 
 <p>The majority of the of the commands, notifications and capabilities defined here must be implemented in your driver to display EQ controls. Several commands are optional including SET_AUDIOMODE_BYPASS, SET_AUDIOMODE_EQ and SET_AUDIOMODE_TONECONTROL as these have been included to suspect legacy Audio Matrix Switches.</p>
 
-<p>Note that this functionality is disabled by default. The <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
+<p>Note that this functionality is disabled by default. The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
 
 <h2 id='navigator-eq-proxy-commands'>Navigator EQ Proxy Commands</h2>
 
@@ -10590,7 +10590,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='display-adjustable-av-switch-bindings'>Display Adjustable AV Switch Bindings</h1>
 
 <p>O.S. releases 3.3.0 and later provides the ability to hide AV Switch Bindings that are not in use. This feature has been provided to better manage the UI display in ComposerPro. This is especially useful for AV Switch devices that have a large number of bindings. Displaying all of the bindings for these devices can make the use of UI cumbersome.</p>
@@ -10598,8 +10598,8 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <p><strong>Assumptions:</strong></p>
 
 <ul>
-<li>All applicable bindings are correctly defined in the driver’s XML.<br></li>
-<li>Driver developers already have the ability to create control bindings using <a href="https://control4.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding">C4:AddDynamicBinding()</a></li>
+<li>All applicable bindings are correctly defined in the driver’s XML.</li>
+<li>Driver developers already have the ability to create control bindings using <a href="https://snap-one.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding">C4:AddDynamicBinding()</a></li>
 <li>The driver file specifies bindings to be hidden by the proxy through the use of a new XML element delivered in O.S. 3.3.0:  <code>&lt;ExtraInfo&gt;D2&lt;/ExtraInfo&gt;</code> <em>See below for more information.</em></li>
 <li>Resizing of the bindings list is possible only if a new capability delivered in O.S. 3.3.0 is set to true: <code>&lt;allow_dynamic_resize&gt;</code>  <em>See below for more information.</em></li>
 </ul>
@@ -12308,7 +12308,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='cd-player-proxy-commands'>CD Player Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -13750,7 +13750,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='disc-changer-proxy-commands'>Disc Changer Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -16038,7 +16038,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='generic-media-player-capabilities'>Generic Media Player Capabilities</h1>
 
 <h2 id='has-http-playback'>has http playback</h2>
@@ -16385,7 +16385,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='dvd-player-proxy-commands'>DVD Player Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -20229,7 +20229,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='receiver-proxy-commands'>Receiver Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -25286,7 +25286,7 @@ OUTPUT             0
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='tuner-proxy-commands'>Tuner Proxy Commands</h1>
 
 <h2 id='back'>BACK</h2>
@@ -28463,7 +28463,7 @@ OUTPUT             0
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
 
-<p>For a list of valid Binding ID values please see the <a href="https://control4.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
+<p>For a list of valid Binding ID values please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a> section of the DriverWorks Fundamentals Guide.</p>
 <h1 id='tv-capabilities'>TV Capabilities</h1>
 
 <h2 id='has-audio'>has audio</h2>
@@ -29338,7 +29338,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </tr>
 <tr>
 <td>int</td>
-<td>LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
+<td>LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
 </tr>
 </tbody></table>
 
@@ -29409,7 +29409,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>We strongly recommend driver developers do not set this to true unless they absolutely must. Inconsistencies will occur if there are a mix of different driver types in a blind group. This will cause blinds to move differently when that group is commanded to toggle.  </p>
 
-<p>The blind proxy has logic that treats toggle the same as lights in Control4.  If a blind is not moving but open any amount and someone presses toggle, the proxy will always send a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the closed value.  This is due to the high possibility of someone entering a room and not knowing what direction the blind previously moved. However, if a blind is currently in motion and someone presses toggle, the proxy will send <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the opposite direction that the blind is moving. This has the most natural use of toggle for real-world scenarios.</p>
+<p>The blind proxy has logic that treats toggle the same as lights in Control4.  If a blind is not moving but open any amount and someone presses toggle, the proxy will always send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the closed value.  This is due to the high possibility of someone entering a room and not knowing what direction the blind previously moved. However, if a blind is currently in motion and someone presses toggle, the proxy will send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the opposite direction that the blind is moving. This has the most natural use of toggle for real-world scenarios.</p>
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;driver_handles_toggle&gt;</span>true<span class="nt">&lt;/driver_handles_toggle&gt;</span>
@@ -29448,7 +29448,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='level-closed'>level closed</h2>
-<p>Integer indicating the closed level of the control surface. Default to 0. This capability is only needed if <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-level"><code>has_level</code></a> is set and the value is other than 0. The value passed in this capability should be less than the value for <code>level_open</code>.</p>
+<p>Integer indicating the closed level of the control surface. Default to 0. This capability is only needed if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-level"><code>has_level</code></a> is set and the value is other than 0. The value passed in this capability should be less than the value for <code>level_open</code>.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;level_closed&gt;&lt;/level_closed&gt;</code></p>
@@ -29458,7 +29458,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='level-open'>level open</h2>
-<p>Integer indicating the open level of the control surface.  Defaults to 1 and must be a higher integer than <code>level_closed</code>. This capability is only needed if <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-level"><code>has_level</code></a> is set and the value is other than 1.  For example, if the blind control supports adjustments every 5%, use 20.)</p>
+<p>Integer indicating the open level of the control surface.  Defaults to 1 and must be a higher integer than <code>level_closed</code>. This capability is only needed if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-level"><code>has_level</code></a> is set and the value is other than 1.  For example, if the blind control supports adjustments every 5%, use 20.)</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;level_open&gt;&lt;/level_open&gt;</code></p>
@@ -29480,7 +29480,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <h2 id='level-discrete-control'>level discrete control</h2>
 <p>Boolean indicating if a control surface can be set by a COMMAND to something other than the level for closed and the level for open.</p>
 
-<p>If false, a UI will only send <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#level-closed">level_closed</a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#level-open">level_open</a> integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.</p>
+<p>If false, a UI will only send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed">level_closed</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-open">level_open</a> integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.</p>
 
 <p>If true, the driver should support all level values in the level range. This could be discrete percentages or even include using level values of 1,2,3,... to execute presets.  However, the min (0) and max (X) should always be programmed for close and open levels respectively.</p>
 <h3 id='signature'>Signature</h3>
@@ -29504,7 +29504,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>This gives the full close-open-close range of 0 to 10.  </p>
 
-<p>It should be noted that a generic &quot;Close&quot; UI or Composer Programming commands will send the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#level-closed"><code>level_closed</code></a> value for &quot;Close&quot;.  No default value exists for this capability and drivers should not include <code>level_closed_secondary</code> if a secondary closed position does not exist.</p>
+<p>It should be noted that a generic &quot;Close&quot; UI or Composer Programming commands will send the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed"><code>level_closed</code></a> value for &quot;Close&quot;.  No default value exists for this capability and drivers should not include <code>level_closed_secondary</code> if a secondary closed position does not exist.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;level_closed_secondary&gt;&lt;/level_closed_secondary&gt;</code></p>
@@ -30076,7 +30076,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>See the DriverWorks API documentation for URL Interface API: <a href="https://control4.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
+<p>See the DriverWorks API documentation for URL Interface API: <a href="https://snap-one.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
 
 <h2 id='set-authentication-type'>SET AUTHENTICATION TYPE</h2>
 
@@ -30104,7 +30104,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for URL Interface API: <a href="https://control4.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
+<p>Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for URL Interface API: <a href="https://snap-one.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
 
 <h2 id='set-username'>SET USERNAME</h2>
 
@@ -30132,7 +30132,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>See the DriverWorks API documentation for URL Interface API: <a href="https://control4.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
+<p>See the DriverWorks API documentation for URL Interface API: <a href="https://snap-one.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
 
 <h2 id='set-http-port'>SET HTTP PORT</h2>
 
@@ -30353,7 +30353,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h2 id='address-changed'>ADDRESS CHANGED</h2>
 
-<p>Notification that the camera&#39;s address has a changed. Sent from the API <a href="https://control4.github.io/docs-driverworks-api/#onnetworkbindingchanged">OnNetworkBindingChanged</a>.</p>
+<p>Notification that the camera&#39;s address has a changed. Sent from the API <a href="https://snap-one.github.io/docs-driverworks-api/#onnetworkbindingchanged">OnNetworkBindingChanged</a>.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -30417,7 +30417,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h2 id='dynamic-capability-changed'>DYNAMIC CAPABILITY CHANGED</h2>
 
-<p>Used to Notify the Proxy that the driver would like to change a capabilities value.  This is only applicable to capabilities denoted as &quot;Yes&quot; in the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#camera-capabilities">Dynamic Capabilities</a> section of this Proxy’s Capabilities section.</p>
+<p>Used to Notify the Proxy that the driver would like to change a capabilities value.  This is only applicable to capabilities denoted as &quot;Yes&quot; in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities">Dynamic Capabilities</a> section of this Proxy’s Capabilities section.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -30441,7 +30441,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h2 id='property-defaults'>PROPERTY DEFAULTS</h2>
 
-<p>Notification sent from the protocol driver through <a href="https://control4.github.io/docs-driverworks-api/#ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
+<p>Notification sent from the protocol driver through <a href="https://snap-one.github.io/docs-driverworks-api/#ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -30514,9 +30514,9 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h2 id='aspect-ratio'>ASPECT RATIO</h2>
 
-<p>Allows for the setting of the desired aspect ratio for camera queries. Navigators use this value when sending a request to a camera.  Displayed on the Camera Driver&#39;s Properties page in Composer Pro. </p>
+<p>Allows for the setting of the desired aspect ratio for camera queries. Navigators use this value when sending a request to a camera.  Displayed on the Camera Driver&#39;s Properties page in Composer Pro.</p>
 
-<p>Populated by the defined:1  <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#aspect-ratio"><code>aspect_ratios_capability</code></a>.</p>
+<p>Populated by the defined:1  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#aspect-ratio"><code>aspect_ratios_capability</code></a>.</p>
 
 <h2 id='aspect-ratio-list'>ASPECT RATIO LIST</h2>
 
@@ -31333,7 +31333,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <p><h2 id='is-reversed'>Is Reversed</h2><h3 id='parameters'>Parameters</h3>
 <p><code>None</code></p>
 <h3 id='returns'>Returns</h3>
-<p>Return true if the fan is spinning in reverse. This would only be available if the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#can-reverse"><code>can_reverse</code></a> capability is set to true in the driver file.</p></p>
+<p>Return true if the fan is spinning in reverse. This would only be available if the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#can-reverse"><code>can_reverse</code></a> capability is set to true in the driver file.</p></p>
 <h1 id='fan-events'>Fan Events</h1>
 
 <h2 id='fan-events'>Fan Events</h2>
@@ -31367,19 +31367,19 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <p><strong>Overview</strong>
 The Intercom Proxy interface is defined in terms of Commands, Requests and Notifications, each of which are described in this section of the proxy and Protocol Guide.</p>
 
-<p><a href="https://control4.github.io/docs-driverworks-proxyprotocol/#intercom-call-commands">Intercom Proxy Commands</a> are issued by a proxy consumer and may or may not result in an asynchronous notification in response.  Commands typically change state of the Intercom Proxy, or other components of the intercom architecture.  </p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-commands">Intercom Proxy Commands</a> are issued by a proxy consumer and may or may not result in an asynchronous notification in response.  Commands typically change state of the Intercom Proxy, or other components of the intercom architecture.</p>
 
-<p>Intercom Proxy Requests are issued from a proxy consumer with the expectation of getting a response from the protocol.  Requests do not change state of the intercom proxy or any other component of the architecture.  <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications">Notifications</a> are sent from the intercom proxy to the intercom consumer asynchronously, and indicate a state change in the intercom proxy or one of its related architecture components. </p>
+<p>Intercom Proxy Requests are issued from a proxy consumer with the expectation of getting a response from the protocol.  Requests do not change state of the intercom proxy or any other component of the architecture.  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications">Notifications</a> are sent from the intercom proxy to the intercom consumer asynchronously, and indicate a state change in the intercom proxy or one of its related architecture components.</p>
 
-<p>All communication through the proxy interface is asynchronous.  Even request responses, such as getting a list of known intercom devices, are returned asynchronously with respect to the request for that data. </p>
+<p>All communication through the proxy interface is asynchronous.  Even request responses, such as getting a list of known intercom devices, are returned asynchronously with respect to the request for that data.</p>
 
 <h2 id='storing-session-ids'>Storing Session IDs</h2>
 
-<p>Many intercom API commands and requests require sessionId as an input parameter. The value for this parameter is provided by the intercom proxy in response to issuing a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#start-call"><code>START_CALL</code></a> command, and is included in the resulting <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#outgoing-call"><code>OUTGOING_CALL</code></a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL</code></a> notifications. The intercom proxy consumer is responsible for storing the sessionId returned with these notifications for use in subsequent commands and requests.</p>
+<p>Many intercom API commands and requests require sessionId as an input parameter. The value for this parameter is provided by the intercom proxy in response to issuing a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#start-call"><code>START_CALL</code></a> command, and is included in the resulting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#outgoing-call"><code>OUTGOING_CALL</code></a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL</code></a> notifications. The intercom proxy consumer is responsible for storing the sessionId returned with these notifications for use in subsequent commands and requests.</p>
 
 <h2 id='using-the-remoteaor-property'>Using the RemoteAor Property</h2>
 
-<p>When the “remoteAor” parameter is used in a notification or command, the value is always the address of record of the other intercom device participating in an intercom call. For example, consider that intercom device A has address of record of “sip-user-A@192.168.1.123” and intercom device B has an address of record of “sip-user-B@192.168.1.123”. Intercom device A initiates a call with intercom device B, which results in an <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL</code></a> notification on intercom device B. When intercom device B issues the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#accept-call"><code>ACCEPT_CALL</code></a> command, which takes remoteAor as a parameter, intercom device B should use “sip-user-A@192.168.1.123” (the address of record of intercom device A, or the initiator) as the value of this parameter. Likewise, when intercom device A receives the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification, it will contain a remoteAor property that has the value of the address of record of intercom device B, or “sip-user-B@192.168.1.123”.</p>
+<p>When the “remoteAor” parameter is used in a notification or command, the value is always the address of record of the other intercom device participating in an intercom call. For example, consider that intercom device A has address of record of “sip-user-A@192.168.1.123” and intercom device B has an address of record of “sip-user-B@192.168.1.123”. Intercom device A initiates a call with intercom device B, which results in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL</code></a> notification on intercom device B. When intercom device B issues the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#accept-call"><code>ACCEPT_CALL</code></a> command, which takes remoteAor as a parameter, intercom device B should use “sip-user-A@192.168.1.123” (the address of record of intercom device A, or the initiator) as the value of this parameter. Likewise, when intercom device A receives the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification, it will contain a remoteAor property that has the value of the address of record of intercom device B, or “sip-user-B@192.168.1.123”.</p>
 <h1 id='intercom-proxy-settings'>Intercom Proxy Settings</h1>
 
 <h2 id='exclude-from-navigator'>Exclude from Navigator</h2>
@@ -31396,7 +31396,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='send-video'>Send Video</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint automatically sends video when it starts or receives a call; if the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
+<p>This setting is used to control whether or not an intercom endpoint automatically sends video when it starts or receives a call; if the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
 
 <h2 id='monitor-mode'>Monitor Mode</h2>
 
@@ -31418,21 +31418,21 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='show-main-video'>Show Main Video</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint will display the main video window when the endpoint is in a call. If the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
+<p>This setting is used to control whether or not an intercom endpoint will display the main video window when the endpoint is in a call. If the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
 
 <h2 id='show-mirror-video'>Show Mirror Video</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint will display the mirror video window when the endpoint is in a call. If the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
+<p>This setting is used to control whether or not an intercom endpoint will display the mirror video window when the endpoint is in a call. If the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
 
 <h2 id='camera-enabled'>Camera Enabled</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint’s camera will be used when the endpoint is in a call; if the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
+<p>This setting is used to control whether or not an intercom endpoint’s camera will be used when the endpoint is in a call; if the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
 
 <h2 id='aec-enabled'>AEC Enabled</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint will use conservative auto echo cancelation (AEC) when the endpoint is in a call.  </p>
+<p>This setting is used to control whether or not an intercom endpoint will use conservative auto echo cancelation (AEC) when the endpoint is in a call.</p>
 
-<p>If the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#can-set-aec"><code>can_set_aec</code></a> capability is false, this setting has no effect.</p>
+<p>If the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#can-set-aec"><code>can_set_aec</code></a> capability is false, this setting has no effect.</p>
 
 <h2 id='play-door-chime'>Play Door Chime</h2>
 
@@ -31441,7 +31441,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='accept-call'>ACCEPT CALL</h2>
 
-<p>This command may be issued by the receiver of a call invitation (i.e. an <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL notification</code></a>) and causes the call associated with the given session id to be accepted. This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification being sent to both the initiator and the receiver of the call.</p>
+<p>This command may be issued by the receiver of a call invitation (i.e. an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL notification</code></a>) and causes the call associated with the given session id to be accepted. This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification being sent to both the initiator and the receiver of the call.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -32381,7 +32381,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='set-auto-answer'>SET AUTO ANSWER</h2>
 
-<p>This command is issued to toggle the “Do Not Disturb” setting of the intercom. This command will result in an <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#auto-answer-changed"><code>AUTO_ANSWER_CHANGED</code></a> notification to the indicated proxy consumer.</p>
+<p>This command is issued to toggle the “Do Not Disturb” setting of the intercom. This command will result in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#auto-answer-changed"><code>AUTO_ANSWER_CHANGED</code></a> notification to the indicated proxy consumer.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -32486,7 +32486,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_DND</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-exclude-from-navigator'>SET EXCLUDE FROM NAVIGATOR</h2>
-<p>This command is issued to toggle the visibility of the intercom endpoint in a proxy user interface. This command will result in an <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#exclude-from-navigator-changed"><code>EXCLUDE_FROM_NAVIGATOR_CHANGED</code></a> notification to the proxy.</p>
+<p>This command is issued to toggle the visibility of the intercom endpoint in a proxy user interface. This command will result in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#exclude-from-navigator-changed"><code>EXCLUDE_FROM_NAVIGATOR_CHANGED</code></a> notification to the proxy.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_EXCLUDE_FROM_NAVIGATOR ()</code></p>
@@ -32512,7 +32512,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_EXCLUDE_FROM_NAV</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-send-video'>SET SEND VIDEO</h2>
-<p>This command is issued by a proxy consumer to cause the state of the send video setting to change.  This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#send-video-changed"><code>SEND_VIDEO_CHANGED</code></a></p>
+<p>This command is issued by a proxy consumer to cause the state of the send video setting to change.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#send-video-changed"><code>SEND_VIDEO_CHANGED</code></a></p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_SEND_VIDEO ()</code></p>
@@ -32538,7 +32538,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_SEND_VIDEO</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-microphone-gain'>SET MICROPHONE GAIN</h2>
-<p>This command is issued by a proxy consumer to cause the microphone gain for the indicated intercom device to change.  This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#microphone-gain-changed"><code>MICROPHONE_GAIN_CHANGED</code></a> notification to the indicated device. </p>
+<p>This command is issued by a proxy consumer to cause the microphone gain for the indicated intercom device to change.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#microphone-gain-changed"><code>MICROPHONE_GAIN_CHANGED</code></a> notification to the indicated device.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_MICROPHONE_GAIN ()</code></p>
@@ -32564,7 +32564,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_MICROPHONE_GAIN</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-monitor-mode'>SET MONITOR MODE</h2>
-<p>This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#monitor-mode-changed"><code>MONITOR_MODE_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
+<p>This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#monitor-mode-changed"><code>MONITOR_MODE_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_ MONITOR_MODE ()</code></p>
@@ -32590,7 +32590,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_MONITOR_MODE</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-ringer-volume'>SET RINGER VOLUME</h2>
-<p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
+<p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_RINGER_VOLUME E ()</code></p>
@@ -32616,7 +32616,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_RINGER_VOLUME</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-show-main-video'>SET SHOW MAIN VIDEO</h2>
-<p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
+<p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_SHOW_MAIN_VIDEO ()</code></p>
@@ -32668,7 +32668,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="o">&lt;/</span><span class="n">SET_SIP_PROXY_IP</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-speaker-volume'>SET SPEAKER VOLUME</h2>
-<p>This command is issued by a proxy consumer to cause the current speaker volume setting to be changed.  This command will result in a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#speaker-volume-changed"><code>SPEAKER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
+<p>This command is issued by a proxy consumer to cause the current speaker volume setting to be changed.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#speaker-volume-changed"><code>SPEAKER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_SPEAKER_VOLUME ()</code></p>
@@ -34546,7 +34546,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='brightness-target-api'>Brightness Target API</h2>
 
-<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. The API includes the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
+<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. The API includes the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
 
 <p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use LIGHT_BRIGHTNESS_CHANGING and LIGHT_BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
 
@@ -34564,7 +34564,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='brightness-and-color-changing-api'>Brightness and Color Changing API</h2>
 
-<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a>) or brightness (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a>) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
+<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a>) or brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a>) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
 
 <p>Using these notifies also allows additional Programming:</p>
 
@@ -34575,13 +34575,13 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='enforcing-min-max-capabilities'>Enforcing min/max Capabilities</h2>
 
-<p>Beginning with OS 3.3.0, Advanced Lighting Scenes Agent, Customer Interfaces, Programming and other system components strictly enforce min/max and other capability settings in LightV2 Proxy drivers. It is recommended to verify if these capabilities are correct in your drivers.  Existing out-of-range settings (e.g. in <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">Advanced Lighting Scenes agent</a>, Programming, etc.) will not be forcibly changed on upgrades but any new settings will enforce min/max capabilities.</p>
+<p>Beginning with OS 3.3.0, Advanced Lighting Scenes Agent, Customer Interfaces, Programming and other system components strictly enforce min/max and other capability settings in LightV2 Proxy drivers. It is recommended to verify if these capabilities are correct in your drivers.  Existing out-of-range settings (e.g. in <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">Advanced Lighting Scenes agent</a>, Programming, etc.) will not be forcibly changed on upgrades but any new settings will enforce min/max capabilities.</p>
 
-<p>For example, in pre-OS 3.3.0, Composer and the proxy only enforced <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities">click_rate_min/max capabilities</a> in a driver&#39;s Properties. In the Advanced Lighting Scene Agent and Programming, it was possible to set a rate that was out of the click_rate_min/max range. In OS 3.3.0 and later, it will not be possible to set a rate out of this range. If these capabilities are not correct, partners and customers will not be able to use correct range when specifying ramp rates.</p>
+<p>For example, in pre-OS 3.3.0, Composer and the proxy only enforced <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities">click_rate_min/max capabilities</a> in a driver&#39;s Properties. In the Advanced Lighting Scene Agent and Programming, it was possible to set a rate that was out of the click_rate_min/max range. In OS 3.3.0 and later, it will not be possible to set a rate out of this range. If these capabilities are not correct, partners and customers will not be able to use correct range when specifying ramp rates.</p>
 
 <h2 id='handling-consecutive-brightness-and-color-commands'>Handling Consecutive Brightness and Color commands</h2>
 
-<p>The Light V2 Proxy has independent commands to set color (chromaticity) (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a>) and brightness (<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a>). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
+<p>The Light V2 Proxy has independent commands to set color (chromaticity) (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a>) and brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a>). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
 
 <p>Driver developers must make sure that consecutive color and brightness commands are handled correctly. If the device does not support consecutive commands, a best practice is to have a debouncing (and/or queuing) mechanism in the driver so that commands can be combined.</p>
 
@@ -34589,13 +34589,13 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <p>All colored lights have a mandatory Default On Color and Default Dim Color presets. These provide a consistent behavior when turning the light on or off. Furthermore, these presets can be used as &#39;hooks&#39; for other agents/drivers in the system that might want to change color that the light should turn on to or transition to while turning off.</p>
 
-<p>Default On Color should be set whenever the devices turns on through <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> command, Button Click and Hold actions, etc.</p>
+<p>Default On Color should be set whenever the devices turns on through <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> command, Button Click and Hold actions, etc.</p>
 
 <p>Default Dim color should be used while the light is turning off, except in cases when the final level is unknown. For example, color should not be changed while dimming down using button hold since it is not known when the dimming will be stopped. For example, it is not known if the customer is dimming to turn off the light or to only lower the brightness.</p>
 
 <h2 id='setting-color-while-the-light-is-off'>Setting Color while the Light is Off</h2>
 
-<p>The Light V2 proxy allows sending <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a> commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
+<p>The Light V2 proxy allows sending <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a> commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
 
 <h2 id='warm-dim'>Warm Dim</h2>
 
@@ -34986,7 +34986,7 @@ HSV 0.001</p>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has_extras'>has_extras</h2>
-<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></p>
@@ -37129,7 +37129,7 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <h2 id='light-level'>LIGHT LEVEL</h2>
 
-<p>Used to inform the proxy that the light level has changed.  </p>
+<p>Used to inform the proxy that the light level has changed.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -37163,7 +37163,7 @@ The light level of the light has changed and is at the final brightness. Event I
 <li>Excessive triggering and sometimes incorrect Composer programming being fired.</li>
 </ul>
 
-<p>See the <a href="https://control4.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> notification for additional information.</p>
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> notification for additional information.</p>
 
 <h2 id='max-on'>MAX ON</h2>
 
@@ -39437,7 +39437,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='request-capabilities'>REQUEST CAPABILITIES</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#capability-changed"><code>CAPABILITIESCHANGED</code></a>` being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#capability-changed"><code>CAPABILITIESCHANGED</code></a>` being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -39453,7 +39453,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='request-custom-settings'>REQUEST CUSTOM SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -39469,7 +39469,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='request-custom-settings'>REQUEST CUSTOM SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -39485,7 +39485,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='request-settings'>REQUEST SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -39501,7 +39501,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='request-users'>REQUEST USERS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -39565,7 +39565,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='set-custom-settings'>SET CUSTOM SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -40248,9 +40248,9 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-capabilities'>LOCK CAPABILITIES</h2>
 
-<p>The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators. </p>
+<p>The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators.</p>
 
-<p>The correct way to update these capabilities when a driver is updated is with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed">DYNAMIC_CAPABILITY_CHANGED</a> notification. For example see the lua code to the right which uses name/value pairs:</p>
+<p>The correct way to update these capabilities when a driver is updated is with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed">DYNAMIC_CAPABILITY_CHANGED</a> notification. For example see the lua code to the right which uses name/value pairs:</p>
 
 <p><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_values&#39;, VALUE = &#39;10, 30&#39; } , &#39;NOTIFY&#39;)</p>
 
@@ -40266,7 +40266,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p><code>&lt;has_admin_code&gt;&lt;/has_admin_code&gt;</code></p>
 
-<p>Defines whether the lock has an admin code that must be entered to access lock management.  true|false </p>
+<p>Defines whether the lock has an admin code that must be entered to access lock management.  true|false</p>
 
 <p><code>&lt;has_auto_lock_time&gt;&lt;/has_auto_lock_time&gt;</code></p>
 
@@ -40274,15 +40274,15 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p><code>&lt;has_custom_settings&gt;&lt;/has_custom_settings&gt;</code></p>
 
-<p>Defines whether the lock supports any custom settings that should be added to the list of standard proxy defined settings. See <code>lock_custom_settings</code> data-to-ui:  true|false </p>
+<p>Defines whether the lock supports any custom settings that should be added to the list of standard proxy defined settings. See <code>lock_custom_settings</code> data-to-ui:  true|false</p>
 
 <p><code>&lt;has_date_range_schedule&gt;&lt;/has_date_range_schedule&gt;</code></p>
 
-<p>Defines whether the lock supports a date range schedule for users:  true|false </p>
+<p>Defines whether the lock supports a date range schedule for users:  true|false</p>
 
 <p><code>&lt;has_daily_schedule&gt;&lt;/has_daily_schedule&gt;</code></p>
 
-<p>Defines whether the lock supports a daily schedule for users:  true|false </p>
+<p>Defines whether the lock supports a daily schedule for users:  true|false</p>
 
 <p><code>&lt;has_internal_history&gt;&lt;/has_internal_history&gt;</code></p>
 
@@ -40302,7 +40302,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p><code>&lt;has_lock_modes&gt;&lt;/has_lock_modes&gt;</code></p>
 
-<p>Defines whether the lock has a setting for different modes. Vacation mode prevents users from opening a lock using the keypad. Privacy mode prevents users from opening a lock using the keypad. However, if a key is used during privacy mode the lock resets to normal mode. Not all modes have to be supported.  true|false </p>
+<p>Defines whether the lock has a setting for different modes. Vacation mode prevents users from opening a lock using the keypad. Privacy mode prevents users from opening a lock using the keypad. However, if a key is used during privacy mode the lock resets to normal mode. Not all modes have to be supported.  true|false</p>
 
 <p><code>&lt;has_one_touch_locking&gt;&lt;/has_one_touch_locking&gt;</code></p>
 
@@ -40314,23 +40314,23 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p><code>&lt;has_settings&gt;&lt;/has_settings&gt;</code></p>
 
-<p>Defines whether the lock supports any settings:  true|false </p>
+<p>Defines whether the lock supports any settings:  true|false</p>
 
 <p><code>&lt;has_shutout_timer&gt;&lt;/has_shutout_timer&gt;</code></p>
 
-<p>Defines whether the lock has a setting for how long to disable lock keypad after failed attempts:  true|false </p>
+<p>Defines whether the lock has a setting for how long to disable lock keypad after failed attempts:  true|false</p>
 
 <p><code>&lt;has_volume&gt;&lt;/has_volume&gt;</code></p>
 
-<p>Defines whether the lock has a setting for volume:  true|false </p>
+<p>Defines whether the lock has a setting for volume:  true|false</p>
 
 <p><code>&lt;has_wrong_code_attempts&lt;/has_wrong_code_attempts&gt;</code></p>
 
-<p>Defines whether the lock has a setting for the number of failed unlock attempts to allow before temporarily disabling the lock: true|false </p>
+<p>Defines whether the lock has a setting for the number of failed unlock attempts to allow before temporarily disabling the lock: true|false</p>
 
 <p><code>&lt;is_management_only&gt;&lt;/is_management_only&gt;</code></p>
 
-<p>Defines whether the lock is only used for managing users A lock that is management only does not support the LOCK, UNLOCK, and TOGGLE commands:  true|false </p>
+<p>Defines whether the lock is only used for managing users A lock that is management only does not support the LOCK, UNLOCK, and TOGGLE commands:  true|false</p>
 
 <p><code>&lt;language_values&gt;&lt;/language_values&gt;</code></p>
 
@@ -40342,7 +40342,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p><code>&lt;log_item_count_values&gt;&lt;/log_item_count_values&gt;</code></p>
 
-<p>Comma delimited list of increasing values: int </p>
+<p>Comma delimited list of increasing values: int</p>
 
 <p><code>&lt;max_users&gt;&lt;/max_users&gt;</code></p>
 
@@ -40745,7 +40745,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <h2 id='update-aux-item'>UPDATE AUX ITEM</h2>
 
-<p>Received from the proxy when the auxiliary id is changed in Auxiliary Controls card. The command should be received only when <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
+<p>Received from the proxy when the auxiliary id is changed in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -40773,7 +40773,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <h2 id='add-aux-item'>ADD AUX ITEM</h2>
 
-<p>Received from the proxy when an auxiliary item is added by clicking on the + icon in Auxiliary Controls card. The command should be received only when <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list </a>capability is set to true.</p>
+<p>Received from the proxy when an auxiliary item is added by clicking on the + icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list </a>capability is set to true.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -40797,7 +40797,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <h2 id='remove-aux-item'>REMOVE AUX ITEM</h2>
 
-<p>Received from the proxy when an auxiliary item is removed by clicking on the - icon in Auxiliary Controls card. The command should be received only when <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
+<p>Received from the proxy when an auxiliary item is removed by clicking on the - icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -41888,7 +41888,7 @@ mode: OFF | ON | ENABLED
 
 <h2 id='get_panel_setup'>GET_PANEL_SETUP</h2>
 
-<p>Calls [GET_ALL_PARTITION_INFO\]<a href="https://control4.github.io/docs-driverworks-proxyprotocol/#get_all_partition_info">1</a></p>
+<p>Calls [GET_ALL_PARTITION_INFO\]<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#get_all_partition_info">1</a></p>
 
 <h2 id='pgm_close'>PGM_CLOSE</h2>
 
@@ -42158,7 +42158,7 @@ Defaults to true.</p>
 
 <h2 id='overview'>Overview</h2>
 
-<p>Sending Protocol Notifications requires the use of the <a href="https://control4.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API. </p>
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API.</p>
 
 <p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partiton Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
 
@@ -42173,12 +42173,12 @@ Defaults to true.</p>
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- PANEL_ZONE_STATE Example</span>
 
 <span class="k">function</span> <span class="nf">SendZoneState</span><span class="p">(</span><span class="n">ZoneId</span><span class="p">,</span> <span class="n">IsOpen</span><span class="p">,</span> <span class="n">AreInitializing</span><span class="p">)</span>
-    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span> 
-                    <span class="s2">"PANEL_ZONE_STATE"</span><span class="p">,</span> 
-                    <span class="p">{</span>   <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="n">ZoneId</span><span class="p">,</span> 
-                        <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="n">IsOpen</span><span class="p">,</span> 
-                        <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="n">AreInitializing</span> 
-                    <span class="p">},</span> 
+    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span>
+                    <span class="s2">"PANEL_ZONE_STATE"</span><span class="p">,</span>
+                    <span class="p">{</span>   <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="n">ZoneId</span><span class="p">,</span>
+                        <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="n">IsOpen</span><span class="p">,</span>
+                        <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="n">AreInitializing</span>
+                    <span class="p">},</span>
                     <span class="s2">"NOTIFY"</span>
                   <span class="p">)</span>
 <span class="k">end</span>
@@ -42189,7 +42189,7 @@ Defaults to true.</p>
 
 <span class="k">function</span> <span class="nf">SendAllZoneInfo</span><span class="p">()</span>
 
-    <span class="kd">local</span> <span class="n">ZoneInfoXMLStr</span> <span class="o">=</span> 
+    <span class="kd">local</span> <span class="n">ZoneInfoXMLStr</span> <span class="o">=</span>
     <span class="s">[[&lt;zones&gt;
         &lt;zone&gt;
             &lt;id&gt;1&lt;/id&gt;
@@ -42225,8 +42225,8 @@ Defaults to true.</p>
         &lt;/zone&gt;
     &lt;/zones&gt;]]</span>
 
-    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span> 
-                    <span class="s2">"ALL_ZONES_INFO"</span><span class="p">,</span> 
+    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span>
+                    <span class="s2">"ALL_ZONES_INFO"</span><span class="p">,</span>
                     <span class="n">ZoneInfoXMLStr</span><span class="p">,</span>
                     <span class="s2">"NOTIFY"</span>
                   <span class="p">)</span>
@@ -42552,7 +42552,7 @@ Defaults to true.</p>
 </tr>
 <tr>
 <td>str</td>
-<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
+<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
 </tr>
 <tr>
 <td></td>
@@ -42571,7 +42571,7 @@ Defaults to true.</p>
 <td>INTERFACE_ID: Unique identification string for one of the UIs that the prompt will appear on.</td>
 </tr>
 </tbody></table>
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_PANEL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span> 
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_PANEL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span>
 <span class="n">promptstring</span><span class="p">,</span> <span class="n">INFO_STRING</span> <span class="o">=</span> <span class="n">infostring</span><span class="p">,</span> <span class="n">FUNCTION_NAME</span> <span class="o">=</span> <span class="n">functionstring</span><span class="p">,</span> <span class="n">MASK_DATA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">interfaceid</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
 </code></pre></div>
 <h2 id='sync-panel-info'>SYNC PANEL INFO</h2>
@@ -42725,7 +42725,7 @@ True if the panel supports raw key presses being passed by the software directly
 </tr>
 <tr>
 <td>ARM STATE</td>
-<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information.</td>
+<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information.</td>
 </tr>
 </tbody></table>
 
@@ -42751,7 +42751,7 @@ Returns true if the current state is ENTRY DELAY</p>
 Returns true if the current state is EXIT DELAY</p>
 
 <p><code>PREVIOUS_ARM_STATUS</code>
-Same as <code>CURRENT_ARM_STATUS</code> but used to compares with the arm status before the last state change. </p>
+Same as <code>CURRENT_ARM_STATUS</code> but used to compares with the arm status before the last state change.</p>
 
 <table><thead>
 <tr>
@@ -42769,7 +42769,7 @@ Same as <code>CURRENT_ARM_STATUS</code> but used to compares with the arm status
 </tr>
 <tr>
 <td>ARM STATE</td>
-<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information._</td>
+<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information._</td>
 </tr>
 </tbody></table>
 <h1 id='security-partition-events'>Security Partition Events</h1>
@@ -42809,7 +42809,7 @@ Fired when the partition state changes</p>
 
 <h2 id='overview'>Overview</h2>
 
-<p>Sending Protocol Notifications requires the use of the <a href="https://control4.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API. </p>
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API.</p>
 
 <p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partion Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
 
@@ -43027,7 +43027,7 @@ Fired when the partition state changes</p>
 </tr>
 <tr>
 <td>str</td>
-<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It provides a way for information to be built up through multiple iterations of calls to REQUEST_ADDITIONAL_INFO</td>
+<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It provides a way for information to be built up through multiple iterations of calls to REQUEST_ADDITIONAL_INFO</td>
 </tr>
 <tr>
 <td>str</td>
@@ -43042,7 +43042,7 @@ Fired when the partition state changes</p>
 <td>INTERFACE_ID: Commands received from Director will have an interface_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE_ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
 </tr>
 </tbody></table>
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span> 
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span>
 <span class="n">promptstring</span><span class="p">,</span> <span class="n">INFO_STRING</span> <span class="o">=</span> <span class="n">infostring</span><span class="p">,</span> <span class="n">FUNCTION_NAME</span> <span class="o">=</span> <span class="n">functionstring</span><span class="p">,</span> <span class="n">MASK_DATA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">interfaceid</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
 </code></pre></div>
 <h2 id='request_default_user_code_'>REQUEST_DEFAULT_USER_CODE_</h2>
@@ -43099,7 +43099,7 @@ Fired when the partition state changes</p>
 
 <h2 id='additional_info'>ADDITIONAL_INFO</h2>
 
-<p>This command will only be sent after having received a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info"><code>REQUEST_ADDITIONAL_INFO</code></a> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
+<p>This command will only be sent after having received a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info"><code>REQUEST_ADDITIONAL_INFO</code></a> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
 
 <table><thead>
 <tr>
@@ -43163,7 +43163,7 @@ Fired when the partition state changes</p>
 
 <h2 id='execute_function'>EXECUTE_FUNCTION</h2>
 
-<p>Request the partition to execute a function event of the type listed in the functions capability. The function parameter would be one of the function strings listed in the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">&lt;functions&gt;</a> capability</p>
+<p>Request the partition to execute a function event of the type listed in the functions capability. The function parameter would be one of the function strings listed in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">&lt;functions&gt;</a> capability</p>
 
 <table><thead>
 <tr>
@@ -43364,38 +43364,38 @@ Fired when the partition state changes</p>
 
 <p>The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.</p>
 
-<p><code>&lt;can_calibrate&gt;&lt;/can_calibrate&gt;</code> 
-Indicates if the device is capable of calibrating itself. Enables <code>SET_CALIBRATION</code> command. Valid values: True/False. </p>
+<p><code>&lt;can_calibrate&gt;&lt;/can_calibrate&gt;</code>
+Indicates if the device is capable of calibrating itself. Enables <code>SET_CALIBRATION</code> command. Valid values: True/False.</p>
 
-<p><code>&lt;can_change_scale&gt;&lt;/can_change_scale&gt;</code> 
-Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p><code>&lt;can_change_scale&gt;&lt;/can_change_scale&gt;</code>
+Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;can_cool&gt;&lt;/can_cool&gt;</code>
-Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;can_dehumidify&gt;&lt;/can_dehumidify&gt;</code>
-Boolean to enable/disable <code>can_dehumidity</code> capability, if the device supports this feature, default is True. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+Boolean to enable/disable <code>can_dehumidity</code> capability, if the device supports this feature, default is True. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;can_do_auto&gt;&lt;/can_do_auto&gt;</code>
- Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+ Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;can_heat&gt;&lt;/can_heat&gt;</code>
-Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;can_humidify&gt;&lt;/can_humidify&gt;</code>
-Boolean to enable/disable <code>can_humidity</code> capability, if the device supports this feature, default is True.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+Boolean to enable/disable <code>can_humidity</code> capability, if the device supports this feature, default is True.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;can_inc_dec_setpoints&gt;&lt;/can_inc_dec_setpoints&gt;</code>
-Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.</p>
+Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.</p>
 
 <p><code>&lt;can_lock_buttons&gt;&lt;/can_lock_buttons&gt;</code>
  Indicates if the buttons on the TSTAT can be locked out to prevent changes. Valid values: True/False.</p>
 
 <p><code>&lt;can_preset&gt;&lt;/can_preset&gt;</code>
-Boolean indicating if the device supports the preset functionality including <code>custom_fields</code>. This does not including scheduling as <code>preset_scheduling</code> is a feature that is currently not supported. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Boolean indicating if the device supports the preset functionality including <code>custom_fields</code>. This does not including scheduling as <code>preset_scheduling</code> is a feature that is currently not supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;can_preset_schedule&gt;&lt;/can_preset_schedule&gt;</code>
-Boolean indicating if the thermostat will support the <code>SET_EVENTS</code> commands for running presets based on scheduling created in Navigators. </p>
+Boolean indicating if the thermostat will support the <code>SET_EVENTS</code> commands for running presets based on scheduling created in Navigators.</p>
 
 <p><code>&lt;current_temperature_max_c&gt;&lt;/current_temperature_max_c&gt;</code>
 Double indicating the maximum temperature that the thermostat will report in C. Default is 48.</p>
@@ -43413,44 +43413,44 @@ Double indicating the minimum temperature that the thermostat will report in F. 
 Double indicating the increments that the temperature will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <code>DYNAMIC_CAPBILITIES_CHANGED</code> notification.</p>
 
 <p><code>&lt;current_temperature_resolution_f&gt;&lt;/current_temperature_resolution_f&gt;</code>
-Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;fan_modes&gt;&lt;/fan_modes&gt;</code>
-This is a comma delimited list of possible fan modes this thermostat supports. For example: Auto, Low, Medium, High with no spaces after the comma. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+This is a comma delimited list of possible fan modes this thermostat supports. For example: Auto, Low, Medium, High with no spaces after the comma. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;fan_states&gt;&lt;/fan_states&gt;</code>
-This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;has_humidity&gt;&lt;/has_humidity&gt;</code>
-Boolean indicating if the device can report the current humidity. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Boolean indicating if the device can report the current humidity. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code>
-Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;has_connection_status&gt;&lt;/has_connection_status&gt;</code>
 Boolean indicating if the device reports online/offline status of the hardware device, this is often forgotten about but very important to implement in new protocol drivers drivers.</p>
 
 <p><code>&lt;has_outdoor_temperature&gt;&lt;/has_outdoor_temperature&gt;</code>
-Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;has_remote_sensor&gt;&lt;/has_remote_sensor&gt;</code>
 Indicates if this thermostat has a remote sensor. Valid values: True/False.</p>
 
 <p><code>&lt;has_single_setpoint&gt;&lt;/has_single_setpoint&gt;</code>
- Boolean indicating if the device is single setpoint.  <code>can_heat, can_cool</code> and <code>can_auto</code> should be set to false if this option is used. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+ Boolean indicating if the device is single setpoint.  <code>can_heat, can_cool</code> and <code>can_auto</code> should be set to false if this option is used. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
 
 <p><code>&lt;has_temperature&gt;&lt;/has_temperature&gt;</code>
-Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;has_vacation_mode&gt;&lt;/has_vacation_mode&gt;</code>
 Indicates if this thermostat supports vacation mode Valid values: True/False
 The capability <code>has_vacation_mode</code> must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.</p>
 
 <p><code>&lt;hold_modes&gt;&lt;/hold_modes&gt;</code>
-This is a comma delimited list of the possible hold modes this thermostat supports. Valid values include: Off, 2 Hours, Until Next, Permanent with no spaces after the commas. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+This is a comma delimited list of the possible hold modes this thermostat supports. Valid values include: Off, 2 Hours, Until Next, Permanent with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;humidity_modes&gt;&lt;/humidity_modes&gt;</code>
-A comma separated list of all the modes the device supports. For example: &quot;Off,Humidify,Dehumidify,Auto&quot; with no spaces after the commas. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+A comma separated list of all the modes the device supports. For example: &quot;Off,Humidify,Dehumidify,Auto&quot; with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;humidity_states&gt;&lt;/humidity_states&gt;</code>
  A comma separated list of all the modes the device supports. Usually something like &quot;Off,Humidifying,Dehumidifying&quot;, with no spaces after the commas.</p>
@@ -43462,13 +43462,13 @@ A comma separated list of all the modes the device supports. For example:  &quot
 This is a comma delimited list that represents all of the possible states that the HVAC system supports. For example: Off, Heat, Cool, Heating, Stage 1 Cool, etc with no spaces after the commas</p>
 
 <p><code>&lt;outdoor_temperature_resolution_c&gt;&lt;/outdoor_temperature_resolution_c&gt;</code>
-Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;outdoor_temperature_resolution_f&gt;&lt;/outdoor_temperature_resolution_f&gt;</code>
-Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;preset_fields&gt;&lt;/preset_fields&gt;</code>
-XML of fields for settings that are potentially unique to the protocol driver, yet will be displayed in the UI during the creation or modification of presets for scheduling. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+XML of fields for settings that are potentially unique to the protocol driver, yet will be displayed in the UI during the creation or modification of presets for scheduling. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;scheduling&gt;&lt;/scheduling&gt;</code>
 A boolean indicating if the device supports a programmed schedule. If it is true, it should have a <code>schedule_default entry</code> in its c4z file. Also mutually exclusive to Preset Scheduling and use of this is discouraged.</p>
@@ -43491,28 +43491,28 @@ There is one of these entries for each schedule entry during the day. In the exa
 </code></pre></div>
 
 <p><code>&lt;setpoint_cool_max&gt;&lt;/setpoint_cool_max&gt;</code>
-Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. If used,<code>_f </code>and <code>_c</code> do not need to be set but since this value is Celsius x 10, it will result in a potentially undesired Fahrenheit conversion.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. If used,<code>_f </code>and <code>_c</code> do not need to be set but since this value is Celsius x 10, it will result in a potentially undesired Fahrenheit conversion.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_max_c&gt;&lt;/setpoint_cool_max_c&gt;</code>
-Integer indicating the highest temperature the cool setpoint can be configured as. Default is 90. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the cool setpoint can be configured as. Default is 90. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_max_c&gt;&lt;/setpoint_cool_max_c&gt;</code>
-Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_min&gt;&lt;/setpoint_cool_min&gt;</code>
-Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 39. If used,<code>_f</code> and <code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 39. If used,<code>_f</code> and <code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_min_c&gt;&lt;/setpoint_cool_min_c&gt;</code>
- Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. If used, <code>_f</code> and <code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+ Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. If used, <code>_f</code> and <code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_min_f&gt;&lt;/setpoint_cool_min_f&gt;</code>
-Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a>  notification.</p>
+Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a>  notification.</p>
 
 <p><code>&lt;setpoint_cool_resolution_c&gt;&lt;/setpoint_cool_resolution_c&gt;</code>
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a C notification.</p>
 
 <p><code>&lt;setpoint_cool_resolution_f&gt;&lt;/setpoint_cool_resolution_f&gt;</code>
-Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heatcool_deadband_c&gt;&lt;/setpoint_heatcool_deadband_c&gt;</code>
 Double indicating the deadband range in Celcius that the hardware requires between heat and cool.  Default is 2.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.</p>
@@ -43521,58 +43521,58 @@ Double indicating the deadband range in Celcius that the hardware requires betwe
 Double indicating the deadband range in Fahrenheit  that the hardware requires between heat and cool.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.</p>
 
 <p><code>&lt;setpoint_heat_max&gt;&lt;/setpoint_heat_max&gt;</code>
-Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, <code>_f </code>and<code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, <code>_f </code>and<code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_max_c&gt;&lt;/setpoint_heat_max_c&gt;</code>
-Integer indicating the highest temperature the heat setpoint can be configured as. Default is 31. Best to use <code>_f </code>and <code>_c</code> and not the older celsius x 10 capability.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 31. Best to use <code>_f </code>and <code>_c</code> and not the older celsius x 10 capability.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_max_f&gt;&lt;/setpoint_heat_max_f&gt;</code>
-Integer indicating the highest temperature the heat setpoint can be configured as. Default is 89. Best to use <code>_f </code>and <code>_c</code> and not the older celsius x 10 capability.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the heat setpoint can be configured as. Default is 89. Best to use <code>_f </code>and <code>_c</code> and not the older celsius x 10 capability.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_min&gt;&lt;/setpoint_heat_min&gt;</code>
-Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 40. If used, <code>_f</code> and <code>_c </code>do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 40. If used, <code>_f</code> and <code>_c </code>do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_min_c&gt;&lt;/setpoint_heat_min_c&gt;</code>
-Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 4. Best to use <code>_f</code> and <code>_c</code> and not the older Celsius x 10 capability. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 4. Best to use <code>_f</code> and <code>_c</code> and not the older Celsius x 10 capability. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_min_f&gt;&lt;/setpoint_heat_min_f&gt;</code>
 Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 38. Best to use <code>_f</code> and <code>_c</code> and not the older celsius x 10 capability.</p>
 
 <p><code>&lt;setpoint_heat_resolution_c&gt;&lt;/setpoint_heat_resolution_c&gt;</code>
-Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_dehumidify_max&gt;&lt;/setpoint_dehumidify_max&gt;</code>
-Integer indicating the highest dehumidify setpoint, default 100.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest dehumidify setpoint, default 100.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_dehumidify_min&gt;&lt;/setpoint_dehumidify_min&gt;</code>
-Integer indicating the lowest dehumidify setpoint, default 0.  This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest dehumidify setpoint, default 0.  This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_humidify_min&gt;&lt;/setpoint_humidify_min&gt;</code>
-Integer indicating the lowest humidify setpoint, default 0. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest humidify setpoint, default 0. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_humidify_max&gt;&lt;/setpoint_humidify_max&gt;</code>
-Integer indicating the highest humidify setpoint, default 100. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest humidify setpoint, default 100. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_humidify_resolution&gt;&lt;/setpoint_humidify_resolution&gt;</code>
-Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_dehumidify_resolution&gt;&lt;/setpoint_dehumidify_resolution&gt;</code>
- Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+ Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_single_max_c&gt;&lt;/setpoint_single_max_c&gt;</code>
-Integer indicating the highest temperature the single setpoint can be configured as. Default is 32. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the single setpoint can be configured as. Default is 32. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_single_max_f&gt;&lt;/setpoint_single_max_f&gt;</code>
-Integer indicating the highest temperature the single setpoint can be configured as. Default is 90. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the highest temperature the single setpoint can be configured as. Default is 90. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_single_min_c&gt;&lt;/setpoint_single_min_c&gt;</code>
-Integer indicating the lowest temperature the single setpoint can be configured as. Default is 4. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest temperature the single setpoint can be configured as. Default is 4. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_single_min_f&gt;&lt;/setpoint_single_min_f&gt;</code>
-Integer indicating the lowest temperature the single setpoint can be configured as. Default is 38. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Integer indicating the lowest temperature the single setpoint can be configured as. Default is 38. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_resolution_f&gt;&lt;/setpoint_heat_resolution_f&gt;</code>
-Double indicating the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+Double indicating the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 <h1 id='thermostat-conditionals'>Thermostat Conditionals</h1>
 
 <h2 id='thermostat-conditionals'>THERMOSTAT CONDITIONALS</h2>
@@ -44042,7 +44042,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h2 id='connection'>CONNECTION</h2>
 
-<p>Boolean to enable/disable <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>can_dehumidify</code></a> capability. If the device supports this feature, default is False.</p>
+<p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>can_dehumidify</code></a> capability. If the device supports this feature, default is False.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -44108,7 +44108,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
+<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
 </tr>
 </tbody></table>
 <h3 id='returns'>Returns</h3>
@@ -44126,7 +44126,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
+<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
 </tr>
 </tbody></table>
 <h3 id='returns'>Returns</h3>
@@ -44179,7 +44179,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 
@@ -44199,7 +44199,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='returns'>Returns</h3>
@@ -44217,7 +44217,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='returns'>Returns</h3>
@@ -44235,7 +44235,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='returns'>Returns</h3>
@@ -44283,7 +44283,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>MINIMUM SETPOINT: (0-100). To UI comes through as <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifymin</code></a>` capability. Defaults to 0.</td>
+<td>MINIMUM SETPOINT: (0-100). To UI comes through as <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifymin</code></a>` capability. Defaults to 0.</td>
 </tr>
 </tbody></table>
 
@@ -44310,7 +44310,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>MAXIMUM SETPOINT: (0-100). To UI comes through as <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_dehumidify_max</code> </a>capability. Defaults to 100.</td>
+<td>MAXIMUM SETPOINT: (0-100). To UI comes through as <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_dehumidify_max</code> </a>capability. Defaults to 100.</td>
 </tr>
 </tbody></table>
 
@@ -44335,7 +44335,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifyresolution</code></a>` capability, default 1</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifyresolution</code></a>` capability, default 1</td>
 </tr>
 </tbody></table>
 
@@ -44367,7 +44367,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </tr>
 <tr>
 <td>bool</td>
-<td><code>HAS_HUMIDITY</code>: boolean to enable/disable <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false</td>
+<td><code>HAS_HUMIDITY</code>: boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false</td>
 </tr>
 <tr>
 <td>bool</td>
@@ -44375,11 +44375,11 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </tr>
 <tr>
 <td>int</td>
-<td><code>HUMIDIFY_SETPOINT_MIN</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_min</code></a> capability, default 0 </td>
+<td><code>HUMIDIFY_SETPOINT_MIN</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_min</code></a> capability, default 0 </td>
 </tr>
 <tr>
 <td>int</td>
-<td><code>HUMIDIFY_SETPOINT_MAX</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_max</code></a> capability, default 100</td>
+<td><code>HUMIDIFY_SETPOINT_MAX</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_max</code></a> capability, default 100</td>
 </tr>
 <tr>
 <td>int</td>
@@ -44457,7 +44457,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h2 id='fan-mode-changed'>FAN MODE CHANGED</h2>
 
-<p>Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>FAN_MODE</code></a>, <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>V1 FANMODE,</code></a> <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables">ANA_FANMODE``</a>.</p>
+<p>Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>FAN_MODE</code></a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>V1 FANMODE,</code></a> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables">ANA_FANMODE``</a>.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -44505,7 +44505,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h2 id='has-extras'>HAS EXTRAS</h2>
 
-<p>Boolean to enable/disable <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_extras capability</code></a>.  If the device supports this feature, default is false
+<p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_extras capability</code></a>.  If the device supports this feature, default is false
 Updates the XML that will be consumed by the Navigator UI’s.</p>
 
 <h3 id='signature'>Signature</h3>
@@ -44560,7 +44560,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='has-humidity'>HAS HUMIDITY</h2>
 
-<p>Boolean to enable/disable <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability. If the device supports this feature, default is false</p>
+<p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability. If the device supports this feature, default is false</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -44584,7 +44584,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='has-outdoor-temperature'>HAS OUTDOOR TEMPERATURE</h2>
 
-<p>Boolean to enable/disable <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_outdoor_temperature</code></a> capability, if the device supports this feature, default is false</p>
+<p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_outdoor_temperature</code></a> capability, if the device supports this feature, default is false</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -44700,11 +44700,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-resolution-c'>HEAT SETPOINT RESOLUTION C</h2>
 
-<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
+<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HEAT_SETPOINT_RESOLUTION_C ()</code> </p>
+<p><code>HEAT_SETPOINT_RESOLUTION_C ()</code></p>
 
 <table><thead>
 <tr>
@@ -44724,11 +44724,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-resolution-f'>HEAT SETPOINT RESOLUTION F</h2>
 
-<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
+<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HEAT_SETPOINT_RESOLUTION_F ()</code> </p>
+<p><code>HEAT_SETPOINT_RESOLUTION_F ()</code></p>
 
 <table><thead>
 <tr>
@@ -44748,7 +44748,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-max-c'>HEAT SETPOINT MAX C</h2>
 
-<p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
+<p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -44772,11 +44772,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-max-f'>HEAT SETPOINT MAX F</h2>
 
-<p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
+<p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HEAT_SETPOINT_MAX_F ()</code> </p>
+<p><code>HEAT_SETPOINT_MAX_F ()</code></p>
 
 <table><thead>
 <tr>
@@ -44796,11 +44796,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-min-c'>HEAT SETPOINT MIN C</h2>
 
-<p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
+<p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HEAT_SETPOINT_MIN_C ()</code> </p>
+<p><code>HEAT_SETPOINT_MIN_C ()</code></p>
 
 <table><thead>
 <tr>
@@ -44820,11 +44820,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='heat-setpoint-min-f'>HEAT SETPOINT MIN F</h2>
 
-<p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
+<p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HEAT_SETPOINT_MIN_F ()</code> </p>
+<p><code>HEAT_SETPOINT_MIN_F ()</code></p>
 
 <table><thead>
 <tr>
@@ -44844,11 +44844,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='hold-mode-changed'>HOLD MODE CHANGED</h2>
 
-<p>Notification that should be sent to the proxy when hold mode has changed. Changes the variables <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE</code></a>, <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>ANA_HOLDMODE</code></a>. Fires event <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE_CHANGED</code></a>.</p>
+<p>Notification that should be sent to the proxy when hold mode has changed. Changes the variables <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE</code></a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>ANA_HOLDMODE</code></a>. Fires event <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE_CHANGED</code></a>.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HOLD_MODE_CHANGED ()</code> </p>
+<p><code>HOLD_MODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
@@ -45012,11 +45012,11 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <h2 id='humidity-setpoint-resolution'>HUMIDITY SETPOINT RESOLUTION</h2>
 
-<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_resolution</code></a> capability.</p>
+<p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_resolution</code></a> capability.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>HUMIDITY_SETPOINT_RESOLUTION ()</code> </p>
+<p><code>HUMIDITY_SETPOINT_RESOLUTION ()</code></p>
 
 <table><thead>
 <tr>
@@ -46121,12 +46121,12 @@ This variable will be deprecated when the traditional scheduling model is deprec
 
 <h3 id='html-webview-overview'>HTML WebView Overview</h3>
 
-<p>Adding the HTML WebView functionality to an Experience (UIbutton) driver enables the driver developer to specify a web URL that can provide an HTML interface for the end user. The web UI is launched within an embedded browser on the Control4 T3 touch screen. </p>
+<p>Adding the HTML WebView functionality to an Experience (UIbutton) driver enables the driver developer to specify a web URL that can provide an HTML interface for the end user. The web UI is launched within an embedded browser on the Control4 T3 touch screen.</p>
 
 <h3 id='html-webview-usage-best-practice-recommendations'>HTML WebView Usage Best Practice Recommendations</h3>
 
-<p>The Driver Developer should implement the proxy interfaces that Control4 provides as a standard part of the user 
-experience to the full extent that these apply to the device. The web interface should be considered supplementary to 
+<p>The Driver Developer should implement the proxy interfaces that Control4 provides as a standard part of the user
+experience to the full extent that these apply to the device. The web interface should be considered supplementary to
 the proxy interface.</p>
 
 <p>The Driver Developer should keep the Web UI as simple as reasonably possible.</p>
@@ -46147,7 +46147,7 @@ the proxy interface.</p>
 
 <h3 id='javascript-api'>JavaScript API</h3>
 
-<p>The Proxy has also been enhanced to  provide a <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-webview-javascript-api">JavaScript API</a> that allows Driver hosted web views to send commands, subscribe to DATA_TO_UIs and variables using the existing mobile communication channels.</p>
+<p>The Proxy has also been enhanced to  provide a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-webview-javascript-api">JavaScript API</a> that allows Driver hosted web views to send commands, subscribe to DATA_TO_UIs and variables using the existing mobile communication channels.</p>
 
 <p>In addition to the APIs, a new capability has been added: <a href="#mobile_web_view_enabled">mobile_webview_enabled</a></p>
 
@@ -46161,7 +46161,7 @@ the proxy interface.</p>
 <li>Under the Room’s Properties select Navigator.</li>
 <li>Note the that the demo driver (UI Button) is listed under the Device column in the following Experience Menus: Comfort, Listen, Security and Watch.</li>
 <li>Ensure that UI Button has a Visibility status of Visible in each of the Experience menus. The status can be changed by clicking on the Modify … button on the Properties screen.</li>
-<li>Refresh Navigators. </li>
+<li>Refresh Navigators.</li>
 </ol>
 
 <p><strong>Demo Driver Usage </strong></p>
@@ -46170,11 +46170,11 @@ the proxy interface.</p>
 
 <p><img src="images/103_1-01-8cb751f2.png"/></p>
 
-<p>Select a state, Red for example, and click the set Button. Verify the color state is red on Touchscreens in the room where the UI Button resides and mobile devices running this project. The color state can also be verified by double clicking the UI Button driver from System design. </p>
+<p>Select a state, Red for example, and click the set Button. Verify the color state is red on Touchscreens in the room where the UI Button resides and mobile devices running this project. The color state can also be verified by double clicking the UI Button driver from System design.</p>
 
 <p><img src="images/103_1-02-764b927f.png"/></p>
 
-<p>The driver’s Lua output will from the Red State setting is displayed to the right. </p>
+<p>The driver’s Lua output will from the Red State setting is displayed to the right.</p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code>OnPropertyChange(): States  Red
 OnPropertyChange(): States
@@ -46185,7 +46185,7 @@ fireEvent():    Red
 
 <p>Next, from a mobile device, change the color of the bulb state to Blue. Verify the state change on Touchsrceens and double clicking the UI Button driver from System design.</p>
 
-<p>The driver’s Lua output from changing from red State to Blue is displayed to the right. </p>
+<p>The driver’s Lua output from changing from red State to Blue is displayed to the right.</p>
 
 <p><div class="highlight"><pre class="highlight xml tab-xml"><code>OnPropertyChange(): States  Red
 OnPropertyChange(): States
@@ -46200,13 +46200,13 @@ fireEvent():    Blue
 </code></pre></div><h3 id='webview-mobile-usage-best-practice-recommendations'>WebView Mobile Usage Best Practice Recommendations</h3>
 <p>Webview Mobile App Usage Guidelines (rules):</p></p>
 
-<p>When accessing a controller remotely through the App, a fully qualified URL should be used to ensure all UI resources will render correctly on the App. The mobile App cannot access local-style resources specified by the CSS. However, if the CSS is structured to include the fully qualified path including the controller syntax, the resource will be available both locally and remotely. </p>
+<p>When accessing a controller remotely through the App, a fully qualified URL should be used to ensure all UI resources will render correctly on the App. The mobile App cannot access local-style resources specified by the CSS. However, if the CSS is structured to include the fully qualified path including the controller syntax, the resource will be available both locally and remotely.</p>
 
-<p>For example, here is a path that would successfully render a background image locally: </p>
+<p>For example, here is a path that would successfully render a background image locally:</p>
 
-<p><code>{ background-image: url(../images/wp_carbon_blue.jpg); padding: 16px; } </code> </p>
+<p><code>{ background-image: url(../images/wp_carbon_blue.jpg); padding: 16px; } </code></p>
 
-<p>However, this path will fail to render the  image on the mobile App. An example of a fully qualified URL to the background image would be: </p>
+<p>However, this path will fail to render the  image on the mobile App. An example of a fully qualified URL to the background image would be:</p>
 
 <p><code>{ background-image: url(controller://driver/JavascriptAPIDemo/contents/images/wp_carbon_blue.jpg); padding: 16px; }</code></p>
 
@@ -46222,8 +46222,8 @@ fireEvent():    Blue
 
 <ul>
 <li>Mozilla 5.0</li>
-<li>Android 9 Mobile rv:96.0<br></li>
-<li>Gecko/96.0 </li>
+<li>Android 9 Mobile rv:96.0</li>
+<li>Gecko/96.0</li>
 <li>Firefox/96.0</li>
 </ul>
 
@@ -46231,8 +46231,8 @@ fireEvent():    Blue
 
 <ul>
 <li>Mozilla 5.0</li>
-<li>Android 4.4.2 Mobile rv: 96.0<br></li>
-<li>Gecko 96.0 </li>
+<li>Android 4.4.2 Mobile rv: 96.0</li>
+<li>Gecko 96.0</li>
 <li>Firefox 96.0</li>
 </ul>
 
@@ -46240,10 +46240,10 @@ fireEvent():    Blue
 
 <ul>
 <li> Mozilla 5.0</li>
-<li>Linux for Android 4.4.2 rk3188 Build KOT49H </li>
-<li>AppleWebKit 537.36 </li>
-<li>KHTML, like Gecko Version 4.0 </li>
-<li>Chrome 30.0.0.0 </li>
+<li>Linux for Android 4.4.2 rk3188 Build KOT49H</li>
+<li>AppleWebKit 537.36</li>
+<li>KHTML, like Gecko Version 4.0</li>
+<li>Chrome 30.0.0.0</li>
 <li>Safari 537.36</li>
 </ul>
 <h1 id='ui-button-capabilities'>UI Button Capabilities</h1>
@@ -46311,7 +46311,7 @@ Optional Capability which, when added contains the default URL that is associate
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>ICON_CHANGED</code> </p>
+<p><code>ICON_CHANGED</code></p>
 
 <table><thead>
 <tr>
@@ -46321,7 +46321,7 @@ Optional Capability which, when added contains the default URL that is associate
 </thead><tbody>
 <tr>
 <td>icon</td>
-<td>str:  value which references an icon state name defined in the <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-capabilities">display icons</a> capability or an empty string to set the default icon.</td>
+<td>str:  value which references an icon state name defined in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-capabilities">display icons</a> capability or an empty string to set the default icon.</td>
 </tr>
 <tr>
 <td>icon_description</td>
@@ -46883,7 +46883,7 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>STATE_CLOSED ()</code> </p>
+<p><code>STATE_CLOSED ()</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -46895,7 +46895,7 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>Send <code>STATE_CLOSED</code> when the device initializes rather than <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#closed"><code>CLOSED</code></a>. The driver will ignore the <code>STATE_CLOSED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
+<p>Send <code>STATE_CLOSED</code> when the device initializes rather than <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#closed"><code>CLOSED</code></a>. The driver will ignore the <code>STATE_CLOSED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
 
 <h2 id='state-opened'>STATE OPENED</h2>
 
@@ -46903,7 +46903,7 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>STATE_OPENED ()</code> </p>
+<p><code>STATE_OPENED ()</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -46915,7 +46915,7 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>Send <code>STATE_OPENED</code> when the device initializes rather than <a href="https://control4.github.io/docs-driverworks-proxyprotocol/#opened"><code>OPENED</code></a>. The driver will ignore the <code>STATE_OPENED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
+<p>Send <code>STATE_OPENED</code> when the device initializes rather than <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#opened"><code>OPENED</code></a>. The driver will ignore the <code>STATE_OPENED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
 <h1 id='best-practices'>Best Practices</h1>
 
 <h2 id='av-pathing-unsolicited-notifications-and-control4-ui'>AV PATHING, UNSOLICITED NOTIFICATIONS AND CONTROL4 UI</h2>
