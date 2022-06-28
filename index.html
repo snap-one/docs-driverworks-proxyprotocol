@@ -4775,6 +4775,9 @@
                     <a href="#set-group-sync" class="toc-h2 toc-link" data-title="SET GROUP SYNC">SET GROUP SYNC</a>
                   </li>
                   <li>
+                    <a href="#get-setup" class="toc-h2 toc-link" data-title="GET SETUP">GET SETUP</a>
+                  </li>
+                  <li>
                     <a href="#group-ramp-to-level" class="toc-h2 toc-link" data-title="GROUP RAMP TO LEVEL">GROUP RAMP TO LEVEL</a>
                   </li>
                   <li>
@@ -36392,10 +36395,84 @@ chromaticity.</p>
 
 <p><code>None</code></p>
 
+<h2 id='get-setup'>GET SETUP</h2>
+
+<p>Used to get the configuration of the device.  This includes all capabilities that are in a driver as well as other proxy information.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>GET_SETUP ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>None</p>
+
+<h3 id='returns'>Returns</h3>
+
+<p>See example</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>-- Example of current XML with color support enabled:
+
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;setup&gt;</span>
+   <span class="nt">&lt;ONLINE_CHANGED&gt;</span>True<span class="nt">&lt;/ONLINE_CHANGED&gt;</span>
+   <span class="nt">&lt;MIN_ON_LEVEL&gt;</span>1<span class="nt">&lt;/MIN_ON_LEVEL&gt;</span>
+   <span class="nt">&lt;MAX_ON_LEVEL&gt;</span>100<span class="nt">&lt;/MAX_ON_LEVEL&gt;</span>
+   <span class="nt">&lt;COLD_START_LEVEL&gt;</span>1<span class="nt">&lt;/COLD_START_LEVEL&gt;</span>
+   <span class="nt">&lt;COLD_START_TIME&gt;</span>0<span class="nt">&lt;/COLD_START_TIME&gt;</span>
+   <span class="nt">&lt;CLICK_RATE_MIN&gt;</span>250<span class="nt">&lt;/CLICK_RATE_MIN&gt;</span>
+   <span class="nt">&lt;CLICK_RATE_MAX&gt;</span>86400000<span class="nt">&lt;/CLICK_RATE_MAX&gt;</span>
+   <span class="nt">&lt;HOLD_RATE_MIN&gt;</span>1000<span class="nt">&lt;/HOLD_RATE_MIN&gt;</span>
+   <span class="nt">&lt;HOLD_RATE_MAX&gt;</span>86400000<span class="nt">&lt;/HOLD_RATE_MAX&gt;</span>
+   <span class="nt">&lt;NUMBER_BUTTONS&gt;</span>3<span class="nt">&lt;/NUMBER_BUTTONS&gt;</span>
+   <span class="nt">&lt;BUTTON_LIST_INFO&gt;</span>
+      <span class="nt">&lt;BUTTON_INFO&gt;</span>
+         <span class="nt">&lt;NAME&gt;</span>Top<span class="nt">&lt;/NAME&gt;</span>
+         <span class="nt">&lt;BUTTON_ID&gt;</span>0<span class="nt">&lt;/BUTTON_ID&gt;</span>
+         <span class="nt">&lt;ON_COLOR&gt;</span>0000ff<span class="nt">&lt;/ON_COLOR&gt;</span>
+         <span class="nt">&lt;OFF_COLOR&gt;</span>000000<span class="nt">&lt;/OFF_COLOR&gt;</span>
+      <span class="nt">&lt;/BUTTON_INFO&gt;</span>
+      <span class="nt">&lt;BUTTON_INFO&gt;</span>
+         <span class="nt">&lt;NAME&gt;</span>Bottom<span class="nt">&lt;/NAME&gt;</span>
+         <span class="nt">&lt;BUTTON_ID&gt;</span>1<span class="nt">&lt;/BUTTON_ID&gt;</span>
+         <span class="nt">&lt;ON_COLOR&gt;</span>000000<span class="nt">&lt;/ON_COLOR&gt;</span>
+         <span class="nt">&lt;OFF_COLOR&gt;</span>0000ff<span class="nt">&lt;/OFF_COLOR&gt;</span>
+      <span class="nt">&lt;/BUTTON_INFO&gt;</span>
+      <span class="nt">&lt;BUTTON_INFO&gt;</span>
+         <span class="nt">&lt;NAME&gt;</span>Toggle<span class="nt">&lt;/NAME&gt;</span>
+         <span class="nt">&lt;BUTTON_ID&gt;</span>2<span class="nt">&lt;/BUTTON_ID&gt;</span>
+         <span class="nt">&lt;ON_COLOR&gt;</span>0000ff<span class="nt">&lt;/ON_COLOR&gt;</span>
+         <span class="nt">&lt;OFF_COLOR&gt;</span>000000<span class="nt">&lt;/OFF_COLOR&gt;</span>
+      <span class="nt">&lt;/BUTTON_INFO&gt;</span>
+   <span class="nt">&lt;/BUTTON_LIST_INFO&gt;</span>
+   <span class="nt">&lt;supports_target&gt;</span>True<span class="nt">&lt;/supports_target&gt;</span>
+   <span class="nt">&lt;has_extras&gt;</span>True<span class="nt">&lt;/has_extras&gt;</span>
+   <span class="nt">&lt;brightnesses</span> <span class="na">minimum=</span><span class="s">"0"</span> <span class="na">maximum=</span><span class="s">"100"</span> <span class="na">resolution=</span><span class="s">"1"</span> <span class="na">unknown=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"0"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off Active"</span> <span class="na">inactiveText=</span><span class="s">"Off Not Active"</span> <span class="na">rate=</span><span class="s">"750"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"100"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On Active"</span> <span class="na">inactiveText=</span><span class="s">"On Not Active"</span> <span class="na">rate=</span><span class="s">"250"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Slow Off"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"0"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Slow Off Active"</span> <span class="na">inactiveText=</span><span class="s">"Slow Off Not Active"</span> <span class="na">rate=</span><span class="s">"5000"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Slow On"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"100"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Slow On Active"</span> <span class="na">inactiveText=</span><span class="s">"Slow On Not Active"</span> <span class="na">rate=</span><span class="s">"5000"</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/brightnesses&gt;</span>
+   <span class="nt">&lt;supports_color&gt;</span>True<span class="nt">&lt;/supports_color&gt;</span>
+   <span class="nt">&lt;supports_color_correlated_temperature&gt;</span>False<span class="nt">&lt;/supports_color_correlated_temperature&gt;</span>
+   <span class="nt">&lt;colors</span> <span class="na">color_correlated_temperature_min=</span><span class="s">"500"</span> <span class="na">color_correlated_temperature_max=</span><span class="s">"20000"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Energize"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">"0,1"</span> <span class="na">color_x=</span><span class="s">"0"</span> <span class="na">color_y=</span><span class="s">"0"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Relax"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">"0,1"</span> <span class="na">color_x=</span><span class="s">"0"</span> <span class="na">color_y=</span><span class="s">"0"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Read"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0"</span> <span class="na">color_y=</span><span class="s">"0"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Sunset"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0"</span> <span class="na">color_y=</span><span class="s">"0"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Nightlight"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0"</span> <span class="na">color_y=</span><span class="s">"0"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Red"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.640074"</span> <span class="na">color_y=</span><span class="s">"0.329971"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Green"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.3"</span> <span class="na">color_y=</span><span class="s">"0.6"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Blue"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.150017"</span> <span class="na">color_y=</span><span class="s">"0.0600066"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Yellow"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.419321"</span> <span class="na">color_y=</span><span class="s">"0.505255"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Orange"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.543608"</span> <span class="na">color_y=</span><span class="s">"0.406568"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off"</span> <span class="na">inactiveText=</span><span class="s">"Not Off"</span> <span class="na">rate=</span><span class="s">"750"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On"</span> <span class="na">inactiveText=</span><span class="s">"Not On"</span> <span class="na">rate=</span><span class="s">"250"</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/colors&gt;</span>
+<span class="nt">&lt;/setup&gt;</span>
+</code></pre></div>
 <h2 id='group-ramp-to-level'>GROUP RAMP TO LEVEL</h2>
-
 <p>Received when group is ramping to level.</p>
-
 <h3 id='signature'>Signature</h3>
 
 <p><code>GROUP_RAMP_TO_LEVEL ()</code></p>
