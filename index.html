@@ -30433,14 +30433,18 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Capability - Capability string as defined in the c4i/.c4z.  The value of this parameter would be the value as denoted in the .c4i/.c4z as well.</td>
+<td>capabilities</td>
+<td>Table of capabilities as defined in the c4i/.c4z.  The value of this parameter would be the value as denoted in the .c4i/.c4z as well.</td>
 </tr>
 </tbody></table>
 
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h3 id='example'>Example</h3>
+
+<p><code>NOTIFY.DYNAMIC_CAPABILITIES_CHANGED({supports_color=true}, 5001)</code></p>
 
 <h2 id='property-defaults'>PROPERTY DEFAULTS</h2>
 
