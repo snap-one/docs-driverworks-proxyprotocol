@@ -26,6 +26,5 @@ Control4 only supports h.264 over RTSP.
 
 Frame rate and iFrame intervals will vary based on location and content. If the content is consistently changing, a low iframe interval is recommended as the iframe is updated more often. On Screen Display doesn’t support a high frame rate. It is important to understand that Frame Rate is dependent on both the Control4 system configuration and what the cameras are monitoring. Because of this, exact guidelines are difficult to provide. However, a base line configuration as shown below may provide a good starting point.
 
-<img src="images/38_5_01.png"/>
 
 
