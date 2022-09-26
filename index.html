@@ -35538,7 +35538,7 @@ chromaticity.</p>
 <p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
 <h3 id='signature'>Signature</h3>
 
-<p><code>C4:ColorHSVtoXY (h, s, v)</code></p>
+<p><code>C4:ColorHSVtoXY (h, s, v, gamut)</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -35559,6 +35559,10 @@ chromaticity.</p>
 <tr>
 <td>num</td>
 <td>Number representing value component of HSV.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>(Optional) Gamut used for conversion. Valid options are &quot;srgb&quot; or &quot;rec2020&quot; or &quot;internal&quot;. Internal uses the rec2020 gamut and is also the default gamut if the optional gamut parameter is not specified.</td>
 </tr>
 </tbody></table>
 
@@ -35646,7 +35650,7 @@ chromaticity.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>C4:ColorRGBtoXY (r, g, b, rgbScale,)</code></p>
+<p><code>C4:ColorRGBtoXY (r, g, b, rgbScale, gamut)</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -35671,6 +35675,10 @@ chromaticity.</p>
 <tr>
 <td>num</td>
 <td>(Optional) Number representing RGB scale (1 to 255). The default value is 255.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>(Optional) Gamut used for conversion. Valid options are &quot;srgb&quot; or &quot;rec2020&quot; or &quot;internal&quot;. Internal uses the rec2020 gamut and is also the default gamut if the optional gamut parameter is not specified.</td>
 </tr>
 </tbody></table>
 
@@ -35746,7 +35754,7 @@ chromaticity.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>C4:ColorXYtoHSV (x, y)</code></p>
+<p><code>C4:ColorXYtoHSV (x, y, gamut)</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -35763,6 +35771,10 @@ chromaticity.</p>
 <tr>
 <td>num</td>
 <td>Number representing the y component of a CIE-1931 xy chromaticity.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>(Optional) Gamut used for conversion. Valid options are &quot;srgb&quot; or &quot;rec2020&quot; or &quot;internal&quot;. Internal uses the rec2020 gamut and is also the default gamut if the optional gamut parameter is not specified.</td>
 </tr>
 </tbody></table>
 
@@ -35796,7 +35808,7 @@ chromaticity.</p>
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>C4:ColorXYtoRGB (x, y, rgbScale,)</code></p>
+<p><code>C4:ColorXYtoRGB (x, y, rgbScale, gamut)</code></p>
 
 <h3 id='parameters'>Parameters</h3>
 
@@ -35817,6 +35829,10 @@ chromaticity.</p>
 <tr>
 <td>num</td>
 <td>(Optional) Number representing RGB scale (1 to 255). The default value is 255.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>(Optional) Gamut used for conversion. Valid options are &quot;srgb&quot; or &quot;rec2020&quot; or &quot;internal&quot;. Internal uses the rec2020 gamut and is also the default gamut if the optional gamut parameter is not specified.</td>
 </tr>
 </tbody></table>
 
