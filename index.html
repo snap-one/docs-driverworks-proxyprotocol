@@ -3786,10 +3786,22 @@
                     <a href="#camera-on" class="toc-h2 toc-link" data-title="CAMERA ON">CAMERA ON</a>
                   </li>
                   <li>
+                    <a href="#change-preset-name" class="toc-h2 toc-link" data-title="CHANGE PRESET NAME">CHANGE PRESET NAME</a>
+                  </li>
+                  <li>
+                    <a href="#change-preset-order" class="toc-h2 toc-link" data-title="CHANGE PRESET ORDER">CHANGE PRESET ORDER</a>
+                  </li>
+                  <li>
                     <a href="#check-address-port" class="toc-h2 toc-link" data-title="CHECK ADDRESS PORT">CHECK ADDRESS PORT</a>
                   </li>
                   <li>
                     <a href="#check-url" class="toc-h2 toc-link" data-title="CHECK URL">CHECK URL</a>
+                  </li>
+                  <li>
+                    <a href="#create-preset" class="toc-h2 toc-link" data-title="CREATE PRESET">CREATE PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#delete-preset" class="toc-h2 toc-link" data-title="DELETE PRESET">DELETE PRESET</a>
                   </li>
                   <li>
                     <a href="#get-mjpeg-query" class="toc-h2 toc-link" data-title="GET MJPEG QUERY">GET MJPEG QUERY</a>
@@ -3804,7 +3816,13 @@
                     <a href="#get-snapshot-query-string" class="toc-h2 toc-link" data-title="GET SNAPSHOT QUERY STRING">GET SNAPSHOT QUERY STRING</a>
                   </li>
                   <li>
+                    <a href="#get-stream-urls" class="toc-h2 toc-link" data-title="GET STREAM URLS">GET STREAM URLS</a>
+                  </li>
+                  <li>
                     <a href="#home" class="toc-h2 toc-link" data-title="HOME">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#modify-preset" class="toc-h2 toc-link" data-title="MODIFY PRESET">MODIFY PRESET</a>
                   </li>
                   <li>
                     <a href="#move-to" class="toc-h2 toc-link" data-title="MOVE TO">MOVE TO</a>
@@ -3823,6 +3841,9 @@
                   </li>
                   <li>
                     <a href="#preset" class="toc-h2 toc-link" data-title="PRESET">PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#select-preset" class="toc-h2 toc-link" data-title="SELECT PRESET">SELECT PRESET</a>
                   </li>
                   <li>
                     <a href="#set-address" class="toc-h2 toc-link" data-title="SET ADDRESS">SET ADDRESS</a>
@@ -29774,6 +29795,58 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p><code>None</code></p>
 
+<h2 id='change-preset-name'>CHANGE PRESET NAME</h2>
+
+<p>Change theme of a Preset.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>CHANGE_PRESET_NAME ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INT</td>
+<td>Preset ID, required.</td>
+</tr>
+<tr>
+<td>STR</td>
+<td>Base64 encoded preset name, required.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='change-preset-order'>CHANGE PRESET ORDER</h2>
+
+<p>Change the order of the Presets</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>CHANGE_PRESET_ORDER ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>STR</td>
+<td>Presets: Comma separated list of preset IDs in the new order. For example: <code>&quot;4,5,2,1&quot;</code></td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='check-address-port'>CHECK ADDRESS PORT</h2>
 
 <p>Composer Pro command used in the Camera Test/Validation area. Verifies the camera Address and Port ID.</p>
@@ -29831,6 +29904,54 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <tr>
 <td>str</td>
 <td>Query. The path/query of the URL.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='create-preset'>CREATE PRESET</h2>
+
+<p>Creates a new preset.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>CREATE_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>STR</td>
+<td>Base64 encoded preset name, required.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='delete-preset'>DELETE PRESET</h2>
+
+<p>Deletes a Preset.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DELETE_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INT</td>
+<td>Preset ID, required.</td>
 </tr>
 </tbody></table>
 
@@ -29955,6 +30076,62 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>XML: <code>&lt;snapshot_query_string&gt;url-query-string&lt;/snapshot_query_string&gt;</code></p>
 
+<h2 id='get-stream-urls'>GET STREAM URLS</h2>
+
+<p>This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. </p>
+
+<p>A Client will make this request to a driver and provide information about how the client will be using the stream.  The driver optionally can adjust the URL(s) returned based on this information.  Driver developers are encouraged to test their driver on various devices to ensure good customer experiences when viewing collages, high resolution or high frame rate streams.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CODEC</td>
+<td>Optional. Comma separated list of codecs that the client can support with the most preferred first.  A driver is not required to handle this but some drivers may want to if they support multiple codecs. (mjpeg, h264, h265)</td>
+</tr>
+<tr>
+<td>RESOLUTION</td>
+<td>Optional. Resolution that the client will be using to display the stream.  A driver is not required to support this but this can be helpful for clients that may need a lower resolution stream for collages of multiple cameras and a 4MP or higher stream would tax the client hardware.</td>
+</tr>
+<tr>
+<td>FPS</td>
+<td>Optional. Frames Per Second that the client would prefer.  A driver is not required to support this but if it does it may result in better customer experience when dealing with collages on Navigators.</td>
+</tr>
+</tbody></table>
+
+<h3 id='examples'>Examples</h3>
+
+<p>An example of the simplest XML returned by a driver is shown to the right:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150/view_camera.cgi"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+or
+
+<span class="nt">&lt;streams&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/view_camera.cgi"</span> <span class="na">codec=</span><span class="s">"h264"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/view_camera_h265.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div>
+
+<p>This is followed by an example from a camera with more features and can provide more options to allow clients to pick a better stream:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://server.company.com:554/rtsp.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://server.company.com:554/cloudapi.cgi?fh2f5hw2"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="na">resolution=</span><span class="s">"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://server.company.com:554/cloudapi.cgi?fh2f4hw1"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://server.company.com:554/cloudapi.cgi?fh2f4hw2"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="na">resolution=</span><span class="s">"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://server.company.com:443/cloudapi.cgi?fh2fhsw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://server.company.com:443/cloudapi.cgi?fh2fhsw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div>
+
 <h2 id='home'>HOME</h2>
 
 <p>Move the camera to its home position.</p>
@@ -29966,6 +30143,30 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <h3 id='parameters'>Parameters</h3>
 
 <p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='modify-preset'>MODIFY PRESET</h2>
+
+<p>Modify an existing Preset.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>MODIFY_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INT</td>
+<td>Preset ID, required.</td>
+</tr>
+</tbody></table>
 
 <h3 id='returns'>Returns</h3>
 
@@ -30096,6 +30297,30 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <tr>
 <td>num</td>
 <td>Index Unit. Valid values: 1 – n, where n is max preset defined by capabilities</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='select-preset'>SELECT PRESET</h2>
+
+<p>Select the Preset.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SELECT_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INT</td>
+<td>Preset ID, required.</td>
 </tr>
 </tbody></table>
 
