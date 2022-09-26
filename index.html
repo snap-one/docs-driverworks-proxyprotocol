@@ -4084,6 +4084,18 @@
                     <a href="#default-username" class="toc-h2 toc-link" data-title="default username">default username</a>
                   </li>
                   <li>
+                    <a href="#dynamic_urls_use_type" class="toc-h2 toc-link" data-title="dynamic_urls_use_type">dynamic_urls_use_type</a>
+                  </li>
+                  <li>
+                    <a href="#has-dynamic-presets" class="toc-h2 toc-link" data-title="has dynamic presets">has dynamic presets</a>
+                  </li>
+                  <li>
+                    <a href="#has_extras" class="toc-h2 toc-link" data-title="has_extras">has_extras</a>
+                  </li>
+                  <li>
+                    <a href="#has-pan" class="toc-h2 toc-link" data-title="has pan">has pan</a>
+                  </li>
+                  <li>
                     <a href="#has-pan" class="toc-h2 toc-link" data-title="has pan">has pan</a>
                   </li>
                   <li>
@@ -4093,10 +4105,19 @@
                     <a href="#has-tilt" class="toc-h2 toc-link" data-title="has tilt">has tilt</a>
                   </li>
                   <li>
+                    <a href="#has-tilt" class="toc-h2 toc-link" data-title="has tilt">has tilt</a>
+                  </li>
+                  <li>
                     <a href="#has-tilt-scan" class="toc-h2 toc-link" data-title="has tilt scan">has tilt scan</a>
                   </li>
                   <li>
                     <a href="#has-zoom" class="toc-h2 toc-link" data-title="has zoom">has zoom</a>
+                  </li>
+                  <li>
+                    <a href="#has-zoom" class="toc-h2 toc-link" data-title="has zoom">has zoom</a>
+                  </li>
+                  <li>
+                    <a href="#has-home" class="toc-h2 toc-link" data-title="has home">has home</a>
                   </li>
                   <li>
                     <a href="#has-home" class="toc-h2 toc-link" data-title="has home">has home</a>
@@ -4109,6 +4130,9 @@
                   </li>
                   <li>
                     <a href="#number-presets" class="toc-h2 toc-link" data-title="number presets">number presets</a>
+                  </li>
+                  <li>
+                    <a href="#requires_dynamic_stream_urls" class="toc-h2 toc-link" data-title="requires_dynamic_stream_urls">requires_dynamic_stream_urls</a>
                   </li>
                   <li>
                     <a href="#show-test-url" class="toc-h2 toc-link" data-title="show test url">show test url</a>
@@ -32930,6 +32954,57 @@ It is strongly recommended to hide rather than remove objects that will be tempo
     <span class="nt">&lt;default_username&gt;</span>username<span class="nt">&lt;/default_username&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h2 id='dynamic_urls_use_type'>dynamic_urls_use_type</h2>
+<p>Support the following use types:</p>
+
+<p>MULTIPLE - Default if the capability is not specified. URLs can be used repeatedly. If URLs change, the driver should send DYNAMIC_URLS_CHANGED notification to the proxy.</p>
+
+<p>SINGLE - URLs can only be used once. Driver must be asked each time for a new set of URLs.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;dynamic_urls_use_type&gt;&lt;/dynamic_urls_use_type&gt;</code></p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;dynamic_urls_use_type&gt;</span>SINGLE<span class="nt">&lt;/dynamic_urls_use_type&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-dynamic-presets'>has dynamic presets</h2>
+<p>Returns true if the cameras support for dynamic presets.
+Defaults to false.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_dynamic_presets&gt;&lt;/has_dynamic_presets&gt;</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED', { has_dynamic_presets = true }, 'NOTIFY')
+</code></pre></div>
+<h2 id='has_extras'>has_extras</h2>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_extras&gt;</span>TRUE<span class="nt">&lt;/has_extras&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-pan'>has pan</h2>
+<p>True/False. Default is False. This is a Dynamic Capability.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_pan&gt;&lt;/has_pan&gt;</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_pan&gt;</span>false<span class="nt">&lt;/has_pan&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h2 id='has-pan'>has pan</h2>
 <p>True/False. Default is False.</p>
 <h3 id='signature'>Signature</h3>
@@ -32948,6 +33023,16 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;has_pan_scan&gt;</span>false<span class="nt">&lt;/has_pan_scan&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-tilt'>has tilt</h2>
+<p>True/False. Default is False. This is a Dynamic Capability.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_tilt&gt;&lt;/has_tilt&gt;</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_tilt&gt;</span>false<span class="nt">&lt;/has_tilt&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-tilt'>has tilt</h2>
@@ -32971,6 +33056,16 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-zoom'>has zoom</h2>
+<p>True/False. Default is False. This is a Dynamic Capability.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_zoom&gt;&lt;/has_zoom&gt;</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_zoom&gt;</span>false<span class="nt">&lt;/has_zoom&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-zoom'>has zoom</h2>
 <p>True/False. Default is False.</p>
 <h3 id='signature'>Signature</h3>
 
@@ -32978,6 +33073,16 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;has_zoom&gt;</span>false<span class="nt">&lt;/has_zoom&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-home'>has home</h2>
+<p>True/False. Default is False. This is a Dynamic Capability.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_home&gt;&lt;/has_home&gt;</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_home&gt;</span>false<span class="nt">&lt;/has_home&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-home'>has home</h2>
@@ -33054,6 +33159,24 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;number_presets&gt;</span>6<span class="nt">&lt;/number_presets&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='requires_dynamic_stream_urls'>requires_dynamic_stream_urls</h2>
+<p>Whether the camera should be asked for stream URLs through the more advanced API call.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;requires_dynamic_stream_urls&gt;&lt;/requires_dynamic_stream_urls&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;requires_dynamic_stream_urls&gt;</span>true<span class="nt">&lt;/requires_dynamic_stream_urls&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='show-test-url'>show test url</h2><h3 id='signature'>Signature</h3>
