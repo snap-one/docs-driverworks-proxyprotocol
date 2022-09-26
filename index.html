@@ -3933,23 +3933,6 @@
               </ul>
           </li>
           <li>
-            <a href="#additional-camera-proxy-information" class="toc-h1 toc-link" data-title="Additional Camera Proxy Information">Additional Camera Proxy Information</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#user-interfaces" class="toc-h2 toc-link" data-title="User Interfaces">User Interfaces</a>
-                  </li>
-                  <li>
-                    <a href="#codec" class="toc-h2 toc-link" data-title="Codec">Codec</a>
-                  </li>
-                  <li>
-                    <a href="#resolution" class="toc-h2 toc-link" data-title="Resolution">Resolution</a>
-                  </li>
-                  <li>
-                    <a href="#frame-rate" class="toc-h2 toc-link" data-title="Frame Rate">Frame Rate</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
             <a href="#camera-capabilities" class="toc-h1 toc-link" data-title="Camera Capabilities">Camera Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
@@ -30560,28 +30543,87 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <h2 id='username'>USERNAME</h2>
 
 <p>The username value. This is displayed on the Camera Driver&#39;s Properties page in Composer Pro.</p>
-<p><h1 id='additional-camera-proxy-information'>Additional Camera Proxy Information</h1><h3 id='user-interfaces'>User Interfaces</h3>
-<p>The Installer may need to adjust camera configuration based on the performance that they’re seeing at the installation. Here are the Control4 user interfaces that display camera streams:</p></p>
+<h3 id='camera-streams'>Camera Streams</h3>
+
+<p>In conjunction with the release of O.S. 3.3.1, the Camera Proxy has been enhanced with regard to what types of streams it provides. This is a result of the release of Control4’s next generation T4 touchscreens, new controllers and support for H.265 streaming. Camera drivers now have the ability to provide more stream options and can support a larger set of mixed hardware environments.</p>
+
+<p>Also, Navigators now support streaming tiles which results in the need to stream many cameras in parallel. To provide this functionality over a remote connection, it is desirable to offer the option to pick a lower bandwidth stream.</p>
+
+<h3 id='default-configured-streams-for-new-cameras'>Default Configured Streams for New Cameras</h3>
+
+<p>For the best experience, cameras should be minimally configured with the following streams by default:</p>
+
+<table><thead>
+<tr>
+<th>Next Gen C4 OSD</th>
+<th>T4 Touch Screens</th>
+<th>Mobile</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>High Resolution H.265</td>
+<td>1080p H.265</td>
+<td>High Resolution H.265</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Legacy C4 OSD</th>
+<th>T3 Touch Screens</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>720p H.264</td>
+<td>720p H.264</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Small Streaming Tiles</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Low Resolution H.265</td>
+</tr>
+</tbody></table>
+
+<h3 id='driver-support-for-multiple-streams'>Driver Support for Multiple Streams</h3>
+
+<p>Beginning with O.S. 3.3.1, new camera drivers should implement the new dynamic streams API to provide a list of streams that the  Navigators can pick from. In order to support dynamic streams the driver should:</p>
+
+<ol>
+<li><p>Set the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#requires_dynamic_stream_urls">requires_dynamic_stream_urls</a> dynamic capability to “true”.</p></li>
+<li><p>Implement the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#get-stream-urls">GET_STREAM_URLS</a> UI request command. <em>See Related APIs below for more information.</em> This can be either implemented synchronously, by returning the list of cameras directly or it can also be implemented asynchronously. For example, if the driver needs to query a web service to get the current streams.</p></li>
+</ol>
+
+<p>If implemented asynchronously, when the stream list is available it will be necessary to send the Proxy the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#stream_urls_ready">STREAM_URLS_READY</a> Notify with the results. </p>
+
+<p>Drivers that do not have static URLs for streams will need to respond to the GET_STREAM_URLS call with an XML object that indicates the URL(s) is/are being generated and include a key with the response.  Once the driver has been able to obtain a URL for the stream, the driver should send a STREAM_URLS_READY Notify with the same key that is provided with this Synchronous call response.  An example of the response is:</p>
+
+<p><code>&lt;streams generating_key=&quot;1234&quot;/&gt;</code></p>
+
+<p>The key should be a unique 32 bit integer value.  We recommend starting at 1 and incrementing by 1 for each request that comes in.</p>
+
+<p>Also, if the driver does have a valid temporary URL that is still valid when it gets the call, no further Notify is needed and the driver should respond to this call with the XML of streams information.</p>
+
+<p>To indicate to a client that the driver supports this API call, a driver needs to set the requires_dynamic_stream_urls capability to true in the driver c4i or via DYNAMIC_CAPABILITIES_CHANGED Notify.</p>
+
+<p>If no Port is provided with a URL, the following ports are used by all clients as the default for the transport:</p>
 
 <ul>
-<li>T4 Touch Screen</li>
-<li>T3 Touch Screen</li>
-<li>iOS application</li>
-<li>Android application</li>
-<li>On Screen Display (OSD)</li>
+<li>http - 80</li>
+<li>https - 443</li>
+<li>rtsp - 554</li>
+<li>rtsps - 443</li>
 </ul>
 
-<h3 id='codec'>Codec</h3>
+<h3 id='support-for-caching-urls'>Support for Caching  URLs</h3>
 
-<p>Control4 only supports h.264 over RTSP.</p>
+<p>The ability to cache the streams list is also supported. This removes the need to have to execute the GET_STREAM_URLS request every time a camera stream is loaded. This is supported with a new capability added in O.s 3.3.1: <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#dynamic_urls_use_type">dynamic_urls_use_type</a>. </p>
 
-<h3 id='resolution'>Resolution</h3>
-
-<p>1280x720 is supported across all devices currently.</p>
-
-<h3 id='frame-rate'>Frame Rate</h3>
-
-<p>Frame rate and iFrame intervals will vary based on location and content. If the content is consistently changing, a low iframe interval is recommended as the iframe is updated more often. On Screen Display doesn’t support a high frame rate. It is important to understand that Frame Rate is dependent on both the Control4 system configuration and what the cameras are monitoring. Because of this, exact guidelines are difficult to provide. However, a base line configuration as shown below may provide a good starting point.</p>
+<p>The driver also needs to send a DYNAMIC_URLS_CHANGED notification to the proxy when the configured URLs have been changed. The proxy would then send a &quot;DYNAMIC_URLS_CHANGED&quot; DataToUI in response to this that the Navigators would key off of to refresh any cached URLs. This is useful for driver&#39;s with MULTIPLE use type URLs.</p>
 <h1 id='camera-capabilities'>Camera Capabilities</h1>
 
 <h2 id='address-readonly'>address readonly</h2>
