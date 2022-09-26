@@ -1,6 +1,6 @@
 ## has tilt
 
-True/False. Default is False.
+True/False. Default is False. This is a Dynamic Capability.
 
 
 ### Signature
