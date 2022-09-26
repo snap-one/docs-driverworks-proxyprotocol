@@ -1,0 +1,2 @@
+
+# Additional Camera Proxy Information
