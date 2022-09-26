@@ -3950,6 +3950,80 @@
               </ul>
           </li>
           <li>
+            <a href="#camera-proxy-extras-interface-library" class="toc-h1 toc-link" data-title="Camera Proxy Extras Interface Library">Camera Proxy Extras Interface Library</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#extras-class" class="toc-h2 toc-link" data-title="Extras Class">Extras Class</a>
+                  </li>
+                  <li>
+                    <a href="#extras-button" class="toc-h2 toc-link" data-title="Extras Button">Extras Button</a>
+                  </li>
+                  <li>
+                    <a href="#extras-checkbox" class="toc-h2 toc-link" data-title="Extras Checkbox">Extras Checkbox</a>
+                  </li>
+                  <li>
+                    <a href="#extras-icon" class="toc-h2 toc-link" data-title="Extras Icon">Extras Icon</a>
+                  </li>
+                  <li>
+                    <a href="#extras-list" class="toc-h2 toc-link" data-title="Extras List">Extras List</a>
+                  </li>
+                  <li>
+                    <a href="#extras-number" class="toc-h2 toc-link" data-title="Extras Number">Extras Number</a>
+                  </li>
+                  <li>
+                    <a href="#extras-object" class="toc-h2 toc-link" data-title="Extras Object">Extras Object</a>
+                  </li>
+                  <li>
+                    <a href="#extrasslider-extrasobject" class="toc-h2 toc-link" data-title="ExtrasSlider : ExtrasObject">ExtrasSlider : ExtrasObject</a>
+                  </li>
+                  <li>
+                    <a href="#extrasslider-construct" class="toc-h2 toc-link" data-title="ExtrasSlider:construct">ExtrasSlider:construct</a>
+                  </li>
+                  <li>
+                    <a href="#extrasslider-makesetupxml" class="toc-h2 toc-link" data-title="ExtrasSlider:makeSetupXml">ExtrasSlider:makeSetupXml</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-2" class="toc-h2 toc-link" data-title="ExtrasObject">ExtrasObject</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-construct-2" class="toc-h2 toc-link" data-title="ExtrasObject:construct">ExtrasObject:construct</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-addextraparam-2" class="toc-h2 toc-link" data-title="ExtrasObject:addExtraparam">ExtrasObject:addExtraparam</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-removeextraparam-2" class="toc-h2 toc-link" data-title="ExtrasObject:removeExtraparam">ExtrasObject:removeExtraparam</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-getstatexml-2" class="toc-h2 toc-link" data-title="ExtrasObject:getStateXml">ExtrasObject:getStateXml</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-getextraparamsxml-2" class="toc-h2 toc-link" data-title="ExtrasObject:getExtraparamsXml">ExtrasObject:getExtraparamsXml</a>
+                  </li>
+                  <li>
+                    <a href="#extrasobject-update-2" class="toc-h2 toc-link" data-title="ExtrasObject:update">ExtrasObject:update</a>
+                  </li>
+                  <li>
+                    <a href="#function-parameters-9" class="toc-h2 toc-link" data-title="Function Parameters:">Function Parameters:</a>
+                  </li>
+                  <li>
+                    <a href="#extras-slider" class="toc-h2 toc-link" data-title="Extras Slider">Extras Slider</a>
+                  </li>
+                  <li>
+                    <a href="#extras-switch" class="toc-h2 toc-link" data-title="Extras Switch">Extras Switch</a>
+                  </li>
+                  <li>
+                    <a href="#extras-text" class="toc-h2 toc-link" data-title="Extras Text">Extras Text</a>
+                  </li>
+                  <li>
+                    <a href="#extras-text-field" class="toc-h2 toc-link" data-title="Extras Text Field">Extras Text Field</a>
+                  </li>
+                  <li>
+                    <a href="#extras-library-use-case-examples" class="toc-h2 toc-link" data-title="Extras Library Use Case Examples">Extras Library Use Case Examples</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#camera-capabilities" class="toc-h1 toc-link" data-title="Camera Capabilities">Camera Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
@@ -30643,6 +30717,1795 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <p>The ability to cache the streams list is also supported. This removes the need to have to execute the GET_STREAM_URLS request every time a camera stream is loaded. This is supported with a new capability added in O.s 3.3.1: <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#dynamic_urls_use_type">dynamic_urls_use_type</a>. </p>
 
 <p>The driver also needs to send a DYNAMIC_URLS_CHANGED notification to the proxy when the configured URLs have been changed. The proxy would then send a &quot;DYNAMIC_URLS_CHANGED&quot; DataToUI in response to this that the Navigators would key off of to refresh any cached URLs. This is useful for driver&#39;s with MULTIPLE use type URLs.</p>
+<h1 id='camera-proxy-extras-interface-library'>Camera Proxy Extras Interface Library</h1>
+
+<p>Extras are configured from the Setting option from the main menu in ComposerPro. The settings option only shows if the has_extras capability is set to true.</p>
+
+<h2 id='extras-class'>Extras Class</h2><h3 id='overview'>Overview</h3>
+<p>This class provides an interface between instances of the ExtrasObjectBasedClass. This class can cover following use cases:</p>
+
+<ul>
+<li>Add/Remove/Change Extras Section of an Extras Object</li>
+<li>Add/Remove Extras Object</li>
+<li>Get instance of an existing Extras Object</li>
+<li>Make Extras State/Setup XML strings based on objects provided</li>
+<li>Update Extras Object state</li>
+</ul>
+<h3 id='objectparameters'>ObjectParameters</h3>
+<p>Structure that contains all fields needed to initialize ExtrasObject instance</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+</tr>
+<tr>
+<td>command</td>
+<td>string</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>extraparams</td>
+<td>table&lt;string,string&gt;</td>
+</tr>
+</tbody></table>
+<h3 id='extras-addobjects'>Extras:addObjects</h3>
+<p>Adds extras object to the container in the section named <em>sectionLabel</em></p>
+
+<p>New object will be added at the end of the section and will be displayed  as the last section element in the CI. In case of object array, Object order in the CI will be in the same order objects were sorted in the input array.</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>Extras:addObjects(objects, sectionLabel)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objects</td>
+<td>ExtrasObjectBasedClass\</td>
+<td>ExtrasObjectBasedClass: List or individual extras object</td>
+</tr>
+<tr>
+<td>sectionLabel</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>cnt</td>
+<td>number</td>
+<td>Number of objects added</td>
+</tr>
+</tbody></table>
+<h3 id='extras-getobject'>Extras:getObject</h3>
+<p>Returns extras object with <em>id</em> no matter the section</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>Extras:getObject(id)</code></p>
+<h4 id='function-parameters-2'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>ID of the extras object</td>
+</tr>
+</tbody></table>
+<h4 id='returns-2'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>object</td>
+<td>ExtrasObjectBasedClass</td>
+<td>nil</td>
+</tr>
+</tbody></table>
+<h3 id='extras-updateobject'>Extras:updateObject</h3>
+<p>Updates <em>value</em> and <em>hide</em> parameter for the object with <em>objId</em> and sends notification to proxy bound to <em>proxyId</em></p>
+
+<p>If <em>value</em> or <em>hide</em> is not provided, field value will not change. This methods updates fields and sends Proxy Notification that state has been changed.</p>
+<h4 id='function-signature-3'>Function Signature:</h4>
+<p><code>Extras:updateObject(proxyId, objId, newValue, hide)</code></p>
+<h4 id='function-parameters-3'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objId</td>
+<td>string</td>
+<td>ID of the extras object</td>
+</tr>
+<tr>
+<td>newValue</td>
+<td>string</td>
+<td>Value to be updated</td>
+</tr>
+<tr>
+<td>hide</td>
+<td>string_bool</td>
+<td>True or false string</td>
+</tr>
+</tbody></table>
+<h3 id='extras-removeobject'>Extras:removeObject</h3>
+<p>Removes extras object with <em>id</em> no matter the section.</p>
+<h4 id='function-signature-4'>Function Signature:</h4>
+<p><code>Extras:removeObject(id)</code></p>
+<h4 id='function-parameters-4'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>ID of the extras object</td>
+</tr>
+</tbody></table>
+<h4 id='returns-3'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ret</td>
+<td>boolean</td>
+<td>Returns true if removal was successful</td>
+</tr>
+</tbody></table>
+<h3 id='extras-makesetupxml'>Extras:makeSetupXml</h3>
+<p>This method makes complete XML string to be send as response to GET_EXTRAS_SETUP proxy command.</p>
+<h4 id='function-signature-5'>Function Signature:</h4>
+<p><code>Extras:makeSetupXml()</code></p>
+<h4 id='returns-4'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extras-makestatexml'>Extras:makeStateXml</h3>
+<p>This method makes complete XML string to be send as response to GET_EXTRAS_STATE proxy command or to be sent after extras object update.</p>
+<h4 id='function-signature-6'>Function Signature:</h4>
+<p><code>Extras:makeStateXml()</code></p>
+<h4 id='returns-5'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h3 id='extras-sendsetup'>Extras:sendSetup</h3>
+<p>Builds xml and sends proxy notification EXTRAS_SETUP_CHANGED</p>
+<h4 id='function-signature-7'>Function Signature:</h4>
+<p><code>Extras:sendSetup(proxyId)</code></p>
+<h3 id='extras-sendstate'>Extras:sendState</h3>
+<p>Builds xml and sends proxy notification EXTRAS_STATE_CHANGED</p>
+<h4 id='function-signature-8'>Function Signature:</h4>
+<p><code>Extras:sendState(proxyId)</code></p>
+<h3 id='section'>Section</h3>
+<p>Structure that represent a section. Holds section name and ExtrasObject based classes array.</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>label</td>
+<td>string</td>
+</tr>
+<tr>
+<td>objects</td>
+<td>ExtrasObjectBasedClass]</td>
+</tr>
+</tbody></table>
+<h3 id='extrasobjectbasedclass'>ExtrasObjectBasedClass</h3>
+<p>This alias is for all classes that inherits the ExtrasObject class.</p>
+<h5 id='type'>Type</h5>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ExtrasObjectBasedClass</td>
+<td>ExtrasButton, ExtrasCheckbox</td>
+</tr>
+</tbody></table>
+<h3 id='string_bool'>string_bool</h3>
+<p>Alias for values can be provided as hide argument</p>
+<h5 id='type-2'>Type</h5>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>string_bool</td>
+<td>&quot;true&quot; &quot;false&quot;</td>
+</tr>
+</tbody></table>
+<h3 id='extras'>Extras</h3>
+<p>Container class for the ExtrasObject based instances (Button, Checkbox ...) This class is used to hold ExtrasObject based instances and to handle XML assembling and sending. This class handles sections as well as = inheritsFrom(nil)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>sections</td>
+<td>Section</td>
+</tr>
+<tr>
+<td>proxyId</td>
+<td>number</td>
+</tr>
+<tr>
+<td>has_extras</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h4 id='function-parameters-5'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>proxyId</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h3 id='extras-addsection'>Extras:addSection</h3>
+<p>Adds section to the instance</p>
+
+<p>A <em>Section</em> table will be initialized and added in the <em>self.sections</em> field. The <em>object</em> field of the table type <em>Section</em> will bi initialized as empty table. Section order in the CI will be in the same order section were added in the container class instance.</p>
+<h4 id='function-signature-9'>Function Signature:</h4>
+<p><code>Extras:addSection(label)</code></p>
+<h4 id='function-parameters-6'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>Name of the section that will be displayed in the CI</td>
+</tr>
+</tbody></table>
+<h4 id='returns-6'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ret</td>
+<td>boolean</td>
+<td>Returns true if insertion was successful</td>
+</tr>
+</tbody></table>
+<h3 id='extras-removesection'>Extras:removeSection</h3>
+<p>Removes the section with the label <em>sectionLabel</em> from the list</p>
+
+<p>This method will remove the section with label <em>sectionLabel</em> and all objects in the section. Section indexes will be changed to fill
+the  empty space but the order will not change.</p>
+<h4 id='function-signature-10'>Function Signature:</h4>
+<p><code>Extras:removeSection(sectionLabel)</code></p>
+<h4 id='function-parameters-7'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>sectionLabel</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id='returns-7'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ret</td>
+<td>boolean</td>
+<td>Returns true if the operation was successful</td>
+</tr>
+</tbody></table>
+<h3 id='extras-getsection'>Extras:getSection</h3>
+<p>Returns section table with the label <em>sectionLabel</em></p>
+<h4 id='function-signature-11'>Function Signature:</h4>
+<p><code>Extras:getSection(sectionLabel)</code></p>
+<h4 id='function-parameters-8'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>sectionLabel</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id='returns-8'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>section</td>
+<td>Section: nil</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extras-changesection'>Extras:changeSection</h3>
+<p>Moves extras object with <em>id</em> in section named <em>newSection</em></p>
+<h4 id='function-signature-12'>Function Signature:</h4>
+<p><code>Extras:changeSection(id, newSection)</code></p>
+<h4 id='function-parameters-9'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>ID of the extras object</td>
+</tr>
+<tr>
+<td>newSection</td>
+<td>string</td>
+<td>Name of the new section to put the object</td>
+</tr>
+</tbody></table>
+<h3 id='extras-cleancapability'>Extras:cleanCapability</h3>
+<p>This method cleans the has_extras capability.</p>
+<h4 id='function-signature-13'>Function Signature:</h4>
+<p><code>Extras:cleanCapability()</code></p>
+<h3 id='extras-setcapability'>Extras:setCapability</h3>
+<p>This method sets the has_extras capability.</p>
+<h4 id='function-signature-14'>Function Signature:</h4>
+<p><code>Extras:setCapability()</code></p>
+
+<h2 id='extras-button'>Extras Button</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Button object. The class interface provides following cations:</p>
+
+<ul>
+<li>Initialization of an Extras Button object</li>
+<li>Setting Extras Button object parameters (label, button text, etc)</li>
+</ul>
+<h3 id='extrasbutton-extrasobject'>ExtrasButton : ExtrasObject</h3>
+<p>Class that represent extras button functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasButton = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+</tr>
+<tr>
+<td></td>
+<td>text</td>
+</tr>
+</tbody></table>
+<h3 id='extrasbutton-construct'>ExtrasButton:construct</h3>
+<p>ExtrasButton constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasButton:construct(objParams, text)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+<td>Button text that will be displayed on the button in the CI</td>
+</tr>
+</tbody></table>
+<h3 id='extrasbutton-makesetupxml'>ExtrasButton:makeSetupXml</h3>
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasButton:makeSetupXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h3 id='extrasbutton-getstatexml'>ExtrasButton:getStateXml</h3>
+<p>Returns XML string that represents extras object state</p>
+
+<p>This method overrides the method from the base class. This string should be incorporated in response to GET_EXTRAS_STATE
+ command. <em>id</em> and <em>value</em> fields will be escaped and integrated in the string.</p>
+
+<p>The string will be return in the following command:
+ <code>- \&lt;object id= &quot;\[self.id]&quot; value=&quot;\[self.value]&quot; /\&gt;</code></p>
+<h4 id='function-signature-3'>Function Signature:</h4>
+<p><code>ExtrasButton:getStateXml()</code></p>
+<h4 id='returns-2'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<h2 id='extras-checkbox'>Extras Checkbox</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Checkbox object. The class interface provides following cations:</p>
+
+<ul>
+<li>Initialization of an Extras Checkbox object</li>
+<li>Setting Extras Checkbox object parameters and value</li>
+</ul>
+<h3 id='extrascheckbox-extrasobject'>ExtrasCheckbox : ExtrasObject</h3>
+<p>Class that represent extras checkbox functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasCheckbox = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Methafield</td>
+</tr>
+</tbody></table>
+<h3 id='extrascheckbox-construct'>ExtrasCheckbox:construct</h3>
+<p>ExtrasCheckbox constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasCheckbox:construct(objParams, value)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Checkbox value (true, false) that will be displayed on the button in the CI</td>
+</tr>
+</tbody></table>
+<h3 id='extrascheckbox-makesetupxml'>ExtrasCheckbox:makeSetupXml</h3>
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasCheckbox:makeSetupXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extras-icon'>Extras Icon</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Icon object. The class interface provides following cations:</p>
+
+<ul>
+<li>Initialization of an Extras Icon object</li>
+<li>Setting Extras Icon object parameters and value</li>
+</ul>
+<h3 id='extrasicon-extrasobject'>ExtrasIcon : ExtrasObject</h3>
+<p>Class that represent extras icon functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasIcon = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Methafield</td>
+</tr>
+</tbody></table>
+<h3 id='extrasicon-construct'>ExtrasIcon:construct</h3>
+<p>ExtrasIcon constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasIcon:construct(objParams, value)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters: For initialization of the base class</td>
+<td></td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Link or path to the image that will be displayed in the CI</td>
+</tr>
+</tbody></table>
+<h3 id='extrasicon-makesetupxml'>ExtrasIcon:makeSetupXml</h3>
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasIcon:makeSetupXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extras-list'>Extras List</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras List object. The class interface provides following cations:</p>
+
+<ul>
+<li>Initialization of an Extras List object</li>
+<li>Setting Extras Checkbox object parameters and list parameters</li>
+<li>Setting the currently selected item</li>
+</ul>
+<h3 id='extraslistparameters'>ExtrasListParameters</h3>
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>string</td>
+</tr>
+<tr>
+<td>maxSelections</td>
+<td>Maximal</td>
+</tr>
+<tr>
+<td>minSelections</td>
+<td>Minimal</td>
+</tr>
+<tr>
+<td>list</td>
+<td>table&lt;string,string&gt;</td>
+</tr>
+</tbody></table>
+<h3 id='extraslist-extrasobject'>ExtrasList : ExtrasObject</h3>
+<p>Class that represent extras list functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasList = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>__name</td>
+<td>Methafield</td>
+</tr>
+<tr>
+<td>maxSelections</td>
+<td>number</td>
+</tr>
+<tr>
+<td>minSelections</td>
+<td>number</td>
+</tr>
+<tr>
+<td>list</td>
+<td>table &lt;string,string&gt;</td>
+</tr>
+</tbody></table>
+<h3 id='extraslist-construct'>ExtrasList:construct</h3>
+<p>ExtrasList constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasList:construct(objParams, listParams)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters: For initialization of the base class</td>
+</tr>
+<tr>
+<td>ExtrasListParameters</td>
+<td>Parameters for initialization of the list</td>
+</tr>
+</tbody></table>
+<h3 id='extraslist-makelistxml'>ExtrasList:makeListXml</h3>
+<p>Returns the xml string needed to for response to the GET_EXTRAS_SETUP proxy message.</p>
+
+<p>Returns complete list tag. This tag should be a child tag of the object tag.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasList:makeListXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mxl</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h3 id='extraslist-makesetupxml'>ExtrasList:makeSetupXml</h3>
+<p>Returns XML string that represents the list setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
+<h4 id='function-signature-3'>Function Signature:</h4>
+<p><code>ExtrasList:makeSetupXml()</code></p>
+<h4 id='returns-2'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<h2 id='extras-number'>Extras Number</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Number object. The class interface provides following cations:</p>
+
+<ul>
+<li>Initialization of an Extras Number object</li>
+<li>Setting Extras Number object parameters, number parameters</li>
+</ul>
+<h3 id='extrasnumber-extrasobject'>ExtrasNumber : ExtrasObject</h3>
+<p>Class that represent extras number functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasNumber = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Methafield</td>
+</tr>
+<tr>
+<td>min</td>
+<td>number</td>
+</tr>
+<tr>
+<td>max</td>
+<td>number</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h3 id='extrasnumber-construct'>ExtrasNumber:construct</h3>
+<p>ExtrasNumber constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasNumber:construct(objParams, numberParams)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>numberParams</td>
+<td>table&lt;string,number\</td>
+<td>string&gt;</td>
+</tr>
+</tbody></table>
+<h3 id='extrasnumber-makesetupxml'>ExtrasNumber:makeSetupXml</h3>
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasNumber:makeSetupXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extras-object'>Extras Object</h2><h3 id='extrasobject'>ExtrasObject</h3>
+<p>Base class for classes that represent extras objects (button, checkbox ...) Should not create independent instance from this class This class only purpose is to be base class for extras object classesrasObject = inheritsFrom(nil)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+</tr>
+<tr>
+<td>command</td>
+<td>string</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>extraparams</td>
+<td>table&lt;string,string&gt;</td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-construct'>ExtrasObject:construct</h3>
+<p>ExtrasObject constructor</p>
+<h4 id='function-signature'>Function Signature:</h4>
+<p><code>ExtrasObject:construct(objParams)</code></p>
+<h4 id='function-parameters'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters: Table of parameters needed to assemble XML</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-addextraparam'>ExtrasObject:addExtraparam</h3>
+<p>Adding extra parameter to the Object instance</p>
+
+<p>If extra parameter is added, tParams argument of the Proxy command will contain value of the extras object with <em>id</em>.</p>
+<h4 id='function-signature-2'>Function Signature:</h4>
+<p><code>ExtrasObject:addExtraparam(id, name)</code></p>
+<h4 id='function-parameters-2'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>ID of the extras object that will be connected</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>of the extras object that will be connected</td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-removeextraparam'>ExtrasObject:removeExtraparam</h3>
+<p>Removing extra parameter from the list</p>
+
+<p>This method will remove extra parameter with <em>id</em> and value of that extras object will not be received in proxy command.</p>
+<h4 id='function-signature-3'>Function Signature:</h4>
+<p><code>ExtrasObject:removeExtraparam(id)</code></p>
+<h4 id='function-parameters-3'>Function Parameters:</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-getstatexml'>ExtrasObject:getStateXml</h3>
+<p>Returns XML string that represents extras object state</p>
+
+<p>This string should be incorporated in response to GET_EXTRAS_STATE command. <em>id</em> and <em>value</em> fields will be escaped and integrated in the string. The string will be return in the following command:
+`<code>- \&lt;object id= &quot;\[self.id]&quot; value=&quot;\</code>self.value&quot; /&gt;
+``</p>
+<h4 id='function-signature-4'>Function Signature:</h4>
+<p><code>ExtrasObject:getStateXml()</code></p>
+<h4 id='returns'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-getextraparamsxml'>ExtrasObject:getExtraparamsXml</h3>
+<p>Returns XML string that represents list of extraparameters</p>
+
+<p>This string should be incorporated in response to GET_EXTRAS_SETUP Key and value of the <em>extraparams</em> field will be escaped end integrated in the message.</p>
+<h4 id='function-signature-5'>Function Signature:</h4>
+<p><code>ExtrasObject:getExtraparamsXml()</code></p>
+<h4 id='returns-2'>Returns:</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='extrasobject-update'>ExtrasObject:update</h3>
+<p>Update extras object individually.</p>
+
+<p>This method should be called when the user wants to udate an object individually. The method from the Extras class will update all objects, this method will update just this on object. Also, this method is inherited by all ExtrasObjectBasedClass instances.</p>
+<h4 id='function-signature-6'>Function Signature:</h4>
+<p>ExtrasObject:update(value, hidden)</p>
+<h3 id='function-parameters-4'>Function Parameters:</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>New value for the extras object</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>string</td>
+<td>Hide the object or not</td>
+</tr>
+</tbody></table>
+<h2 id='extrasslider-extrasobject'>ExtrasSlider : ExtrasObject</h2>
+
+<p>Class that represent extras slider functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasSlider = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>__name</td>
+<td>Methafield</td>
+</tr>
+<tr>
+<td>min</td>
+<td>number\</td>
+</tr>
+<tr>
+<td>max</td>
+<td>number\</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>number\</td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasslider-construct'>ExtrasSlider:construct</h2>
+
+<p>ExtrasSlider constructor</p>
+
+<h3 id='function-signature-7'>Function Signature:</h3>
+
+<p><code>ExtrasSlider:construct(objParams, sliderParams)</code></p>
+
+<h3 id='function-parameters-5'>Function Parameters:</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters: For initialization of the base class</td>
+<td></td>
+</tr>
+<tr>
+<td>sliderParams</td>
+<td>table&lt;string,number\</td>
+<td>string&gt;</td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasslider-makesetupxml'>ExtrasSlider:makeSetupXml</h2>
+
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+
+<h3 id='function-signature-8'>Function Signature:</h3>
+
+<p><code>ExtrasSlider:makeSetupXml()</code></p>
+
+<h3 id='returns-3'>Returns:</h3>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-2'>ExtrasObject</h2>
+
+<p>Base class for classes that represent extras objects (button, checkbox ...) Should not create independent instance from this class This class only purpose is to be base class for extras object classesrasObject = inheritsFrom(nil)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+</tr>
+<tr>
+<td>command</td>
+<td>string</td>
+</tr>
+<tr>
+<td>label</td>
+<td>string</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>string_bool</td>
+</tr>
+<tr>
+<td>extraparams</td>
+<td>table&lt;string,string&gt;</td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-construct-2'>ExtrasObject:construct</h2>
+
+<p>ExtrasObject constructor</p>
+
+<h3 id='function-signature-9'>Function Signature:</h3>
+
+<p><code>ExtrasObject:construct(objParams)</code></p>
+
+<h3 id='function-parameters-6'>Function Parameters:</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters: Table of parameters needed to assemble XML</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-addextraparam-2'>ExtrasObject:addExtraparam</h2>
+
+<p>Adding extra parameter to the Object instance</p>
+
+<p>If extra parameter is added, tParams argument of the Proxy command will contain value of the extras object with <em>id</em>.</p>
+
+<h3 id='function-signature-10'>Function Signature:</h3>
+
+<p><code>ExtrasObject:addExtraparam(id, name)</code></p>
+
+<h3 id='function-parameters-7'>Function Parameters:</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>ID of the extras object that will be connected</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>of the extras object that will be connected</td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-removeextraparam-2'>ExtrasObject:removeExtraparam</h2>
+
+<p>Removing extra parameter from the list</p>
+
+<p>This method will remove extra parameter with <em>id</em> and value of that extras object will not be received in proxy command.</p>
+
+<h3 id='function-signature-11'>Function Signature:</h3>
+
+<p><code>ExtrasObject:removeExtraparam(id)</code></p>
+
+<h3 id='function-parameters-8'>Function Parameters:</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-getstatexml-2'>ExtrasObject:getStateXml</h2>
+
+<p>Returns XML string that represents extras object state</p>
+
+<p>This string should be incorporated in response to GET_EXTRAS_STATE command. <em>id</em> and <em>value</em> fields will be escaped and integrated in the string.The string will be return in the following command:
+<code>- \&lt;object id= &quot;\[self.id]&quot; value=&quot;\[self.value]&quot; /\&gt;</code></p>
+
+<h3 id='function-signature-12'>Function Signature:</h3>
+
+<p><code>ExtrasObject:getStateXml()</code></p>
+
+<h3 id='returns-4'>Returns:</h3>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-getextraparamsxml-2'>ExtrasObject:getExtraparamsXml</h2>
+
+<p>Returns XML string that represents list of extraparameters</p>
+
+<p>This string should be incorporated in response to GET_EXTRAS_SETUP Key and value of the <em>extraparams</em> field will be escaped end integrated in the message.</p>
+
+<h3 id='function-signature-13'>Function Signature:</h3>
+
+<p><code>ExtrasObject:getExtraparamsXml()</code></p>
+
+<h3 id='returns-5'>Returns:</h3>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h2 id='extrasobject-update-2'>ExtrasObject:update</h2>
+
+<p>Update extras object individually.</p>
+
+<p>This method should be called when the user wants to update an object individually. The method from the Extras class will update all objects, this method will update just this on object. Also, this method is inherited by all ExtrasObjectBasedClass instances.</p>
+
+<h3 id='function-signature-14'>Function Signature:</h3>
+
+<p>ExtrasObject:update(value, hidden)</p>
+
+<h2 id='function-parameters-9'>Function Parameters:</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>New value for the extras object</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>string</td>
+<td>Hide the object or not</td>
+</tr>
+</tbody></table>
+
+<p><h2 id='extras-slider'>Extras Slider</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Slider object. The class interface provides following cations:</p></p>
+
+<ul>
+<li>Initialization of an Extras Slider object</li>
+<li>Setting Extras Slider object parameters and slider parameters</li>
+</ul>
+
+<h3 id='extrasslider-extrasobject'>ExtrasSlider : ExtrasObject</h3>
+
+<p>Class that represent extras slider functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasSlider = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Methafield</td>
+</tr>
+<tr>
+<td>min</td>
+<td>number</td>
+</tr>
+<tr>
+<td>max</td>
+<td>number</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>number</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrasslider-construct'>ExtrasSlider:construct</h3>
+
+<p>ExtrasSlider constructor</p>
+
+<h4 id='function-signature'>Function Signature:</h4>
+
+<p><code>ExtrasSlider:construct(objParams, sliderParams)</code></p>
+
+<h4 id='function-parameters'>Function Parameters:</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>sliderParams</td>
+<td>table&lt;string,number\</td>
+<td>string&gt;</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrasslider-makesetupxml'>ExtrasSlider:makeSetupXml</h3>
+
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+
+<h4 id='function-signature-2'>Function Signature:</h4>
+
+<p><code>ExtrasSlider:makeSetupXml()</code></p>
+
+<h4 id='returns'>Returns:</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><h2 id='extras-switch'>Extras Switch</h2><h3 id='overview'>Overview</h3>
+<p>This class represents apstraction of the Extras Switch object. The class interface provides following cations:</p></p>
+
+<ul>
+<li>Initialization of an Extras Switch object</li>
+<li>Setting Extras Switch object parameters and value</li>
+</ul>
+
+<h3 id='extrasswitch-extrasobject'>ExtrasSwitch : ExtrasObject</h3>
+
+<p>Class that represent extras switch functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasSwitch = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>__name</td>
+<td>Methafield</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrasswitch-construct'>ExtrasSwitch:construct</h3>
+
+<p>ExtrasSwitch constructor</p>
+
+<h4 id='function-signature'>Function Signature:</h4>
+
+<p><code>ExtrasSwitch:construct(objParams, value)</code></p>
+
+<h4 id='function-parameters'>Function Parameters:</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Switch value (true, false) that will be displayed on the button in the CI</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrasswitch-makesetupxml'>ExtrasSwitch:makeSetupXml</h3>
+
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
+
+<h4 id='function-signature-2'>Function Signature:</h4>
+
+<p><code>ExtrasSwitch:makeSetupXml()</code></p>
+
+<h4 id='returns'>Returns:</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><h2 id='extras-text'>Extras Text</h2><h3 id='overview'>Overview</h3>
+<p>This class represents an abstraction of the Extras Text object. The class interface provides following cations:</p></p>
+
+<ul>
+<li>Initialization of an Extras Text object</li>
+<li>Setting Extras Text object parameters and value</li>
+</ul>
+
+<h3 id='extrastext-extrasobject'>ExtrasText : ExtrasObject</h3>
+
+<p>Class that represent extras text functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasText = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Methafield</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrastext-construct'>ExtrasText:construct</h3>
+
+<p>ExtrasText constructor</p>
+
+<h4 id='function-signature'>Function Signature:</h4>
+
+<p><code>ExtrasText:construct(objParams, value)</code></p>
+
+<h4 id='function-parameters'>Function Parameters:</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Text value that will be displayed on the element in the CI</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrastext-makesetupxml'>ExtrasText:makeSetupXml</h3>
+
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
+
+<h4 id='function-signature-2'>Function Signature:</h4>
+
+<p><code>ExtrasText:makeSetupXml()</code></p>
+
+<h4 id='returns'>Returns:</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><h2 id='extras-text-field'>Extras Text Field</h2><h3 id='overview'>Overview</h3>
+<p>This class represents apstraction of the Extras Text Field object. The class interface provides following cations:</p></p>
+
+<ul>
+<li>Initialization of an Extras Text Field object</li>
+<li>Setting Extras Text Field object parameters, text field mode and value</li>
+</ul>
+
+<h3 id='textfieldmode'>TextFieldMode</h3><h5 id='type'>Type</h5>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TextFieldMode</td>
+<td>&quot;normal&quot;\</td>
+</tr>
+</tbody></table>
+<h3 id='extrastextfield-extrasobject'>ExtrasTextField : ExtrasObject</h3>
+
+<p>Class that represent extras checkbox functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasTextField = inheritsFrom(ExtrasObject)</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
+<th>Field Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>__name</td>
+<td>Methafield</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>TextFieldMode</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrastextfield-construct'>ExtrasTextField:construct</h3>
+
+<p>ExtrasTextField constructor</p>
+
+<h4 id='function-signature'>Function Signature:</h4>
+
+<p><code>ExtrasTextField:construct(objParams, value, mode)</code></p>
+
+<h4 id='function-parameters'>Function Parameters:</h4>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objParams</td>
+<td>ObjectParameters</td>
+<td>For initialization of the base class</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>TextField value that will be displayed on the field in the CI</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>TextFieldMode</td>
+<td>Text field mode: password, numberic ...</td>
+</tr>
+</tbody></table>
+
+<h3 id='extrastextfield-makesetupxml'>ExtrasTextField:makeSetupXml</h3>
+
+<p>Returns XML string that represents the button setup with all extraparameters</p>
+
+<p>Makes XML that should be integrated in the response to
+ GET_EXTRAS_SETUP Proxy message.</p>
+
+<h4 id='function-signature-2'>Function Signature:</h4>
+
+<p><code>ExtrasTextField:makeSetupXml()</code></p>
+
+<h4 id='returns'>Returns:</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><h2 id='extras-library-use-case-examples'>Extras Library Use Case Examples</h2><h3 id='importing-the-library'>Importing the library</h3>
+<p>To use this library, please move all <code>*.lua</code> files to the source directory of your driver, then import <code>Extras.lua</code> file in your <code>driver.lua</code> file. The <code>Extras.lua</code> file includes all other library files needed.</p></p>
+
+<p>This library depends on a driver template. Please, make sure that the driver template files are included in the path.
+<strong>NOTE</strong> Make sure paths are setup correctly</p>
+
+<p><h3 id='how-to-use-the-library'>How to use the library</h3><h4 id='set-up'>Set Up</h4>
+<p>The code to the right is an example how to setup the extras library:</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="nb">require</span> <span class="s2">&quot;Extas&quot;</span></p>
+
+<p><span class="k">function</span> <span class="nc">ON_DRIVER_INIT</span><span class="p">.</span><span class="nf">SetupExtras</span><span class="p">()</span>
+    <span class="n">extras</span> <span class="o">=</span> <span class="n">Extras</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="n">DEFAULT_PROXY_BINDINGID</span><span class="p">)</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">addSection</span><span class="p">(</span><span class="s2">&quot;ButtonLabel&quot;</span><span class="p">)</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">addSection</span><span class="p">(</span><span class="s2">&quot;CheckboxLabel&quot;</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">bt1Table</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Button1ID&quot;</span><span class="p">,</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Button 1 Label&quot;</span><span class="p">,</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Button1Command&quot;</span><span class="p">,</span>
+        <span class="n">extraparams</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">Checkbox4ID</span> <span class="o">=</span> <span class="s2">&quot;Extr1&quot;</span><span class="p">,</span>
+            <span class="n">Checkbox3ID</span> <span class="o">=</span> <span class="s2">&quot;Extr2&quot;</span><span class="p">,</span>
+            <span class="n">Button2ID</span> <span class="o">=</span> <span class="s2">&quot;Extr3&quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">addObjects</span><span class="p">({</span><span class="n">ExtrasButton</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="n">bt1Table</span><span class="p">,</span> <span class="s2">&quot;ButtonText1&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasButton</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Button3ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Button 3 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Button1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;ButtonText3&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasButton</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Button2ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Button 2 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Button1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;ButtonText2&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasButton</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Button4ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Button 4 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Button1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;ButtonText4&quot;</span><span class="p">)},</span>
+           <span class="s2">&quot;ButtonLabel&quot;</span><span class="p">)</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">addObjects</span><span class="p">({</span><span class="n">ExtrasCheckbox</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Checkbox1ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Checkbox 1 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Checkbox1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;true&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasCheckbox</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Checkbox2ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Checkbox 2 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Checkbox1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;true&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasCheckbox</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Checkbox3ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Checkbox 3 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Checkbox1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;true&quot;</span><span class="p">),</span>
+           <span class="n">ExtrasCheckbox</span><span class="p">:</span><span class="n">new</span><span class="p">({</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;Checkbox4ID&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Checkbox 4 Label&quot;</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;Checkbox1Command&quot;</span><span class="p">},</span> <span class="s2">&quot;true&quot;</span><span class="p">)},</span>
+           <span class="s2">&quot;CheckboxLabel&quot;</span><span class="p">)</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">sendSetup</span><span class="p">(</span><span class="n">DEFAULT_PROXY_BINDINGID</span><span class="p">)</span>
+<span class="k">end</span></p>
+
+<p></code></pre></div>
+<ul>
+<li>Section order in the CI will be in the same order section were added in the container class instance.</li>
+<li>Object order in the CI will be in the same order objects were added in the section.</li>
+<li>Remember that object could be added as separated elements or as an array of objects.</li>
+<li>This setup can be called in <code>DriverLateInit()</code>. Setting extras in the <code>DriverInit()</code> callback is possible but not recommended.</li>
+</ul>
+<h4 id='handling-proxy-commands'>Handling Proxy Commands</h4>
+<p>The next code example shows how to write handlers for proxy commands received when extras change:</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Proxy Command Handlers</span></p>
+
+<p><span class="n">PRX_CMD</span><span class="p">.</span><span class="n">Button1Command</span><span class="p">(</span><span class="n">proxyId</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+    <span class="n">C4</span><span class="p">:</span><span class="n">SetVariable</span><span class="p">(</span><span class="s2">&quot;Extras_Button1&quot;</span><span class="p">,</span> <span class="nb">os.date</span><span class="p">())</span>
+    <span class="n">LogDebug</span><span class="p">(</span><span class="nb">os.date</span><span class="p">()</span> <span class="o">..</span> <span class="s2">&quot; &quot;</span> <span class="o">..</span> <span class="n">extras</span><span class="p">:</span><span class="n">getObject</span><span class="p">(</span><span class="n">tParams</span><span class="p">.</span><span class="n">id</span><span class="p">).</span><span class="n">label</span> <span class="o">..</span> <span class="s2">&quot; - Extras Button pressed&quot;</span><span class="p">)</span>
+<span class="k">end</span></p>
+
+<p><span class="k">function</span> <span class="nc">PRX_CMD</span><span class="p">.</span><span class="nf">Checkbox1Command</span><span class="p">(</span><span class="n">proxyId</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+    <span class="n">C4</span><span class="p">:</span><span class="n">SetVariable</span><span class="p">(</span><span class="s2">&quot;Extras_Checkbox1&quot;</span><span class="p">,</span> <span class="n">tParams</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">LogDebug</span><span class="p">(</span><span class="nb">os.date</span><span class="p">()</span> <span class="o">..</span> <span class="s2">&quot; &quot;</span> <span class="o">..</span> <span class="n">extras</span><span class="p">:</span><span class="n">getObject</span><span class="p">(</span><span class="n">tParams</span><span class="p">.</span><span class="n">id</span><span class="p">).</span><span class="n">label</span> <span class="o">..</span> <span class="s2">&quot; - Extras Checkbox switched&quot;</span><span class="p">)</span>
+    <span class="n">extras</span><span class="p">:</span><span class="n">updateObject</span><span class="p">(</span><span class="n">proxyId</span><span class="p">,</span> <span class="n">tParams</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="n">tParams</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>To handle changes in extras parameters coming from the device side, the  <code>updateObject</code> method can be used. This method updates extras object instance and sends proxy notification that extras status has been changed. Also, each <code>ExtrasObjectBasedClass</code> class supports the  <code>ExtrasObjectBasedClass:update(value, hidden)</code> method that enables extras update from the class instance directly.</p></p>
+
+<p>It is nice to create a variable for each extras object, to give the partner opportunity to monitor and take action based on extras states. Sample variable definitions are to the right.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">--Variable Examples</span>
+
+<span class="n">C4</span><span class="p">:</span><span class="n">AddVariable</span><span class="p">(</span><span class="s2">"Extras_Button1"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"STRING"</span><span class="p">)</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">AddVariable</span><span class="p">(</span><span class="s2">"Extras_Checkbox1"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"BOOL"</span><span class="p">)</span>
+</code></pre></div><h4 id='sqishy'>Sqishy</h4>
+<p>If the Lua Squish is used, the Module code snippet below should be included in the squishy file:</p>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>-- Lua Squish Sample
+
+Module "Extras" "extras/Extras.lua"
+Module "ExtrasObject" "extras/ExtrasObject.lua"
+Module "ExtrasButton" "extras/ExtrasButton.lua"
+Module "ExtrasCheckbox" "extras/ExtrasCheckbox.lua"
+Module "ExtrasIcon" "extras/ExtrasIcon.lua"
+Module "ExtrasList" "extras/ExtrasList.lua"
+Module "ExtrasSwitch" "extras/ExtrasSwitch.lua"
+Module "ExtrasNumber" "extras/ExtrasNumber.lua"
+Module "ExtrasSlider" "extras/ExtrasSlider.lua"
+Module "ExtrasText" "extras/ExtrasText.lua"
+Module "ExtrasTextField" "extras/ExtrasTextField.lua"
+</code></pre></div>
+
+<p>In this case, the library can be used as git submodule.</p>
+
+<h4 id='removing'>Removing</h4>
+
+<p>To remove the object or the section please use following methods:</p>
+
+<ul>
+<li><code>Extras:removeObject(id)</code></li>
+<li><code>Extras:removeSection(sectionLabel)</code></li>
+</ul>
+
+<p>This way, you will avoid lost objects (objects that are in section array but will not be displayed because empty index before).
+It is strongly recommended to hide rather than remove objects that will be temporary removed form the CI.</p>
+
+<p>Before destroying an Extras class instance, please use the <code>Extras:cleanCapability()</code> method. Also, please pay attention to the Capability section of the documentation.</p>
 <h1 id='camera-capabilities'>Camera Capabilities</h1>
 
 <h2 id='address-readonly'>address readonly</h2>
