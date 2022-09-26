@@ -3899,6 +3899,9 @@
                     <a href="#address-changed" class="toc-h2 toc-link" data-title="ADDRESS CHANGED">ADDRESS CHANGED</a>
                   </li>
                   <li>
+                    <a href="#dynamic_urls_changed" class="toc-h2 toc-link" data-title="DYNAMIC_URLS_CHANGED">DYNAMIC_URLS_CHANGED</a>
+                  </li>
+                  <li>
                     <a href="#http-port-changed" class="toc-h2 toc-link" data-title="HTTP PORT CHANGED">HTTP PORT CHANGED</a>
                   </li>
                   <li>
@@ -3908,7 +3911,13 @@
                     <a href="#dynamic-capability-changed" class="toc-h2 toc-link" data-title="DYNAMIC CAPABILITY CHANGED">DYNAMIC CAPABILITY CHANGED</a>
                   </li>
                   <li>
+                    <a href="#presets-changed" class="toc-h2 toc-link" data-title="PRESETS CHANGED">PRESETS CHANGED</a>
+                  </li>
+                  <li>
                     <a href="#property-defaults" class="toc-h2 toc-link" data-title="PROPERTY DEFAULTS">PROPERTY DEFAULTS</a>
+                  </li>
+                  <li>
+                    <a href="#stream_urls_ready" class="toc-h2 toc-link" data-title="STREAM_URLS_READY">STREAM_URLS_READY</a>
                   </li>
                   <li>
                     <a href="#use-https-changed" class="toc-h2 toc-link" data-title="USE HTTPS CHANGED">USE HTTPS CHANGED</a>
@@ -30677,10 +30686,26 @@ or
 
 <p><code>None</code></p>
 
+<h2 id='dynamic_urls_changed'>DYNAMIC_URLS_CHANGED</h2>
+
+<p>Notify used when the configured camera URLS have been changed. The Camera proxy will then force Navigators to refresh any cached URLs.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DYNAMIC_URLS_CHANGED ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">PROXY_BINDING</span><span class="p">,</span> <span class="s1">'DYNAMIC_URLS_CHANGED'</span><span class="p">,</span> <span class="p">{</span> <span class="p">},</span> <span class="s1">'NOTIFY'</span><span class="p">)</span>
+</code></pre></div>
 <h2 id='http-port-changed'>HTTP PORT CHANGED</h2>
-
 <p>Notification that the HTTP port has changed. Used rarely but applicable in instances where the protocol driver sets the HTTP port.</p>
-
 <h3 id='signature'>Signature</h3>
 
 <p><code>HTTP_PORT_CHANGED ()</code></p>
@@ -30745,10 +30770,39 @@ or
 
 <p><code>NOTIFY.DYNAMIC_CAPABILITIES_CHANGED({supports_color=true}, 5001)</code></p>
 
+<h2 id='presets-changed'>PRESETS CHANGED</h2>
+
+<p>The camera driver should send this notification to the Proxy on startup with the current presets list. The driver should also notify again whenever presets are changed: created, renamed, updated, deleted, or re-ordered. </p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>PRESETS_CHANGED ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="err">`</span><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">PROXY_BINDING</span><span class="p">,</span> <span class="s1">'PRESETS_CHANGED'</span><span class="p">,</span> <span class="p">{</span> <span class="n">XML</span> <span class="o">=</span> <span class="s2">"&lt;dynamic_presets&gt;&lt;max_presets&gt;100&lt;/max_presets&gt;&lt;preset...&lt;/dynamic_presets&gt;"</span> <span class="p">},</span> <span class="s1">'NOTIFY'</span><span class="p">)</span><span class="err"> `</span>
+
+<span class="err">—</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">formed</span> <span class="n">XML</span> <span class="k">for</span> <span class="n">dynamic_presets</span> <span class="n">should</span> <span class="n">resemble</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="o">&lt;</span><span class="n">dynamic_presets</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">max_presets</span><span class="o">&gt;</span> <span class="n">Int</span> <span class="n">of</span> <span class="n">max</span> <span class="n">allowed</span> <span class="n">presets</span> <span class="o">&lt;/</span><span class="n">max_presets</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">presets</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">preset</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span> <span class="n">preset</span> <span class="n">id</span> <span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="n">Base64</span> <span class="n">encoded</span> <span class="n">name</span> <span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">preset</span><span class="o">&gt;</span>
+    <span class="err">…</span>
+    <span class="o">&lt;/</span><span class="n">presets</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">dynamic_presets</span><span class="o">&gt;</span>
+</code></pre></div>
 <h2 id='property-defaults'>PROPERTY DEFAULTS</h2>
-
 <p>Notification sent from the protocol driver through <a href="https://snap-one.github.io/docs-driverworks-api/#ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
-
 <h3 id='signature'>Signature</h3>
 
 <p><code>PROPERTY_DEFAULTS ()</code></p>
@@ -30788,6 +30842,57 @@ or
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h2 id='stream_urls_ready'>STREAM_URLS_READY</h2>
+
+<p>Notify used for following up to a GET_STREAM_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>KEY</td>
+<td>Key of the originating call for the snapshot to be created.</td>
+</tr>
+<tr>
+<td>URLS</td>
+<td>String of XML object as described in the description of this call.</td>
+</tr>
+</tbody></table>
+
+<h3 id='examples'>Examples</h3>
+
+<p>An example of the simplest XML used by a driver is shown to the right:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150/view_camera.cgi"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+or
+
+<span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span> <span class="na">camera_address=</span><span class="s">"192.168.1.150"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/view_camera.cgi"</span> <span class="na">codec=</span><span class="s">"h264"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/view_camera_h265.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div>
+
+<p>This is followed by an example from a camera with more features and can provide more options to allow clients to pick a better stream:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span> <span class="na">camera_address=</span><span class="s">"server.company.com"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://192.168.1.150:554/rtsp.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://192.168.1.150:554/cloudapi.cgi?fh2f5hw2"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="err">resolution"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://192.168.1.150:554/cloudapi.cgi?fh2f4hw1"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://192.168.1.150:554/cloudapi.cgi?fh2f4hw2"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="err">resolution"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/cloudapi.cgi?fh2fhsw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/cloudapi.cgi?fh2fhsw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/cloudapi.cgi?fh2fhw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+</code></pre></div>
 
 <h2 id='use-https-changed'>USE HTTPS CHANGED</h2>
 
