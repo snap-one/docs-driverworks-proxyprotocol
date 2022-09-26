@@ -25,6 +25,7 @@ The Camera Proxy documentation has been has enhanced to include new information 
 
 A new command: [GET\_STREAM\_URLS][10] has been added. It is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various client
 
+
 A new notification: [STREAM\_URLS\_READY][11] has been added. This notify is used as a follow up to a GET\_STREAM\_URLS Synchronous call. This Notify will let a UI know that the URL information they requested is ready. 
 
 
@@ -71,7 +72,7 @@ The following existing Camera Proxy capabilities are now Dynamic Capabilities:
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorxytohsv
 [4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorrgbtoxy
 [5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorxytorgb
-[6]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-streams
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-streams
 [7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#driver-support-for-multiple-streams
 [8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#support-for-caching-urls
 [9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library
