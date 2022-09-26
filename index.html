@@ -34964,30 +34964,25 @@ Used to set the color of a button, this command name can be unique or non-existe
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='color_trace_tolerance'>color_trace_tolerance</h2>
-<p>If converting to RGB or HSV color spaces it is worth noting that these two are not as accurate in resolution as the CIE xy chromaticity color space.</p>
+<p>Some color lighting hardware or communication protocols lack enough bits or precision to set all possible colors, especially if using 8 bit Mired, RGB, or HSV values. This capability adjusts the CIELa*b* Delta comparison value to allow drivers to increase or reduce the color comparison area to work around rounding issues in devices and/or communication. Most people can visually detect a color difference with a Delta of 3.0 or higher. Control4 has chosen a default Delta of 1.0 as this should be sufficient for most hardware and protocols.</p>
 
-<p>Because of this, there can be a loss of accuracy when converting to them or between them. For example, a Control4 Customer Interface sends the color&#39;s Hue and Saturation. If a device operates in RGB color spaces, the reported color might differ because of a rounding issue when converting between the RGB and HSV color space. This capability is used to add a tolerance when the Control4 system compares if two colors are equal.</p>
+<p>This Delta value is used by the system to determine if two colors are close enough to be considered &quot;the same&quot;. This tolerance check is used by Advanced Lighting Scenes, Composer Programming, and other areas.</p>
 
-<p>The LightV2 proxy internally stores color as xy chromaticity. Two colors are treated equal if they are within Euclid distance specified by the color_trace_tolerance capability.</p>
-
-<p>The following are pre-calculated tolerances for some of the mostly used color spaces. If the device uses one of the color spaces listed bellow to set and report color, use its tolerance as the capability:</p>
-
-<p>RGB: 0.006
-HSV 0.001</p>
+<p>In 3.3.1 and later releases, if the Delta value provided is &gt; .01, then the superior CIELa*b* tolerance formula is used to determining if a color is the as another color in the system. If the value provided is &lt; .01, or any value in 3.3.0, then the difference is based on the xy  chromaticity euclid distance between two colors.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;color_trace_tolerance&gt;&lt;/color_trace_tolerance&gt;</code></p>
 
 <h3 id='type'>Type</h3>
 
-<p>Float: Defaults to 0.006</p>
+<p>Float</p>
 
 <h3 id='dynamic-capability'>Dynamic Capability</h3>
 
 <p>Yes</p>
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;color_trace_tolerance&gt;</span>0.006<span class="nt">&lt;/color_trace_tolerance&gt;</span>
+    <span class="nt">&lt;color_trace_tolerance&gt;</span>.06<span class="nt">&lt;/color_trace_tolerance&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has_extras'>has_extras</h2>
