@@ -48,40 +48,45 @@ Dynamic Presets require the following new Capability:
 
 Dynamic Presets require the following new Notifications:
 
-- DYNAMIC\_URLS\_CHANGED
+- [DYNAMIC\_URLS\_CHANGED][15]
 
 Dynamic Presets require the following new Commands:
 
-- [SELECT\_PRESET][15]
-- [CHANGE\_PRESET\_NAME][16]
-- [MODIFY\_PRESET][17]
-- [DELETE\_PRESET][18]
-- [CHANGE\_PRESET\_ORDER][19]
+- [SELECT\_PRESET][16]
+- [CHANGE\_PRESET\_NAME][17]
+- [MODIFY\_PRESET][18]
+- [DELETE\_PRESET][19]
+- [CHANGE\_PRESET\_ORDER][20]
 
 
 The following existing Camera Proxy capabilities are now Dynamic Capabilities:
 
-- has\_pan
-- has\_tilt
-- has\_zoom
-- has\_home
+- [has\_pan][21]
+- [has\_tilt][22]
+- [has\_zoom][23]
+- [has\_home][24]
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#color_trace_tolerance
-[2]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#colorhsvtoxy
-[3]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#colorxytohsv
-[4]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#colorrgbtoxy
-[5]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#colorxytorgb
-[6]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#camera-streams
-[7]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#driver-support-for-multiple-streams
-[8]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#support-for-caching-urls
-[9]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#camera-proxy-extras-interface-library
-[10]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#get-stream-urls
-[11]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#stream_urls_ready
-[12]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#dynamic_urls_use_type
-[13]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#requires_dynamic_stream_urls
-[14]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#has-dynamic-presets
-[15]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#select-preset
-[16]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#change-preset-name
-[17]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#modify-preset
-[18]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#delete-preset
-[19]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.1-beta/#change-preset-order
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color_trace_tolerance
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorhsvtoxy
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorxytohsv
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorrgbtoxy
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#colorxytorgb
+[6]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-streams
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#driver-support-for-multiple-streams
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#support-for-caching-urls
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#get-stream-urls
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#stream_urls_ready
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic_urls_use_type
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#requires_dynamic_stream_urls
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-dynamic-presets
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic_urls_changed
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#select-preset
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#change-preset-name
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#modify-preset
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#delete-preset
+[20]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#change-preset-order
+[21]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-pan
+[22]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-tilt
+[23]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-zoom
+[24]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-home
