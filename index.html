@@ -4770,9 +4770,6 @@
                     <a href="#has_leds" class="toc-h2 toc-link" data-title="has_leds">has_leds</a>
                   </li>
                   <li>
-                    <a href="#num_buttons" class="toc-h2 toc-link" data-title="num_buttons">num_buttons</a>
-                  </li>
-                  <li>
                     <a href="#supports_color" class="toc-h2 toc-link" data-title="supports_color">supports_color</a>
                   </li>
                   <li>
@@ -37590,33 +37587,6 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
     <span class="nt">&lt;has_leds&gt;</span>false<span class="nt">&lt;/has_leds&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='num_buttons'>num_buttons</h2>
-<p>Keypad capability that indicates the number of buttons the driver supports.  The value can be one of the following options: </p>
-
-<ul>
-<li>0 = None This disables the field in Composer Programming Commands box.</li>
-<li>1 = Top</li>
-<li>2 = Top and Bottom</li>
-<li>3 = Top, Bottom, and Toggle</li>
-</ul>
-
-<p>Defaults to 0.</p>
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;num_buttons&gt;&lt;/num_buttons&gt;</code></p>
-
-<h3 id='type'>Type</h3>
-
-<p>Integer</p>
-
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
-
-<p>No</p>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;num_buttons&gt;</span>3<span class="nt">&lt;/num_buttons&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='supports_color'>supports_color</h2>
 <p>Whether the device can show a broad range of colors. </p>
 <h3 id='signature'>Signature</h3>
@@ -38368,6 +38338,13 @@ chromaticity.</p>
 
 <p>Additional presets can be added via the C4TYPE PRESET API.  This will allow drivers that have common &quot;20% 40% 60% 80%&quot; presets to define these presets and the LightV2 proxy will automatically take care of creating keypad bindings and managing LED status tracking of those presets and keypad button status.</p>
 
+<p>Note that Control4 is discouraging the use of the following commands as they will be deprecated. The SET BRIGHTNESS TARGET API should be used in their place:</p>
+
+<ul>
+<li>SET LIGHT LEVEL: Use SET BRIGHTNESS TARGET with the param RATE of 0.</li>
+<li>RAMP TO LEVEL: Use SET BRIGHTNESS TARGET with RATE in milliseconds.</li>
+</ul>
+
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_BRIGHTNESS_TARGET ()</code></p>
@@ -38384,7 +38361,7 @@ chromaticity.</p>
 </tr>
 <tr>
 <td>Integer</td>
-<td>LIGHT_BRIGHTNESS_TARGET_PRESET ID</td>
+<td>LIGHT_BRIGHTNESS_TARGET_PRESET: Preset ID</td>
 </tr>
 <tr>
 <td>Integer</td>
@@ -38392,11 +38369,7 @@ chromaticity.</p>
 </tr>
 <tr>
 <td>Integer</td>
-<td>RATE: Milliseconds for the transition. Optional. Will use driver default if parameter is not specified.</td>
-</tr>
-<tr>
-<td>Integer</td>
-<td>RATE: Optional. Milliseconds for the transition.  Will use driver default if parameter is not specified. Note that passing a -1 value in this parameter results in it being treated as the same as not specifying the parameter at all.</td>
+<td>LIGHT_BRIGHTNESS_RATE: Optional. Milliseconds for the transition.  Will use driver default if parameter is not specified. Note that passing a -1 value in this parameter results in it being treated as the same as not specifying the parameter at all.</td>
 </tr>
 </tbody></table>
 
@@ -38406,11 +38379,19 @@ chromaticity.</p>
 
 <h3 id='usage-note'>Usage Note</h3>
 
-<p>Control4 is discouraging the use of the following commands as they will be deprecated. The SET BRIGHTNESS TARGET API should be used in their place:</p>
+<p>If the capability supports_target is not enabled (pre 3.3.0 for backward compatibility of older drivers) then the following parameters are sent to a driver.</p>
 
-<p>SET LIGHT LEVEL: Use SET BRIGHTNESS TARGET with the param RATE of 0.</p>
+<ul>
+<li>LEVEL - Integer - from 0-100</li>
+<li>TIME - Integer - Milliseconds for the ramp</li>
+</ul>
 
-<p>RAMP TO LEVEL: Use SET BRIGHTNESS TARGET with RATE in milliseconds.</p>
+<p>If supports_target or color is used (current  generation drivers) then the following parameters are sent to a driver.</p>
+
+<ul>
+<li><p>LIGHT_BRIGHTNESS_TARGET - Float - Value as defined from drivers Min and Max brightness capabilities as set by the driver. If the brightness resolution capability is set to 10, .5, .01, and so on, the proxy will ensure the value sent to the driver meets the resolution/step capability.  If no resolution is set, the value of 1 is used for stepping.</p></li>
+<li><p>RATE - Unit - Milliseconds for the ramp duration.  This is guaranteed to be between the Min and Max rate if the driver sets these.</p></li>
+</ul>
 
 <h2 id='set-cold-start-level'>SET COLD START LEVEL</h2>
 
@@ -38598,7 +38579,7 @@ chromaticity.</p>
 
 <h2 id='set_color_target'>SET_COLOR_TARGET</h2>
 
-<p>Sent to drivers to control it to change the color. Once drivers begin to change color, they should send a COLOR_CHANGING Notify. Then once the color has finished changing it should send a COLOR_CHANGED Notify.</p>
+<p>Sent to drivers to change the color. Once drivers begin to change color, they should send a COLOR_CHANGING Notify. Then once the color has finished changing it should send a COLOR_CHANGED Notify.</p>
 
 <h3 id='signature'>Signature</h3>
 
