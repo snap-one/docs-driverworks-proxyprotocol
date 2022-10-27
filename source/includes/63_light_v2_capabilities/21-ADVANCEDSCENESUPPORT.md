@@ -1,4 +1,3 @@
-## _21-ADVANCEDSCENESUPPORT
 ## advanced\_scene\_support
 
 Advanced Lighting Scene capability indicating whether this driver has full support for being in an advanced lighting scene. Defaults to false.
