@@ -1,4 +1,4 @@
-<h2 id='_21-advancedscenesupport'>_21-ADVANCEDSCENESUPPORT</h2><h2 id='advanced_scene_support'>advanced_scene_support</h2>
+<h2 id='advanced_scene_support'>advanced_scene_support</h2>
 <p>Advanced Lighting Scene capability indicating whether this driver has full support for being in an advanced lighting scene. Defaults to false.</p>
 <h3 id='signature'>Signature</h3>
 <p><code>&lt;advanced_scene_support&gt;&lt;/advanced_scene_support&gt;</code></p>
