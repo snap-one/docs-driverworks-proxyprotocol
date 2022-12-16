@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Driverworks Reference</title>
 
-    <style>
+    <style media="screen">
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .gh {
@@ -196,20 +196,107 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen-0a7c4629.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-c427a123.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-c5541673.js"></script>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
   </head>
 
   <body class="index" data-languages="[&quot;lua&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+        <img src="images/navbar-cad8cdcb.png" alt="" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-3056e635.png" class="logo" alt="Logo" />
+      <img src="images/logo-3056e635.png" class="logo" alt="" />
         <div class="lang-selector">
               <a href="#" data-language-name="lua">lua</a>
         </div>
@@ -38332,18 +38419,9 @@ chromaticity.</p>
 
 <p>&quot;Off&quot; - (Static Preset ID 2) This is the Preset that should be used when turning a light off.  This presets level and rate matches what the bottom  &quot;Click&quot; on a physical device would be.</p>
 
-<p>&quot;Slow On&quot; - (Static Preset ID 3) This is the level and rate that matches what a Top button &quot;Hold&quot; press would be.</p>
-
-<p>&quot;Slow Off&quot; - Static Preset ID 4) This is the level and rate that matches what a Bottom button &quot;Hold&quot; press would be.</p>
-
 <p>Additional presets can be added via the C4TYPE PRESET API.  This will allow drivers that have common &quot;20% 40% 60% 80%&quot; presets to define these presets and the LightV2 proxy will automatically take care of creating keypad bindings and managing LED status tracking of those presets and keypad button status.</p>
 
 <p>Note that Control4 is discouraging the use of the following commands as they will be deprecated. The SET BRIGHTNESS TARGET API should be used in their place:</p>
-
-<ul>
-<li>SET LIGHT LEVEL: Use SET BRIGHTNESS TARGET with the param RATE of 0.</li>
-<li>RAMP TO LEVEL: Use SET BRIGHTNESS TARGET with RATE in milliseconds.</li>
-</ul>
 
 <h3 id='signature'>Signature</h3>
 
@@ -38361,11 +38439,11 @@ chromaticity.</p>
 </tr>
 <tr>
 <td>Integer</td>
-<td>LIGHT_BRIGHTNESS_TARGET_PRESET: Preset ID</td>
+<td>LIGHT_BRIGHTNESS_TARGET_PRESET_ID_: Integer. Preset ID</td>
 </tr>
 <tr>
 <td>Integer</td>
-<td>LIGHT_BRIGHTNESS_TARGET_ PERCENT: Percent from 0 to 100</td>
+<td>LIGHT_BRIGHTNESS_TARGET_ PERCENT: Integer. Percent from 0 to 100</td>
 </tr>
 <tr>
 <td>Integer</td>
