@@ -39,7 +39,7 @@ The light level of the light has changed and is at the final brightness. Event I
 
 
 
-0.
+
 
 
 
