@@ -4839,19 +4839,10 @@
                     <a href="#load_group_support" class="toc-h2 toc-link" data-title="load_group_support">load_group_support</a>
                   </li>
                   <li>
-                    <a href="#min_max" class="toc-h2 toc-link" data-title="min_max">min_max</a>
-                  </li>
-                  <li>
-                    <a href="#on_off" class="toc-h2 toc-link" data-title="on_off">on_off</a>
-                  </li>
-                  <li>
                     <a href="#hide_proxy_events" class="toc-h2 toc-link" data-title="hide_proxy_events">hide_proxy_events</a>
                   </li>
                   <li>
                     <a href="#has_button_events" class="toc-h2 toc-link" data-title="has_button_events ">has_button_events </a>
-                  </li>
-                  <li>
-                    <a href="#buttons_are_virtual" class="toc-h2 toc-link" data-title="buttons_are_virtual">buttons_are_virtual</a>
                   </li>
                   <li>
                     <a href="#has_leds" class="toc-h2 toc-link" data-title="has_leds">has_leds</a>
@@ -4864,9 +4855,6 @@
                   </li>
                   <li>
                     <a href="#supports_default_on" class="toc-h2 toc-link" data-title="supports_default_on">supports_default_on</a>
-                  </li>
-                  <li>
-                    <a href="#ramp_level" class="toc-h2 toc-link" data-title="ramp_level">ramp_level</a>
                   </li>
                   <li>
                     <a href="#advanced_scene_support" class="toc-h2 toc-link" data-title="advanced_scene_support">advanced_scene_support</a>
@@ -37248,6 +37236,8 @@ Used to set the color of a button, this command name can be unique or non-existe
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='cold_start'>cold_start</h2>
+<p>_Note that this capability will be deprecated from the proxy in the near future. </p>
+
 <p>Ramping API indicating if the lighting hardware supports cold start. Defaults to false.</p>
 <h3 id='signature'>Signature</h3>
 
@@ -37324,9 +37314,7 @@ Used to set the color of a button, this command name can be unique or non-existe
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='color_rate_max'>color_rate_max</h2>
-<p>The maximum color rate (in milliseconds) supported for transitioning from one color to another. This capability should always be set for any color light driver, even if the transition rate is unchangeable. This capability is not intended use user-defined values. Values are supplied  by the driver developer to ensure proper behavior.</p>
-
-<p>These values are consumed by Advanced Lighting Scenes agent and custom programming actions to ensure that the color ramp rate specified is within the bounds set by the driver.</p>
+<p>Maximum color rate, in milliseconds, supported for transitioning from one color to another.  Should always be set for any color light driver, even if the transition rate is unchangeable. Allows dealers to configure the maximum rate that can be configured. The color_rate value is used by voice control, navigators, customer created advanced lighting scenes, and various other areas of the system that previously didn&#39;t allow customization of the transition rate.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;color_rate_max&gt;&lt;/color_rate_max&gt;</code></p>
@@ -37344,9 +37332,7 @@ Used to set the color of a button, this command name can be unique or non-existe
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='color_rate_min'>color_rate_min</h2>
-<p>The minimum color rate (in milliseconds) supported for transitioning from one color to another. This capability should always be set for any color light driver, even if the transition rate is unchangeable. This capability is not intended use user-defined values. Values are supplied  by the driver developer to ensure proper behavior.</p>
-
-<p>These values are consumed by Advanced Lighting Scenes agent and custom programming actions to ensure that the color ramp rate specified is within the bounds set by the driver.</p>
+<p>Minimum color rate, in milliseconds, supported for transitioning from one color to another.  Should always be set for any color light driver, even if the transition rate is unchangeable. Allows dealers to configure the maximum rate that can be configured. The color_rate value is used by voice control, navigators, customer created advanced lighting scenes, and various other areas of the system that previously didn&#39;t allow customization of the transition rate.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;color_rate_min&gt;&lt;/color_rate_min&gt;</code></p>
@@ -37566,42 +37552,6 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
     <span class="nt">&lt;load_group_support&gt;</span>false<span class="nt">&lt;/load_group_support&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='min_max'>min_max</h2>
-<p>Composer capability that determines whether properties appear in Composer, allowing the user to set the min and max on levels (as a percent) for the device. Defaults to false.</p>
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;min_max&gt;&lt;/min_max&gt;</code></p>
-
-<h3 id='type'>Type</h3>
-
-<p>Boolean</p>
-
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
-
-<p>No</p>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;min_max&gt;</span>false<span class="nt">&lt;/min_max&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
-<h2 id='on_off'>on_off</h2>
-<p>Composer capability that determines whether commands to directly turn the light on/off appear in Composer. Defaults to false.</p>
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;on_off&gt;&lt;/on_off&gt;</code></p>
-
-<h3 id='type'>Type</h3>
-
-<p>Boolean</p>
-
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
-
-<p>No</p>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;on_off&gt;</span>false<span class="nt">&lt;/on_off&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='hide_proxy_events'>hide_proxy_events</h2>
 <p>Composer capability that determines whether the proxy’s Events (brightness, color changes and buttons events) should appear in Composer Programming. Defaults to false.</p>
 <h3 id='signature'>Signature</h3>
@@ -37636,24 +37586,6 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;has_button_events&gt;</span>false<span class="nt">&lt;/has_button_events&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
-<h2 id='buttons_are_virtual'>buttons_are_virtual</h2>
-<p>Keypad capability that determines whether the buttons on the device are real physical buttons or virtual such as Control4 Centralized Lighting Modules. Defaults to false.</p>
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;buttons_are_virtual&gt;&lt;/buttons_are_virtual&gt;</code></p>
-
-<h3 id='type'>Type</h3>
-
-<p>Boolean</p>
-
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
-
-<p>No</p>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;buttons_are_virtual&gt;</span>false<span class="nt">&lt;/buttons_are_virtual&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has_leds'>has_leds</h2>
@@ -37711,6 +37643,8 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='supports_default_on'>supports_default_on</h2>
+<p><em>Note: Deprecating - Drivers should not use this capability but instead use the brightness on mode preset capability Drivers that enable both will experience oddities in Composer dealer configuration.</em></p>
+
 <p>This feature is for lights that support a default ON brightness in their firmware. When enabled, the Light Proxy sends a SET_PRESET_LEVEL command to drivers when the brightness &quot;On” preset is updated in the proxy through Composer or the PRESET_LEVEL system variable. This enables light switches that respond to local button presses to go to the same default ON level as what the Control4 system uses when a light is turned on or toggled via Navigators, Composer Programming, and keypad buttons. </p>
 <h3 id='signature'>Signature</h3>
 
@@ -37726,24 +37660,6 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
   <span class="nt">&lt;supports_default_on&gt;</span>false<span class="nt">&lt;supports_default_on&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
-<h2 id='ramp_level'>ramp_level</h2>
-<p>Whether the light supports commands being told to ramp to a brightness. Advanced Lighting Scenes also uses this to determine if the light can be dimmed in ALS.</p>
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;ramp_level&gt;&lt;/ramp_level&gt;</code></p>
-
-<h3 id='type'>Type</h3>
-
-<p>Boolean: Defaults to false.</p>
-
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
-
-<p>Yes</p>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-  <span class="nt">&lt;ramp_level&gt;</span>false<span class="nt">&lt;/ramp_level&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='advanced_scene_support'>advanced_scene_support</h2>
@@ -38471,6 +38387,10 @@ chromaticity.</p>
 <li><p>RATE - Unit - Milliseconds for the ramp duration.  This is guaranteed to be between the Min and Max rate if the driver sets these.</p></li>
 </ul>
 
+<p>If a driver supports On Modes, it should track the following parameters:</p>
+
+<p>LIGHT_BRIGHTNESS_TARGET_\PRESET_ID - The ID of the preset to trigger.</p>
+
 <h2 id='set-cold-start-level'>SET COLD START LEVEL</h2>
 
 <p>Used to set the cold start level for the device for drivers that support hardware based Cold Start behavior.</p>
@@ -38682,14 +38602,22 @@ chromaticity.</p>
 <td></td>
 </tr>
 <tr>
-<td>RATE</td>
-<td>Integer. Optional Parameter of milliseconds to ramp over. Will use driver default if parameter is not used.</td>
+<td>LIGHT_COLOR_TARGET_RATE</td>
+<td>Integer. Parameter of milliseconds to ramp over. Will use driver default if parameter is not used.</td>
 </tr>
 </tbody></table>
 
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>If a driver implemented On Mode, the following parameters should be tracked:</p>
+
+<p>LIGHT_COLOR_TARGET_PRESET_ID - The ID of the preset to trigger. This must be sent with the LIGHT_COLOR_TARGET_PRESET_ORIGIN parameter.</p>
+
+<p>LIGHT_COLOR_TARGET_PRESET_ORIGIN - The origin of the preset to trigger.  1 = Device specific preset.   2 = Color Agent preset.</p>
 
 <h2 id='set-hold-rate-up'>SET HOLD RATE UP</h2>
 
@@ -38889,7 +38817,7 @@ chromaticity.</p>
 
 <p>See example</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>-- Example of current XML with color support enabled:
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>Example of current XML with color support enabled:
 
 <span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="nt">&lt;setup&gt;</span>
@@ -38926,11 +38854,9 @@ chromaticity.</p>
    <span class="nt">&lt;supports_target&gt;</span>True<span class="nt">&lt;/supports_target&gt;</span>
    <span class="nt">&lt;has_extras&gt;</span>True<span class="nt">&lt;/has_extras&gt;</span>
    <span class="nt">&lt;brightnesses</span> <span class="na">minimum=</span><span class="s">"0"</span> <span class="na">maximum=</span><span class="s">"100"</span> <span class="na">resolution=</span><span class="s">"1"</span> <span class="na">unknown=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"0"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off Active"</span> <span class="na">inactiveText=</span><span class="s">"Off Not Active"</span> <span class="na">rate=</span><span class="s">"750"</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"100"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On Active"</span> <span class="na">inactiveText=</span><span class="s">"On Not Active"</span> <span class="na">rate=</span><span class="s">"250"</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Slow Off"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"0"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Slow Off Active"</span> <span class="na">inactiveText=</span><span class="s">"Slow Off Not Active"</span> <span class="na">rate=</span><span class="s">"5000"</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Slow On"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"100"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Slow On Active"</span> <span class="na">inactiveText=</span><span class="s">"Slow On Not Active"</span> <span class="na">rate=</span><span class="s">"5000"</span> <span class="nt">/&gt;</span>
-   <span class="nt">&lt;/brightnesses&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"0"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off Active"</span> <span class="na">inactiveText=</span><span class="s">"Off Not Active"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;level</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">level_setable=</span><span class="s">"true"</span> <span class="na">rate_setable=</span><span class="s">"true"</span> <span class="na">level=</span><span class="s">"100"</span> <span class="na">levelType=</span><span class="s">"2"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On Active"</span> <span class="na">inactiveText=</span><span class="s">"On Not Active"</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;/brightnesses&gt;</span>
    <span class="nt">&lt;supports_color&gt;</span>True<span class="nt">&lt;/supports_color&gt;</span>
    <span class="nt">&lt;supports_color_correlated_temperature&gt;</span>False<span class="nt">&lt;/supports_color_correlated_temperature&gt;</span>
    <span class="nt">&lt;colors</span> <span class="na">color_correlated_temperature_min=</span><span class="s">"500"</span> <span class="na">color_correlated_temperature_max=</span><span class="s">"20000"</span><span class="nt">&gt;</span>
@@ -38944,8 +38870,8 @@ chromaticity.</p>
       <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Blue"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.150017"</span> <span class="na">color_y=</span><span class="s">"0.0600066"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Yellow"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.419321"</span> <span class="na">color_y=</span><span class="s">"0.505255"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
       <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Orange"</span> <span class="na">category=</span><span class="s">"2"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.543608"</span> <span class="na">color_y=</span><span class="s">"0.406568"</span> <span class="na">color_mode=</span><span class="s">"0"</span> <span class="na">color_correlated_temperature=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off"</span> <span class="na">inactiveText=</span><span class="s">"Not Off"</span> <span class="na">rate=</span><span class="s">"750"</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On"</span> <span class="na">inactiveText=</span><span class="s">"Not On"</span> <span class="na">rate=</span><span class="s">"250"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"Off"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"Off"</span> <span class="na">inactiveText=</span><span class="s">"Not Off"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"On"</span> <span class="na">category=</span><span class="s">"1"</span> <span class="na">editable=</span><span class="s">""</span> <span class="na">color_x=</span><span class="s">"0.313525"</span> <span class="na">color_y=</span><span class="s">"0.323627"</span> <span class="na">color_mode=</span><span class="s">"1"</span> <span class="na">color_correlated_temperature=</span><span class="s">"6500"</span> <span class="na">buttonLinkBindingId=</span><span class="s">"0"</span> <span class="na">activeColor=</span><span class="s">"0000ff"</span> <span class="na">inactiveColor=</span><span class="s">"000000"</span> <span class="na">activeText=</span><span class="s">"On"</span> <span class="na">inactiveText=</span><span class="s">"Not On"</span><span class="nt">/&gt;</span>
    <span class="nt">&lt;/colors&gt;</span>
 <span class="nt">&lt;/setup&gt;</span>
 </code></pre></div>
@@ -39386,6 +39312,8 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <h2 id='cold-start-level'>COLD START LEVEL</h2>
 
+<p>_Note that this notification will be deprecated from the proxy in the near future. Control4 recommends using device specific properties for this value.</p>
+
 <p>Used to inform the proxy that the hardware Cold Start level has changed. This is useful for hardware such as Control4’s Gen3 lighting where the hardware supports temporarily setting the brightness to this level in order to &#39;jump start&#39; the capacitors/ballasts on LED and florescent lights.  This value changes over time as capacitors and ballasts age.</p>
 
 <h3 id='signature'>Signature</h3>
@@ -39409,6 +39337,8 @@ The light level of the light has changed and is at the final brightness. Event I
 <p><code>None</code></p>
 
 <h2 id='cold-start-time'>COLD START TIME</h2>
+
+<p>_Note that this notification will be deprecated from the proxy in the near future. Control4 recommends using device specific properties for this value.</p>
 
 <p>Used to inform the proxy that the hardware Cold Start level has changed.  This is useful for hardware such as Control4’s Gen3 lighting where the hardware supports temporarily setting the brightness to a level for this number of milliseconds in order to &#39;jump start&#39; the capacitors/ballasts on LED and florescent lights.  This value changes over time as capacitors and ballasts age.</p>
 
