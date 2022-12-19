@@ -1,5 +1,7 @@
 ## cold\_start
 
+_Note that this capability will be deprecated from the proxy in the near future. 
+
 Ramping API indicating if the lighting hardware supports cold start. Defaults to false.
 
 
