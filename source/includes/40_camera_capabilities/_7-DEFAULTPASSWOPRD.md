@@ -12,6 +12,6 @@ Defaults to “password”.
 
 ```xml
 <capabilities>
-    <default_password>80</default_password>
+    <default_password>password</default_password>
 </capabilities>
 ```
