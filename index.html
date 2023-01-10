@@ -5016,9 +5016,6 @@
                     <a href="#dynamic-capabilities-changed" class="toc-h2 toc-link" data-title="DYNAMIC CAPABILITIES CHANGED">DYNAMIC CAPABILITIES CHANGED</a>
                   </li>
                   <li>
-                    <a href="#dynamic-capabilities-changed" class="toc-h2 toc-link" data-title="DYNAMIC CAPABILITIES CHANGED">DYNAMIC CAPABILITIES CHANGED</a>
-                  </li>
-                  <li>
                     <a href="#hold-rate-down" class="toc-h2 toc-link" data-title="HOLD RATE DOWN">HOLD RATE DOWN</a>
                   </li>
                   <li>
@@ -5028,16 +5025,7 @@
                     <a href="#light-brightness-changed" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGED">LIGHT BRIGHTNESS CHANGED</a>
                   </li>
                   <li>
-                    <a href="#light-brightness-changed" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGED">LIGHT BRIGHTNESS CHANGED</a>
-                  </li>
-                  <li>
                     <a href="#light-brightness-changing" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGING">LIGHT BRIGHTNESS CHANGING</a>
-                  </li>
-                  <li>
-                    <a href="#light-brightness-changing" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGING">LIGHT BRIGHTNESS CHANGING</a>
-                  </li>
-                  <li>
-                    <a href="#light-color-changed" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGED">LIGHT COLOR CHANGED</a>
                   </li>
                   <li>
                     <a href="#light-color-changed" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGED">LIGHT COLOR CHANGED</a>
@@ -39795,56 +39783,6 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <p><code>None</code></p>
 
-<h2 id='dynamic-capabilities-changed'>DYNAMIC CAPABILITIES CHANGED</h2>
-
-<p>Used to update capabilities and proxy functionality without requiring a different c4i/c4z file.  Also used  for drivers that have capabilities that change during runtime.  Multiple parameters can be set with a single notify for &#39;atomic changes&#39; where some functionality may involve mutual exclusion/inclusion.  </p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>DYANAMIC_CAPABILITIES_CHANGED ()</code></p>
-
-<h3 id='parameters'>Parameters</h3>
-
-<p>If the device supports Zigbee Broadcast Scenes one parameter is required:</p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>bool</td>
-<td>true/false</td>
-</tr>
-</tbody></table>
-
-<p>If the device supports dimming, the following parameter can be used to change if a light is a dimmer or switch at any time. This is very useful for having a single driver provide both functionality depending on what hardware is connected or detected.  This can also provide a dealer the ability to make a dimmer act as a switch for UI&#39;s and system functionality.</p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>dimmer</td>
-</tr>
-<tr>
-<td>bool</td>
-<td>true/false</td>
-</tr>
-</tbody></table>
-
-<p>An Example for these parameters would be:</p>
-
-<p><code>Notify(&quot;supports_broadcast_scenes=true&quot;,&quot;dimmer=true&quot;</code></p>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
 <h2 id='hold-rate-down'>HOLD RATE DOWN</h2>
 
 <p>Used to inform the proxy that the hardware click rate for the &quot;Slow Off&quot; Brightness preset changed.</p>
@@ -39927,36 +39865,6 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
 
-<h2 id='light-brightness-changed'>LIGHT BRIGHTNESS CHANGED</h2>
-
-<p>Used to notify the proxy that a lights brightness changed.  It is not required to send a LIGHT_BRIGHTNESS_CHANGING Notify before sending this, so devices like switches or some dimmers that do not provide status on where they are going can still be implemented with the new API. This notify should always be sent to the proxy when the driver starts and/or when the hardware comes online and the driver knows the actual brightness of the hardware.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>LIGHT_BRIGHTNESS_CHANGED ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>value</td>
-<td>LIGHT_BRIGHTNESS_CURRENT: Double. Raw value of where the light brightness stopped.</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='usage-note'>Usage Note</h3>
-
-<p>Dimmer Drivers should only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies and no longer use LEVEL_CHANGE notify.</p>
-
-<p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
-
 <h2 id='light-brightness-changing'>LIGHT BRIGHTNESS CHANGING</h2>
 
 <p>Part of the new Level Target API, used to notify the proxy that a lights brightness is changing.  The benefit of using this Notify is that drivers can provide &#39;how the light brightness is changing&#39;.  Using this Notify greatly improves interaction with the system in numerous ways for components such as ALS Agent, Navigators, Composer Programming and so.  A driver should enabled the supports_target capability if using this notify.  The LIGHT_LEVEL Notify should be avoided if a driver uses the new API.</p>
@@ -40007,48 +39915,6 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
 
-<h2 id='light-brightness-changing'>LIGHT BRIGHTNESS CHANGING</h2>
-
-<p>Used to notify the Light proxy that a light’s brightness is changing. The benefit of using this Notify is that drivers can provide data on how the light brightness is changing. Using this Notify greatly improves interaction with the system in numerous ways for components such as Advanced Lighting Scene Agent, Navigators and Composer Programming.  A driver should enabled the supports_target capability if using this notify.  Note the LIGHT_LEVEL notify should be avoided if a driver uses this API.</p>
-
-<p>Behaviorally, the Light proxy generates percentage scaling for UI&#39;s and other system components. However, since a single percent may not be enough light resolution, programming and other system components can set raw values for a device.  </p>
-
-<p>In the case where the end of the ramping value is unknown, specifying the end point of where the device will change to (if no further interaction is done) is the best practice.  For example, is if someone holds a button to slow-ramp a light On, the driver should Notify the proxy that the end point is 100 if 100 is the max value of the light.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>LIGHT_BRIGHTNESS_CHANGING ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>value</td>
-<td>LIGHT_BRIGHTNESS_CURRENT: Double. Raw value of the lighting level. Does not need to be 0-100% and can be based on the Min and Max Brightness capabilities such as 0-10, 0-99. 0-256 and even negative if the Brightness Min is defined as a negative number.</td>
-</tr>
-<tr>
-<td>value</td>
-<td>LIGHT_BRIGHTNESS_TARGET: Double. Raw value of where the light is going to.</td>
-</tr>
-<tr>
-<td>int</td>
-<td>RATE: Number of milliseconds it will take to ramp to the target level.</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='usage-note'>Usage Note</h3>
-
-<p>Dimmer Drivers should only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies and no longer use LEVEL_CHANGE notify.</p>
-
-<p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
-
 <h2 id='light-color-changed'>LIGHT COLOR CHANGED</h2>
 
 <p>Used to inform the proxy that the color has finished changing.  It is possible to use this call without the LIGHT_COLOR_CHANGING Notify call being sent first but, some Composer Programming paths will not be run.  This notify should always be sent to the proxy when the driver starts and/or when the hardware comes online and the driver knows the actual color of the hardware.</p>
@@ -40078,38 +39944,6 @@ The light level of the light has changed and is at the final brightness. Event I
 <tr>
 <td>LIGHT_COLOR_CURRENT_PRESET_ID</td>
 <td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is required for drivers making use of the Daylight Agent or similar features.</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h2 id='light-color-changed'>LIGHT COLOR CHANGED</h2>
-
-<p>Used to inform the proxy that the color has finished changing.  It is possible to use this call without the LIGHT_COLOR_CHANGING Notify call being sent first but some Composer Programming paths will not be run.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>LIGHT_COLOR_CHANGED ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_X</code></td>
-<td>The CIE 1931 X coordinate for where the color change stopped.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_Y</code></td>
-<td>The CIE 1931 Y coordinate for where the color change stopped.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_COLOR_MODE</code></td>
-<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
 </tr>
 </tbody></table>
 
