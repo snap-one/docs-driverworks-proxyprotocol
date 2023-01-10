@@ -4127,6 +4127,32 @@
               </ul>
           </li>
           <li>
+            <a href="#dynamic-camera-streams" class="toc-h1 toc-link" data-title="Dynamic Camera Streams">Dynamic Camera Streams</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#driver-support-for-dynamic-streams" class="toc-h2 toc-link" data-title="Driver Support for Dynamic Streams">Driver Support for Dynamic Streams</a>
+                  </li>
+                  <li>
+                    <a href="#support-for-caching-urls" class="toc-h2 toc-link" data-title="Support for Caching  URLs">Support for Caching  URLs</a>
+                  </li>
+                  <li>
+                    <a href="#dynamic-camera-stream-related-apis" class="toc-h2 toc-link" data-title="Dynamic Camera Stream Related APIs">Dynamic Camera Stream Related APIs</a>
+                  </li>
+                  <li>
+                    <a href="#requires_dynamic_stream_urls" class="toc-h2 toc-link" data-title="requires_dynamic_stream_urls">requires_dynamic_stream_urls</a>
+                  </li>
+                  <li>
+                    <a href="#get_stream_urls" class="toc-h2 toc-link" data-title="GET_STREAM_URLS">GET_STREAM_URLS</a>
+                  </li>
+                  <li>
+                    <a href="#stream_urls_ready" class="toc-h2 toc-link" data-title="STREAM_URLS_READY">STREAM_URLS_READY</a>
+                  </li>
+                  <li>
+                    <a href="#dynamic_urls_use_type" class="toc-h2 toc-link" data-title="dynamic_urls_use_type">dynamic_urls_use_type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#camera-capabilities" class="toc-h1 toc-link" data-title="Camera Capabilities">Camera Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
@@ -32901,6 +32927,224 @@ Module "ExtrasTextField" "extras/ExtrasTextField.lua"
 It is strongly recommended to hide rather than remove objects that will be temporary removed form the CI.</p>
 
 <p>Before destroying an Extras class instance, please use the <code>Extras:cleanCapability()</code> method. Also, please pay attention to the Capability section of the documentation.</p>
+<h1 id='dynamic-camera-streams'>Dynamic Camera Streams</h1>
+
+<p>The Camera Proxy has been enhanced with regard to what types of streams it provides. This is a result of the release of Control4’s next generation T4 touchscreens, new controllers and support for H.265 streaming. Camera drivers now have the ability to provide more stream options and can support a larger set of mixed hardware environments.</p>
+
+<p>Also, Navigators now support streaming tiles which results in the need to stream many cameras in parallel. To provide this functionality over a remote connection, it is desirable to offer the option to pick a lower bandwidth stream.</p>
+
+<p>For the best experience, cameras should be minimally configured with the following streams by default:</p>
+
+<table><thead>
+<tr>
+<th>Next Gen C4 OSD</th>
+<th>T4 Touch Screens</th>
+<th>Mobile</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>High Resolution H.265</td>
+<td>1080p H.265</td>
+<td>High Resolution H.265</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Legacy C4 OSD</th>
+<th>T3 Touch Screens</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>720p H.264</td>
+<td>720p H.264</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Small Streaming Tiles</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Low Resolution H.265</td>
+</tr>
+</tbody></table>
+
+<h3 id='driver-support-for-dynamic-streams'>Driver Support for Dynamic Streams</h3>
+
+<p><em>See the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#related-apis">Related APIs</a> section below for detailed information regarding the functions discussed in this section.</em></p>
+
+<p>New camera drivers should implement the dynamic streams API to provide a list of streams that the Navigators can pick from. In order to support dynamic streams the driver should:</p>
+
+<ol>
+<li><p>Set the requires_dynamic_stream_urls dynamic capability to “true”.</p></li>
+<li><p>Implement the GET_STREAM_URLS UI request command. This can be either implemented synchronously, by returning the list of cameras directly or it can also be implemented asynchronously. For example, if the driver needs to query a web service to get the current streams.</p></li>
+</ol>
+
+<p>If implemented asynchronously, when the stream list is available it will be necessary to send the Proxy the STREAM_URLS_READY Notify with the results. </p>
+
+<p>Drivers that do not have static URLs for streams will need to respond to the GET_STREAM_URLS call with an XML object that indicates the URL(s) is/are being generated and include a key with the response.  Once the driver has been able to obtain a URL for the stream, the driver should send a STREAM_URLS_READY Notify with the same key that is provided with this Synchronous call response.  An example of the response is:</p>
+
+<p><code>&lt;streams generating_key=&quot;1234&quot;/&gt;</code></p>
+
+<p>The key should be a unique 32 bit integer value.  We recommend starting at 1 and incrementing by 1 for each request that comes in.</p>
+
+<p>Also, if the driver does have a valid temporary URL that is still valid when it gets the call, no further Notify is needed and the driver should respond to this call with the XML of streams information.</p>
+
+<p>To indicate to a client that the driver supports this API call, a driver needs to set the requires_dynamic_stream_urls capability to true in the driver c4i or via DYNAMIC_CAPABILITIES_CHANGED Notify.</p>
+
+<p>If no Port is provided with a URL, the following ports are used by all clients as the default for the transport:</p>
+
+<ul>
+<li>http - 80</li>
+<li>https - 443</li>
+<li>rtsp - 554</li>
+<li>rtsps - 443</li>
+</ul>
+
+<h3 id='support-for-caching-urls'>Support for Caching  URLs</h3>
+
+<p>The ability to cache the stream URL list is also supported. This removes the need to have to execute the GET_STREAM_URLS request every time a camera stream is loaded. This is supported with the capability: dynamic_urls_use_type. </p>
+
+<p>The driver also needs to send a DYNAMIC_URLS_CHANGED notification to the proxy when the configured URLs have been changed. The proxy would then send a &quot;DYNAMIC_URLS_CHANGED&quot; DataToUI in response to this that the Navigators would key off of to refresh any cached URLs. This is useful for driver&#39;s with MULTIPLE use type URLs.</p>
+
+<h2 id='dynamic-camera-stream-related-apis'>Dynamic Camera Stream Related APIs</h2><h2 id='requires_dynamic_stream_urls'>requires_dynamic_stream_urls</h2>
+
+<p>Capability determining whether the camera should be asked for stream URLs through the more advanced API call.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;requires_dynamic_stream_urls&gt;&lt;/requires_dynamic_stream_urls&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;requires_dynamic_stream_urls&gt;</span>true<span class="nt">&lt;/requires_dynamic_stream_urls&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div><h2 id='get_stream_urls'>GET_STREAM_URLS</h2>
+<p>This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. </p>
+
+<p>A Client will make this request to a driver and provide information about how the client will be using the stream.  The driver optionally can adjust the URL(s) returned based on this information.  Driver developers are encouraged to test their driver on various devices to ensure good customer experiences when viewing collages, high resolution or high frame rate streams.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CODEC</td>
+<td>Optional. Comma separated list of codecs that the client can support with the most preferred first.  A driver is not required to handle this but some drivers may want to if they support multiple codecs. (mjpeg, h264, h264i, h265)</td>
+</tr>
+<tr>
+<td>RESOLUTION</td>
+<td>Optional. Resolution that the client will be using to display the stream.  A driver is not required to support this but this can be helpful for clients that may need a lower resolution stream for collages of multiple cameras and a 4MP or higher stream would tax the client hardware.</td>
+</tr>
+<tr>
+<td>FPS</td>
+<td>Optional. Frames Per Second that the client would prefer.  A driver is not required to support this but if it does it may result in better customer experience when dealing with collages on Navigators.</td>
+</tr>
+</tbody></table>
+<h3 id='examples'>Examples</h3>
+
+<p>An example of the simplest XML returned by a driver is shown to the right:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>--- simple
+
+<span class="nt">&lt;streams&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150/view_camera.cgi"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+or
+
+<span class="nt">&lt;streams&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/view_camera.cgi"</span> <span class="na">codec=</span><span class="s">"h264"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/view_camera_h265.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div>
+
+<p>This is followed by a more complex example from a camera with more features and can provide more options to allow clients to pick a better stream:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>--- complex
+
+<span class="nt">&lt;streams&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://server.company.com:554/rtsp.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://server.company.com:554/cloudapi.cgi?fh2f5hw2"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="na">resolution=</span><span class="s">"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://server.company.com:554/cloudapi.cgi?fh2f4hw1"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://server.company.com:554/cloudapi.cgi?fh2f4hw2"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="na">resolution=</span><span class="s">"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://server.company.com:443/cloudapi.cgi?fh2fhsw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://server.company.com:443/cloudapi.cgi?fh2fhsw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div><h2 id='stream_urls_ready'>STREAM_URLS_READY</h2>
+<p>Protocol Notification used for following up to a GET_STREAM_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>KEY</td>
+<td>Key of the originating call for the snapshot to be created.</td>
+</tr>
+<tr>
+<td>URLS</td>
+<td>String of XML object as described in the description of this call.</td>
+</tr>
+</tbody></table>
+<h3 id='examples-2'>Examples</h3>
+<p>An example of the simplest XML used by a driver is shown to the right:</p>
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150/view_camera.cgi"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+or
+
+<span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span> <span class="na">camera_address=</span><span class="s">"192.168.1.150"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/view_camera.cgi"</span> <span class="na">codec=</span><span class="s">"h264"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/view_camera_h265.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+</code></pre></div>
+
+<p>This is followed by an example from a camera with more features and can provide more options to allow clients to pick a better stream:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;streams</span> <span class="na">key=</span><span class="s">"1234"</span> <span class="na">camera_address=</span><span class="s">"server.company.com"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://192.168.1.150:554/rtsp.cgi"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsps://192.168.1.150:554/cloudapi.cgi?fh2f5hw2"</span> <span class="na">codec=</span><span class="s">"h265"</span> <span class="err">resolution"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://192.168.1.150:554/cloudapi.cgi?fh2f4hw1"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"60"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"rtsp://192.168.1.150:554/cloudapi.cgi?fh2f4hw2"</span> <span class="na">codec=</span><span class="s">"h264"</span> <span class="err">resolution"640x480"</span> <span class="na">fps=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/cloudapi.cgi?fh2fhsw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"https://192.168.1.150:443/cloudapi.cgi?fh2fhsw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/cloudapi.cgi?fh2fhw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="err">resolution"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/streams&gt;</span>
+
+</code></pre></div><h2 id='dynamic_urls_use_type'>dynamic_urls_use_type</h2>
+<p>Supports the following use types:</p>
+
+<p>MULTIPLE - Default if the capability is not specified. URLs can be used repeatedly. If URLs change, the driver should send DYNAMIC_URLS_CHANGED notification to the proxy.</p>
+
+<p>SINGLE - URLs can only be used once. Driver must be asked each time for a new set of URLs.</p>
+
+<p>EXPIRING (Do not include in 3.3.1) - URLs can be used more than once, but expire after some time period.</p>
+<h3 id='signature-2'>Signature</h3>
+<p><code>&lt;dynamic_urls_use_type&gt;&lt;/dynamic_urls_use_type&gt;</code></p>
+<h3 id='dynamic-capability-2'>Dynamic Capability</h3>
+<p>Yes</p>
+<h3 id='example-2'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;dynamic_urls_use_type&gt;</span>SINGLE<span class="nt">&lt;/dynamic_urls_use_type&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h1 id='camera-capabilities'>Camera Capabilities</h1>
 
 <h2 id='address-readonly'>address readonly</h2>
