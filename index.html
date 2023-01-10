@@ -5034,9 +5034,6 @@
                     <a href="#light-color-changing" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGING">LIGHT COLOR CHANGING</a>
                   </li>
                   <li>
-                    <a href="#light-color-changing" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGING">LIGHT COLOR CHANGING</a>
-                  </li>
-                  <li>
                     <a href="#light-level" class="toc-h2 toc-link" data-title="LIGHT LEVEL">LIGHT LEVEL</a>
                   </li>
                   <li>
@@ -40000,54 +39997,6 @@ The light level of the light has changed and is at the final brightness. Event I
 <tr>
 <td>LIGHT_COLOR_TARGET_PRESET_ID</td>
 <td>Integer. Preset ID that the light is going to. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is required for drivers making use of the Daylight Agent or similar features.</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h2 id='light-color-changing'>LIGHT COLOR CHANGING</h2>
-
-<p>Used to inform the proxy that the color is changing on the light. The optional parameters are useful in case the color changed without the proxy knowing which might be needed by some unreliable lighting hardware.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>LIGHT_COLOR_CHANGING ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_X</code></td>
-<td>CIE 1931 X coordinate for where the color is going to.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_Y</code></td>
-<td>CIE 1931 Y coordinate for where the color is going to.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_COLOR_MODE</code></td>
-<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
-</tr>
-<tr>
-<td><code>RATE</code></td>
-<td>Integer. Number of milliseconds it will take to ramp to the target level.  0 will be used if this parameter is not provided.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_X</code></td>
-<td>Optional. CIE 1931 X coordinate for where the color is changing from.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_Y</code></td>
-<td>Optional. CIE 1931 Y coordinate for where the color is changing from.</td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_CURRENT_COLOR_MODE</code></td>
-<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
 </tr>
 </tbody></table>
 
