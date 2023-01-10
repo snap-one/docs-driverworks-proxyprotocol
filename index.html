@@ -4984,9 +4984,6 @@
                     <a href="#set_color_target" class="toc-h2 toc-link" data-title="SET_COLOR_TARGET">SET_COLOR_TARGET</a>
                   </li>
                   <li>
-                    <a href="#set_color_target" class="toc-h2 toc-link" data-title="SET_COLOR_TARGET">SET_COLOR_TARGET</a>
-                  </li>
-                  <li>
                     <a href="#set-hold-rate-up" class="toc-h2 toc-link" data-title="SET HOLD RATE UP">SET HOLD RATE UP</a>
                   </li>
                   <li>
@@ -5026,7 +5023,37 @@
                     <a href="#group-stop-ramp" class="toc-h2 toc-link" data-title="GROUP STOP RAMP">GROUP STOP RAMP</a>
                   </li>
                   <li>
+                    <a href="#update-brightness-on-mode" class="toc-h2 toc-link" data-title="UPDATE BRIGHTNESS ON MODE">UPDATE BRIGHTNESS ON MODE</a>
+                  </li>
+                  <li>
+                    <a href="#update-brightness-rate-default" class="toc-h2 toc-link" data-title="UPDATE BRIGHTNESS RATE DEFAULT">UPDATE BRIGHTNESS RATE DEFAULT</a>
+                  </li>
+                  <li>
+                    <a href="#update-brightness-preset" class="toc-h2 toc-link" data-title="UPDATE BRIGHTNESS PRESET">UPDATE BRIGHTNESS PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#update-color-on-mode" class="toc-h2 toc-link" data-title="UPDATE COLOR ON MODE">UPDATE COLOR ON MODE</a>
+                  </li>
+                  <li>
+                    <a href="#update-color-rate-default" class="toc-h2 toc-link" data-title="UPDATE COLOR RATE DEFAULT">UPDATE COLOR RATE DEFAULT</a>
+                  </li>
+                  <li>
+                    <a href="#update-brightness-preset" class="toc-h2 toc-link" data-title="UPDATE BRIGHTNESS PRESET">UPDATE BRIGHTNESS PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#update-color-preset" class="toc-h2 toc-link" data-title="UPDATE COLOR PRESET">UPDATE COLOR PRESET</a>
+                  </li>
+                  <li>
                     <a href="#update_color_preset" class="toc-h2 toc-link" data-title="UPDATE_COLOR_PRESET">UPDATE_COLOR_PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#set-brightness-on-mode" class="toc-h2 toc-link" data-title="SET BRIGHTNESS ON MODE">SET BRIGHTNESS ON MODE</a>
+                  </li>
+                  <li>
+                    <a href="#set-brightness-rate-default" class="toc-h2 toc-link" data-title="SET BRIGHTNESS RATE DEFAULT">SET BRIGHTNESS RATE DEFAULT</a>
+                  </li>
+                  <li>
+                    <a href="#set-brightness-stop" class="toc-h2 toc-link" data-title="SET BRIGHTNESS STOP">SET BRIGHTNESS STOP</a>
                   </li>
                   <li>
                     <a href="#set_click_rate_up" class="toc-h2 toc-link" data-title="SET_CLICK_RATE_UP">SET_CLICK_RATE_UP</a>
@@ -39177,50 +39204,6 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <p><code>None</code></p>
 
-<h2 id='set_color_target'>SET_COLOR_TARGET</h2>
-
-<p>Sent to drivers to change the color. Once drivers begin to change color, they should send a COLOR_CHANGING Notify. Then once the color has finished changing it should send a COLOR_CHANGED Notify.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>SET_COLOR_TARGET()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_X</code> = X Coordinate of CIE 1931 Chromaticity Diagram</td>
-<td></td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_Y</code> = Y Coordinate of CIE 1931 Chromaticity Diagram</td>
-<td></td>
-</tr>
-<tr>
-<td><code>LIGHT_COLOR_TARGET_MODE</code> = Integer of: 0 full color, 1 color correlated temperature. Default is 0.  Most Bulb, LED strip and their drivers can likely ignore this. This is provided in the case that some bulbs or drivers need to track if they are in working in a cct mode or color mode. We recommend all drivers stick to only operating in full_color mode if possible.</td>
-<td></td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_RATE</td>
-<td>Integer. Parameter of milliseconds to ramp over. Will use driver default if parameter is not used.</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='usage-note'>Usage Note</h3>
-
-<p>If a driver implemented On Mode, the following parameters should be tracked:</p>
-
-<p>LIGHT_COLOR_TARGET_PRESET_ID - The ID of the preset to trigger. This must be sent with the LIGHT_COLOR_TARGET_PRESET_ORIGIN parameter.</p>
-
-<p>LIGHT_COLOR_TARGET_PRESET_ORIGIN - The origin of the preset to trigger.  1 = Device specific preset.   2 = Color Agent preset.</p>
-
 <h2 id='set-hold-rate-up'>SET HOLD RATE UP</h2>
 
 <p>Used to set the hold rate up for the device.</p>
@@ -39654,6 +39637,296 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <p><code>None</code></p>
 
+<h2 id='update-brightness-on-mode'>UPDATE BRIGHTNESS ON MODE</h2>
+
+<p>Drivers that set either brightness_on_mode_preset or brightness_on_mode_previous capabilities to true need to handle this command to know how the light should turn on. The proxy will handle Brightness related commands that go through it, but On behaviors that include BUTTON_LINK and other driver commands handled only in the driver should honor the On Mode.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_BRIGHTNESS_ON_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>BRIGHTNESS_PRESET_ID</td>
+<td>Integer. Brightness preset ID that is to be used when the light turns on.</td>
+</tr>
+<tr>
+<td>BRIGHTNESS_PRESET_LEVEL</td>
+<td>Double. Brightness Preset Level, this is provided as a convenience only as this value is provided for the preset in other proper calls.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-brightness-rate-default'>UPDATE BRIGHTNESS RATE DEFAULT</h2>
+
+<p>This is used by old(deprecated) generic On/Off commands, Navigators, and user created lighting scenes.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_BRIGHTNESS_RATE_DEFAULT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RATE</td>
+<td>Integer. Milliseconds for the default rate that is used when a rate of change is not provided.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-brightness-preset'>UPDATE BRIGHTNESS PRESET</h2>
+
+<p>The proxy will send a command to the driver when a Preset is changed. Drivers can ignore this command, or could react based on the data provided. </p>
+
+<p>Some options for reacting to the command would be to update keypad load control firmware to turn a light On to the level that the light was turned off from. </p>
+
+<p>Another reaction could be to adjust what light level the light will turn on to, such as interacting with the Daylight Agent.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_BRIGHTNESS_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>COMMAND</td>
+<td>String. This will be one of the following strings:</td>
+</tr>
+<tr>
+<td>ADDED, MODIFIED, REMOVED.</td>
+<td></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number. Preset ID</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>String. Name of the preset.</td>
+</tr>
+<tr>
+<td>LEVEL</td>
+<td>Double. - Level for the preset.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-color-on-mode'>UPDATE COLOR ON MODE</h2>
+
+<p>Drivers that set either color_on_mode_preset, color_on_mode_previous, or color_on_mode_fade capabilities to true need to handle this command to know how the light should turn on. The proxy will handle Color related commands that go through it, but On behaviors that include BUTTON_LINK and other driver commands handled only in the driver should honor the On Mode.</p>
+
+<p>For drivers that support Color Fade on mode, Dynamic On and some other commands will NOT send a SET_COLOR_TARGET. Drivers that are currently in the Color Fade on mode must adjust the color based on the brightness level when only brightness is sent. For more information see the Color Fade On Mode capability documentation.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_COLOR_ON_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>COLOR_PRESET_ID</td>
+<td>Integer. Color preset ID that is to be used when the light turns on.</td>
+</tr>
+<tr>
+<td>COLOR_PRESET_ORIGIN</td>
+<td>Integer. Color preset Origin that is to be used when the light turns on. 1 = Device Specific, 2 = Color Agent, 0 = Color fade not enabled.</td>
+</tr>
+<tr>
+<td>COLOR_PRESET_COLOR_X</td>
+<td>Double. This value is provided as a convenience and is redundant to other ways of getting the color information of the Color Preset.</td>
+</tr>
+<tr>
+<td>COLOR_PRESET_COLOR_Y</td>
+<td>Double. This value is provided as a convenience and is redundant to other ways of getting the color information of the Color Preset.</td>
+</tr>
+<tr>
+<td>COLOR_PRESET_COLOR_MODE</td>
+<td>Color Mode. This value is provided as a convenience and is redundant to other ways of getting the color information of the Color Preset.</td>
+</tr>
+<tr>
+<td>COLOR_FADE_PRESET_ID</td>
+<td>Integer. Color preset ID that is to be used when the light turns on.</td>
+</tr>
+<tr>
+<td>COLOR_FADE_PRESET_ORIGIN</td>
+<td>Integer. Color preset Origin that is to be used when the light turns on. 0 = Device Specific, 1 = Color Agent.</td>
+</tr>
+<tr>
+<td>COLOR_FADE_PRESET_COLOR_X</td>
+<td>Double. This value is provided as a convenience only and is secondary to other ways of getting the color information of the Fade Color Preset.</td>
+</tr>
+<tr>
+<td>COLOR_FADE_PRESET_COLOR_Y</td>
+<td>Double. This value is provided as a convenience only and is secondary to other ways of getting the color information of the Fade Color Preset.</td>
+</tr>
+<tr>
+<td>COLOR_FADE_PRESET_COLOR_MODE</td>
+<td>Color Mode. This value is provided as a convenience only and is secondary to other ways of getting the color information of the Fade Color Preset.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-color-rate-default'>UPDATE COLOR RATE DEFAULT</h2>
+
+<p>This is used by old(deprecated) generic On/Off commands, Navigators, and user created lighting scenes.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_COLOR_RATE_DEFAULT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RATE</td>
+<td>Integer. Milliseconds for the default rate that is used when a rate of change is not provided.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-brightness-preset'>UPDATE BRIGHTNESS PRESET</h2>
+
+<p>The proxy will send a command to the driver when a Preset is changed. Drivers can ignore this command, or could react based on the data provided. </p>
+
+<p>Some options for reacting to the command would be to update keypad load control firmware to turn a light On to the level that the light was turned off from. Another reaction could be to adjust what light level the light will turn on to, such as interacting with the Daylight Agent</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_BRIGHTNESS_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>String</td>
+<td>COMMAND: This will be one of the following strings:</td>
+</tr>
+<tr>
+<td>ADDED MODIFIED REMOVED.</td>
+<td></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number ID: Preset ID</td>
+</tr>
+<tr>
+<td>String</td>
+<td>NAME: Name of the preset</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>LEVEL: Level for the preset</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='update-color-preset'>UPDATE COLOR PRESET</h2>
+
+<p>Having a mandatory On color preset for all colored lights, this provides dealers a way of configuring various brands and models of lights in a manner that a customer can have a consistent &#39;default on&#39; color behavior for the lights in their homes. Without this feature, it&#39;s almost certain that different brands and models of lights would turn on to different colors or color temperatures.</p>
+
+<p>In addition to the On color preset, having a mandatory Dim color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;warm dim&#39; color behavior for the lights in their homes.</p>
+
+<p>The &#39;On&#39; color preset is the color that a light should generate at it&#39;s &#39;Default On Brightness&#39; level.</p>
+
+<p>The &#39;Dim&#39; color preset is the color that a light should generate at 1% brightness. </p>
+
+<p>For example, lets assume a lights Default On Brightness is set to 80%, the On preset color is 4000CCT, and the Dim preset color is 2000CCT. If the light was then set to a brightness level of 40%, the lights color would be 3000CCT. Also, if the lights brightness is set to 80% or higher, the color would always be 4000CCT. </p>
+
+<p>This formula would be used when a light is turned on (from off level) via a SET_BRIGHTNESS_TARGET and if no SET_COLOR_TARGET is additionally used. Any further time that SET_BRIGHTNESS_TARGET is used, the driver should use the formula to calculate the new color and also set that color when the brightness is changed via SET_BRIGHTNESS_TARGET. </p>
+
+<p>If a SET_COLOR_TARGET command is used, after the light has been turned on, then the formula for warm-dim functionality should no longer occur, and the color should not be auto-adjusted until the light is turned off and back on again.</p>
+
+<p>When all drivers follow this formula, there will be consistent On and Warm Dim lighting experiences for customers.</p>
+
+<p>Beginning with 3.3.0, the LightV2 proxy &#39;Dim&#39; and &#39;On&#39; color presets can be changed in Composer and Navigator. Composer currently has a checkbox to &#39;enable&#39; the Dim color. Although this checkbox is not an &#39;enable dim color&#39; feature, it is a &#39;hide the dim color preset in Composer&#39; feature. </p>
+
+<p>The intention of this checkbox was to help reduce dealer confusion, but it added potential driver developer confusion. Upon &#39;disabling&#39; the Dim color, Composer is just setting the Dim preset color to the On preset color. The LightV2 proxy always has an On and Dim preset defined, regardless of the checkbox in Composer being checked or unchecked. If Drivers want to know if this checkbox is &#39;checked&#39; there isn&#39;t a 100% safe way to know. However, drivers could consider it potentially checked if the Dim and On preset colors are not the same color</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>UPDATE_COLOR_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>COMMAND</td>
+<td>String. This will be one of the following strings:</td>
+</tr>
+<tr>
+<td></td>
+<td>ADDED, MODIFIED, REMOVED.</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number. Preset ID.</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>String. Name of the preset.</td>
+</tr>
+<tr>
+<td>COLOR_X</td>
+<td>Double - CIE 1931 Chromaticity Color.</td>
+</tr>
+<tr>
+<td>COLOR_Y</td>
+<td>Double - CIE 1931 Chromaticity Color.</td>
+</tr>
+<tr>
+<td>COLOR_MODE</td>
+<td>UInt - Color Mode (0 Full Color, 1 CCT)</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='update_color_preset'>UPDATE_COLOR_PRESET</h2>
 
 <p>Having a mandatory On color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;default on&#39; color behavior. Without this feature, it&#39;s almost certain that different brands and models of lights would turn on to different colors or color temperatures.</p>
@@ -39709,6 +39982,74 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <td>UInt. Color Mode (0 Full Color, 1 CCT)</td>
 </tr>
 </tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-brightness-on-mode'>SET BRIGHTNESS ON MODE</h2>
+
+<p>Older drivers that used &quot;Default On&quot; a.k.a: “PRESET_LEVEL&quot;  will notice that the &quot;On&quot; preset holds this value.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_BRIGHTNESS_ON_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Integer</td>
+<td>Preset ID that a light should turn on to.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-brightness-rate-default'>SET BRIGHTNESS RATE DEFAULT</h2>
+
+<p>This is used by old(deprecated) generic On/Off commands, Navigators, and user created lighting scenes.</p>
+
+<p>When this value is changed, drivers will receive a protocol driver command of UPDATE_BRIGHTNESS_RATE_DEFAULT with a parameter RATE of the value.</p>
+
+<p>Note: If a driver has its color rate behavior set to be linked to the brightness rate, then this call will also update the color rate.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_BRIGHTNESS_RATE_DEFAULT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Integer</td>
+<td>LIGHT_BRIGHTNESS_RATE_DEFAULT - Default rate that will be used if no rate is specified.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-brightness-stop'>SET BRIGHTNESS STOP</h2>
+
+<p>Stops a ramp if in progress.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_BRIGHTNESS_STOP ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
 
 <h3 id='returns'>Returns</h3>
 
