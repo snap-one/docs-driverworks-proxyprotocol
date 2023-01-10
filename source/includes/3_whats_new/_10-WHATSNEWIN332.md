@@ -152,52 +152,54 @@ PRESET\_LEVEL has been deprecated as the [brightness\_on\_mode\_preset][42] capa
 
 _Color Lighting Control may not Work on Some Drivers_
 
-Currently, there is a known problem with color control not working on drivers that are looking for a RATE parameter in the SET\_COLOR\_TARGET command. The RATE parameter was not correctly implemented due to the limits of support for color rate ramping in previous versions. We are finalizing the changes to make this fully work in 3.3.2. As a result, the “RATE” parameter name has been changed to “LIGHT\_COLOR\_TARGET\_RATE”.
+Currently, there is a known problem with color control not working on drivers that are looking for a RATE parameter in the [SET\_COLOR\_TARGET ][43]command. The RATE parameter was not correctly implemented due to the limits of support for color rate ramping in previous versions. We are finalizing the changes to make this fully work in 3.3.2. As a result, the “RATE” parameter name has been changed to “LIGHT\_COLOR\_TARGET\_RATE”.
 
 
 _Button Link Binding for Brightness Stop Functionality not Working_
 
-A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON\_LINK binding for Brightness Stop from working. This will be resolved in 3.3.3.
+A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s [BUTTON\_LINK][44] binding for Brightness Stop from working. This will be resolved in 3.3.3.
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#dynamic-camera-streams
-[2]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#brightness-on-mode-preset
-[3]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#brightness-on-mode-previous
-[4]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#color-on-mode-fade
-[5]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#color-on-mode-preset
-[6]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#color-on-mode-previous
-[7]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#brightness-rate-max
-[8]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#brightness-rate-min
-[9]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#supports_brightness_stop
-[10]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#click_rate_min
-[11]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#click_rate_max
-[12]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#click_rate_min
-[13]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#click_rate_max
-[14]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#add-driver-color-preset
-[15]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#delete-driver-color-preset
-[16]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#dynamic-off
-[17]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#dynamic-on
-[18]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#modify-driver-color-preset
-[19]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-brightness-stop
-[20]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-color-stop
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-preset
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-previous
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-fade
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-preset
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-previous
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-rate-max
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-rate-min
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_brightness_stop
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_min
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_max
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_min
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_max
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#add-driver-color-preset
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#delete-driver-color-preset
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-off
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#modify-driver-color-preset
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-stop
+[20]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-color-stop
 [21]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-brightness-on-mode
-[22]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-brightness-rate-default
+[22]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-on-mode
 [23]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-brightness-rate-default
-[24]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-color-on-mode
-[25]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-color-rate-default
-[26]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-color-rate-default
-[27]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-brightness-on-mode
-[28]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-brightness-rate-default
-[29]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-brightness-preset
-[30]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-color-on-mode
-[31]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-color-preset
-[32]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-color-rate-default
-[33]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set_color_target
-[34]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-v2-conditionals
-[35]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-v2-conditionals
-[36]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-v2-conditionals
-[37]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-brightness-changing
-[38]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-color-changing
-[39]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-color-changed
-[40]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-v2-variables
-[41]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#light-v2-variables
-[42]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#brightness-on-mode-preset
+[24]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-color-on-mode
+[25]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-color-rate-default
+[26]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-color-rate-default
+[27]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-brightness-on-mode
+[28]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-brightness-rate-default
+[29]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-brightness-preset
+[30]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-color-on-mode
+[31]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update_color_preset
+[32]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-color-rate-default
+[33]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[34]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
+[35]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
+[36]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
+[37]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing
+[38]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing
+[39]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed
+[40]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables
+[41]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables
+[42]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-preset
+[43]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[44]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-button-link-bindings
