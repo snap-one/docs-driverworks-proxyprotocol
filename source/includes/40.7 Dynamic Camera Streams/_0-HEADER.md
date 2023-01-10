@@ -20,7 +20,7 @@ For the best experience, cameras should be minimally configured with the followi
 | Low Resolution H.265|
 
 
-### Driver Support for Dynamic Streams
+#### Driver Support for Dynamic Streams
 
 _See the [Related APIs][1] section below for detailed information regarding the functions discussed in this section._
 
@@ -58,9 +58,9 @@ The driver also needs to send a DYNAMIC\_URLS\_CHANGED notification to the proxy
 
 
 
-## Dynamic Camera Stream Related APIs
+##  Related APIs
 
-## requires\_dynamic\_stream\_urls
+### requires\_dynamic\_stream\_urls
 
 Capability determining whether the camera should be asked for stream URLs through the more advanced API call.
 
@@ -87,7 +87,7 @@ Yes
 
 
 
-## GET\_STREAM\_URLS
+### GET\_STREAM\_URLS
 
 This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. 
 
@@ -141,7 +141,7 @@ This is followed by a more complex example from a camera with more features and 
 
 
 
-## STREAM\_URLS\_READY
+### STREAM\_URLS\_READY
 
 Protocol Notification used for following up to a GET\_STREAM\_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
 
@@ -188,7 +188,7 @@ This is followed by an example from a camera with more features and can provide 
 
 
 
-## dynamic\_urls\_use\_type
+### dynamic\_urls\_use\_type
 
 Supports the following use types:
 
