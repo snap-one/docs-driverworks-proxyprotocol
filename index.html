@@ -4933,6 +4933,15 @@
                     <a href="#button-action" class="toc-h2 toc-link" data-title="BUTTON ACTION">BUTTON ACTION</a>
                   </li>
                   <li>
+                    <a href="#dynamic-off" class="toc-h2 toc-link" data-title="DYNAMIC OFF">DYNAMIC OFF</a>
+                  </li>
+                  <li>
+                    <a href="#dynamic-on" class="toc-h2 toc-link" data-title="DYNAMIC ON">DYNAMIC ON</a>
+                  </li>
+                  <li>
+                    <a href="#delete-driver-color-preset" class="toc-h2 toc-link" data-title="DELETE DRIVER COLOR PRESET">DELETE DRIVER COLOR PRESET</a>
+                  </li>
+                  <li>
                     <a href="#set-brightness-target" class="toc-h2 toc-link" data-title="SET BRIGHTNESS TARGET">SET BRIGHTNESS TARGET</a>
                   </li>
                   <li>
@@ -5006,6 +5015,12 @@
                   </li>
                   <li>
                     <a href="#set_click_rate_down" class="toc-h2 toc-link" data-title="SET_CLICK_RATE_DOWN">SET_CLICK_RATE_DOWN</a>
+                  </li>
+                  <li>
+                    <a href="#add-driver-color-preset" class="toc-h2 toc-link" data-title="ADD DRIVER COLOR PRESET">ADD DRIVER COLOR PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#c4-type-manager" class="toc-h2 toc-link" data-title="C4 TYPE MANAGER">C4 TYPE MANAGER</a>
                   </li>
               </ul>
           </li>
@@ -38687,6 +38702,78 @@ chromaticity.</p>
 
 <p><code>None</code></p>
 
+<h2 id='dynamic-off'>DYNAMIC OFF</h2>
+
+<p>Support UIs with an off command to match up with the DYNAMIC_ON
+Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is turned on/off. If a driver does not support Dynamic On, the On brightness preset will be executed, as in O.S 3.3.1 and prior releases.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DYNAMIC_OFF () </code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='dynamic-on'>DYNAMIC ON</h2>
+
+<p>This command allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command. Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is turned on/off. If a driver does not support Dynamic On, the On brightness preset will be executed, as in O.S 3.3.1 and prior releases.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DYNAMIC_ON () </code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='delete-driver-color-preset'>DELETE DRIVER COLOR PRESET</h2>
+
+<p>Used to remove a driver configured color preset.  The PRESET_ID must be a valid preset, or the request will fail and return an error.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DELETE_DRIVER_COLOR_PRESET () </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_ID</td>
+<td>Set to the ID of the preset to be removed.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p>On return, &quot;deleteResult&quot; will contain an XML string that indicates a success or failure state.   If the XML indicates failure, a failure message will be included.</p>
+
+<p>Sample success message:  </p>
+
+<p><code>&lt;return_data&gt;&lt;success&gt;true&lt;/success&gt;&lt;/return_data&gt;</code></p>
+
+<p>Sample failure message: </p>
+
+<p><code>&lt;return_data&gt;&lt;success&gt;false&lt;/success&gt;&lt;reason&gt;Not found&lt;/reason&gt;&lt;/return_data&gt;</code></p>
+
+<h3 id='example'>Example</h3>
+
+<p>The example code to the right will remove a Preset with an ID of 3.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">deleteResult</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">SendUIRequest</span><span class="p">(</span><span class="n">proxyDeviceId</span><span class="p">,</span> <span class="s2">"DELETE_DRIVER_COLOR_PRESET"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PRESET_ID</span> <span class="o">=</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">)</span>
+</code></pre></div>
+
 <h2 id='set-brightness-target'>SET BRIGHTNESS TARGET</h2>
 
 <p>Used to set the target brightness of where the light is being requested to go. </p>
@@ -39456,6 +39543,289 @@ chromaticity.</p>
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h2 id='add-driver-color-preset'>ADD DRIVER COLOR PRESET</h2>
+
+<p>Used to add a new driver specific color preset.   The PRESET_NAME is always required.   The remainder of the parameters are required or optional depending on how the color is specified:</p>
+
+<p>If the color is being set using hue and saturation, the PRESET_COLOR_HUE, PRESET_COLOR_SATURATION, and PRESET_COLOR_MODE are all required.</p>
+
+<p>If the color is being set using xy, the PRESET_COLOR_X, PRESET_COLOR_Y, and PRESET_COLOR_MODE are all required.</p>
+
+<p>If the color temperature is being set, only the PRESET_COLOR_CORRELATED_TEMPERATURE is required.</p>
+
+<p>If the appropriate values are not set, an error will be returned.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>ADD_DRIVER_COLOR_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_NAME</td>
+<td>The name to give to the preset that is being added.</td>
+</tr>
+<tr>
+<td>One of the following three Color Sets are also required</td>
+<td></td>
+</tr>
+<tr>
+<td>Color Set 1</td>
+<td>PRESET_COLOR_CORRELATED_TEMPERATURE - The color correlated temperature that the preset should be set to.</td>
+</tr>
+<tr>
+<td>Color Set 2</td>
+<td>PRESET_COLOR_X - The color chromaticity x coordinate to be used in this preset. PRESET_COLOR_Y - The color chromaticity y coordinate to be used in this preset. Optional: PRESET_COLOR_MODE - The color mode used by this preset.   0 = Full Color, 1 = CCT. If this parameter is not provided, Full Color is assumed, unless the light only supports CCT, then CCT is assumed.</td>
+</tr>
+<tr>
+<td>Color Set 3</td>
+<td>This method is highly discouraged as it is confined to the  rRGB gamut and thus can&#39;t achieve many colors that typical color lights support.</td>
+</tr>
+<tr>
+<td>PRESET_COLOR_HUE</td>
+<td>The hue to use for this preset.  Range of 0 through 359 degrees. PRESET_COLOR_SATURATION - The saturation to use for this preset.  Range of 0 to 100.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p>On return, the &quot;addResult&quot; variable will contain an XML string that indicates success or failure.   If the string indicates success, the ID for the newly created preset will also be included.   If the string indicates failure, a reason may be provided for the failure.</p>
+
+<p>Sample success message:</p>
+
+<p><code>&lt;success&gt;true&lt;/success&gt;&lt;presetId&gt;3&lt;/presetId&gt;&lt;/return_data&gt;</code></p>
+
+<p>Sample failure message:</p>
+
+<p><code>&lt;return_data&gt;&lt;success&gt;false&lt;/success&gt;&lt;reason&gt;Invalid parameters&lt;/reason&gt;&lt;/return_data&gt;</code></p>
+
+<h3 id='example'>Example</h3>
+
+<p>The example code to the right adds a preset named &quot;Driver Color Preset&quot; </p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span><span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"Driver Color Preset"</span><span class="p">,</span> <span class="n">PRESET_COLOR_X</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">1500</span><span class="p">,</span> <span class="n">PRESET_COLOR_Y</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0722</span><span class="p">,</span> <span class="n">PRESET_COLOR_MODE</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span>
+
+<span class="kd">local</span> <span class="n">addResult</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">SendUIRequest</span><span class="p">(</span><span class="n">proxyDeviceId</span><span class="p">,</span> <span class="s2">"ADD_DRIVER_COLOR_PRESET"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id='c4-type-manager'>C4 TYPE MANAGER</h2>
+
+<p>Used to add, remove, or modity the Presets for a c4Type. Each C4Type must have a unique Name. c4Types handle saving and restorng all information
+associated to them, including restoring bindings and preset information</p>
+
+<p>C4Types are expanding and currently offer:</p>
+
+<ul>
+<li>LEVEL - Brightness, shades, volume.</li>
+<li>COLOR - CIE1931 xy.</li>
+<li>MODE</li>
+<li>BATTERY </li>
+<li>NUMBER</li>
+<li>STRING</li>
+<li>DEVICE_HEALTH</li>
+</ul>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4TYPE_COMMAND ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>string</td>
+<td>C4TYPE_NAME. Unique &quot;Name&quot; for the C4Type that will be operated on.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>ACTION. Command to run on the C4Type. This includes:</td>
+</tr>
+<tr>
+<td></td>
+<td>C4TYPE_REGISTER - Registers a new C4Type.</td>
+</tr>
+<tr>
+<td></td>
+<td>TYPE - The Type of C4Type.</td>
+</tr>
+<tr>
+<td></td>
+<td>C4TYPE_UNREGISTER - Removes an existing C4Type.</td>
+</tr>
+<tr>
+<td></td>
+<td>PRESET_ADD. <em>See usage note below</em>.</td>
+</tr>
+<tr>
+<td></td>
+<td>PRESET_REMOVE. <em>See usage note below</em>.</td>
+</tr>
+<tr>
+<td></td>
+<td>PRESET_MODIFY. <em>See usage note below</em>.</td>
+</tr>
+<tr>
+<td></td>
+<td>PRESET_BINDING\MODIFY. <em>See usage note below</em>.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>Additional parameters are required if the ACTION value used is PRESET.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_ID - String - ID of the Preset.</td>
+<td></td>
+</tr>
+<tr>
+<td>PRESET_ORIGIN - String - Origin of the Preset.</td>
+<td></td>
+</tr>
+<tr>
+<td>PRESET_FUNCTION - The Preset operation to run PRESET_ADD, PRESET_MODIFY and PRESET_REMOVE.</td>
+<td></td>
+</tr>
+<tr>
+<td>PRESET_ADD - Add the Preset</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p>Additionally, each c4Types above has different parameters that need to be specified. </p>
+
+<p>PRESET_ADD</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_LEVEL</td>
+<td>The value of the preset.</td>
+</tr>
+<tr>
+<td>PRESET_TYPE</td>
+<td>Optional.How the Preset is adjusted.</td>
+</tr>
+<tr>
+<td>PERCENT</td>
+<td>Allows user to select 0-100.  If not specified then the PRESET_LEVEL is assumed to be a raw level value.</td>
+</tr>
+</tbody></table>
+
+<p>PRESET_MODIFY</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Level</td>
+<td>PRESET_LEVEL - The value of the preset</td>
+</tr>
+</tbody></table>
+
+<p>PRESET_REMOVE - No parameters</p>
+
+<p>PRESET_BINDING_MODIFY</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_BINDING_ID - Integer ID of the binding for the driver you want to Add/Modify/Remove. Use 0 to remove the binding.</td>
+<td></td>
+</tr>
+<tr>
+<td>PRESET_ACTIVE_COLOR</td>
+<td>Color when the Preset is Active.</td>
+</tr>
+<tr>
+<td>PRESET_INACTIVE_COLOR</td>
+<td>Color when the Preset is Inactive.</td>
+</tr>
+</tbody></table>
+
+<h3 id='examples'>Examples</h3>
+
+<p>In addition to &quot;Brightness&quot; for a NAME, &quot;Color&quot; can be used for lights that support color in the LightV2 proxy and &quot;Blind Level&quot; can be used for the Blind Proxy for blind Level presets. See the examples to the right.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Adding a Preset:</span>
+<span class="n">C4SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span><span class="s2">"C4TYPE_COMMAND"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">,</span> <span class="s2">"COMMAND"</span><span class="p">)</span>
+<span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">C4TYPE_NAME</span><span class="o">=</span><span class="s2">"Brightness"</span><span class="p">,</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="n">PRESET_ADD</span><span class="p">,</span>
+<span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"New Preset Name"</span><span class="p">,</span>
+<span class="n">PRESET_ID</span><span class="o">=</span><span class="s2">"New Preset ID"</span><span class="p">,</span>
+<span class="n">PRESET_TYPE</span><span class="o">=</span><span class="s2">"PERCENT"</span><span class="p">,</span>  <span class="p">(</span><span class="n">Optional</span><span class="p">,</span> <span class="n">raw</span> <span class="n">value</span> <span class="n">assumed</span> <span class="n">otherwise</span><span class="p">)</span>
+<span class="n">PRESET_LEVEL</span><span class="o">=</span><span class="s2">"50"</span><span class="p">}</span>
+
+
+<span class="c1">-- Modify Preset:</span>
+<span class="n">C4SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span><span class="s2">"C4TYPE_COMMAND"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">,</span> <span class="s2">"COMMAND"</span><span class="p">)</span>
+<span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">C4TYPE_NAME</span><span class="o">=</span><span class="s2">"Brightness"</span><span class="p">,</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="n">PRESET_MODIFY</span><span class="p">,</span>
+<span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"On"</span><span class="p">,</span>
+<span class="n">PRESET_ID</span><span class="o">=</span><span class="s2">"New Preset ID"</span><span class="p">,</span>
+<span class="n">PRESET_TYPE</span><span class="o">=</span><span class="s2">"PERCENT"</span><span class="p">,</span> <span class="p">(</span><span class="n">Optional</span><span class="p">,</span> <span class="n">raw</span> <span class="n">value</span> <span class="n">assumed</span> <span class="n">otherwise</span><span class="p">)</span>
+<span class="n">PRESET_LEVEL</span><span class="o">=</span><span class="s2">"50"</span><span class="p">}</span>
+
+
+<span class="c1">--Delete Preset:</span>
+<span class="n">C4SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span><span class="s2">"C4TYPE_COMMAND"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">,</span> <span class="s2">"COMMAND"</span><span class="p">)</span>
+<span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">C4TYPE_NAME</span><span class="o">=</span><span class="s2">"Brightness"</span><span class="p">,</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="n">PRESET_REMOVE</span><span class="p">,</span>
+<span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"On"</span>
+<span class="n">PRESET_ID</span><span class="o">=</span><span class="s2">"New Preset ID"</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1">--Add/Remove a binding for a Preset:</span>
+<span class="n">C4SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span> <span class="s2">"C4TYPE_COMMAND"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">,</span> <span class="s2">"COMMAND"</span><span class="p">)</span>
+<span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">C4TYPE_NAME</span><span class="o">=</span><span class="s2">"Brightness"</span><span class="p">,</span> 
+<span class="n">ACTION</span><span class="o">=</span><span class="s2">"PRESET_BINDING_MODIFY"</span><span class="p">,</span>
+<span class="n">PRESET_BINDING_ID</span><span class="o">=</span><span class="s2">"100"</span> <span class="p">(</span><span class="n">BindingID</span> <span class="n">of</span> <span class="n">a</span> <span class="n">driver</span> <span class="ow">or</span> <span class="n">proxy</span><span class="p">,</span> <span class="ow">or</span> <span class="n">use</span> <span class="o">-</span><span class="mi">1</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">binding</span> <span class="k">for</span> <span class="n">this</span> <span class="n">preset</span><span class="p">)</span>
+<span class="n">PRESET_BUTTON_ACTION</span><span class="o">=</span><span class="s2">"PUSH"</span><span class="p">,</span>
+<span class="n">PRESET_ACTIVE_COLOR</span><span class="o">=</span><span class="s2">"0000ff"</span><span class="p">,</span>
+<span class="n">PRESET_INACTIVE_COLOR</span><span class="o">=</span><span class="s2">"000000"</span><span class="p">}</span>
+
+<span class="c1">--Activate a Preset:</span>
+<span class="n">C4SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span> <span class="s2">"C4TYPE_COMMAND"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">,</span> <span class="s2">"COMMAND"</span><span class="p">)</span>
+<span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">C4TYPE_NAME</span><span class="o">=</span><span class="s2">"Brightness"</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="s2">"PRESET_ACTIVATE"</span><span class="p">,</span>
+<span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"On"</span>
+<span class="n">PRESET_ID</span><span class="o">=</span><span class="s2">"New Preset ID"</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
 <h1 id='light-v2-events'>Light V2 Events</h1>
 
 <p>The following are System Events that are provided and managed by the Proxy.  These can be used for Composer Programming or other drivers to monitor the changes of a values reflected in a LightV2 proxy.</p>
