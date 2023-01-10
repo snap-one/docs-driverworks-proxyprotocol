@@ -5016,6 +5016,9 @@
                     <a href="#dynamic-capabilities-changed" class="toc-h2 toc-link" data-title="DYNAMIC CAPABILITIES CHANGED">DYNAMIC CAPABILITIES CHANGED</a>
                   </li>
                   <li>
+                    <a href="#dynamic-capabilities-changed" class="toc-h2 toc-link" data-title="DYNAMIC CAPABILITIES CHANGED">DYNAMIC CAPABILITIES CHANGED</a>
+                  </li>
+                  <li>
                     <a href="#hold-rate-down" class="toc-h2 toc-link" data-title="HOLD RATE DOWN">HOLD RATE DOWN</a>
                   </li>
                   <li>
@@ -5025,10 +5028,22 @@
                     <a href="#light-brightness-changed" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGED">LIGHT BRIGHTNESS CHANGED</a>
                   </li>
                   <li>
+                    <a href="#light-brightness-changed" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGED">LIGHT BRIGHTNESS CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#light-brightness-changing" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGING">LIGHT BRIGHTNESS CHANGING</a>
+                  </li>
+                  <li>
                     <a href="#light-brightness-changing" class="toc-h2 toc-link" data-title="LIGHT BRIGHTNESS CHANGING">LIGHT BRIGHTNESS CHANGING</a>
                   </li>
                   <li>
                     <a href="#light-color-changed" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGED">LIGHT COLOR CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#light-color-changed" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGED">LIGHT COLOR CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#light-color-changing" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGING">LIGHT COLOR CHANGING</a>
                   </li>
                   <li>
                     <a href="#light-color-changing" class="toc-h2 toc-link" data-title="LIGHT COLOR CHANGING">LIGHT COLOR CHANGING</a>
@@ -39500,6 +39515,288 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <h2 id='dynamic-capabilities-changed'>DYNAMIC CAPABILITIES CHANGED</h2>
 
+<p>Used to update capabilities and proxy functionality without requiring a different c4i/c4z or for drivers that have capabilities that change during runtime.  Multiple parameters can be set with a single notify for &#39;atomic changes&#39; where some functionality may involve mutual exclusion/inclusion.  </p>
+
+<p>Example for parameters are <code>Notify(&quot;supports_broadcast_scenes=true&quot;,&quot;dimmer=true&quot;</code>  </p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>DYANAMIC_CAPABILITIES_CHANGED ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p>DYNAMIC_CAPABILITIES_CHANGED requires different parameters base on capability:</p>
+
+<p><strong>Supports Zigbee Broadcast Scenes</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>supports_broadcast_scenes</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Level Target Support </strong></p>
+
+<p>If the driver supports the new level target API: LIGHT_BRIGHTNESS_CHANGING and LIGHT_BRIGHTNESS_CHANGED. This provides better light level tracking for UI&#39;s, ALS Scenes, and Composer Programming interaction by allowing drivers to specify the current level, their target level and the number of milliseconds it will take for the light to reach the target level.  </p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>supports_target</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Dimmer</strong></p>
+
+<p>Used to change if a light is a dimmer or switch at any time. This is very useful for having a single driver provide both functionality depending on what hardware is connected or detected.  Can also provide a dealer the ability to make a dimmer act as a switch for UI&#39;s and system functionality.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>dimmer</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p>Note: If true, updates the following feature capabilities:</p>
+
+<ul>
+<li>Reads ramp_level from c4i, if not defined, false is assumed.</li>
+<li>Reads click/hold rates from c4i, if these are not defined, 0 is assumed.</li>
+</ul>
+
+<p>Drivers using dynamic capabilities for ramp_level, click, and hold rate settings should re-send dynamic capability notifies for each of these after setting dimmer to true.</p>
+
+<p>If false - Sets the following:
+- dimmer = false
+- ramp_level = false
+- click/rates = 0</p>
+
+<p><strong>Supports Brightness Stop</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>dimmer</td>
+<td>true/false</td>
+</tr>
+<tr>
+<td>supports_brightness_stop</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Ramp Level </strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ramp_level</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Default Brightness Rate Min</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>brightness_rate_min</td>
+<td>0-INT16_MAX</td>
+</tr>
+</tbody></table>
+
+<p><strong>Default Brightness Rate Max</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>brightness_rate_max</td>
+<td>0-INT16_MAX</td>
+</tr>
+</tbody></table>
+
+<p><strong>Supports Color</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>supports_color</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Supports Color Correlated Temperature </strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>supports_color_correlated_temperature</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Color Temperature Correlated Min</strong> </p>
+
+<p>What is the lowest supported CCT value. Must be increment of 10. Set both min/max to the same value if the CCT value can not be changed.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_correlated_temperature_min</td>
+<td>500-20000</td>
+</tr>
+</tbody></table>
+
+<p><strong>Color Temperature Correlated Max</strong> </p>
+
+<p>What is the highest supported CCT value. Must be increment of 10. Set both min/max to the same value if the CCT value can not be changed.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_correlated_temperature_max</td>
+<td>500-20000</td>
+</tr>
+</tbody></table>
+
+<p><strong>Supports Color Stop</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>supports_color_stop</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<p><strong>Color Rate Behavior</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_rate_behavior</td>
+<td>Value. Values include: 0 - Unchangeable Rate, 1 - Device only supports one rate for brightness and color, 2 - Device supports ramping brightness and color at two different rates.</td>
+</tr>
+</tbody></table>
+
+<p><strong>Default Color Rate Min</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_rate_min</td>
+<td>0-INT16_MAX</td>
+</tr>
+</tbody></table>
+
+<p><strong>Default Color Rate Max</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_rate_max</td>
+<td>0-INT16_MAX</td>
+</tr>
+</tbody></table>
+
+<p><strong>Color Trace Tolerance</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>color_trace_tolerance</td>
+<td>0-20 * See capability documentation for more information.</td>
+</tr>
+</tbody></table>
+
+<p><strong>Has Extras</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>has_extras</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='dynamic-capabilities-changed'>DYNAMIC CAPABILITIES CHANGED</h2>
+
 <p>Used to update capabilities and proxy functionality without requiring a different c4i/c4z file.  Also used  for drivers that have capabilities that change during runtime.  Multiple parameters can be set with a single notify for &#39;atomic changes&#39; where some functionality may involve mutual exclusion/inclusion.  </p>
 
 <h3 id='signature'>Signature</h3>
@@ -39598,6 +39895,40 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <h2 id='light-brightness-changed'>LIGHT BRIGHTNESS CHANGED</h2>
 
+<p>Part of the new Level Target API, used to notify the proxy that a lights brightness changed.  It is not required to send a LIGHT_BRIGHTNESS_CHANGING Notify before sending this, so devices like switches or some dimmers that do not provide status on where they are going can still be implemented with the new API. This notify should always be sent to the proxy when the driver starts and/or when the hardware comes online and the driver knows the actual brightness of the hardware.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>LIGHT_BRIGHTNESS_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LIGHT_BRIGHTNESS_CURRENT</td>
+<td>Double. Raw value of where the light brightness stopped.</td>
+</tr>
+<tr>
+<td>LIGHT_BRIGHTNESS_CURRENT_PRESET_ID</td>
+<td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified - This is needed for drivers making use of the Daylight Agent or similar features.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>Dimmer Drivers should only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies and no longer use LEVEL_CHANGE notify.</p>
+
+<p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
+
+<h2 id='light-brightness-changed'>LIGHT BRIGHTNESS CHANGED</h2>
+
 <p>Used to notify the proxy that a lights brightness changed.  It is not required to send a LIGHT_BRIGHTNESS_CHANGING Notify before sending this, so devices like switches or some dimmers that do not provide status on where they are going can still be implemented with the new API. This notify should always be sent to the proxy when the driver starts and/or when the hardware comes online and the driver knows the actual brightness of the hardware.</p>
 
 <h3 id='signature'>Signature</h3>
@@ -39613,6 +39944,56 @@ The light level of the light has changed and is at the final brightness. Event I
 <tr>
 <td>value</td>
 <td>LIGHT_BRIGHTNESS_CURRENT: Double. Raw value of where the light brightness stopped.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>Dimmer Drivers should only use BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED notifies and no longer use LEVEL_CHANGE notify.</p>
+
+<p>Switch drivers only need to use the BRIGHTNESS_CHANGED notify.</p>
+
+<h2 id='light-brightness-changing'>LIGHT BRIGHTNESS CHANGING</h2>
+
+<p>Part of the new Level Target API, used to notify the proxy that a lights brightness is changing.  The benefit of using this Notify is that drivers can provide &#39;how the light brightness is changing&#39;.  Using this Notify greatly improves interaction with the system in numerous ways for components such as ALS Agent, Navigators, Composer Programming and so.  A driver should enabled the supports_target capability if using this notify.  The LIGHT_LEVEL Notify should be avoided if a driver uses the new API.</p>
+
+<p>This behaves the same was as a Blind or other C4TypeLevel feature where the proxy generates Percentage scaling and for UI&#39;s and other system components, but since a single percent may not be enough resolution, we allow programming and other system components to set raw values for a device.  </p>
+
+<p>In the case where the &#39;end of the ramp&#39; is unknown, specifying the end point of where the device will change to if no further interaction is done is the best practice.  An example is if someone Holds a button to slow-ramp a light On, the driver should Notify the proxy that the end point is 100 if 100 is the max value of the light.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>LIGHT_BRIGHTNESS_CHANGING ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LIGHT_BRIGHTNESS_CURRENT</td>
+<td>Double. Raw value of the lighting level. Does not need to be 0-100% and can be based on the Min and Max Brightness capabilities such as 0-10, 0-99. 0-256 and even negative if the Brightness Min is defined as a negative number.</td>
+</tr>
+<tr>
+<td>LIGHT_BRIGHTNESS_TARGET</td>
+<td>Double. Raw value of where the light is going to.</td>
+</tr>
+<tr>
+<td>RATE</td>
+<td>Integer. Number of milliseconds it will take to ramp to the target level.</td>
+</tr>
+<tr>
+<td>LIGHT_BRIGHTNESS_CURRENT_PRESET_ID</td>
+<td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified - This is needed for drivers making use of the Daylight Agent or similar features.</td>
+</tr>
+<tr>
+<td>LIGHT_BRIGHTNESS_TARGET_PRESET_ID</td>
+<td>Integer.  Preset ID that the light is going to. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is needed for drivers making use of the Daylight Agent or similar features.</td>
 </tr>
 </tbody></table>
 
@@ -39670,6 +40051,42 @@ The light level of the light has changed and is at the final brightness. Event I
 
 <h2 id='light-color-changed'>LIGHT COLOR CHANGED</h2>
 
+<p>Used to inform the proxy that the color has finished changing.  It is possible to use this call without the LIGHT_COLOR_CHANGING Notify call being sent first but, some Composer Programming paths will not be run.  This notify should always be sent to the proxy when the driver starts and/or when the hardware comes online and the driver knows the actual color of the hardware.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>LIGHT_COLOR_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LIGHT_COLOR_CURRENT_X</td>
+<td>The CIE 1931 X coordinate for where the color change stopped.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_Y</td>
+<td>The CIE 1931 Y coordinate for where the color change stopped.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_COLOR_MODE</td>
+<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_PRESET_ID</td>
+<td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is required for drivers making use of the Daylight Agent or similar features.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='light-color-changed'>LIGHT COLOR CHANGED</h2>
+
 <p>Used to inform the proxy that the color has finished changing.  It is possible to use this call without the LIGHT_COLOR_CHANGING Notify call being sent first but some Composer Programming paths will not be run.</p>
 
 <h3 id='signature'>Signature</h3>
@@ -39693,6 +40110,62 @@ The light level of the light has changed and is at the final brightness. Event I
 <tr>
 <td><code>LIGHT_COLOR_CURRENT_COLOR_MODE</code></td>
 <td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='light-color-changing'>LIGHT COLOR CHANGING</h2>
+
+<p>Used to inform the proxy that the color is changing on the light. The optional parameters are useful in case the color changed without the proxy knowing which might be needed by some unreliable lighting hardware.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>LIGHT_COLOR_CHANGING ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LIGHT_COLOR_TARGET_X CIE 1931</td>
+<td>X coordinate for where the color is going to.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_Y</td>
+<td>CIE 1931 Y coordinate for where the color is going to.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_COLOR_MODE</td>
+<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_COLOR_ RATE</td>
+<td>Optional. Integer. Number of milliseconds it will take to ramp to the target level.  0 will be used if this parameter is not provided.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_X</td>
+<td>Optional. CIE 1931 X coordinate for where the color is changing from.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_Y</td>
+<td>Optional. CIE 1931 Y coordinate for where the color is changing from.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_COLOR_MODE</td>
+<td>Optional. 0 for Full Color, 1 if the XY coordinate is a CCT</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_CURRENT_PRESET_ID</td>
+<td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is required for drivers making use of the Daylight Agent or similar features.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_PRESET_ID</td>
+<td>Integer. Preset ID that the light is going to. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is required for drivers making use of the Daylight Agent or similar features.</td>
 </tr>
 </tbody></table>
 
@@ -41768,10 +42241,10 @@ ID = 1000. Boolean indicating if the light Brightness is not at the Off preset. 
 ID = 1001.  An integer indicating the current brightness for a dimmer. The value should be between 0-100. </p>
 
 <p><strong>Brightness Target Ramp Rate in Milliseconds:</strong> 
-ID = 1120. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target\ capability.</p>
+ID = 1120. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target capability.</p>
 
 <p><strong>Brightness Target Rate Remaining in Milliseconds:</strong>
-ID = 1121. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target \capability.</p>
+ID = 1121. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target capability.</p>
 
 <p><strong>Click Rate Up: </strong>
 ID = 1002. An integer indicating the number of milliseconds. (Used in &quot;On&quot; Preset).</p>
