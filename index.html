@@ -5041,9 +5041,6 @@
                     <a href="#update-brightness-preset" class="toc-h2 toc-link" data-title="UPDATE BRIGHTNESS PRESET">UPDATE BRIGHTNESS PRESET</a>
                   </li>
                   <li>
-                    <a href="#update-color-preset" class="toc-h2 toc-link" data-title="UPDATE COLOR PRESET">UPDATE COLOR PRESET</a>
-                  </li>
-                  <li>
                     <a href="#update_color_preset" class="toc-h2 toc-link" data-title="UPDATE_COLOR_PRESET">UPDATE_COLOR_PRESET</a>
                   </li>
                   <li>
@@ -39861,7 +39858,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <p><code>None</code></p>
 
-<h2 id='update-color-preset'>UPDATE COLOR PRESET</h2>
+<h2 id='update_color_preset'>UPDATE_COLOR_PRESET</h2>
 
 <p>Having a mandatory On color preset for all colored lights, this provides dealers a way of configuring various brands and models of lights in a manner that a customer can have a consistent &#39;default on&#39; color behavior for the lights in their homes. Without this feature, it&#39;s almost certain that different brands and models of lights would turn on to different colors or color temperatures.</p>
 
@@ -39920,66 +39917,6 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <tr>
 <td>COLOR_MODE</td>
 <td>UInt - Color Mode (0 Full Color, 1 CCT)</td>
-</tr>
-</tbody></table>
-
-<h3 id='returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h2 id='update_color_preset'>UPDATE_COLOR_PRESET</h2>
-
-<p>Having a mandatory On color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;default on&#39; color behavior. Without this feature, it&#39;s almost certain that different brands and models of lights would turn on to different colors or color temperatures.</p>
-
-<p>In addition to the On color preset, having a mandatory Dim color preset for all colored lights provides dealers a way of configuring various brands and models of lights in a way that a customer can have a consistent &#39;warm dim&#39; color behavior. </p>
-
-<p>The &#39;On&#39; color preset is the color that a light should generate at its &#39;Default On Brightness&#39; level.</p>
-
-<p>The &#39;Dim&#39; color preset is the color that a light should generate at 1% brightness. </p>
-
-<p>For example, consider a lights Default On Brightness is set to 80%. The On preset color is 4000CCT and the Dim preset color is 2000CCT. If the light was then set to a brightness level of 40%, the lights color would be 3000CCT. Also, if the lights brightness is set to 80% or higher, the color would always be 4000CCT. This formula would be used when a light is turned on (from off level) via a SET_BRIGHTNESS_TARGET and if no SET_COLOR_TARGET is additionally used. </p>
-
-<p>Any further time that SET_BRIGHTNESS_TARGET is used, the driver should use the formula to calculate the new color and also set that color when the brightness is changed via SET_BRIGHTNESS_TARGET. If a SET_COLOR_TARGET command is used after the light has been turned on, then the formula for warm-dim functionality should no longer occur and the color should not be auto-adjusted until the light is turned off and back on again.</p>
-
-<p>When all drivers follow this formula there will be consistent On and Warm Dim lighting experiences for customers.</p>
-
-<p>In 3.3.0, the LightV2 Proxy &#39;Dim&#39; and &#39;On&#39; color presets can be changed in Composer and Navigator. Composer currently has a checkbox to &#39;enable&#39; the Dim color, although this checkbox is not an &#39;enable dim color&#39; feature. It is a &#39;hide the dim color preset in Composer&#39; feature. </p>
-
-<p>Upon &#39;disabling&#39; the Dim color Composer is actually setting the Dim preset color to the On preset color. The LightV2 Proxy always has an On and Dim preset defined regardless of the checkbox in Composer being checked or unchecked. There isn&#39;t a 100% sure way for a driver to know if this checkbox is &#39;checked’.  However, a driver could consider it potentially checked if the Dim and On preset colors are not the same color.</p>
-
-<h3 id='signature'>Signature</h3>
-
-<p><code>UPDATE_COLOR_PRESET()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>COMMAND</td>
-<td>String - This will be one of the following strings: <code>&quot;ADDED&quot;, &quot;MODIFIED&quot; &quot;REMOVED&quot;</code></td>
-</tr>
-<tr>
-<td>ID</td>
-<td>Number. Preset ID</td>
-</tr>
-<tr>
-<td>NAME</td>
-<td>String. Name of the preset.</td>
-</tr>
-<tr>
-<td>COLOR_X</td>
-<td>Double - CIE 1931 Chromaticity Color.</td>
-</tr>
-<tr>
-<td>COLOR\Y</td>
-<td>Double - CIE 1931 Chromaticity Color.</td>
-</tr>
-<tr>
-<td>COLOR_MODE</td>
-<td>UInt. Color Mode (0 Full Color, 1 CCT)</td>
 </tr>
 </tbody></table>
 
