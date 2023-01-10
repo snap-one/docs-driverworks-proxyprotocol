@@ -41764,8 +41764,14 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 <p><strong>Light State:</strong>
 ID = 1000. Boolean indicating if the light Brightness is not at the Off preset. If you set this variable to true on a dimmer,  it will go to the On preset. On a switch, only the first variable exists. </p>
 
-<p><strong>Light Brightness Percent:</strong>
+<p><strong>Brightness Percent:</strong>
 ID = 1001.  An integer indicating the current brightness for a dimmer. The value should be between 0-100. </p>
+
+<p><strong>Brightness Target Ramp Rate in Milliseconds:</strong> 
+ID = 1120. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target\ capability.</p>
+
+<p><strong>Brightness Target Rate Remaining in Milliseconds:</strong>
+ID = 1121. Primarily for UI&#39;s who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports_brightness_target \capability.</p>
 
 <p><strong>Click Rate Up: </strong>
 ID = 1002. An integer indicating the number of milliseconds. (Used in &quot;On&quot; Preset).</p>
