@@ -6,8 +6,18 @@ ID = 1000. Boolean indicating if the light Brightness is not at the Off preset. 
 
 
 
-**Light Brightness Percent:**
+**Brightness Percent:**
 ID = 1001.  An integer indicating the current brightness for a dimmer. The value should be between 0-100. 
+
+
+
+**Brightness Target Ramp Rate in Milliseconds:** 
+ID = 1120. Primarily for UI's who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports\_brightness\_target\ capability.
+
+
+
+**Brightness Target Rate Remaining in Milliseconds:**
+ID = 1121. Primarily for UI's who request brightness information during a ramp, as this will allow them to know how far through the ramp the light is. This is updated every 1000ms. This works for only drivers that have enabled the supports\_brightness\_target \capability.
 
 
 
