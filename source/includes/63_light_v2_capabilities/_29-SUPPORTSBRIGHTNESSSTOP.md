@@ -1,19 +1,23 @@
-## supports\_color
+## supports\_brightness\_stop
 
-Whether the device can show a broad range of colors.  Set to False and use "supports\_color\_predefined" if the driver can only reproduce a limited number of colors, such as devices that only use enums to communicate or hardware with a limited table of factory configured colors.
+Used to indicate if a light brightness transition can be stopped during a ramp. Drivers that support Daylight Agent benefit from implementing this as the Daylight scenario can be stopped without having to force a light to go to a different brightness or color to end tracking. Reduced ALS support drivers should implement this capability so that ramping scenes works correctly.
+
+\*Note, a bug in 3.3.2 prevents keypad buttons bound to the proxies BUTTON\_LINK for Brightness Stop from working. This will be resolved in 3.3.3.
 
 ### Signature
 
-`<supports_color></supports_color>`
+`<supports_brightness_stop></supports _brightness_stop>`
 
 
 ### Type
 
 Boolean: Defaults to false.
 
+
 ### Dynamic Capability
 
 Yes
+
 
 ### Example
 
