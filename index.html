@@ -4130,25 +4130,10 @@
             <a href="#dynamic-camera-streams" class="toc-h1 toc-link" data-title="Dynamic Camera Streams">Dynamic Camera Streams</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#driver-support-for-dynamic-streams" class="toc-h2 toc-link" data-title="Driver Support for Dynamic Streams">Driver Support for Dynamic Streams</a>
-                  </li>
-                  <li>
                     <a href="#support-for-caching-urls" class="toc-h2 toc-link" data-title="Support for Caching  URLs">Support for Caching  URLs</a>
                   </li>
                   <li>
-                    <a href="#dynamic-camera-stream-related-apis" class="toc-h2 toc-link" data-title="Dynamic Camera Stream Related APIs">Dynamic Camera Stream Related APIs</a>
-                  </li>
-                  <li>
-                    <a href="#requires_dynamic_stream_urls" class="toc-h2 toc-link" data-title="requires_dynamic_stream_urls">requires_dynamic_stream_urls</a>
-                  </li>
-                  <li>
-                    <a href="#get_stream_urls" class="toc-h2 toc-link" data-title="GET_STREAM_URLS">GET_STREAM_URLS</a>
-                  </li>
-                  <li>
-                    <a href="#stream_urls_ready" class="toc-h2 toc-link" data-title="STREAM_URLS_READY">STREAM_URLS_READY</a>
-                  </li>
-                  <li>
-                    <a href="#dynamic_urls_use_type" class="toc-h2 toc-link" data-title="dynamic_urls_use_type">dynamic_urls_use_type</a>
+                    <a href="#related-apis" class="toc-h2 toc-link" data-title="Related APIs">Related APIs</a>
                   </li>
               </ul>
           </li>
@@ -32971,7 +32956,7 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 </tr>
 </tbody></table>
 
-<h3 id='driver-support-for-dynamic-streams'>Driver Support for Dynamic Streams</h3>
+<h4 id='driver-support-for-dynamic-streams'>Driver Support for Dynamic Streams</h4>
 
 <p><em>See the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#related-apis">Related APIs</a> section below for detailed information regarding the functions discussed in this section.</em></p>
 
@@ -33009,27 +32994,19 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 
 <p>The driver also needs to send a DYNAMIC_URLS_CHANGED notification to the proxy when the configured URLs have been changed. The proxy would then send a &quot;DYNAMIC_URLS_CHANGED&quot; DataToUI in response to this that the Navigators would key off of to refresh any cached URLs. This is useful for driver&#39;s with MULTIPLE use type URLs.</p>
 
-<h2 id='dynamic-camera-stream-related-apis'>Dynamic Camera Stream Related APIs</h2><h2 id='requires_dynamic_stream_urls'>requires_dynamic_stream_urls</h2>
-
+<p><h2 id='related-apis'>Related APIs</h2><h3 id='requires_dynamic_stream_urls'>requires_dynamic_stream_urls</h3>
 <p>Capability determining whether the camera should be asked for stream URLs through the more advanced API call.</p>
-
 <h3 id='signature'>Signature</h3>
-
 <p><code>&lt;requires_dynamic_stream_urls&gt;&lt;/requires_dynamic_stream_urls&gt;</code></p>
-
 <h3 id='type'>Type</h3>
-
 <p>Boolean: Defaults to false.</p>
-
 <h3 id='dynamic-capability'>Dynamic Capability</h3>
-
 <p>Yes</p>
-
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;requires_dynamic_stream_urls&gt;</span>true<span class="nt">&lt;/requires_dynamic_stream_urls&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div><h2 id='get_stream_urls'>GET_STREAM_URLS</h2>
-<p>This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. </p>
+</code></pre></div><h3 id='get_stream_urls'>GET_STREAM_URLS</h3>
+<p>This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. </p></p>
 
 <p>A Client will make this request to a driver and provide information about how the client will be using the stream.  The driver optionally can adjust the URL(s) returned based on this information.  Driver developers are encouraged to test their driver on various devices to ensure good customer experiences when viewing collages, high resolution or high frame rate streams.</p>
 
@@ -33052,6 +33029,7 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 <td>Optional. Frames Per Second that the client would prefer.  A driver is not required to support this but if it does it may result in better customer experience when dealing with collages on Navigators.</td>
 </tr>
 </tbody></table>
+
 <h3 id='examples'>Examples</h3>
 
 <p>An example of the simplest XML returned by a driver is shown to the right:</p>
@@ -33084,7 +33062,7 @@ or
   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw3"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span> <span class="na">resolution=</span><span class="s">"1920x1080"</span> <span class="na">fps=</span><span class="s">"20"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://server.company.com:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/streams&gt;</span>
-</code></pre></div><h2 id='stream_urls_ready'>STREAM_URLS_READY</h2>
+</code></pre></div><h3 id='stream_urls_ready'>STREAM_URLS_READY</h3>
 <p>Protocol Notification used for following up to a GET_STREAM_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.</p>
 
 <table><thead>
@@ -33129,7 +33107,7 @@ or
 <span class="nt">&lt;stream</span> <span class="na">url=</span><span class="s">"http://192.168.1.150:80/cloudapi.cgi?fh2fhw5"</span> <span class="na">codec=</span><span class="s">"mjpeg"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/streams&gt;</span>
 
-</code></pre></div><h2 id='dynamic_urls_use_type'>dynamic_urls_use_type</h2>
+</code></pre></div><h3 id='dynamic_urls_use_type'>dynamic_urls_use_type</h3>
 <p>Supports the following use types:</p>
 
 <p>MULTIPLE - Default if the capability is not specified. URLs can be used repeatedly. If URLs change, the driver should send DYNAMIC_URLS_CHANGED notification to the proxy.</p>
