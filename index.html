@@ -4969,6 +4969,21 @@
                     <a href="#set-click-rate-up" class="toc-h2 toc-link" data-title="SET CLICK RATE UP">SET CLICK RATE UP</a>
                   </li>
                   <li>
+                    <a href="#set-color-on-mode" class="toc-h2 toc-link" data-title="SET COLOR ON MODE">SET COLOR ON MODE</a>
+                  </li>
+                  <li>
+                    <a href="#set-color-stop" class="toc-h2 toc-link" data-title="SET COLOR STOP">SET COLOR STOP</a>
+                  </li>
+                  <li>
+                    <a href="#set-color-rate-default" class="toc-h2 toc-link" data-title="SET COLOR RATE DEFAULT">SET COLOR RATE DEFAULT</a>
+                  </li>
+                  <li>
+                    <a href="#set-color-stop" class="toc-h2 toc-link" data-title="SET COLOR STOP">SET COLOR STOP</a>
+                  </li>
+                  <li>
+                    <a href="#set_color_target" class="toc-h2 toc-link" data-title="SET_COLOR_TARGET">SET_COLOR_TARGET</a>
+                  </li>
+                  <li>
                     <a href="#set_color_target" class="toc-h2 toc-link" data-title="SET_COLOR_TARGET">SET_COLOR_TARGET</a>
                   </li>
                   <li>
@@ -4988,6 +5003,9 @@
                   </li>
                   <li>
                     <a href="#leave-group" class="toc-h2 toc-link" data-title="LEAVE GROUP">LEAVE GROUP</a>
+                  </li>
+                  <li>
+                    <a href="#modify-driver-color-preset" class="toc-h2 toc-link" data-title="MODIFY DRIVER COLOR PRESET">MODIFY DRIVER COLOR PRESET</a>
                   </li>
                   <li>
                     <a href="#set-group-sync" class="toc-h2 toc-link" data-title="SET GROUP SYNC">SET GROUP SYNC</a>
@@ -39024,6 +39042,141 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <p><code>None</code></p>
 
+<h2 id='set-color-on-mode'>SET COLOR ON MODE</h2>
+
+<p>Sets the on mode color.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_ON_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Integer</td>
+<td>PRESET_ ID that a light should turn on to.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-color-stop'>SET COLOR STOP</h2>
+
+<p>Stops a ramp of color if in progress.  Requires the capability supports_color_stop.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_STOP ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-color-rate-default'>SET COLOR RATE DEFAULT</h2>
+
+<p>This is used by old(deprecated) generic On/Off commands, Navigators, and user created lighting scenes.</p>
+
+<p>When this value is changed, drivers will receive a protocol driver command of UPDATE_COLOR_RATE_DEFAULT with a parameter RATE of the value.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_RATE_DEFAULT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Integer</td>
+<td>LIGHT_COLOR_RATE_DEFAULT. Default rate that will be used if no rate is specified.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set-color-stop'>SET COLOR STOP</h2>
+
+<p>Used to tell a driver to stop changing its color.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_STOP ()</code></p>
+
+<h3 id='parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='set_color_target'>SET_COLOR_TARGET</h2>
+
+<p>Used to request that the color of the light to be changed. Follows the CIE 1931 specification for XY Chromaticity.
+<a href="Follows%20the%20CIE%201931%20specification%20for%20XY%20Chromaticity.%0A%0Ahttps://en.wikipedia.org/wiki/CIE_1931_color_space">https://en.wikipedia.org/wiki/CIE_1931_color_space</a></p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>SET_COLOR_TARGET()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>LIGHT_COLOR_TARGET_X</td>
+<td>Required Group 1. X Coordinate of CIE 1931 Chromaticity Diagram</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_Y</td>
+<td>Required Group 1. Y Coordinate of CIE 1931 Chromaticity Diagram</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_HUE</td>
+<td>Required Group 1. Hue 0-360 for color</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_SATURATION</td>
+<td>Required Group 1. 0.0 - 100.0 Saturation for the color</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_COLOR_CORRELATED_TEMPERATURE</td>
+<td>Required Group 3 . 500-20000 for the Color Temperature.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_PRESET_ID</td>
+<td>Required Group 4. The ID of the preset to trigger. This must be sent with the LIGHT_COLOR_TARGET_PRESET_ORIGIN parameter.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_PRESET_ORIGIN</td>
+<td>Required Group 4. The origin of the preset to trigger.  1 = Device specific preset.   2 = Color Agent preset.</td>
+</tr>
+<tr>
+<td>LIGHT_COLOR_TARGET_ RATE</td>
+<td>Integer. Optional Parameter of milliseconds to ramp over.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='set_color_target'>SET_COLOR_TARGET</h2>
 
 <p>Sent to drivers to change the color. Once drivers begin to change color, they should send a COLOR_CHANGING Notify. Then once the color has finished changing it should send a COLOR_CHANGED Notify.</p>
@@ -39223,6 +39376,71 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h2 id='modify-driver-color-preset'>MODIFY DRIVER COLOR PRESET</h2>
+
+<p>Used to modify an existing driver specific color preset.   The PRESET_ID is required, and other parameters may be required depending on what you are using the call for.   The guidelines for which parameters are required are defined below in the parameter section.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>MODIFY_DRIVER_COLOR_PRESET () </code></p>
+
+<h3 id='parameter-guidelines'>Parameter Guidelines</h3>
+
+<p>If the preset name is being changed, the PRESET_NAME parameter is required, otherwise it is optional.  When the preset name is the only thing being changed, no color information is required.</p>
+
+<p>If the color is being set using hue and saturation, the PRESET_COLOR_HUE, PRESET_COLOR_SATURATION, and PRESET_COLOR_MODE are all required.</p>
+
+<p>If the color is being set using XY, the PRESET_COLOR_X, PRESET_COLOR_Y, and PRESET_COLOR_MODE are all required.</p>
+
+<p>If the color temperature is being set, only the PRESET_COLOR_CORRELATED_TEMPERATURE is required.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_ID</td>
+<td>The ID of the existing preset that will be modified.</td>
+</tr>
+<tr>
+<td>PRESET_NAME</td>
+<td>Optional. The name to give to the preset that is being modified.</td>
+</tr>
+<tr>
+<td>PRESET_COLOR_CORRELATED_TEMPERATURE</td>
+<td>Optional. The color temperature, in Kelvin, that the preset should be set to.   If this parameter is used, the PRESET_COLOR_MODE will be set to 1 (CCT), and the PRESET_COLOR_MODE parameter does not need to be set.</td>
+</tr>
+<tr>
+<td>Color Set 1</td>
+<td>Requires 2+ parameters. PRESET_COLOR_X - The color x coordinate to be used in this preset. PRESET_COLOR_Y - The color y coordinate to be used in this preset. PRESET_COLOR_MODE - Optional. The color mode used by this preset.  0 = Full Color, 1 = CCT. Previous color mode is preserved if this parameter is not specified.</td>
+</tr>
+<tr>
+<td>Color Set 2</td>
+<td>Requires 2 parameters. This method is highly discouraged as it is confined to the  sRGB gamut and thus can&#39;t achieve many colors that typical color lights support. PRESET_COLOR_HUE - The hue to use for this preset.  Range of 0 through 359 degrees. PRESET_COLOR_SATURATION - The saturation to use for this preset.  Range of 0 to 100.  Either hue and saturation or XY must be used.</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p>On return, the &quot;modifyResult&quot; value will contain an XML string that indicates if the modification was successful, or not. If the XML indicates failure, a failure message will be included.</p>
+
+<p>Sample success message:
+<code>&lt;return_data&gt;&lt;success&gt;true&lt;/success&gt;&lt;/return_data&gt;</code></p>
+
+<p>Sample failure message: 
+<code>&lt;return_data&gt;&lt;success&gt;false&lt;/success&gt;&lt;reason&gt;Not found&lt;/reason&gt;&lt;/return_data&gt;</code></p>
+
+<h3 id='example'>Example</h3>
+
+<p>The example code to the right will modify a Color Preset with an ID of 3. </p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span><span class="n">PRESET_ID</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"Modified Driver Color Preset"</span><span class="p">,</span> <span class="n">PRESET_COLOR_X</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">1550</span><span class="p">,</span> <span class="n">PRESET_COLOR_Y</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0822</span><span class="p">,</span> <span class="n">PRESET_COLOR_MODE</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span>
+
+<span class="kd">local</span> <span class="n">modifyResult</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">SendUIRequest</span><span class="p">(</span><span class="n">proxyDeviceId</span><span class="p">,</span> <span class="s2">"MODIFY_DRIVER_COLOR_PRESET"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
 
 <h2 id='set-group-sync'>SET GROUP SYNC</h2>
 
@@ -39705,8 +39923,8 @@ associated to them, including restoring bindings and preset information</p>
 <td>The Preset operation to run PRESET_ADD, PRESET_MODIFY and PRESET_REMOVE.</td>
 </tr>
 <tr>
-<td>PRESET_ADD - Add the Preset</td>
-<td></td>
+<td>PRESET_ADD</td>
+<td>Add the Preset</td>
 </tr>
 </tbody></table>
 
@@ -39759,8 +39977,8 @@ associated to them, including restoring bindings and preset information</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>PRESET_BINDING_ID - Integer ID of the binding for the driver you want to Add/Modify/Remove. Use 0 to remove the binding.</td>
-<td></td>
+<td>PRESET_BINDING_ID</td>
+<td>Integer ID of the binding for the driver you want to Add/Modify/Remove. Use 0 to remove the binding.</td>
 </tr>
 <tr>
 <td>PRESET_ACTIVE_COLOR</td>
