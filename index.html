@@ -4773,6 +4773,12 @@
             <a href="#light-v2-capabilities" class="toc-h1 toc-link" data-title="Light V2 Capabilities">Light V2 Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#brightness-rate-max" class="toc-h2 toc-link" data-title="brightness rate max">brightness rate max</a>
+                  </li>
+                  <li>
+                    <a href="#brightness-rate-min" class="toc-h2 toc-link" data-title="brightness rate min">brightness rate min</a>
+                  </li>
+                  <li>
                     <a href="#set_level" class="toc-h2 toc-link" data-title="set_level">set_level</a>
                   </li>
                   <li>
@@ -4780,6 +4786,21 @@
                   </li>
                   <li>
                     <a href="#dimmer" class="toc-h2 toc-link" data-title="dimmer">dimmer</a>
+                  </li>
+                  <li>
+                    <a href="#brightness-on-mode-preset" class="toc-h2 toc-link" data-title="brightness on mode preset">brightness on mode preset</a>
+                  </li>
+                  <li>
+                    <a href="#brightness-on-mode-previous" class="toc-h2 toc-link" data-title="brightness on mode previous">brightness on mode previous</a>
+                  </li>
+                  <li>
+                    <a href="#color-on-mode-fade" class="toc-h2 toc-link" data-title="color on mode fade">color on mode fade</a>
+                  </li>
+                  <li>
+                    <a href="#color-on-mode-preset" class="toc-h2 toc-link" data-title="color on mode preset">color on mode preset</a>
+                  </li>
+                  <li>
+                    <a href="#color-on-mode-previous" class="toc-h2 toc-link" data-title="color on mode previous">color on mode previous</a>
                   </li>
                   <li>
                     <a href="#cold_start" class="toc-h2 toc-link" data-title="cold_start">cold_start</a>
@@ -4840,6 +4861,9 @@
                   </li>
                   <li>
                     <a href="#has_leds" class="toc-h2 toc-link" data-title="has_leds">has_leds</a>
+                  </li>
+                  <li>
+                    <a href="#supports_brightness_stop" class="toc-h2 toc-link" data-title="supports_brightness_stop">supports_brightness_stop</a>
                   </li>
                   <li>
                     <a href="#supports_color" class="toc-h2 toc-link" data-title="supports_color">supports_color</a>
@@ -37305,10 +37329,50 @@ Used to set the color of a button, this command name can be unique or non-existe
 </tbody></table>
 <h1 id='light-v2-capabilities'>Light V2 Capabilities</h1>
 
+<h2 id='brightness-rate-max'>brightness rate max</h2>
+
+<p>Minimum color rate, in milliseconds, supported for transitioning from one brightness to another.  Should always be set for any color light driver, even if the transition rate is unchangeable. Allows dealers to configure the maximum rate that can be configured by dealers. The brightness_rate value is used by voice control, navigators, customer created advanced lighting scenes, and various other areas of the system that previously didn&#39;t allow customization of the transition rate.</p>
+
+<p>Dealers can set the values for this in ComposerPro Properties.</p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;brightness_rate_max&gt;&lt;/brightness_rate_max&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer. Defaults to UNIT16_MAX. Valid values fall between 0 and 4294967295.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;brightness_rate_max&gt;</span>4294967295<span class="nt">&lt;/brightness_rate_max&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='brightness-rate-min'>brightness rate min</h2>
+<p>Minimum color rate, in milliseconds, supported for transitioning from one brightness to another.  Should always be set for any color light driver, even if the transition rate is unchangeable.  Allows dealers to configure the minimum rate that can be configured by dealers. The brightness_rate value is used by voice control, navigators, customer created advanced lighting scenes, and various other areas of the system that previously didn&#39;t allow customization of the transition rate.</p>
+
+<p>Dealers can set the values for this in ComposerPro Properties.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;brightness_rate_min&gt;&lt;/brightness_rate_min&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Integer. Defaults to 0.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;brightness_rate_min&gt;</span>0<span class="nt">&lt;/brightness_rate_min&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h2 id='set_level'>set_level</h2>
-
 <p>Configuration API indicating if the device brightness can be set discretely to a number between a min and a max. Defaults to false.</p>
-
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;set_level&gt;&lt;/set_level&gt;</code></p>
@@ -37359,6 +37423,125 @@ Used to set the color of a button, this command name can be unique or non-existe
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;dimmer&gt;</span>false<span class="nt">&lt;/dimmer&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='brightness-on-mode-preset'>brightness on mode preset</h2>
+<p>Used to enable generic brightness presets to be used with the &quot;On Mode&quot; behavior.  If a driver supports this capability, it is up to the driver to support additional parameter handling and reporting.</p>
+
+<p>See SET_BRIGHTNESS_TARGET, BRIGHTNESS_CHANGING and BRIGHTNESS_CHANGED commands and notifies and look for optional parameters such as LIGHT_BRIGHTNESS_TARGET_PRESET_ID and LIGHT_COLOR_CURRENT_PRESET_ID.</p>
+
+<p>Additionally, drivers need to implement UPDATE_BRIGHTNESS_ON_MODE and UPDATE_BRIGHTNESS_PRESET commands so they can track values for situations where the proxy is not the initiator of light behavior, such as On Mode Fade, scenes, composer programming, etc.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;brightness_on_mode_preset&gt;&lt;/brightness_on_mode_preset&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;brightness_on_mode_preset&gt;</span>true<span class="nt">&lt;/brightness_on_mode_preset&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='brightness-on-mode-previous'>brightness on mode previous</h2>
+<p>Used to enable the Previous On &quot;On Mode&quot; behavior for a light. The 3.3.2 and newer proxies track the last brightness non-zero level reported by a driver before a BRIGHTNESS_CHANGED notification occurs with a level of 0. When the proxy gets a generic On (aka Dynamic On) then the proxy will send a SET_BRIGHTNESS_TARGET command with that last reported non-zero brightness level. The proxy will also update the PREVIOUS brightness preset value with the last non 0 brightness level anytime the proxy gets a BRIGHTNESS_CHANGED notify of a value of 0.</p>
+
+<p>Additionally if drivers get a command to turn on that did not come from the proxy, the driver can check the brightness PREVIOUS preset value to know what level it should turn on to.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;brightness_on_mode_previous&gt;&lt;/brightness_on_mode_ previous&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;brightness_on_mode_previous&gt;</span>true<span class="nt">&lt;/brightness_on_mode_previous&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color-on-mode-fade'>color on mode fade</h2>
+<p>Used to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, so that the lights color is based on the current brightness of a light.</p>
+
+<p>Dealers are allowed to pick two colors when in this mode. The Dim color a dealer picks is the color of the light at a 1% brightness and a second On color a dealer picks is the color of the light at 100% brightness. If a customer picks 50% brightness, the color the light shows should be an equal mix of the Dim color and On color. This &quot;color mix&quot; can easily be calculated by the following equation:</p>
+
+<p>colorFinal.x = colorDim.x + (colorOn.x - colorDim.x) <em> brightness</em>.01</p>
+
+<p>colorFinal.y = colorDim.y + (colorOn.y - colorDim.y) <em> brightness</em>.01</p>
+
+<p>As a driver receives a new SET_BRIGHTNESS_TARGET command then the driver should use this formula and always set a new color on their light even if it does not receive a SET_COLOR_TARGET command.</p>
+
+<p>Driver developers will notice that when a light is normally turned on from UI&#39;s, they will not get a SET_COLOR_TARGET when in this mode. If a driver does get a SET_COLOR_TARGET command, such as from a scene, composer programming, or other scenario then the driver should go to that color even while in Fade mode. If the driver gets any future SET_BRIGHTNESS_TARGET then the driver should again apply the color formula.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_on_mode_fade&gt;&lt;/color_on_mode_fade&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_on_mode_fade&gt;</span>true<span class="nt">&lt;/color_on_mode_fade&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color-on-mode-preset'>color on mode preset</h2>
+<p>Used to enable generic color presets to be used with the &quot;On Mode&quot; behavior.  If a driver supports this capability, it is up to the driver to support additional parameter handling and reporting.</p>
+
+<p>See SET_COLOR_TARGET, COLOR_CHANGING and COLOR_CHANGED commands and notifies and look for optional parameters such as: </p>
+
+<ul>
+<li>LIGHT_COLOR_TARGET_PRESET_ID</li>
+<li>LIGHT_COLOR_TARGET_PRESET_ORIGIN</li>
+<li>LIGHT_COLOR_CURRENT_PRESET_ID</li>
+<li>LIGHT_COLOR_CURRENT_PRESET_ORIGIN</li>
+</ul>
+
+<p>Additionally, drivers need to implement UPDATE_COLOR_ON_MODE and UPDATE_COLOR_PRESET commands so they can track values for situations where the proxy is not the initiator of light behavior, such as On Mode Fade, scenes, composer programming, etc.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_on_mode_preset&gt;&lt;/color_on_mode_preset&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_on_mode_preset&gt;</span>true<span class="nt">&lt;/color_on_mode_preset&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='color-on-mode-previous'>color on mode previous</h2>
+<p>Used to enable the Previous Color On &quot;On Mode&quot; behavior for a light. The 3.3.2 and newer proxies track the last color reported by a driver before a BRIGHTNESS_CHANGED notification occurs with a level of 0. When the proxy gets a generic On (aka Dynamic On) then the proxy will send a SET_COLOR_TARGET command with that last reported color before the brightness went to 0. The proxy will also update the PREVIOUS color preset value with the last color prior to the proxy receiving a BRIGHTNESS_CHANGED notify of a value of 0.</p>
+
+<p>Additionally if drivers get a command to turn on that did not come from the proxy, the driver can check the PREVIOUS color preset value to know what color it should turn on to.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;color_on_mode_previous&gt;&lt;/color_on_mode_previous&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean. Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>No</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;color_on_mode_previous&gt;</span>true<span class="nt">&lt;/color_on_mode_previous&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='cold_start'>cold_start</h2>
@@ -37732,8 +37915,35 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
     <span class="nt">&lt;has_leds&gt;</span>false<span class="nt">&lt;/has_leds&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h2 id='supports_brightness_stop'>supports_brightness_stop</h2>
+<p>Used to indicate if a light brightness transition can be stopped during a ramp. Drivers that support Daylight Agent benefit from implementing this as the Daylight scenario can be stopped without having to force a light to go to a different brightness or color to end tracking. Reduced ALS support drivers should implement this capability so that ramping scenes works correctly.</p>
+
+<p>*Note, a bug in 3.3.2 prevents keypad buttons bound to the proxies BUTTON_LINK for Brightness Stop from working. This will be resolved in 3.3.3.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;supports_brightness_stop&gt;&lt;/supports _brightness_stop&gt;</code></p>
+
+<h3 id='type'>Type</h3>
+
+<p>Boolean: Defaults to false.</p>
+
+<h3 id='dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;supports_color&gt;</span>false<span class="nt">&lt;/supports_color&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div><h3 id='usage-note'>Usage Note</h3>
+
+<p>If changing the supports_color or supports_color_correlated_temperature capabilities via the Dynamic Capabilities Notify, these should both be done in a single notification. If only one is disabled/enabled at a time, device color presets such as the On or Dim colors may have their color mode changed between Full Color and CCT automatically.</p>
+
+<p>For example,  if the presets mode were CCT and a driver on director startup dynamically enabled just supports_color the proxy would detect that CCT is not supported and change any existing presets to color mode Full Color.</p>
+
 <h2 id='supports_color'>supports_color</h2>
-<p>Whether the device can show a broad range of colors. </p>
+
+<p>Whether the device can show a broad range of colors.  Set to False and use &quot;supports_color_predefined&quot; if the driver can only reproduce a limited number of colors, such as devices that only use enums to communicate or hardware with a limited table of factory configured colors.</p>
+
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;supports_color&gt;&lt;/supports_color&gt;</code></p>
@@ -37749,9 +37959,16 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;supports_color&gt;</span>false<span class="nt">&lt;/supports_color&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
+</code></pre></div><h3 id='usage-note'>Usage Note</h3>
+
+<p>If changing the supports_color or supports_color_correlated_temperature capabilities via the Dynamic Capabilities Notify, these should both be done in a single notification. If only one is disabled/enabled at a time, device color presets such as the On or Dim colors may have their color mode changed between Full Color and CCT automatically.</p>
+
+<p>For example,  if the presets mode were CCT and a driver on director startup dynamically enabled just supports_color the proxy would detect that CCT is not supported and change any existing presets to color mode Full Color.</p>
+
 <h2 id='supports_color_correlated_temperature'>supports_color_correlated_temperature</h2>
-<p>Whether the device has native support for color correlated temperature reporting in Kelvin. Set this capability to False if the driver can only do predefined color temperatures. If enabled via dynamic capability, it will be necessary  to Notify the proxy of the current color immediately after the capability is enabled. </p>
+
+<p>Wh Whether the device has native support for color correlated temperature reporting in Kelvin. Set this capability to False if the driver can only do predefined color temperatures. If enabled via dynamic capability, it will be necessary  to Notify the proxy of the current color immediately after the capability is enabled. </p>
+
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;supports_color_correlated_temperature&gt;&lt;/supports_color_correlated_temperature&gt;</code></p>
@@ -37767,11 +37984,18 @@ Also used for the maximum time of ramp rate range for Composer Programming. Defa
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
   <span class="nt">&lt;supports_color_correlated_temperature&gt;</span>false<span class="nt">&lt;supports_color_correlated_temperature&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
+</code></pre></div><h3 id='usage-note'>Usage Note</h3>
+
+<p>Note: If changing the supports_color or supports_color_correlated_temperature capabilities via the Dynamic Capabilities Notify, these should both be done in a single notification. If only one is disabled/enabled at a time, device color presets such as the On or Dim colors)may have their color mode changed between Full Color and CCT automatically. </p>
+
+<p>For example, if the presets mode were Full Color and a driver on director startup dynamically enabled just supports_color_correlated_temperature then the proxy would detect that Full Color is not supported and change any existing presets to color mode CCT.</p>
+
 <h2 id='supports_default_on'>supports_default_on</h2>
+
 <p><em>Note: Deprecating - Drivers should not use this capability but instead use the brightness on mode preset capability Drivers that enable both will experience oddities in Composer dealer configuration.</em></p>
 
 <p>This feature is for lights that support a default ON brightness in their firmware. When enabled, the Light Proxy sends a SET_PRESET_LEVEL command to drivers when the brightness &quot;On” preset is updated in the proxy through Composer or the PRESET_LEVEL system variable. This enables light switches that respond to local button presses to go to the same default ON level as what the Control4 system uses when a light is turned on or toggled via Navigators, Composer Programming, and keypad buttons. </p>
+
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;supports_default_on&gt;&lt;/supports_default_on&gt;</code></p>
