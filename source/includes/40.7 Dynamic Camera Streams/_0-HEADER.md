@@ -173,9 +173,6 @@ This command is used to obtain URLs for a camera that does not have a constant U
 
 A Client will make this request to a driver and provide information about how the client will be using the snapshot.  The driver optionally can adjust the URL(s) returned based on this information.
 
-| Parameter | Description |
-| --- | --- |
-| RESOLUTION | Resolution that the client will be using to display for the snapshot.  A driver is not required to support this but this can be helpful for clients that may need a lower or higher resolution snapshot. |
 
 ### Examples
 
