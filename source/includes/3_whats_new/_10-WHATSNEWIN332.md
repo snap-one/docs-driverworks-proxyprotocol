@@ -191,7 +191,7 @@ A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s [BUTTON\_LINK][
 [30]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-color-on-mode
 [31]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update_color_preset
 [32]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#update-color-rate-default
-[33]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
+[33]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target
 [34]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
 [35]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
 [36]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals
