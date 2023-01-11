@@ -58,7 +58,7 @@ The driver also needs to send a DYNAMIC\_URLS\_CHANGED notification to the proxy
 
 
 
-##  Related APIs
+## Related APIs
 
 ### requires\_dynamic\_stream\_urls
 
@@ -82,6 +82,32 @@ Yes
 ```xml
 <capabilities>
     <requires_dynamic_stream_urls>true</requires_dynamic_stream_urls>
+</capabilities>
+```
+
+
+### requires\_dynamic\_snapshot\_urls
+
+Capability determining whether the camera should be asked for snapshot URLs through the more advanced API call.
+
+
+### Signature
+
+`<requires_dynamic_snapshot_urls></requires_dynamic_snapshot_urls>`
+
+### Type
+
+Boolean: Defaults to false.
+
+### Dynamic Capability
+
+Yes
+
+### Example
+
+```xml
+<capabilities>
+    <requires_dynamic_snapshot_urls>true</requires_dynamic_snapshot_urls>
 </capabilities>
 ```
 
@@ -141,6 +167,56 @@ This is followed by a more complex example from a camera with more features and 
 
 
 
+### GET\_SNAPSHOT\_URLS
+
+This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. 
+
+A Client will make this request to a driver and provide information about how the client will be using the snapshot.  The driver optionally can adjust the URL(s) returned based on this information.
+
+| Parameter | Description |
+| --- | --- |
+| RESOLUTION | Resolution that the client will be using to display for the snapshot.  A driver is not required to support this but this can be helpful for clients that may need a lower or higher resolution snapshot. |
+
+### Examples
+
+An example of the simplest XML returned by a driver is shown to the right:
+
+```xml
+<snapshots>
+ <snapshot url="http://192.168.1.150/view_camera.cgi">
+</snapshots>
+
+or
+
+<snapshots>
+ <snapshot url="http://192.168.1.150:80/custom_resolution_as_requested_by_client.cgi" resolution="644x481">
+ <snapshot url="https://192.168.1.150:443/view_snapshot.cgi" resolution="3840x2160">
+ <snapshot url="https://192.168.1.150:443/view_snapshot.cgi" resolution="1920x1080">
+ <snapshot url="https://192.168.1.150:80/view_snapshot.cgi" resolution="640x480">
+</snapshots>
+```
+
+### Usage Note
+
+**Cloud Based Cameras **
+
+Drivers that do not have static URLs for snapshots will need to respond to this call with an XML object that indicates the URL(s) is/are being generated and include a key with the response.  Once the driver has been able to obtain a URL for the stream, the driver should send a SNAPSHOT\_URLS\_READY Notify with the same key that is provided with this Synchronous call response.  An example of the response is:
+
+`<streams generating_key="1234"/>`
+
+The driver would then follow up with the SNAPSHOT\_URLS\_READY Notify and specify KEY=1234 in that notify along with the URL.  The key should be a unique 32 bit integer value.  We recommend starting at 1 and incrementing by 1 for each request that comes in.
+
+Also, if the driver does have a valid temporary that is still valid when it gets the call, no further Notify is needed and the driver should respond to this call with the XML of snapshots information.
+
+To indicate to a client that the driver supports this API call, a driver needs to set the requires\_dynamic\_stream\_urls capability to true in the driver or via the DYNAMIC\_CAPABILITIES\_CHANGED Notify.
+
+If no Port is provided with a URL, the following ports are used by all clients as the default for the transport:
+
+http - 80
+https - 443
+
+
+
 ### STREAM\_URLS\_READY
 
 Protocol Notification used for following up to a GET\_STREAM\_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
@@ -184,6 +260,34 @@ This is followed by an example from a camera with more features and can provide 
 <stream url="http://192.168.1.150:80/cloudapi.cgi?fh2fhw5" codec="mjpeg">
 </streams>
 
+```
+
+
+### SNAPSHOT\_URLS\_READY
+
+Notify used for following up to a GET_SNAPSHOT_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
+
+| Parameter | Description |
+| --- | --- |
+| KEY| Key of the originating call for the snapshot to be created.|
+|URLS| String of XML object as described in the description of this call. |
+
+
+### Example
+
+```xml
+<snapshots key="1234">
+ <snapshot url="http://192.168.1.150/view_camera.cgi">
+</snapshots>
+
+or
+
+<snapshots key="1234">
+ <snapshot url="http://192.168.1.150:80/custom_resolution_as_requested_by_client.cgi" resolution="644x481">
+ <snapshot url="https://192.168.1.150:443/view_snapshot.cgi" resolution="3840x2160">
+ <snapshot url="https://192.168.1.150:443/view_snapshot.cgi" resolution="1920x1080">
+ <snapshot url="https://192.168.1.150:80/view_snapshot.cgi" resolution="640x480">
+</snapshots>
 ```
 
 
