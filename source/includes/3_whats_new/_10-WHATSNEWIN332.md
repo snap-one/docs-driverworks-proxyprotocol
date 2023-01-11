@@ -1,4 +1,4 @@
-## What’s New in 3.3.2 
+## What’s New in 3.3.2
 
 ### Camera Proxy
 
@@ -159,7 +159,7 @@ _Button Link Binding for Brightness Stop Functionality not Working_
 
 A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s [BUTTON\_LINK][44] binding for Brightness Stop from working. This will be resolved in 3.3.3.
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#dynamic-camera-streams
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams
 [2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-preset
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-previous
 [4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-fade
