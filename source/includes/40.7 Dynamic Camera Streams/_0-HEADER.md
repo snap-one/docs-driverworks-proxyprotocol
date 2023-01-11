@@ -259,7 +259,7 @@ This is followed by an example from a camera with more features and can provide 
 
 ### SNAPSHOT\_URLS\_READY
 
-Notify used for following up to a GET_SNAPSHOT_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
+Notify used for following up to a GET\_SNAPSHOT\_URLS Synchronous call.  This Notify will let a UI know that the URL information they requested is ready.  The driver must use the same key parameter value that was returned to the UI as the key parameter in this notify.
 
 | Parameter | Description |
 | --- | --- |
