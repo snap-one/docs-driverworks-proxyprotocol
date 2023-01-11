@@ -50,7 +50,7 @@ If no Port is provided with a URL, the following ports are used by all clients a
 - rtsps - 443
 
 
-### Support for Caching  URLs
+#### Support for Caching  URLs
 
 The ability to cache the stream URL list is also supported. This removes the need to have to execute the GET\_STREAM\_URLS request every time a camera stream is loaded. This is supported with the capability: dynamic\_urls\_use\_type. 
 
@@ -112,7 +112,6 @@ Yes
 ```
 
 
-
 ### GET\_STREAM\_URLS
 
 This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. 
@@ -166,7 +165,6 @@ This is followed by a more complex example from a camera with more features and 
 ```
 
 
-
 ### GET\_SNAPSHOT\_URLS
 
 This command is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various clients. 
@@ -211,7 +209,6 @@ If no Port is provided with a URL, the following ports are used by all clients a
 
 http - 80
 https - 443
-
 
 
 ### STREAM\_URLS\_READY
@@ -286,7 +283,6 @@ or
  <snapshot url="https://192.168.1.150:80/view_snapshot.cgi" resolution="640x480">
 </snapshots>
 ```
-
 
 
 ### dynamic\_urls\_use\_type
