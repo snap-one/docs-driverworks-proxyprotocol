@@ -39064,11 +39064,9 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <td>UInt</td>
 <td>Rate: Milliseconds for the ramp duration.  This is guaranteed to be between the Min and Max rate if the driver sets these.</td>
 </tr>
-<tr>
-<td>Note: If a driver supports <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Modes</a>, it should track the following parameters: LIGHT_BRIGHTNESS_TARGET_PRESET_ID - The ID of the preset to trigger.</td>
-<td></td>
-</tr>
 </tbody></table>
+
+<p>Note: If a driver supports <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Modes</a>, it should track the following parameters: LIGHT_BRIGHTNESS_TARGET_PRESET_ID - The ID of the preset to trigger.</p>
 
 <p><em>If the supports_target capability is disabled in instances such as pre- O.S. 3.3.0 for backward compatibility of older drivers:</em></p>
 
@@ -39091,26 +39089,6 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <h3 id='returns'>Returns</h3>
 
 <p><code>None</code></p>
-
-<h3 id='usage-note'>Usage Note</h3>
-
-<p>If the capability supports_target is not enabled (pre 3.3.0 for backward compatibility of older drivers) then the following parameters are sent to a driver.</p>
-
-<ul>
-<li>LEVEL - Integer - from 0-100</li>
-<li>TIME - Integer - Milliseconds for the ramp</li>
-</ul>
-
-<p>If supports_target or color is used (current  generation drivers) then the following parameters are sent to a driver.</p>
-
-<ul>
-<li><p>LIGHT_BRIGHTNESS_TARGET - Float - Value as defined from drivers Min and Max brightness capabilities as set by the driver. If the brightness resolution capability is set to 10, .5, .01, and so on, the proxy will ensure the value sent to the driver meets the resolution/step capability.  If no resolution is set, the value of 1 is used for stepping.</p></li>
-<li><p>RATE - Unit - Milliseconds for the ramp duration.  This is guaranteed to be between the Min and Max rate if the driver sets these.</p></li>
-</ul>
-
-<p>If a driver supports On Modes, it should track the following parameters:</p>
-
-<p>LIGHT_BRIGHTNESS_TARGET_\PRESET_ID - The ID of the preset to trigger.</p>
 
 <h2 id='set-cold-start-level'>SET COLD START LEVEL</h2>
 
@@ -39380,7 +39358,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h2 id='set_color_target'>SET_COLOR_TARGET</h2>
 
-<p>Sent to drivers to change the color. Once drivers begin to change color, they should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_COLOR_CHANGING</a> Notify. Once the color has finished changing it should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed">LIGHT_COLOR_CHANGED</a> Notify. Parameters are determined by the implementation <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Mode</a> functionality. See below for more information.</p>
+<p>Sent to drivers to change the light color. Once drivers begin to change color, they should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a> Notify. Once the color has finished changing it should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed">LIGHT_COLOR_CHANGED</a> Notify. Parameters are determined by the implementation <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Mode</a> functionality. See below for more information.</p>
 
 <h3 id='signature'>Signature</h3>
 
