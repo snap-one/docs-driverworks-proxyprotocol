@@ -39042,21 +39042,13 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h2 id='set-brightness-target'>SET BRIGHTNESS TARGET</h2>
 
-<p>Used to set the target brightness of where the light is being requested to go. </p>
-
-<p>All Lights have the following Presets at minimum and can be used by UI&#39;s, Voice Control, Programming, etc so a UI does not have to look up common Presets and/or levels for general control.</p>
-
-<p>&quot;On&quot; - (Static Preset ID 1) This is the Preset that should be used when turning a light on.  The level and rate that matches what a Top &quot;Click&quot; press would activate.  The Level was imported from the PRESET LEVEL value in previous OS releases.</p>
-
-<p>&quot;Off&quot; - (Static Preset ID 2) This is the Preset that should be used when turning a light off.  This presets level and rate matches what the bottom  &quot;Click&quot; on a physical device would be.</p>
-
-<p>Additional presets can be added via the C4TYPE PRESET API.  This will allow drivers that have common &quot;20% 40% 60% 80%&quot; presets to define these presets and the LightV2 proxy will automatically take care of creating keypad bindings and managing LED status tracking of those presets and keypad button status.</p>
-
-<p>Note that Control4 is discouraging the use of the following commands as they will be deprecated. The SET BRIGHTNESS TARGET API should be used in their place:</p>
+<p>Used to set the target brightness of where the light is being requested to go. Parameters are determined by the enabling/disabling of the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. See below for more information.</p>
 
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_BRIGHTNESS_TARGET ()</code></p>
+
+<p><em>If the supports_target capability is enabled or color is used:</em></p>
 
 <table><thead>
 <tr>
@@ -39066,19 +39058,33 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 </thead><tbody>
 <tr>
 <td>Float</td>
-<td>LIGHT_BRIGHTNESS_TARGET. Number between min and max as reported by the device</td>
+<td>LIGHT_BRIGHTNESS_TARGET. Value as defined from drivers Min and Max brightness capabilities as set by the driver. If the brightness resolution capability is set to 10, .5, .01, and so on, the proxy will ensure the value sent to the driver meets the resolution/step capability.  If no resolution is set, the value of 1 is used for stepping.</td>
 </tr>
 <tr>
-<td>Integer</td>
-<td>LIGHT_BRIGHTNESS_TARGET_PRESET_ID_: Integer. Preset ID</td>
+<td>UInt</td>
+<td>Rate: Milliseconds for the ramp duration.  This is guaranteed to be between the Min and Max rate if the driver sets these.</td>
 </tr>
 <tr>
-<td>Integer</td>
-<td>LIGHT_BRIGHTNESS_TARGET_ PERCENT: Integer. Percent from 0 to 100</td>
+<td>Note: If a driver supports <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Modes</a>, it should track the following parameters: LIGHT_BRIGHTNESS_TARGET_PRESET_ID - The ID of the preset to trigger.</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><em>If the supports_target capability is disabled in instances such as pre- O.S. 3.3.0 for backward compatibility of older drivers:</em></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Int</td>
+<td>LEVEL : from 0-100.</td>
 </tr>
 <tr>
-<td>Integer</td>
-<td>RATE: Optional. Milliseconds for the transition.  Will use driver default if parameter is not specified. Note that passing a -1 value in this parameter results in it being treated as the same as not specifying the parameter at all.</td>
+<td>Int</td>
+<td>TIME: Milliseconds for the ramp.</td>
 </tr>
 </tbody></table>
 
@@ -39374,12 +39380,13 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h2 id='set_color_target'>SET_COLOR_TARGET</h2>
 
-<p>Used to request that the color of the light to be changed. Follows the CIE 1931 specification for XY Chromaticity.
-<a href="Follows%20the%20CIE%201931%20specification%20for%20XY%20Chromaticity.%0A%0Ahttps://en.wikipedia.org/wiki/CIE_1931_color_space">https://en.wikipedia.org/wiki/CIE_1931_color_space</a></p>
+<p>Sent to drivers to change the color. Once drivers begin to change color, they should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_COLOR_CHANGING</a> Notify. Once the color has finished changing it should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed">LIGHT_COLOR_CHANGED</a> Notify. Parameters are determined by the implementation <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Mode</a> functionality. See below for more information.</p>
 
 <h3 id='signature'>Signature</h3>
 
 <p><code>SET_COLOR_TARGET()</code></p>
+
+<p><em>If a driver implements On Mode functionality:</em></p>
 
 <table><thead>
 <tr>
@@ -39388,36 +39395,12 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 </tr>
 </thead><tbody>
 <tr>
-<td>LIGHT_COLOR_TARGET_X</td>
-<td>Required Group 1. X Coordinate of CIE 1931 Chromaticity Diagram</td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_Y</td>
-<td>Required Group 1. Y Coordinate of CIE 1931 Chromaticity Diagram</td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_HUE</td>
-<td>Required Group 1. Hue 0-360 for color</td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_SATURATION</td>
-<td>Required Group 1. 0.0 - 100.0 Saturation for the color</td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_COLOR_CORRELATED_TEMPERATURE</td>
-<td>Required Group 3 . 500-20000 for the Color Temperature.</td>
-</tr>
-<tr>
 <td>LIGHT_COLOR_TARGET_PRESET_ID</td>
-<td>Required Group 4. The ID of the preset to trigger. This must be sent with the LIGHT_COLOR_TARGET_PRESET_ORIGIN parameter.</td>
+<td>The ID of the preset to trigger. This must be sent with the LIGHT_COLOR_TARGET_PRESET_ORIGIN parameter.</td>
 </tr>
 <tr>
 <td>LIGHT_COLOR_TARGET_PRESET_ORIGIN</td>
-<td>Required Group 4. The origin of the preset to trigger.  1 = Device specific preset.   2 = Color Agent preset.</td>
-</tr>
-<tr>
-<td>LIGHT_COLOR_TARGET_ RATE</td>
-<td>Integer. Optional Parameter of milliseconds to ramp over.</td>
+<td>The origin of the preset to trigger.  1 = Device specific preset.   2 = Color Agent preset.</td>
 </tr>
 </tbody></table>
 
