@@ -1,6 +1,6 @@
 ## has camera
 
-This capability specifies whether this device type has a camera. Its value is a Boolean string. For example, “True” or “False”
+The device includes a camera and supporting camera functionality. This controls enabling/disabling the use of the Send Video UI in ComposerPro.
 
 
 ### Signature

@@ -1,6 +1,6 @@
 ## has display
 
-This capability specifies whether this device type has a video display. Its value is a Boolean string. For example:  “True” or “False”
+Device includes a physical display. Typically a door station has a display where a touch panel may not. Setting this to True enables the device to receive incoming video.
 
 
 ### Signature
