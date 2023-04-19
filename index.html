@@ -4616,6 +4616,9 @@
                     <a href="#audio-codecs-supported" class="toc-h2 toc-link" data-title="audio codecs supported">audio codecs supported</a>
                   </li>
                   <li>
+                    <a href="#has-play-door-chime" class="toc-h2 toc-link" data-title="has play door chime">has play door chime</a>
+                  </li>
+                  <li>
                     <a href="#video-codecs-supported" class="toc-h2 toc-link" data-title="video codecs supported">video codecs supported</a>
                   </li>
                   <li>
@@ -4632,6 +4635,21 @@
                   </li>
                   <li>
                     <a href="#is-doorstation" class="toc-h2 toc-link" data-title="is doorstation">is doorstation</a>
+                  </li>
+                  <li>
+                    <a href="#driver-arch-type" class="toc-h2 toc-link" data-title="driver arch type">driver arch type</a>
+                  </li>
+                  <li>
+                    <a href="#has-auto-answer" class="toc-h2 toc-link" data-title="has auto answer">has auto answer</a>
+                  </li>
+                  <li>
+                    <a href="#has-do-not-disturb" class="toc-h2 toc-link" data-title="has do not disturb">has do not disturb</a>
+                  </li>
+                  <li>
+                    <a href="#has-early-media" class="toc-h2 toc-link" data-title="has early media">has early media</a>
+                  </li>
+                  <li>
+                    <a href="#has-monitor-mode" class="toc-h2 toc-link" data-title="has monitor mode">has monitor mode</a>
                   </li>
               </ul>
           </li>
@@ -36421,6 +36439,28 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
    <span class="nt">&lt;audio_codecs_supported&gt;</span>G711 ULAW, G711 ALAW<span class="nt">&lt;/audio_codecs_supported&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h2 id='has-play-door-chime'>has play door chime</h2>
+<p>Device supports the ability to play a secondary door chime inanition to the default door chime. This is primarily intended for playing a secondary door chime on Control4 touch panels.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_play_door_chime&gt;&lt;/has_play_door_chime&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_play_door_chime&gt;</span>false<span class="nt">&lt;/has_play_door_chime&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h2 id='video-codecs-supported'>video codecs supported</h2>
 <p>This capability specifies the video codecs supported by this device type. Its value is a comma delimited string. For example:  “H263, H264” </p>
 <h3 id='signature'>Signature</h3>
@@ -36444,7 +36484,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-camera'>has camera</h2>
-<p>This capability specifies whether this device type has a camera. Its value is a Boolean string. For example, “True” or “False”</p>
+<p>The device includes a camera and supporting camera functionality. This controls enabling/disabling the use of the Send Video UI in ComposerPro.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_camera&gt;&lt;/has_camera&gt;</code></p>
@@ -36466,7 +36506,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-display'>has display</h2>
-<p>This capability specifies whether this device type has a video display. Its value is a Boolean string. For example:  “True” or “False”</p>
+<p>Device includes a physical display. Typically a door station has a display where a touch panel may not. Setting this to True enables the device to receive incoming video.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_display&gt;&lt;/has_display&gt;</code></p>
@@ -36549,8 +36589,118 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 </tbody></table>
 
-<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;is_doorstation&gt;</span>True<span class="nt">&lt;/is_doorstation&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='driver-arch-type'>driver arch type</h2>
+<p>This is a legacy capability that was needed for older Control4 devices that used echo cancellation. Its use is not applicable to external, third party driver development efforts.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;driver_arch_type&gt;&lt;/driver_arch_type&gt;</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>0-5. Device Type Number</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;driver_arch_type&gt;</span>3<span class="nt">&lt;/driver_arch_type&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-auto-answer'>has auto answer</h2>
+<p>A setting of True indicates that the device supports the ability to automatically answer an incoming call. Setting this capability to True will also enable the use of the has auto answer checkbox in ComposerPro. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_auto_answer&gt;&lt;/has_auto_answer&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_auto_answer&gt;</span>false<span class="nt">&lt;/has_auto_answer&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-do-not-disturb'>has do not disturb</h2>
+<p>Device supports do not disturb functionality. Setting this to true will enable the use of the Do Not Disturb checkbox in ComposerPro.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_do_not_disturb&gt;&lt;/has_do_not_disturb&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_do_not_disturb&gt;</span>true<span class="nt">&lt;/has_do_not_disturb&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-early-media'>has early media</h2>
+<p>Device supports delivery of SIP Early Media. Early media is the preview video and or audio distributed prior to a call being answered. Currently, this is only supported in door stations.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_early_media&gt;&lt;/has_early_media&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_early_media&gt;</span>true<span class="nt">&lt;/has_early_media&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-monitor-mode'>has monitor mode</h2>
+<p>Device supports the monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_monitor_mode&gt;&lt;/has_monitor_mode&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_monitor_mode&gt;</span>true<span class="nt">&lt;/has_monitor_mode&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div></p>
 <h1 id='intercom-events'>Intercom Events</h1>
