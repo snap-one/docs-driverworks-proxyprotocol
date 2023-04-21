@@ -13,24 +13,24 @@ Within the button bar XML is a `<buttons></buttons>` tag. This tag contains the 
 
 
 ```xml
-`<capabilities>
-`    <transports>
-`        <button_bar>
-`            <buttons>
-`                <button>
-`                    <id>PLAY</id>
-`                    <name>Play</name>
-`                    <command>PLAY</command>
-`                    <type>PROXY</type>
-`                </button>
-`                ...
-`            </buttons>
-`            <default_buttons>GUIDE, MENU, CANCEL, INFO></default_buttons>
-`        <button_bar>
-`        ...
-`    </transports>
-`    ...
-`</capabilities>
+<capabilities>
+    <transports>
+        <button_bar>
+            <buttons>
+                <button>
+                    <id>PLAY</id>
+                    <name>Play</name>
+                    <command>PLAY</command>
+                    <type>PROXY</type>
+                </button>
+                ...
+            </buttons>
+            <default_buttons>GUIDE, MENU, CANCEL, INFO</default_buttons>
+        <button_bar>
+        ...
+    </transports>
+    ...
+</capabilities>
 ```
 
 
