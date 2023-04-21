@@ -1,6 +1,6 @@
 ## has high definition
 
-Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640 x 480. 
+Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640x480. 
 
 ### Signature
 

@@ -1,6 +1,6 @@
 ## has monitor mode
 
-Device supports the monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.
+Device supports the use of display monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.
 
 
 ### Signature
