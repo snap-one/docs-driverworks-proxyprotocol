@@ -1,22 +1,21 @@
-## driver arch type
+## has echo calibration
 
 This capability is included in the SDK for Control4 internal use.
 
-
 ### Signature
 
-`<driver_arch_type></driver_arch_type>`
+`<has_echo_calibration></has_echo_calibration> `
 
 
 | Parameter | Description |
 | --- | --- |
-| num | 0-5. Device Type Number |
+| bool | True/False |
 
 
 ### Example
 
 ```xml
 <capabilities>
-   <driver_arch_type>3</driver_arch_type>
+   <has_echo_calibration>false</has_echo_calibration>
 </capabilities>
 ```
