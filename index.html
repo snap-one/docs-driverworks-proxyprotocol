@@ -4613,13 +4613,7 @@
             <a href="#intercom-capabilites" class="toc-h1 toc-link" data-title="Intercom Capabilites">Intercom Capabilites</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#audio-codecs-supported" class="toc-h2 toc-link" data-title="audio codecs supported">audio codecs supported</a>
-                  </li>
-                  <li>
                     <a href="#has-play-door-chime" class="toc-h2 toc-link" data-title="has play door chime">has play door chime</a>
-                  </li>
-                  <li>
-                    <a href="#video-codecs-supported" class="toc-h2 toc-link" data-title="video codecs supported">video codecs supported</a>
                   </li>
                   <li>
                     <a href="#has-camera" class="toc-h2 toc-link" data-title="has camera">has camera</a>
@@ -4629,9 +4623,6 @@
                   </li>
                   <li>
                     <a href="#has-buttons" class="toc-h2 toc-link" data-title="has buttons">has buttons</a>
-                  </li>
-                  <li>
-                    <a href="#can-set-aec" class="toc-h2 toc-link" data-title="can set aec">can set aec</a>
                   </li>
                   <li>
                     <a href="#is-doorstation" class="toc-h2 toc-link" data-title="is doorstation">is doorstation</a>
@@ -4667,6 +4658,9 @@
                     <a href="#has-echo-calibration" class="toc-h2 toc-link" data-title="has echo calibration">has echo calibration</a>
                   </li>
                   <li>
+                    <a href="#audio-codecs-supported" class="toc-h2 toc-link" data-title="audio codecs supported">audio codecs supported</a>
+                  </li>
+                  <li>
                     <a href="#has-intercom" class="toc-h2 toc-link" data-title="has intercom">has intercom</a>
                   </li>
                   <li>
@@ -4680,6 +4674,12 @@
                   </li>
                   <li>
                     <a href="#can-change-transport" class="toc-h2 toc-link" data-title="can change transport">can change transport</a>
+                  </li>
+                  <li>
+                    <a href="#video-codecs-supported" class="toc-h2 toc-link" data-title="video codecs supported">video codecs supported</a>
+                  </li>
+                  <li>
+                    <a href="#can-set-aec" class="toc-h2 toc-link" data-title="can set aec">can set aec</a>
                   </li>
               </ul>
           </li>
@@ -36445,10 +36445,6 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </code></pre></div></p>
 <h1 id='intercom-capabilites'>Intercom Capabilites</h1>
 
-<h2 id='audio-codecs-supported'>audio codecs supported</h2>
-
-<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
-
 <h2 id='has-play-door-chime'>has play door chime</h2>
 
 <p>Device supports the ability to play a secondary door chime inanition to the default door chime. This is primarily intended for playing a secondary door chime on Control4 touch panels.</p>
@@ -36473,9 +36469,6 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
    <span class="nt">&lt;has_play_door_chime&gt;</span>false<span class="nt">&lt;/has_play_door_chime&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='video-codecs-supported'>video codecs supported</h2>
-<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
-
 <h2 id='has-camera'>has camera</h2>
 <p>The device includes a camera and supporting camera functionality. This controls enabling/disabling the use of the Send Video UI in ComposerPro.</p>
 <h3 id='signature'>Signature</h3>
@@ -36542,9 +36535,6 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
    <span class="nt">&lt;has_buttons&gt;</span>True<span class="nt">&lt;/has_buttons&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='can-set-aec'>can set aec</h2>
-<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
-
 <h2 id='is-doorstation'>is doorstation</h2>
 <p>This capability specifies whether this device type is a door station. Its value is a Boolean string. For example: “True” or “False”</p>
 <h3 id='signature'>Signature</h3>
@@ -36656,7 +36646,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-monitor-mode'>has monitor mode</h2>
-<p>Device supports the monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.</p>
+<p>Device supports the use of display monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_monitor_mode&gt;&lt;/has_monitor_mode&gt; </code></p>
@@ -36744,7 +36734,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='has-high-definition'>has high definition</h2>
-<p>Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640 x 480. </p>
+<p>Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640x480. </p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_high_definiton&gt;&lt;/as_high_definiton&gt; </code></p>
@@ -36787,8 +36777,12 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
    <span class="nt">&lt;has_echo_calibration&gt;</span>false<span class="nt">&lt;/has_echo_calibration&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='has-intercom'>has intercom</h2>
+<h2 id='audio-codecs-supported'>audio codecs supported</h2>
 <p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p></p>
+
+<h2 id='has-intercom'>has intercom</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 
 <h2 id='has-video-intercom'>has video intercom</h2>
 
@@ -36805,6 +36799,14 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 
 <h2 id='can-change-transport'>can change transport</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
+
+<h2 id='video-codecs-supported'>video codecs supported</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
+
+<h2 id='can-set-aec'>can set aec</h2>
 
 <p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 <h1 id='intercom-events'>Intercom Events</h1>
