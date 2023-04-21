@@ -4651,6 +4651,36 @@
                   <li>
                     <a href="#has-monitor-mode" class="toc-h2 toc-link" data-title="has monitor mode">has monitor mode</a>
                   </li>
+                  <li>
+                    <a href="#use-microphone" class="toc-h2 toc-link" data-title="use microphone">use microphone</a>
+                  </li>
+                  <li>
+                    <a href="#use-speaker" class="toc-h2 toc-link" data-title="use speaker">use speaker</a>
+                  </li>
+                  <li>
+                    <a href="#use-ringer" class="toc-h2 toc-link" data-title="use ringer">use ringer</a>
+                  </li>
+                  <li>
+                    <a href="#has-high-definition" class="toc-h2 toc-link" data-title="has high definition">has high definition</a>
+                  </li>
+                  <li>
+                    <a href="#has-echo-calibration" class="toc-h2 toc-link" data-title="has echo calibration">has echo calibration</a>
+                  </li>
+                  <li>
+                    <a href="#has-intercom" class="toc-h2 toc-link" data-title="has intercom">has intercom</a>
+                  </li>
+                  <li>
+                    <a href="#has-video-intercom" class="toc-h2 toc-link" data-title="has video intercom">has video intercom</a>
+                  </li>
+                  <li>
+                    <a href="#has-mcast-emedia" class="toc-h2 toc-link" data-title="has mcast emedia">has mcast emedia</a>
+                  </li>
+                  <li>
+                    <a href="#can-change-multicast-ip" class="toc-h2 toc-link" data-title="can change multicast ip">can change multicast ip</a>
+                  </li>
+                  <li>
+                    <a href="#can-change-transport" class="toc-h2 toc-link" data-title="can change transport">can change transport</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -36417,30 +36447,12 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='audio-codecs-supported'>audio codecs supported</h2>
 
-<p>This capability specifies the audio codecs supported by this device type. Its value is a comma delimited string. For example: “G711 ULAW, G711 ALAW”</p>
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 
-<h3 id='signature'>Signature</h3>
-
-<p><code>&lt;audio_codecs_supported&gt;&lt;/audio_codecs_supported&gt;</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>Comma delimited string. (e.g. “G711 ULAW, G711 ALAW”)</td>
-</tr>
-</tbody></table>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-   <span class="nt">&lt;audio_codecs_supported&gt;</span>G711 ULAW, G711 ALAW<span class="nt">&lt;/audio_codecs_supported&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='has-play-door-chime'>has play door chime</h2>
+
 <p>Device supports the ability to play a secondary door chime inanition to the default door chime. This is primarily intended for playing a secondary door chime on Control4 touch panels.</p>
+
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;has_play_door_chime&gt;&lt;/has_play_door_chime&gt; </code></p>
@@ -36462,27 +36474,8 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='video-codecs-supported'>video codecs supported</h2>
-<p>This capability specifies the video codecs supported by this device type. Its value is a comma delimited string. For example:  “H263, H264” </p>
-<h3 id='signature'>Signature</h3>
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 
-<p><code>&lt;video_codecs_supported&gt;&lt;/video_codecs_supported&gt;</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>Comma delimited string. (e.g. “H263, H264” )</td>
-</tr>
-</tbody></table>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-   <span class="nt">&lt;video_codecs_supported&gt;</span>GH263, H264<span class="nt">&lt;/video_codecs_supported&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='has-camera'>has camera</h2>
 <p>The device includes a camera and supporting camera functionality. This controls enabling/disabling the use of the Send Video UI in ComposerPro.</p>
 <h3 id='signature'>Signature</h3>
@@ -36550,27 +36543,8 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='can-set-aec'>can set aec</h2>
-<p>This capability specifies whether this device type has conservative auto echo cancellation. Its value is a Boolean string. For example: “True” or “False” </p>
-<h3 id='signature'>Signature</h3>
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 
-<p><code>&lt;can_set_aec&gt;&lt;/can_set_aec&gt;</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>bool</td>
-<td>True/False</td>
-</tr>
-</tbody></table>
-
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-   <span class="nt">&lt;can_set_aec&gt;</span>True<span class="nt">&lt;/can_set_aec&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='is-doorstation'>is doorstation</h2>
 <p>This capability specifies whether this device type is a door station. Its value is a Boolean string. For example: “True” or “False”</p>
 <h3 id='signature'>Signature</h3>
@@ -36594,7 +36568,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='driver-arch-type'>driver arch type</h2>
-<p>This is a legacy capability that was needed for older Control4 devices that used echo cancellation. Its use is not applicable to external, third party driver development efforts.</p>
+<p>This capability is included in the SDK for Control4 internal use.</p>
 <h3 id='signature'>Signature</h3>
 
 <p><code>&lt;driver_arch_type&gt;&lt;/driver_arch_type&gt;</code></p>
@@ -36699,10 +36673,140 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 </tbody></table>
 
-<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;has_monitor_mode&gt;</span>true<span class="nt">&lt;/has_monitor_mode&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div></p>
+</code></pre></div>
+<h2 id='use-microphone'>use microphone</h2>
+<p>The driver has the ability to physically control the microphone level on the device.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;use_microphone&gt;&lt;/use_microphone&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;use_microphone&gt;</span>true<span class="nt">&lt;/use_microphone&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='use-speaker'>use speaker</h2>
+<p>The driver has the ability to physically control the speaker level on the device.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;use_speaker&gt;&lt;/use_speaker&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;use_speaker&gt;</span>true<span class="nt">&lt;/use_speaker&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='use-ringer'>use ringer</h2>
+<p>The driver has the ability to physically control the ringer level on the device.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;use_ringer&gt;&lt;/use_ringer&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;use_ringer&gt;</span>true<span class="nt">&lt;/use_ringer&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-high-definition'>has high definition</h2>
+<p>Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640 x 480. </p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_high_definiton&gt;&lt;/as_high_definiton&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_high_definiton&gt;</span>true<span class="nt">&lt;/has_high_definiton&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-echo-calibration'>has echo calibration</h2>
+<p>This capability is included in the SDK for Control4 internal use.</p>
+<h3 id='signature'>Signature</h3>
+
+<p><code>&lt;has_echo_calibration&gt;&lt;/has_echo_calibration&gt; </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;has_echo_calibration&gt;</span>false<span class="nt">&lt;/has_echo_calibration&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='has-intercom'>has intercom</h2>
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p></p>
+
+<h2 id='has-video-intercom'>has video intercom</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
+
+<h2 id='has-mcast-emedia'>has mcast emedia</h2>
+
+<p><strong>This Capability has been replaced and is no longer applicable to driver development efforts. </strong></p>
+
+<p>For more information see the has_early_media capability.</p>
+
+<h2 id='can-change-multicast-ip'>can change multicast ip</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
+
+<h2 id='can-change-transport'>can change transport</h2>
+
+<p><strong>This Capability has been deprecated and is no longer applicable to driver development efforts. </strong></p>
 <h1 id='intercom-events'>Intercom Events</h1>
 
 <h2 id='intercom-events'>Intercom Events</h2>
