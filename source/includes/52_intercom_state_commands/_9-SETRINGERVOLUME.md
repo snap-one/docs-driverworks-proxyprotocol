@@ -5,7 +5,7 @@ This command is issued to cause the ringer volume setting to be changed for the 
 
 ### Signature
 
-`SET_RINGER_VOLUME E ()`
+`SET_RINGER_VOLUME ()`
 
 
 | Parameter | Description |
