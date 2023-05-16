@@ -35426,9 +35426,9 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <p><code>None</code></p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_CAMERA_ENABLED</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">cameraEnable</span><span class="o">&gt;</span><span class="p">[</span><span class="kc">true</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">cameraEnabled</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">SET_CAMERA_ENABLED</span><span class="o">&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_CAMERA_ENABLE</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">cameraEnable</span><span class="o">&gt;</span><span class="p">[</span><span class="kc">true</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">cameraEnable</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">SET_CAMERA_ENABLE</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='set-dnd'>SET DND</h2>
 <p>This command is issued to toggle the “Do Not Disturb” setting of the intercom. </p>
@@ -35564,7 +35564,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#ringer-volume-changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='signature'>Signature</h3>
 
-<p><code>SET_RINGER_VOLUME E ()</code></p>
+<p><code>SET_RINGER_VOLUME ()</code></p>
 
 <table><thead>
 <tr>
@@ -36423,7 +36423,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h3 id='signature'>Signature</h3>
 
-<p><code>GET_CUSTOM_BUTTONS ()</code></p>
+<p><code>GET_GROUP_LIST ()</code></p>
 
 <table><thead>
 <tr>
