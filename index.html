@@ -34409,7 +34409,8 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='accept-call'>ACCEPT CALL</h2>
 
-<p>This command may be issued by the receiver of a call invitation (i.e. an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL notification</code></a>) and causes the call associated with the given session id to be accepted. This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification being sent to both the initiator and the receiver of the call.</p>
+<p>This command is used to programmatically accept a ringing call on a device. 
+It may be issued by the receiver of a call invitation (i.e. an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call"><code>INCOMING_CALL notification</code></a>) and causes the call associated with the given session id to be accepted. This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted"><code>CALL_ACCEPTED</code></a> notification being sent to both the initiator and the receiver of the call.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -34431,7 +34432,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 <tr>
 <td>num</td>
-<td><code>SESSION_ID</code> - The session ID of the call</td>
+<td><code>SESSION_ID</code> -  The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call.</td>
 </tr>
 <tr>
 <td>num</td>
@@ -34448,6 +34449,8 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 <p><code>None</code></p>
 
 <h2 id='end-call'>END CALL</h2>
+
+<p>Used by Programming or ComposerPro. Terminates the current call. A full session (completed call) must have occurred in order for End Call to work. End Call is not applicable to calls that are in a ringing state. Upon executing End Call both ends of the call are terminated.</p>
 
 <p>This command can be issued by either the initiator or receiver and causes the indicated session to be ended.  This command will result in a <code>CALL_ENDED</code> notification being sent to both the initiator and the receiver of the call.  For broadcast calls, when the caller ends the call the remoteAor should be set to the value “broadcast” (without the quotes)</p>
 
@@ -34471,7 +34474,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 <tr>
 <td>num</td>
-<td><code>SESSION_ID</code> - The session ID of the call</td>
+<td><code>SESSION_ID</code> - The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call.</td>
 </tr>
 </tbody></table>
 
@@ -34481,7 +34484,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='mute-call'>MUTE CALL</h2>
 
-<p>This command can be issued by either the initiator or receiver; the endpoint of the issuer will be muted or un-muted, depending on the value of the flag</p>
+<p>Used by Programming or ComposerPro. This command is used to programmatically Mute a device.  TRhe endpoint of the issuer will be muted or un-muted, depending on the value of the flag.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -34655,7 +34658,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='start-call'>START  CALL</h2>
 
-<p>Handles the start call command.</p>
+<p>Used by Programming or ComposerPro. Start Call is issued by a third party to the device. Start Call is not used when call are initiated through Navigator.</p>
 
 <h3 id='signature'>Signature</h3>
 
@@ -34685,7 +34688,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 <tr>
 <td>num</td>
-<td>RING - The ring parameter for the call</td>
+<td>RING - This parameter has been deprecated.</td>
 </tr>
 </tbody></table>
 
