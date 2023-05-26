@@ -1,6 +1,6 @@
 ## MUTE CALL
 
-This command can be issued by either the initiator or receiver; the endpoint of the issuer will be muted or un-muted, depending on the value of the flag
+Used by Programming or ComposerPro. This command is used to programmatically Mute a device.  TRhe endpoint of the issuer will be muted or un-muted, depending on the value of the flag.
 
 
 ### Signature
