@@ -10,13 +10,13 @@
 <p>Drivers should verify that scene ramping via a held scene ramp up/down button works with their drivers via the supports_target capability and properly handle SET_COLOR_STOP and SET_BRIGHTNESS_STOP commands.</p>
 
 <p>Note: This cannot be enabled if advanced_scene_support is enabled.</p>
-<h3 id='signature'>Signature</h3>
+<h3 id='reduced_als_support-signature'>Signature</h3>
 <p><code>&lt;reduced_als_support&gt;&lt;/reduced_als_support&gt;</code></p>
-<h3 id='type'>Type</h3>
+<h3 id='reduced_als_support-type'>Type</h3>
 <p>Boolean</p>
-<h3 id='dynamic-capability'>Dynamic Capability</h3>
+<h3 id='reduced_als_support-dynamic-capability'>Dynamic Capability</h3>
 <p>No</p>
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='reduced_als_support-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;reduced_als_support&gt;</span>false<span class="nt">&lt;/reduced_als_support&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
