@@ -41400,7 +41400,7 @@ The light level of the light has changed and is at the final brightness. Event I
 </tr>
 <tr>
 <td>LIGHT_BRIGHTNESS_CURRENT_PRESET_ID</td>
-<td>Integer. Preset ID that was last activated. Providing this will allow the proxy to track and update the drivers level if the preset level is modified - This is needed for drivers making use of the Daylight Agent or similar features.</td>
+<td>Integer. Optional. This should only be included if presets levels are defined and the level is equal to the preset. Providing this will allow the proxy to track and update the drivers level if the preset level is modified. This is needed for drivers making use of the Daylight Agent or similar features.</td>
 </tr>
 </tbody></table>
 
