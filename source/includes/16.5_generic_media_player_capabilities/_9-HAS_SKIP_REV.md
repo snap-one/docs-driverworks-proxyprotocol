@@ -1,4 +1,4 @@
-## has skip rev
+## has\_skip\_rev
 
 Media Player supports reverse skipping through media.
 

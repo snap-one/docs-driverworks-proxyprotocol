@@ -1,4 +1,4 @@
-## has skip fwd
+## has\_skip\_fwd
 
 Media Player supports forward skipping through media.
 

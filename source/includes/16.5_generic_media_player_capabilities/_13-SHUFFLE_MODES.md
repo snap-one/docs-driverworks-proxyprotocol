@@ -1,4 +1,4 @@
-## shuffle modes
+## shuffle\_modes
 
 Media Player supports multiple media shuffling types. This is a dynamic capability and can be defined on a device-by-device basis.
 

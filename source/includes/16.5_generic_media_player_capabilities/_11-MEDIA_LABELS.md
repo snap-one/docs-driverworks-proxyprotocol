@@ -1,4 +1,4 @@
-## media labels
+## media\_labels
 
 Media Player supports multiple ways to label media. This is a dynamic capability and can be defined on a device-by-device basis.
 

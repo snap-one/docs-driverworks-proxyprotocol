@@ -1,4 +1,4 @@
-## has search
+## has\_search
 
 Media Player supports searching.
 

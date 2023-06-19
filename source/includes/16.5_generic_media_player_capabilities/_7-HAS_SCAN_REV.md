@@ -1,4 +1,4 @@
-## has scan rev
+## has\_scan\_rev
 
 Media Player supports reverse scanning of media.
 

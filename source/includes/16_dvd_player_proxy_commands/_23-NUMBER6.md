@@ -1,4 +1,4 @@
-## NUMBER 6
+## NUMBER6
 
 Pulse ‘6’ button
 

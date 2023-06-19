@@ -1,4 +1,4 @@
-## has scan fwd
+## has\_scan\_fwd
 
 Media Player supports forward scanning of media.
 

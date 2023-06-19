@@ -1,4 +1,4 @@
-## repeat modes
+## repeat\_modes
 
 Media Player supports multiple media repeat types. This is a dynamic capability and can be defined on a device-by-device basis.
 

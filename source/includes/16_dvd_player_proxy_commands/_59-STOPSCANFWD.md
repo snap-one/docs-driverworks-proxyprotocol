@@ -1,4 +1,4 @@
-## STOP SCAN FWD
+## STOP\_SCAN\_FWD
 
 Terminate scan forward within track/chapter.
 
@@ -15,5 +15,5 @@ Terminate scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

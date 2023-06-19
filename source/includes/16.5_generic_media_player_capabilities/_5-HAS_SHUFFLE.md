@@ -1,4 +1,4 @@
-## has shuffle
+## has\_shuffle
 
 Media Player supports shuffling.
 

@@ -1,4 +1,4 @@
-## has repeat
+## has\_repeat
 
 Media Player supports repeating current media.
 

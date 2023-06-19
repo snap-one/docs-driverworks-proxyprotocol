@@ -1,4 +1,4 @@
-## STOP SCAN REV
+## STOP\_SCAN\_REV
 
 Terminate reverse scan within track/chapter.
 
@@ -15,5 +15,5 @@ Terminate reverse scan within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

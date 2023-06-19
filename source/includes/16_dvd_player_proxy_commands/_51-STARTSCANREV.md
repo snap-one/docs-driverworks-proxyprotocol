@@ -1,4 +1,4 @@
-## START SCAN REV
+## START\_SCAN\_REV
 
 Initiate scan forward within track/chapter.
 
@@ -15,5 +15,5 @@ Initiate scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

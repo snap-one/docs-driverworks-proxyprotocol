@@ -1,4 +1,4 @@
-## START LEFT
+## START\_LEFT
 
 Pulse left navigation.
 
@@ -15,5 +15,5 @@ Pulse left navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

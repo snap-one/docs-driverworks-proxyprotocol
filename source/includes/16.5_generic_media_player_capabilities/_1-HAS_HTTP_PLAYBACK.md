@@ -1,4 +1,4 @@
-## has http playback
+## has\_ http\_playback
 
 This capability instructs media manager to exclude/include movies with http based locations.
 

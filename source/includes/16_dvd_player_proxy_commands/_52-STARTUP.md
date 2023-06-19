@@ -1,4 +1,4 @@
-## START UP
+## START\_UP
 
 Initiate up-arrow navigation.
 
@@ -15,5 +15,5 @@ Initiate up-arrow navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

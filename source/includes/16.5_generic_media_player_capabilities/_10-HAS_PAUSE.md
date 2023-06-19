@@ -1,4 +1,4 @@
-## has pause
+## has\_pause
 
 Media Player supports pausing media.
 

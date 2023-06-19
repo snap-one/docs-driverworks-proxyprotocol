@@ -1,4 +1,4 @@
-## STOP DOWN
+## STOP\_DOWN
 
 Terminate down-arrow navigation.
 
@@ -15,5 +15,5 @@ Terminate down-arrow navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

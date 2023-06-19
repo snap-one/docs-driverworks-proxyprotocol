@@ -1,4 +1,4 @@
-## has menu
+## has\_menu
 
 This capability instructs media manager to exclude/include movies with http based locations.
 
