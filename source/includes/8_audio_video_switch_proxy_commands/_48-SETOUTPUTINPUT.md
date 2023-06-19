@@ -1,4 +1,4 @@
-## SET OUTPUT INPUT
+## SET \_  OUTPUT \_  INPUT
 
 Specify input and output selection of device.
 

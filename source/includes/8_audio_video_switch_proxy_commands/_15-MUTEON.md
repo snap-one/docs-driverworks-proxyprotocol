@@ -1,4 +1,4 @@
-## MUTE ON
+## MUTE \_  ON
 
 Turn muting on.
 

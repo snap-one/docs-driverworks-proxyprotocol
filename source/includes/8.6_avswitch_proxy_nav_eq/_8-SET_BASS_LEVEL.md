@@ -1,4 +1,4 @@
-## SET BASS LEVEL
+## SET \_  BASS \_  LEVEL
 
 Navigator EQ command called to set the bass level for tone control. The driver should notify proxy with the  BASS\_LEVEL\_CHANGED notification of the new value.
 

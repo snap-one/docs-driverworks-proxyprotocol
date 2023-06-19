@@ -1,4 +1,4 @@
-## PULSE BASS UP
+## PULSE \_  BASS \_  UP
 
 Pulse bass up (Right)
 

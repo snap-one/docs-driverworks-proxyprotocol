@@ -1,4 +1,4 @@
-## DISCONNECT OUTPUT
+## DISCONNECT \_  OUTPUT
 
 Disconnect (turn off) selected output on device.
 

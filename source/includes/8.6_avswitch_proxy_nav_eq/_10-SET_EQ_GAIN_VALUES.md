@@ -1,4 +1,4 @@
-## SET EQ GAIN VALUES
+## SET \_  EQ \_  GAIN \_  VALUES
 
 Navigator EQ command called to set the current equalizer’s gain values.
 

@@ -1,4 +1,4 @@
-## BASS LEVEL CHANGED
+## BASS \_  LEVEL \_  CHANGED
 
 Navigator EQ notification that the bass has changed.
 

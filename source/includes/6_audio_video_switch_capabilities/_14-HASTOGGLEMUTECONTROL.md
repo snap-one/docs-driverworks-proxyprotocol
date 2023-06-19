@@ -1,4 +1,4 @@
-## has toggle mute control
+## has \_  toggle \_  mute \_  control
 
 Capable of handling ON/OFF mute control.
 

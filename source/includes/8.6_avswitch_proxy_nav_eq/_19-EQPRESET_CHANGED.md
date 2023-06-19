@@ -1,4 +1,4 @@
-## EQ PRESET CHANGED
+## EQ \_  PRESET \_  CHANGED
 
 Navigator EQ notification used when a different preset is selected for an output.  Should be called after SET\_EQPRESET is sent or if the preset is changed from a different event. 
 

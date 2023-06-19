@@ -1,4 +1,4 @@
-## SET TREBLE LEVEL
+## SET \_  TREBLE \_  LEVEL
 
 Navigator EQ command called to set the treble level for tone control. The driver should notify the proxy with TREBLE\_LEVEL\_CHANGED notification of the new value.
 

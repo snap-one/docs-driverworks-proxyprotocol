@@ -1,4 +1,4 @@
-## BALANCE LEVEL CHANGED
+## BALANCE \_  LEVEL \_  CHANGED
 
 Navigator EQ notification that the balance has changed.
 
