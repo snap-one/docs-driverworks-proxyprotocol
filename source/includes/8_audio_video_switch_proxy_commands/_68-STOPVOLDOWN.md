@@ -1,4 +1,4 @@
-## STOP \_  VOL \_  DOWN
+## STOP\_VOL\_DOWN
 
 Stop ramping the volume down
 

@@ -1,4 +1,4 @@
-## STOP DOWN
+## STOP \_DOWN
 
 Terminate down-arrow navigation.
 

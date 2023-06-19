@@ -1,4 +1,4 @@
-## START \_  TREBLE \_  DOWN
+## START\_TREBLE\_DOWN
 
 Start ramping treble down.
 

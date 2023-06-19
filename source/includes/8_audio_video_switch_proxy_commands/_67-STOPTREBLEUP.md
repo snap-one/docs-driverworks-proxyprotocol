@@ -1,4 +1,4 @@
-## STOP \_  TREBLE \_  UP
+## STOP\_TREBLE\_UP
 
 Stop ramping the treble up.
 

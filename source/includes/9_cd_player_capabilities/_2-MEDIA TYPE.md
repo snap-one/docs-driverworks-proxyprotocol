@@ -1,4 +1,4 @@
-## media \_ type
+## media\_ type
 
 Media that the device is capable of playing. Bitmask values include:
 

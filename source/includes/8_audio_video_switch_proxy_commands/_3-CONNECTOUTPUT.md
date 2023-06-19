@@ -1,4 +1,4 @@
-## CONNECT \_  OUTPUT
+## CONNECT\_OUTPUT
 
 Numerical value of the output. Switch the output to passed ID.
 

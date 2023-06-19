@@ -1,4 +1,4 @@
-## EQ \_  FREQS \_  CHANGED
+## EQ\_ FREQS\_CHANGED
 
 Navigator EQ notification that the frequencies of a equalizer have been modified.
 

@@ -1,4 +1,4 @@
-## PULSE \_  SUR \_  UP
+## PULSE\_SUR\_UP
 
 Toggle (cycle through) surround mode presets on device.
 

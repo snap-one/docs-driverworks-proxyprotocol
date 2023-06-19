@@ -1,4 +1,4 @@
-## AUDIOMODE \_  CHANGED
+## AUDIOMODE\_ CHANGED
 
 Navigator EQ notification that the output's audio mode has changed to either Tone Control or Equalizer for the output. This is an optional notification and should be used only if your device has audio modes. 
 

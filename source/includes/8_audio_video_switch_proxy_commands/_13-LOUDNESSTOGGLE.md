@@ -1,4 +1,4 @@
-## LOUDNESS \_  TOGGLE
+## LOUDNESS\_TOGGLE
 
 Toggle loudness on/off.
 

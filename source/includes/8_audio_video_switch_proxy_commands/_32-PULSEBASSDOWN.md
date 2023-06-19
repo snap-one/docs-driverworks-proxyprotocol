@@ -1,4 +1,4 @@
-## PULSE \_  BASS \_  DOWN
+## PULSE\_BASS\_DOWN
 
 Pulse bass down (Left)
 

@@ -1,4 +1,4 @@
-## SKIP REV
+## SKIP \_REV
 
 Seek to previous track/chapter.
 
