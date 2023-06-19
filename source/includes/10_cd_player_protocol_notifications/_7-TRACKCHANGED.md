@@ -1,4 +1,4 @@
-## TRACK \_ CHANGED
+## TRACK\_CHANGED
 
 Selected track has changed.
 

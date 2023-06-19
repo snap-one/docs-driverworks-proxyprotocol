@@ -1,4 +1,4 @@
-## START \_PAGE \_RIGHT
+## START\_PAGE\_RIGHT
 
 Initiate right-arrow navigation.
 

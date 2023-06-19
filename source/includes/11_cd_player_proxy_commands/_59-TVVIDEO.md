@@ -1,4 +1,4 @@
-## TV \_VIDEO
+## TV\_VIDEO
 
 Toggle TV/video input.
 

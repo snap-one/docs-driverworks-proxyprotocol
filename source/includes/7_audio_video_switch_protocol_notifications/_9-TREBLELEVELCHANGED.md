@@ -1,4 +1,4 @@
-## TREBLE \_  LEVEL \_  CHANGED
+## TREBLE\_LEVEL\_CHANGED
 
 Selected treble level has changed.
 

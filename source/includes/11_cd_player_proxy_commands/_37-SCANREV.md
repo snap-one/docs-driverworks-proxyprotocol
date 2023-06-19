@@ -1,4 +1,4 @@
-## SCAN \_REV
+## SCAN\_REV
 
 Pulse scan reverse within track/chapter.
 

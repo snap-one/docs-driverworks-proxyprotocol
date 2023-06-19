@@ -1,4 +1,4 @@
-## START \_SCAN \_FWD
+## START\_SCAN\_FWD
 
 Initiate scan forward within track/chapter.
 

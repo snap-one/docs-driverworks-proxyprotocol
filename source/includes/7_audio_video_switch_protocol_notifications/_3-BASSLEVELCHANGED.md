@@ -1,4 +1,4 @@
-## BASS \_  LEVEL \_  CHANGED
+## BASS\_LEVEL\_CHANGED
 
 Selected bass level has changed
 

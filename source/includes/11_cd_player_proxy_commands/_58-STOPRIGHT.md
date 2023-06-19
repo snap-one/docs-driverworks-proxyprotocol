@@ -1,4 +1,4 @@
-## STOP \_RIGHT
+## STOP\_RIGHT
 
 Terminate RIGHT navigation.
 

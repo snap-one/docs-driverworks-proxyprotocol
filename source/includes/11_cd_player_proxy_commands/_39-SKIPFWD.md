@@ -1,4 +1,4 @@
-## SKIP \_FWD
+## SKIP\_FWD
 
 Advance to next track/chapter.
 

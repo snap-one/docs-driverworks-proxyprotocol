@@ -1,4 +1,4 @@
-## TREBLE\_ LEVEL\_ CHANGED
+## TREBLE\_LEVEL\_CHANGED
 
 Navigator EQ notification that the treble level has changed.
 

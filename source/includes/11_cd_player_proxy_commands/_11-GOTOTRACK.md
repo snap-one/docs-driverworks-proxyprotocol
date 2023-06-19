@@ -1,4 +1,4 @@
-## GO \_  TO \_  TRACK
+## GO\_ TO\_TRACK
 
 Select specified track.
 

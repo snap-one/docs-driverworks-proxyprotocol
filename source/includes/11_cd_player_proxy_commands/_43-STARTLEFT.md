@@ -1,4 +1,4 @@
-## START \_LEFT
+## START\_LEFT
 
 Pulse left navigation.
 

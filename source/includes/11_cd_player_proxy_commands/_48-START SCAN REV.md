@@ -1,4 +1,4 @@
-## START \_SCAN \_REV
+## START\_SCAN\_REV
 
 Initiate scan forward within track/chapter.
 

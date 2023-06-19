@@ -1,4 +1,4 @@
-## STOP \_SCAN \_FWD
+## STOP\_SCAN\_FWD
 
 Terminate scan forward within track/chapter.
 

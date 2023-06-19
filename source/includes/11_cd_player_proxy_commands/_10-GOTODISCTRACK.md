@@ -1,4 +1,4 @@
-## GO \_  TO \_ DISC \_  TRACK
+## GO\_ TO\_DISC\_TRACK
 
 Select specified disc and track.
 

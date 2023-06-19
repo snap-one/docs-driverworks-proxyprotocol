@@ -1,4 +1,4 @@
-## START \_DOWN
+## START\_DOWN
 
 Initiate down arrow navigation.
 

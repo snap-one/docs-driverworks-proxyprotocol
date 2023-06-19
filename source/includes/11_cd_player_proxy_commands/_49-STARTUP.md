@@ -1,4 +1,4 @@
-## START \_UP
+## START\_UP
 
 Initiate up-arrow navigation.
 
