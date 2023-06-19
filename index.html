@@ -1819,16 +1819,13 @@
             <a href="#generic-media-player-and-coverart" class="toc-h1 toc-link" data-title="Generic Media Player and Coverart">Generic Media Player and Coverart</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#generic-media-player-and-coverart-coverart-path-changed" class="toc-h2 toc-link" data-title="COVERART PATH CHANGED">COVERART PATH CHANGED</a>
+                    <a href="#generic-media-player-and-coverart-coverart_path_changed" class="toc-h2 toc-link" data-title="COVERART_PATH_CHANGED">COVERART_PATH_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#generic-media-player-and-coverart-get-coverart" class="toc-h2 toc-link" data-title="GET COVERART">GET COVERART</a>
+                    <a href="#generic-media-player-and-coverart-get_coverart" class="toc-h2 toc-link" data-title="GET_COVERART">GET_COVERART</a>
                   </li>
                   <li>
-                    <a href="#generic-media-player-and-coverart-new-coverart" class="toc-h2 toc-link" data-title="NEW COVERART">NEW COVERART</a>
-                  </li>
-                  <li>
-                    <a href="#generic-media-player-and-coverart-new-coverart" class="toc-h2 toc-link" data-title="new CoverArt">new CoverArt</a>
+                    <a href="#generic-media-player-and-coverart-new_coverart" class="toc-h2 toc-link" data-title="NEW_COVERART">NEW_COVERART</a>
                   </li>
               </ul>
           </li>
@@ -16473,11 +16470,11 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Note that these images must be BASE64 encoded before reaching the proxy. The image is received by the proxy in one of the encoded formats from the media player using the SendToProxy: (“COVERART”) notification. Image information is sent with this notification along with the encoded image, including image width, height and format.</p>
 
-<h2 id='generic-media-player-and-coverart-coverart-path-changed'>COVERART PATH CHANGED</h2>
+<h2 id='generic-media-player-and-coverart-coverart_path_changed'>COVERART_PATH_CHANGED</h2>
 
 <p>Send the new cover art path for the current playing media.</p>
 
-<h3 id='generic-media-player-and-coverart-coverart-path-changed-signature'>Signature</h3>
+<h3 id='generic-media-player-and-coverart-coverart_path_changed-signature'>Signature</h3>
 
 <p><code>COVERART_PATH_CHANGED ()</code></p>
 
@@ -16501,23 +16498,23 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </tbody></table>
 
-<h2 id='generic-media-player-and-coverart-get-coverart'>GET COVERART</h2>
+<h2 id='generic-media-player-and-coverart-get_coverart'>GET_COVERART</h2>
 
 <p>Command that comes into Received from Proxy.</p>
 
-<h3 id='generic-media-player-and-coverart-get-coverart-signature'>Signature</h3>
+<h3 id='generic-media-player-and-coverart-get_coverart-signature'>Signature</h3>
 
 <p><code>GET_COVERART ()</code></p>
 
-<h3 id='generic-media-player-and-coverart-get-coverart-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">GetCoverArt</span><span class="p">()</span>
+<h3 id='generic-media-player-and-coverart-get_coverart-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">GetCoverArt</span><span class="p">()</span>
 <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span><span class="k">if</span> <span class="p">(</span><span class="n">g_ShowCoverArt</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="k">then</span>
 <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">QueueDockCmd</span><span class="p">(</span><span class="n">CMD</span><span class="p">[</span><span class="s2">"GET_COVERART_RAW"</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">g_imageindex</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
 <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span><span class="n">End</span>
 <span class="k">end</span>
 </code></pre></div>
-<h2 id='generic-media-player-and-coverart-new-coverart'>NEW COVERART</h2>
+<h2 id='generic-media-player-and-coverart-new_coverart'>NEW_COVERART</h2>
 <p>Send the data information to the UI. This information includes image height, width, format, size (if the image is in .jpg format) and the image path, which is where the image file was written.</p>
-<h3 id='generic-media-player-and-coverart-new-coverart-signature'>Signature</h3>
+<h3 id='generic-media-player-and-coverart-new_coverart-signature'>Signature</h3>
 
 <p><code>NEW_COVERART ()</code></p>
 
@@ -16548,41 +16545,6 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <td>Image format</td>
 </tr>
 </tbody></table>
-
-<h2 id='generic-media-player-and-coverart-new-coverart'>new CoverArt</h2>
-
-<p>SendDataToUI(newCoverArt)</p>
-
-<h3 id='generic-media-player-and-coverart-new-coverart-signature'>Signature</h3>
-
-<p><code>NEW_COVERART ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>width</td>
-<td>Image width</td>
-</tr>
-<tr>
-<td>height</td>
-<td>Image height</td>
-</tr>
-<tr>
-<td>path</td>
-<td>Location of image</td>
-</tr>
-</tbody></table>
-
-<p><h3 id='generic-media-player-and-coverart-new-coverart-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">AutoNode</span> <span class="n">newCoverArt</span><span class="p">(</span><span class="n">C4XML</span><span class="p">::</span><span class="n">CreateXmlNode</span><span class="p">(</span><span class="s2">&quot;NEW_COVER_ART&quot;</span><span class="p">));</span>
-<span class="n">newCoverArt</span><span class="o">-&gt;</span><span class="n">AddChild</span><span class="p">(</span><span class="s2">&quot;image_path&quot;</span><span class="p">,</span> <span class="n">m_ImagePath</span><span class="p">);</span>
-<span class="n">newCoverArt</span><span class="o">-&gt;</span><span class="n">AddChild</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span> <span class="n">m_ImageWidth</span><span class="p">);</span>
-<span class="n">newCoverArt</span><span class="o">-&gt;</span><span class="n">AddChild</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="n">m_ImageHeight</span><span class="p">);</span>
-<span class="n">SendDataToUI</span><span class="p">(</span> <span class="o">*</span><span class="n">newCoverArt</span> <span class="p">);</span>
-</code></pre></div></p>
 <h1 id='audio-output-bindings-and-proxy-events'>Audio Output Bindings and Proxy Events</h1>
 
 <p>Note: Audio Output binding ID values defined in drivers written in conjunction with this Proxy must start with a binding value of 4000. The acceptable range for Audio Outputs is 4000 - 4999. However, if the first output binding ID value is not 4000, issues with Proxy Events firing correctly can be encountered.</p>
