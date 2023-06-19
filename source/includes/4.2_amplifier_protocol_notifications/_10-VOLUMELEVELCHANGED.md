@@ -1,4 +1,4 @@
-## VOLUME \_  LEVEL \_  CHANGED
+## VOLUME\_LEVEL\_CHANGED
 
 Selected volume level has changed.
 

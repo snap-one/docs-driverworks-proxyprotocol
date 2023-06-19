@@ -1,4 +1,4 @@
-## HIDE \_  EQ \_  FROM \_  NAVS \_  CHANGED
+## HIDE\_EQ\_FROM\_NAVS \_CHANGED
 
 Navigator EQ notification that the equalizer should be shown or hidden from Navigator. This must be sent with a value of False to enable the EQ functionality in Navigator.
 

@@ -1,4 +1,4 @@
-## has \_  video \_  signal \_  sense
+## has\_video\_signal\_sense
 
 Specifies AV switching is capable of sensing video on an input. This is useful in triggering programming in ComposerPro based on the this setting.
 

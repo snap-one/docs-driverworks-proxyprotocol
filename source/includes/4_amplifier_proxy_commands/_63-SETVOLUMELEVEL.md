@@ -1,4 +1,4 @@
-## SET \_ VOLUME \_ LEVEL
+## SET\_VOLUME\_LEVEL
 
 Set volume to a specified level.
 

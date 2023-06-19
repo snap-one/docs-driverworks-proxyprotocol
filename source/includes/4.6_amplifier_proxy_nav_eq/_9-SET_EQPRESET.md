@@ -1,4 +1,4 @@
-## SET \_  EQPRESET
+## SET\_EQPRESET
 
 Navigator EQ command called to change the selected preset for an output.
 

@@ -1,4 +1,4 @@
-## START \_ BASS \_ UP
+## START\_BASS\_UP
 
 Start ramping bass up.
 

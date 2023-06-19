@@ -1,4 +1,4 @@
-## can \_  upclass
+## can\_upclass
 
 Specifies if the device switch can up convert. For example: Composite -\> S-Video 
 

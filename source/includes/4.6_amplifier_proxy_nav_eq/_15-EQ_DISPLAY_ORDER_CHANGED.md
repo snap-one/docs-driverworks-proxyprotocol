@@ -1,4 +1,4 @@
-## EQ \_  DISPLAY \_  ORDER \_  CHANGED
+## EQ\_DISPLAY\_ORDER\_CHANGED
 
 Navigator EQ notification of the order that the names from EQ\_NAMES\_CHANGED should be presented to the user.
 

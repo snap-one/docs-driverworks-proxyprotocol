@@ -1,4 +1,4 @@
-## can \_  switch \_  separately
+## can\_switch\_separately
 
 Device specific capability that must be set to True to in order for an AV Switch’s Composer Pro interface reflecting independent audio and video signal switching.
 

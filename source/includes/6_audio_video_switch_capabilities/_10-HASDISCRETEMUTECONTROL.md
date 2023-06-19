@@ -1,4 +1,4 @@
-## has \_  discrete \_  mutev control
+## has\_discrete\_mute\_control
 
 Capable of directly specifying mute ON or OFF setting.
 

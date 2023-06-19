@@ -1,4 +1,4 @@
-## PULSE \_ TREBLE \_ DOWN
+## PULSE\_TREBLE\_ DOWN
 
 Pulse treble down.
 

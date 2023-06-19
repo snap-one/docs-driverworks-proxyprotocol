@@ -1,4 +1,4 @@
-## AUDIO\_ PARAMETER \_  CHANGED
+## AUDIO\_PARAMETER \_CHANGED
 
 Audio parameter has changed
 

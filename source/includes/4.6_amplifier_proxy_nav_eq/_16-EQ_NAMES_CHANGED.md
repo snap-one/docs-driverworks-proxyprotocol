@@ -1,4 +1,4 @@
-## EQ \_  NAMES \_  CHANGED
+## EQ\_NAMES\_CHANGED
 
 Navigator EQ notification of the current names for the equalizer presets.
 

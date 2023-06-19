@@ -1,4 +1,4 @@
-## STOP \_ BALANCE \_ DOWN
+## STOP\_BALANCE\_DOWN
 
 Start ramping balance.
 

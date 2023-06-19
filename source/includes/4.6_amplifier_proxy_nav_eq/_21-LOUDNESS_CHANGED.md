@@ -1,4 +1,4 @@
-## LOUDNESS \_  CHANGED
+## LOUDNESS\_CHANGED
 
 Navigator EQ notification that the loudness has changed.
 

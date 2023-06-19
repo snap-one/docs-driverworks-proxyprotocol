@@ -1,4 +1,4 @@
-## can \_  downclass
+## can\_ downclass
 
 Specifies if the A/V switch can down convert. For example: S-Video -\> Composite
 

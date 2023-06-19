@@ -1,4 +1,4 @@
-## NUMBER \_ 1
+## NUMBER\_1
 
 Pulse ‘1’ button
 

@@ -1,4 +1,4 @@
-## has \_  discrete \_  treble \_  control
+## has\_discrete\_treble\_control
 
 Capable of directly specifying a treble setting.
 

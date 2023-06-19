@@ -1,4 +1,4 @@
-## can \_  downclass
+## can\_downclass
 
 Specifies if the device switch can down convert. For example: S-Video -\> Composite
 

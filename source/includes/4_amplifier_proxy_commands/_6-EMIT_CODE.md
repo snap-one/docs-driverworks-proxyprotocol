@@ -1,4 +1,4 @@
-## EMIT\_ CODE
+## EMIT\_CODE
 
 Emit IR/Serial code. This is used by the AVGen IR/Serial Proxy.
 
