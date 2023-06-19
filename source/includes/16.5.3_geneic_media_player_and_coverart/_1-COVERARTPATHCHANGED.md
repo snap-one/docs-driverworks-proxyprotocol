@@ -1,4 +1,4 @@
-## COVERART PATH CHANGED
+## COVERART\_PATH\_CHANGED
 
 Send the new cover art path for the current playing media.
 

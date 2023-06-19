@@ -1,4 +1,4 @@
-## NEW COVERART
+## NEW\_COVERART
 
 Send the data information to the UI. This information includes image height, width, format, size (if the image is in .jpg format) and the image path, which is where the image file was written.
 

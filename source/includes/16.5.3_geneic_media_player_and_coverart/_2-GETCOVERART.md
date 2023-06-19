@@ -1,4 +1,4 @@
-## GET COVERART
+## GET\_COVERART
 
 Command that comes into Received from Proxy.
 
