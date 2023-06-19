@@ -1,4 +1,4 @@
-## GO TO DISC
+## GO\_TO\_DISC
 
 Select specified disc.
 
