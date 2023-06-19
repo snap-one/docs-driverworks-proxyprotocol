@@ -1,4 +1,4 @@
-## GET NEXT
+## GET\_NEXT
 
 Command that returns the index of the first item in the list that begins with the specified character.
 

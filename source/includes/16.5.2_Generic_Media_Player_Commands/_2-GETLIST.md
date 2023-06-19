@@ -1,4 +1,4 @@
-## GET LIST
+## GET\_LIST
 
 Command to obtain the current list.
 

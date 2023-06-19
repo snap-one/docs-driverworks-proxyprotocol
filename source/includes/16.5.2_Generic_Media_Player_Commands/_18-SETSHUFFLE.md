@@ -1,4 +1,4 @@
-## SET SHUFFLE
+## SET\_SHUFFLE
 
 Command to obtain the shuffle mode for the GenericMediaPlayer.
 

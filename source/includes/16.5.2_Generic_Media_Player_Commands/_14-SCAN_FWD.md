@@ -1,4 +1,4 @@
-## SCAN FWD
+## SCAN\_FWD
 
 Command to scan forward through current media.
 

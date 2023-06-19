@@ -1,4 +1,4 @@
-## GET ALPHA LOOKUP
+## GET\_ALPHA\_LOOKUP
 
 Command that returns the index of the first item in the list that begins with the specified character.
 

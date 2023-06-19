@@ -1,4 +1,4 @@
-## SCAN REV
+## SCAN\_REV
 
 Command to scan backwards through current media.
 

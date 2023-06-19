@@ -1,4 +1,4 @@
-## GET REPEAT MODES
+## GET\_REPEAT\_MODES
 
 Command to obtain supported repeat modes.
 

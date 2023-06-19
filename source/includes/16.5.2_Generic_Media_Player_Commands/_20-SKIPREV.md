@@ -1,4 +1,4 @@
-## SKIP REV
+## SKIP\_REV
 
 Command that starts playback of the previous media item.
 

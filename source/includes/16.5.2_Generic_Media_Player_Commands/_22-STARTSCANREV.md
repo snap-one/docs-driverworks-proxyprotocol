@@ -1,4 +1,4 @@
-## START SCAN REV
+## START\_SCAN\_REV
 
 Command to start scan backwards or rewind through the currently playing media item.
 

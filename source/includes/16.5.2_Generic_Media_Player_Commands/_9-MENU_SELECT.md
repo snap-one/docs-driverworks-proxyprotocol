@@ -1,4 +1,4 @@
-## MENU SELECT
+## MENU\_SELECT
 
 Command to select an item from the list of menu items returned with GET\_MENU.
 

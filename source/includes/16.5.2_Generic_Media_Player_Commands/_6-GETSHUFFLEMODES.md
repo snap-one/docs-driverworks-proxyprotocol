@@ -1,4 +1,4 @@
-## GET SHUFFLE MODES
+## GET\_SHUFFLE\_MODES
 
 Command to obtain supported repeat modes.
 

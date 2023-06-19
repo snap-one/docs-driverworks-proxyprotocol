@@ -1,4 +1,4 @@
-## SKIP FWD
+## SKIP\_FWD
 
 Command that starts playback of the next media item.
 

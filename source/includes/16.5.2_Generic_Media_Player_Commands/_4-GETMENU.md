@@ -1,4 +1,4 @@
-## GET MENU
+## GET\_MENU
 
 Command to obtain the list of items in the menu.
 

@@ -1,4 +1,4 @@
-## STOP SCAN FWD
+## STOP\_SCAN\_FWD
 
 Command to stop scanning forward through the current media.
 

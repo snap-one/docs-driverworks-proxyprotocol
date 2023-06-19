@@ -1,4 +1,4 @@
-## SET REPEAT
+## SET\_REPEAT
 
 Command to set the repeat mode on the GenericMediaPlayer.
 
