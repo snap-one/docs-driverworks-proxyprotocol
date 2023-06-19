@@ -1,4 +1,4 @@
-## has video signal sense
+## has \_  video \_  signal \_  sense
 
 Specifies if the device switching is capable of sensing video on an input. This is useful in triggering programming in ComposerPro based on the this setting.
 

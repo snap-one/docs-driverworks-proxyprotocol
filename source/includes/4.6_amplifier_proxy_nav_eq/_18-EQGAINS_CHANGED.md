@@ -1,4 +1,4 @@
-## EQ GAINS CHANGED
+## EQ \_  GAINS \_  CHANGED
 
 Navigator EQ notification that the gains of an equalizer have been modified.
 

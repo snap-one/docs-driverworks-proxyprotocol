@@ -1,4 +1,4 @@
-## BALANCE LEVEL CHANGED
+## BALANCE \_  LEVEL \_  CHANGED
 
 Selected balance level has changed.
 

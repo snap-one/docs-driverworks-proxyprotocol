@@ -1,4 +1,4 @@
-## SAVE EQ TO CUSTOM PRESET
+## SAVE \_  EQ \_  TO \_  CUSTOM \_  PRESET
 
 Navigator EQ command called to save the current EQ values to a custom preset with a name. The driver should notify proxy with the EQ\_NAMES\_CHANGED notification with the updated name.
 

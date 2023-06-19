@@ -1,4 +1,4 @@
-## can switch separately
+## can \_  switch \_  separately
 
 Device specific capability that must be set to True to in order for a device’s Composer Pro interface reflecting independent audio and video signal switching.
 
