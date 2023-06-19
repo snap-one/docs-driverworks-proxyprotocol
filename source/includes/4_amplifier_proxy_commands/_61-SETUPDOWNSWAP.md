@@ -1,4 +1,4 @@
-## SET UP DOWN SWAP
+## SET \_ UP \_ DOWN \_ SWAP
 
 Swap page UP/DOWN buttons (used by AVGen)
 

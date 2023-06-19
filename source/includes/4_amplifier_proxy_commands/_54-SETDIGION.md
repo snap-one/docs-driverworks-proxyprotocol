@@ -1,4 +1,4 @@
-## SET DIGI ON
+## SET \_ DIGI \_ ON
 
 Used with the v.3 amp to turn digital inputs on.
 

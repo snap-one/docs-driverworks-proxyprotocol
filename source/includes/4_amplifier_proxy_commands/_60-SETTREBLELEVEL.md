@@ -1,4 +1,4 @@
-## SET TREBLE LEVEL
+## SET \_ TREBLE \_ LEVEL
 
 Set treble to a specified level.
 

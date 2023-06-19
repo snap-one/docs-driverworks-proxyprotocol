@@ -1,4 +1,4 @@
-## BINDING CHANGE ACTION
+## BINDING\_ CHANGE\_ ACTION
 
 Command sent when a bound binding changes. Performs any actions needed to the protocol.
 

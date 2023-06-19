@@ -1,4 +1,4 @@
-## SET DIGI OFF
+## SET \_ DIGI \_ OFF
 
 Used with the v.3 amp to turn digital inputs off.
 

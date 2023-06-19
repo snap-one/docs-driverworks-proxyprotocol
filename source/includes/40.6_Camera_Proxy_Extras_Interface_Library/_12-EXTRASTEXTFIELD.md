@@ -2,7 +2,7 @@
 
 ### Overview
 
-This class represents apstraction of the Extras Text Field object. The class interface provides following cations:
+This class represents abstraction of the Extras Text Field object. The class interface provides following cations:
 
 - Initialization of an Extras Text Field object
 - Setting Extras Text Field object parameters, text field mode and value

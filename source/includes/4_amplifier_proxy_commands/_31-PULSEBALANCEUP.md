@@ -1,4 +1,4 @@
-## PULSE BALANCE UP
+## PULSE \_ BALANCE \_ UP
 
 Pulse balance up (Right)
 

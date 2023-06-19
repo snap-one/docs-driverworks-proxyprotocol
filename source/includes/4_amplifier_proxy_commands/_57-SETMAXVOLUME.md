@@ -1,4 +1,4 @@
-## SET MAX VOLUME
+## SET \_ MAX \_ VOLUME
 
 Set maximum allowable volume level
 

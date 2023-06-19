@@ -1,4 +1,4 @@
-## SET ALL EQ SETTINGS
+## SET \_ ALL \_ EQ \_ SETTINGS
 
 Set balance to a specified position.
 

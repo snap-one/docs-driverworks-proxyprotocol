@@ -1,4 +1,4 @@
-## STOP BASS UP
+## STOP \_ BASS \_ UP
 
 Stop ramping bass up
 

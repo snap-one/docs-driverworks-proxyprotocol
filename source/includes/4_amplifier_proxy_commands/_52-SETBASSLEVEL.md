@@ -1,4 +1,4 @@
-## SET BASS LEVEL
+## SET \_ BASS \_ LEVEL
 
 Set bass to a specified level.
 
