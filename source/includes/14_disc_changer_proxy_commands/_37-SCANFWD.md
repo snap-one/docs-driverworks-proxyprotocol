@@ -1,4 +1,4 @@
-## SCAN FWD
+## SCAN\_FWD
 
 Pulse/scan forward within track/chapter.
 
@@ -15,5 +15,5 @@ Pulse/scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

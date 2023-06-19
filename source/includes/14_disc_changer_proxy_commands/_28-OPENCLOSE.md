@@ -1,4 +1,4 @@
-## OPEN CLOSE
+## OPEN\_CLOSE
 
 Open/close disc tray.
 
@@ -15,5 +15,5 @@ Open/close disc tray.
 
 ### Returns
 
-`None
-`
+\`None
+\`

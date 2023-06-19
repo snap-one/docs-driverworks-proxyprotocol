@@ -1,4 +1,4 @@
-## has discreet disc button
+## has\_discreet\_disc\_button
 
 Capable of seeking directly to a specified disc.
 

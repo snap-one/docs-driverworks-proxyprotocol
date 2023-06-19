@@ -1,4 +1,4 @@
-## SCAN REV
+## SCAN\_REV
 
 Pulse scan reverse within track/chapter.
 
@@ -15,5 +15,5 @@ Pulse scan reverse within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

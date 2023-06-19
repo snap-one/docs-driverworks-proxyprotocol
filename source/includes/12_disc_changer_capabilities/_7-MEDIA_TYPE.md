@@ -1,4 +1,4 @@
-## media type
+## media\_type
 
 Media that the device is capable of playing. Bitmask of:
 

@@ -1,4 +1,4 @@
-## SKIP FWD
+## SKIP\_FWD
 
 Advance to next track/chapter.
 
@@ -15,5 +15,5 @@ Advance to next track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

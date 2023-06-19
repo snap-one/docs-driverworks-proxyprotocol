@@ -1,4 +1,4 @@
-## SET UP DOWN SWAP
+## SET\_UP\_DOWN\_SWAP
 
 Swap page UP/DOWN buttons.
 
@@ -14,5 +14,5 @@ Swap page UP/DOWN buttons.
 
 ### Returns
 
-`None
-`
+\`None
+\`

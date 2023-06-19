@@ -1,4 +1,4 @@
-## DISC CHANGED
+## DISC\_CHANGED
 
 Selected disc has changed.
 

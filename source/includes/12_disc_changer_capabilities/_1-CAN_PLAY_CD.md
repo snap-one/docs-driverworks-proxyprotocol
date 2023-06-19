@@ -1,4 +1,4 @@
-## can play cd
+## can\_play\_cd
 
 Disc Changer is capable of playing CD audio formats.
 

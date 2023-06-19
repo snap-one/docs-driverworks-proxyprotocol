@@ -1,4 +1,4 @@
-## START SCAN FWD
+## STAR \_SCAN\_FWD
 
 Initiate scan forward within track/chapter.
 
@@ -15,5 +15,5 @@ Initiate scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

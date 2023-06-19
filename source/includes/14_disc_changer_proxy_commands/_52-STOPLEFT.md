@@ -1,4 +1,4 @@
-## STOP LEFT
+## STOP\_LEFT
 
 Terminate left navigation.
 
@@ -15,5 +15,5 @@ Terminate left navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

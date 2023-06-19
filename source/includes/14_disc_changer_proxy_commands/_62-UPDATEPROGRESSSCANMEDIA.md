@@ -1,4 +1,4 @@
-## UPDATE PROGRESS SCAN MEDIA
+## UPDATE \_PROGRESS \_SCAN \_MEDIA
 
 Notification of the progress of the current media scan
 

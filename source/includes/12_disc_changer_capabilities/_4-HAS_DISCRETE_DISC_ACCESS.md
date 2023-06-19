@@ -1,4 +1,4 @@
-## has discreet disc access
+## has\_discreet\_disc\_access
 
 Capable of seeking directly to a specified disc (and specified track on that disc).
 

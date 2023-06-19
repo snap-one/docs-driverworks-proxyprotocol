@@ -1,4 +1,4 @@
-## has discreet input selection
+## has\_discreet\_input\_selection
 
 Capable of directly selecting specified input.
 

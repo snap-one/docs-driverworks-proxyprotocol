@@ -1,4 +1,4 @@
-## SKIP REV
+## SKIP\_REV
 
 Seek to previous track/chapter.
 
@@ -15,5 +15,5 @@ Seek to previous track/chapter.
 
 ### Returns
 
-`None
-`
+\`None
+\`

@@ -1,4 +1,4 @@
-## can scan media
+## can\_scan\_media
 
 Disc Changer is capable of scanning media and returning disc information via the driver.
 
