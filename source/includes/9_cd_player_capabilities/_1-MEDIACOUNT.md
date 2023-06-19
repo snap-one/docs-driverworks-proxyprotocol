@@ -1,4 +1,4 @@
-## media count
+## media \_ count
 
 Number of discs available within the changer
 

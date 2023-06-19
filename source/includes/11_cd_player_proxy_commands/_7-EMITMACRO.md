@@ -1,4 +1,4 @@
-## EMIT MACRO
+## EMIT \_  MACRO
 
 Emit IR/Serial code macro.
 
