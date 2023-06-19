@@ -1,4 +1,4 @@
-## LIST TYPE CHANGED
+## LIST\_TYPE\_CHANGED
 
 ### Signature
 

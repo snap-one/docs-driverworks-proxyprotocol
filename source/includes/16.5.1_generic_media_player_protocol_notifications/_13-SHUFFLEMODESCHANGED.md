@@ -1,4 +1,4 @@
-## SHUFFLE MODES CHANGED
+## SHUFFLE\_MODES\_CHANGED
 
 ### Signature
 

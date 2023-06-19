@@ -1,4 +1,4 @@
-## SET REPEAT MODES
+## SET\_REPEAT\_MODES
 
 ### Signature
 

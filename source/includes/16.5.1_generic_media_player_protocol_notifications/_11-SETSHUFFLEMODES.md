@@ -1,4 +1,4 @@
-## SET SHUFFLE MODES
+## SET\_SHUFFLE\_MODES
 
 ### Signature
 
