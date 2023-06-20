@@ -1,4 +1,4 @@
-## PAGE UP
+## PAGE\_UP
 
 Pulse menu Page up.
 
@@ -15,5 +15,5 @@ Pulse menu Page up.
 
 ### Returns
 
-`None
-`
+\`None
+\`

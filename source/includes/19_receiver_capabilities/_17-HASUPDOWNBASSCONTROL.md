@@ -1,4 +1,4 @@
-## has up down bass control
+## has\_up\_down\_bass\_control
 
 Capable of directly specifying a bass setting.
 

@@ -1,4 +1,4 @@
-## has audio signal sense
+## has\_audio\_signal\_sense
 
 Specifies AV switching is capable of sensing audio on an input.  This is useful in triggering programming in ComposerPro based on the this setting.
 

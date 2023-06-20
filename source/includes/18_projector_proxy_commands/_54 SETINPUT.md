@@ -1,4 +1,4 @@
-## SET INPUT
+## SET\_INPUT
 
 Specify the input selection of device.
 
@@ -16,8 +16,8 @@ Specify the input selection of device.
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 ### Usage Note
 

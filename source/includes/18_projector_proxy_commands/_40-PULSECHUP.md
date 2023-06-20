@@ -1,4 +1,4 @@
-## PULSE CHANNEL UP
+## PULSE\_CHANNEL\_UP
 
 Pulse channel value up.
 

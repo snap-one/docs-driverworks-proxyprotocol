@@ -1,4 +1,4 @@
-## START PAGE RIGHT
+## START\_PAGE\_RIGHT
 
 Initiate right-arrow navigation.
 
@@ -15,5 +15,5 @@ Initiate right-arrow navigation.
 
 ### Returns
 
-`None
-`
+\`None
+\`

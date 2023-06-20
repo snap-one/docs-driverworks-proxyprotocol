@@ -1,4 +1,4 @@
-## PAGE DOWN
+## PAGE\_DOWN
 
 Pulse menu Page down.
 
@@ -15,5 +15,5 @@ Pulse menu Page down.
 
 ### Returns
 
-`None
-`
+\`None
+\`

@@ -1,4 +1,4 @@
-## SET VOL UP
+## SET\_VOL\_UP
 
 Begin ramping volume up.
 

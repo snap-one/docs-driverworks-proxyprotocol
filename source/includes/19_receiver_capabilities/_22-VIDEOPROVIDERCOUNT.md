@@ -1,4 +1,4 @@
-## video provider count
+## video\_provider\_count
 
 Count of number of video providers (outputs) of the device. This value must match the number of connections in the driver.
 

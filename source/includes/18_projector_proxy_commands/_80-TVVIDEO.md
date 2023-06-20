@@ -1,4 +1,4 @@
-## TV VIDEO
+## TV\_VIDEO
 
 Toggle TV/video input.
 
@@ -15,5 +15,5 @@ Toggle TV/video input.
 
 ### Returns
 
-`None
-`
+\`None
+\`

@@ -1,4 +1,4 @@
-## has discrete loudness control
+## has\_discrete\_loudness\_control
 
 Capable of handling ON/OFF loudness control.
 

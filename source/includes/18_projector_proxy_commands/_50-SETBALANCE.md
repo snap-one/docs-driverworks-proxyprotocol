@@ -1,4 +1,4 @@
-## SET BALANCE
+## SET\_BALANCE
 
 Set balance to a specified position.
 

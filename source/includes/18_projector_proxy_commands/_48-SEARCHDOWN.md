@@ -1,4 +1,4 @@
-## SEARCH DOWN
+## SEARCH\_DOWN
 
 Pulse tuning search down
 
@@ -15,5 +15,5 @@ Pulse tuning search down
 
 ### Returns
 
-`None
-`
+\`None
+\`

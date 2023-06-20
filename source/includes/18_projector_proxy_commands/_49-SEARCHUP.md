@@ -1,4 +1,4 @@
-## SEARCH UP
+## SEARCH\_UP
 
 Pulse tuning search UP
 
