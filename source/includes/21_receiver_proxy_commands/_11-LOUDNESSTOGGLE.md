@@ -1,4 +1,4 @@
-## LOUDNESS ON
+## LOUDNESS\_ON
 
 Toggle loudness on/off.
 
