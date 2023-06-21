@@ -1,4 +1,4 @@
-## preface band with tuner capability
+## preface\_band\_with\_tuner\_  capability
 
 Specifies if the device can switch to the Tuner input (AM, FM..) and then send the
  `SET_CHANNEL` command.

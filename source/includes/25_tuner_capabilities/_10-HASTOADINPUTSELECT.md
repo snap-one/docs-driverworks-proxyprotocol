@@ -1,4 +1,4 @@
-## has toad input select
+## has\_toad\_input\_select
 
 Capability of toggling through inputs
 

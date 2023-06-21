@@ -1,4 +1,4 @@
-## has provider count
+## has\_provider\_count
 
 Count of number of video providers (outputs) of the device.
 

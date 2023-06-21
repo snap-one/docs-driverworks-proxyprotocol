@@ -1,4 +1,4 @@
-## has preset up down
+## has\_preset\_up\_down
 
 Tuner can cycle up or down through a preset list.
 

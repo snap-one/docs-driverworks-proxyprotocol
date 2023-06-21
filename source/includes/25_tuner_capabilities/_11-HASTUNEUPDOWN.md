@@ -1,4 +1,4 @@
-## has tune up down
+## has\_tune\_ up\_down
 
 Tuner can cycle up or down through tuning frequencies or channels
 

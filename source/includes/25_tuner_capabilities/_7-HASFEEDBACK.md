@@ -1,4 +1,4 @@
-## has feedback
+## has \_  feedback
 
 Device has the ability to report back the tuner channel. Required so the Tuner channel can be displayed through navigator.
 
