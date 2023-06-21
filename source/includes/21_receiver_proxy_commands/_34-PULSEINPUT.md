@@ -1,4 +1,4 @@
-## PULSE INPUT
+## PULSE\_INPUT
 
 Toggle (cycle through) input selection on device.
 

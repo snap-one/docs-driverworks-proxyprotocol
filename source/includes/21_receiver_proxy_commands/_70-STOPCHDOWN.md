@@ -1,4 +1,4 @@
-## STOP CH  DOWN
+## STOP\_CH\_DOWN
 
 Stop ramping channel down.
 

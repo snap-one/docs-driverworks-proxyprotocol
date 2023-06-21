@@ -1,4 +1,4 @@
-## STOP RIGHT
+## STOP\_RIGHT
 
 Stop right arrow navigation.
 

@@ -1,4 +1,4 @@
-## PULSE TREBLE UP
+## PULSE\_TREBLE\_UP
 
 Pulse treble up.
 

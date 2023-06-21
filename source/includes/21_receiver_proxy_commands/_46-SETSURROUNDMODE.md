@@ -1,4 +1,4 @@
-## SET SURROUND MODE
+## SET\_SURROUND\_MODE
 
 Select specified surround mode preset on device.
 

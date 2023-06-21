@@ -1,4 +1,4 @@
-## \#\# SURROUND MODE CHANGED
+## SURROUND\_MODE\_ CHANGED
 
 Surround mode setting has changed.
 

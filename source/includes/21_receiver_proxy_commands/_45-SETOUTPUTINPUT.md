@@ -1,4 +1,4 @@
-## SET OUTPUT INPUT
+## SET\_OUTPUT\_INPUT
 
 Specify input and output selection of device.
 

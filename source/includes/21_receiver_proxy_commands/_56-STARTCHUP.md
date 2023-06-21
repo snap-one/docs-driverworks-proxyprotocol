@@ -1,4 +1,4 @@
-## START CH  UP
+## START\_CH\_UP
 
 Start ramping channel up.
 

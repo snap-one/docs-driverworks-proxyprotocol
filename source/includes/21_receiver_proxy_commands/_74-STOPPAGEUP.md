@@ -1,4 +1,4 @@
-## STOP PAGE DOWN
+## STOP\_PAGE\_DOWN
 
 Stop menu page up.
 

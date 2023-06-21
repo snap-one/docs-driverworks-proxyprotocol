@@ -1,4 +1,4 @@
-## START RIGHT
+## START\_RIGHT
 
 Initiate right arrow navigation.
 

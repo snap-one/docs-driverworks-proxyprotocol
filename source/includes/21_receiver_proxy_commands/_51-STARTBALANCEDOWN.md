@@ -1,4 +1,4 @@
-## START BALANCE DOWN
+## START\_BALANCE\_DOWN
 
 Start ramping balance down (left).
 
