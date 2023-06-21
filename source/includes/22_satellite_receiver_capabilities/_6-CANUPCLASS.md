@@ -1,4 +1,4 @@
-## can upclass
+## can\_upclass
 
 Specifies if the A/V switch can up convert. For example: Composite -\> S-Video 
 

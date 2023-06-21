@@ -1,4 +1,4 @@
-## has discrete volume control
+## has\_discrete\_volume\_control
 
 Capable of directly specifying a volume setting.
 

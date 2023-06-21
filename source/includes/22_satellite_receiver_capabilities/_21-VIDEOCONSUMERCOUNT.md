@@ -1,4 +1,4 @@
-## video consumer count
+## video\_consumer\_count
 
 Count of number of vidoe consumers (inputs) of the device. This value must match the number of connections in the driver.
 

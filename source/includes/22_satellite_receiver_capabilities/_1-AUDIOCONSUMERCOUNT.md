@@ -1,4 +1,4 @@
-## audio consumer count
+## audio\_consumer\_count
 
 Count of number of audio consumers (inputs) of the device. This value must match the number of connections in the driver.
 

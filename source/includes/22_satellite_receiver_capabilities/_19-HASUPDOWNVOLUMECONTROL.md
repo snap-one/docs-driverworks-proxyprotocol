@@ -1,4 +1,4 @@
-## has up down volume control
+## has\_up\_down\_volume\_control
 
 Has capability of handling volume UP and DOWN adjustments.
 

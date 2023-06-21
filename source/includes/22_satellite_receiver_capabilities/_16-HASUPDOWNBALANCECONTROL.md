@@ -1,4 +1,4 @@
-## has up down balance control
+## has\_up\_down\_balance control
 
 Capable of directly specifying a balance setting.
 

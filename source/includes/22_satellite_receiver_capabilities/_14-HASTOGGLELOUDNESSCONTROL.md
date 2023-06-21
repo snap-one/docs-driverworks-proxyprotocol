@@ -1,4 +1,4 @@
-## has toggle loudness control
+## has\_toggle\_loudness\_control
 
 Capable of toggling ON/OFF loudness control.
 

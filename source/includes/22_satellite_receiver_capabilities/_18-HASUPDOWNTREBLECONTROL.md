@@ -1,4 +1,4 @@
-## has up down treble control
+## has\_up\_down\_treble\_control
 
 Capable of directly specifying a treble setting.
 
