@@ -1,4 +1,4 @@
-## STOP SCAN FWD
+## STOP\_SCAN\_FWD
 
 Stop scan forward within track/chapter.
 

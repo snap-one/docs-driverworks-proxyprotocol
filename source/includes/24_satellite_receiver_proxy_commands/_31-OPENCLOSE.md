@@ -1,4 +1,4 @@
-## OPEN CLOSE
+## OPEN\_CLOSE
 
 Open/Close disc tray.
 

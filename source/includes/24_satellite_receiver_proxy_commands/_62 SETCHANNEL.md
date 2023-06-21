@@ -1,4 +1,4 @@
-## SET CHANNEL
+## SET\_CHANNEL
 
 Tune device to the specified channel.
 

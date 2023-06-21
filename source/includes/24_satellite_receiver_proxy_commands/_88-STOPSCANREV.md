@@ -1,4 +1,4 @@
-## STOP SCAN REV
+## STOP\_SCAN\_REV
 
 Stop scan forward within track/chapter.
 

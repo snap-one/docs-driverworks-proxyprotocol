@@ -1,4 +1,4 @@
-## EMIT CODE
+## EMIT\_CODE
 
 Emit IR/Serial code.
 

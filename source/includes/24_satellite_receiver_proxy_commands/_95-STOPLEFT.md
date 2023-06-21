@@ -1,4 +1,4 @@
-## STOP LEFT
+## STOP\_LEFT
 
 Stop left navigation.
 

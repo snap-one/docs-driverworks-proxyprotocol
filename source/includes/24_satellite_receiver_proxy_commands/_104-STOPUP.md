@@ -1,4 +1,4 @@
-## STOP UP
+## STOP\_UP
 
 Stop up arrow navigation.
 

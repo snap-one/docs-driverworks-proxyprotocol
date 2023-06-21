@@ -1,4 +1,4 @@
-## STOP CHANNEL UP
+## STOP\_CHANNEL\_UP
 
 Stop ramping channel up.
 

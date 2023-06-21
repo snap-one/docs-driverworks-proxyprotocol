@@ -1,4 +1,4 @@
-## TUNE UP
+## TUNE\_UP
 
 Toggle (cycle UP) frequency or channel
 

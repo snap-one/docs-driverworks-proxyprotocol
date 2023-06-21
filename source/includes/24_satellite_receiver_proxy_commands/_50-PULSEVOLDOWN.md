@@ -1,4 +1,4 @@
-## PULSE VOL DOWN
+## PULSE\_VOL\_DOWN
 
 Pulse volume level down.
 

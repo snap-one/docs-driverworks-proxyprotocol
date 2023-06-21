@@ -1,4 +1,4 @@
-## SCAN FWD
+## SCAN\_FWD
 
 Pulse/scan forward within track/chapter.
 
