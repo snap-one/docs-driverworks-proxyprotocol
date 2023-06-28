@@ -1,4 +1,4 @@
-## SIGNAL STRENGTH
+## SIGNAL\_STRENGTH
 
 Displays strength of signal.
 

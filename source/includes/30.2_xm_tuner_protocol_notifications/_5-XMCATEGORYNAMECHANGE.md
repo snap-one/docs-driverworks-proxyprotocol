@@ -1,4 +1,4 @@
-## XM CATEGORY NAME CHANGE
+## XM\_CATEGORY\_NAME\_CHANGE
 
 Displays current station name.
 

@@ -1,4 +1,4 @@
-## SONG INFO CHANGED
+## SONG\_INFO\_CHANGED
 
 Displays current song information.
 

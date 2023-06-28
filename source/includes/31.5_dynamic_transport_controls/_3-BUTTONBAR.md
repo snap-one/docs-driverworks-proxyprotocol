@@ -1,4 +1,4 @@
-## Button Bar and Driver XML
+## button \_bar and Driver XML
 
 To designate which transport control buttons appear on the Button Bar, the transports capabilities XML needs to include a  `<button_bar></button_bar` tag. 
 

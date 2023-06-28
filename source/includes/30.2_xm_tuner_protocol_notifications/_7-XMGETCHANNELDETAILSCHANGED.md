@@ -1,4 +1,4 @@
-## XM GET CHANNEL DETAILS CHANGED
+## XM\_GET\_CHANNEL\_DETAILS\_CHANGED
 
 Displays current channel details.
 
