@@ -1,4 +1,4 @@
-## SET SPEED
+## SET\_SPEED
 
 Set the current speed of the fan to the designated level.  Setting to 0 will turn the fan off.
 
