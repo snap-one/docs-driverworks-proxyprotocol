@@ -1,4 +1,4 @@
-## SYNC PANEL INFO
+## SYNC\_PANEL\_INFO
 
 Tells the Panel proxy that the hardware has been initialized and is ready to function.
 

@@ -1,4 +1,4 @@
-## ZONE STATE
+## ZONE\_STATE
 
 Reports if a specific zone is open/closed and bypassed/unbypassed.
 

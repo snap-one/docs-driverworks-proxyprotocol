@@ -1,4 +1,4 @@
-## PANEL REMOVE PGM
+## PANEL\_REMOVE\_PGM
 
 Remove a PGM (relay) from the panel.
 

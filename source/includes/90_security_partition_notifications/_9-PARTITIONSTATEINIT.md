@@ -1,4 +1,4 @@
-## PARTITION STATE INIT
+## PARTITION\_STATE\_INIT
 
 Specifies which state the partition is currently in but will not cause any of the programming to be fired.  
 

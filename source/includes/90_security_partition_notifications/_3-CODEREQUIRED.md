@@ -1,4 +1,4 @@
-## CODE\_REQUIRED\_
+## CODE\_REQUIRED
 
 Sets a flag that Navigator will use when an arm command is attempted.  If the flag is true, Navigator will ask for a user code before it sends the arm command.
 

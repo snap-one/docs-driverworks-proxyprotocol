@@ -1,4 +1,4 @@
-## TROUBLE START
+## TROUBLE\_START
 
 List trouble that the panel is having on the Composer Property Page and on each of the Navigator partition screens.  
 

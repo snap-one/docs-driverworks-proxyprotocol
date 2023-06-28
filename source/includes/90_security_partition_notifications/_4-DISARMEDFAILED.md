@@ -1,4 +1,4 @@
-## DISARM FAILED
+## DISARM\_FAILED
 
 Notification sent when an attempt to disarm the panel failed. This is typically due to an invalid user code.
 

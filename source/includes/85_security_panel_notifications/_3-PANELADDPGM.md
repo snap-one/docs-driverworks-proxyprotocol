@@ -1,4 +1,4 @@
-## PANEL ADD PGM
+## PANEL\_ADD\_PGM
 
 Add a PGM (relay) to the panel.
 

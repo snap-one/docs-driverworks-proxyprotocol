@@ -1,4 +1,4 @@
-## ARM FAILED
+## ARM\_FAILED
 
 An attempt to arm the partition failed.  The two most common reasons are because a user code is required to arm this partition or because one or more unbypassed zones are open.
 

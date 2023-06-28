@@ -1,4 +1,4 @@
-## PARTITION STATE
+## PARTITION\_STATE
 
 Specifies which state the partition is currently in.
 

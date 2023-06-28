@@ -1,4 +1,4 @@
-## EMERGENCY TRIGGERED
+## EMERGENCY\_TRIGGERED
 
 An emergency was triggered, either from a sensor or by the user hitting one of the emergency buttons.
 

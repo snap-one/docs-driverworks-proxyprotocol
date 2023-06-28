@@ -1,4 +1,4 @@
-## PANEL ZONE STATE
+## PANEL\_ZONE\_STATE
 
 Sends the current status of a zone:  open or closed.
 

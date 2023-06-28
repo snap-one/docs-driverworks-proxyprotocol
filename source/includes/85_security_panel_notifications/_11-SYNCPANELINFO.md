@@ -1,4 +1,4 @@
-## SYNC PANEL INFO
+## SYNC\_PANEL\_INFO
 
 This is a request to the proxy driver to re-send all of the information it has about the panel to ensure synchronization.
 

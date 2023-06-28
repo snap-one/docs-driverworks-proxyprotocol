@@ -1,4 +1,4 @@
-## REMOVE\_ZONE\_
+## REMOVE\_ZONE
 
 Tells the proxy that a particular zone is no longer a part of this partition.
 

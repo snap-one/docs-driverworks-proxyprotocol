@@ -1,4 +1,4 @@
-## PANEL PGM STATE
+## PANEL\_PGM\_STATE
 
 Current status of a PGM (relay): open or closed
 

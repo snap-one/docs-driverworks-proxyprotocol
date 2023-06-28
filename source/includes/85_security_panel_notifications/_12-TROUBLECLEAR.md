@@ -1,4 +1,4 @@
-## TROUBLE CLEAR
+## TROUBLE\_CLEAR
 
 Clear the trouble flag.  
 

@@ -1,4 +1,4 @@
-## PANEL PARTITION STATE
+## PANEL\_PARTITION\_STATE
 
 Lets the panel know the state of the given partition.  This is used in the  Properties display in ComposerPro.
 

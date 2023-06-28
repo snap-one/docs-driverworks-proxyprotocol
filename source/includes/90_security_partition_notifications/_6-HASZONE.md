@@ -1,4 +1,4 @@
-## HAS\_ZONE\_
+## HAS\_ZONE
 
 Tells the proxy that a particular zone is part of this partition.
 
