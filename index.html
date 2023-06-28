@@ -6407,9 +6407,9 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
 
-<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-preset">brightness_on_mode_preset</a> has been included to enable the brightness presets for &quot;On Mode&quot; behavior for a light.</p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness-on-mode-preset">brightness_on_mode_preset</a> has been included to enable the brightness presets for &quot;On Mode&quot; behavior for a light.</p>
 
-<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-on-mode-previous">brightness_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; brightness  behavior for a light.</p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness-on-mode-previous">brightness_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; brightness  behavior for a light.</p>
 
 <p>A new feature was created to allow dealers and customers to specify how a light&#39;s color behaves when a light is turned on. The functionality includes:</p>
 
@@ -6422,25 +6422,25 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
 
-<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-fade">color_on_mode_fade</a> has been included to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, for a light.</p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color-on-mode-fade">color_on_mode_fade</a> has been included to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, for a light.</p>
 
-<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-preset">color_on_mode_preset</a> has been included to enable presets for use with &quot;On Mode&quot; behavior for a light.</p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color-on-mode-preset">color_on_mode_preset</a> has been included to enable presets for use with &quot;On Mode&quot; behavior for a light.</p>
 
-<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#color-on-mode-previous">color_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; behavior for a light.</p>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color-on-mode-previous">color_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; behavior for a light.</p>
 
 <p>Additionally,  the following new capabilities have been included in 3.3.2:</p>
 
-<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-rate-max">brightness_rate_max</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold maximum rates.</p>
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness-rate-max">brightness_rate_max</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold maximum rates.</p>
 
-<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#brightness-rate-min">brightness_rate_min</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.</p>
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness-rate-max">brightness_rate_min</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.</p>
 
-<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_brightness_stop">supports_brightness_stop</a> has been included if a light brightness transition can be stopped during a ramp. </p>
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_brightness_stop">supports_brightness_stop</a> has been included if a light brightness transition can be stopped during a ramp. </p>
 
 <p><strong>Capabilities that have been Deprecated</strong></p>
 
-<p>fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_max">click_rate_max</a> instead.</p>
+<p>fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
 
-<p>has_fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#click_rate_max">click_rate_max</a> instead.</p>
+<p>has_fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
 
 <p>num_buttons</p>
 
@@ -6458,21 +6458,21 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#add-driver-color-preset">ADD_DRIVER_COLOR_PRESET</a> has been included to add a new driver specific color preset.</p>
 
-<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#delete-driver-color-preset">DELETE_DRIVER_COLOR_PRESET</a> has been added to remove a driver configured color preset. </p>
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-delete-driver-color-preset">DELETE_DRIVER_COLOR_PRESET</a> has been added to remove a driver configured color preset. </p>
 
-<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-off">DYNAMIC_OFF</a> has been added to support UIs with an off command to pair with the DYNAMIC_ON command.</p>
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic-off">DYNAMIC_OFF</a> has been added to support UIs with an off command to pair with the DYNAMIC_ON command.</p>
 
-<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">DYNAMIC_ON</a> has been added to allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command</p>
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic-on">DYNAMIC_ON</a> has been added to allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command</p>
 
-<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#modify-driver-color-preset">MODIFY_DRIVER_COLOR_PRESET</a> has been included to change an existing driver color preset.</p>
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-modify-driver-color-preset">MODIFY_DRIVER_COLOR_PRESET</a> has been included to change an existing driver color preset.</p>
 
-<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-stop">SET_BRIGHTNESS_STOP</a> has been added to stop a ramp if in progress.</p>
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set-brightness-stop">SET_BRIGHTNESS_STOP</a> has been added to stop a ramp if in progress.</p>
 
-<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-color-stop">SET_COLOR_STOP</a> has been added to stops a ramp of color if in progress.</p>
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set-color-stop">SET_COLOR_STOP</a> has been added to stops a ramp of color if in progress.</p>
 
-<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#set-brightness-on-mode">SET_BRIGHTNESS_ON_MODE</a> has been added to maintain the On preset value.</p>
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set-brightness-on-mode">SET_BRIGHTNESS_ON_MODE</a> has been added to maintain the On preset value.</p>
 
-<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-on-mode">SET_BRIGHTNESS_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#update-brightness-rate-default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> value.</p>
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set-brightness-rate-default">SET_BRIGHTNESS_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update-color-rate-default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> value.</p>
 
 <p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-color-on-mode">SET_COLOR_ON_MODE</a>  has beed added define color on mode.</p>
 
@@ -7473,7 +7473,7 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 
 <p>The majority of the of the commands, notifications and capabilities defined here must be implemented in your driver to display EQ controls. Several commands are optional including SET_AUDIOMODE_BYPASS, SET_AUDIOMODE_EQ and SET_AUDIOMODE_TONECONTROL as these have been included to suspect legacy Audio Matrix Switches.</p>
 
-<p>Note that this functionality is disabled by default. The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
+<p>Note that this functionality is disabled by default. The HIDE EQ FROM NAVS CHANGED notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
 
 <h2 id='amplifier-navigator-eq-navigator-eq-proxy-commands'>Navigator EQ Proxy Commands</h2>
 
@@ -10510,7 +10510,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>The majority of the of the commands, notifications and capabilities defined here must be implemented in your driver to display EQ controls. Several commands are optional including SET_AUDIOMODE_BYPASS, SET_AUDIOMODE_EQ and SET_AUDIOMODE_TONECONTROL as these have been included to suspect legacy Audio Matrix Switches.</p>
 
-<p>Note that this functionality is disabled by default. The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#hide-eq-from-navs-changed">HIDE EQ FROM NAVS CHANGED</a> notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
+<p>Note that this functionality is disabled by default. The HIDE EQ FROM NAVS CHANGED notification must be sent with a value of False to enable the EQ functionality in Navigator.</p>
 
 <h2 id='audio-video-switch-navigator-eq-navigator-eq-proxy-commands'>Navigator EQ Proxy Commands</h2>
 
@@ -11145,7 +11145,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <ul>
 <li>All applicable bindings are correctly defined in the driver’s XML.</li>
-<li>Driver developers already have the ability to create control bindings using <a href="https://snap-one.github.io/docs-driverworks-api-3.3.0-beta/#adddynamicbinding">C4:AddDynamicBinding()</a></li>
+<li>Driver developers already have the ability to create control bindings using <a href="https://snap-one.github.io/docs-driverworks-api/#miscellaneous-interface-adddynamicbinding">C4:AddDynamicBinding()</a></li>
 <li>The driver file specifies bindings to be hidden by the proxy through the use of a new XML element delivered in O.S. 3.3.0:  <code>&lt;ExtraInfo&gt;D2&lt;/ExtraInfo&gt;</code> <em>See below for more information.</em></li>
 <li>Resizing of the bindings list is possible only if a new capability delivered in O.S. 3.3.0 is set to true: <code>&lt;allow_dynamic_resize&gt;</code>  <em>See below for more information.</em></li>
 </ul>
