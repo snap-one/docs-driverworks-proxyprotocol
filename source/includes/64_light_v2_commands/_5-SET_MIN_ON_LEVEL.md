@@ -1,4 +1,4 @@
-## SET MIN ON LEVEL
+## SET\_MIN\_ON\_LEVEL
 
 Used to set the minimum on level for the device 
 

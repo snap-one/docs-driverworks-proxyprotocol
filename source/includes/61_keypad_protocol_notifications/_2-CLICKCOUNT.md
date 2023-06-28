@@ -1,4 +1,4 @@
-## CLICK COUNT
+## CLICK\_COUNT
 
 Used to inform the proxy that a button has been clicked multiple times. This is used by the proxy to fire the proper event (single, double, triple click, etc).
 

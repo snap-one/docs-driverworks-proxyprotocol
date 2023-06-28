@@ -1,4 +1,4 @@
-## DELETE KEYPAD BUTTON
+## DELETE\_KEYPAD\_BUTTON
 
 Used to inform the proxy that a button is being deleted
 

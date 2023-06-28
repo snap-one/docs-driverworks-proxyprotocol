@@ -1,4 +1,4 @@
-## COLD START LEVEL
+## COLD\_START\_LEVEL
 
 Note that this notification will be deprecated from the proxy in the near future. Control4 recommends using device specific properties for this value.
 

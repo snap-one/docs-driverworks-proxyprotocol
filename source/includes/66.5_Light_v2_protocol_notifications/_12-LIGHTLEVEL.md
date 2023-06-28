@@ -1,4 +1,4 @@
-## LIGHT LEVEL
+## LIGHT\_LEVEL
 
 Used to inform the proxy that the light level has changed.
 

@@ -1,4 +1,4 @@
-## BEHAVIOR NAME
+## BEHAVIOR\_NAME
 
 Used to inform (or update) the proxy of a button behavior name
 

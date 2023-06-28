@@ -1,4 +1,4 @@
-## KEYPAD  BUTTON INFO
+## KEYPAD\_BUTTON\_INFO
 
 Used to change the settings on a particular button.
 

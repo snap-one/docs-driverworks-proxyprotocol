@@ -1,4 +1,4 @@
-## DYNAMIC CAPABILITIES CHANGED
+## DYNAMIC\_CAPABILITIES\_CHANGED
 
 Used to update capabilities and proxy functionality without requiring a different c4i/c4z or for drivers that have capabilities that change during runtime.  Multiple parameters can be set with a single notify for 'atomic changes' where some functionality may involve mutual exclusion/inclusion.  
 

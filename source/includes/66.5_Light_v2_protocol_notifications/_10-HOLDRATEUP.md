@@ -1,4 +1,4 @@
-## HOLD RATE UP
+## HOLD\_RATE\_UP
 
 Used to inform the proxy that the hardware click rate for the "Slow On" Brightness preset changed.
 

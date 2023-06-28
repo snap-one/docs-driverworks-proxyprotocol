@@ -1,4 +1,4 @@
-## SET MAX ON LEVEL
+## SET\_MAX\_ON\_LEVEL
 
 Used to set the maximum on level for the device 
 

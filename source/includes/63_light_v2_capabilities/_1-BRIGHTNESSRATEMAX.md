@@ -1,4 +1,4 @@
-## brightness rate max
+## brightness\_rate\_max
 
 Minimum color rate, in milliseconds, supported for transitioning from one brightness to another.  Should always be set for any color light driver, even if the transition rate is unchangeable. Allows dealers to configure the maximum rate that can be configured by dealers. The brightness\_rate value is used by voice control, navigators, customer created advanced lighting scenes, and various other areas of the system that previously didn't allow customization of the transition rate.
 

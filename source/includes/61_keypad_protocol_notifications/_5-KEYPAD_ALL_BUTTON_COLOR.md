@@ -1,4 +1,4 @@
-## KEYPAD ALL BUTTON COLOR
+## KEYPAD\_ALL\_BUTTON\_COLOR
 
 Used by the protocol to inform the proxy of a change in color for every button on the keypad.
 

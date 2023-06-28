@@ -1,4 +1,4 @@
-## SET CLICK RATE DOWN
+## SET\_CLICK\_RATE\_DOWN
 
 Used to set the click rate down for the device.
 

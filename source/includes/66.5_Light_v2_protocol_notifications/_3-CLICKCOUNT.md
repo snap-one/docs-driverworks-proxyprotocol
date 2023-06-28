@@ -1,4 +1,4 @@
-## CLICK COUNT
+## CLICK\_COUNT
 
 Used to tell the proxy that a button has been clicked multiple times.
 

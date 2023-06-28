@@ -1,4 +1,4 @@
-## KEYPAD BUTTON COLOR
+## KEYPAD\_BUTTON\_COLOR
 
 This is used by the protocol to inform the proxy that is has been instructed to change the color of a button.
 

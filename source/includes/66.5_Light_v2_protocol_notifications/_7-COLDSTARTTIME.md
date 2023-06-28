@@ -1,4 +1,4 @@
-## COLD START TIME
+## COLD\_START\_TIME
 
 Note that this notification will be deprecated from the proxy in the near future. Control4 recommends using device specific properties for this value.
 

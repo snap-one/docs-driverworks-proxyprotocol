@@ -1,4 +1,4 @@
-## SET ALL LED
+## SET\_ALL\_LED
 
 Used to set the LED color of all the buttons on the device to one color (both on/off colors).
 

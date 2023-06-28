@@ -1,4 +1,4 @@
-## LED BEHAVIOR NAME
+## LED\_BEHAVIOR\_NAME
 
 Used to inform (or update) the proxy of a LED's behavior name
 

@@ -1,4 +1,4 @@
-## NEW KEYPAD BUTTON
+## NEW\_KEYPAD\_BUTTON
 
 Used to create a new button on the keypad. This is sent to the protocol by the proxy when the proxy is loaded. Thus the protocol doesn't have to store all its buttons settings, the proxy will do it.
 

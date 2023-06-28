@@ -1,4 +1,4 @@
-## KEYPAD BUTTON ACTION
+## KEYPAD\_BUTTON\_ACTION
 
 Used by the protocol to inform the proxy that some type of action occurred on a button. The proxy will then update colors, send the proper command to the bound device, etc.
 

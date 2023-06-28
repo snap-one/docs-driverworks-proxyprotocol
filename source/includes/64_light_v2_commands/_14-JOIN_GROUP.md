@@ -1,4 +1,4 @@
-## JOIN GROUP
+## JOIN\_GROUP
 
 Received when the driver is added to a Load Group.
 

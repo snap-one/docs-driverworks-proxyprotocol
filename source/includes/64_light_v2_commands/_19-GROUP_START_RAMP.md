@@ -1,4 +1,4 @@
-## GROUP START RAMP
+## GROUP\_START\_RAMP
 
 Received when group start hold ramp operation.
 
@@ -8,8 +8,8 @@ Received when group start hold ramp operation.
 
 | Parameter | Description |
 | --- | --- |
-| String | GROUP_ID Driver ID of the Load Group |
-| String | RAMP_UP Value 1 |
+| String | GROUP\_ID Driver ID of the Load Group |
+| String | RAMP\_UP Value 1 |
 | String | RATE Rate time in ms |
 
 ### Returns

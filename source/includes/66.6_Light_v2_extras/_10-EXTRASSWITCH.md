@@ -1,8 +1,8 @@
-## Extras Switch
+## ExtrasSwitch
 
 ### Overview
 
-This class represents apstraction of the Extras Switch object. The class interface provides following cations:
+This class represents an abstraction of the Extras Switch object. The class interface provides following cations:
 
 - Initialization of an Extras Switch object
 - Setting Extras Switch object parameters and value

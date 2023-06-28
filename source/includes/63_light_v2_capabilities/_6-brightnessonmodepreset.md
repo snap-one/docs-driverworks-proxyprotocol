@@ -1,4 +1,4 @@
-## brightness on mode preset
+## brightness\_on mode\_preset
 
 Used to enable generic brightness presets to be used with the "On Mode" behavior.  If a driver supports this capability, it is up to the driver to support additional parameter handling and reporting.
 

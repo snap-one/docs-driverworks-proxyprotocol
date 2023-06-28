@@ -1,4 +1,4 @@
-## KEYPAD BUTTON INFO
+## KEYPAD\_BUTTON\_INFO
 
 Used by the protocol to inform the proxy of a changed setting for a particular button. It can have multiple parameters, but the only required one is `BUTTON_ID`.
 

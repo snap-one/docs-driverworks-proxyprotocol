@@ -1,4 +1,4 @@
-## SET PRESET LEVEL
+## SET\_PRESET\_LEVEL
 
 Used to set brightness of the "On" Preset that is used when a user clicks the Top button of a light.
 

@@ -1,4 +1,4 @@
-## Extras Icon
+## ExtrasIcon
 
 ### Overview
 

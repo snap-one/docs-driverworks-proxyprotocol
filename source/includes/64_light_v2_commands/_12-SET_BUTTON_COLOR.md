@@ -1,4 +1,4 @@
-## SET BUTTON COLOR
+## SET\_BUTTON\_COLOR
 
 Used to set the color for a particular button for when the light is on/off
 

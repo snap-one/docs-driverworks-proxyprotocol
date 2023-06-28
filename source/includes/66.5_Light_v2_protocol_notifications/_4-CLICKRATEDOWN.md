@@ -1,4 +1,4 @@
-## CLICK RATE DOWN
+## CLICK\_RATE\_DOWN
 
 Used to inform the proxy that the hardware click rate for the "Off" Brightness preset changed.
 

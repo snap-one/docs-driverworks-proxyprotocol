@@ -1,4 +1,4 @@
-## SET CLICK RATE UP
+## SET\_CLICK\_RATE\_UP
 
 Used to set the click rate up for the device.
 

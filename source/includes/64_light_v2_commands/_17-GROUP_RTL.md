@@ -1,4 +1,4 @@
-## GROUP RAMP TO LEVEL
+## GROUP\_RAMP\_TO\_LEVEL
 
 Received when group is ramping to level.
 
@@ -8,7 +8,7 @@ Received when group is ramping to level.
 
 | Parameter | Description |
 | --- | --- |
-| String | GROUP_ID Driver ID of the Load Group |
+| String | GROUP\_ID Driver ID of the Load Group |
 | String | LEVEL Level to ramp |
 | String | TIME Time rate for ramping |
 

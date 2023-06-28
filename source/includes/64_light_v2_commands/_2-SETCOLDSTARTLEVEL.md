@@ -1,4 +1,4 @@
-## SET COLD START LEVEL
+## SET\_COLD\_START\_LEVEL
 
 Used to set the cold start level for the device for drivers that support hardware based Cold Start behavior.
 

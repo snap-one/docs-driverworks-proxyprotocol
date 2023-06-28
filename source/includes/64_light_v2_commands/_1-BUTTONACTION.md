@@ -1,4 +1,4 @@
-## BUTTON ACTION
+## BUTTON\_ACTION
 
 Used to perform a button action on the device via BUTTON\_LINK bindings. This is useful if you want to do user dependent hold/release functionality in a driver or hardware. Proxy will create and maintain the consumer binding connections for TOP, BOTTOM and TOGGLE lightV2 buttons and their BUTTON\_LINK bindings. When the proxy gets a BUTTON\_ACTION command over one of the three binding connections, it will forward the command to the driver. The driver needs to send a BUTTON\_ACTION Notify back to the proxy with the same BUTTON\_ID and ACTION params and values so the proxy knows the command was successful and that the driver or hardware is tracking that the button is currently in a Pressed state. \_
 

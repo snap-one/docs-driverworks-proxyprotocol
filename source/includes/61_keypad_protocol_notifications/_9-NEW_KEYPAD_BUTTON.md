@@ -1,4 +1,4 @@
-## NEW KEYPAD BUTTON
+## NEW\_KEYPAD\_BUTTON
 
 Used to inform the proxy about the existence of a new button on the keypad. If the specified button already exists, this notification will do nothing.
 

@@ -1,4 +1,4 @@
-## SET HOLD RATE DOWN
+## SET\_HOLD\_RATE\_DOWN
 
 Used to set the hold rate down for the device.
 

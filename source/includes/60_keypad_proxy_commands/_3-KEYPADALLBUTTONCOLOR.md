@@ -1,4 +1,4 @@
-## KEYPAD ALL BUTTON COLOR
+## KEYPAD\_ALL\_BUTTON\_COLOR
 
 Used to set the color for all buttons on a keypad.
 

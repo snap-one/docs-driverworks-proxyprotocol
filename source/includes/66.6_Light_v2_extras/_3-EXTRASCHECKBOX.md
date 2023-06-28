@@ -1,4 +1,4 @@
-## Extras Checkbox
+## ExtrasCheckbox
 
 ### Overview
 

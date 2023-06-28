@@ -1,4 +1,4 @@
-## SET GROUP SYNC
+## SET\_GROUP\_SYNC
 
 Received when Keep loads in sync property is changed. In case of checking the Keep loads in sync, `GROUP_SET_LEVEL` will be sent right before `SET_GROUP_SYNC`.
 

@@ -1,4 +1,4 @@
-## BUTTON ACTION
+## BUTTON\_ACTION
 
 Used to inform the proxy that a button state has changed on the device.  Note that the Proxy expects a Release if it gets a Push. If it does not receive a Release, subsequent Pushes will not work and state/tracking will be off. 
 

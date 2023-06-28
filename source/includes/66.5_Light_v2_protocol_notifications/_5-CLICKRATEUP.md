@@ -1,4 +1,4 @@
-## CLICK RATE UP
+## CLICK\_RATE\_UP
 
 Used to inform the proxy that the hardware click rate for the "On" Brightness preset changed.
 

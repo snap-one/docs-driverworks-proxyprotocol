@@ -1,4 +1,4 @@
-## GROUP STOP RAMP
+## GROUP\_STOP\_RAMP
 
 Received when group stop hold ramp.
 
@@ -8,7 +8,7 @@ Received when group stop hold ramp.
 
 | Parameter | Description |
 | --- | --- |
-| String | GROUP_ID Driver ID of the Load Group |
+| String | GROUP\_ID Driver ID of the Load Group |
 
 ### Returns
 

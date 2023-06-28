@@ -1,4 +1,4 @@
-## PRESET LEVEL
+## PRESET\_LEVEL
 
 This feature is only to be used if the actual hardware supports a physical button and the light can be programmed to turn on to a specific level. Used to set brightness preset of the "On" (ID = 1) Preset that is used when a user clicks the Top button of a light.
 

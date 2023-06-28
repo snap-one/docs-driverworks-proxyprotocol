@@ -1,6 +1,6 @@
-## LEAVE GROUP
+## LEAVE\_GROUP
 
-Received when Load Group driver pop the light driver from the gropu.
+Received when Load Group driver pop the light driver from the group.
 
 ### Signature
 
