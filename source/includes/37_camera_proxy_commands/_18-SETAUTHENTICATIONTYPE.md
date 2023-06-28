@@ -1,4 +1,4 @@
-## SET AUTHENTICATION TYPE
+## SET\_AUTHENTICATION\_TYPE
 
 Composer Pro command to set whether or not authentication is required
 

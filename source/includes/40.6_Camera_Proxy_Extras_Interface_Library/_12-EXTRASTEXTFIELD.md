@@ -1,4 +1,4 @@
-## Extras Text Field
+## ExtrasTextField
 
 ### Overview
 

@@ -1,4 +1,4 @@
-## Extras Switch
+## ExtrasSwitch
 
 ### Overview
 

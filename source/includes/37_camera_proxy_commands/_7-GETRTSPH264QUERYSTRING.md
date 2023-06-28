@@ -1,4 +1,4 @@
-## GET RTSP H264 QUERY STRING
+## GET\_ RTSP\_H264\_QUERY\_ STRING
 
 Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for RTSP H264 stream request.
 

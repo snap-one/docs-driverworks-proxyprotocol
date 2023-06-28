@@ -1,4 +1,4 @@
-## CAMERA ON
+## CAMERA\_ON
 
 Command to turn camera image capturing on.
 

@@ -1,4 +1,4 @@
-## SET TYPE
+## SET\_TYPE
 
 Sets the blind type for the proxy.
 

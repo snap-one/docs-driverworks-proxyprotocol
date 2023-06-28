@@ -1,4 +1,4 @@
-## has level
+## has\_level
 
 A boolean capability indicating if the blind can support reporting of discrete level values through Notifications.  Default to False in order for older drivers to work.
 

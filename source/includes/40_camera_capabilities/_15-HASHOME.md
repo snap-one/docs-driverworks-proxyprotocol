@@ -1,4 +1,4 @@
-## has home
+## has\_home
 
 True/False. Default is False. This is a Dynamic Capability.
 

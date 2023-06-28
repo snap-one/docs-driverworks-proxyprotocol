@@ -1,4 +1,4 @@
-## SET PASSWORD
+## SET\_PASSWORD
 
 ComposerPro command to set the Authentication password.
 

@@ -1,4 +1,4 @@
-## driver handles toggle
+## driver\_handles\_toggle
 
 Capability to stop movement of blinds
 

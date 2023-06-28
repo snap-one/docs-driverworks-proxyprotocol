@@ -1,4 +1,4 @@
-## default username
+## default\_username
 
 Defaults to “username”.
 

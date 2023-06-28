@@ -1,4 +1,4 @@
-## ADDRESS CHANGED
+## ADDRESS\_CHANGED
 
 Notification that the camera's address has a changed. Sent from the API [OnNetworkBindingChanged][1].
 

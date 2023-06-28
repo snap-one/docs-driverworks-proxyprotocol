@@ -1,4 +1,4 @@
-## MOVE TO
+## MOVE\_TO
 
 Have the camera move to location x and y within the specified window.
 

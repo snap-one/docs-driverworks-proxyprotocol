@@ -1,4 +1,4 @@
-## ZOOM OUT
+## ZOOM\_OUT
 
 Zoom camera out.
 

@@ -1,4 +1,4 @@
-## TILT SCAN
+## TILT\_SCAN
 
 Have the camera execute a complete scan from top to bottom.
 

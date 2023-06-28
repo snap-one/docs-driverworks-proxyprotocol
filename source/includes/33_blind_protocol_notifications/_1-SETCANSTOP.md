@@ -1,4 +1,4 @@
-## SET CAN STOP
+## SET\_CAN\_STOP
 
 Configuration Notification used by the protocol to inform the proxy if the blind supports stopping or not.
 

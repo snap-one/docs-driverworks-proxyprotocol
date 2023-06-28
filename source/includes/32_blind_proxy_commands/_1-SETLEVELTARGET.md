@@ -1,4 +1,4 @@
-## SET LEVEL TARGET
+## SET\_LEVEL\_TARGET
 
 Requests a blind to go to a different position.
 

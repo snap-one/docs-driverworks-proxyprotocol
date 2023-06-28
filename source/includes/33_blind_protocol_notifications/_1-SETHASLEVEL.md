@@ -1,4 +1,4 @@
-## SET HAS LEVEL
+## SET\_HAS\_LEVEL
 
 Configuration Notification used by the protocol to inform the proxy that the driver does or does not support level control.
 

@@ -1,4 +1,4 @@
-## SET TYPE
+## SET\_TYPE
 
 Configuration Notification used by the protocol to inform the proxy that the driver is a particular blind type.  If this is used, the proxy will disable the pulldown from being selectable by a dealer.
 

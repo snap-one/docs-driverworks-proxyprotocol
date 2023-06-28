@@ -1,4 +1,4 @@
-## default authentication required
+## default\_authentication\_required
 
 Defaults to false.
 

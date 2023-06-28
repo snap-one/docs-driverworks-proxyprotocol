@@ -1,4 +1,4 @@
-## has pan
+## has\_ pan
 
 True/False. Default is False. This is a Dynamic Capability.
 

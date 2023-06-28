@@ -1,4 +1,4 @@
-## can stop
+## can\_stop
 
 Capability to stop movement of blinds
 

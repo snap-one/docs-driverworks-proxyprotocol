@@ -1,4 +1,4 @@
-## level closed secondary
+## level\_closed\_secondary
 
 Integer indicating how far past open \`(levelopen) the blind can go to a second closed state.   No default value exists for this capability and drivers should not include level\_closed\_secondary if a secondary closed position does not exist.
 

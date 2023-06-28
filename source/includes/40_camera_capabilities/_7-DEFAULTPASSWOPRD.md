@@ -1,4 +1,4 @@
-## default password
+## default\_password
 
 Defaults to “password”.
 

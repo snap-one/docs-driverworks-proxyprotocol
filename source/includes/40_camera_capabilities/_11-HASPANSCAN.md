@@ -1,4 +1,4 @@
-## has pan scan
+## has\_pan\_scan
 
 True/False. Default is False.
 

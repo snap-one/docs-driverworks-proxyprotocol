@@ -1,4 +1,4 @@
-## SET RSTP PORT
+## SET\_RSTP\_PORT
 
 Composer Pro Command to set the Rapid Spanning Tree Protocol port.
 

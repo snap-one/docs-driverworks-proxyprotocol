@@ -1,4 +1,4 @@
-## has zoom
+## has\_zoom
 
 True/False. Default is False. This is a Dynamic Capability.
 

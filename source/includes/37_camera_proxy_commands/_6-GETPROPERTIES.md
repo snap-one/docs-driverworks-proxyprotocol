@@ -1,4 +1,4 @@
-## GET PROPERTIES
+## GET\_PROPERTIES
 
 Command called once by a UI entity to learn how to access a camera. It returns a block of XML reporting the properties of the camera.
 

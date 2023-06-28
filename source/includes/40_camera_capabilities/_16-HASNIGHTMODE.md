@@ -1,4 +1,4 @@
-## has night mode
+## has\_night\_mode
 
 True/False. Default is False.
 

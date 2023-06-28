@@ -1,4 +1,4 @@
-## SET HTTP PORT
+## SET\_HTTP\_PORT
 
 Composer Pro command to set the HTTP Port
 

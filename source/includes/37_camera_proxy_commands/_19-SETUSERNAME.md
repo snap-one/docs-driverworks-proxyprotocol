@@ -1,4 +1,4 @@
-## SET USERNAME
+## SET\_USERNAME
 
 Composer Pro command to set the Authentication username.
 

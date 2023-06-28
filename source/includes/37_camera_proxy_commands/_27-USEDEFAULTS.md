@@ -1,4 +1,4 @@
-## USE DEFAULTS
+## USE\_DEFAULTS
 
 Command to use the camera's factory defaults as defined by the driver capabilities.
 

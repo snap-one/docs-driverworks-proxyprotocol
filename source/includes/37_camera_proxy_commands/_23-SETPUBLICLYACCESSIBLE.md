@@ -1,4 +1,4 @@
-## SET PUBLICLY ACCESSIBLE
+## SET\_PUBLICLY\_ACCESSIBLE
 
 Composer Pro command to set whether or not the camera can be accessed from public Internet.
 

@@ -1,4 +1,4 @@
-## GET MJPEG QUERY
+## GET\_MJPEG\_QUERY
 
 Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for MJPEG server push request.
 

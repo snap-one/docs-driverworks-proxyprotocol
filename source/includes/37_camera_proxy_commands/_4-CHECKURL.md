@@ -1,4 +1,4 @@
-## CHECK URL
+## CHECK\_URL
 
 Composer Pro command used in the Camera Test/Validation area. Verifies the camera 's URL components.
 

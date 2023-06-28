@@ -1,4 +1,4 @@
-## CHECK ADDRESS PORT
+## CHECK\_ADDRESS\_PORT
 
 Composer Pro command used in the Camera Test/Validation area. Verifies the camera Address and Port ID.
 

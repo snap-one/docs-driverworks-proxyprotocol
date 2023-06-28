@@ -1,4 +1,4 @@
-## Extras Slider
+## ExtrasSlider
 
 ### Overview
 

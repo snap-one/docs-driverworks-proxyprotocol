@@ -1,4 +1,4 @@
-## default authentication type
+## default\_authentication\_type
 
 Defaults to BASIC.
 

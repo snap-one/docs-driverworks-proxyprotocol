@@ -1,4 +1,4 @@
-## CAMERA OFF
+## CAMERA\_OFF
 
 Command to turn camera image capturing off.
 

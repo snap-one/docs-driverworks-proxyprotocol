@@ -1,4 +1,4 @@
-## PAN RIGHT
+## PAN\_RIGHT
 
 Pan to the right.
 

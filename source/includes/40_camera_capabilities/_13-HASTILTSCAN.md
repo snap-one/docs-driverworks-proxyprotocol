@@ -1,4 +1,4 @@
-## has tilt scan
+## has\_tilt\_scan
 
 True/False. Default is False.
 

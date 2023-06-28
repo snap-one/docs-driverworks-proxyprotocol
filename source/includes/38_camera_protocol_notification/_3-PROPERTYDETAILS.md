@@ -1,4 +1,4 @@
-## PROPERTY DEFAULTS
+## PROPERTY\_DEFAULTS
 
 Notification sent from the protocol driver through [ON DRIVER LATE INIT][1] containing the camera's default properties
 

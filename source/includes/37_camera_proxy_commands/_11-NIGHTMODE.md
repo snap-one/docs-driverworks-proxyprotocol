@@ -1,4 +1,4 @@
-## NIGHT MODE
+## NIGHT\_MODE
 
 Enable/disable night mode.
 

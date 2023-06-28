@@ -1,4 +1,4 @@
-## USE HTTPS CHANGED
+## USE\_HTTPS\_CHANGED
 
 Used to update the proxy to tell it to generate HTTPS URLs instead of HTTP URLs.
 

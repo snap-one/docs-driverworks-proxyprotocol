@@ -1,4 +1,4 @@
-## SET SNAPSHOT REFRESH RATE
+## SET\_SNAPSHOT\_REFRESH\_RATE
 
 Sets image refresh rate in seconds.
 
