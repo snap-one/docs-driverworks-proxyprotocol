@@ -1,4 +1,4 @@
-## has discrete balance control
+## has\_discrete\_balance\_control
 
 Capable of directly specifying a balance setting.
 

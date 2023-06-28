@@ -1,4 +1,4 @@
-## has discrete channel select
+## has\_discrete\_channel\_select
 
 Capability of direcretly selecting specified channel.
 

@@ -1,4 +1,4 @@
-## PRESET DOWN
+## PRESET\_DOWN
 
 Toggle (cycle down) tuning preset.
 

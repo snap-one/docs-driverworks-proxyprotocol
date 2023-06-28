@@ -1,4 +1,4 @@
-## SET DEFAULT INPUT
+## SET\_DEFAULT\_INPUT
 
 Specify the default input selection of device.
 

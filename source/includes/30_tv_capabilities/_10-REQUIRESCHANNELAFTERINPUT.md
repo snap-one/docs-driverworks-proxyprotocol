@@ -1,4 +1,4 @@
-## requires channel after input
+## requires\_channel\_after\_input
 
 When set to True, the TV proxy will first switch the input and then select the channel. It is recommended that this capability be set to True.
 

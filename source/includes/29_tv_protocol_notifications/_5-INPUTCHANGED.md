@@ -1,4 +1,4 @@
-## INPUT  CHANGED
+## INPUT\_CHANGED
 
 Selected Input has changed.
 

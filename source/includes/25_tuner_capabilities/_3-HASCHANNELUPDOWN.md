@@ -1,4 +1,4 @@
-## has channel up down
+## has\_channel\_up\_down
 
 Tuner can cycling up or down for valid channels
 

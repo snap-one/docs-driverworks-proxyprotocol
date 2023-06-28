@@ -1,4 +1,4 @@
-## STOP CH UP
+## STOP\_CH\_UP
 
 StOP ramping channel UP.
 

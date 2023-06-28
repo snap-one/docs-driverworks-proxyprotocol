@@ -1,4 +1,4 @@
-## has discrete input select
+## has\_discrete\_input\_select
 
 Capability of directly selecting specified input.
 

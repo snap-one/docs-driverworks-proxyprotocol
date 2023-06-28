@@ -1,4 +1,4 @@
-## Pulse Aspect Ratio
+## PULSE\_ASPECT\_RATIO
 
 Toggle (cycle though) aspect ratio.
 

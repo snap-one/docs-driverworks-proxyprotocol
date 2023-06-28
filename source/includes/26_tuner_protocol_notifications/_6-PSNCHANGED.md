@@ -1,4 +1,4 @@
-## PSN CHANGED
+## PSN\_CHANGED
 
 Text from PSN has changed.
 

@@ -1,4 +1,4 @@
-## START LEFT
+## START\_LEFT
 
 Initiate left-arrow navigation.
 

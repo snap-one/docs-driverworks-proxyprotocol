@@ -1,4 +1,4 @@
-## CHANNEL CHANGED
+## CHANNEL\_CHANGED
 
 Selected disc has changed.
 

@@ -1,4 +1,4 @@
-## has discrete bass control
+## has\_discrete\_bass\ control
 
 Capable of directly specifying a bass setting.
 

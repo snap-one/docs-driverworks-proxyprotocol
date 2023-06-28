@@ -1,4 +1,4 @@
-## STOP PAGE RIGHT
+## STOP\_PAGE\_RIGHT
 
 Stop right-arrow navigation.
 

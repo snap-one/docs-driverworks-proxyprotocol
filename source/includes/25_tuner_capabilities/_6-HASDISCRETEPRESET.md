@@ -1,4 +1,4 @@
-## has discrete preset
+## has\_discrete\_preset
 
 Capable of directly selecting from a preset list.
 

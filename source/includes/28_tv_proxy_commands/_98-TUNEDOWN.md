@@ -1,4 +1,4 @@
-## TUNE DOWN
+## TUNE\_DOWN
 
 Toggle (cycle down) frequency or channel.
 

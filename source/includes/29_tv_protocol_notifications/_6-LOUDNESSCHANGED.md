@@ -1,4 +1,4 @@
-## LOUDNESS CHANGED
+## LOUDNESS\_CHANGED
 
 Loudness state (On/Off) has changed.
 
