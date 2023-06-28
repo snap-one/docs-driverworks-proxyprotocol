@@ -1,4 +1,4 @@
-## use speaker
+## use\_speaker
 
 The driver has the ability to physically control the speaker level on the device.
 

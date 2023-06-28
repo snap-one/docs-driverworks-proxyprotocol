@@ -1,4 +1,4 @@
-## AUTO ANSWER CHANGED
+## AUTO\_ANSWER\_CHANGED
 
 This notification is issued when a call is accepted, it is sent to the initiator and the receiver involved in accepting the specified session.
 

@@ -1,4 +1,4 @@
-## GET SESSION
+## GET\_SESSION
 
 This request is issued to obtain the active session information for the requesting device.
 

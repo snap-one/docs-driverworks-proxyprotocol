@@ -1,4 +1,4 @@
-## is doorstation
+## is\_doorstation
 
 This capability specifies whether this device type is a door station. Its value is a Boolean string. For example: “True” or “False”
 

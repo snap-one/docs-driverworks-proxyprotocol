@@ -1,4 +1,4 @@
-## SET CAMERA ENABLE
+## SET\_CAMERA\_ENABLE
 
 This command is issued to enable or disable the camera on an intercom device.
 

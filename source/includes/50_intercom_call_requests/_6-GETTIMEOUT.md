@@ -1,4 +1,4 @@
-## GET TIMEOUT
+## GET\_TIMEOUT
 
 This request is issued to obtain the current timeout setting for manually answering a call.  If the timeout duration expires before a call is answered, the call is automatically ended.  This value is configured in the Video Intercom Agent in Composer.
 

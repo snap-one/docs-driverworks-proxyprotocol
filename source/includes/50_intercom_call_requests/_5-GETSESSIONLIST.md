@@ -1,4 +1,4 @@
-## GET SESSION LIST
+## GET\_SESSION\_LIST
 
 This request is issued to obtain the session information of all of sessions on this endpoint.
 

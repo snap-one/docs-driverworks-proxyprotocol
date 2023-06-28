@@ -1,4 +1,4 @@
-## MUTE CALL
+## MUTE\_CALL
 
 Used by Programming or ComposerPro. This command is used to programmatically Mute a device.  TRhe endpoint of the issuer will be muted or un-muted, depending on the value of the flag.
 

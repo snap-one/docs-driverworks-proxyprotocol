@@ -1,4 +1,4 @@
-## GET CURRENT STATE
+## GET\_CURRENT\_STATE
 
 This request is issued to obtain the current device state of the intercom endpoint making the request.
 

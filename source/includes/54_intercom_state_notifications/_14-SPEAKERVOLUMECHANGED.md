@@ -1,4 +1,4 @@
-## SPEAKER VOLUME CHANGED
+## SPEAKER\_VOLUME\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Speaker Volume setting has changed. 
 

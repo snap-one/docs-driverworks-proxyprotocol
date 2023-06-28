@@ -1,4 +1,4 @@
-## ACCEPT CALL
+## ACCEPT\_CALL
 
 This command is used to programmatically accept a ringing call on a device. 
 It may be issued by the receiver of a call invitation (i.e. an [`INCOMING_CALL notification`][1]) and causes the call associated with the given session id to be accepted. This command will result in a [`CALL_ACCEPTED`][2] notification being sent to both the initiator and the receiver of the call.

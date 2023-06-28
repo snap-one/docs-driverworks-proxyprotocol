@@ -1,4 +1,4 @@
-## INCOMING CALL
+## INCOMING\_CALL
 
 This notification is issued when a call invite is received; it is only sent to the receiver involved in the specified session.
 

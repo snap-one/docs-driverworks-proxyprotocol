@@ -1,4 +1,4 @@
-## DEVICE STATE CHANGED
+## DEVICE\_STATE\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Do Not Disturb setting has changed. 
 

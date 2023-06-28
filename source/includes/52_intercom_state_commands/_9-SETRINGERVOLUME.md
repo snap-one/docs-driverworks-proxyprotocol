@@ -1,4 +1,4 @@
-## SET RINGER VOLUME
+## SET\_RINGER\_VOLUME
 
 This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a [`RINGER_VOLUME_CHANGED`][1] notification to the proxy consumer for the indicated intercom device.
 

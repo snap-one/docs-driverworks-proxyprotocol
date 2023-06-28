@@ -1,4 +1,4 @@
-## CALL REJECTED
+## CALL\_REJECTED
 
 This notification is issued when a call is rejected, it is sent to the initiator and the receiver involved in rejecting the specified session.
 

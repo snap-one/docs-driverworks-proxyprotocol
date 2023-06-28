@@ -1,4 +1,4 @@
-## use ringer
+## use\_ringer
 
 The driver has the ability to physically control the ringer level on the device.
 

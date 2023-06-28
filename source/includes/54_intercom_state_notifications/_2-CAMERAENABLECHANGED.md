@@ -1,4 +1,4 @@
-## CAMERA ENABLED CHANGED
+## CAMERA\_ENABLED\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Camera Enabled setting has changed.
 

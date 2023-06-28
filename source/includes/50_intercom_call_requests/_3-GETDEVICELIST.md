@@ -1,4 +1,4 @@
-## GET DEVICE LIST
+## GET\_DEVICE\_LIST
 
 This request is issued to obtain the device properties of all of the intercom endpoints in the project.
 

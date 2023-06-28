@@ -1,4 +1,4 @@
-## GET CUSTOM BUTTONS
+## GET\_CUSTOM\_BUTTONS
 
 The Intercom Proxy provides the ability to define two (2) custom buttons for each endpoint. These custom buttons will generate “on pressed” and “on released” events that can be used as programming triggers in Composer. This request is issued to obtain the custom button so that they can be displayed by the user interface. Detection of the “pressed” and “released” states of these buttons is the responsibility of the user interface displaying them, as well as the generation of the “pressed” and “released” notifications.
 

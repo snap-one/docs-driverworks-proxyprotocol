@@ -1,4 +1,4 @@
-## GET GROUP LIST
+## GET\_GROUP\_LIST
 
 This request is issued to obtain the group list of all of intercom call groups in the project except for the “All” group. 
 

@@ -1,4 +1,4 @@
-## SET AUTO ANSWER
+## SET\_AUTO\_ANSWER
 
 This command is issued to toggle the “Do Not Disturb” setting of the intercom. This command will result in an [`AUTO_ANSWER_CHANGED`][1] notification to the indicated proxy consumer.
 

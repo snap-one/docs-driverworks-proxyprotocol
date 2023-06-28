@@ -1,4 +1,4 @@
-## SIP USERNAME CHANGED
+## SIP\_USERNAME\_CHANGED
 
 Notification sent to the proxy  when the SIP username value of the intercom has changed.
 

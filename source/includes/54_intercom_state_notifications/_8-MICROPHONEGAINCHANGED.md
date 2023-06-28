@@ -1,4 +1,4 @@
-## MICROPHONE GAIN CHANGED
+## MICROPHONE\_GAIN\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Microphone Gain setting has changed.
 

@@ -1,4 +1,4 @@
-## REJECT CALL
+## REJECT\_CALL
 
 This command may be issued by the receiver of a call invitation and causes the call associated with the given session id to be rejected (ended).  This command will result in a `CALL_REJECTED` notification being sent to both the initiator and the receiver of the call.
 

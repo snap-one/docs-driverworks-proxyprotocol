@@ -1,4 +1,4 @@
-## MUTE AUDIO CHANGED
+## MUTE\_AUDIO\_CHANGED
 
 Notification sent to the proxy  when the audio muted value of the intercom has changed.
 

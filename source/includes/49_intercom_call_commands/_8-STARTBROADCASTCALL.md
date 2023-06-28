@@ -1,4 +1,4 @@
-## START BROADCAST CALL
+## START\_BROADCAST\_CALL
 
 This command is issued by the initiator of a new broadcast call to a pre-defined group of intercom devices.  The command will result in an `OUTGOING_CALL` notification to the initiator and an `INCOMING_CALL` notification to the receiver.  
 

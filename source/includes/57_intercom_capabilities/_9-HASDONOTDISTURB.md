@@ -1,4 +1,4 @@
-## has do not disturb
+## has\_do\_ not\_disturb
 
 Device supports do not disturb functionality. Setting this to true will enable the use of the Do Not Disturb checkbox in ComposerPro.
 

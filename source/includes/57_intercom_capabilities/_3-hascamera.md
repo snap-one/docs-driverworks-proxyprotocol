@@ -1,4 +1,4 @@
-## has camera
+## has\_camera
 
 The device includes a camera and supporting camera functionality. This controls enabling/disabling the use of the Send Video UI in ComposerPro.
 

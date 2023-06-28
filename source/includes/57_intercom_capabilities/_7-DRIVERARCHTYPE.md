@@ -1,4 +1,4 @@
-## driver arch type
+## driver\_arch\_type
 
 This capability is included in the SDK for Control4 internal use.
 

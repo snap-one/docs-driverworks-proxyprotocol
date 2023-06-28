@@ -1,4 +1,4 @@
-## SET MONITOR MODE
+## SET\_MONITOR\_MODE
 
 This command will result in a [`MONITOR_MODE_CHANGED`][1] notification to the proxy consumer for the indicated intercom device.
 

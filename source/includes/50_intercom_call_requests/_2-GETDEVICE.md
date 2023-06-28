@@ -1,4 +1,4 @@
-## GET DEVICE
+## GET\_DEVICE
 
 This request is issued to obtain the device properties of a specified intercom endpoint.
 
@@ -50,6 +50,7 @@ Response Prototype
     <sipAOR>[string value]</sipAOR>
 </device_props>
 ```
+
 
 
 

@@ -1,4 +1,4 @@
-## CURRENT STATE CHANGED
+## CURRENT\_STATE\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s current state has changed.
 

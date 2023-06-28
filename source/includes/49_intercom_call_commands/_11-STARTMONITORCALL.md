@@ -1,4 +1,4 @@
-## START  MONITOR CALL
+## START\_MONITOR\_CALL
 
 This command is issued by the initiator of a new monitoring call to a specified receiver.  The receiver must be in monitor mode.  The command will result in an `OUTGOING_CALL` notification to the initiator and an `INCOMING_CALL` notification to the receiver
 

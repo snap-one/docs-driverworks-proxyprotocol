@@ -1,4 +1,4 @@
-## DELETE DEVICE FROM GROUP
+## DELETE\_DEVICE\_FROM\_GROUP
 
 This command is issued to remove the specified intercom endpoint from the specified call group. Attempting to delete a device from the “All” group will result in a command failure.
 

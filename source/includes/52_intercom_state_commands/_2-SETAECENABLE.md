@@ -1,4 +1,4 @@
-## SET AEC ENABLE
+## SET\_AEC\_ENABLE
 
 This command is issued to enable or disable automatic echo cancellation on intercom devices that support this capability.
 

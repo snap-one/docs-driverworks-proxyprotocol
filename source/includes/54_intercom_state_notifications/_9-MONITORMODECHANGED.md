@@ -1,4 +1,4 @@
-## MONITOR MODE CHANGED
+## MONITOR\_MODE\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Monitor Mode setting has changed. 
 

@@ -1,4 +1,4 @@
-## GET STATE LIST
+## GET\_STATE\_LIST
 
 This request is issued to obtain the device state of all of intercom endpoints in the project
 

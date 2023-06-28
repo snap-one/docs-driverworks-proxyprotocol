@@ -1,4 +1,4 @@
-## OUTGOING CALL
+## OUTGOING\_CALL
 
 This notification is issued when a call invite is SENT; it is only sent to the initiator involved in the specified session.
 

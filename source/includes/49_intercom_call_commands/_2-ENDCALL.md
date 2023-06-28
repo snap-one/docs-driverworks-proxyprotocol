@@ -1,4 +1,4 @@
-## END CALL
+## END\_CALL
 
 Used by Programming or ComposerPro. Terminates the current call. A full session (completed call) must have occurred in order for End Call to work. End Call is not applicable to calls that are in a ringing state. Upon executing End Call both ends of the call are terminated.
 

@@ -1,4 +1,4 @@
-## CALL PAUSED
+## CALL\_PAUSED
 
 This notification is issued when a session is paused, it is sent to the initiator and all receiver(s) involved in the specified session.
 

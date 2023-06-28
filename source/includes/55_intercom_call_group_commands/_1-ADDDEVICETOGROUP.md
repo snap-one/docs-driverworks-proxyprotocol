@@ -1,4 +1,4 @@
-## ADD DEVICE TO GROUP
+## ADD\_DEVICE\_TO\_GROUP
 
 This command is issued to add the specified intercom endpoint to the specified call group. 
 

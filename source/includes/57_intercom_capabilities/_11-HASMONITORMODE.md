@@ -1,4 +1,4 @@
-## has monitor mode
+## has\_monitor\_mode
 
 Device supports the use of display monitor functionality. Setting this to true will also enable the use of the Monitor Mode checkbox in ComposerPro.
 

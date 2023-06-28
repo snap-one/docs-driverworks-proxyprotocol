@@ -1,4 +1,4 @@
-## SET SIP PROXY IP
+## SET\_SIP\_PROXY\_IP
 
 This command established the IP Address of the SIP Proxy.
 

@@ -1,4 +1,4 @@
-## EXCLUDE FROM NAVIGATOR CHANGED
+## EXCLUDE\_FROM\_NAVIGATOR\_CHANGED
 
 This notification is issued by the proxy when the endpoint’s Exclude from Navigator setting has changed. 
 

@@ -1,4 +1,4 @@
-## USE CAMERA CHANGED
+## USE\_CAMERA\_CHANGED
 
 Notification sent to the proxy  when the use camera value of the intercom has changed
 

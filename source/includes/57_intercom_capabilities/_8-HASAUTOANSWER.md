@@ -1,4 +1,4 @@
-## has auto answer
+## has\_auto\_answer
 A setting of True indicates that the device supports the ability to automatically answer an incoming call. Setting this capability to True will also enable the use of the has auto answer checkbox in ComposerPro. 
 
 

@@ -1,4 +1,4 @@
-## SET SEND VIDEO
+## SET\_SEND\_VIDEO
 
 This command is issued by a proxy consumer to cause the state of the send video setting to change.  This command will result in a [`SEND_VIDEO_CHANGED`][1]
 

@@ -1,4 +1,4 @@
-## EDIT GROUP
+## EDIT\_GROUP
 
 This command is issued to rename the specified intercom call group. Note that the name of the “All” group cannot be changed
 

@@ -1,4 +1,4 @@
-## use microphone
+## use\_microphone
 
 The driver has the ability to physically control the microphone level on the device.
 

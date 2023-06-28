@@ -1,4 +1,4 @@
-## DELETE GROUP
+## DELETE\_GROUP
 
 This command is issued to delete an intercom call group. Note that the “All” group cannot be deleted. 
 

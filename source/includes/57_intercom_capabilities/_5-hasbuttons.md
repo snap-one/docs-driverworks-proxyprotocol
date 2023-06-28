@@ -1,4 +1,4 @@
-## has buttons
+## has\_buttons
 
 This capability specifies whether this device type has custom buttons. Its value is a Boolean string. For example: “True” or “False”
 

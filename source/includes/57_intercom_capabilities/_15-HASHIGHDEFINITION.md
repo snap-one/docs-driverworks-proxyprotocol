@@ -1,4 +1,4 @@
-## has high definition
+## has\_high\_definition
 
 Capability applicable to touch panels. The driver has the ability to turn camera video quality to 720p, as opposed to 640x480. 
 
