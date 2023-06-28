@@ -163,7 +163,7 @@ A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON\_LINK bi
 [2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on-mode_preset
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on_mode_previous
 [4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_fade
-[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color-on-mode-preset
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_preset
 [6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_previous
 [7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_max
 [8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_min
@@ -172,7 +172,7 @@ A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON\_LINK bi
 [11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max
 [12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min
 [13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max
-[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#add-driver-color-preset
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-add_driver_color_preset
 [15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-delete_driver_-color_-preset
 [16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_off
 [17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_on

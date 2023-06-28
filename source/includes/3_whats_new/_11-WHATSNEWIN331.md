@@ -72,7 +72,7 @@ The following existing Camera Proxy capabilities are now Dynamic Capabilities:
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv
 [4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy
 [5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb
-[6]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams
 [7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams
 [8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams
 [9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library
