@@ -6210,7 +6210,7 @@
             <a href="#ui-button-proxy-notifications" class="toc-h1 toc-link" data-title="UI Button Proxy Notifications">UI Button Proxy Notifications</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#ui-button-proxy-notifications-icon-changed" class="toc-h2 toc-link" data-title="ICON CHANGED">ICON CHANGED</a>
+                    <a href="#ui-button-proxy-notifications-icon_changed" class="toc-h2 toc-link" data-title="ICON_CHANGED">ICON_CHANGED</a>
                   </li>
                   <li>
                     <a href="#ui-button-proxy-notifications-url_changed" class="toc-h2 toc-link" data-title="URL_CHANGED">URL_CHANGED</a>
@@ -6271,10 +6271,10 @@
                     <a href="#contact-notifications-opened" class="toc-h2 toc-link" data-title="OPENED">OPENED</a>
                   </li>
                   <li>
-                    <a href="#contact-notifications-state-closed" class="toc-h2 toc-link" data-title="STATE CLOSED">STATE CLOSED</a>
+                    <a href="#contact-notifications-state_closed" class="toc-h2 toc-link" data-title="STATE_CLOSED">STATE_CLOSED</a>
                   </li>
                   <li>
-                    <a href="#contact-notifications-state-opened" class="toc-h2 toc-link" data-title="STATE OPENED">STATE OPENED</a>
+                    <a href="#contact-notifications-state_opened" class="toc-h2 toc-link" data-title="STATE_OPENED">STATE_OPENED</a>
                   </li>
               </ul>
           </li>
@@ -6313,10 +6313,10 @@
                     <a href="#relay-notifications-opened" class="toc-h2 toc-link" data-title="OPENED">OPENED</a>
                   </li>
                   <li>
-                    <a href="#relay-notifications-state-closed" class="toc-h2 toc-link" data-title="STATE CLOSED">STATE CLOSED</a>
+                    <a href="#relay-notifications-state_closed" class="toc-h2 toc-link" data-title="STATE_CLOSED">STATE_CLOSED</a>
                   </li>
                   <li>
-                    <a href="#relay-notifications-state-opened" class="toc-h2 toc-link" data-title="STATE OPENED">STATE OPENED</a>
+                    <a href="#relay-notifications-state_opened" class="toc-h2 toc-link" data-title="STATE_OPENED">STATE_OPENED</a>
                   </li>
               </ul>
           </li>
@@ -50669,11 +50669,11 @@ Optional Capability which, when added contains the default URL that is associate
 <p><code>Selected</code> - Fired upon receiving the Select command.</p>
 <h1 id='ui-button-proxy-notifications'>UI Button Proxy Notifications</h1>
 
-<h2 id='ui-button-proxy-notifications-icon-changed'>ICON CHANGED</h2>
+<h2 id='ui-button-proxy-notifications-icon_changed'>ICON_CHANGED</h2>
 
 <p>Notification sent to the proxy to change the driver&#39;s icon.</p>
 
-<h3 id='ui-button-proxy-notifications-icon-changed-signature'>Signature</h3>
+<h3 id='ui-button-proxy-notifications-icon_changed-signature'>Signature</h3>
 
 <p><code>ICON_CHANGED</code></p>
 
@@ -50693,17 +50693,17 @@ Optional Capability which, when added contains the default URL that is associate
 </tr>
 </tbody></table>
 
-<h3 id='ui-button-proxy-notifications-icon-changed-returns'>Returns</h3>
+<h3 id='ui-button-proxy-notifications-icon_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='ui-button-proxy-notifications-icon-changed-datatoui'>DataToUI</h3>
+<h3 id='ui-button-proxy-notifications-icon_changed-datatoui'>DataToUI</h3>
 
 <p>Sends “icon” DataToUI: <code>&lt;icon&gt;Settings-on&lt;/icon&gt;</code></p>
 
 <p>Also sends “icon_description” DataToUI: <code>&lt;icon_description&gt;Settings are on&lt;/icon_description&gt;</code></p>
 
-<h3 id='ui-button-proxy-notifications-icon-changed-example'>Example</h3>
+<h3 id='ui-button-proxy-notifications-icon_changed-example'>Example</h3>
 
 <p><code>C4:SendToProxy(5001, &quot;ICON_CHANGED&quot;, {icon=&quot;Settings-on&quot;, icon_description=&quot;Settings are on&quot;})</code></p>
 
@@ -51098,35 +51098,35 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <p><code>None</code></p>
 
-<h2 id='contact-notifications-state-closed'>STATE CLOSED</h2>
+<h2 id='contact-notifications-state_closed'>STATE_CLOSED</h2>
 
 <p>Contact remains in the closed state.</p>
 
-<h3 id='contact-notifications-state-closed-signature'>Signature</h3>
+<h3 id='contact-notifications-state_closed-signature'>Signature</h3>
 
 <p><code>STATE_CLOSED ()</code> </p>
 
-<h3 id='contact-notifications-state-closed-parameters'>Parameters</h3>
+<h3 id='contact-notifications-state_closed-parameters'>Parameters</h3>
 
 <p><code>None</code></p>
 
-<h3 id='contact-notifications-state-closed-returns'>Returns</h3>
+<h3 id='contact-notifications-state_closed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h2 id='contact-notifications-state-opened'>STATE OPENED</h2>
+<h2 id='contact-notifications-state_opened'>STATE_OPENED</h2>
 
 <p>Contact remains in the opened state.</p>
 
-<h3 id='contact-notifications-state-opened-signature'>Signature</h3>
+<h3 id='contact-notifications-state_opened-signature'>Signature</h3>
 
 <p><code>STATE_OPENED ()</code> </p>
 
-<h3 id='contact-notifications-state-opened-parameters'>Parameters</h3>
+<h3 id='contact-notifications-state_opened-parameters'>Parameters</h3>
 
 <p><code>None</code></p>
 
-<h3 id='contact-notifications-state-opened-returns'>Returns</h3>
+<h3 id='contact-notifications-state_opened-returns'>Returns</h3>
 
 <p><code>None</code></p>
 <h1 id='relay-overview'>Relay Overview</h1>
@@ -51241,43 +51241,43 @@ events by calling <code>C4:SendDataToUI(xml)</code> or <code>C4:SendDataToUI (st
 
 <p><code>None</code></p>
 
-<h2 id='relay-notifications-state-closed'>STATE CLOSED</h2>
+<h2 id='relay-notifications-state_closed'>STATE_CLOSED</h2>
 
 <p>Relay remains in the closed state. Does not indicate a change in state.</p>
 
-<h3 id='relay-notifications-state-closed-signature'>Signature</h3>
+<h3 id='relay-notifications-state_closed-signature'>Signature</h3>
 
 <p><code>STATE_CLOSED ()</code></p>
 
-<h3 id='relay-notifications-state-closed-parameters'>Parameters</h3>
+<h3 id='relay-notifications-state_closed-parameters'>Parameters</h3>
 
 <p><code>None</code></p>
 
-<h3 id='relay-notifications-state-closed-returns'>Returns</h3>
+<h3 id='relay-notifications-state_closed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='relay-notifications-state-closed-usage-note'>Usage Note</h3>
+<h3 id='relay-notifications-state_closed-usage-note'>Usage Note</h3>
 
 <p>Send <code>STATE_CLOSED</code> when the device initializes rather than <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#closed"><code>CLOSED</code></a>. The driver will ignore the <code>STATE_CLOSED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
 
-<h2 id='relay-notifications-state-opened'>STATE OPENED</h2>
+<h2 id='relay-notifications-state_opened'>STATE_OPENED</h2>
 
 <p>Relay remains in the open state. Does not indicate a change in state.</p>
 
-<h3 id='relay-notifications-state-opened-signature'>Signature</h3>
+<h3 id='relay-notifications-state_opened-signature'>Signature</h3>
 
 <p><code>STATE_OPENED ()</code></p>
 
-<h3 id='relay-notifications-state-opened-parameters'>Parameters</h3>
+<h3 id='relay-notifications-state_opened-parameters'>Parameters</h3>
 
 <p><code>None</code></p>
 
-<h3 id='relay-notifications-state-opened-returns'>Returns</h3>
+<h3 id='relay-notifications-state_opened-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='relay-notifications-state-opened-usage-note'>Usage Note</h3>
+<h3 id='relay-notifications-state_opened-usage-note'>Usage Note</h3>
 
 <p>Send <code>STATE_OPENED</code> when the device initializes rather than <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#opened"><code>OPENED</code></a>. The driver will ignore the <code>STATE_OPENED</code> from the standpoint of events since it is not a state change but just a notification of the current state.</p>
 <h1 id='best-practices'>Best Practices</h1>
