@@ -1,4 +1,4 @@
-## SPA SETPOINT CHANGED
+## SPA\_SETPOINT\_CHANGED
 
 Sent to the proxy to indicate that the temperature setpoint on the spa controller has changed.
 

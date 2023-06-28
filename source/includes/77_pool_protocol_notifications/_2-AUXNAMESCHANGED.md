@@ -1,4 +1,4 @@
-## AUX NAMES CHANGED
+## AUX\_NAMES\_CHANGED
 
 This notification provides a way to override capabilities.
 

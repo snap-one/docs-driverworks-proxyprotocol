@@ -1,4 +1,4 @@
-## POOL TEMP CHANGED
+## POOL\_TEMP\_CHANGED
 
 Sent to the proxy to indicate that the pool temperature has changed.
 

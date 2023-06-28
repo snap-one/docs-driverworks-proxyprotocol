@@ -1,4 +1,4 @@
-## POOL HEATMODE CHANGED
+## POOL\_HEATMODE\_CHANGED
 
 Sent to the proxy to indicate that the pool heat mode has changed.
 

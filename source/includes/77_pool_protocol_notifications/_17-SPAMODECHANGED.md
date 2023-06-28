@@ -1,4 +1,4 @@
-## SPA MODE CHANGED
+## SPA\_MODE\_CHANGED
 
 Sent to the proxy to indicate whether the ‘Spa’ Aux button on the right side of the UI is On or Off.
 

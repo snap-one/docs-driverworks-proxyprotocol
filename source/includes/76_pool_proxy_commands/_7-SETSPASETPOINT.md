@@ -1,4 +1,4 @@
-## SET SPA SETPOINT
+## SET\_SPA\_SETPOINT
 
 Received from the proxy when Spa Setpoint has been changed.
 

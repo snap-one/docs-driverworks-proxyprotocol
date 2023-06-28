@@ -1,4 +1,4 @@
-## POOL SETPOINT CHANGED
+## POOL\_SETPOINT\_CHANGED
 
 Sent to the proxy to indicate that the setpoint on the pool controller has changed.
 

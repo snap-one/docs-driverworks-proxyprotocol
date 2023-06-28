@@ -1,4 +1,4 @@
-## GET STATE
+## GET\_STATE
 
 Obtains the pool’s state.
 

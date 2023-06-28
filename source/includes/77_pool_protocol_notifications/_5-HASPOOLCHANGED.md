@@ -1,4 +1,4 @@
-## HAS POOL CHANGED
+## HAS\_POOL\_CHANGED
 
 Sent to the proxy to indicate that there is a Pool available on this controller. If ‘False’, Pool Setpoint is unavailable to set.
 

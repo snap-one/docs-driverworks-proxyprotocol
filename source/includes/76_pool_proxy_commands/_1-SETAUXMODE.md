@@ -1,4 +1,4 @@
-## SET AUX MODE
+## SET\_AUX\_MODE
 
 Received from the proxy when the auxiliary mode has been changed.
 

@@ -1,4 +1,4 @@
-## HAS SPA CHANGED
+## HAS\_SPA\_CHANGED
 
 Sent to the proxy to indicate that there is a Spa available on this controller. If ‘False’, Spa Setpoint is unavailable to set.
 

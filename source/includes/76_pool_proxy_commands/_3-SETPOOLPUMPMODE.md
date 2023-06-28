@@ -1,4 +1,4 @@
-## SET POOL PUMP MODE
+## SET\_POOL\_PUMP\_MODE
 
 Received from the proxy when pool pump mode has been changed.
 

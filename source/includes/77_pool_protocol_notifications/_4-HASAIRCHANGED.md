@@ -1,4 +1,4 @@
-## HAS AIR CHANGED
+## HAS\_AIR\_CHANGED
 
 Sent to the proxy to indicate that there is an outdoor air temperature available on this pool controller.  Determines whether the outdoor temperature is shown on the Navigator UI.
 

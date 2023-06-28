@@ -1,4 +1,4 @@
-## SPA TEMP CHANGED
+## SPA\_TEMP\_CHANGED
 
 Sent to the proxy to indicate that the spa temperature has changed.
 

@@ -1,4 +1,4 @@
-## SCALE CHANGED
+## SCALE\_CHANGED
 
 Sent to the proxy to indicate that the Temperature scale has changed.
 

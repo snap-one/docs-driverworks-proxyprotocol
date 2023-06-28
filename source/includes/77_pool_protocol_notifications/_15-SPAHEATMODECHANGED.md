@@ -1,4 +1,4 @@
-## SPA HEATMODE CHANGED
+## SPA\_HEATMODE\_CHANGED
 
 Sent to the proxy to indicate that the spa heat mode has changed.
 

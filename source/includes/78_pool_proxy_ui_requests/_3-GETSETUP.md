@@ -1,4 +1,4 @@
-## GET SETUP
+## GET\_SETUP
 
 Obtains the driver’s setup information.
 

@@ -1,4 +1,4 @@
-## PUMP MODE CHANGED
+## PUMP\_MODE\_CHANGED
 
 Sent to the proxy to indicate that the pump mode has changed.
 

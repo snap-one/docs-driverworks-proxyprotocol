@@ -1,4 +1,4 @@
-## SET SPA PUMP MODE
+## SET\_SPA\_PUMP\_MODE
 
 Received from the proxy when spa pump mode has been changed.
 

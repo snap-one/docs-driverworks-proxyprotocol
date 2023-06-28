@@ -1,4 +1,4 @@
-## POOL PUMPMODES LIST CHANGED
+## POOL\_PUMPMODES\_ LIST\_CHANGED
 
 Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator
 

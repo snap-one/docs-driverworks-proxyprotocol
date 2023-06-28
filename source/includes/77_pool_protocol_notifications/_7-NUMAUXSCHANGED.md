@@ -1,4 +1,4 @@
-## NUM AUXS CHANGED
+## NUM\_AUXS\_CHANGED
 
 Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator
 

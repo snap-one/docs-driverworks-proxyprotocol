@@ -1,4 +1,4 @@
-## AIR TEMP CHANGED
+## AIR\_TEMP\_CHANGED
 
 Sent to the proxy to indicate that the air temperature has changed
 

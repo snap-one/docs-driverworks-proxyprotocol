@@ -1,4 +1,4 @@
-## SET SPA HEAT MODE
+## SET\_SPA\_HEAT\_MODE
 
 Received from the proxy when spa heat mode been changed.
 

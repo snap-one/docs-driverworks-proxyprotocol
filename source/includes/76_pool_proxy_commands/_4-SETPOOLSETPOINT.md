@@ -1,4 +1,4 @@
-## SET POOL SETPOINT
+## SET\_POOL\_SETPOINT
 
 Received from the proxy when pool temperature etpoint has been changed.
 

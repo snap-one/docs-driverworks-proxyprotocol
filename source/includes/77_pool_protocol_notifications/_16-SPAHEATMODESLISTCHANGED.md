@@ -1,4 +1,4 @@
-## SPA HEATMODES LIST CHANGED
+## SPA\_HEATMODES\_LIST\_CHANGED
 
 This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa heat modes has changed.
 
