@@ -1,4 +1,4 @@
-## ICON CHANGED
+## ICON\_CHANGED
 
 Notification sent to the proxy to change the driver's icon.
 

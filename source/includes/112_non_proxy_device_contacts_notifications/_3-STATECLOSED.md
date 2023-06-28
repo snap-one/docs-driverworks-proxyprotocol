@@ -1,4 +1,4 @@
-## STATE CLOSED
+## STATE\_CLOSED
 
 Contact remains in the closed state.
 

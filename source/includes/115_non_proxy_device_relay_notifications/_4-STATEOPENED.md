@@ -1,4 +1,4 @@
-## STATE OPENED
+## STATE\_OPENED
 
 Relay remains in the open state. Does not indicate a change in state.
 
