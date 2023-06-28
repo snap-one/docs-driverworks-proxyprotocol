@@ -1,4 +1,4 @@
-## ADD USER
+## ADD\_USER
 
 Adds a user.
 

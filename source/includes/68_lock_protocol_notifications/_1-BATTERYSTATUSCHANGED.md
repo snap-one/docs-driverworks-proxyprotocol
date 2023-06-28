@@ -1,4 +1,4 @@
-## BATTERY STATUS CHANGED
+## BATTERY\_STATUS\_CHANGED
 
 Sent when battery status changed.
 

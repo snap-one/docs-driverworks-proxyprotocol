@@ -1,4 +1,4 @@
-## SET CUSTOM SETTINGS
+## SET\_CUSTOM\_SETTINGS
 
 This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being sent from the Protocol to the Proxy.
 

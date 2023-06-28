@@ -1,4 +1,4 @@
-## USER ADDED
+## USER\_ADDED
 
 Sent when a user is added.
 

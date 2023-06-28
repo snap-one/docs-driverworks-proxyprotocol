@@ -1,4 +1,4 @@
-## USER CHANGED
+## USER\_CHANGED
 
 Sent when a user setting is changed.
 

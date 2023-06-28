@@ -1,4 +1,4 @@
-## SET AUTO LOCK SECONDS
+## SET\_AUTO\_LOCK\_SECONDS
 
 Set the number of seconds to wait before locking automatically after unlocked. A value of 0 means do not auto lock. Range determined by capabilities.
 

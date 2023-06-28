@@ -1,4 +1,4 @@
-## REQUEST CUSTOM SETTINGS
+## REQUEST\_CUSTOM\_SETTINGS
 
 This command results in the Protocol Notification [`HISTORY`][1] being sent from the Protocol to the Proxy.
 

@@ -1,4 +1,4 @@
-## DELETE USER
+## DELETE\_USER
 
 Deletes a user.
 

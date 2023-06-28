@@ -1,6 +1,6 @@
-## REQUEST CAPABILITIES
+## REQUEST\_CAPABILITIES
 
-This command results in the Protocol Notification [`CAPABILITIESCHANGED`][1]\` being sent from the Protocol to the Proxy.
+This command results in the Protocol Notification [`CAPABILITIESCHANGED`][1]being sent from the Protocol to the Proxy.
 
 
 ### Signature

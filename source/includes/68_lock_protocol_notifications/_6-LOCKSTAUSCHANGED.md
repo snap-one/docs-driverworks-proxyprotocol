@@ -1,4 +1,4 @@
-## LOCK STATUS  CHANGED
+## LOCK\_STATUS\_CHANGED
 
 Sent in when a lock status changes for any reason.
 

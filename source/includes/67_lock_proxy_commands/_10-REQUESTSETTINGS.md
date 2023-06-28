@@ -1,4 +1,4 @@
-## REQUEST SETTINGS
+## REQUEST\_SETTINGS
 
 This command results in the Protocol Notification [`SETTINGS`][1] being sent from the Protocol to the Proxy.
 

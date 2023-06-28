@@ -1,4 +1,4 @@
-## USER DELETED
+## USER\_DELETED
 
 Sent when a user setting is deleted.
 

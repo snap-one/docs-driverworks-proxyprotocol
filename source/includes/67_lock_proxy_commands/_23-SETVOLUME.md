@@ -1,4 +1,4 @@
-## SET VOLUME
+## SET\_VOLUME
 
 Sets the lock’s volume.
 

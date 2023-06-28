@@ -1,4 +1,4 @@
-## EDIT USER
+## EDIT\_USER
 
 Edits the user's schedule and status.
 

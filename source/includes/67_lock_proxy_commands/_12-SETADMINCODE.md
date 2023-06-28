@@ -1,4 +1,4 @@
-## SET ADMN CODE
+## SET\_ADMN\_CODE
 
 Set the lock's administrator code.
 

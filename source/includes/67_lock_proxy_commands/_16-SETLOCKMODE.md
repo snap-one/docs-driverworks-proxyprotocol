@@ -1,4 +1,4 @@
-## SET LOCK MODE
+## SET\_LOCK\_MODE
 
 Set the lock’s mode. The supported modes are determined by capabilities.
 

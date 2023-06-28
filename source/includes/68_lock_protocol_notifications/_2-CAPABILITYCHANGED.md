@@ -1,4 +1,4 @@
-## CAPABILITY CHANGED
+## CAPABILITY\_CHANGED
 
 Sent when a capability changes; or when requested by the protocol driver command `REQUEST_CAPABILITES`, and a capability has changed from what is defined in the driver capabilities XML
 

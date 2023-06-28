@@ -1,4 +1,4 @@
-## SET ONE TOUCH LOCKING
+## SET\_ONE\_TOUCH\_LOCKING
 
 Set whether or not keypad activation will extend bolt if unlocked.
 

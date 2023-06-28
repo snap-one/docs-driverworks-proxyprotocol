@@ -1,4 +1,4 @@
-## SET LANGUAGE
+## SET\_LANGUAGE
 
 Set the lock's language. Values determined by capabilities.
 

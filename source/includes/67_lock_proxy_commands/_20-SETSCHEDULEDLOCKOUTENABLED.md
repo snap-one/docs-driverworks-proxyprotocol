@@ -1,4 +1,4 @@
-## SET SCHEDULED LOCKOUT ENABLED
+## SET\_SCHEDULED\_LOCKOUT\_ENABLED
 
 Disable or enable all user passcode access.
 

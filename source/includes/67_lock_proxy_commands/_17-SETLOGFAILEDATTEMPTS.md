@@ -1,4 +1,4 @@
-## SET LOG FAILED ATTEMPTS
+## SET\_LOG\_FAILED\_ATTEMPTS
 
 For lock’s that have internal log storage, sets whether or not to log failed attempts.
 

@@ -1,4 +1,4 @@
-## CUSTOM SETTINGS
+## CUSTOM\_SETTINGS
 
 Sent in response to the command `REQUEST_CUSTOM_SETTINGS`.
 

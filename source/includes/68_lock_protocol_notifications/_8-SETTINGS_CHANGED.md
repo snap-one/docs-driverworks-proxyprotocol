@@ -1,4 +1,4 @@
-## SETTINGS CHANGED
+## SETTINGS\_CHANGED
 
 Sent when a setting changes.
 

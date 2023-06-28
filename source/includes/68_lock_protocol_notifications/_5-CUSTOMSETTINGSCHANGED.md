@@ -1,4 +1,4 @@
-## CUSTOM SETTINGS  CHANGED
+## CUSTOM\_SETTINGS\_CHANGED
 
 Sent in when a custom setting changes
 
