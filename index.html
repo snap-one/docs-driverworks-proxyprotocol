@@ -3705,25 +3705,25 @@
             <a href="#xm-tuner-protocol-notifications" class="toc-h1 toc-link" data-title="XM Tuner Protocol Notifications">XM Tuner Protocol Notifications</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-available-channel-map" class="toc-h2 toc-link" data-title="AVAILABLE CHANNEL MAP">AVAILABLE CHANNEL MAP</a>
+                    <a href="#xm-tuner-protocol-notifications-available_channel_map" class="toc-h2 toc-link" data-title="AVAILABLE_CHANNEL_MAP">AVAILABLE_CHANNEL_MAP</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-signal-strength" class="toc-h2 toc-link" data-title="SIGNAL STRENGTH">SIGNAL STRENGTH</a>
+                    <a href="#xm-tuner-protocol-notifications-signal_strength" class="toc-h2 toc-link" data-title="SIGNAL_STRENGTH">SIGNAL_STRENGTH</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-song-info-changed" class="toc-h2 toc-link" data-title="SONG INFO CHANGED">SONG INFO CHANGED</a>
+                    <a href="#xm-tuner-protocol-notifications-song_info_changed" class="toc-h2 toc-link" data-title="SONG_INFO_CHANGED">SONG_INFO_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-xmards-id" class="toc-h2 toc-link" data-title="XMARDS ID">XMARDS ID</a>
+                    <a href="#xm-tuner-protocol-notifications-xmards_id" class="toc-h2 toc-link" data-title="XMARDS_ID">XMARDS_ID</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-xm-category-name-change" class="toc-h2 toc-link" data-title="XM CATEGORY NAME CHANGE">XM CATEGORY NAME CHANGE</a>
+                    <a href="#xm-tuner-protocol-notifications-xm_category_name_change" class="toc-h2 toc-link" data-title="XM_CATEGORY_NAME_CHANGE">XM_CATEGORY_NAME_CHANGE</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-xm-get-available-channels" class="toc-h2 toc-link" data-title="XM GET AVAILABLE CHANNELS">XM GET AVAILABLE CHANNELS</a>
+                    <a href="#xm-tuner-protocol-notifications-xm_get_available_channels" class="toc-h2 toc-link" data-title="XM_GET_AVAILABLE_CHANNELS">XM_GET_AVAILABLE_CHANNELS</a>
                   </li>
                   <li>
-                    <a href="#xm-tuner-protocol-notifications-xm-get-channel-details-changed" class="toc-h2 toc-link" data-title="XM GET CHANNEL DETAILS CHANGED">XM GET CHANNEL DETAILS CHANGED</a>
+                    <a href="#xm-tuner-protocol-notifications-xm_get_channel_details_changed" class="toc-h2 toc-link" data-title="XM_GET_CHANNEL_DETAILS_CHANGED">XM_GET_CHANNEL_DETAILS_CHANGED</a>
                   </li>
               </ul>
           </li>
@@ -3775,7 +3775,7 @@
                     <a href="#dynamic-transport-controls-in-navigator-transport-controls-and-driver-xml" class="toc-h2 toc-link" data-title="Transport Controls and Driver XML">Transport Controls and Driver XML</a>
                   </li>
                   <li>
-                    <a href="#dynamic-transport-controls-in-navigator-button-bar-and-driver-xml" class="toc-h2 toc-link" data-title="Button Bar and Driver XML">Button Bar and Driver XML</a>
+                    <a href="#dynamic-transport-controls-in-navigator-button-_bar-and-driver-xml" class="toc-h2 toc-link" data-title="button _bar and Driver XML">button _bar and Driver XML</a>
                   </li>
                   <li>
                     <a href="#dynamic-transport-controls-in-navigator-media-dashboard-and-driver-xml" class="toc-h2 toc-link" data-title="Media Dashboard and Driver XML">Media Dashboard and Driver XML</a>
@@ -28759,11 +28759,11 @@ OUTPUT             0
 <p><code>None</code></p>
 <h1 id='xm-tuner-protocol-notifications'>XM Tuner Protocol Notifications</h1>
 
-<h2 id='xm-tuner-protocol-notifications-available-channel-map'>AVAILABLE CHANNEL MAP</h2>
+<h2 id='xm-tuner-protocol-notifications-available_channel_map'>AVAILABLE_CHANNEL_MAP</h2>
 
 <p>Displays current artist.</p>
 
-<h3 id='xm-tuner-protocol-notifications-available-channel-map-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-available_channel_map-signature'>Signature</h3>
 
 <p><code>AVAILBLE_CHANNEL_MAP ()</code></p>
 
@@ -28783,29 +28783,25 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-available-channel-map-example'>Example</h3>
-
-<p><code>00000000000000000000000000000001 indicates that channel 0 (or 128) is the only channel available.</code>
-    <code>00000000000000000000000000000002 indicates that channel 1 (or 129) is the only channel available.</code>
-    <code>00000000000000000000000000000003 indicates that channels 0 &amp; 1 (or 128 &amp; 129) are the only channels available.</code>
-    <code>00000000000000000000000000000004 indicates that channel 2 (or 130) is the only channel available.</code>
-    <code>00000000000000000000000000000005 indicates that channels 0 &amp; 2 (or 128 &amp; 130) are the only channels available.</code>
-    <code>00000000000000000000000000000006 indicates that channels 1 &amp; 2 (or 129 &amp; 130) are the only channels available.</code>
-    <code>00000000000000000000000000000007 indicates that channels 0, 1 &amp; 2 (or 128, 129 &amp; 130) are the only channels available.</code>
-    <code>00000000000000000000000000000008 indicates that channel 3 (or 131) is the only channel available.</code>
-    <code>00000000000000000000000000000009 indicates that channels 0 &amp; 3 (or 128 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000A indicates that channels 1 &amp; 3 (or 129 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000B indicates that channels 0, 1 &amp; 3 (or 128, 129 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000C indicates that channels 2 &amp; 3 (or 130 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000D indicates that channels 0, 2 &amp; 3 (or 128, 130 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000E indicates that channels 1, 2 &amp; 3 (or 129, 130 &amp; 131) are the only channels available.</code>
-    <code>0000000000000000000000000000000F indicates that channels 0, 1, 2 &amp; 3 (or 128, 129, 130 &amp; 131) are the only channels available.</code></p>
-
-<h2 id='xm-tuner-protocol-notifications-signal-strength'>SIGNAL STRENGTH</h2>
-
+<h3 id='xm-tuner-protocol-notifications-available_channel_map-example'>Example</h3><div class="highlight"><pre class="highlight plaintext"><code>`00000000000000000000000000000001 indicates that channel 0 (or 128) is the only channel available.`
+`00000000000000000000000000000002 indicates that channel 1 (or 129) is the only channel available.`
+`00000000000000000000000000000003 indicates that channels 0 &amp; 1 (or 128 &amp; 129) are the only channels available.`
+`00000000000000000000000000000004 indicates that channel 2 (or 130) is the only channel available.`
+`00000000000000000000000000000005 indicates that channels 0 &amp; 2 (or 128 &amp; 130) are the only channels available.`
+`00000000000000000000000000000006 indicates that channels 1 &amp; 2 (or 129 &amp; 130) are the only channels available.`
+`00000000000000000000000000000007 indicates that channels 0, 1 &amp; 2 (or 128, 129 &amp; 130) are the only channels available.`
+`00000000000000000000000000000008 indicates that channel 3 (or 131) is the only channel available.`
+`00000000000000000000000000000009 indicates that channels 0 &amp; 3 (or 128 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000A indicates that channels 1 &amp; 3 (or 129 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000B indicates that channels 0, 1 &amp; 3 (or 128, 129 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000C indicates that channels 2 &amp; 3 (or 130 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000D indicates that channels 0, 2 &amp; 3 (or 128, 130 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000E indicates that channels 1, 2 &amp; 3 (or 129, 130 &amp; 131) are the only channels available.`
+`0000000000000000000000000000000F indicates that channels 0, 1, 2 &amp; 3 (or 128, 129, 130 &amp; 131) are the only channels available.`
+</code></pre></div>
+<h2 id='xm-tuner-protocol-notifications-signal_strength'>SIGNAL_STRENGTH</h2>
 <p>Displays strength of signal.</p>
-
-<h3 id='xm-tuner-protocol-notifications-signal-strength-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-signal_strength-signature'>Signature</h3>
 
 <p><code>SIGNAL_STRENGTH ()</code></p>
 
@@ -28821,15 +28817,15 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-signal-strength-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-signal_strength-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h2 id='xm-tuner-protocol-notifications-song-info-changed'>SONG INFO CHANGED</h2>
+<h2 id='xm-tuner-protocol-notifications-song_info_changed'>SONG_INFO_CHANGED</h2>
 
 <p>Displays current song information.</p>
 
-<h3 id='xm-tuner-protocol-notifications-song-info-changed-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-song_info_changed-signature'>Signature</h3>
 
 <p><code>SONG_INFO_CHANGED ()</code></p>
 
@@ -28845,15 +28841,15 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-song-info-changed-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-song_info_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h2 id='xm-tuner-protocol-notifications-xmards-id'>XMARDS ID</h2>
+<h2 id='xm-tuner-protocol-notifications-xmards_id'>XMARDS_ID</h2>
 
 <p>Satellite Digital Audio Radio Service</p>
 
-<h3 id='xm-tuner-protocol-notifications-xmards-id-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xmards_id-signature'>Signature</h3>
 
 <p><code>XMARDS_ID ()</code></p>
 
@@ -28869,15 +28865,15 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-xmards-id-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-xmards_id-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h2 id='xm-tuner-protocol-notifications-xm-category-name-change'>XM CATEGORY NAME CHANGE</h2>
+<h2 id='xm-tuner-protocol-notifications-xm_category_name_change'>XM_CATEGORY_NAME_CHANGE</h2>
 
 <p>Displays current station name.</p>
 
-<h3 id='xm-tuner-protocol-notifications-xm-category-name-change-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_category_name_change-signature'>Signature</h3>
 
 <p><code>XM_CATEGORY_NAME_CHANGE ()</code></p>
 
@@ -28897,15 +28893,15 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-xm-category-name-change-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_category_name_change-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h2 id='xm-tuner-protocol-notifications-xm-get-available-channels'>XM GET AVAILABLE CHANNELS</h2>
+<h2 id='xm-tuner-protocol-notifications-xm_get_available_channels'>XM_GET_AVAILABLE_CHANNELS</h2>
 
 <p>Displays available XM channels.</p>
 
-<h3 id='xm-tuner-protocol-notifications-xm-get-available-channels-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_available_channels-signature'>Signature</h3>
 
 <p><code>XM_GET_AVAILABLE_CHANNELS ()</code></p>
 
@@ -28921,33 +28917,29 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-xm-get-available-channels-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_available_channels-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='xm-tuner-protocol-notifications-xm-get-available-channels-example'>Example</h3>
-
-<p>00000000000000000000000000000001 indicates that channel 0 (or 128) is the only channel available.
-    00000000000000000000000000000002 indicates that channel 1 (or 129) is the only channel available.
-    00000000000000000000000000000003 indicates that channels 0 &amp; 1 (or 128 &amp; 129) are the only channels available.
-    00000000000000000000000000000004 indicates that channel 2 (or 130) is the only channel available.
-    00000000000000000000000000000005 indicates that channels 0 &amp; 2 (or 128 &amp; 130) are the only channels available.
-    00000000000000000000000000000006 indicates that channels 1 &amp; 2 (or 129 &amp; 130) are the only channels available.
-    00000000000000000000000000000007 indicates that channels 0, 1 &amp; 2 (or 128, 129 &amp; 130) are the only channels available.
-    00000000000000000000000000000008 indicates that channel 3 (or 131) is the only channel available.
-    00000000000000000000000000000009 indicates that channels 0 &amp; 3 (or 128 &amp; 131) are the only channels available.
-    0000000000000000000000000000000A indicates that channels 1 &amp; 3 (or 129 &amp; 131) are the only channels available.
-    0000000000000000000000000000000B indicates that channels 0, 1 &amp; 3 (or 128, 129 &amp; 131) are the only channels available.
-    0000000000000000000000000000000C indicates that channels 2 &amp; 3 (or 130 &amp; 131) are the only channels available.
-    0000000000000000000000000000000D indicates that channels 0, 2 &amp; 3 (or 128, 130 &amp; 131) are the only channels available.
-    0000000000000000000000000000000E indicates that channels 1, 2 &amp; 3 (or 129, 130 &amp; 131) are the only channels available.
-    0000000000000000000000000000000F indicates that channels 0, 1, 2 &amp; 3 (or 128, 129, 130 &amp; 131) are the only channels available.</p>
-
-<h2 id='xm-tuner-protocol-notifications-xm-get-channel-details-changed'>XM GET CHANNEL DETAILS CHANGED</h2>
-
+<h3 id='xm-tuner-protocol-notifications-xm_get_available_channels-example'>Example</h3><div class="highlight"><pre class="highlight plaintext"><code>00000000000000000000000000000001 indicates that channel 0 (or 128) is the only channel available.
+00000000000000000000000000000002 indicates that channel 1 (or 129) is the only channel available.
+00000000000000000000000000000003 indicates that channels 0 &amp; 1 (or 128 &amp; 129) are the only channels available.
+00000000000000000000000000000004 indicates that channel 2 (or 130) is the only channel available.
+00000000000000000000000000000005 indicates that channels 0 &amp; 2 (or 128 &amp; 130) are the only channels available.
+00000000000000000000000000000006 indicates that channels 1 &amp; 2 (or 129 &amp; 130) are the only channels available.
+00000000000000000000000000000007 indicates that channels 0, 1 &amp; 2 (or 128, 129 &amp; 130) are the only channels available.
+00000000000000000000000000000008 indicates that channel 3 (or 131) is the only channel available.
+00000000000000000000000000000009 indicates that channels 0 &amp; 3 (or 128 &amp; 131) are the only channels available.
+0000000000000000000000000000000A indicates that channels 1 &amp; 3 (or 129 &amp; 131) are the only channels available.
+0000000000000000000000000000000B indicates that channels 0, 1 &amp; 3 (or 128, 129 &amp; 131) are the only channels available.
+0000000000000000000000000000000C indicates that channels 2 &amp; 3 (or 130 &amp; 131) are the only channels available.
+0000000000000000000000000000000D indicates that channels 0, 2 &amp; 3 (or 128, 130 &amp; 131) are the only channels available.
+0000000000000000000000000000000E indicates that channels 1, 2 &amp; 3 (or 129, 130 &amp; 131) are the only channels available.
+0000000000000000000000000000000F indicates that channels 0, 1, 2 &amp; 3 (or 128, 129, 130 &amp; 131) are the only channels available.
+</code></pre></div>
+<h2 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed'>XM_GET_CHANNEL_DETAILS_CHANGED</h2>
 <p>Displays current channel details.</p>
-
-<h3 id='xm-tuner-protocol-notifications-xm-get-channel-details-changed-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed-signature'>Signature</h3>
 
 <p><code>XM_GET_CHANNEL_DETAILS_CHANGED ()</code></p>
 
@@ -28967,7 +28959,7 @@ OUTPUT             0
 </tr>
 </tbody></table>
 
-<h3 id='xm-tuner-protocol-notifications-xm-get-channel-details-changed-returns'>Returns</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 <h1 id='audio-output-bindings-and-proxy-events'>Audio Output Bindings and Proxy Events</h1>
@@ -29240,7 +29232,7 @@ OUTPUT             0
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 
-<h2 id='dynamic-transport-controls-in-navigator-button-bar-and-driver-xml'>Button Bar and Driver XML</h2>
+<h2 id='dynamic-transport-controls-in-navigator-button-_bar-and-driver-xml'>button _bar and Driver XML</h2>
 
 <p>To designate which transport control buttons appear on the Button Bar, the transports capabilities XML needs to include a  <code>&lt;button_bar&gt;&lt;/button_bar</code> tag. </p>
 
