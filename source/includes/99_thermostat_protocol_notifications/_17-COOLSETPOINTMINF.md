@@ -1,4 +1,4 @@
-## COOL SETPOINT MIN F
+## COOL\_SETPOINT\_MIN\_F
 
 
 ### Signature
@@ -13,7 +13,7 @@
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

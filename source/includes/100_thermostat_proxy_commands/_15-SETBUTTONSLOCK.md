@@ -1,4 +1,4 @@
-## SET BUTTONS LOCK
+## SET\_BUTTONS\_LOCK
 
 Used to indicate if the buttons on the thermostat should be locked out from controlling the temperature.
 

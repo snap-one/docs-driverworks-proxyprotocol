@@ -1,7 +1,7 @@
 ## TEMPERATURE AND OUTDOOR VALUE CONNECTION CLASS COMMANDS
 
 
-## GET SENSOR VALUE
+## GET\_SENSOR\_VALUE
 Used to require remote temperature sensor data via the control input connection binding. Note that command handling is not implemented in some drivers with a temperature control output connection. Sensor data cannot be be requested from these drivers.
 
 ### Signature
@@ -15,7 +15,7 @@ Used to require remote temperature sensor data via the control input connection 
 
 
 
-## VALUE INITIALIZED
+## VALUE\_INITIALIZED
 The value has been initialized. OnBindingChanged will cause this command to be sent automatically when the sending device goes Online.
 
 ### Signature
@@ -30,7 +30,7 @@ The value has been initialized. OnBindingChanged will cause this command to be s
 
 
 
-## VALUE CHANGED
+## VALUE\_CHANGED
 The value has changed.
 
 ### Signature
@@ -46,7 +46,7 @@ The value has changed.
 
 
 
-## VALUE UNAVAILABLE
+## VALUE\_UNAVAILABLE
 The value is possibly no longer accurate. OnBindingChanged, device went Offline, etc
 
 ### Signature

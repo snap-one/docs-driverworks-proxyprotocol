@@ -1,4 +1,4 @@
-## HUMIDITY SETPOINT DEADBAND
+## HUMIDITY\_SETPOINT\_DEADBAND
 
  What the deadband between humidify and dehumidify is, will do the same thing as the `setpoint_humidity_deadband` capability.
 

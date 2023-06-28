@@ -1,4 +1,4 @@
-## HEATSETPOINT
+## HEAT\_SETPOINT\_CHANGED
 
 Notification that should be sent to the proxy when the heating setpoint has changed.
 

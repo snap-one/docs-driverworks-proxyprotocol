@@ -1,4 +1,4 @@
-## HVAC MODE CHANGED
+## HVAC\_MODE\_CHANGED
 
 Notification sent when the mode of the HVAC system has changed. Changes the variable `HVAC_MODE`.
 

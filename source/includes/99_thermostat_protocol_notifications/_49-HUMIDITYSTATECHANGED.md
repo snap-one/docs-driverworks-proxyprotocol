@@ -1,4 +1,4 @@
-## HUMIDITY STATE CHANGED
+## HUMIDITY\_STATE\_CHANGED
 
 State has changed on the thermostat. To UI comes through as `humidity_state`.
 

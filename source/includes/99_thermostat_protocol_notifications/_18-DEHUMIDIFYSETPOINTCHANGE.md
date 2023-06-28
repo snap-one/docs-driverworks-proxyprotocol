@@ -1,4 +1,4 @@
-## DEHUMIDIFY SETPOINT CHANGE
+## DEHUMIDIFY\_SETPOINT\_CHANGE
 
 The dehumidify setpoint has changed.
 
@@ -14,8 +14,8 @@ The dehumidify setpoint has changed.
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 
 

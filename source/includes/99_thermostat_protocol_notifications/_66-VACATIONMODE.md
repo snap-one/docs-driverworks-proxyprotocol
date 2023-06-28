@@ -1,4 +1,4 @@
-## VACATION MODE
+## VACATION\_MODE
 
 Notification that should be sent to the proxy when vacation mode is turned on or off.
 

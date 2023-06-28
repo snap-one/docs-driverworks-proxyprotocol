@@ -1,4 +1,4 @@
-## SINGLE SETPOINT MAX C
+## SINGLE\_SETPOINT\_MAX\_C
 
 Maximum Setpoint. Will do the same thing as the `setpoint_single_max` capability.
 

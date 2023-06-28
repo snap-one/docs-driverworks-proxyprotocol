@@ -1,4 +1,4 @@
-## SCHEDULE ENTRY CHANGED
+## SCHEDULE\_ENTRY\_CHANGED
 
 Notification that should be sent to the proxy when a change is made to the HVAC schedules. Every entry that is changed will send one protocol notification.
 

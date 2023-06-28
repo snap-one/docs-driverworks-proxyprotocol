@@ -1,4 +1,4 @@
-## BUTTONS LOCK CHANGED
+## BUTTONS\_LOCK\_CHANGED
 
 Used to inform the proxy if the buttons on the device should be locked or not.
 

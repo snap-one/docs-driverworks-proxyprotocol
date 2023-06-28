@@ -1,4 +1,4 @@
-## HAS EXTRAS
+## HAS\_EXTRAS
 
 Boolean to enable/disable [`has_extras capability`][1].  If the device supports this feature, default is false
 Updates the XML that will be consumed by the Navigator UI’s.

@@ -1,4 +1,4 @@
-## SINGLE SETPOINT CHANGED
+## SINGLE\_SETPOINT\_CHANGED
 
 Used to inform the proxy that the single setpoint has changed. This notification changes variables `SINGLE_SETPOINT_F` and `SINGLE_SETPOINT_C`. It fires the event `Single Setpoint Changed`.
 

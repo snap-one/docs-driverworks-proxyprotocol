@@ -1,4 +1,4 @@
-## COOL SETPOINT MAX F
+## COOL\_SETPOINT\_MAX\_F
 
 
 ### Signature
@@ -13,7 +13,7 @@
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

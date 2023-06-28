@@ -1,4 +1,4 @@
-## HEAT SETPOINT MIN F
+## HEAT\_SETPOINT\_MIN\_F
 
 Minimum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_min`][1] capability.
 

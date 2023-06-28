@@ -1,4 +1,4 @@
-## COOL SETPOINT CHANGED
+## COOL\_SETPOINT\_CHANGED
 
 Notification that should be sent to the proxy when the cooling setpoint has changed.
 

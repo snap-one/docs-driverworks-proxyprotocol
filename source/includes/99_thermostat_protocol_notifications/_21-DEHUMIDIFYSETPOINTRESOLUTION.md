@@ -1,4 +1,4 @@
-## DEHUMIDIFY SETPOINT RESOLUTION
+## DEHUMIDIFY\_SETPOINT \_RESOLUTION
 
 The  dehumidify setpoint resolution has changed.
 

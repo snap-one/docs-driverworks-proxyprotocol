@@ -1,4 +1,4 @@
-## OUTDOOR TEMPERATURE CHANGED
+## OUTDOOR\_TEMPERATURE\_CHANGED
 
 Used to inform the proxy that the outdoor temperature has changed.
 

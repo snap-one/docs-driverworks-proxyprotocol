@@ -1,4 +1,4 @@
-## PRESET EVENT DELETE
+## PRESET\_EVENT\_DELETE
 
 Deletes a Preset Schedule Preset if the protocol driver has the `can_preset_schedule` capability.
 

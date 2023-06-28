@@ -1,4 +1,4 @@
-## ALLOWED FAN MODES CHANGED
+## ALLOWED\_FAN\_MODES \_CHANGED
 
 Changes the value of the variable `FAN_MODES_LIST`.
 

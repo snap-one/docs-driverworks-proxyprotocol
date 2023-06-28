@@ -1,4 +1,4 @@
-## HUMIDITY SETPOINT RESOLUTION
+## HUMIDITY\_SETPOINT\_RESOLUTION
 
 What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoint_humidify_resolution`][1] capability.
 

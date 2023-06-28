@@ -1,4 +1,4 @@
-## HOLD MODE CHANGED
+## HOLD\_MODE\_CHANGED
 
 Notification that should be sent to the proxy when hold mode has changed. Changes the variables [`HOLD_MODE`][1], [`ANA_HOLDMODE`][2]. Fires event [`HOLD_MODE_CHANGED`][3].
 

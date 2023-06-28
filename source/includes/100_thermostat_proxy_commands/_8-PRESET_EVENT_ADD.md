@@ -1,4 +1,4 @@
-## PRESET EVENT ADD
+## PRESET\_EVENT\_ADD
 
 Adds a Preset Schedule Preset Event to be run at the specified day/time (If protocol driver has the `can_preset_schedule` capability.
 

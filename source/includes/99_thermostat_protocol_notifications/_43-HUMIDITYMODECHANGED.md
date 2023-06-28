@@ -1,4 +1,4 @@
-## HUMIDITY MODE CHANGED
+## HUMIDITY\_MODE\_CHANGED
 
 MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). To UI comes through as `humidity_mode`
 

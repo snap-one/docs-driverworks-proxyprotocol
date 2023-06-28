@@ -1,4 +1,4 @@
-## HUMIDIFY SETPOINT CHANGED
+## HUMIDIFY\_SETPOINT\_CHANGED
 
 The humidity setpoint has changed. To UI comes through as `humidify_setpoint`
 

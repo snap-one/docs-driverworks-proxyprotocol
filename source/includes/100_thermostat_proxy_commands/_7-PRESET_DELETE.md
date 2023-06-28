@@ -1,4 +1,4 @@
-## PRESET DELETE
+## PRESET\_DELETE
 
 Adds a new Preset Schedule Preset (If protocol driver has the `can_preset_schedule` capability)
 

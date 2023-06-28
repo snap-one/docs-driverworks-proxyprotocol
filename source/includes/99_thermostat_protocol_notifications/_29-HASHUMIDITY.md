@@ -1,4 +1,4 @@
-## HAS HUMIDITY
+## HAS\_HUMIDITY
 
 Boolean to enable/disable [`has_humidity`][1] capability. If the device supports this feature, default is false
 

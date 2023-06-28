@@ -1,4 +1,4 @@
-## HEAT SETPOINT MAX C
+## HEAT\_SETPOINT\_MAX\_C
 
 Maximum Setpoint, int 0-100 that will do the same thing as the [`setpoint_heat_max`][1] capability.
 

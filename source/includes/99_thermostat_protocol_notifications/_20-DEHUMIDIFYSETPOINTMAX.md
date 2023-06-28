@@ -1,4 +1,4 @@
-## DEHUMIDIFY SETPOINT MAX
+## DEHUMIDIFY\_SETPOINT\_MAX
 
 The maximun dehumidify setpoint has changed.
 
@@ -14,7 +14,7 @@ The maximun dehumidify setpoint has changed.
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

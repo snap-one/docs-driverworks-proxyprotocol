@@ -1,4 +1,4 @@
-## HAS OUTDOOR TEMPERATURE
+## HAS\_OUTDOOR\_TEMPERATURE
 
 Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the device supports this feature, default is false
 

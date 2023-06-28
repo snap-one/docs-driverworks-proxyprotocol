@@ -1,4 +1,4 @@
-## MESSAGE CHANGED
+## MESSAGE\_CHANGED
 
 Update the text message displayed in the UI.  Multiple lines can be specified by using \n to separate lines, although UI's will display each line in its own way. Could be a paragraph, ticker scrolling, cycling, etc. To UI comes through as `message`.
 

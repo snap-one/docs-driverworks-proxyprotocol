@@ -1,4 +1,4 @@
-## CAN HUMIDIFY
+## CAN\_HUMIDIFY
 
 Boolean to enable/disable `can_humidify` capability. If the device supports this feature, default is False.
 

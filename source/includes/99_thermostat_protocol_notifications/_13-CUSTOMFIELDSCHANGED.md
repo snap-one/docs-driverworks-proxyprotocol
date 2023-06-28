@@ -1,4 +1,4 @@
-## CUSTOM FIELDS CHANGED
+## CUSTOM\_FIELDS\_CHANGED
 
 Update the template Custom Fields that UI's display for a new Preset Event.
 
@@ -16,8 +16,8 @@ Update the template Custom Fields that UI's display for a new Preset Event.
 
 ### Returns
 
-`None
-`
+\`None
+\`
 
 ### Example
 

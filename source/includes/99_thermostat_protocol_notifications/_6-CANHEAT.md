@@ -1,4 +1,4 @@
-## CAN HEAT
+## CAN\_HEAT
 
 Boolean to enable/disable `can_heat` capability. If the device supports this feature, default is False.
 

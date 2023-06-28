@@ -1,4 +1,4 @@
-## PRESET EVENT MODIFY
+## PRESET\_EVENT\_MODIFY
 
 Modifies an existing Preset Schedule Event (If protocol driver has the `can_preset_schedule` capability)
 

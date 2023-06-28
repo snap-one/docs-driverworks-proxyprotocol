@@ -1,4 +1,4 @@
-## HVAC STATE CHANGED
+## HVAC\_STATE\_CHANGED
 
 Notification that should be sent to the proxy when the HVAC state has changed. Changes the variable `HVAC_STATE`.
 

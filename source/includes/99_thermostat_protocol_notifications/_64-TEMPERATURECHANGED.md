@@ -1,4 +1,4 @@
-## TEMPERATURE CHANGED
+## TEMPERATURE\_CHANGED
 
 Notification that should be sent to the proxy when the temperature has changed.
 

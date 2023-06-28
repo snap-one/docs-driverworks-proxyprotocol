@@ -1,4 +1,4 @@
-## VACATION SETPOINTS
+## VACATION\_SETPOINTS
 
 Notification that should be sent to the proxy when setpoints have been changed for vacation mode. This Notification is not to be used with Preset Scheduling. The capability  `has_vacation_mode` must be set to true for the vacation commands and notifications to be executed. 
 

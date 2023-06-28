@@ -1,4 +1,4 @@
-## SINGLE SETPOINT MIN C
+## SINGLE\_SETPOINT\_MIN\_C
 
 Minimum Setpoint. Will do the same thing as the `setpoint_single_min` capability.
 

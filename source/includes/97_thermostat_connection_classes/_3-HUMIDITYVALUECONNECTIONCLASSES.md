@@ -3,7 +3,7 @@
 Please see the Samples folder delivered in this SDK for Thermostat (V2) code examples.
 
 
-## VALUE INITIALIZED
+## VALUE\_INITIALIZED
 The value has been initialized. OnBindingChanged will cause this command to be sent automatically when the sending device goes Online.
 
 ### Signature
@@ -19,7 +19,7 @@ The value has been initialized. OnBindingChanged will cause this command to be s
 
 
 
-## VALUE CHANGED
+## VALUE\_CHANGED
 The value has changed.
 
 ### Signature
@@ -35,7 +35,7 @@ The value has changed.
 
 
 
-## VALUE UNAVAILABLE
+## VALUE\_UNAVAILABLE
 The value is possibly no longer accurate. OnBindingChanged, device went Offline, etc
 
 ### Signature

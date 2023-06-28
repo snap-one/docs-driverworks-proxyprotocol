@@ -1,4 +1,4 @@
-## HEATSETPOINT
+## HEAT\_SETPOINT
 
 Fires event: `Heat_Setpoint_Changed`.
 

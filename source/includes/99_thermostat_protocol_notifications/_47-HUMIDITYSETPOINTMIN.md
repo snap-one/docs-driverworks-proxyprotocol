@@ -1,4 +1,4 @@
-## HUMIDITY SETPOINT MIN
+## HUMIDITY\_SETPOINT\_MIN
 
 Minimum Setpoint, int 0-100 that will do the same thing as the `setpoint_humidify_min` capability, 
 

@@ -1,4 +1,4 @@
-## HAS HEAT PUMP
+## HAS\_HEAT\_PUMP
 
 Boolean to enable/disable `has_heat_pump`. If the device supports this feature, default is false.
 

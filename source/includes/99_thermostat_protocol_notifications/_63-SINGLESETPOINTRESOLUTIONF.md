@@ -1,4 +1,4 @@
-## SINGLE SETPOINT RESOLUTION F
+## SINGLE\_SETPOINT\_RESOLUTION\_F
 
 Indicates the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc.  Note that .2 is the lowest F resolution supported.
 
