@@ -29844,7 +29844,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </tr>
 <tr>
 <td>int</td>
-<td>LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
+<td>LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-protocol-notifications-stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
 </tr>
 </tbody></table>
 
@@ -29915,7 +29915,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>We strongly recommend driver developers do not set this to true unless they absolutely must. Inconsistencies will occur if there are a mix of different driver types in a blind group. This will cause blinds to move differently when that group is commanded to toggle.  </p>
 
-<p>The blind proxy has logic that treats toggle the same as lights in Control4.  If a blind is not moving but open any amount and someone presses toggle, the proxy will always send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the closed value.  This is due to the high possibility of someone entering a room and not knowing what direction the blind previously moved. However, if a blind is currently in motion and someone presses toggle, the proxy will send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-level-target"><code>SET_LEVEL_TARGET</code></a> of the opposite direction that the blind is moving. This has the most natural use of toggle for real-world scenarios.</p>
+<p>The blind proxy has logic that treats toggle the same as lights in Control4.  If a blind is not moving but open any amount and someone presses toggle, the proxy will always send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-proxy-commands-set_level_target"><code>SET_LEVEL_TARGET</code></a> of the closed value.  This is due to the high possibility of someone entering a room and not knowing what direction the blind previously moved. However, if a blind is currently in motion and someone presses toggle, the proxy will send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-proxy-commands-set_level_target"><code>SET_LEVEL_TARGET</code></a> of the opposite direction that the blind is moving. This has the most natural use of toggle for real-world scenarios.</p>
 
 <h3 id='blind-capabilities-driver_handles_toggle-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;driver_handles_toggle&gt;</span>true<span class="nt">&lt;/driver_handles_toggle&gt;</span>
@@ -29954,7 +29954,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='blind-capabilities-level_closed'>level_closed</h2>
-<p>Integer indicating the closed level of the control surface. Default to 0. This capability is only needed if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-level"><code>has_level</code></a> is set and the value is other than 0. The value passed in this capability should be less than the value for <code>level_open</code>.</p>
+<p>Integer indicating the closed level of the control surface. Default to 0. This capability is only needed if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-has_level"><code>has_level</code></a> is set and the value is other than 0. The value passed in this capability should be less than the value for <code>level_open</code>.</p>
 <h3 id='blind-capabilities-level_closed-signature'>Signature</h3>
 
 <p><code>&lt;level_closed&gt;&lt;/level_closed&gt;</code></p>
@@ -29986,7 +29986,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 <h2 id='blind-capabilities-level_discrete_control'>level_discrete_control</h2>
 <p>Boolean indicating if a control surface can be set by a COMMAND to something other than the level for closed and the level for open.</p>
 
-<p>If false, a UI will only send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed">level_closed</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-open">level_open</a> integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.</p>
+<p>If false, a UI will only send <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-level_closed">level_closed</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-level_open">level_open</a> integer values to the proxy/driver. However, a driver could still notify various levels interpolated based on movement and or duration/time in each direction or using another formula.</p>
 
 <p>If true, the driver should support all level values in the level range. This could be discrete percentages or even include using level values of 1,2,3,... to execute presets.  However, the min (0) and max (X) should always be programmed for close and open levels respectively.</p>
 <h3 id='blind-capabilities-level_discrete_control-signature'>Signature</h3>
@@ -30010,7 +30010,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>This gives the full close-open-close range of 0 to 10.  </p>
 
-<p>It should be noted that a generic &quot;Close&quot; UI or Composer Programming commands will send the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed"><code>level_closed</code></a> value for &quot;Close&quot;.  No default value exists for this capability and drivers should not include <code>level_closed_secondary</code> if a secondary closed position does not exist.</p>
+<p>It should be noted that a generic &quot;Close&quot; UI or Composer Programming commands will send the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-level_closed"><code>level_closed</code></a> value for &quot;Close&quot;.  No default value exists for this capability and drivers should not include <code>level_closed_secondary</code> if a secondary closed position does not exist.</p>
 <h3 id='blind-capabilities-level_closed_secondary-signature'>Signature</h3>
 
 <p><code>&lt;level_closed_secondary&gt;&lt;/level_closed_secondary&gt;</code></p>
@@ -30814,7 +30814,7 @@ or
 
 <h3 id='camera-proxy-commands-set_authentication_type-usage-note'>Usage Note</h3>
 
-<p>Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for URL Interface API: <a href="https://snap-one.github.io/docs-driverworks-api/#post">POST</a> for Authentication information.</p>
+<p>Note that as of 2.5.3 only Basic Authentication is supported. See the DriverWorks API documentation for URL Interface API: <a href="https://snap-one.github.io/docs-driverworks-api/#url-interface-post">POST</a> for Authentication information.</p>
 
 <h2 id='camera-proxy-commands-set_username'>SET_USERNAME</h2>
 
@@ -31063,7 +31063,7 @@ or
 
 <h2 id='camera-protocol-notifications-address_changed'>ADDRESS_CHANGED</h2>
 
-<p>Notification that the camera&#39;s address has a changed. Sent from the API <a href="https://snap-one.github.io/docs-driverworks-api/#onnetworkbindingchanged">OnNetworkBindingChanged</a>.</p>
+<p>Notification that the camera&#39;s address has a changed. Sent from the API <a href="https://snap-one.github.io/docs-driverworks-api/#serial-and-network-interface-onnetworkbindingchanged">OnNetworkBindingChanged</a>.</p>
 
 <h3 id='camera-protocol-notifications-address_changed-signature'>Signature</h3>
 
@@ -31201,7 +31201,7 @@ or
 <span class="o">&lt;/</span><span class="n">dynamic_presets</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='camera-protocol-notifications-property_defaults'>PROPERTY_DEFAULTS</h2>
-<p>Notification sent from the protocol driver through <a href="https://snap-one.github.io/docs-driverworks-api/#ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
+<p>Notification sent from the protocol driver through <a href="https://snap-one.github.io/docs-driverworks-api/#miscellaneous-interface-ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
 <h3 id='camera-protocol-notifications-property_defaults-signature'>Signature</h3>
 
 <p><code>PROPERTY_DEFAULTS ()</code></p>
@@ -31326,7 +31326,7 @@ or
 
 <p>Allows for the setting of the desired aspect ratio for camera queries. Navigators use this value when sending a request to a camera.  Displayed on the Camera Driver&#39;s Properties page in Composer Pro.</p>
 
-<p>Populated by the defined:1  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#aspect-ratio"><code>aspect_ratios_capability</code></a>.</p>
+<p>Populated by the defined:1  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-aspect_ratio"><code>aspect_ratio capability</code></a>.</p>
 
 <h2 id='camera-properties-aspect-ratio-list'>ASPECT RATIO LIST</h2>
 
@@ -31852,7 +31852,7 @@ the  empty space but the order will not change.</p>
 </tr>
 </tbody></table>
 <h3 id='camera-proxy-extras-interface-library-extrasbutton-extrasbutton-makesetupxml'>ExtrasButton:makeSetupXml</h3>
-<p>Returns XML string that represents the button setup with all extraparameters</p>
+<p>Returns XML string that represents the button setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to
  GET_EXTRAS_SETUP Proxy message.</p>
@@ -31942,7 +31942,7 @@ the  empty space but the order will not change.</p>
 </tr>
 </tbody></table>
 <h3 id='camera-proxy-extras-interface-library-extrascheckbox-extrascheckbox-makesetupxml'>ExtrasCheckbox:makeSetupXml</h3>
-<p>Returns XML string that represents the button setup with all extraparameters</p>
+<p>Returns XML string that represents the button setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
 <h4 id='camera-proxy-extras-interface-library-extrascheckbox-extrascheckbox-makesetupxml-function-signature'>Function Signature:</h4>
@@ -32011,7 +32011,7 @@ the  empty space but the order will not change.</p>
 </tr>
 </tbody></table>
 <h3 id='camera-proxy-extras-interface-library-extrasicon-extrasicon-makesetupxml'>ExtrasIcon:makeSetupXml</h3>
-<p>Returns XML string that represents the button setup with all extraparameters</p>
+<p>Returns XML string that represents the button setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to
  GET_EXTRAS_SETUP Proxy message.</p>
@@ -32133,7 +32133,7 @@ the  empty space but the order will not change.</p>
 </tr>
 </tbody></table>
 <h3 id='camera-proxy-extras-interface-library-extraslist-extraslist-makesetupxml'>ExtrasList:makeSetupXml</h3>
-<p>Returns XML string that represents the list setup with all extraparameters</p>
+<p>Returns XML string that represents the list setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to GET_EXTRAS_SETUP Proxy message.</p>
 <h4 id='camera-proxy-extras-interface-library-extraslist-extraslist-makesetupxml-function-signature'>Function Signature:</h4>
@@ -32212,7 +32212,7 @@ the  empty space but the order will not change.</p>
 </tr>
 </tbody></table>
 <h3 id='camera-proxy-extras-interface-library-extrasnumber-extrasnumber-makesetupxml'>ExtrasNumber:makeSetupXml</h3>
-<p>Returns XML string that represents the button setup with all extraparameters</p>
+<p>Returns XML string that represents the button setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to
  GET_EXTRAS_SETUP Proxy message.</p>
@@ -32460,7 +32460,7 @@ the  empty space but the order will not change.</p>
 
 <h2 id='camera-proxy-extras-interface-library-extrasslider-makesetupxml'>ExtrasSlider:makeSetupXml</h2>
 
-<p>Returns XML string that represents the button setup with all extraparameters</p>
+<p>Returns XML string that represents the button setup with all extra parameters</p>
 
 <p>Makes XML that should be integrated in the response to
  GET_EXTRAS_SETUP Proxy message.</p>
@@ -33198,7 +33198,7 @@ It is strongly recommended to hide rather than remove objects that will be tempo
 
 <h4 id='dynamic-camera-streams-extras-library-use-case-examples-how-to-use-the-library-driver-support-for-dynamic-streams'>Driver Support for Dynamic Streams</h4>
 
-<p><em>See the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#related-apis">Related APIs</a> section below for detailed information regarding the functions discussed in this section.</em></p>
+<p><em>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams-related-apis">Related APIs</a> section below for detailed information regarding the functions discussed in this section.</em></p>
 
 <p>New camera drivers should implement the dynamic streams API to provide a list of streams that the Navigators can pick from. In order to support dynamic streams the driver should:</p>
 
@@ -33454,7 +33454,7 @@ or
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='camera-capabilities-aspect_ratio'>aspect_ratio</h2>
-<p>Comma-delimited list of possible aspect ratios that the camera supports. If this capabilities is not defined in the c4i/c4z file, it will default to ‘16x9,4x3’ for <code>aspect_ratios</code>.</p>
+<p>Comma-delimited list of possible aspect ratios that the camera supports. If this capabilities is not defined in the c4i/c4z file, it will default to ‘16x9,4x3’ for <code>aspect_ratio</code>.</p>
 <h3 id='camera-capabilities-aspect_ratio-signature'>Signature</h3>
 
 <p><code>&lt;aspect_ratio&gt;&lt;/aspect_ratio&gt;</code></p>
@@ -33561,7 +33561,7 @@ Defaults to false.</p>
 <h3 id='camera-capabilities-has_dynamic_presets-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(PROXY_BINDING, 'DYNAMIC_CAPABILITIES_CHANGED', { has_dynamic_presets = true }, 'NOTIFY')
 </code></pre></div>
 <h2 id='camera-capabilities-has_extras'>has_extras</h2>
-<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-dynamic_capability_changed"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 <h3 id='camera-capabilities-has_extras-signature'>Signature</h3>
 
 <p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></p>
