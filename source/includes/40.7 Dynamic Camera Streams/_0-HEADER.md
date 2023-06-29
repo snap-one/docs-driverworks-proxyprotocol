@@ -316,4 +316,4 @@ Yes
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.2-beta/#related-apis
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams-related-apis

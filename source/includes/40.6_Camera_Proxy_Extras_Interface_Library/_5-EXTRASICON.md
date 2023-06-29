@@ -34,7 +34,7 @@ This class represents an abstraction of the Extras Icon object. The class interf
 
 ### ExtrasIcon:makeSetupXml
 
- Returns XML string that represents the button setup with all extraparameters
+ Returns XML string that represents the button setup with all extra parameters
 
  Makes XML that should be integrated in the response to
  GET\_EXTRAS\_SETUP Proxy message.

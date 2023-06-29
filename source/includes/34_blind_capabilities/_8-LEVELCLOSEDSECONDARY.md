@@ -29,4 +29,4 @@ It should be noted that a generic "Close" UI or Composer Programming commands wi
 </capabilities>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#level-closed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-level_closed

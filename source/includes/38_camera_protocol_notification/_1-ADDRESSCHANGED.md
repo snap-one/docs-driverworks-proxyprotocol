@@ -17,4 +17,4 @@ Notification that the camera's address has a changed. Sent from the API [OnNetwo
 
 `None`
 
-[1]:	https://snap-one.github.io/docs-driverworks-api/#onnetworkbindingchanged
+[1]:	https://snap-one.github.io/docs-driverworks-api/#serial-and-network-interface-onnetworkbindingchanged

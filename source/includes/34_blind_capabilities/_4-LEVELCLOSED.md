@@ -16,4 +16,4 @@ Integer indicating the closed level of the control surface. Default to 0. This c
 </capabilities>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-level
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-has_level

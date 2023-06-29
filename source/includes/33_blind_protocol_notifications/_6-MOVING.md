@@ -27,4 +27,4 @@ This Notification Fires Director Event: Moving. Sends DataToUI:  "Moving" includ
 - `level_target` - Where the blind is going to.
 - `ramp_rate` - The number of milliseconds it will take the blind to reach this position.
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#stopped
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-protocol-notifications-stopped

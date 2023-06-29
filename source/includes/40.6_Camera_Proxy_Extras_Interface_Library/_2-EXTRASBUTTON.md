@@ -35,7 +35,7 @@ Class that represent extras button functionality. This class is derived from Ext
 
 ### ExtrasButton:makeSetupXml
 
- Returns XML string that represents the button setup with all extraparameters
+ Returns XML string that represents the button setup with all extra parameters
 
  Makes XML that should be integrated in the response to
  GET\_EXTRAS\_SETUP Proxy message.

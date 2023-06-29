@@ -62,7 +62,7 @@ This class represents an abstraction of the Extras List object. The class interf
 
 ### ExtrasList:makeSetupXml
 
- Returns XML string that represents the list setup with all extraparameters
+ Returns XML string that represents the list setup with all extra parameters
 
  Makes XML that should be integrated in the response to GET\_EXTRAS\_SETUP Proxy message.
 
