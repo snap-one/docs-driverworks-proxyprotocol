@@ -26,4 +26,4 @@ This command is issued to cause the ringer volume setting to be changed for the 
 </SET_RINGER_VOLUME>
 ```
 
-[1]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-ringer_volume_changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-ringer_volume_changed
