@@ -37694,7 +37694,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='light-driver-development-best-practices-brightness-target-api'>Brightness Target API</h2>
 
-<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_target">supports_target</a> capability. The API includes the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
+<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_target">supports_target</a> capability. The API includes the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
 
 <p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use LIGHT_BRIGHTNESS_CHANGING and LIGHT_BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
 
@@ -38286,7 +38286,7 @@ Used to set the color of a button, this command name can be unique or non-existe
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='light-v2-capabilities-has_extras'>has_extras</h2>
-<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capabilities-changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <code>DYNAMIC_CAPABILITIES_CHANGED</code>  notification.</p>
 <h3 id='light-v2-capabilities-has_extras-signature'>Signature</h3>
 
 <p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></p>
@@ -41549,7 +41549,7 @@ The light level of the light has changed and is at the final brightness. Event I
 <li>Excessive triggering and sometimes incorrect Composer programming being fired.</li>
 </ul>
 
-<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> notification for additional information.</p>
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> notification for additional information.</p>
 
 <h2 id='light-v2-protocol-notifications-max_on'>MAX_ON</h2>
 
