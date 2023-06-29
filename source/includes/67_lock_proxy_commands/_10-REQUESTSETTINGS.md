@@ -17,4 +17,4 @@ This command results in the Protocol Notification [`SETTINGS`][1] being sent fro
 
 `None`
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#settings
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-settings

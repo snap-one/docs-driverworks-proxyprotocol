@@ -3,7 +3,7 @@
 
 The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators.
 
-The correct way to update these capabilities when a driver is updated is with the [DYNAMIC\_CAPABILITY\_CHANGED][1] notification. For example see the lua code to the right which uses name/value pairs:
+The correct way to update these capabilities when a driver is updated is with the DYNAMIC\_CAPABILITY\_CHANGED notification. For example see the lua code to the right which uses name/value pairs:
 
 
 ```xml
@@ -144,5 +144,3 @@ Comma delimited list of increasing values: int
 
  Comma delimited list of increasing values: int
 
-
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed

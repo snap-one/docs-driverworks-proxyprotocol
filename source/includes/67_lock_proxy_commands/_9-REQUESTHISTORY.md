@@ -17,4 +17,4 @@ This command results in the Protocol Notification [`HISTORY`][1] being sent from
 
 `None`
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#history
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-history

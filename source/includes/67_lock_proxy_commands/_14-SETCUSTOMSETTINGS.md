@@ -20,4 +20,4 @@ This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being s
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings
