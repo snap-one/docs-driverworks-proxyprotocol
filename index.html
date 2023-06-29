@@ -46252,7 +46252,7 @@ mode: OFF | ON | ENABLED
 
 <h2 id='security-panel-commands-get_panel_setup'>GET_PANEL_SETUP</h2>
 
-<p>Calls [GET_ALL_PARTITION_INFO\]<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#get_all_partition_info">1</a></p>
+<p>Calls [GET_ALL_PARTITION_INFO\]<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-commands-get_all_partition_info">1</a></p>
 
 <h2 id='security-panel-commands-pgm_close'>PGM_CLOSE</h2>
 
@@ -46522,9 +46522,9 @@ Defaults to true.</p>
 
 <h2 id='security-panel-notifications-overview'>Overview</h2>
 
-<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API.</p>
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#proxy-interface-sendtoproxy">SendToProxy</a> API.</p>
 
-<p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partiton Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
+<p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partition Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
 
 <p>The second parameter is the text of the particular notification being sent. The Proxy knows the information being sent based off of this text. For example, when the parameter &quot;PARTITION_ENABLED&quot; is sent through SendtoProxy, the Camera proxy knows parameter type information that &quot;PARTITION_ENABLED&quot; should contain.</p>
 
@@ -46916,7 +46916,7 @@ Defaults to true.</p>
 </tr>
 <tr>
 <td>str</td>
-<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
+<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
 </tr>
 <tr>
 <td></td>
@@ -47173,7 +47173,7 @@ Fired when the partition state changes</p>
 
 <h2 id='security-partition-notifications-overview'>Overview</h2>
 
-<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#sendtoproxy">SendToProxy</a> API.</p>
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#proxy-interface-sendtoproxy">SendToProxy</a> API.</p>
 
 <p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partion Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
 
@@ -47391,7 +47391,7 @@ Fired when the partition state changes</p>
 </tr>
 <tr>
 <td>str</td>
-<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#additional-info">ADDITIONAL_INFO</a> command.  It provides a way for information to be built up through multiple iterations of calls to REQUEST_ADDITIONAL_INFO</td>
+<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the ADDITIONAL_INFO command.  It provides a way for information to be built up through multiple iterations of calls to REQUEST_ADDITIONAL_INFO</td>
 </tr>
 <tr>
 <td>str</td>
@@ -47463,7 +47463,7 @@ Fired when the partition state changes</p>
 
 <h2 id='security-partition-commands-additional_info'>ADDITIONAL_INFO</h2>
 
-<p>This command will only be sent after having received a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#request_additional_panel_info"><code>REQUEST_ADDITIONAL_INFO</code></a> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
+<p>This command will only be sent after having received a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info"><code>REQUEST_ADDITIONAL_INFO</code></a> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
 
 <table><thead>
 <tr>
