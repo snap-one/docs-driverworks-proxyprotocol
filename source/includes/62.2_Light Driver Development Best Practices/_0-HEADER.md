@@ -72,7 +72,7 @@ Warm Dimming will be active only while changing brightness of the light. Changin
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_target
 [2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target
-[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changed
 [4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing
 [5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing
 [6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing

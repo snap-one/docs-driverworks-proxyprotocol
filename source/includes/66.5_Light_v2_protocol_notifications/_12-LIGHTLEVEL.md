@@ -31,4 +31,4 @@ As of Operating System 3.3.0, drivers should no longer send incremental notifies
 
 See the [LIGHT\_BRIGHTNESS\_CHANGING][1] notification for additional information.
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.3.0-beta/#light-brightness-changing
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing
