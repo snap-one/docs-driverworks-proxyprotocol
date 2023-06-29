@@ -21,4 +21,4 @@ promptstring, INFO_STRING = infostring, FUNCTION_NAME = functionstring, MASK_DAT
 ```
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#additional-info
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info
