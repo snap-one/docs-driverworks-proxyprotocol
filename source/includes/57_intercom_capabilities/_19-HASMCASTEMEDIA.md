@@ -5,4 +5,4 @@
 For more information see the [has\_early\_media][1] capability.
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-early-media
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-capabilites-has_early_media

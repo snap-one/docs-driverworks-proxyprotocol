@@ -26,4 +26,4 @@ This command is issued by a proxy consumer to cause the current speaker volume s
 </SET_SPEAKER_VOLUME>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#speaker-volume-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-speaker_volume_changed

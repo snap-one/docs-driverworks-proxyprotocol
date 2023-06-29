@@ -26,4 +26,4 @@ This command is issued by a proxy consumer to cause the state of the send video 
 </SET_SEND_VIDEO>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#send-video-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-send_video_changed

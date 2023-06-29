@@ -10,4 +10,4 @@ Intercom Proxy Requests are issued from a proxy consumer with the expectation of
 All communication through the proxy interface is asynchronous.  Even request responses, such as getting a list of known intercom devices, are returned asynchronously with respect to the request for that data.
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-commands
-[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications

@@ -26,4 +26,4 @@ This command is issued by a proxy consumer to cause the microphone gain for the 
 </SET_MICROPHONE_GAIN>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#microphone-gain-changed
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-microphone_gain_changed

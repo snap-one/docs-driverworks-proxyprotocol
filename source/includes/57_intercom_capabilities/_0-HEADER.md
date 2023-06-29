@@ -1,1 +1,1 @@
-# Intercom Capabilites
+# Intercom Capabilities

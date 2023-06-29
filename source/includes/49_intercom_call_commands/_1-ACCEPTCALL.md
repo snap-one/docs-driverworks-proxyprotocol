@@ -22,5 +22,5 @@ It may be issued by the receiver of a call invitation (i.e. an [`INCOMING_CALL n
 
 `None`
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#incoming-call
-[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#call-accepted
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted

@@ -4,4 +4,4 @@ This setting is used to control whether or not an intercom endpoint’s camera w
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#has-camera
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-capabilites-has_camera
