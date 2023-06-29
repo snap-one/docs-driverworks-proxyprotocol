@@ -43805,7 +43805,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-request_capabilities'>REQUEST_CAPABILITIES</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#capability-changed"><code>CAPABILITIESCHANGED</code></a>being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-capability_changed"><code>CAPABILITY_CHANGED</code></a>being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-request_capabilities-signature'>Signature</h3>
 
@@ -43821,7 +43821,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-request_custom_settings'>REQUEST_CUSTOM_SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-request_custom_settings-signature'>Signature</h3>
 
@@ -43837,7 +43837,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-request_custom_settings'>REQUEST_CUSTOM_SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-request_custom_settings-signature'>Signature</h3>
 
@@ -43853,7 +43853,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-request_settings'>REQUEST_SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-request_settings-signature'>Signature</h3>
 
@@ -43869,7 +43869,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-request_users'>REQUEST_USERS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-request_users-signature'>Signature</h3>
 
@@ -43933,7 +43933,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <h2 id='lock-proxy-commands-set_custom_settings'>SET_CUSTOM_SETTINGS</h2>
 
-<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#custom-settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
+<p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
 <h3 id='lock-proxy-commands-set_custom_settings-signature'>Signature</h3>
 
@@ -44618,7 +44618,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>The following Capabilities are supported with the Lock Proxy. Note that these capabilities will persist their values. This can result in inaccurate capability values being displayed on Navigators.</p>
 
-<p>The correct way to update these capabilities when a driver is updated is with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-capability-changed">DYNAMIC_CAPABILITY_CHANGED</a> notification. For example see the lua code to the right which uses name/value pairs:</p>
+<p>The correct way to update these capabilities when a driver is updated is with the DYNAMIC_CAPABILITY_CHANGED notification. For example see the lua code to the right which uses name/value pairs:</p>
 
 <p><div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToProxy(5001, &#39;CAPABILITY_CHANGED&#39;, { NAME = &#39;shutout_timer_values&#39;, VALUE = &#39;10, 30&#39; } , &#39;NOTIFY&#39;)</p>
 
