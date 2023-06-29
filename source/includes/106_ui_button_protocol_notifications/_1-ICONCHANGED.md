@@ -33,4 +33,4 @@ Also sends “icon\_description” DataToUI: `<icon_description>Settings are on<
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-capabilities
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-capabilities

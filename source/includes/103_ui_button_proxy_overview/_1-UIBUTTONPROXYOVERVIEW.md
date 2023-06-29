@@ -163,6 +163,6 @@ The following HTML/CSS components and versions are shipped with the T3 and T4 to
 - Chrome 30.0.0.0
 - Safari 537.36
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-webview-javascript-api
-[2]:	#mobile_web_view_enabled
-[3]:	#web_view_url
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-proxy-overview-thermostat-proxy-variables-javascript-api
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-capabilities-thermostat-proxy-variables-mobile_web_view_enabled
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#ui-button-capabilities-thermostat-proxy-variables-web_view_url
