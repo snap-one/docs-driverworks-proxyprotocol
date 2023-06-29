@@ -37694,7 +37694,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='light-driver-development-best-practices-brightness-target-api'>Brightness Target API</h2>
 
-<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. The API includes the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
+<p>A Brightness Target API has been released in conjunction with O.S. 3.3.0. The API is disabled by default for non-color capable drivers and can be enabled with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_target">supports_target</a> capability. The API includes the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a> proxy command and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changed">LIGHT_BRIGHTNESS_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> proxy notifies.</p>
 
 <p>Brightness target API should be used by all new driver written against the Light V2 Proxy and existing drivers should be updated if possible. The API is required for driver certification in 3.3.0.  Dimmer drivers should now only use LIGHT_BRIGHTNESS_CHANGING and LIGHT_BRIGHTNESS_CHANGED notifies. Switch drivers only need to use the BRIGHTNESS_CHANGED notify. Note that the LEVEL_CHANGED notify should not be used.</p>
 
@@ -37712,7 +37712,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='light-driver-development-best-practices-brightness-and-color-changing-api'>Brightness and Color Changing API</h2>
 
-<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a>) or brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-brightness-changing">LIGHT_BRIGHTNESS_CHANGING</a>) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
+<p>OS 3.3.0 also introduced a new Light V2 proxy API that allows protocol drivers to notify the proxy that a light&#39;s color (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a>) or brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a>) is changing. The use of these notify commands are optional. However, it is recommended to notify the proxy of color or brightness transitions whenever possible. Using these notify commands allows other drivers or agents in the system to monitor the state of the light.</p>
 
 <p>Using these notifies also allows additional Programming:</p>
 
@@ -37729,7 +37729,7 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h2 id='light-driver-development-best-practices-handling-consecutive-brightness-and-color-commands'>Handling Consecutive Brightness and Color commands</h2>
 
-<p>The Light V2 Proxy has independent commands to set color (chromaticity) (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a>) and brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a>). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
+<p>The Light V2 Proxy has independent commands to set color (chromaticity) (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a>) and brightness (<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a>). It is possible to send these commands to the protocol driver one immediately after the other (e.g, Programming, Customer Interfaces, Agents or other drivers). When these commands come in succession, a desired outcome is that the light transitions to the specified color and brightness, i.e., consecutive commands should not interfere or override each other.</p>
 
 <p>Driver developers must make sure that consecutive color and brightness commands are handled correctly. If the device does not support consecutive commands, a best practice is to have a debouncing (and/or queuing) mechanism in the driver so that commands can be combined.</p>
 
@@ -37737,13 +37737,13 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <p>All colored lights have a mandatory Default On Color and Default Dim Color presets. These provide a consistent behavior when turning the light on or off. Furthermore, these presets can be used as &#39;hooks&#39; for other agents/drivers in the system that might want to change color that the light should turn on to or transition to while turning off.</p>
 
-<p>Default On Color should be set whenever the devices turns on through <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set-brightness-target">SET_BRIGHTNESS_TARGET</a> command, Button Click and Hold actions, etc.</p>
+<p>Default On Color should be set whenever the devices turns on through <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a> command, Button Click and Hold actions, etc.</p>
 
 <p>Default Dim color should be used while the light is turning off, except in cases when the final level is unknown. For example, color should not be changed while dimming down using button hold since it is not known when the dimming will be stopped. For example, it is not known if the customer is dimming to turn off the light or to only lower the brightness.</p>
 
 <h2 id='light-driver-development-best-practices-setting-color-while-the-light-is-off'>Setting Color while the Light is Off</h2>
 
-<p>The Light V2 proxy allows sending <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#set_color_target">SET_COLOR_TARGET</a> commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
+<p>The Light V2 proxy allows sending <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a> commands to the protocol driver while the light is off. In Control4 OS. color chromaticity and brightness are independent. Because of this, the protocol driver should not turn on the light when a command to set the color is received while the light is off. Instead, drivers should save the last color that was sent while the light is off and set that color when the light subsequently turns on from the Control4 system.</p>
 
 <h2 id='light-driver-development-best-practices-warm-dim'>Warm Dim</h2>
 
@@ -39276,7 +39276,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h2 id='light-v2-commands-set_brightness_target'>SET_BRIGHTNESS_TARGET</h2>
 
-<p>Used to set the target brightness of where the light is being requested to go. Parameters are determined by the enabling/disabling of the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#supports_target">supports_target</a> capability. See below for more information.</p>
+<p>Used to set the target brightness of where the light is being requested to go. Parameters are determined by the enabling/disabling of the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_target">supports_target</a> capability. See below for more information.</p>
 
 <h3 id='light-v2-commands-set_brightness_target-signature'>Signature</h3>
 
@@ -39300,7 +39300,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 </tr>
 </tbody></table>
 
-<p>Note: If a driver supports <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Modes</a>, it should track the following parameters: LIGHT_BRIGHTNESS_TARGET_PRESET_ID - The ID of the preset to trigger.</p>
+<p>Note: If a driver supports On Modes, it should track the following parameters: LIGHT_BRIGHTNESS_TARGET_PRESET_ID - The ID of the preset to trigger.</p>
 
 <p><em>If the supports_target capability is disabled in instances such as pre- O.S. 3.3.0 for backward compatibility of older drivers:</em></p>
 
@@ -39592,7 +39592,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h2 id='light-v2-commands-set_color_target'>SET_COLOR_TARGET</h2>
 
-<p>Sent to drivers to change the light color. Once drivers begin to change color, they should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changing">LIGHT_COLOR_CHANGING</a> Notify. Once the color has finished changing it should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-color-changed">LIGHT_COLOR_CHANGED</a> Notify. Parameters are determined by the implementation <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-on">On Mode</a> functionality. See below for more information.</p>
+<p>Sent to drivers to change the light color. Once drivers begin to change color, they should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a> Notify. Once the color has finished changing it should send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a> Notify. Parameters are determined by the implementation On Mode functionality. See below for more information.</p>
 
 <h3 id='light-v2-commands-set_color_target-signature'>Signature</h3>
 
