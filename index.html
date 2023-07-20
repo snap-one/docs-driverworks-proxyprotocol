@@ -38855,7 +38855,7 @@ C4:ColorHSVtoXY(0, 100, 100, 100)
 — Scale is 0.0 to 255 where 255 is full brightness: —
 C4:ColorHSVtoXY(0, 100, 100, 255)
 
-— Using  srgb primaries <span class="err">&amp;</span> whitepoint: —
+— Using srgb primaries <span class="err">&amp;</span> whitepoint: —
 C4:ColorHSVtoXY(0, 100, 100, 255, \"srgb\")
 
 — Using rec2020 primaries/whitepoint: —
@@ -39029,7 +39029,7 @@ C4:ColorHSVtoXY(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\", \"0.312
 
 <h2 id='light-v2-conversion-commands-colorxytohsv'>ColorXYtoHSV</h2>
 
-<p>This function converts a CIE-1931 xy chromaticity to the HSV color space.</p>
+<p>This function converts a CIE-1931 xy chromaticity to the HSV color space. Note, there&#39;s no need for a driver developer to specify whitepoint and primaries if usinh srgb or rec2020 for the gamut parameter as described below.</p>
 
 <p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
 
@@ -39055,7 +39055,7 @@ C4:ColorHSVtoXY(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\", \"0.312
 </tr>
 <tr>
 <td>str</td>
-<td>(Optional) Gamut used for conversion. Valid options are &quot;srgb&quot; or &quot;rec2020&quot; or &quot;internal&quot;. Internal uses the rec2020 gamut and is also the default gamut if the optional gamut parameter is not specified.</td>
+<td></td>
 </tr>
 </tbody></table>
 
@@ -39081,12 +39081,49 @@ C4:ColorHSVtoXY(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\", \"0.312
 </tr>
 </tbody></table>
 
-<h2 id='light-v2-conversion-commands-colorxytorgb'>ColorXYtoRGB</h2>
+<h3 id='light-v2-conversion-commands-colorxytohsv-examples'>Examples</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>—Using three rgb params:—
+C4:ColorXYtoHSV(0, 100, 100)
+—Since no scale param is specified the default of "255" is used for the scale value param.—
 
+— Using srgb primaries and whitepoint: —
+C4:ColorXYtoHSV(0, 100, 100, \"srgb\")
+—Since no scale param is specified the default of "255" is used for the scale value param.—
+
+— Using rec2020 primaries and whitepoint: —
+C4:ColorXYtoHSV(0, 100, 100, \"rec2020\")
+—Since no scale param is specified the default of "255" is used for the scale value param.—
+
+— Using custom gamut where custom primaries and the 'default' d65 whitepoint is used: —
+C4:ColorXYtoHSV(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\")
+
+—Using custom gamut with both custom primaries and custom whitepoint is specified:—
+C4:ColorXYtoHSV(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\", \"0.31271, 0.32902\")
+
+—Using Rob params but specifying a custom rgb scale. Scale is 0.0 to 1.0 where 1.0 is full brightness: —
+C4:ColorXYtoHSV(0, 100, 100, 1)
+
+— Scale is 0.0 to 100 where 100 is full brightness: —
+C4:ColorXYtoHSV(0, 100, 100, 100)
+
+— Scale is 0.0 to 255 where 255 is full brightness: —
+C4:ColorXYtoHSV(0, 100, 100, 255)
+
+— Using srgb primaries <span class="err">&amp;</span> whitepoint: —
+C4:ColorXYtoHSV(0, 100, 100, 255, \"srgb\")
+
+— Using rec2020 primaries/whitepoint: —
+C4:ColorXYtoHSV(0, 100, 100, 255, \"rec2020\")
+
+— Custom gamut where custom primaries and the 'default' d65 whitepoint is used: —
+C4:ColorXYtoHSV(0, 100, 100, 255, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\")
+
+— Custom gamut with both custom primaries and custom whitepoint is specified: —
+C4:ColorXYtoHSV(0, 100, 100, \"custom\", \"0.7,0.25,0.25,0.75,0.1,0.5\", \"0.31271, 0.32902\"
+</code></pre></div>
+<h2 id='light-v2-conversion-commands-colorxytorgb'>ColorXYtoRGB</h2>
 <p>This function converts a CIE-1931 xy chromaticity to the RGB color space.</p>
 
 <p><em>This function was released in conjunction with O.S. 3.3.0.</em></p>
-
 <h3 id='light-v2-conversion-commands-colorxytorgb-signature'>Signature</h3>
 
 <p><code>C4:ColorXYtoRGB (x, y, rgbScale, gamut)</code></p>
