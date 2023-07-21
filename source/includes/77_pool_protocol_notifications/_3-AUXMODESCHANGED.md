@@ -1,18 +1,18 @@
-## AUX\_MODE\_CHANGED
+## AUXMODE\_CHANGED
 
 Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify. Mode Y is On, N is Off.
 
 
 ### Signature
 
-`AUX_MODE_CHANGED ()`
+`AUXMODE_CHANGED ()`
 
 
 | Parameter | Description |
 | --- | --- |
 | `ID` | ID of auxiliary |
 | `MODE` | ON/OFF |
-| `SELECTED` | For type LIST from `<aux_types> <items>` item selected if is provided by the device.m |
+| `SELECTED` | For type LIST from `<aux_types> <items>` item selected if is provided by the device. |
 
 
 ### Returns
