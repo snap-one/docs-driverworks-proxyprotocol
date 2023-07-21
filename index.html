@@ -5504,7 +5504,7 @@
                     <a href="#pool-protocol-notifications-aux_names_changed" class="toc-h2 toc-link" data-title="AUX_NAMES_CHANGED">AUX_NAMES_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#pool-protocol-notifications-aux_mode_changed" class="toc-h2 toc-link" data-title="AUX_MODE_CHANGED">AUX_MODE_CHANGED</a>
+                    <a href="#pool-protocol-notifications-auxmode_changed" class="toc-h2 toc-link" data-title="AUXMODE_CHANGED">AUXMODE_CHANGED</a>
                   </li>
                   <li>
                     <a href="#pool-protocol-notifications-has_air_changed" class="toc-h2 toc-link" data-title="HAS_AIR_CHANGED">HAS_AIR_CHANGED</a>
@@ -45410,11 +45410,11 @@ Should be true (false by default) when the pool controller device provides aux l
     <span class="nt">&lt;/item&gt;</span>
 <span class="nt">&lt;/items&gt;</span>
 </code></pre></div>
-<h2 id='pool-protocol-notifications-aux_mode_changed'>AUX_MODE_CHANGED</h2>
+<h2 id='pool-protocol-notifications-auxmode_changed'>AUXMODE_CHANGED</h2>
 <p>Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify. Mode Y is On, N is Off.</p>
-<h3 id='pool-protocol-notifications-aux_mode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-auxmode_changed-signature'>Signature</h3>
 
-<p><code>AUX_MODE_CHANGED ()</code></p>
+<p><code>AUXMODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
@@ -45432,15 +45432,15 @@ Should be true (false by default) when the pool controller device provides aux l
 </tr>
 <tr>
 <td><code>SELECTED</code></td>
-<td>For type LIST from <code>&lt;aux_types&gt; &lt;items&gt;</code> item selected if is provided by the device.m</td>
+<td>For type LIST from <code>&lt;aux_types&gt; &lt;items&gt;</code> item selected if is provided by the device.</td>
 </tr>
 </tbody></table>
 
-<h3 id='pool-protocol-notifications-aux_mode_changed-returns'>Returns</h3>
+<h3 id='pool-protocol-notifications-auxmode_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='pool-protocol-notifications-aux_mode_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>
+<h3 id='pool-protocol-notifications-auxmode_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>
 <span class="nt">&lt;aux_state&gt;</span>
     <span class="nt">&lt;item&gt;</span>
         <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
