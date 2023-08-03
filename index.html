@@ -3844,13 +3844,13 @@
                     <a href="#blind-capabilities-level_open" class="toc-h2 toc-link" data-title="level_open">level_open</a>
                   </li>
                   <li>
-                    <a href="#blind-capabilities-level_unknown" class="toc-h2 toc-link" data-title="level_unknown">level_unknown</a>
-                  </li>
-                  <li>
                     <a href="#blind-capabilities-level_discrete_control" class="toc-h2 toc-link" data-title="level_discrete_control">level_discrete_control</a>
                   </li>
                   <li>
                     <a href="#blind-capabilities-level_closed_secondary" class="toc-h2 toc-link" data-title="level_closed_secondary">level_closed_secondary</a>
+                  </li>
+                  <li>
+                    <a href="#blind-capabilities-level_unknown" class="toc-h2 toc-link" data-title="level_unknown">level_unknown</a>
                   </li>
                   <li>
                     <a href="#blind-capabilities-movement" class="toc-h2 toc-link" data-title="movement">movement</a>
@@ -29973,16 +29973,6 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
     <span class="nt">&lt;level_open&gt;</span>1<span class="nt">&lt;/level_open&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='blind-capabilities-level_unknown'>level_unknown</h2>
-<p>Integer indicating the level value that is to be specified as &quot;unknown blind position&quot;.  This is often, but not always, a value outside of the range of valid level values.  This allows a driver that is initializing (not yet communicating with the blind),  lost communication or for any other reason does not know the exact location of the blind to notify Director that the current level is unknown.</p>
-<h3 id='blind-capabilities-level_unknown-signature'>Signature</h3>
-
-<p><code>&lt;level_unknown&gt;&lt;/level_unknown&gt;</code></p>
-
-<h3 id='blind-capabilities-level_unknown-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities</span><span class="err">\</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;level_unknown&gt;</span>11<span class="nt">&lt;/level_unknown&gt;</span>
-<span class="nt">&lt;/capabilities&gt;</span>
-</code></pre></div>
 <h2 id='blind-capabilities-level_discrete_control'>level_discrete_control</h2>
 <p>Boolean indicating if a control surface can be set by a COMMAND to something other than the level for closed and the level for open.</p>
 
@@ -30017,6 +30007,16 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <h3 id='blind-capabilities-level_closed_secondary-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;level_closed_secondary&gt;</span>11<span class="nt">&lt;/level_closed_secondary&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='blind-capabilities-level_unknown'>level_unknown</h2>
+<p>Integer indicating the level value that is to be specified as &quot;unknown blind position&quot;.  This is often, but not always, a value outside of the range of valid level values.  This allows a driver that is initializing (not yet communicating with the blind),  lost communication or for any other reason does not know the exact location of the blind to notify Director that the current level is unknown.</p>
+<h3 id='blind-capabilities-level_unknown-signature'>Signature</h3>
+
+<p><code>&lt;level_unknown&gt;&lt;/level_unknown&gt;</code></p>
+
+<h3 id='blind-capabilities-level_unknown-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities</span><span class="err">\</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;level_unknown&gt;</span>11<span class="nt">&lt;/level_unknown&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='blind-capabilities-movement'>movement</h2>
