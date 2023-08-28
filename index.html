@@ -4408,13 +4408,7 @@
                     <a href="#intercom-call-commands-resume_call" class="toc-h2 toc-link" data-title="RESUME_CALL">RESUME_CALL</a>
                   </li>
                   <li>
-                    <a href="#intercom-call-commands-start_broadcast_call" class="toc-h2 toc-link" data-title="START_BROADCAST_CALL">START_BROADCAST_CALL</a>
-                  </li>
-                  <li>
                     <a href="#intercom-call-commands-start-_call" class="toc-h2 toc-link" data-title="START _CALL">START _CALL</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-call-commands-start_custom_call" class="toc-h2 toc-link" data-title="START_CUSTOM_CALL">START_CUSTOM_CALL</a>
                   </li>
                   <li>
                     <a href="#intercom-call-commands-start_monitor_call" class="toc-h2 toc-link" data-title="START_MONITOR_CALL">START_MONITOR_CALL</a>
@@ -34366,12 +34360,17 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='intercom-call-commands-accept_call'>ACCEPT_CALL</h2>
 
-<p>This command is used to programmatically accept a ringing call on a device. 
-It may be issued by the receiver of a call invitation (i.e. an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call"><code>INCOMING_CALL notification</code></a>) and causes the call associated with the given session id to be accepted. This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted"><code>CALL_ACCEPTED</code></a> notification being sent to both the initiator and the receiver of the call.</p>
+<p>The ACCEPT_CALL command is sent from the Intercom Proxy to the device driver. When the driver receives the ACCEPT_CALL command, it must handle the command in a manner that enables the device to accept the incoming call. When implemented successfully, receipt of the ACCEPT_CALL command is followed the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification being sent from the device driver to the Proxy.</p>
 
 <h3 id='intercom-call-commands-accept_call-signature'>Signature</h3>
 
 <p><code>ACCEPT_CALL ()</code></p>
+
+<p>Call Flow:
+1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
+2. The device goes into a state of “incoming call”. 
+3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
+4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.</p>
 
 <table><thead>
 <tr>
@@ -34393,11 +34392,11 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call.</td>
+<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call.</td>
+<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
 </tr>
 </tbody></table>
 
@@ -34405,15 +34404,25 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <p><code>None</code></p>
 
+<h3 id='intercom-call-commands-accept_call-usage-notes'>Usage Notes:</h3>
+
+<p>This call command can be initiated by pressing a button on a UI displayed on devices running Navigator, Control-Control in ComposerPro and Composer Programming.</p>
+
 <h2 id='intercom-call-commands-end_call'>END_CALL</h2>
 
-<p>Used by Programming or ComposerPro. Terminates the current call. A full session (completed call) must have occurred in order for End Call to work. End Call is not applicable to calls that are in a ringing state. Upon executing End Call both ends of the call are terminated.</p>
-
-<p>This command can be issued by either the initiator or receiver and causes the indicated session to be ended.  This command will result in a <code>CALL_ENDED</code> notification being sent to both the initiator and the receiver of the call.  For broadcast calls, when the caller ends the call the remoteAor should be set to the value “broadcast” (without the quotes)</p>
+<p>This command only applies to an established call session. If a call has not been established – it cannot be ended. The END_CALL command is sent from the Intercom Proxy to the device driver when an established call is to be terminated. After the call is terminated, the device driver must send the CALL_ENDED notification to both the initiator and the receiver of the call.  </p>
 
 <h3 id='intercom-call-commands-end_call-signature'>Signature</h3>
 
 <p><code>END_CALL ()</code></p>
+
+<p>Call Flow:
+1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
+2. The device goes into a state of “incoming call”. 
+3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
+4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.
+5. When the call is to be terminated, The END_CALL command is sent from the intercom proxy to the device driver.
+6. When the device driver terminates the call (SIP BYE), the CALL_ENDED notification is sent from the driver to the Intercom proxy.</p>
 
 <table><thead>
 <tr>
@@ -34423,14 +34432,14 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 </thead><tbody>
 <tr>
 <td>num</td>
-<td><code>DEVICE_ID</code> - The proxy ID of the caller</td>
+<td><code>DEVICE_ID</code> - The proxy ID of the caller.</td>
 </tr>
 <tr>
 <td>num</td>
-<td><code>REMOTE_DEVICE</code> - The proxy ID of the callee</td>
+<td><code>REMOTE_DEVICE</code> - The proxy ID of the callee.</td>
 </tr>
 <tr>
-<td>num</td>
+<td>str</td>
 <td><code>SESSION_ID</code> - The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call.</td>
 </tr>
 </tbody></table>
@@ -34441,11 +34450,18 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <h2 id='intercom-call-commands-mute_call'>MUTE_CALL</h2>
 
-<p>Used by Programming or ComposerPro. This command is used to programmatically Mute a device.  TRhe endpoint of the issuer will be muted or un-muted, depending on the value of the flag.</p>
+<p>This command only applies to an established call session. If a call has not been established – it cannot be muted. Likewise, a call cannot be muted when it is in a ringing state or a SIP BYE or ENDING states. The MUTE_CALL command is sent from the Intercom Proxy to the device driver. When the driver receives the MUTE_CALL command, it must handle the command in a manner that enables the device to place the existing call in a muted or un-muted state. Placing the device in a true muted state or setting the device volume to zero is supported for muting purposes. There is no associated notification for the MUTE_CALL command. The device driver must maintain the state of the call in order to un-mute or mute the call correctly</p>
 
 <h3 id='intercom-call-commands-mute_call-signature'>Signature</h3>
 
 <p><code>MUTE_CALL ()</code></p>
+
+<p>Call Flow:
+1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
+2. The device goes into a state of “incoming call”. 
+3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
+4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.
+5. When the call is to be muted or un-muted, the MUTE_CALL command is sent from the intercom proxy to the device driver.</p>
 
 <table><thead>
 <tr>
@@ -34468,7 +34484,8 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 <span class="o">&lt;/</span><span class="n">MUTE_CALL</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-call-commands-pause_call'>PAUSE_CALL</h2>
-<p>This command can be issued by either the initiator or receiver and causes the call associated with the indicated session to be placed on hold (or paused).  This command will result in a <code>CALL_PAUSED</code> notification being sent to both the initiator and the receiver of the call.</p>
+<p><strong>NOTE:</strong> The PAUSE_CALL command is currently deprecated and not available for use._ 
+This command can be issued by either the initiator or receiver and causes the call associated with the indicated session to be placed on hold (or paused).  This command will result in a <code>CALL_PAUSED</code> notification being sent to both the initiator and the receiver of the call.</p>
 <h3 id='intercom-call-commands-pause_call-signature'>Signature</h3>
 
 <p><code>PAUSE_CALL ()</code></p>
@@ -34499,7 +34516,8 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <h2 id='intercom-call-commands-play_door_-chime'>PLAY_DOOR_ CHIME</h2>
 
-<p>This command can be issued by any device to play the currently defined door chime sound effect on that device.</p>
+<p><strong>NOTE:</strong> The PLAY_DOOR_CHIME command is currently deprecated and not available for use._ 
+This command can be issued by any device to play the currently defined door chime sound effect on that device.</p>
 
 <h3 id='intercom-call-commands-play_door_-chime-signature'>Signature</h3>
 
@@ -34515,11 +34533,17 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <h2 id='intercom-call-commands-reject_call'>REJECT_CALL</h2>
 
-<p>This command may be issued by the receiver of a call invitation and causes the call associated with the given session id to be rejected (ended).  This command will result in a <code>CALL_REJECTED</code> notification being sent to both the initiator and the receiver of the call.</p>
+<p>The REJECT_CALL command is sent from the Intercom Proxy to the device driver. When the driver receives the Reject Call command, it must handle the command in a manner that enables the device to reject the incoming call. When implemented successfully, receipt of the REJECT_CALL command should be followed by sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_rejected">CALL_REJECTED</a> notification from the device driver to the Proxy.</p>
 
 <h3 id='intercom-call-commands-reject_call-signature'>Signature</h3>
 
 <p><code>REJECT_CALL ()</code></p>
+
+<p>Call Flow:
+1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. 
+2. The device goes into a state of “incoming call”. 
+3. This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">Incoming_Call</a> notification which is sent from the device, via the device driver, to the Proxy.
+4. Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_rejected">CALL_REJECTED</a> notification to the Proxy.</p>
 
 <table><thead>
 <tr>
@@ -34529,15 +34553,15 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 </thead><tbody>
 <tr>
 <td>num</td>
-<td><code>DEVICE_ID</code> - The proxy ID of the caller</td>
+<td><code>DEVICE_ID</code> - The proxy ID of the caller.</td>
 </tr>
 <tr>
 <td>num</td>
-<td><code>REMOTE_DEVICE</code> - The proxy ID of the callee</td>
+<td><code>REMOTE_DEVICE</code> - The proxy ID of the callee.</td>
 </tr>
 <tr>
-<td>num</td>
-<td><code>SESSION_ID</code> - The session ID of the call</td>
+<td>str</td>
+<td><code>SESSION_ID</code> - The session ID of the call.</td>
 </tr>
 </tbody></table>
 
@@ -34545,9 +34569,18 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <p><code>None</code></p>
 
+<h3 id='intercom-call-commands-reject_call-usage-notes'>Usage Notes:</h3>
+
+<p>This command can be initiated by pressing a button on a UI displayed on devices running Navigator, Control-Control in ComposerPro and Composer Programming. </p>
+
+<p>The Reject Call command has no effect when sent during an active call session. End Call should be used in this instance.</p>
+
+<p>If auto-answer is enabled, it overrides the option to reject the call and the Proxy will automatically accept it.</p>
+
 <h2 id='intercom-call-commands-resume_call'>RESUME_CALL</h2>
 
-<p>This command can be issued by an intercom device that has already paused the call associated with the indicated session id. This command will result in a <code>CALL_RESUMED</code> notification being sent to both the initiator and the receiver of the call.</p>
+<p><strong>NOTE:</strong> The RESUME_CALL command is currently deprecated and not available for use._ 
+This command can be issued by an intercom device that has already paused the call associated with the indicated session id. This command will result in a <code>CALL_RESUMED</code> notification being sent to both the initiator and the receiver of the call.</p>
 
 <h3 id='intercom-call-commands-resume_call-signature'>Signature</h3>
 
@@ -34577,49 +34610,20 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <p><code>None</code></p>
 
-<h2 id='intercom-call-commands-start_broadcast_call'>START_BROADCAST_CALL</h2>
-
-<p>This command is issued by the initiator of a new broadcast call to a pre-defined group of intercom devices.  The command will result in an <code>OUTGOING_CALL</code> notification to the initiator and an <code>INCOMING_CALL</code> notification to the receiver.  </p>
-
-<h3 id='intercom-call-commands-start_broadcast_call-signature'>Signature</h3>
-
-<p><code>START_BROADCAST_CALL ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>num</td>
-<td><code>DEVICE_ID</code> - The proxy ID of the caller</td>
-</tr>
-<tr>
-<td>num</td>
-<td>AUDIO - The requested audio cap for the call.</td>
-</tr>
-<tr>
-<td>num</td>
-<td>VIDEO - The requested video cap for the call.</td>
-</tr>
-<tr>
-<td>num</td>
-<td><code>GROUP_ID</code> - The group ID of the group being called</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-commands-start_broadcast_call-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
 <h2 id='intercom-call-commands-start-_call'>START _CALL</h2>
 
-<p>Used by Programming or ComposerPro. Start Call is issued by a third party to the device. Start Call is not used when call are initiated through Navigator.</p>
+<p>The START_CALL command is initiated through Programming or Control/Control in ComposerPro. It is sent to the Intercom Proxy, which then sends a START_CALL to the device driver. When the driver receives the START_CALL command, it must handle the command in a manner that enables the device to begin a call. When implemented successfully, receipt of the START_CALL command is followed by the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification being sent from the device driver to the Proxy.</p>
 
 <h3 id='intercom-call-commands-start-_call-signature'>Signature</h3>
 
 <p><code>START_CALL ()</code></p>
+
+<p>Call Flow:
+1. Upon receiving a START_CALL command from the Proxy, a SIP invite is generated.
+2. The SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
+3. The device goes into a state of “outgoing call”. 
+4. This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-outgoing_call">Outgoing_Call</a> notification which is sent from the device, via the device driver, to the Proxy.
+5. Upon call acceptance, this is followed by the device driver that receives the call, sending a CALL_ACCEPTED notification to the Proxy.</p>
 
 <table><thead>
 <tr>
@@ -34637,15 +34641,15 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call.</td>
+<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call.</td>
+<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
 </tr>
 <tr>
 <td>num</td>
-<td>RING - This parameter has been deprecated.</td>
+<td>RING - The ring parameter for the call 0 = plays default Navigator beep, 1 = plays doorbell chime</td>
 </tr>
 </tbody></table>
 
@@ -34653,49 +34657,21 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 
 <p><code>None</code></p>
 
-<h2 id='intercom-call-commands-start_custom_call'>START_CUSTOM_CALL</h2>
-
-<p>Handles the start monitor call command</p>
-
-<h3 id='intercom-call-commands-start_custom_call-signature'>Signature</h3>
-
-<p><code>START_CUSTOM_CALL ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>num</td>
-<td><code>DEVICE_ID</code> - The proxy ID of the caller</td>
-</tr>
-<tr>
-<td>num</td>
-<td>AUDIO - The requested audio cap for the call.</td>
-</tr>
-<tr>
-<td>num</td>
-<td>VIDEO - The requested video cap for the call.</td>
-</tr>
-<tr>
-<td>num</td>
-<td>DEVICES - The devices in the custom call</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-commands-start_custom_call-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
 <h2 id='intercom-call-commands-start_monitor_call'>START_MONITOR_CALL</h2>
 
-<p>This command is issued by the initiator of a new monitoring call to a specified receiver.  The receiver must be in monitor mode.  The command will result in an <code>OUTGOING_CALL</code> notification to the initiator and an <code>INCOMING_CALL</code> notification to the receiver</p>
+<p>The START_MONITOR_CALL command is sent from the Intercom Proxy to the device driver. When the driver receives the START_MONITOR_CALL command, it must be in monitor mode to successfully handle it. A device can be set to monitor mode via Composer Pro or Navigator. When implemented successfully, the command will result in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">INCOMING_CALL</a> notification being sent to the proxy. Note that in addition to a device being in monitor mode, it should also mute itself or turn volume level to zero when receiving the START_MONITOR_CALL. This ensures that no sounds come from the receiving device. This is useful in the case where a device is being used as a baby monitor.</p>
 
 <h3 id='intercom-call-commands-start_monitor_call-signature'>Signature</h3>
 
 <p><code>START_MONITOR_CALL ()</code></p>
+
+<p>Call Flow:
+1. START_MONITOR_CALL command is sent from the intercom proxy to the device driver.
+2. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
+3. The device goes into a state of “incoming call”. 
+4. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
+5. Because the device receiving the call is in monitor mode, the call is automatically accepted.
+6. Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification to the Proxy.</p>
 
 <table><thead>
 <tr>
@@ -34713,15 +34689,15 @@ It may be issued by the receiver of a call invitation (i.e. an <a href="https://
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call.</td>
+<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call.</td>
+<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
 </tr>
 <tr>
 <td>num</td>
-<td>RING - The ring parameter for the call</td>
+<td>RING - The ring parameter for the call 0 = default Navigator beep,  1 = doorbell chime. Note that the RING param must be passed for the function to work correctly. The driver must place the receiving on mute or turn volume level to zero</td>
 </tr>
 </tbody></table>
 
