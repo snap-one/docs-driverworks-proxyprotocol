@@ -35073,11 +35073,14 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>CALL_ACCEPTED ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. 
-2. The device goes into a state of “incoming call”. 
-3. Upon entering this state, the device driver needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">INCOMING_CALL </a>notification which is sent from the device to the intercom proxy.
-4. Upon answering the call, the CALL_ACCEPTED notification is sent to the intercom proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. </li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>Upon entering this state, the device driver needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">INCOMING_CALL </a>notification which is sent from the device to the intercom proxy.</li>
+<li>Upon answering the call, the CALL_ACCEPTED notification is sent to the intercom proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -35193,11 +35196,14 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>CALL_REJECTED ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. 
-2. The device goes into a state of “incoming call”. 
-3. Upon entering this state, the device driver needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">INCOMING_CALL</a> notification which is sent from the device to the intercom proxy.
-4. Upon answering the call, the CALL_REJECTED notification is sent to the intercom proxy indicating that the device did not answer the call.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. </li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>Upon entering this state, the device driver needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">INCOMING_CALL</a> notification which is sent from the device to the intercom proxy.</li>
+<li>Upon answering the call, the CALL_REJECTED notification is sent to the intercom proxy indicating that the device did not answer the call.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -35261,10 +35267,13 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>INCOMING_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. 
-2. The device goes into a state of “Incoming call”. 
-3. Upon entering this state, the device driver needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. </li>
+<li>The device goes into a state of “Incoming call”. </li>
+<li>Upon entering this state, the device driver needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -35310,10 +35319,13 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>OUTGOING_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is sent by the device.
-2. The device goes into a state of “outgoing call”.
-3. Upon entering this state, the device driver needs to trigger an Outgoing_Call notification which is sent from the device driver to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is sent by the device.</li>
+<li>The device goes into a state of “outgoing call”.</li>
+<li>Upon entering this state, the device driver needs to trigger an Outgoing_Call notification which is sent from the device driver to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
