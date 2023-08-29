@@ -34419,13 +34419,16 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <p><code>END_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
-2. The device goes into a state of “incoming call”. 
-3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
-4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.
-5. When the call is to be terminated, The END_CALL command is sent from the intercom proxy to the device driver.
-6. When the device driver terminates the call (SIP BYE), the CALL_ENDED notification is sent from the driver to the Intercom proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.</li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.</li>
+<li>When the call is to be terminated, The END_CALL command is sent from the intercom proxy to the device driver.</li>
+<li>When the device driver terminates the call (SIP BYE), the CALL_ENDED notification is sent from the driver to the Intercom proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -34459,12 +34462,15 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <p><code>MUTE_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
-2. The device goes into a state of “incoming call”. 
-3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
-4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.
-5. When the call is to be muted or un-muted, the MUTE_CALL command is sent from the intercom proxy to the device driver.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.</li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.</li>
+<li>When the call is to be muted or un-muted, the MUTE_CALL command is sent from the intercom proxy to the device driver.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -34543,11 +34549,14 @@ This command can be issued by either the initiator or receiver and causes the ca
 
 <p><code>REJECT_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. 
-2. The device goes into a state of “incoming call”. 
-3. This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">Incoming_Call</a> notification which is sent from the device, via the device driver, to the Proxy.
-4. Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_rejected">CALL_REJECTED</a> notification to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state. </li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call">Incoming_Call</a> notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_rejected">CALL_REJECTED</a> notification to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -34622,12 +34631,15 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>START_CALL ()</code></p>
 
-<p>Call Flow:
-1. Upon receiving a START_CALL command from the Proxy, a SIP invite is generated.
-2. The SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
-3. The device goes into a state of “outgoing call”. 
-4. This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-outgoing_call">Outgoing_Call</a> notification which is sent from the device, via the device driver, to the Proxy.
-5. Upon call acceptance, this is followed by the device driver that receives the call, sending a CALL_ACCEPTED notification to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>Upon receiving a START_CALL command from the Proxy, a SIP invite is generated.</li>
+<li>The SIP invite to a call is received by the device via the device driver and the device enters a ringing state.</li>
+<li>The device goes into a state of “outgoing call”. </li>
+<li>This needs to trigger an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-outgoing_call">Outgoing_Call</a> notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Upon call acceptance, this is followed by the device driver that receives the call, sending a CALL_ACCEPTED notification to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
@@ -34669,13 +34681,16 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>START_MONITOR_CALL ()</code></p>
 
-<p>Call Flow:
-1. START_MONITOR_CALL command is sent from the intercom proxy to the device driver.
-2. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
-3. The device goes into a state of “incoming call”. 
-4. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
-5. Because the device receiving the call is in monitor mode, the call is automatically accepted.
-6. Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>START_MONITOR_CALL command is sent from the intercom proxy to the device driver.</li>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.</li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Because the device receiving the call is in monitor mode, the call is automatically accepted.</li>
+<li>Upon call acceptance, this is followed by the device driver sending a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
