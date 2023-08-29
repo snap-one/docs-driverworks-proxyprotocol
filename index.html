@@ -34366,11 +34366,14 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <p><code>ACCEPT_CALL ()</code></p>
 
-<p>Call Flow:
-1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
-2. The device goes into a state of “incoming call”. 
-3. This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.
-4. Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.</p>
+<p>Call Flow:</p>
+
+<ol>
+<li>A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.</li>
+<li>The device goes into a state of “incoming call”. </li>
+<li>This needs to trigger an Incoming_Call notification which is sent from the device, via the device driver, to the Proxy.</li>
+<li>Upon call acceptance, this is followed by the device driver sending a CALL_ACCEPTED notification to the Proxy.</li>
+</ol>
 
 <table><thead>
 <tr>
