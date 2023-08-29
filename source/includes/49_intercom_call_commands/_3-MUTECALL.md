@@ -9,6 +9,7 @@ This command only applies to an established call session. If a call has not been
 
 
 Call Flow:
+
 1. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
 2. The device goes into a state of “incoming call”. 
 3. This needs to trigger an Incoming\_Call notification which is sent from the device, via the device driver, to the Proxy.

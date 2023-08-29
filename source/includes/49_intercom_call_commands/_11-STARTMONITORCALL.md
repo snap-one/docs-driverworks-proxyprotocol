@@ -9,6 +9,7 @@ The START\_MONITOR\_CALL command is sent from the Intercom Proxy to the device d
 
 
 Call Flow:
+
 1. START\_MONITOR\_CALL command is sent from the intercom proxy to the device driver.
 2. A SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
 3. The device goes into a state of “incoming call”. 

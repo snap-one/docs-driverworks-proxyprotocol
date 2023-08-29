@@ -9,6 +9,7 @@ The START\_CALL command is initiated through Programming or Control/Control in C
 
 
 Call Flow:
+
 1. Upon receiving a START\_CALL command from the Proxy, a SIP invite is generated.
 2. The SIP invite to a call is received by the device via the device driver and the device enters a ringing state.
 3. The device goes into a state of “outgoing call”. 
