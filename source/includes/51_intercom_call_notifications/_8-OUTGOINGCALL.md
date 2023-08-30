@@ -20,10 +20,10 @@ Call Flow:
 | --- | --- |
 | num | The Device ID of the Proxy. |
 | str | The Session ID of the SIP session. |
-| num | Call type. |
+| num | Call type. 0 = REGULAR, 2 = MONITOR, 3 = FORKING, 5 = EXTERNAL |
 | num | `remote_device_id` = the proxy ID of the remote endpoint |
-| num | AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive| |
-| num | VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.|
+| num | AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only RECV\_ONLY), 3 = Inactive (NO\_SEND\_RECV)  |
+| num | VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only RECV\_ONLY). The Audio channel cannot be Inactive.|
 
 
 ### Returns
