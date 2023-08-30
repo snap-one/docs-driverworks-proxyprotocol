@@ -14,7 +14,7 @@ This notification is issued when a session is paused, it is sent to the initiato
 | Parameter | Description |
 | --- | --- |
 | num | The Device ID of the Proxy. |
-| num | The Session ID of the SIP session. The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call. |
+| num | The Session ID of the SIP session. Session ID is established when a call is initiated and serves as a unique identifier of the call. |
 
 
 

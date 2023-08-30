@@ -17,7 +17,7 @@ Call Flow:
 | Parameter | Description |
 | --- | --- |
 | num | The Device ID of the Proxy. |
-| str | The Session ID of the SIP session. The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call. |
+| str | The Session ID of the SIP session. Session ID is established when a call is initiated and serves as a unique identifier of the call. |
 | num | Call type. 0 = REGULAR , 2 = MONITOR , 3 = FORKING, 5 = EXTERNAL |
 | num| `Remote_DEVICE_ID`. The Proxy ID of the remote endpoint of the call |
 | num | AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only RECV\_ONLY), 3 = Inactive (NO\_SEND\_RECV)  |

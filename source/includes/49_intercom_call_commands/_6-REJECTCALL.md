@@ -20,7 +20,7 @@ Call Flow:
 | --- | --- |
 | num | `DEVICE_ID` - The proxy ID of the caller. |
 | num | `REMOTE_DEVICE` - The proxy ID of the callee. |
-| str |  `SESSION_ID` - The session ID of the call. |
+| str |  `SESSION_ID` - The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call. |
 
 
 ### Returns
