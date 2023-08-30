@@ -34395,11 +34395,11 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 </tbody></table>
 
@@ -34657,11 +34657,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 <tr>
 <td>num</td>
@@ -34708,11 +34708,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 <tr>
 <td>num</td>
@@ -35098,11 +35098,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 </tbody></table>
 
@@ -35134,7 +35134,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>hang up type (how the call was ended)</td>
+<td>Hang up type: 0 = LOCAL, 1 = REMOTE, 2 = BCASTEMPTY, 3 = NOTFOUND, 4 = DEVBUSY, 5 = NOANSWER, 6 = HUNKOWN</td>
 </tr>
 </tbody></table>
 
@@ -35221,7 +35221,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>hang up type (how the call was ended</td>
+<td>Hang up type: 0 = LOCAL, 1 = REMOTE, 2 = BCASTEMPTY, 3 = NOTFOUND, 4 = DEVBUSY, 5 = NOANSWER, 6 = HUNKOWN</td>
 </tr>
 </tbody></table>
 
@@ -35291,7 +35291,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>Call type.</td>
+<td>Call type. 0 = REGULAR , 2 = MONITOR , 3 = FORKING, 5 = EXTERNAL</td>
 </tr>
 <tr>
 <td>num</td>
@@ -35299,11 +35299,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 </tbody></table>
 
@@ -35343,7 +35343,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>Call type.</td>
+<td>Call type. 0 = REGULAR, 2 = MONITOR, 3 = FORKING, 5 = EXTERNAL</td>
 </tr>
 <tr>
 <td>num</td>
@@ -35351,11 +35351,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested audio cap for the call: 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only, 3 = Inactive</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video cap for the call. 0 = Full Duplex, 1 = Transmit Only, 2 = Receive Only. The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 </tbody></table>
 
