@@ -20,7 +20,7 @@ Call Flow:
 | Parameter | Description |
 | --- | --- |
 | num | The Device ID of the Proxy. |
-| str | The Session ID of the SIP session. Session ID is established when a call is initiated and serves as a unique identifier of the call. | |
+| str | The Session ID of the SIP session. Session ID is established when a call is initiated and serves as a unique identifier of the call. | 
 | num | Hang up type: 0 = LOCAL, 1 = REMOTE, 2 = BCASTEMPTY, 3 = NOTFOUND, 4 = DEVBUSY, 5 = NOANSWER, 6 = HUNKOWN |  
 
 
