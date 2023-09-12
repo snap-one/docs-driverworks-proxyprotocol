@@ -1878,7 +1878,7 @@
                     <a href="#generic-media-player-capabilities-shuffle_modes" class="toc-h2 toc-link" data-title="shuffle_modes">shuffle_modes</a>
                   </li>
                   <li>
-                    <a href="#generic-media-player-capabilities-allow_audio_pathing_" class="toc-h2 toc-link" data-title="allow_audio_pathing_ ">allow_audio_pathing_ </a>
+                    <a href="#generic-media-player-capabilities-allow_audio_pathing" class="toc-h2 toc-link" data-title="allow_audio_pathing">allow_audio_pathing</a>
                   </li>
               </ul>
           </li>
@@ -6403,11 +6403,11 @@ Your driver can facilitate communications with multiple types of proxies for a s
 <h1 id='what-s-new'>What’s New</h1>
 
 <h2 id='what-s-new-what-s-new-in-3-4-0'>What’s New in 3.4.0</h2><h3 id='what-s-new-what-s-new-in-3-4-0-blind-proxy'>Blind Proxy</h3>
-<p>A new capability has been added to the proxy called always_send_level. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level">always_send_level</a>. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
 <h3 id='what-s-new-what-s-new-in-3-4-0-camera-proxy'>Camera Proxy</h3>
-<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper CODEC and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution">CODEC</a> and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
 <h3 id='what-s-new-what-s-new-in-3-4-0-generic-media-player-proxy'>Generic Media Player Proxy</h3>
-<p>A new capability has been added to the proxy called allow_audio_pathing. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing">allow_audio_pathing</a>. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
 <h3 id='what-s-new-what-s-new-in-3-4-0-light-v2-proxy'>Light (v2) Proxy</h3>
 <p>The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: &quot;custom”. See the links below for more information.</p>
 
@@ -16921,9 +16921,9 @@ Capability that requires the minimum value (integer) for tone controls.</p>
    <span class="nt">&lt;shuffle_modes&gt;</span>true<span class="nt">&lt;/shuffle_modes&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
-<h2 id='generic-media-player-capabilities-allow_audio_pathing_'>allow_audio_pathing_ </h2>
+<h2 id='generic-media-player-capabilities-allow_audio_pathing'>allow_audio_pathing</h2>
 <p>This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. This is useful  when modeling streaming media devices that require minidrivers. Prior to O.S. 3.4.0, the Generic Media Proxy could not successfully pass audio paths when bound to the AV Switch Proxy. Setting this capability to True allow for audio pathing through the Generic Media Player to the AV Switch Proxy.</p>
-<h3 id='generic-media-player-capabilities-allow_audio_pathing_-signature'>Signature</h3>
+<h3 id='generic-media-player-capabilities-allow_audio_pathing-signature'>Signature</h3>
 
 <p><code>&lt;allow_audio_pathing&gt;&lt;/allow_audio_pathing&gt;</code></p>
 
@@ -16939,11 +16939,11 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </tbody></table>
 
-<h3 id='generic-media-player-capabilities-allow_audio_pathing_-returns'>Returns</h3>
+<h3 id='generic-media-player-capabilities-allow_audio_pathing-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<p><h3 id='generic-media-player-capabilities-allow_audio_pathing_-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<p><h3 id='generic-media-player-capabilities-allow_audio_pathing-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;allow_audio_pathing&gt;</span>true<span class="nt">&lt;/allow_audio_pathing&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div></p>
