@@ -30,7 +30,7 @@ HSV functions:
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level
 [2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing
-[4]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorrgbtoxy
-[5]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorxytorgb
-[6]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorhsvtoxy
-[7]:	https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorxytohsv
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv
