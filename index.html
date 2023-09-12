@@ -323,6 +323,9 @@
             <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-0" class="toc-h2 toc-link" data-title="What’s New in 3.4.0">What’s New in 3.4.0</a>
+                  </li>
+                  <li>
                     <a href="#what-s-new-what-s-new-in-3-3-2" class="toc-h2 toc-link" data-title="What’s New in 3.3.2">What’s New in 3.3.2</a>
                   </li>
                   <li>
@@ -1873,6 +1876,9 @@
                   </li>
                   <li>
                     <a href="#generic-media-player-capabilities-shuffle_modes" class="toc-h2 toc-link" data-title="shuffle_modes">shuffle_modes</a>
+                  </li>
+                  <li>
+                    <a href="#generic-media-player-capabilities-allow_audio_pathing_" class="toc-h2 toc-link" data-title="allow_audio_pathing_ ">allow_audio_pathing_ </a>
                   </li>
               </ul>
           </li>
@@ -3829,6 +3835,9 @@
             <a href="#blind-capabilities" class="toc-h1 toc-link" data-title="Blind Capabilities">Blind Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#blind-capabilities-always_send_level" class="toc-h2 toc-link" data-title="always_send_level">always_send_level</a>
+                  </li>
+                  <li>
                     <a href="#blind-capabilities-can_stop" class="toc-h2 toc-link" data-title="can_stop">can_stop</a>
                   </li>
                   <li>
@@ -4021,6 +4030,9 @@
                     <a href="#camera-properties-address" class="toc-h2 toc-link" data-title="ADDRESS">ADDRESS</a>
                   </li>
                   <li>
+                    <a href="#camera-properties-audio" class="toc-h2 toc-link" data-title="AUDIO">AUDIO</a>
+                  </li>
+                  <li>
                     <a href="#camera-properties-aspect-ratio" class="toc-h2 toc-link" data-title="ASPECT RATIO">ASPECT RATIO</a>
                   </li>
                   <li>
@@ -4133,6 +4145,9 @@
                     <a href="#dynamic-camera-streams-related-apis" class="toc-h2 toc-link" data-title="Related APIs">Related APIs</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#camera-audio-distribution" class="toc-h1 toc-link" data-title="Camera Audio Distribution">Camera Audio Distribution</a>
           </li>
           <li>
             <a href="#camera-capabilities" class="toc-h1 toc-link" data-title="Camera Capabilities">Camera Capabilities</a>
@@ -6386,6 +6401,23 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p>Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.</p>
 <h1 id='what-s-new'>What’s New</h1>
+
+<h2 id='what-s-new-what-s-new-in-3-4-0'>What’s New in 3.4.0</h2><h3 id='what-s-new-what-s-new-in-3-4-0-blind-proxy'>Blind Proxy</h3>
+<p>A new capability has been added to the proxy called always_send_level. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-camera-proxy'>Camera Proxy</h3>
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper CODEC and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-generic-media-player-proxy'>Generic Media Player Proxy</h3>
+<p>A new capability has been added to the proxy called allow_audio_pathing. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-light-v2-proxy'>Light (v2) Proxy</h3>
+<p>The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: &quot;custom”. See the links below for more information.</p>
+
+<p>RGB functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></p>
+
+<p>HSV functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxy-protocol-3.4.0-beta/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></p>
 
 <h2 id='what-s-new-what-s-new-in-3-3-2'>What’s New in 3.3.2</h2><h3 id='what-s-new-what-s-new-in-3-3-2-camera-proxy'>Camera Proxy</h3>
 <p><strong>Support for Dynamic Camera Streams</strong></p>
@@ -16885,8 +16917,34 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p><code>None</code></p>
 
-<p><h3 id='generic-media-player-capabilities-shuffle_modes-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='generic-media-player-capabilities-shuffle_modes-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;shuffle_modes&gt;</span>true<span class="nt">&lt;/shuffle_modes&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='generic-media-player-capabilities-allow_audio_pathing_'>allow_audio_pathing_ </h2>
+<p>This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. This is useful  when modeling streaming media devices that require minidrivers. Prior to O.S. 3.4.0, the Generic Media Proxy could not successfully pass audio paths when bound to the AV Switch Proxy. Setting this capability to True allow for audio pathing through the Generic Media Player to the AV Switch Proxy.</p>
+<h3 id='generic-media-player-capabilities-allow_audio_pathing_-signature'>Signature</h3>
+
+<p><code>&lt;allow_audio_pathing&gt;&lt;/allow_audio_pathing&gt;</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+
+<h3 id='generic-media-player-capabilities-allow_audio_pathing_-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<p><h3 id='generic-media-player-capabilities-allow_audio_pathing_-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;allow_audio_pathing&gt;</span>true<span class="nt">&lt;/allow_audio_pathing&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div></p>
 <h1 id='audio-output-bindings-and-proxy-events'>Audio Output Bindings and Proxy Events</h1>
@@ -29857,10 +29915,32 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </ul>
 <h1 id='blind-capabilities'>Blind Capabilities</h1>
 
+<h2 id='blind-capabilities-always_send_level'>always_send_level</h2>
+
+<p>If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. Setting this capability to True ensures that the SetTargetLevel values are always available so accurate blind performance can occur.</p>
+
+<h3 id='blind-capabilities-always_send_level-signature'>Signature</h3>
+
+<p><code>&lt;always_send_level&gt;&lt;/always_send_level&gt;</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True/False. Defaults to False</td>
+</tr>
+</tbody></table>
+
+<h3 id='blind-capabilities-always_send_level-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;always_send_level&gt;</span>true<span class="nt">&lt;/always_send_level&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 <h2 id='blind-capabilities-can_stop'>can_stop</h2>
-
 <p>Capability to stop movement of blinds</p>
-
 <h3 id='blind-capabilities-can_stop-signature'>Signature</h3>
 
 <p><code>&lt;can_stop&gt;&lt;/can_stop&gt;</code></p>
@@ -31315,6 +31395,10 @@ or
 <h2 id='camera-properties-address'>ADDRESS</h2>
 
 <p>The camera Hostname or Internet address.  Displayed on the Camera Driver&#39;s Properties page in Composer Pro.</p>
+
+<h2 id='camera-properties-audio'>AUDIO</h2>
+
+<p>Established whether or not audio distribution is supported from the camera. If present, this property is displayed on the Camera Driver&#39;s Properties page in Composer Pro.</p>
 
 <h2 id='camera-properties-aspect-ratio'>ASPECT RATIO</h2>
 
@@ -33433,6 +33517,22 @@ or
     <span class="nt">&lt;dynamic_urls_use_type&gt;</span>SINGLE<span class="nt">&lt;/dynamic_urls_use_type&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h1 id='camera-audio-distribution'>Camera Audio Distribution</h1>
+
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator.</p>
+
+<p>If a camera supports the proper CODEC and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video. </p>
+
+<p>Note that if the camera does not support the proper codec, or the camera microphone has been disabled in the camera interface, no button will appear in the single-camera view.</p>
+
+<p><strong>Requirements</strong></p>
+
+<ul>
+<li><p>Camera has a microphone and it&#39;s enabled. Note that most most are disabled by default. Depending on the camera/camera driver, the camera microphone can be enabled/disabled within the driver or in OvrC.</p></li>
+<li><p>Ensure the configuration for the camera stream is video &amp; audio, not just video.</p></li>
+<li><p>The camera supports codec G.711 u-law (G.711μ).</p></li>
+<li><p>The driver for the camera shows the Audio Property is present. </p></li>
+</ul>
 <h1 id='camera-capabilities'>Camera Capabilities</h1>
 
 <h2 id='camera-capabilities-address_readonly'>address_readonly</h2>
