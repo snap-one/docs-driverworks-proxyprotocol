@@ -20,13 +20,17 @@ A new capability has been added to the proxy called [allow\_audio\_pathing][3]. 
 The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: "custom”. See the links below for more information.
 
 RGB functions:
-- ColorRGBtoXY
-- ColorXYtoRGB
+- [ColorRGBtoXY][4]
+- [ColorXYtoRGB][5]
 
 HSV functions:
-- ColorHSVtoXY
-- ColorXYtoHSV
+- [ColorHSVtoXY][6]
+- [ColorXYtoHSV][7]
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level
 [2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv
