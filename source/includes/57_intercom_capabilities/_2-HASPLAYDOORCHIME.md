@@ -1,4 +1,4 @@
-## has\_play\_door\_ hime
+## has\_play\_door\_chime
 
 Device supports the ability to play a secondary door chime inanition to the default door chime. This is primarily intended for playing a secondary door chime on Control4 touch panels.
 
@@ -9,8 +9,8 @@ Device supports the ability to play a secondary door chime inanition to the defa
 
 
 | Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| --------- | ----------- |
+| bool      | True/False  |
 
 
 ### Example
