@@ -4382,12 +4382,6 @@
                     <a href="#intercom-proxy-settings-microphone-gain" class="toc-h2 toc-link" data-title="Microphone Gain">Microphone Gain</a>
                   </li>
                   <li>
-                    <a href="#intercom-proxy-settings-show-main-video" class="toc-h2 toc-link" data-title="Show Main Video">Show Main Video</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-proxy-settings-show-mirror-video" class="toc-h2 toc-link" data-title="Show Mirror Video">Show Mirror Video</a>
-                  </li>
-                  <li>
                     <a href="#intercom-proxy-settings-camera-enabled" class="toc-h2 toc-link" data-title="Camera Enabled">Camera Enabled</a>
                   </li>
                   <li>
@@ -4463,7 +4457,7 @@
                     <a href="#intercom-call-notifications-call_ended" class="toc-h2 toc-link" data-title="CALL_ENDED">CALL_ENDED</a>
                   </li>
                   <li>
-                    <a href="#intercom-call-notifications-call_enabled_change" class="toc-h2 toc-link" data-title="CALL_ENABLED_CHANGE">CALL_ENABLED_CHANGE</a>
+                    <a href="#intercom-call-notifications-camera_enabled_change" class="toc-h2 toc-link" data-title="CAMERA_ENABLED_CHANGE">CAMERA_ENABLED_CHANGE</a>
                   </li>
                   <li>
                     <a href="#intercom-call-notifications-call_paused" class="toc-h2 toc-link" data-title="CALL_PAUSED">CALL_PAUSED</a>
@@ -4619,7 +4613,7 @@
             <a href="#intercom-capabilities" class="toc-h1 toc-link" data-title="Intercom Capabilities">Intercom Capabilities</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#intercom-capabilities-has_play_door_-hime" class="toc-h2 toc-link" data-title="has_play_door_ hime">has_play_door_ hime</a>
+                    <a href="#intercom-capabilities-has_play_door_chime" class="toc-h2 toc-link" data-title="has_play_door_chime">has_play_door_chime</a>
                   </li>
                   <li>
                     <a href="#intercom-capabilities-has_camera" class="toc-h2 toc-link" data-title="has_camera">has_camera</a>
@@ -34411,7 +34405,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='intercom-proxy-settings-auto-answer'>Auto Answer</h2>
 
-<p>This setting is used to control whether or not an intercom endpoint automatically answers incoming calls.</p>
+<p>This setting is used to control whether or not an intercom endpoint automatically answers incoming calls. Note that Auto Answer is ignored in the case of group calls.</p>
 
 <h2 id='intercom-proxy-settings-send-video'>Send Video</h2>
 
@@ -34433,15 +34427,7 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='intercom-proxy-settings-microphone-gain'>Microphone Gain</h2>
 
-<p>This setting is used to control microphone gain level of an intercom endpoint. Control4 intercom endpoints do not support microphone gain adjustments; this setting is provided for 3rd party use. </p>
-
-<h2 id='intercom-proxy-settings-show-main-video'>Show Main Video</h2>
-
-<p>This setting is used to control whether or not an intercom endpoint will display the main video window when the endpoint is in a call. If the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-capabilities-has_camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
-
-<h2 id='intercom-proxy-settings-show-mirror-video'>Show Mirror Video</h2>
-
-<p>This setting is used to control whether or not an intercom endpoint will display the mirror video window when the endpoint is in a call. If the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-capabilities-has_camera"><code>has_camera</code></a> capability is false, this setting has no effect.</p>
+<p>This setting is used by some Control4 devices to control the microphone gain level of an intercom endpoint. Control4 intercom endpoints do not support microphone gain adjustments; this setting is provided for 3rd party use. </p>
 
 <h2 id='intercom-proxy-settings-camera-enabled'>Camera Enabled</h2>
 
@@ -35242,11 +35228,11 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>The CALL_ENDED notification is only applicable to devices that are active in an answered, call session. For example, in the case of a group call, the CALL_ENDED notify is sent only by the device that was participating in the call. Other devices in the call list should sent a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_rejected">CALL_REJECTED</a> to the proxy. </p>
 
-<h2 id='intercom-call-notifications-call_enabled_change'>CALL_ENABLED_CHANGE</h2>
+<h2 id='intercom-call-notifications-camera_enabled_change'>CAMERA_ENABLED_CHANGE</h2>
 
 <p>Notification sent to the proxy  when the camera enabled value of the intercom has changed</p>
 
-<h3 id='intercom-call-notifications-call_enabled_change-signature'>Signature</h3>
+<h3 id='intercom-call-notifications-camera_enabled_change-signature'>Signature</h3>
 
 <p><code>CALL_ENABLED_CHANGE ()</code></p>
 
@@ -36013,27 +35999,10 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-conservative_aec_changed'>CONSERVATIVE_AEC_CHANGED</h2>
-<p>Notification sent to the proxy  when the conservative aec enabled value of the intercom has changed</p>
-<h3 id='intercom-state-notifications-conservative_aec_changed-signature'>Signature</h3>
-
-<p><code>CONSERVATIVE_AEC_CHANGED ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>bool</td>
-<td>enabled - the new enabled value (true/false) of the intercom</td>
-</tr>
-</tbody></table>
+<p><strong>NOTE:</strong> The CONSERVATIVE_AEC_CHANGED command is currently deprecated and not available for use.\</p>
 
 <h2 id='intercom-state-notifications-current_state_changed'>CURRENT_STATE_CHANGED</h2>
-
 <p>This notification is issued by the proxy when the endpoint’s current state has changed.</p>
-
 <h3 id='intercom-state-notifications-current_state_changed-signature'>Signature</h3>
 
 <p><code>CURRENT_STATE__CHANGED ()</code></p>
@@ -36568,11 +36537,11 @@ This command can be issued by an intercom device that has already paused the cal
 </code></pre></div></p>
 <h1 id='intercom-capabilities'>Intercom Capabilities</h1>
 
-<h2 id='intercom-capabilities-has_play_door_-hime'>has_play_door_ hime</h2>
+<h2 id='intercom-capabilities-has_play_door_chime'>has_play_door_chime</h2>
 
 <p>Device supports the ability to play a secondary door chime inanition to the default door chime. This is primarily intended for playing a secondary door chime on Control4 touch panels.</p>
 
-<h3 id='intercom-capabilities-has_play_door_-hime-signature'>Signature</h3>
+<h3 id='intercom-capabilities-has_play_door_chime-signature'>Signature</h3>
 
 <p><code>&lt;has_play_door_chime&gt;&lt;/has_play_door_chime&gt; </code></p>
 
@@ -36588,7 +36557,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 </tbody></table>
 
-<h3 id='intercom-capabilities-has_play_door_-hime-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+<h3 id='intercom-capabilities-has_play_door_chime-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;has_play_door_chime&gt;</span>false<span class="nt">&lt;/has_play_door_chime&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
