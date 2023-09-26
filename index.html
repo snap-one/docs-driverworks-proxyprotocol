@@ -34392,7 +34392,9 @@ The Intercom Proxy interface is defined in terms of Commands, Requests and Notif
 
 <h2 id='intercom-proxy-best-practices-using-the-remoteaor-property'>Using the RemoteAor Property</h2>
 
-<p>When the “remoteAor” parameter is used in a notification or command, the value is always the address of record of the other intercom device participating in an intercom call. For example, consider that intercom device A has address of record of “sip-user-A@192.168.1.123” and intercom device B has an address of record of “sip-user-B@192.168.1.123”. Intercom device A initiates a call with intercom device B, which results in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call"><code>INCOMING_CALL</code></a> notification on intercom device B. When intercom device B issues the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-commands-accept_call"><code>ACCEPT_CALL</code></a> command, which takes remoteAor as a parameter, intercom device B should use “sip-user-A@192.168.1.123” (the address of record of intercom device A, or the initiator) as the value of this parameter. Likewise, when intercom device A receives the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted"><code>CALL_ACCEPTED</code></a> notification, it will contain a remoteAor property that has the value of the address of record of intercom device B, or “sip-user-B@192.168.1.123”.</p>
+<p>When the “remoteAor” parameter is used in a notification or command, the value is always the address of record of the other intercom device participating in an intercom call. </p>
+
+<p>For example, consider that intercom device A has address of record of “sip-user-A@192.168.1.123” and intercom device B has an address of record of “sip-user-B@192.168.1.123”. Intercom device A initiates a call with intercom device B, which results in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-incoming_call"><code>INCOMING_CALL</code></a> notification on intercom device B. When intercom device B issues the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-commands-accept_call"><code>ACCEPT_CALL</code></a> command, which takes remoteAor as a parameter, intercom device B should use “sip-user-A@192.168.1.123” (the address of record of intercom device A, or the initiator) as the value of this parameter. Likewise, when intercom device A receives the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted"><code>CALL_ACCEPTED</code></a> notification, it will contain a remoteAor property that has the value of the address of record of intercom device B, or “sip-user-B@192.168.1.123”.</p>
 <h1 id='intercom-proxy-settings'>Intercom Proxy Settings</h1>
 
 <h2 id='intercom-proxy-settings-exclude-from-navigator'>Exclude from Navigator</h2>
@@ -35999,7 +36001,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-conservative_aec_changed'>CONSERVATIVE_AEC_CHANGED</h2>
-<p><strong>NOTE:</strong> The CONSERVATIVE_AEC_CHANGED command is currently deprecated and not available for use.\</p>
+<p><strong>NOTE:</strong> The CONSERVATIVE_AEC_CHANGED command is currently deprecated and not available for use.</p>
 
 <h2 id='intercom-state-notifications-current_state_changed'>CURRENT_STATE_CHANGED</h2>
 <p>This notification is issued by the proxy when the endpoint’s current state has changed.</p>
@@ -36650,7 +36652,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='intercom-capabilities-driver_arch_type'>driver_arch_type</h2>
-<p>This capability is included in the SDK for Control4 internal use.</p>
+<p>This capability is included in the SDK for Control4 internal use. It is used to determine if the driver file is a Control4 driver or a third party driver. <strong>Third party driver developers must pass a value of 5 in this capability.</strong></p>
 <h3 id='intercom-capabilities-driver_arch_type-signature'>Signature</h3>
 
 <p><code>&lt;driver_arch_type&gt;&lt;/driver_arch_type&gt;</code></p>
@@ -36668,7 +36670,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tbody></table>
 
 <h3 id='intercom-capabilities-driver_arch_type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-   <span class="nt">&lt;driver_arch_type&gt;</span>3<span class="nt">&lt;/driver_arch_type&gt;</span>
+   <span class="nt">&lt;driver_arch_type&gt;</span>5<span class="nt">&lt;/driver_arch_type&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='intercom-capabilities-has_auto_answer'>has_auto_answer</h2>
