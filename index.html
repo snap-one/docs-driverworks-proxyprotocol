@@ -4428,9 +4428,6 @@
             <a href="#intercom-call-requests" class="toc-h1 toc-link" data-title="Intercom Call Requests">Intercom Call Requests</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#intercom-call-requests-get_custom_buttons" class="toc-h2 toc-link" data-title="GET_CUSTOM_BUTTONS">GET_CUSTOM_BUTTONS</a>
-                  </li>
-                  <li>
                     <a href="#intercom-call-requests-get_device" class="toc-h2 toc-link" data-title="GET_DEVICE">GET_DEVICE</a>
                   </li>
                   <li>
@@ -4480,12 +4477,6 @@
             <a href="#intercom-state-commands" class="toc-h1 toc-link" data-title="Intercom State Commands">Intercom State Commands</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#intercom-state-commands-set_auto_answer" class="toc-h2 toc-link" data-title="SET_AUTO_ANSWER">SET_AUTO_ANSWER</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-state-commands-set_aec_enable" class="toc-h2 toc-link" data-title="SET_AEC_ENABLE">SET_AEC_ENABLE</a>
-                  </li>
-                  <li>
                     <a href="#intercom-state-commands-set_camera_enable" class="toc-h2 toc-link" data-title="SET_CAMERA_ENABLE">SET_CAMERA_ENABLE</a>
                   </li>
                   <li>
@@ -4505,12 +4496,6 @@
                   </li>
                   <li>
                     <a href="#intercom-state-commands-set_ringer_volume" class="toc-h2 toc-link" data-title="SET_RINGER_VOLUME">SET_RINGER_VOLUME</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-state-commands-set_show_main_video" class="toc-h2 toc-link" data-title="SET_SHOW_MAIN_VIDEO">SET_SHOW_MAIN_VIDEO</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-state-commands-set_sip_proxy_ip" class="toc-h2 toc-link" data-title="SET_SIP_PROXY_IP">SET_SIP_PROXY_IP</a>
                   </li>
                   <li>
                     <a href="#intercom-state-commands-set_speaker_volume" class="toc-h2 toc-link" data-title="SET_SPEAKER_VOLUME">SET_SPEAKER_VOLUME</a>
@@ -34813,75 +34798,6 @@ This command can be issued by an intercom device that has already paused the cal
 <p><code>None</code></p>
 <h1 id='intercom-call-requests'>Intercom Call Requests</h1>
 
-<h2 id='intercom-call-requests-get_custom_buttons'>GET_CUSTOM_BUTTONS</h2>
-
-<p>The Intercom Proxy provides the ability to define two (2) custom buttons for each endpoint. These custom buttons will generate “on pressed” and “on released” events that can be used as programming triggers in Composer. This request is issued to obtain the custom button so that they can be displayed by the user interface. Detection of the “pressed” and “released” states of these buttons is the responsibility of the user interface displaying them, as well as the generation of the “pressed” and “released” notifications.</p>
-
-<h3 id='intercom-call-requests-get_custom_buttons-signature'>Signature</h3>
-
-<p><code>GET_CUSTOM_BUTTONS ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>num</td>
-<td>The Proxy Device ID of the intercom endpoint whose custom button information is to be returned.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-requests-get_custom_buttons-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">GET_CUSTOM_BUTTONS</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">idDevice</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">idDevice</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">GET_CUSTOM_BUTTONS</span><span class="o">&gt;</span>
-</code></pre></div><h3 id='intercom-call-requests-get_custom_buttons-response-parameters'>Response Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>id</td>
-<td>The proxy device id of the intercom endpoint to which this request’s response is sent. This value is used to insure that the response is processed by proper device driver (i.e. the &quot;requestor&quot;). It is a number that is greater than or equal to zero (0).</td>
-</tr>
-<tr>
-<td><code>custom_button</code></td>
-<td>An xml record describing a single custom button to be displayed on the active session view in the UI.</td>
-</tr>
-<tr>
-<td>index</td>
-<td>The serial index of the current custom button. (0 or 1)</td>
-</tr>
-<tr>
-<td>state</td>
-<td>The default state of the current custom button. (0=off or 1=on)</td>
-</tr>
-<tr>
-<td>title</td>
-<td>The display title (or label) of the current custom button.</td>
-</tr>
-</tbody></table>
-
-<p>Response Prototype</p>
-
-<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">custom_buttons</span> <span class="n">id</span><span class="o">=</span><span class="err">”</span><span class="p">[</span><span class="n">integer</span> <span class="n">value</span><span class="p">]</span><span class="err">”</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">custom_button</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">index</span><span class="o">&gt;</span><span class="p">[</span><span class="n">integer</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">index</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">state</span><span class="o">&gt;</span><span class="p">[</span><span class="n">integer</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">state</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="p">[</span><span class="n">string</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">custom_button</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">custom_button</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">index</span><span class="o">&gt;</span><span class="p">[</span><span class="n">integer</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">index</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">state</span><span class="o">&gt;</span><span class="p">[</span><span class="n">integer</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">state</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="p">[</span><span class="n">string</span> <span class="n">value</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">custom_button</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">custom_buttons</span><span class="o">&gt;</span>
-</code></pre></div>
-
 <h2 id='intercom-call-requests-get_device'>GET_DEVICE</h2>
 
 <p>This request is issued to obtain the device properties of a specified intercom endpoint.</p>
@@ -35452,62 +35368,10 @@ This command can be issued by an intercom device that has already paused the cal
 <p><code>None</code></p>
 <h1 id='intercom-state-commands'>Intercom State Commands</h1>
 
-<h2 id='intercom-state-commands-set_auto_answer'>SET_AUTO_ANSWER</h2>
-
-<p>This command is issued to toggle the “Do Not Disturb” setting of the intercom. This command will result in an <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-auto_answer_changed"><code>AUTO_ANSWER_CHANGED</code></a> notification to the indicated proxy consumer.</p>
-
-<h3 id='intercom-state-commands-set_auto_answer-signature'>Signature</h3>
-
-<p><code>SET_AUTO_ANSWER ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>int</td>
-<td>Boolean flag indicating the new state for this setting. (0=false, 1=true)</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-state-commands-set_auto_answer-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-state-commands-set_auto_answer-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_AUTO_ANSWER</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">autoAnswer</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">autoAnswer</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">SET_AUTO_ANSWER</span><span class="o">&gt;</span>
-</code></pre></div>
-<h2 id='intercom-state-commands-set_aec_enable'>SET_AEC_ENABLE</h2>
-<p>This command is issued to enable or disable automatic echo cancellation on intercom devices that support this capability.</p>
-<h3 id='intercom-state-commands-set_aec_enable-signature'>Signature</h3>
-
-<p><code>SET_AEC_ENABLE  ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>int</td>
-<td>A Boolean flag indicating whether enable or disable auto-echo cancellation.  Enabled = 1, true, yes or on.  Disabled = 0, false, no or off.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-state-commands-set_aec_enable-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-state-commands-set_aec_enable-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_AEC_ENABLED</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">aecEnabled</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">aecEnabled</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">SET_AEC_ENABLED</span><span class="o">&gt;</span>
-</code></pre></div>
 <h2 id='intercom-state-commands-set_camera_enable'>SET_CAMERA_ENABLE</h2>
+
 <p>This command is issued to enable or disable the camera on an intercom device.</p>
+
 <h3 id='intercom-state-commands-set_camera_enable-signature'>Signature</h3>
 
 <p><code>SET_CAMERA_ENABLE  ()</code></p>
@@ -35688,58 +35552,6 @@ This command can be issued by an intercom device that has already paused the cal
    <span class="o">&lt;</span><span class="n">ringerVol</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">ringerVol</span><span class="o">&gt;</span>
 <span class="o">&lt;/</span><span class="n">SET_RINGER_VOLUME</span><span class="o">&gt;</span>
 </code></pre></div>
-<h2 id='intercom-state-commands-set_show_main_video'>SET_SHOW_MAIN_VIDEO</h2>
-<p>This command is issued to cause the ringer volume setting to be changed for the indicated intercom device.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-ringer_volume_changed"><code>RINGER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
-<h3 id='intercom-state-commands-set_show_main_video-signature'>Signature</h3>
-
-<p><code>SET_SHOW_MAIN_VIDEO ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>bool</td>
-<td>Boolean flag indicating the new value for this setting. (0=false, 1=true)</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-state-commands-set_show_main_video-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-state-commands-set_show_main_video-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_SHOW_MAIN_VIDEO</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">showMainVideo</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">showMainVideo</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">SET_SHOW_MAIN_VIDEO</span>
-</code></pre></div>
-<h2 id='intercom-state-commands-set_sip_proxy_ip'>SET_SIP_PROXY_IP</h2>
-<p>This command established the IP Address of the SIP Proxy.</p>
-<h3 id='intercom-state-commands-set_sip_proxy_ip-signature'>Signature</h3>
-
-<p><code>SET_SIP_PROXY_IP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>A string representing the IP address of the SIP server, such as “192.168.1.13” (without the quotes)</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-state-commands-set_sip_proxy_ip-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-state-commands-set_sip_proxy_ip-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">SET_SIP_PROXY_IP</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="n">sipproxyip</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">13</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">sipproxyip</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">SET_SIP_PROXY_IP</span><span class="o">&gt;</span>
-</code></pre></div>
 <h2 id='intercom-state-commands-set_speaker_volume'>SET_SPEAKER_VOLUME</h2>
 <p>This command is issued by a proxy consumer to cause the current speaker volume setting to be changed.  This command will result in a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-speaker_volume_changed"><code>SPEAKER_VOLUME_CHANGED</code></a> notification to the proxy consumer for the indicated intercom device.</p>
 <h3 id='intercom-state-commands-set_speaker_volume-signature'>Signature</h3>
@@ -35770,7 +35582,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <h2 id='intercom-state-requests-get_current_state'>GET_CURRENT_STATE</h2>
 
-<p>This request is issued to obtain the current device state of the intercom endpoint making the request.</p>
+<p>This request is issued to obtain the current device state of the intercom endpoint making the request. Upon receiving the request, the driver should issue a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-state-notifications-current_state_changed">CURRENT_STATE_CHANGED</a> notify.     </p>
 
 <h3 id='intercom-state-requests-get_current_state-signature'>Signature</h3>
 
@@ -35975,7 +35787,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-camera_enabled_changed'>CAMERA_ENABLED_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Camera Enabled setting has changed.</p>
+<p>This notification is issued by the protocol when the endpoint’s Camera Enabled setting has changed.</p>
 <h3 id='intercom-state-notifications-camera_enabled_changed-signature'>Signature</h3>
 
 <p><code>CAMERA_ENABLED_CHANGED ()</code></p>
@@ -36004,7 +35816,7 @@ This command can be issued by an intercom device that has already paused the cal
 <p><strong>NOTE:</strong> The CONSERVATIVE_AEC_CHANGED command is currently deprecated and not available for use.</p>
 
 <h2 id='intercom-state-notifications-current_state_changed'>CURRENT_STATE_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s current state has changed.</p>
+<p>This notification is issued by the protocol  when the endpoint’s current state has changed.</p>
 <h3 id='intercom-state-notifications-current_state_changed-signature'>Signature</h3>
 
 <p><code>CURRENT_STATE__CHANGED ()</code></p>
@@ -36026,7 +35838,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-device_state_changed'>DEVICE_STATE_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s current state has changed.</p>
+<p>This notification is issued by the protocol  when the endpoint’s current state has changed.</p>
 <h3 id='intercom-state-notifications-device_state_changed-signature'>Signature</h3>
 
 <p><code>DEVICE_STATE__CHANGED ()</code></p>
@@ -36113,7 +35925,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">DEVICE_STATE_CHANGED</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-device_state_changed'>DEVICE_STATE_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Do Not Disturb setting has changed. </p>
+<p>This notification is issued by the protocol  when the endpoint’s Do Not Disturb setting has changed. </p>
 <h3 id='intercom-state-notifications-device_state_changed-signature'>Signature</h3>
 
 <p><code>DND_CHANGED ()</code></p>
@@ -36139,7 +35951,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-exclude_from_navigator_changed'>EXCLUDE_FROM_NAVIGATOR_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Exclude from Navigator setting has changed. </p>
+<p>This notification is issued by the protocol  when the endpoint’s Exclude from Navigator setting has changed. </p>
 <h3 id='intercom-state-notifications-exclude_from_navigator_changed-signature'>Signature</h3>
 
 <p><code>EXCLUDE_FROM_NAVIGATOR_CHANGED ()</code></p>
@@ -36165,7 +35977,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-microphone_gain_changed'>MICROPHONE_GAIN_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Microphone Gain setting has changed.</p>
+<p>This notification is issued by the protocol  when the endpoint’s Microphone Gain setting has changed.</p>
 <h3 id='intercom-state-notifications-microphone_gain_changed-signature'>Signature</h3>
 
 <p><code>MICROPHONE_GAIN_CHANGED ()</code></p>
@@ -36191,7 +36003,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-monitor_mode_changed'>MONITOR_MODE_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Monitor Mode setting has changed. </p>
+<p>This notification is issued by the protocol  when the endpoint’s Monitor Mode setting has changed. </p>
 <h3 id='intercom-state-notifications-monitor_mode_changed-signature'>Signature</h3>
 
 <p><code>MONITOR_MODE_CHANGED ()</code></p>
@@ -36217,7 +36029,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-mute_audio_changed'>MUTE_AUDIO_CHANGED</h2>
-<p>Notification sent to the proxy  when the audio muted value of the intercom has changed.</p>
+<p>Notification sent to the protocol  when the audio muted value of the intercom has changed.</p>
 <h3 id='intercom-state-notifications-mute_audio_changed-signature'>Signature</h3>
 
 <p><code>MUTE_AUDIO_CHANGED ()</code></p>
@@ -36236,7 +36048,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <h2 id='intercom-state-notifications-ringer_volume_changed'>RINGER_VOLUME_CHANGED</h2>
 
-<p>This notification is issued by the proxy when the endpoint’s Monitor Mode setting has changed. </p>
+<p>This notification is issued by the protocol  when the endpoint’s Monitor Mode setting has changed. </p>
 
 <h3 id='intercom-state-notifications-ringer_volume_changed-signature'>Signature</h3>
 
@@ -36263,7 +36075,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-sip_username_changed'>SIP_USERNAME_CHANGED</h2>
-<p>Notification sent to the proxy  when the SIP username value of the intercom has changed.</p>
+<p>Notification sent to the protocol  when the SIP username value of the intercom has changed.</p>
 <h3 id='intercom-state-notifications-sip_username_changed-signature'>Signature</h3>
 
 <p><code>SIP_USERNAME_CHANGED ()</code></p>
@@ -36282,7 +36094,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <h2 id='intercom-state-notifications-send_video_changed'>SEND_VIDEO_CHANGED</h2>
 
-<p>This notification is issued by the proxy when the endpoint’s Monitor Mode setting has changed. </p>
+<p>This notification is issued by the protocol when the endpoint’s Monitor Mode setting has changed. </p>
 
 <h3 id='intercom-state-notifications-send_video_changed-signature'>Signature</h3>
 
@@ -36309,7 +36121,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-speaker_volume_changed'>SPEAKER_VOLUME_CHANGED</h2>
-<p>This notification is issued by the proxy when the endpoint’s Speaker Volume setting has changed. </p>
+<p>This notification is issued by the protocol when the endpoint’s Speaker Volume setting has changed. </p>
 <h3 id='intercom-state-notifications-speaker_volume_changed-signature'>Signature</h3>
 
 <p><code>SPEAKER_VOLUME_CHANGED ()</code></p>
@@ -36335,7 +36147,7 @@ This command can be issued by an intercom device that has already paused the cal
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
 <h2 id='intercom-state-notifications-use_camera_changed'>USE_CAMERA_CHANGED</h2>
-<p>Notification sent to the proxy  when the use camera value of the intercom has changed</p>
+<p>Notification sent to the protocol when the use camera value of the intercom has changed.</p>
 <h3 id='intercom-state-notifications-use_camera_changed-signature'>Signature</h3>
 
 <p><code>USE_CAMERA_CHANGED ()</code></p>
