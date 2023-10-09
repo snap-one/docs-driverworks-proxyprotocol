@@ -1,6 +1,6 @@
 ## SIP\_USERNAME\_CHANGED
 
-Notification sent to the proxy  when the SIP username value of the intercom has changed.
+Notification sent to the protocol  when the SIP username value of the intercom has changed.
 
 
 ### Signature
@@ -8,6 +8,6 @@ Notification sent to the proxy  when the SIP username value of the intercom has 
 `SIP_USERNAME_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| STR | username = the new username value of the intercom |
+| Parameter | Description                                       |
+| --------- | ------------------------------------------------- |
+| STR       | username = the new username value of the intercom |

@@ -1,6 +1,6 @@
 ## CURRENT\_STATE\_CHANGED
 
-This notification is issued by the proxy when the endpoint’s current state has changed.
+This notification is issued by the protocol  when the endpoint’s current state has changed.
 
 
 ### Signature
@@ -8,9 +8,9 @@ This notification is issued by the proxy when the endpoint’s current state has
 `CURRENT_STATE__CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | currentState - Numeric value indicating the current state of the device. (0=not ready, 1=idle, 2=busy, 3=max calls) |
+| Parameter | Description                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------- |
+| num       | currentState - Numeric value indicating the current state of the device. (0=not ready, 1=idle, 2=busy, 3=max calls) |
 
 
 ### Example

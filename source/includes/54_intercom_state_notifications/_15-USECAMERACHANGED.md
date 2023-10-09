@@ -1,6 +1,6 @@
 ## USE\_CAMERA\_CHANGED
 
-Notification sent to the proxy  when the use camera value of the intercom has changed
+Notification sent to the protocol when the use camera value of the intercom has changed.
 
 
 ### Signature
@@ -8,6 +8,6 @@ Notification sent to the proxy  when the use camera value of the intercom has ch
 `USE_CAMERA_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | enabled: = the new enabled value (true/false) of the intercom |
+| Parameter | Description                                                   |
+| --------- | ------------------------------------------------------------- |
+| bool      | enabled: = the new enabled value (true/false) of the intercom |

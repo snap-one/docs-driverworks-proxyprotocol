@@ -1,6 +1,6 @@
 ## MICROPHONE\_GAIN\_CHANGED
 
-This notification is issued by the proxy when the endpoint’s Microphone Gain setting has changed.
+This notification is issued by the protocol  when the endpoint’s Microphone Gain setting has changed.
 
 
 ### Signature
@@ -8,10 +8,10 @@ This notification is issued by the proxy when the endpoint’s Microphone Gain s
 `MICROPHONE_GAIN_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | The proxy device id of the intercom endpoint whose device state information is being returned |
-| int | microphoneGain: Numeric value indicating the current value of this setting. (0 to 100)  |
+| Parameter | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| int       | The proxy device id of the intercom endpoint whose device state information is being returned |
+| int       | microphoneGain: Numeric value indicating the current value of this setting. (0 to 100)        |
 
 
 ### Example

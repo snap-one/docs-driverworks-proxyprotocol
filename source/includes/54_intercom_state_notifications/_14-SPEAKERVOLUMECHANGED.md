@@ -1,6 +1,6 @@
 ## SPEAKER\_VOLUME\_CHANGED
 
-This notification is issued by the proxy when the endpoint’s Speaker Volume setting has changed. 
+This notification is issued by the protocol when the endpoint’s Speaker Volume setting has changed. 
 
 
 ### Signature
@@ -8,10 +8,10 @@ This notification is issued by the proxy when the endpoint’s Speaker Volume se
 `SPEAKER_VOLUME_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | The proxy device id of the intercom endpoint whose device state information is being returned |
-| num | speakerVol: Numeric indicating the current state for this setting. (0=false, 1=true) |
+| Parameter | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| int       | The proxy device id of the intercom endpoint whose device state information is being returned |
+| num       | speakerVol: Numeric indicating the current state for this setting. (0=false, 1=true)          |
 
 
 ### Example

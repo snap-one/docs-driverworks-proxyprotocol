@@ -1,28 +1,28 @@
 ## DEVICE\_STATE\_CHANGED
 
-This notification is issued by the proxy when the endpoint’s current state has changed.
+This notification is issued by the protocol  when the endpoint’s current state has changed.
 
 ### Signature
 
 `DEVICE_STATE__CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-|excludeFromNav | Boolean flag indicating the current state for this setting. (0=false, 1=true) |
-| playDoorChime | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| dndSetting | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| autoAnswer | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| currentState | Numeric value indicating the current state of the device. (0=not ready, 1=idle, 2=busy, 3=max calls) |
-| sendVideo | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| monitorMode | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| ringerVol | Numeric value indicating the current value of this setting. (0 to 100) |
-| speakerVol | Numeric value indicating the current value of this setting. (0 to 100) |
-| microphoneGain | Numeric value indicating the current value of this setting. (0 to 100) |
-| showMainVideo | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| showMirrorVideo | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| cameraEnable | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
-| aecEnabled | Boolean flag indicating the current value of this setting. (0=false, 1=true) |
+| Parameter       | Description                                                                                          |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| excludeFromNav  | Boolean flag indicating the current state for this setting. (0=false, 1=true)                        |
+| playDoorChime   | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| dndSetting      | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| autoAnswer      | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| currentState    | Numeric value indicating the current state of the device. (0=not ready, 1=idle, 2=busy, 3=max calls) |
+| sendVideo       | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| monitorMode     | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| ringerVol       | Numeric value indicating the current value of this setting. (0 to 100)                               |
+| speakerVol      | Numeric value indicating the current value of this setting. (0 to 100)                               |
+| microphoneGain  | Numeric value indicating the current value of this setting. (0 to 100)                               |
+| showMainVideo   | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| showMirrorVideo | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| cameraEnable    | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
+| aecEnabled      | Boolean flag indicating the current value of this setting. (0=false, 1=true)                         |
 
 
 ### Example

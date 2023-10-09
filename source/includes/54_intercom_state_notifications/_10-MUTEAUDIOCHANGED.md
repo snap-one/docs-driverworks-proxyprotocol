@@ -1,6 +1,6 @@
 ## MUTE\_AUDIO\_CHANGED
 
-Notification sent to the proxy  when the audio muted value of the intercom has changed.
+Notification sent to the protocol  when the audio muted value of the intercom has changed.
 
 
 ### Signature
@@ -8,6 +8,6 @@ Notification sent to the proxy  when the audio muted value of the intercom has c
 `MUTE_AUDIO_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | enabled: = the new enabled value (true/false) of the intercom |
+| Parameter | Description                                                   |
+| --------- | ------------------------------------------------------------- |
+| bool      | enabled: = the new enabled value (true/false) of the intercom |
