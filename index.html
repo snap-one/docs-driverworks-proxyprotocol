@@ -4529,9 +4529,6 @@
                     <a href="#intercom-state-notifications-camera_enabled_changed" class="toc-h2 toc-link" data-title="CAMERA_ENABLED_CHANGED">CAMERA_ENABLED_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#intercom-state-notifications-conservative_aec_changed" class="toc-h2 toc-link" data-title="CONSERVATIVE_AEC_CHANGED">CONSERVATIVE_AEC_CHANGED</a>
-                  </li>
-                  <li>
                     <a href="#intercom-state-notifications-current_state_changed" class="toc-h2 toc-link" data-title="CURRENT_STATE_CHANGED">CURRENT_STATE_CHANGED</a>
                   </li>
                   <li>
@@ -4566,26 +4563,6 @@
                   </li>
                   <li>
                     <a href="#intercom-state-notifications-use_camera_changed" class="toc-h2 toc-link" data-title="USE_CAMERA_CHANGED">USE_CAMERA_CHANGED</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#intercom-call-group-commands" class="toc-h1 toc-link" data-title="Intercom Call Group Commands">Intercom Call Group Commands</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#intercom-call-group-commands-add_device_to_group" class="toc-h2 toc-link" data-title="ADD_DEVICE_TO_GROUP">ADD_DEVICE_TO_GROUP</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-call-group-commands-delete_device_from_group" class="toc-h2 toc-link" data-title="DELETE_DEVICE_FROM_GROUP">DELETE_DEVICE_FROM_GROUP</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-call-group-commands-delete_group" class="toc-h2 toc-link" data-title="DELETE_GROUP">DELETE_GROUP</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-call-group-commands-create_group" class="toc-h2 toc-link" data-title="CREATE_GROUP">CREATE_GROUP</a>
-                  </li>
-                  <li>
-                    <a href="#intercom-call-group-commands-edit_group" class="toc-h2 toc-link" data-title="EDIT_GROUP">EDIT_GROUP</a>
                   </li>
               </ul>
           </li>
@@ -35841,9 +35818,6 @@ This command can be issued by an intercom device that has already paused the cal
    <span class="o">&lt;</span><span class="n">cameraEnabled</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">cameraEnabled</span><span class="o">&gt;</span>
 <span class="o">&lt;/</span><span class="n">device_state</span><span class="o">&gt;</span>
 </code></pre></div>
-<h2 id='intercom-state-notifications-conservative_aec_changed'>CONSERVATIVE_AEC_CHANGED</h2>
-<p><strong>NOTE:</strong> The CONSERVATIVE_AEC_CHANGED command is currently deprecated and not available for use.</p>
-
 <h2 id='intercom-state-notifications-current_state_changed'>CURRENT_STATE_CHANGED</h2>
 <p>This notification is issued by the protocol  when the endpoint’s current state has changed.</p>
 <h3 id='intercom-state-notifications-current_state_changed-signature'>Signature</h3>
@@ -36192,155 +36166,6 @@ This command can be issued by an intercom device that has already paused the cal
 <td>enabled: = the new enabled value (true/false) of the intercom</td>
 </tr>
 </tbody></table>
-<h1 id='intercom-call-group-commands'>Intercom Call Group Commands</h1>
-
-<h2 id='intercom-call-group-commands-add_device_to_group'>ADD_DEVICE_TO_GROUP</h2>
-
-<p>This command is issued to add the specified intercom endpoint to the specified call group. </p>
-
-<h3 id='intercom-call-group-commands-add_device_to_group-signature'>Signature</h3>
-
-<p><code>ADD_DEVICE_TO_GROUP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>The name of the call group to which the specified endpoint should be added.</td>
-</tr>
-<tr>
-<td>num</td>
-<td>The proxy id of the intercom endpoint that should be added to the call group.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-group-commands-add_device_to_group-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-call-group-commands-add_device_to_group-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">ADD_DEVICE_TO_GROUP</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mydevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">idDevice</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">idDevice</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">ADD_DEVICE_TO_GROUP</span><span class="o">&gt;</span>
-</code></pre></div>
-<h2 id='intercom-call-group-commands-delete_device_from_group'>DELETE_DEVICE_FROM_GROUP</h2>
-<p>This command is issued to remove the specified intercom endpoint from the specified call group. Attempting to delete a device from the “All” group will result in a command failure.</p>
-<h3 id='intercom-call-group-commands-delete_device_from_group-signature'>Signature</h3>
-
-<p><code>DELETE_DEVICE_FROM_GROUP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>The name of the call group to which the specified endpoint should be added.</td>
-</tr>
-<tr>
-<td>num</td>
-<td>The proxy id of the intercom endpoint that should be added to the call group.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-group-commands-delete_device_from_group-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-call-group-commands-delete_device_from_group-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">DELETE_DEVICE_FROM_GROUP</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mydevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">idDevice</span><span class="o">&gt;</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">idDevice</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">DELETE_DEVICE_FROM_GROUP</span><span class="o">&gt;</span>
-</code></pre></div>
-<h2 id='intercom-call-group-commands-delete_group'>DELETE_GROUP</h2>
-<p>This command is issued to delete an intercom call group. Note that the “All” group cannot be deleted. </p>
-<h3 id='intercom-call-group-commands-delete_group-signature'>Signature</h3>
-
-<p><code>DELETE_GROUP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>The name of the call group to which the specified endpoint should be added.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-group-commands-delete_group-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-call-group-commands-delete_group-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">DELETE_GROUP</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mydevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">DELETE_GROUP</span><span class="o">&gt;</span>
-</code></pre></div>
-<h2 id='intercom-call-group-commands-create_group'>CREATE_GROUP</h2>
-<p>This command is issued to create  a new intercom call group. Note that the text “All” is a reserved group name. The command will fail if this call is made with the group name “All”. </p>
-<h3 id='intercom-call-group-commands-create_group-signature'>Signature</h3>
-
-<p><code>CREATE_GROUP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>The name of the call group to which the specified endpoint should be added.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-group-commands-create_group-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='intercom-call-group-commands-create_group-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">CREATE_GROUP</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mydevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">CREATE_GROUP</span><span class="o">&gt;</span>
-</code></pre></div>
-<h2 id='intercom-call-group-commands-edit_group'>EDIT_GROUP</h2>
-<p>This command is issued to rename the specified intercom call group. Note that the name of the “All” group cannot be changed</p>
-<h3 id='intercom-call-group-commands-edit_group-signature'>Signature</h3>
-
-<p><code>EDIT_GROUP ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>str</td>
-<td>The name of the call group to which the specified endpoint should be added.</td>
-</tr>
-<tr>
-<td>str</td>
-<td>newName: The new name for the specified call group.</td>
-</tr>
-</tbody></table>
-
-<h3 id='intercom-call-group-commands-edit_group-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<p><h3 id='intercom-call-group-commands-edit_group-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="o">&lt;</span><span class="n">EDIT_GROUP</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mydevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">newName</span><span class="o">&gt;</span><span class="p">[</span><span class="n">mynewdevice</span><span class="p">]</span><span class="o">&lt;/</span><span class="n">newName</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">EDIT_GROUP</span><span class="o">&gt;</span>
-</code></pre></div></p>
 <h1 id='intercom-call-group-requests'>Intercom Call Group Requests</h1>
 
 <h2 id='intercom-call-group-requests-get_group_list'>GET_GROUP_LIST</h2>
