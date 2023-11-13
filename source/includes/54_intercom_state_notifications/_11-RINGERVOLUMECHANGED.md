@@ -1,6 +1,6 @@
 ## RINGER\_VOLUME\_CHANGED
 
-This notification is issued by the protocol  when the endpoint’s Monitor Mode setting has changed. 
+This notification is issued by the protocol when the endpoint’s ringer volume setting has changed. 
 
 
 ### Signature
