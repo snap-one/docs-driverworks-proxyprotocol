@@ -4336,6 +4336,9 @@
               </ul>
           </li>
           <li>
+            <a href="#intercom-proxy-terminology" class="toc-h1 toc-link" data-title="Intercom Proxy Terminology">Intercom Proxy Terminology</a>
+          </li>
+          <li>
             <a href="#fan-variables" class="toc-h1 toc-link" data-title="Fan Variables">Fan Variables</a>
               <ul class="toc-list-h2">
                   <li>
@@ -34351,6 +34354,31 @@ Defaults to false.</p>
 <p><code>speed_changed</code> - Fired when the speed number changes. Since turning on or off also involves a change of speed this would also fire when the fan turns on or off.</p>
 
 <p><code>direction_changed</code> - Fired when the fan spin direction changes. This would only be available if the <code>can_reverse</code> capability is set to true in the driver file.</p>
+<h1 id='intercom-proxy-terminology'>Intercom Proxy Terminology</h1>
+
+<p>The following terms are specific to the Control4 Intercom Proxy and their use in developing a door station or door station like driver. Note that this content does not include the scope of developing a touch panel to support intercom use.</p>
+
+<p><strong>Intercom Call Commands</strong> –  Include a set of commands that are sent from the Intercom Proxy to the door station device that is supported by your driver. An example of an Intercom Proxy Command is START_CALL. When your driver receives the START_CALL command, it must handle the command in a manner that enables your device to begin a call.</p>
+
+<p><strong>Intercom Call Notifications</strong> -  Consist of “notifies” that are sent from the device you are supporting, via your driver, to the Intercom Proxy. For example, when your driver receives a START_CALL command, it will send a CALL_\STARTED notification to the Intercom Proxy.</p>
+
+<p><strong>Intercom Call Requests</strong> - These functions represent requests that are sent from your device driver to the Intercom Proxy for various sets of Call data. For example, when needed, your driver may send the Intercom Call Request of GET_DEVICE_LIST. The GET_DEVICE_LIST request is a function for gathering information about other devices on the network that  might communicate with your device. Information returned includes data such as whether another device has a camera, does it include a display, etc.</p>
+
+<p><strong>Intercom State Commands</strong> - These functions consist of commands that impact the state of the device you are writing a driver for. For example, your driver may receive a State Command of SET_RINGER_VOLUME from the Intercom Proxy. SET_RINGER_VOLUME will be sent with a numerical value indicating the new ringer volume level. Your driver will need to receive this state command and adjust the ringer volume on your device accordingly.</p>
+
+<p><strong>Intercom State Notifications</strong> - These functions consist of “notifies” that are sent from the device you are supporting, via your driver, to the Intercom Proxy. For example, when your driver receives the State Command of SET_RINGER_VOLUME, it needs to send a State Notification of RINGER_VOLUME_CHANGED that includes the new ringer volume value.</p>
+
+<p><strong>Intercom State Requests</strong> - These functions  represent requests that are sent from your device driver to the Intercom Proxy for various sets of device state data. For example, when needed, your driver may send the Intercom Call Request of GET_STATE_LIST. This request returns the device states for all of the intercom endpoints in the project.</p>
+
+<p><strong>Intercom Call Group Requests</strong> - Currently, this consists of one function: GET_GROUP_LIST which can be used by your driver to obtain the group list of all of intercom call groups in the project.</p>
+
+<p><strong>Intercom Capabilities</strong> -  These  functions  consist of Boolean XML elements that need to be defined in your driver. They represent functionality supported by your device such as do not disturb support, camera inclusion or its ability to play a door chime.</p>
+
+<p><strong>Intercom Events</strong> - Events are useful to define in your driver as they provide an opportunity for ComposerPro programming to occur based on them being fired. For example, if the speaker_volume_changed Event is defined in your driver and that Event fires when the speaker volume of your device changes, it would be possible (through programming in ComposerPro) to modify the speaker volume of other intercom devices in the project.</p>
+
+<p><strong>Intercom Conditionals</strong> - Conditionals are useful to define in your driver as they also provide an opportunity for ComposerPro programming to occur based on their state. For example, if the In a Call conditional is set to true, the device that reported this conditional could be displayed as busy on Navigators. </p>
+
+<p><strong>Intercom Variables</strong> – The Intercom Proxy supports three Variables which can also be used in ComposerPro programming when defined in your driver. For example, the CALL_DURATION Variable can be assigned a time limit for a call, If that limit is exceeded, the call can be terminated.</p>
 <h1 id='fan-variables'>Fan Variables</h1>
 
 <h2 id='fan-variables-fan-variables'>Fan Variables</h2>
@@ -36051,7 +36079,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <h2 id='intercom-state-notifications-ringer_volume_changed'>RINGER_VOLUME_CHANGED</h2>
 
-<p>This notification is issued by the protocol  when the endpoint’s Monitor Mode setting has changed. </p>
+<p>This notification is issued by the protocol when the endpoint’s ringer volume setting has changed. </p>
 
 <h3 id='intercom-state-notifications-ringer_volume_changed-signature'>Signature</h3>
 
