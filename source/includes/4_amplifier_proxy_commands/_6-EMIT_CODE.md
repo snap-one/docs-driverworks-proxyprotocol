@@ -8,9 +8,9 @@ Emit IR/Serial code. This is used by the AVGen IR/Serial Proxy.
 `EMIT_CODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| Int | ID OF IR Code |
+| Parameter | Type | Description   |
+| --------- | ---- | ------------- |
+| ID        | INT  | ID Of IR Code |
 
 
 ### Returns

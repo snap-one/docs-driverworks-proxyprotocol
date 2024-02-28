@@ -8,9 +8,9 @@ Turn loudness off.
 `LOUDNESS_OFF ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

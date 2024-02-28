@@ -8,9 +8,9 @@ Pulse treble up.
 `PULSE_TREBLE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

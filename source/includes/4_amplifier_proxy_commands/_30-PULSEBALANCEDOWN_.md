@@ -8,6 +8,11 @@ Pulse balance down (Left)
 `PULSE_BALNCE_DOWN ()`
 
 
-### Parameters
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
+
+
+### Returns
 
 `None`

@@ -8,6 +8,11 @@ Toggle (cycle through) surround mode presets on device.
 `PULSE_SUR_UP`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
+
+
+### Returns
+
+`None`

@@ -8,10 +8,10 @@ Select specified surround mode preset on device.
 `SET_SURROUND_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Surround Mode |
-| int | Output Binding ID |
+| Parameter      | Type | Description         |
+| -------------- | ---- | ------------------- |
+| SURROUND\_MODE | INT  | Surround Mode Value |
+| OUTPUT         | INT  | Output Binding ID   |
 
 
 ### Returns

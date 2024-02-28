@@ -8,10 +8,9 @@ Start ramping volume up.
 `START_VOL_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Volume Level |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns
