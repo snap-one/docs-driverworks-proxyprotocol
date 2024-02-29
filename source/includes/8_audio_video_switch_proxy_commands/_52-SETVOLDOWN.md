@@ -7,9 +7,11 @@ Stop ramping volume down.
 `SET_VOL_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| LEVEL     | INT  | Level             |
+| OUTPUT    | INT  | Output Binding ID |
+
 
 
 ### Returns

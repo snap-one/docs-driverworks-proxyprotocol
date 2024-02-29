@@ -8,9 +8,10 @@ Start ramping bass down.
 `START_BASS_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
+
 
 
 

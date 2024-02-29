@@ -8,9 +8,9 @@ Start ramping treble down.
 `START_TREBLE_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

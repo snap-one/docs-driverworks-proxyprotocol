@@ -8,10 +8,10 @@ Turn loudness on.
 `SET_LOUDNESS ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| LEVEL     | INT  | Level             |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

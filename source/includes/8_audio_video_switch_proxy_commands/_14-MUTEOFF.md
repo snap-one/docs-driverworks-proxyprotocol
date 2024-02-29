@@ -8,9 +8,9 @@ Turn muting off.
 `MUTE_OFF ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| OUTPUT    | INT  | Output BindingID |
 
 
 ### Returns

@@ -8,9 +8,10 @@ Pulse balance up (Right)
 `PULSE_BALNCE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| OUTPUT    | INT  | Output BindingID |
+
 
 
 ### Returns

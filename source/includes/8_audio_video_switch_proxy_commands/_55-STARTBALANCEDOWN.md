@@ -8,9 +8,9 @@ Start ramping balance down (left).
 `START_BALANCE_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

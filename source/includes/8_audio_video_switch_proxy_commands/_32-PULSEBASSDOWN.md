@@ -8,9 +8,10 @@ Pulse bass down (Left)
 `PULSE_BASS_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| OUTPUT    | INT  | Output BindingID |
+
 
 
 ### Returns

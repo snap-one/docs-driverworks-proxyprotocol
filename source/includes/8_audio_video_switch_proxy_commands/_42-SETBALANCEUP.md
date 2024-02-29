@@ -8,10 +8,11 @@ Set balance to a specified position.
 `SET_BALANCE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| LEVEL     | INT  | Balance Level    |
+| OUTPUT    | INT  | Output BindingID |
+
 
 
 ### Returns

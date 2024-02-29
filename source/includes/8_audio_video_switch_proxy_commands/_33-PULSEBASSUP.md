@@ -8,9 +8,10 @@ Pulse bass up (Right)
 `PULSE_BASS_UP ()`
 
 
-### Parameters
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| OUTPUT    | INT  | Output BindingID |
 
-`None`
 
 
 ### Returns

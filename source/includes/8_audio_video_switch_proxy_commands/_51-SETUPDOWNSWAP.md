@@ -8,9 +8,9 @@ Swap page UP/DOWN buttons (used by AVGen)
 `SET_UP_DOWN_SWAP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| SWAPFLAG  | BOOL |             |
 
 
 ### Returns
