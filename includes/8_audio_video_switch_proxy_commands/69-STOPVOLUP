@@ -6,11 +6,13 @@
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OUTPUT</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
