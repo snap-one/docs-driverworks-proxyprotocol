@@ -8,10 +8,10 @@ Select specified disc and track.
 `GO_TO_DISC_TRACK ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Disc Number |
-| int | Track Number |
+| Parameter    | Type | Description     |
+| ------------ | ---- | --------------- |
+| DISC\_NUMBER | INT  | Number of Disc  |
+| DISC\_TRACK  | INT  | Number of Track |
 
 
 ### Returns

@@ -8,9 +8,9 @@ Selected track has changed.
 `TRACK_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Track Number |
+| Parameter     | Type | Description     |
+| ------------- | ---- | --------------- |
+| TRACK\_NUMBER | INT  | Number of Track |
 
 
 ### Returns

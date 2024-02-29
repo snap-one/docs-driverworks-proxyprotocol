@@ -8,9 +8,10 @@ Select specified track.
 `GO_TO_TRACK ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Track Number |
+| Parameter   | Type | Description     |
+| ----------- | ---- | --------------- |
+| DISC\_TRACK | INT  | Number of Track |
+
 
 
 ### Returns

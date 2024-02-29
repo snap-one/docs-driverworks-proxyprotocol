@@ -8,9 +8,10 @@ Select specified disc.
 `GO_TO_DISC ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Disc Number |
+| Parameter    | Type | Description    |
+| ------------ | ---- | -------------- |
+| DISC\_NUMBER | INT  | Number of Disc |
+
 
 
 ### Returns
