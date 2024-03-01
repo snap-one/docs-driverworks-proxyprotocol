@@ -3,7 +3,7 @@
 Pulse volume level up.
 
 
-### Signature
+### Name
 
 `PULSE_VOL_UP`
 

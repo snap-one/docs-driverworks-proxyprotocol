@@ -2,7 +2,7 @@
 Stop ramping the volume up.
 
 
-### Signature
+### Name
 
 `STOP_VOL_UP ()`
 

@@ -3,7 +3,7 @@
 Emit IR/Serial code (used by AVGen IR/Serial Proxy).
 
 
-### Signature
+### Name
 
 `EMIT_CODE ()`
 

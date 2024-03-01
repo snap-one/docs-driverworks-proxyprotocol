@@ -2,7 +2,7 @@
 
 Device has entered a stopped state.
 
-### Signature
+### Name
 
 `STOP ()`
 

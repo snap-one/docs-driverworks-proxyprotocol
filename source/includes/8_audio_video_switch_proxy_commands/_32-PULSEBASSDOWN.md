@@ -3,7 +3,7 @@
 Pulse bass down (Left)
 
 
-### Signature
+### Name
 
 `PULSE_BASS_DOWN ()`
 

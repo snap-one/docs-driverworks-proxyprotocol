@@ -3,7 +3,7 @@
  Turn loudness on.
 
 
-### Signature
+### Name
 
 `LOUDNESS_ON ()`
 

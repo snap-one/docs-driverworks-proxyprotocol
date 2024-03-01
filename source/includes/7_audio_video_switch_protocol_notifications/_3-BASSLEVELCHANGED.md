@@ -3,7 +3,7 @@
 Selected bass level has changed
 
 
-### Signature
+### Name
 
 `BASS_LEVEL_CHANGED ()`
 

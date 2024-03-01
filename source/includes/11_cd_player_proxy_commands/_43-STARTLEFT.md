@@ -3,7 +3,7 @@
 Pulse left navigation.
 
 
-### Signature
+### Name
 
 `START_LEFT ()`
 
@@ -15,5 +15,5 @@ Pulse left navigation.
 
 ### Returns
 
-\`None
-\`
+`None
+`

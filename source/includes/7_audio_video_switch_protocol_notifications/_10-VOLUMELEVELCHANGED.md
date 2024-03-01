@@ -3,7 +3,7 @@
 Selected volume level has changed.
 
 
-### Signature
+### Name
 
 `VOLUME_LEVEL_CHANGED ()`
 

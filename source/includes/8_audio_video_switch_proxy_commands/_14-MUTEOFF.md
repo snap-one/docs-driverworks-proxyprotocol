@@ -3,7 +3,7 @@
 Turn muting off.
 
 
-### Signature
+### Name
 
 `MUTE_OFF ()`
 

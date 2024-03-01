@@ -2,7 +2,7 @@
 Stop ramping bass 
 
 
-### Signature
+### Name
 
 `STOP_BALANCE_UP ()`
 

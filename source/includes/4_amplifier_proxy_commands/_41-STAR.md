@@ -3,7 +3,7 @@
 Pulse `*` button
 
 
-### Signature
+### Name
 
 `STAR ()`
 

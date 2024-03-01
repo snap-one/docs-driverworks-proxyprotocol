@@ -3,7 +3,7 @@
 Eject disc.
 
 
-### Signature
+### Name
 
 `EJECT ()`
 

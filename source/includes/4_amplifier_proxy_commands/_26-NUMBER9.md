@@ -3,7 +3,7 @@
 Pulse ‘9’ button
 
 
-### Signature
+### Name
 
 `Number_9 ()`
 

@@ -3,7 +3,7 @@
 Pulse the recall button.
 
 
-### Signature
+### Name
 
 `RECALL ()`
 
@@ -15,5 +15,5 @@ Pulse the recall button.
 
 ### Returns
 
-\`None
-\`
+`None
+`

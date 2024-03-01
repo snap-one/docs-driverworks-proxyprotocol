@@ -2,7 +2,7 @@
 
 Stop ramping the treble up.
 
-### Signature
+### Name
 
 `STOP_TREBLE_UP ()`
 

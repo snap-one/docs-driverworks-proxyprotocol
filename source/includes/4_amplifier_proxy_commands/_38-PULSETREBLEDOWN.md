@@ -3,7 +3,7 @@
 Pulse treble down.
 
 
-### Signature
+### Name
 
 `PULSE_TREBLE_DOWN ()`
 

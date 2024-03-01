@@ -2,7 +2,7 @@
 
 Stop ramping the treble down
 
-### Signature
+### Name
 
 `STOP_TREBLE_DOWN ()`
 

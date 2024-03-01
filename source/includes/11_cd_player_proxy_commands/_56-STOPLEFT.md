@@ -3,7 +3,7 @@
 Terminate left navigation.
 
 
-### Signature
+### Name
 
 `STOP_LEFT ()`
 
@@ -15,5 +15,5 @@ Terminate left navigation.
 
 ### Returns
 
-\`None
-\`
+`None
+`

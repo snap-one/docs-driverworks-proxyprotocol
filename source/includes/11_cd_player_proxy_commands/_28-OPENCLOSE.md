@@ -3,7 +3,7 @@
 Open/close disc tray.
 
 
-### Signature
+### Name
 
 `OPEN_CLOSE ()`
 
@@ -15,5 +15,5 @@ Open/close disc tray.
 
 ### Returns
 
-\`None
-\`
+`None
+`

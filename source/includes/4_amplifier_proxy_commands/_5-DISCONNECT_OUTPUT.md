@@ -3,7 +3,7 @@
 Disconnect (turn off) selected output on device
 
 
-### Signature
+### Name
 
 `DISCONNECT_OUTPUT ()`
 

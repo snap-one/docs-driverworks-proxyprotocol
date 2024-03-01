@@ -3,17 +3,17 @@
 Swap page UP/DOWN buttons.
 
 
-### Signature
+### Name
 
 `POUND ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| --------- | ----------- |
+| bool      | True/False  |
 
 
 ### Returns
 
-\`None
-\`
+`None
+`

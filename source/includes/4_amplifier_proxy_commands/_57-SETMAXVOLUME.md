@@ -3,7 +3,7 @@
 Set maximum allowable volume level
 
 
-### Signature
+### Name
 
 `SET_MAX_VOLUME ()`
 

@@ -3,7 +3,7 @@
 Terminate down-arrow navigation.
 
 
-### Signature
+### Name
 
 `STOP_DOWN ()`
 
@@ -15,5 +15,5 @@ Terminate down-arrow navigation.
 
 ### Returns
 
-\`None
-\`
+`None
+`

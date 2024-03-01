@@ -3,7 +3,7 @@
 Initiate right-arrow navigation.
 
 
-### Signature
+### Name
 
 `START_RIGHT ()`
 
@@ -15,5 +15,5 @@ Initiate right-arrow navigation.
 
 ### Returns
 
-\`None
-\`
+`None
+`

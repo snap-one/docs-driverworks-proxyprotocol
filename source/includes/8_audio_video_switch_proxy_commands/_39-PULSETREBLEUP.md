@@ -3,7 +3,7 @@
 Pulse treble up.
 
 
-### Signature
+### Name
 
 `PULSE_TREBLE_UP ()`
 

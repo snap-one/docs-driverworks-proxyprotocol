@@ -3,7 +3,7 @@
 Stop menu page up.
 
 
-### Signature
+### Name
 
 `STOP_PAGE_UP ()`
 
@@ -15,5 +15,5 @@ Stop menu page up.
 
 ### Returns
 
-\`None
-\`
+`None
+`

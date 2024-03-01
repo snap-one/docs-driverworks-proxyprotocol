@@ -3,7 +3,7 @@
 Pulse/scan forward within track/chapter.
 
 
-### Signature
+### Name
 
 `SCAN_FWD ()`
 
@@ -15,5 +15,5 @@ Pulse/scan forward within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None
+`

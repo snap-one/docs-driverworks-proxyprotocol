@@ -3,7 +3,7 @@
 MUTE state (On/Off) has changed.
 
 
-### Signature
+### Name
 
 `MUTE_CHANGED ()`
 

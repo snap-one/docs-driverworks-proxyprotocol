@@ -3,7 +3,7 @@
 Set treble to a specified level.
 
 
-### Signature
+### Name
 
 `SET_TREBLE_LEVEL ()`
 

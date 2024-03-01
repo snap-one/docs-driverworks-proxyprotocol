@@ -3,7 +3,7 @@
 Pulse right navigation button.
 
 
-### Signature
+### Name
 
 `RIGHT ()`
 
@@ -15,5 +15,5 @@ Pulse right navigation button.
 
 ### Returns
 
-\`None
-\`
+`None
+`

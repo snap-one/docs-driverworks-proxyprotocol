@@ -3,7 +3,7 @@
 Advance to next track/chapter.
 
 
-### Signature
+### Name
 
 `SKIP_FWD ()`
 
@@ -15,5 +15,5 @@ Advance to next track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None
+`

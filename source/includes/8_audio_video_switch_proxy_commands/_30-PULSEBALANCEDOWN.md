@@ -3,7 +3,7 @@
 Pulse balance down (Left)
 
 
-### Signature
+### Name
 
 `PULSE_BALNCE_DOWN ()`
 

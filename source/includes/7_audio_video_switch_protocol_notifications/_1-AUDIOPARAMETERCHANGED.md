@@ -3,7 +3,7 @@
 Audio parameter has changed
 
 
-### Signature
+### Name
 
 `AUDIO_PARAMETER_CHANGED ()`
 

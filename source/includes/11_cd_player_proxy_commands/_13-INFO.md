@@ -3,7 +3,7 @@
 Pulse Info button
 
 
-### Signature
+### Name
 
 `INFO ()`
 

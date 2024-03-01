@@ -3,14 +3,14 @@
 Emit IR/Serial code macro (used by AVGen IR/Serial Proxy)
 
 
-### Signature
+### Name
 
 `EMIT_MACRO ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MacroCodeName |
+| Parameter | Description   |
+| --------- | ------------- |
+| str       | MacroCodeName |
 
 
 ### Returns

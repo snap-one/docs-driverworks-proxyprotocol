@@ -3,7 +3,7 @@
 Pulse balance up (Right)
 
 
-### Signature
+### Name
 
 `PULSE_BALNCE_UP ()`
 

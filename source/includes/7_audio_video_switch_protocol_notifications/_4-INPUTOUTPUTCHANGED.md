@@ -3,7 +3,7 @@
 Selected inputs & outputs have changed.
 
 
-### Signature
+### Name
 
 `INPUT_OUTPUT_CHANGED ()`
 

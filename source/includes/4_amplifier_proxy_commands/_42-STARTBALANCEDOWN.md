@@ -3,7 +3,7 @@
 Start ramping balance down (left).
 
 
-### Signature
+### Name
 
 `START_BALANCE_DOWN ()`
 

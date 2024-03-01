@@ -3,7 +3,7 @@
 Start ramping treble up.
 
 
-### Signature
+### Name
 
 `START_TREBLE_UP ()`
 

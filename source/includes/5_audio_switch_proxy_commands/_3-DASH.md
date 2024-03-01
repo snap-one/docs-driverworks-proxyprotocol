@@ -3,7 +3,7 @@
 Pulses the ‘-’ button.
 
 
-### Signature
+### Name
 
 `DASH ()`
 

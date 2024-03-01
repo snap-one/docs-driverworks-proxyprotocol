@@ -3,7 +3,7 @@
 Loudness state (On/Off) has changed.
 
 
-### Signature
+### Name
 
 `LOUDNESS_CHANGED ()`
 

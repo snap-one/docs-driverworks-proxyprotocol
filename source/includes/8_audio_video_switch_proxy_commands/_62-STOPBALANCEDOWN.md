@@ -3,7 +3,7 @@
 Start ramping balance.
 
 
-### Signature
+### Name
 
 `STOP_BALANCE_DOWN ()`
 

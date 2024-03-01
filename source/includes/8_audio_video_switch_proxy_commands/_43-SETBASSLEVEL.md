@@ -3,7 +3,7 @@
 Set bass to a specified level.
 
 
-### Signature
+### Name
 
 `SET_BASS_LEVEL`
 

@@ -3,7 +3,7 @@
 Swap page UP/DOWN buttons (used by AVGen)
 
 
-### Signature
+### Name
 
 `SET_UP_DOWN_SWAP ()`
 

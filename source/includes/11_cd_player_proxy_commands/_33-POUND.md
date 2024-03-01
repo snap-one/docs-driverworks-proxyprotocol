@@ -3,7 +3,7 @@
 Pulse # button.
 
 
-### Signature
+### Name
 
 `POUND ()`
 
@@ -15,5 +15,5 @@ Pulse # button.
 
 ### Returns
 
-\`None
-\`
+`None
+`

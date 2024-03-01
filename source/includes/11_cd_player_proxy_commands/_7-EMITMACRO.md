@@ -3,14 +3,14 @@
 Emit IR/Serial code macro.
 
 
-### Signature
+### Name
 
 `EMIT_MACRO ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MacroCodeName |
+| Parameter | Description   |
+| --------- | ------------- |
+| str       | MacroCodeName |
 
 
 ### Returns

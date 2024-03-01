@@ -3,7 +3,7 @@
 Selected treble level has changed.
 
 
-### Signature
+### Name
 
 `TREBLE_LEVEL_CHANGED ()`
 

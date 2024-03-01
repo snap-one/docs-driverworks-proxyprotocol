@@ -3,7 +3,7 @@
 Selected balance level has changed.
 
 
-### Signature
+### Name
 
 `BALANCE_LEVEL_CHANGED ()`
 

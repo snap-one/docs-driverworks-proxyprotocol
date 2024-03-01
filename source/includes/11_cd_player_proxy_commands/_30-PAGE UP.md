@@ -3,7 +3,7 @@
 Pulse menu Page up.
 
 
-### Signature
+### Name
 
 `PAGE_UP ()`
 
@@ -15,5 +15,5 @@ Pulse menu Page up.
 
 ### Returns
 
-\`None
-\`
+`None
+`

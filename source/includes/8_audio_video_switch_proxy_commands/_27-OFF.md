@@ -3,7 +3,7 @@
 Turn device Off.
 
 
-### Signature
+### Name
 
 `OFF ()`
 

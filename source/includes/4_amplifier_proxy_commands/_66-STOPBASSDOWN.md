@@ -2,7 +2,7 @@
 
 Stop ramping bass down.
 
-### Signature
+### Name
 
 `STOP_BASS_DOWN ()`
 

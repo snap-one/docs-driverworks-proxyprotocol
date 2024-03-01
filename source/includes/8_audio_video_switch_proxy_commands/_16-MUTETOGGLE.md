@@ -3,7 +3,7 @@
 Toggle muting on/off.
 
 
-### Signature
+### Name
 
 `MUTE_TOGGLE ()`
 

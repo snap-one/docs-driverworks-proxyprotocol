@@ -3,7 +3,7 @@
 Pulse bass up (Right)
 
 
-### Signature
+### Name
 
 `PULSE_BASS_UP ()`
 

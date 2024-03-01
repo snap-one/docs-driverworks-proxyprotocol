@@ -3,7 +3,7 @@
 Seek to previous track/chapter.
 
 
-### Signature
+### Name
 
 `SKIP_REV ()`
 
@@ -15,5 +15,5 @@ Seek to previous track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None
+`

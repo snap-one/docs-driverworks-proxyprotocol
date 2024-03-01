@@ -3,7 +3,7 @@
 Specify input and output selection of device.
 
 
-### Signature
+### Name
 
 `SET_OUTPUT_INPUT ()`
 

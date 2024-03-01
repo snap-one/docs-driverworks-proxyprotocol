@@ -3,10 +3,10 @@
 Pulse ‘-’ button
 
 
-### Signature
+### Name
 
-HYPHEN ()`
-`
+HYPHEN ()
+
 
 ### Parameters
 

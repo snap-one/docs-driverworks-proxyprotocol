@@ -2,7 +2,7 @@
 
 Device has turned On.
 
-### Signature
+### Name
 
 `ON ()`
 

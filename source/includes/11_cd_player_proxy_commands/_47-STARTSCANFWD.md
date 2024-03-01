@@ -3,7 +3,7 @@
 Initiate scan forward within track/chapter.
 
 
-### Signature
+### Name
 
 `START_SCAN_FWD ()`
 
@@ -15,5 +15,5 @@ Initiate scan forward within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None
+`

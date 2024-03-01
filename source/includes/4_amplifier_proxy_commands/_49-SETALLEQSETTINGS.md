@@ -3,7 +3,7 @@
 Set balance to a specified position.
 
 
-### Signature
+### Name
 
 `SET_ALL_EQ_SETTINGS ()`
 

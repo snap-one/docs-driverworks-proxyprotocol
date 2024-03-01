@@ -3,7 +3,7 @@
 Toggle loudness on/off.
 
 
-### Signature
+### Name
 
 `LOUDNESS_TOGGLE ()`
 

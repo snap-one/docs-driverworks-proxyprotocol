@@ -3,7 +3,7 @@
 Pulse volume level down.
 
 
-### Signature
+### Name
 
 `PULSE_VOL_DOWN`
 

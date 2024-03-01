@@ -3,7 +3,7 @@
 Terminate RIGHT navigation.
 
 
-### Signature
+### Name
 
 `STOP_RIGHT ()`
 
@@ -15,5 +15,5 @@ Terminate RIGHT navigation.
 
 ### Returns
 
-\`None
-\`
+`None
+`

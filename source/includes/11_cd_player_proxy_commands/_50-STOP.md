@@ -3,7 +3,7 @@
 Place device in stop state.
 
 
-### Signature
+### Name
 
 `STOP ()`
 
@@ -15,5 +15,5 @@ Place device in stop state.
 
 ### Returns
 
-\`None
-\`
+`None
+`
