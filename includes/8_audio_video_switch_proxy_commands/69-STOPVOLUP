@@ -1,6 +1,6 @@
 <h2 id='stop_vol_up'>STOP_VOL_UP</h2>
 <p>Stop ramping the volume up.</p>
-<h3 id='stop_vol_up-signature'>Signature</h3>
+<h3 id='stop_vol_up-name'>Name</h3>
 <p><code>STOP_VOL_UP ()</code></p>
 
 <table><thead>
