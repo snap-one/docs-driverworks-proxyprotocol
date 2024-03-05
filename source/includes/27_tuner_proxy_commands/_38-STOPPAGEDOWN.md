@@ -3,7 +3,7 @@
 Stop menu page down.
 
 
-### Signature
+### Name
 
 `STOP_PAGE_DOWN ()`
 

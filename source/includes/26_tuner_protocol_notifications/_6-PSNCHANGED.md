@@ -2,19 +2,19 @@
 
 Text from PSN has changed.
 
-### Signature
+### Name
 
 `PSN_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | Radio information/text from the station ID. Periodically updated from the station. |
+| Parameter | Type | Description                                                                                                        |
+| --------- | ---- | ------------------------------------------------------------------------------------------------------------------ |
+| PSN       | STR  | Two free-form text strings. Radio information and text from the station ID. Periodically updated from the station. |
 
 
 ### Usage Note
 
-MaxImum 64 characters is two free form text strings.
+MaxImum 64 characters in two free form text strings.
 
 
 ### Returns

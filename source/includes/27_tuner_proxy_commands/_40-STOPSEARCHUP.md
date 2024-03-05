@@ -3,7 +3,7 @@
 Stop tuning search up.
 
 
-### Signature
+### Name
 
 `STOP_SEARCH_UP ()`
 

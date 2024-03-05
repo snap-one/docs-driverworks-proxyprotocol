@@ -2,14 +2,14 @@
 
 Stop ramping bass up.
 
-### Signature
+### Name
 
 `STOP_BASS_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

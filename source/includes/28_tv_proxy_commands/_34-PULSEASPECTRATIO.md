@@ -3,7 +3,7 @@
 Toggle (cycle though) aspect ratio.
 
 
-### Signature
+### Name
 
 `PULSE_ASPECT_RATIO ()`
 

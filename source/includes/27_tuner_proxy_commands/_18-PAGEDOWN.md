@@ -3,7 +3,7 @@
 Pulse menu Page down.
 
 
-### Signature
+### Name
 
 `PAGE_DOWN ()`
 

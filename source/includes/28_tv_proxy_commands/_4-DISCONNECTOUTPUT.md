@@ -3,14 +3,14 @@
 Disconnect (turn off) selected output on device.
 
 
-### Signature
+### Name
 
 `DISCONNECT_OUTPUT ()`
 
 
-| Parameter | Description |
-| --- | --- |-
-| Int | Output BindingID |
+| Parameter | Description      |
+| --------- | ---------------- |
+| Int       | Output BindingID |
 
 
 ### Returns

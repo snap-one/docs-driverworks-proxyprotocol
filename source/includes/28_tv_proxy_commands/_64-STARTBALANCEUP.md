@@ -3,14 +3,14 @@
 Start ramping balance UP (right).
 
 
-### Signature
+### Name
 
 `START_BALANCE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |--
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

@@ -3,7 +3,7 @@
 Stop down-arrow navigation.
 
 
-### Signature
+### Name
 
 `STOP_DOWN ()`
 

@@ -3,14 +3,14 @@
 Start ramping bass up.
 
 
-### Signature
+### Name
 
 `START_BASS_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

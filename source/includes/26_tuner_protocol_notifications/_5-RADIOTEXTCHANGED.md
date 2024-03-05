@@ -2,19 +2,19 @@
 
 Text from RDS has changed.
 
-### Signature
+### Name
 
 `RADIO_TEXT_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | Radio information/text from RDS. Currently playing title. |
+| Parameter    | Type | Description                                                                              |
+| ------------ | ---- | ---------------------------------------------------------------------------------------- |
+| RADIO\_TEXT_ | STR  | Two free-form text strings. Radio information/text from RDS and currently playing title. |
 
 
 ### Usage Note
 
-MaxImum 64 characters is two free form text strings.
+MaxImum 64 characters in two free form text strings.
 
 
 ### Returns

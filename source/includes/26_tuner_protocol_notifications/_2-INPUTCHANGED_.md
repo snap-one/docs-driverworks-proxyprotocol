@@ -3,18 +3,18 @@
 Selected input has changed.
 
 
-### Signature
+### Name
 
 `INPUT_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Binding ID of RF cloud |
-| str | One of the following case sensitive values: “AMBand”  “FMBand” |
-| int | Lowest tune-able channel e.g. 8750 for FM, 530 for AM |
-| int | Highest tunable channel e.g. 10790 for FM, 1760 for AM |
-| int | Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S. |
+| Parameter | Type | Description                                                    |
+| --------- | ---- | -------------------------------------------------------------- |
+|           | INT  | Binding ID of RF cloud                                         |
+|           | STR  | One of the following case sensitive values: “AMBand”  “FMBand” |
+|           | INT  | Lowest tune-able channel e.g. 8750 for FM, 530 for AM          |
+|           | INT  | Highest tunable channel e.g. 10790 for FM, 1760 for AM         |
+|           | INT  | Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S.    |
 
 
 ### Returns

@@ -3,15 +3,15 @@
 Specify the input selection of device.
 
 
-### Signature
+### Name
 
 `SET_INPUT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Input Binding ID - should be in the BindingID range. |
-| int | Optional. Output Binding ID - should be in the BindingID range. |
+| Parameter       | Type | Description                                                     |
+| --------------- | ---- | --------------------------------------------------------------- |
+| InputBindingID  | INT. | Input Binding ID - should be in the BindingID range.            |
+| OutputBindingID | INT  | Optional. Output Binding ID - should be in the BindingID range. |
 
 
 ### Returns

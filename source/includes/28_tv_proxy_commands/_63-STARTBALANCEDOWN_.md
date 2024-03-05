@@ -3,14 +3,14 @@
 Start ramping balance down (left).
 
 
-### Signature
+### Name
 
 `START_BALANCE_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |--
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

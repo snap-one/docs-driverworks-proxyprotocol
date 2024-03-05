@@ -3,7 +3,7 @@
 Start ramping channel down.
 
 
-### Signature
+### Name
 
 `START_CH_DOWN ()`
 

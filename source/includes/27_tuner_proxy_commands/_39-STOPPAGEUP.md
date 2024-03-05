@@ -3,7 +3,7 @@
 Stop menu page up.
 
 
-### Signature
+### Name
 
 `STOP_PAGE_UP ()`
 

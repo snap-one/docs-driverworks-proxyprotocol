@@ -3,7 +3,7 @@
 Toggle (cycle up) frequency or channel
 
 
-### Signature
+### Name
 
 `TUNE_UP ()`
 

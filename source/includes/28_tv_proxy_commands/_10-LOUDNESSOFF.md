@@ -3,14 +3,14 @@
 Turn loudness off.
 
 
-### Signature
+### Name
 
 `LOUDNESS_OFF ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

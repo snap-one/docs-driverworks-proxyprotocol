@@ -3,14 +3,14 @@
 Pulse bass up (Right)
 
 
-### Signature
+### Name
 
 `PULSE_BASS_UP ()`
 
 
-### Parameters
-
-`None`
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

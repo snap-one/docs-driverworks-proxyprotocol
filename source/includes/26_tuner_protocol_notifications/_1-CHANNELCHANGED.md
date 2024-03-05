@@ -3,14 +3,14 @@
 Selected disc has changed.
 
 
-### Signature
+### Name
 
 `CHANNEL_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | CHANNEL Number |
+| Parameter     | Type | Description    |
+| ------------- | ---- | -------------- |
+| ChannelNumber | INT  | Channel Number |
 
 
 ### Returns

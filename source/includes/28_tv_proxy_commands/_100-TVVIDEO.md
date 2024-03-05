@@ -3,7 +3,7 @@
 Toggle TV/video input.
 
 
-### Signature
+### Name
 
 `TV_VIDEO ()`
 

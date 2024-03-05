@@ -3,15 +3,15 @@
 Set treble to a specified level.
 
 
-### Signature
+### Name
 
 `SET_TREBLE_LEVEL ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| Level           | INT  | Level             |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

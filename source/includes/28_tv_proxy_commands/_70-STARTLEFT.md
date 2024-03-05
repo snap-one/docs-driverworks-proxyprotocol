@@ -3,7 +3,7 @@
 Initiate left-arrow navigation.
 
 
-### Signature
+### Name
 
 `START_LEFT ()`
 

@@ -3,14 +3,14 @@
 Swap page UP/DOWN buttons.
 
 
-### Signature
+### Name
 
 `SET_UP_DOWN_SWAP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+|           | BOOL |             |
 
 
 ### Returns

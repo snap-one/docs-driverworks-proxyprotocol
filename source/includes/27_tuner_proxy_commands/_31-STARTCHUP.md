@@ -3,7 +3,7 @@
 Start ramping channel UP.
 
 
-### Signature
+### Name
 
 `START_CH_UP ()`
 

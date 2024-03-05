@@ -3,7 +3,7 @@
 Pulse Back button
 
 
-### Signature
+### Name
 
 `BACK ()`
 
