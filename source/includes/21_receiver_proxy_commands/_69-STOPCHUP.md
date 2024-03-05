@@ -3,7 +3,7 @@
 StOP ramping channel up.
 
 
-### Signature
+### Name
 
 `STOP_CH_UP ()`
 

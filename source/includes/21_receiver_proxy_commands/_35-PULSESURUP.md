@@ -3,14 +3,14 @@
 Toggle (cycle through) surround mode presets on device.
 
 
-### Signature
+### Name
 
 `PULSE_SUR_UP`
 
 
-| Parameter | Description |
-| --- | --- |-
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

@@ -2,7 +2,7 @@
 
 Pulse Cancel button
 
-### Signature
+### Name
 
 
 `CANCEL ()`

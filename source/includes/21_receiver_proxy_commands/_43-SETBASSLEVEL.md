@@ -3,14 +3,14 @@
 Set bass to a specified level.
 
 
-### Signature
+### Name
 
 `SET_BASS_LEVEL`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

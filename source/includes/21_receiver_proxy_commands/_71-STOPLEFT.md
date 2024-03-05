@@ -3,7 +3,7 @@
 Stop left navigation.
 
 
-### Signature
+### Name
 
 `STOP_LEFT ()`
 

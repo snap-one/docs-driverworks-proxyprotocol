@@ -3,15 +3,15 @@
 Selected inputs & outputs have changed.
 
 
-### Signature
+### Name
 
 `INPUT_OUTPUT_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | INput Binding ID |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| InputBindingID  | INT  | Input Binding ID  |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

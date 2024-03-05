@@ -3,7 +3,7 @@
 Stop ramping channel down.
 
 
-### Signature
+### Name
 
 `STOP_CH_DOWN ()`
 

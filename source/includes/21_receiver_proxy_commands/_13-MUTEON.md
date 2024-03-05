@@ -3,14 +3,14 @@
 Turn muting on.
 
 
-### Signature
+### Name
 
 `MUTE_ON ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

@@ -3,14 +3,14 @@
 Pulse balance up
 
 
-### Signature
+### Name
 
 `PULSE_BALNCE_RIGHT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

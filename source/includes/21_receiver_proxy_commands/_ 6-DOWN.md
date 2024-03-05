@@ -4,7 +4,7 @@
 PULSE DOWN NAVIGATION
 
 
-### Signature
+### Name
 
 `DOWN ()`
 

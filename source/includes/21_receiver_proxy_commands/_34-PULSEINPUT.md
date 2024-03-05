@@ -3,7 +3,7 @@
 Toggle (cycle through) input selection on device.
 
 
-### Signature
+### Name
 
 `PULSE_INPUT`
 

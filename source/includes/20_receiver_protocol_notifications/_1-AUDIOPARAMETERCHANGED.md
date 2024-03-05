@@ -3,14 +3,14 @@
 Audio parameter has changed
 
 
-### Signature
+### Name
 
 `AUDIO_PARAMETER_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

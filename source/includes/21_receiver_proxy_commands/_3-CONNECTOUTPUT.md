@@ -3,14 +3,14 @@
 Numerical value of the output. Switch the output to passed ID.
 
 
-### Signature
+### Name
 
 `CONNECT OUTPUT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

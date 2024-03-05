@@ -3,13 +3,14 @@
 Start ramping volume up.
 
 
-### Signature
+### Name
+
 `SET_VOL_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

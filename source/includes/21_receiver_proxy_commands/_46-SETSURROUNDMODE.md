@@ -3,15 +3,15 @@
 Select specified surround mode preset on device.
 
 
-### Signature
+### Name
 
 `SET_SURROUND_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Surround Mode |
-| int | Output Binding ID |
+| Parameter       | Type | Description         |
+| --------------- | ---- | ------------------- |
+| SurroundMode    | INT  | Surround Mode value |
+| OutputBindingID | INT  | Output Binding ID   |
 
 
 ### Returns
