@@ -7,9 +7,9 @@ Text from RDS has changed.
 `RADIO_TEXT_CHANGED ()`
 
 
-| Parameter    | Type | Description                                                                              |
-| ------------ | ---- | ---------------------------------------------------------------------------------------- |
-| RADIO\_TEXT_ | STR  | Two free-form text strings. Radio information/text from RDS and currently playing title. |
+| Parameter     | Type | Description                                                                              |
+| ------------- | ---- | ---------------------------------------------------------------------------------------- |
+| RADIO\_TEXT\_ | STR  | Two free-form text strings. Radio information/text from RDS and currently playing title. |
 
 
 ### Usage Note

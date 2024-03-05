@@ -8,10 +8,10 @@ Displays current channel details.
 `XM_GET_CHANNEL_DETAILS_CHANGED ()`
 
 
-| Parameter | Description  |
-| --------- | ------------ |
-| num       | Channel      |
-| str       | Channel name |
+| Parameter | Type | Description  |
+| --------- | ---- | ------------ |
+|           | INT  | Channel      |
+|           | STR  | Channel name |
 
 
 ### Returns
