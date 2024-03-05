@@ -3,7 +3,7 @@
 Pulse ‘2’ button
 
 
-### Signature
+### Name
 
 `Number_2 ()`
 

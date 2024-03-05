@@ -3,7 +3,7 @@
 Initiate down arrow navigation.
 
 
-### Signature
+### Name
 
 `START_DOWN ()`
 
@@ -15,5 +15,4 @@ Initiate down arrow navigation.
 
 ### Returns
 
-\`None
-\`
+`None`

@@ -3,7 +3,7 @@
 Navigate menu.
 
 
-### Signature
+### Name
 
 `MENU ()`
 

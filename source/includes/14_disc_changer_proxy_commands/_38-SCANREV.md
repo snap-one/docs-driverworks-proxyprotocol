@@ -3,7 +3,7 @@
 Pulse scan reverse within track/chapter.
 
 
-### Signature
+### Name
 
 `SCAN_REV ()`
 
@@ -15,5 +15,4 @@ Pulse scan reverse within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None`

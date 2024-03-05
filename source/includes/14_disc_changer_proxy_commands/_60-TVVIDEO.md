@@ -3,7 +3,7 @@
 Toggle TV/video input.
 
 
-### Signature
+### Name
 
 `TV_VIDEO ()`
 
@@ -15,5 +15,4 @@ Toggle TV/video input.
 
 ### Returns
 
-\`None
-\`
+`None`

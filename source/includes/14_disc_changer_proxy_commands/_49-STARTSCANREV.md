@@ -3,7 +3,7 @@
 Initiate scan backwards within track/chapter.
 
 
-### Signature
+### Name
 
 `START_SCAN_REV ()`
 
@@ -15,5 +15,4 @@ Initiate scan backwards within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None`

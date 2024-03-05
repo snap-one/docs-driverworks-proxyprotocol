@@ -3,7 +3,7 @@
 Pulse Right Navigation button.
 
 
-### Signature
+### Name
 
 `RIGHT ()`
 

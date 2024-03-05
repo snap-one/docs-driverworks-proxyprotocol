@@ -3,7 +3,7 @@
 Terminate RIGHT navigation.
 
 
-### Signature
+### Name
 
 `STOP_RIGHT ()`
 

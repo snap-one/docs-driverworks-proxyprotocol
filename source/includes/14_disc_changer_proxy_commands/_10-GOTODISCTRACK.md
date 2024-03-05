@@ -3,15 +3,16 @@
 Select specified disc and track.
 
 
-### Signature
+### Name
 
 `GO_TO_DISC_TRACK ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Disc Number |
-| int | Track Number |
+| Parameter   | Type | Description  |
+| ----------- | ---- | ------------ |
+| DiscNumber  | INT  | Disc Number  |
+| TrackNUMBER | INT  | Track Number |
+
 
 
 ### Returns

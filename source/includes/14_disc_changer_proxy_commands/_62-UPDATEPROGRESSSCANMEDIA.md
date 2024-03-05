@@ -8,10 +8,10 @@ Notification of the progress of the current media scan
 `UPDATE_PROGRESS_SCAN_MEDIA ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | total number of discs to be scanned |
-| num | CURRENT INDEX - how many currently have been scanned |
+| Parameter     | Type | Description                           |
+| ------------- | ---- | ------------------------------------- |
+| TOTAL COUNT   | NUM  | Total number of discs to be scanned.  |
+| CURRENT INDEX | Num  | How many currently have been scanned. |
 
 
 ### Returns

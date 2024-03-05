@@ -2,17 +2,16 @@
 
 Swap page UP/DOWN buttons.
 
-### Signature
+### Name
 
 `SET_UP_DOWN_SWAP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                   |
+| --------- | ---- | ----------------------------- |
+| SWAPFLAG  | BOOL | Ability to swap page buttons. |
 
 
 ### Returns
 
-\`None
-\`
+`None`
