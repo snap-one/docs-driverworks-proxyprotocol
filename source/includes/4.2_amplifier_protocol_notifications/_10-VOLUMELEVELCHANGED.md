@@ -8,10 +8,10 @@ Selected volume level has changed.
 `VOLUME_LEVEL_CHANGED ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Level             |
-| int       | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| LEVEL     | INT  | Level             |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns

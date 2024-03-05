@@ -8,10 +8,10 @@ Selected inputs & outputs have changed.
 `INPUT_OUTPUT_CHANGED ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | INput Binding ID  |
-| int       | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| INPUT     | INT  | Input Binding ID  |
+| OUTPUT    | INT  | Output Binding ID |
 
 
 ### Returns
