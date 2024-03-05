@@ -936,7 +936,7 @@
                     <a href="#audio-video-switch-navigator-eq-navigator-eq-protocol-notifications" class="toc-h2 toc-link" data-title="Navigator EQ Protocol Notifications">Navigator EQ Protocol Notifications</a>
                   </li>
                   <li>
-                    <a href="#audio-video-switch-navigator-eq-audiomode_-changed" class="toc-h2 toc-link" data-title="AUDIOMODE_ CHANGED">AUDIOMODE_ CHANGED</a>
+                    <a href="#audio-video-switch-navigator-eq-audiomode_changed" class="toc-h2 toc-link" data-title="AUDIOMODE_CHANGED">AUDIOMODE_CHANGED</a>
                   </li>
                   <li>
                     <a href="#audio-video-switch-navigator-eq-balance_level_changed" class="toc-h2 toc-link" data-title="BALANCE_LEVEL_CHANGED">BALANCE_LEVEL_CHANGED</a>
@@ -10704,7 +10704,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to set the loudness off for indicated output. The driver should notify proxy with the LOUDNESS_CHANGED notification of the new value.</p>
 
-<h3 id='audio-video-switch-navigator-eq-loudness_off-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-loudness_off-name'>Name</h3>
 
 <p><code>LOUDNESS_OFF</code></p>
 
@@ -10712,11 +10712,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -10728,7 +10730,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to set the loudness on for indicated output. The driver should notify proxy with the LOUDNESS_CHANGED notification of the new value.</p>
 
-<h3 id='audio-video-switch-navigator-eq-loudness_on-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-loudness_on-name'>Name</h3>
 
 <p><code>LOUDNESS_ON</code></p>
 
@@ -10736,11 +10738,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -10752,7 +10756,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to change the output&#39;s mode to BYPASS. This is an optional command and should be used only if your device needs to switch modes.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_audiomode_bypass-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_audiomode_bypass-name'>Name</h3>
 
 <p><code>SET_AUDIOMODE_BYPASS</code></p>
 
@@ -10776,7 +10780,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to change the output&#39;s mode to EQUALIZER. This is an optional command and should be used only if your device needs to switch modes.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_audiomode_eq-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_audiomode_eq-name'>Name</h3>
 
 <p><code>SET_AUDIOMODE_EQ</code></p>
 
@@ -10800,7 +10804,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to change the output&#39;s mode to TONE_CONTROL. This is an optional command and should be used only if your device needs to switch modes.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_audiomode_tonecontrol-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_audiomode_tonecontrol-name'>Name</h3>
 
 <p><code>SET_AUDIOMODE_TONECONTROL</code></p>
 
@@ -10824,27 +10828,31 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to save the current EQ values to a custom preset with a name. The driver should notify proxy with the EQ_NAMES_CHANGED notification with the updated name.</p>
 
-<h3 id='audio-video-switch-navigator-eq-save_eq_to_custom_preset-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-save_eq_to_custom_preset-name'>Name</h3>
 
 <p><code>SAVE_EQ_TO_CUSTOM_PRESET</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>INDEX: Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
+<td></td>
+<td>INT</td>
+<td>Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>NAME: Name for the new custom index.  Base64 encoded.</td>
+<td></td>
+<td>STR</td>
+<td>Name for the new custom index.  Base64 encoded.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>OutputBindingID</td>
 </tr>
 </tbody></table>
 
@@ -10856,22 +10864,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to set the bass level for tone control. The driver should notify proxy with the  BASS_LEVEL_CHANGED notification of the new value.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_bass_level-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_bass_level-name'>Name</h3>
 
 <p><code>SET_BASS_LEVEL</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
+<td>Level</td>
+<td>INT</td>
 <td>LEVEL: Bass level. range is -12 to 12</td>
 </tr>
 </tbody></table>
@@ -10884,7 +10895,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to change the selected preset for an output.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_eqpreset-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_eqpreset-name'>Name</h3>
 
 <p><code>SET_EQPRESET</code></p>
 
@@ -10892,15 +10903,18 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>INDEX: Index for the selected preset.</td>
+<td>INT</td>
+<td>Index for the selected preset.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -10912,19 +10926,21 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to set the current equalizer’s gain values.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_eq_gain_values-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_eq_gain_values-name'>Name</h3>
 
 <p><code>SET_EQ_GAIN_VALUES</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>VALUES: Comma delimited string of updated numeric gain values, one value per band.</td>
+<td></td>
+<td>STR</td>
+<td>Comma delimited string of updated numeric gain values, one value per band.</td>
 </tr>
 </tbody></table>
 
@@ -10936,7 +10952,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ command called to set the treble level for tone control. The driver should notify the proxy with TREBLE_LEVEL_CHANGED notification of the new value.</p>
 
-<h3 id='audio-video-switch-navigator-eq-set_treble_level-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-set_treble_level-name'>Name</h3>
 
 <p><code>SET_TREBLE_LEVEL</code></p>
 
@@ -10962,31 +10978,34 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h2 id='audio-video-switch-navigator-eq-navigator-eq-protocol-notifications'>Navigator EQ Protocol Notifications</h2>
 
-<h2 id='audio-video-switch-navigator-eq-audiomode_-changed'>AUDIOMODE_ CHANGED</h2>
+<h2 id='audio-video-switch-navigator-eq-audiomode_changed'>AUDIOMODE_CHANGED</h2>
 
 <p>Navigator EQ notification that the output&#39;s audio mode has changed to either Tone Control or Equalizer for the output. This is an optional notification and should be used only if your device has audio modes. </p>
 
-<h3 id='audio-video-switch-navigator-eq-audiomode_-changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-audiomode_changed-name'>Name</h3>
 
 <p><code>AUDIOMODE_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>AUDIOMODE: 1 = TONE_CONTROL: This is sent sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
+<td></td>
+<td>INT</td>
+<td>1 = TONE_CONTROL: This is sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
 </tr>
 </tbody></table>
 
-<h3 id='audio-video-switch-navigator-eq-audiomode_-changed-returns'>Returns</h3>
+<h3 id='audio-video-switch-navigator-eq-audiomode_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
@@ -10994,23 +11013,26 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ notification that the balance has changed.</p>
 
-<h3 id='audio-video-switch-navigator-eq-balance_level_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-balance_level_changed-name'>Name</h3>
 
 <p><code>BALANCE_LEVEL_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>LEVEL: New balance level. Range is 0 to 100.</td>
+<td>Level</td>
+<td>INT</td>
+<td>Range is 0 to 100</td>
 </tr>
 </tbody></table>
 
@@ -11033,7 +11055,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-bass_level_changed'>BASS_LEVEL_CHANGED</h2>
 <p>Navigator EQ notification that the bass has changed.</p>
-<h3 id='audio-video-switch-navigator-eq-bass_level_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-bass_level_changed-name'>Name</h3>
 
 <p><code>BASS_LEVEL_CHANGED</code></p>
 
@@ -11065,22 +11087,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-eq_display_order_changed'>EQ_DISPLAY_ORDER_CHANGED</h2>
 <p>Navigator EQ notification of the order that the names from EQ_NAMES_CHANGED should be presented to the user.</p>
-<h3 id='audio-video-switch-navigator-eq-eq_display_order_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-eq_display_order_changed-name'>Name</h3>
 
 <p><code>EQ_DISPLAY_ORDER_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>OutputBindingID</td>
 </tr>
 <tr>
-<td>table</td>
+<td></td>
+<td>Table of indexes</td>
 <td>Table of indexes that represents display order of the names.  Note that any programming for selecting a preset will be INDEX based, not name based.  Hence the names can be changed but the programming will be tied to the index at time of creation.</td>
 </tr>
 </tbody></table>
@@ -11095,23 +11120,26 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-eq_names_changed'>EQ_NAMES_CHANGED</h2>
 <p>Navigator EQ notification of the current names for the equalizer presets.</p>
-<h3 id='audio-video-switch-navigator-eq-eq_names_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-eq_names_changed-name'>Name</h3>
 
 <p><code>EQ_NAMES_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>OutputBindingID</td>
 </tr>
 <tr>
-<td>table</td>
-<td>Table of names.</td>
+<td></td>
+<td>Table of names</td>
+<td>Table of names</td>
 </tr>
 </tbody></table>
 
@@ -11125,23 +11153,26 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-eq_freqs_changed'>EQ_FREQS_CHANGED</h2>
 <p>Navigator EQ notification that the frequencies of a equalizer have been modified.</p>
-<h3 id='audio-video-switch-navigator-eq-eq_freqs_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-eq_freqs_changed-name'>Name</h3>
 
 <p><code>EQFREQS_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>OutputBindingID</td>
 </tr>
 <tr>
-<td>num</td>
-<td>VALUES: Comma delimited list of current equalizer frequencies.</td>
+<td></td>
+<td></td>
+<td>Table of comma delimited frequencies.</td>
 </tr>
 </tbody></table>
 
@@ -11156,22 +11187,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-eq_gains_changed'>EQ_GAINS_CHANGED</h2>
 <p>Navigator EQ notification that the gains of an equalizer have been modified.</p>
-<h3 id='audio-video-switch-navigator-eq-eq_gains_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-eq_gains_changed-name'>Name</h3>
 
 <p><code>EQGAINS_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>num</td>
+<td></td>
+<td></td>
 <td>VALUES: Comma delimited list of current equalizer values.</td>
 </tr>
 </tbody></table>
@@ -11187,23 +11221,26 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-eq_preset_changed'>EQ_PRESET_CHANGED</h2>
 <p>Navigator EQ notification used when a different preset is selected for an output.  Should be called after SET_EQPRESET is sent or if the preset is changed from a different event. </p>
-<h3 id='audio-video-switch-navigator-eq-eq_preset_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-eq_preset_changed-name'>Name</h3>
 
 <p><code>EQPRESET_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>EQPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  <code>&lt;eq_preset_nav_count&gt;</code> capability.</td>
+<td></td>
+<td>INT</td>
+<td>QPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  <code>&lt;eq_preset_nav_count&gt;</code> capability.</td>
 </tr>
 </tbody></table>
 
@@ -11216,22 +11253,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-hide_eq_from-_navs_changed'>HIDE_EQ_FROM _NAVS_CHANGED</h2>
 <p>Navigator EQ notification that the equalizer should be shown or hidden from Navigator. This must be sent with a value of False to enable the EQ functionality in Navigator.</p>
-<h3 id='audio-video-switch-navigator-eq-hide_eq_from-_navs_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-hide_eq_from-_navs_changed-name'>Name</h3>
 
 <p><code>HIDEEQFROMNAVS_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>INT</td>
+<td>OutputB inding ID</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>ENABLED: True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True.</td>
 </tr>
 </tbody></table>
@@ -11245,22 +11285,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </code></pre></div>
 <h2 id='audio-video-switch-navigator-eq-loudness_changed'>LOUDNESS_CHANGED</h2>
 <p>Navigator EQ notification that the loudness has changed.</p>
-<h3 id='audio-video-switch-navigator-eq-loudness_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-loudness_changed-name'>Name</h3>
 
 <p><code>LOUDNESS_CHANGED</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>OUTPUT: OutputBindingID</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>ENABLED: LOUDNESS: True for loudness on, False for loudness off.</td>
 </tr>
 </tbody></table>
@@ -11273,7 +11316,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigator EQ notification that the treble level has changed.</p>
 
-<h3 id='audio-video-switch-navigator-eq-treble_level_changed-signature'>Signature</h3>
+<h3 id='audio-video-switch-navigator-eq-treble_level_changed-name'>Name</h3>
 
 <p><code>TREBLE_LEVEL_CHANGED</code></p>
 
@@ -13317,7 +13360,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>DISC\_NUMBER</td>
+<td>DISC_NUMBER</td>
 <td>INT</td>
 <td>Number of Disc</td>
 </tr>
@@ -13343,12 +13386,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>DISC\_NUMBER</td>
+<td>DISC_NUMBER</td>
 <td>INT</td>
 <td>Number of Disc</td>
 </tr>
 <tr>
-<td>DISC\_TRACK</td>
+<td>DISC_TRACK</td>
 <td>INT</td>
 <td>Number of Track</td>
 </tr>
