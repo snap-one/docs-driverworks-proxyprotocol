@@ -8,9 +8,9 @@ Emit IR/Serial code macro (used by AVGen IR/Serial Proxy)
 `EMIT_MACRO ()`
 
 
-| Parameter | Description   |
-| --------- | ------------- |
-| str       | MacroCodeName |
+| Parameter       | Type | Description     |
+| --------------- | ---- | --------------- |
+| s MacroCodeName | STR  | Macro Code Name |
 
 
 ### Returns
