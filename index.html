@@ -20842,11 +20842,13 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -23293,19 +23295,21 @@ ID 3002 and 3003 are FM</p>
 
 <p>Audio parameter has changed</p>
 
-<h3 id='satellite-receiver-protocol-notifications-audio_parameter_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-audio_parameter_changed-name'>Name</h3>
 
 <p><code>AUDIO_PARAMETER_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -23317,7 +23321,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Selected balance level has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-balance_level_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-balance_level_changed-name'>Name</h3>
 
 <p><code>BALANCE_LEVEL_CHANGED ()</code></p>
 
@@ -23345,7 +23349,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Selected bass level has changed</p>
 
-<h3 id='satellite-receiver-protocol-notifications-bass_level_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-bass_level_changed-name'>Name</h3>
 
 <p><code>BASS_LEVEL_CHANGED ()</code></p>
 
@@ -23373,22 +23377,25 @@ ID 3002 and 3003 are FM</p>
 
 <p>Selected inputs &amp; outputs have changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-input_output_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-input_output_changed-name'>Name</h3>
 
 <p><code>INPUT_OUTPUT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>INput Binding ID</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -23401,23 +23408,26 @@ ID 3002 and 3003 are FM</p>
 
 <p>Loudness state (On/Off) has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-loudness_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-loudness_changed-name'>Name</h3>
 
 <p><code>LOUDNESS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td></td>
 </tr>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>Output indingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -23429,22 +23439,25 @@ ID 3002 and 3003 are FM</p>
 
 <p>MUTE state (On/Off) has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-mute_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-mute_changed-name'>Name</h3>
 
 <p><code>MUTE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>bool</td>
-<td>True/False</td>
+<td>BOOL</td>
+<td></td>
 </tr>
 <tr>
-<td>int</td>
+<td>Output Binding ID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -23457,7 +23470,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Device has turned off.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-off-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -23473,7 +23486,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Device has turned on.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-on-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -23489,7 +23502,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Selected treble level has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-treble_level_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-treble_level_changed-name'>Name</h3>
 
 <p><code>TREBLE_LEVEL_CHANGED ()</code></p>
 
@@ -23517,7 +23530,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Selected volume level has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-volume_level_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-volume_level_changed-name'>Name</h3>
 
 <p><code>VOLUME_LEVEL_CHANGED ()</code></p>
 
@@ -23545,22 +23558,25 @@ ID 3002 and 3003 are FM</p>
 
 <p>Surround mode setting has changed.</p>
 
-<h3 id='satellite-receiver-protocol-notifications-surround_mode_changed-signature'>Signature</h3>
+<h3 id='satellite-receiver-protocol-notifications-surround_mode_changed-name'>Name</h3>
 
 <p><code>SURROUND_MODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Surround Mode ID value</td>
 </tr>
 </tbody></table>
@@ -23574,7 +23590,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse Back button</p>
 
-<h3 id='satellite-receiver-proxy-commands-back-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-back-name'>Name</h3>
 
 <p><code>BACK ()</code></p>
 
@@ -23590,7 +23606,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse Cancel button</p>
 
-<h3 id='satellite-receiver-proxy-commands-cancel-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-cancel-name'>Name</h3>
 
 <p><code>CANCEL ()</code></p>
 
@@ -23606,7 +23622,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulses the ‘-’ button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-dash-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-dash-name'>Name</h3>
 
 <p><code>DASH ()</code></p>
 
@@ -23622,19 +23638,21 @@ ID 3002 and 3003 are FM</p>
 
 <p>Disconnect (turn off) selected output on device.</p>
 
-<h3 id='satellite-receiver-proxy-commands-disconnect_output-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-disconnect_output-name'>Name</h3>
 
 <p><code>DISCONNECT_OUTPUT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Int</td>
-<td>Output BindingID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -23646,7 +23664,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>PULSE DOWN NAVIGATION</p>
 
-<h3 id='satellite-receiver-proxy-commands-down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-down-name'>Name</h3>
 
 <p><code>DOWN ()</code></p>
 
@@ -23662,19 +23680,21 @@ ID 3002 and 3003 are FM</p>
 
 <p>Emit IR/Serial code.</p>
 
-<h3 id='satellite-receiver-proxy-commands-emit_code-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-emit_code-name'>Name</h3>
 
 <p><code>EMIT_CODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Int</td>
-<td>ID of the IR Code</td>
+<td>IRCodeID</td>
+<td>INT</td>
+<td>IR Code value</td>
 </tr>
 </tbody></table>
 
@@ -23686,7 +23706,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Emit IR/Serial code macro (used by AVGen IR/Serial Proxy)</p>
 
-<h3 id='satellite-receiver-proxy-commands-emit_macro-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-emit_macro-name'>Name</h3>
 
 <p><code>EMIT_MACRO ()</code></p>
 
@@ -23710,7 +23730,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Navigate Enter key</p>
 
-<h3 id='satellite-receiver-proxy-commands-enter-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-enter-name'>Name</h3>
 
 <p><code>Enter ()</code></p>
 
@@ -23726,7 +23746,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse info button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-guide-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-guide-name'>Name</h3>
 
 <p><code>GUIDE ()</code></p>
 
@@ -23742,7 +23762,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘-’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-hyphen-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-hyphen-name'>Name</h3>
 
 <p><code>HYPHEN ()</code></p>
 
@@ -23758,7 +23778,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse Info button</p>
 
-<h3 id='satellite-receiver-proxy-commands-info-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-info-name'>Name</h3>
 
 <p><code>INFO ()</code></p>
 
@@ -23774,7 +23794,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse left navigation button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-left-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-left-name'>Name</h3>
 
 <p><code>LEFT ()</code></p>
 
@@ -23790,18 +23810,20 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn loudness off.</p>
 
-<h3 id='satellite-receiver-proxy-commands-loudness_off-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-loudness_off-name'>Name</h3>
 
 <p><code>LOUDNESS_OFF ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -23814,7 +23836,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn loudness on.</p>
 
-<h3 id='satellite-receiver-proxy-commands-loudness_on-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-loudness_on-name'>Name</h3>
 
 <p><code>LOUDNESS_ON ()</code></p>
 
@@ -23838,7 +23860,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle loudness on/off.</p>
 
-<h3 id='satellite-receiver-proxy-commands-loudness_toggle-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-loudness_toggle-name'>Name</h3>
 
 <p><code>LOUDNESS_TOGGLE ()</code></p>
 
@@ -23862,7 +23884,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn muting off.</p>
 
-<h3 id='satellite-receiver-proxy-commands-mute_off-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-mute_off-name'>Name</h3>
 
 <p><code>MUTE_OFF ()</code></p>
 
@@ -23886,7 +23908,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn muting on.</p>
 
-<h3 id='satellite-receiver-proxy-commands-mute_on-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-mute_on-name'>Name</h3>
 
 <p><code>MUTE_ON ()</code></p>
 
@@ -23910,7 +23932,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle muting on/off.</p>
 
-<h3 id='satellite-receiver-proxy-commands-mute_toggle-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-mute_toggle-name'>Name</h3>
 
 <p><code>MUTE_TOGGLE ()</code></p>
 
@@ -23934,7 +23956,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘0’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_0-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_0-name'>Name</h3>
 
 <p><code>Number_0 ()</code></p>
 
@@ -23950,7 +23972,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘1’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_1-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_1-name'>Name</h3>
 
 <p><code>Number_1 ()</code></p>
 
@@ -23966,7 +23988,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘2’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_2-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_2-name'>Name</h3>
 
 <p><code>Number_2 ()</code></p>
 
@@ -23982,7 +24004,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘3’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_3-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_3-name'>Name</h3>
 
 <p><code>Number_3 ()</code></p>
 
@@ -23998,7 +24020,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘4’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_4-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_4-name'>Name</h3>
 
 <p><code>Number_4 ()</code></p>
 
@@ -24014,7 +24036,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘5’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_5-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_5-name'>Name</h3>
 
 <p><code>Number_5 ()</code></p>
 
@@ -24030,7 +24052,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘6’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_6-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_6-name'>Name</h3>
 
 <p><code>Number_6 ()</code></p>
 
@@ -24046,7 +24068,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘7’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_7-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_7-name'>Name</h3>
 
 <p><code>Number_7 ()</code></p>
 
@@ -24062,7 +24084,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘8’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_8-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_8-name'>Name</h3>
 
 <p><code>Number_8 ()</code></p>
 
@@ -24078,7 +24100,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘9’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-number_9-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-number_9-name'>Name</h3>
 
 <p><code>Number_9 ()</code></p>
 
@@ -24094,7 +24116,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn device Off.</p>
 
-<h3 id='satellite-receiver-proxy-commands-off-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -24110,7 +24132,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Turn device On.</p>
 
-<h3 id='satellite-receiver-proxy-commands-on-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -24126,7 +24148,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Open/Close disc tray.</p>
 
-<h3 id='satellite-receiver-proxy-commands-open_close-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-open_close-name'>Name</h3>
 
 <p><code>OPEN_CLOSE ()</code></p>
 
@@ -24138,7 +24160,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse menu Page down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-page_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-page_down-name'>Name</h3>
 
 <p><code>PAGE_DOWN ()</code></p>
 
@@ -24154,7 +24176,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse menu Page up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-page_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-page_up-name'>Name</h3>
 
 <p><code>PAGE_UP ()</code></p>
 
@@ -24171,7 +24193,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Place device in pause state.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pause-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pause-name'>Name</h3>
 
 <p><code>PAUSE ()</code></p>
 
@@ -24187,19 +24209,21 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse menu PIP button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pip-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pip-name'>Name</h3>
 
 <p><code>PIP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>MacroCodeName</td>
+<td>STR</td>
+<td>Name of Macro Code</td>
 </tr>
 </tbody></table>
 
@@ -24211,7 +24235,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Place device in a playback state.</p>
 
-<h3 id='satellite-receiver-proxy-commands-play-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-play-name'>Name</h3>
 
 <p><code>PLAY ()</code></p>
 
@@ -24227,7 +24251,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse ‘#’ button</p>
 
-<h3 id='satellite-receiver-proxy-commands-pound-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pound-name'>Name</h3>
 
 <p><code>POUND ()</code></p>
 
@@ -24243,7 +24267,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle (cycle down) tuning preset</p>
 
-<h3 id='satellite-receiver-proxy-commands-preset_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-preset_down-name'>Name</h3>
 
 <p><code>PRESET_DOWN ()</code></p>
 
@@ -24259,7 +24283,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle (cycle up) tuning preset</p>
 
-<h3 id='satellite-receiver-proxy-commands-preset_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-preset_up-name'>Name</h3>
 
 <p><code>PRESET_UP ()</code></p>
 
@@ -24275,7 +24299,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle (cycle though) aspect ratio.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_aspect_ratio-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_aspect_ratio-name'>Name</h3>
 
 <p><code>PULSE_ASPECT_RATIO ()</code></p>
 
@@ -24291,13 +24315,23 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse balance down (Left)</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_balance_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_balance_down-name'>Name</h3>
 
 <p><code>PULSE_BALNCE_DOWN ()</code></p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_balance_down-parameters'>Parameters</h3>
-
-<p><code>None</code></p>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
+</tr>
+</tbody></table>
 
 <h3 id='satellite-receiver-proxy-commands-pulse_balance_down-returns'>Returns</h3>
 
@@ -24307,7 +24341,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse balance up (Right)</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_balance_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_balance_up-name'>Name</h3>
 
 <p><code>PULSE_BALNCE_RIGHT ()</code></p>
 
@@ -24331,7 +24365,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse bass down (Left)</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_bass_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_bass_down-name'>Name</h3>
 
 <p><code>PULSE_BASS_DOWN ()</code></p>
 
@@ -24355,13 +24389,23 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse bass up (Right)</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_-bass_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_-bass_up-name'>Name</h3>
 
 <p><code>PULSE_BASS_UP ()</code></p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_-bass_up-parameters'>Parameters</h3>
-
-<p><code>None</code></p>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
+</tr>
+</tbody></table>
 
 <h3 id='satellite-receiver-proxy-commands-pulse_-bass_up-returns'>Returns</h3>
 
@@ -24371,7 +24415,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse channel value down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_channel_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_channel_down-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_DOWN ()</code></p>
 
@@ -24387,7 +24431,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse channel value up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_channel_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_channel_up-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_UP ()</code></p>
 
@@ -24403,7 +24447,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Toggle (cycle through) input selection on device.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_input-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_input-name'>Name</h3>
 
 <p><code>PULSE_INPUT</code></p>
 
@@ -24419,7 +24463,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse treble down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_treble_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_treble_down-name'>Name</h3>
 
 <p><code>PULSE_TREBLE_DOWN ()</code></p>
 
@@ -24443,7 +24487,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse treble up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_treble_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_treble_up-name'>Name</h3>
 
 <p><code>PULSE_TREBLE_UP ()</code></p>
 
@@ -24467,7 +24511,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse volume level down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_vol_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_vol_down-name'>Name</h3>
 
 <p><code>PULSE_VOL_DOWN</code></p>
 
@@ -24491,7 +24535,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse PVR button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pvr-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pvr-name'>Name</h3>
 
 <p><code>PVR ()</code></p>
 
@@ -24507,7 +24551,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse volume level up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-pulse_vol_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-pulse_vol_up-name'>Name</h3>
 
 <p><code>PULSE_VOL_UP</code></p>
 
@@ -24531,7 +24575,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse Recall button</p>
 
-<h3 id='satellite-receiver-proxy-commands-recall-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-recall-name'>Name</h3>
 
 <p><code>RECALL ()</code></p>
 
@@ -24547,7 +24591,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse RIGHT NAVIGATION</p>
 
-<h3 id='satellite-receiver-proxy-commands-right-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-right-name'>Name</h3>
 
 <p><code>RIGHT ()</code></p>
 
@@ -24563,7 +24607,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse/scan forward within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-scan_fwd-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-scan_fwd-name'>Name</h3>
 
 <p><code>SCAN_FWD ()</code></p>
 
@@ -24579,7 +24623,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse scan reverse within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-scan_rev-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-scan_rev-name'>Name</h3>
 
 <p><code>SCAN_REV ()</code></p>
 
@@ -24595,7 +24639,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse tuning search down</p>
 
-<h3 id='satellite-receiver-proxy-commands-search_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-search_down-name'>Name</h3>
 
 <p><code>SEARCH_DOWN ()</code></p>
 
@@ -24611,7 +24655,7 @@ ID 3002 and 3003 are FM</p>
 
 <p>Pulse tuning search UP</p>
 
-<h3 id='satellite-receiver-proxy-commands-search_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-search_up-name'>Name</h3>
 
 <p><code>SEARCH_UP ()</code></p>
 
@@ -24627,18 +24671,25 @@ ID 3002 and 3003 are FM</p>
 
 <p>Set balance to a specified position.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_balance-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_balance-name'>Name</h3>
 
 <p><code>SET_BALANCE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Level</td>
+<td>INT</td>
+<td>Level value</td>
+</tr>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -24651,22 +24702,25 @@ ID 3002 and 3003 are FM</p>
 
 <p>Set balance to a specified position.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_balance_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_balance_up-name'>Name</h3>
 
 <p><code>SET_BALANCE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
 <td>Level</td>
+<td>INT</td>
+<td>Level value</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -24679,18 +24733,20 @@ ID 3002 and 3003 are FM</p>
 
 <p>Set bass to a specified level.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_bass_level-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_bass_level-name'>Name</h3>
 
 <p><code>SET_BASS_LEVEL</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -24703,18 +24759,20 @@ ID 3002 and 3003 are FM</p>
 
 <p>Tune device to the specified channel.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_channel-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_channel-name'>Name</h3>
 
 <p><code>SET_CHANNEL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td></td>
+<td>STR</td>
 <td>Channel value in string format.</td>
 </tr>
 </tbody></table>
@@ -24764,7 +24822,7 @@ OUTPUT             0
 
 <p>Turn loudness on.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_loudness-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_loudness-name'>Name</h3>
 
 <p><code>SET_LOUDNESS ()</code></p>
 
@@ -24792,22 +24850,25 @@ OUTPUT             0
 
 <p>Specify input and output selection of device.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_output_input-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_output_input-name'>Name</h3>
 
 <p><code>SET_OUTPUT_INPUT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>InputBindingID</td>
+<td>INT</td>
 <td>Input Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -24820,7 +24881,7 @@ OUTPUT             0
 
 <p>Swap page UP/DOWN buttons (used by AVGen)</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_up_down_swap-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_up_down_swap-name'>Name</h3>
 
 <p><code>POUND ()</code></p>
 
@@ -24844,23 +24905,26 @@ OUTPUT             0
 
 <p>Set volume to a specified level.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_volume_level-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_volume_level-name'>Name</h3>
 
 <p><code>SET_VOLUME_LEVEL () </code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
 <td>Level</td>
+<td>INT</td>
+<td>Level value</td>
 </tr>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -24872,18 +24936,20 @@ OUTPUT             0
 
 <p>Set specified tuning preset</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_preset-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_preset-name'>Name</h3>
 
 <p><code>SET_PRESET () </code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PresetNum</td>
+<td>INT</td>
 <td>Preset Number</td>
 </tr>
 </tbody></table>
@@ -24896,7 +24962,7 @@ OUTPUT             0
 
 <p>Set treble to a specified level.</p>
 
-<h3 id='satellite-receiver-proxy-commands-set_treble_level-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-set_treble_level-name'>Name</h3>
 
 <p><code>SET_TREBLE_LEVEL ()</code></p>
 
@@ -24924,7 +24990,7 @@ OUTPUT             0
 
 <p>Advance to next track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-skip_fwd-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-skip_fwd-name'>Name</h3>
 
 <p><code>SKIP_FWD ()</code></p>
 
@@ -24934,14 +25000,13 @@ OUTPUT             0
 
 <h3 id='satellite-receiver-proxy-commands-skip_fwd-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='satellite-receiver-proxy-commands-star'>STAR</h2>
 
 <p>Pulse <code>* </code> button</p>
 
-<h3 id='satellite-receiver-proxy-commands-star-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-star-name'>Name</h3>
 
 <p><code>STAR ()</code></p>
 
@@ -24957,19 +25022,21 @@ OUTPUT             0
 
 <p>Start ramping balance down (left).</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_balance_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_balance_down-name'>Name</h3>
 
 <p><code>START_BALANCE_DOWN ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -24981,7 +25048,7 @@ OUTPUT             0
 
 <p>Start ramping balance up (right).</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_balance_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_balance_up-name'>Name</h3>
 
 <p><code>START_BALANCE_UP ()</code></p>
 
@@ -25005,19 +25072,21 @@ OUTPUT             0
 
 <p>Start ramping bass down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_bass_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_bass_down-name'>Name</h3>
 
 <p><code>START_BASS_DOWN ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -25029,7 +25098,7 @@ OUTPUT             0
 
 <p>Start ramping bass up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_bass_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_bass_up-name'>Name</h3>
 
 <p><code>START_BASS_UP ()</code></p>
 
@@ -25053,7 +25122,7 @@ OUTPUT             0
 
 <p>Start ramping channel up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_channel_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_channel_up-name'>Name</h3>
 
 <p><code>START_CHANNEL_UP ()</code></p>
 
@@ -25069,7 +25138,7 @@ OUTPUT             0
 
 <p>Start down NAVIGATION.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_down-name'>Name</h3>
 
 <p><code>START_DOWN ()</code></p>
 
@@ -25085,7 +25154,7 @@ OUTPUT             0
 
 <p>Pulse left navigation.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_left-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_left-name'>Name</h3>
 
 <p><code>START_LEFT ()</code></p>
 
@@ -25101,7 +25170,7 @@ OUTPUT             0
 
 <p>Start menu Page down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_page_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_page_down-name'>Name</h3>
 
 <p><code>START_PAGE_DOWN ()</code></p>
 
@@ -25111,14 +25180,13 @@ OUTPUT             0
 
 <h3 id='satellite-receiver-proxy-commands-start_page_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='satellite-receiver-proxy-commands-start_page_up'>START_PAGE_UP</h2>
 
 <p>Start menu Page up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_page_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_page_up-name'>Name</h3>
 
 <p><code>START_PAGE_UP ()</code></p>
 
@@ -25128,14 +25196,13 @@ OUTPUT             0
 
 <h3 id='satellite-receiver-proxy-commands-start_page_up-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='satellite-receiver-proxy-commands-start_right'>START_RIGHT</h2>
 
 <p>Initiate right arrow navigation.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_right-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_right-name'>Name</h3>
 
 <p><code>START_RIGHT ()</code></p>
 
@@ -25151,7 +25218,7 @@ OUTPUT             0
 
 <p>Initiate scan forward within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_scan_fwd-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_scan_fwd-name'>Name</h3>
 
 <p><code>START_SCAN_FWD ()</code></p>
 
@@ -25167,7 +25234,7 @@ OUTPUT             0
 
 <p>Initiate scan backward within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_scan_rev-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_scan_rev-name'>Name</h3>
 
 <p><code>START_SCAN_REV ()</code></p>
 
@@ -25177,14 +25244,13 @@ OUTPUT             0
 
 <h3 id='satellite-receiver-proxy-commands-start_scan_rev-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='satellite-receiver-proxy-commands-start_search_down'>START_SEARCH_DOWN</h2>
 
 <p>Initiate tuning search down</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_search_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_search_down-name'>Name</h3>
 
 <p><code>START_SEARCH_DOWN ()</code></p>
 
@@ -25200,7 +25266,7 @@ OUTPUT             0
 
 <p>Initiate tuning search up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_search_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_search_up-name'>Name</h3>
 
 <p><code>START_SEARCH_UP ()</code></p>
 
@@ -25216,7 +25282,7 @@ OUTPUT             0
 
 <p>Start ramping treble down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_treble_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_treble_down-name'>Name</h3>
 
 <p><code>START_TREBLE_DOWN ()</code></p>
 
@@ -25240,7 +25306,7 @@ OUTPUT             0
 
 <p>Start ramping treble up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_treble_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_treble_up-name'>Name</h3>
 
 <p><code>START_TREBLE_UP ()</code></p>
 
@@ -25264,7 +25330,7 @@ OUTPUT             0
 
 <p>Start ramping volume down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-start_vol_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_vol_down-name'>Name</h3>
 
 <p><code>START_TREBLE_DOWN ()</code></p>
 
@@ -25288,7 +25354,7 @@ OUTPUT             0
 
 <p>Stop scan forward within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_scan_rev-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_scan_rev-name'>Name</h3>
 
 <p><code>STOP_SCAN_REV ()</code></p>
 
@@ -25304,7 +25370,7 @@ OUTPUT             0
 
 <p>Initiate up arrow navigation. </p>
 
-<h3 id='satellite-receiver-proxy-commands-start_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-start_up-name'>Name</h3>
 
 <p><code>START_UP ()</code></p>
 
@@ -25320,7 +25386,7 @@ OUTPUT             0
 
 <p>Start ramping balance down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_balance_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_balance_down-name'>Name</h3>
 
 <p><code>STOP_BALANCE_DOWN ()</code></p>
 
@@ -25344,7 +25410,7 @@ OUTPUT             0
 
 <p>Stop ramping bass down</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_bass_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_bass_down-name'>Name</h3>
 
 <p><code>STOP_BASS_DOWN ()</code></p>
 
@@ -25368,7 +25434,7 @@ OUTPUT             0
 
 <p>Stop ramping balance up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_balance_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_balance_up-name'>Name</h3>
 
 <p><code>STOP_BALANCE_UP ()</code></p>
 
@@ -25392,7 +25458,7 @@ OUTPUT             0
 
 <p>Stop ramping bass up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_bass_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_bass_up-name'>Name</h3>
 
 <p><code>STOP_BASS_UP ()</code></p>
 
@@ -25416,7 +25482,7 @@ OUTPUT             0
 
 <p>Stop ramping channel up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_channel_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_channel_up-name'>Name</h3>
 
 <p><code>STOP_CHANNEL_UP ()</code></p>
 
@@ -25432,7 +25498,7 @@ OUTPUT             0
 
 <p>Stop left navigation.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_left-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_left-name'>Name</h3>
 
 <p><code>STOP_LEFT ()</code></p>
 
@@ -25448,7 +25514,7 @@ OUTPUT             0
 
 <p>Stop right arrow navigation.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_right-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_right-name'>Name</h3>
 
 <p><code>STOP_RIGHT ()</code></p>
 
@@ -25464,7 +25530,7 @@ OUTPUT             0
 
 <p>Stop scan forward within track/chapter.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_scan_fwd-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_scan_fwd-name'>Name</h3>
 
 <p><code>STOP_SCAN_FWD ()</code></p>
 
@@ -25480,7 +25546,7 @@ OUTPUT             0
 
 <p>Stop tuning search down</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_search_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_search_down-name'>Name</h3>
 
 <p><code>STOP_SEARCH_DOWN ()</code></p>
 
@@ -25496,7 +25562,7 @@ OUTPUT             0
 
 <p>Stop tuning search UP</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_search_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_search_up-name'>Name</h3>
 
 <p><code>STOP_SEARCH_UP ()</code></p>
 
@@ -25512,7 +25578,7 @@ OUTPUT             0
 
 <p>Stop menu page down.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_DOWN ()</code></p>
 
@@ -25528,7 +25594,7 @@ OUTPUT             0
 
 <p>Stop menu page up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_UP ()</code></p>
 
@@ -25544,7 +25610,7 @@ OUTPUT             0
 
 <p>Stop ramping the treble down</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_treble_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_treble_down-name'>Name</h3>
 
 <p><code>STOP_TREBLE_DOWN ()</code></p>
 
@@ -25568,7 +25634,7 @@ OUTPUT             0
 
 <p>Stop ramping the treble up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_treble_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_treble_up-name'>Name</h3>
 
 <p><code>STOP_TREBLE_UP ()</code></p>
 
@@ -25592,7 +25658,7 @@ OUTPUT             0
 
 <p>Stop up arrow navigation.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_up-name'>Name</h3>
 
 <p><code>STOP_UP ()</code></p>
 
@@ -25608,7 +25674,7 @@ OUTPUT             0
 
 <p>Stop ramping the volume down</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_vol_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_vol_down-name'>Name</h3>
 
 <p><code>STOP_VOL_DOWN ()</code></p>
 
@@ -25632,7 +25698,7 @@ OUTPUT             0
 
 <p>Stop ramping the volume up.</p>
 
-<h3 id='satellite-receiver-proxy-commands-stop_vol_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-stop_vol_up-name'>Name</h3>
 
 <p><code>STOP_VOL_UP ()</code></p>
 
@@ -25656,7 +25722,7 @@ OUTPUT             0
 
 <p>Toggle TV/video input.</p>
 
-<h3 id='satellite-receiver-proxy-commands-tv_video-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-tv_video-name'>Name</h3>
 
 <p><code>TV_VIDEO ()</code></p>
 
@@ -25672,7 +25738,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) frequency or channel</p>
 
-<h3 id='satellite-receiver-proxy-commands-tune_down-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-tune_down-name'>Name</h3>
 
 <p><code>TUNE_DOWN ()</code></p>
 
@@ -25688,7 +25754,7 @@ OUTPUT             0
 
 <p>Toggle (cycle UP) frequency or channel</p>
 
-<h3 id='satellite-receiver-proxy-commands-tune_up-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-tune_up-name'>Name</h3>
 
 <p><code>TUNE_UP ()</code></p>
 
@@ -25704,7 +25770,7 @@ OUTPUT             0
 
 <p>Pulse up button.</p>
 
-<h3 id='satellite-receiver-proxy-commands-star-signature'>Signature</h3>
+<h3 id='satellite-receiver-proxy-commands-star-name'>Name</h3>
 
 <p><code>UP ()</code></p>
 
