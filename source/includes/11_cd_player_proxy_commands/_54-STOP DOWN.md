@@ -15,5 +15,4 @@ Terminate down-arrow navigation.
 
 ### Returns
 
-`None
-`
+`None`

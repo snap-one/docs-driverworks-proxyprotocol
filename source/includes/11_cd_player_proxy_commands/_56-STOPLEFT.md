@@ -15,5 +15,4 @@ Terminate left navigation.
 
 ### Returns
 
-`None
-`
+`None`

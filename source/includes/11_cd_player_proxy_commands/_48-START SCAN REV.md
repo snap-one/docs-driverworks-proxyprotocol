@@ -15,5 +15,4 @@ Initiate scan forward within track/chapter.
 
 ### Returns
 
-`None
-`
+`None`

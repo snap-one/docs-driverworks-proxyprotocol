@@ -15,5 +15,4 @@ Pulse scan reverse within track/chapter.
 
 ### Returns
 
-`None
-`
+`None`

@@ -9,11 +9,11 @@ Issued when scanning the table of contents for a particular disc or cd.  Direct
 
 ### Parameter
 
-| Parameter | Description                     |
-| --------- | ------------------------------- |
-| int       | Index of the disc being scanned |
-| str       | ‘cd’ for CD or ‘dvd’ for DVD    |
-| data      | table of contents               |
+| Parameter | Type | Description                     |
+| --------- | ---- | ------------------------------- |
+| int       | INT  | Index of the disc being scanned |
+| str       | STR  | ‘cd’ for CD or ‘dvd’ for DVD    |
+| data      | DATA | table of contents               |
 
 
 ### Returns

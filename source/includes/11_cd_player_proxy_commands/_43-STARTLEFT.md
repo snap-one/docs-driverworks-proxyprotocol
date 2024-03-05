@@ -15,5 +15,4 @@ Pulse left navigation.
 
 ### Returns
 
-`None
-`
+`None`

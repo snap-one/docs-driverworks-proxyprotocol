@@ -15,5 +15,4 @@ Swap page UP/DOWN buttons.
 
 ### Returns
 
-`None
-`
+`None`

@@ -15,5 +15,4 @@ Start menu Page up.
 
 ### Returns
 
-`None
-`
+`None`

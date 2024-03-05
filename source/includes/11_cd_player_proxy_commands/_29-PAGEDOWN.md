@@ -15,5 +15,4 @@ Pulse menu Page down.
 
 ### Returns
 
-`None
-`
+`None`

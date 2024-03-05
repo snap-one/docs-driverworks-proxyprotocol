@@ -8,9 +8,9 @@ Selected disc has changed.
 `DISC_CHANGED ()`
 
 
-| Parameter      | Type | Description    |
-| -------------- | ---- | -------------- |
-| DISC\\\_NUMBER | INT  | Number of Disc |
+| Parameter    | Type | Description    |
+| ------------ | ---- | -------------- |
+| DISC\_NUMBER | INT  | Number of Disc |
 
 
 ### Returns

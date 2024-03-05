@@ -15,5 +15,4 @@ Terminate reverse scan within track/chapter.
 
 ### Returns
 
-`None
-`
+`None`

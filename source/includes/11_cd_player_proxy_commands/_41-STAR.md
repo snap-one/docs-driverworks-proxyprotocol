@@ -15,5 +15,6 @@ Pulse `*` button.
 
 ### Returns
 
-`None
-`
+```
+None
+```

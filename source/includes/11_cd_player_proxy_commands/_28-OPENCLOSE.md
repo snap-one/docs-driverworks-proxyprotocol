@@ -15,5 +15,4 @@ Open/close disc tray.
 
 ### Returns
 
-`None
-`
+`None`

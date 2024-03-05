@@ -15,5 +15,4 @@ Pulse right navigation button.
 
 ### Returns
 
-`None
-`
+`None`

@@ -15,5 +15,4 @@ Advance to next track/chapter.
 
 ### Returns
 
-`None
-`
+`None`

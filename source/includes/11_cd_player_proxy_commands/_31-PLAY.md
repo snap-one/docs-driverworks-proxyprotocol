@@ -15,5 +15,4 @@ Place device in a playback state.
 
 ### Returns
 
-`None
-`
+`None`

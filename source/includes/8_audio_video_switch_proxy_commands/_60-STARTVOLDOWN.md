@@ -13,7 +13,6 @@ Start ramping volume down.
 | OUTPUT    | INT  | Output Binding ID |
 
 
-
 ### Returns
 
 `None`

@@ -15,5 +15,4 @@ Pulse the recall button.
 
 ### Returns
 
-`None
-`
+`None`

@@ -15,5 +15,4 @@ Initiate right-arrow navigation.
 
 ### Returns
 
-`None
-`
+`None`

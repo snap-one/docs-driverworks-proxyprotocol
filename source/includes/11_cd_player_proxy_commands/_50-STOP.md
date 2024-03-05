@@ -15,5 +15,4 @@ Place device in stop state.
 
 ### Returns
 
-`None
-`
+`None`

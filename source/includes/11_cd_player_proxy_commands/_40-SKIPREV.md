@@ -15,5 +15,4 @@ Seek to previous track/chapter.
 
 ### Returns
 
-`None
-`
+`None`
