@@ -3,15 +3,15 @@
 Navigator EQ notification that the bass has changed.
 
 
-### Signature
+### Name
 
 `BASS_LEVEL_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | LEVEL: New bass level. Range is -12 to 12. |
+| Parameter | Description                                |
+| --------- | ------------------------------------------ |
+| int       | OUTPUT: OutputBindingID                    |
+| int       | LEVEL: New bass level. Range is -12 to 12. |
 
 
 ### Returns

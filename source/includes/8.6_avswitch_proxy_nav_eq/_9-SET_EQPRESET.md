@@ -3,15 +3,15 @@
 Navigator EQ command called to change the selected preset for an output.
 
 
-### Signature
+### Name
 
 `SET_EQPRESET`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | INDEX: Index for the selected preset. |
-| int | OUTPUT: OutputBindingID |
+| Parameter         | Description | Description                    |
+| ----------------- | ----------- | ------------------------------ |
+| int               | INT         | Index for the selected preset. |
+| Output Binding ID | INT         | Output Binding ID              |
 
 
 ### Returns

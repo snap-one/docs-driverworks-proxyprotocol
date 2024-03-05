@@ -3,15 +3,15 @@
 Navigator EQ notification that the frequencies of a equalizer have been modified.
 
 
-### Signature
+### Name
 
 `EQFREQS_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| num | VALUES: Comma delimited list of current equalizer frequencies. |
+| Parameter       | Type | Description                           |
+| --------------- | ---- | ------------------------------------- |
+| OutputBindingID | INT  | OutputBindingID                       |
+|                 |      | Table of comma delimited frequencies. |
 
 
 ### Returns
