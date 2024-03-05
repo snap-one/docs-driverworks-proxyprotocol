@@ -14411,18 +14411,20 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Selected disc has changed.</p>
 
-<h3 id='disc-changer-protocol-notifications-disc_changed-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-disc_changed-name'>Name</h3>
 
 <p><code>DISC_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>DiscNumber</td>
+<td>INT</td>
 <td>Disc Number</td>
 </tr>
 </tbody></table>
@@ -14435,7 +14437,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Device has turned Off.</p>
 
-<h3 id='disc-changer-protocol-notifications-off-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -14451,7 +14453,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Device has turned On.</p>
 
-<h3 id='disc-changer-protocol-notifications-on-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -14467,7 +14469,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Device is paused.</p>
 
-<h3 id='disc-changer-protocol-notifications-pause-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-pause-name'>Name</h3>
 
 <p><code>PAUSE ()</code></p>
 
@@ -14483,7 +14485,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Device has entered a playback state.</p>
 
-<h3 id='disc-changer-protocol-notifications-play-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-play-name'>Name</h3>
 
 <p><code>PLAY ()</code></p>
 
@@ -14499,7 +14501,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Device has entered a stopped state.</p>
 
-<h3 id='disc-changer-protocol-notifications-stop-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-stop-name'>Name</h3>
 
 <p><code>STOP ()</code></p>
 
@@ -14515,7 +14517,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Issued when scanning the table of contents for a particular disc or cd.  Director will use this information to lookup and populate the database with the disc information if the lookup succeeds.  This command can also be used to indicate a slot now is empty and contains no disc.</p>
 
-<h3 id='disc-changer-protocol-notifications-toc-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-toc-name'>Name</h3>
 
 <p><code>TOC ()</code></p>
 
@@ -14549,18 +14551,20 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Selected track has changed.</p>
 
-<h3 id='disc-changer-protocol-notifications-track_changed-signature'>Signature</h3>
+<h3 id='disc-changer-protocol-notifications-track_changed-name'>Name</h3>
 
 <p><code>TRACK_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>DiscNumber</td>
+<td>INT</td>
 <td>Track Number</td>
 </tr>
 </tbody></table>
@@ -14579,7 +14583,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse Back button</p>
 
-<h3 id='disc-changer-proxy-commands-back-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-back-name'>Name</h3>
 
 <p><code>BACK ()</code></p>
 
@@ -14595,7 +14599,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse Cancel button</p>
 
-<h3 id='disc-changer-proxy-commands-cancel-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-cancel-name'>Name</h3>
 
 <p><code>CANCEL ()</code></p>
 
@@ -14611,7 +14615,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulses the ‘-’ button.</p>
 
-<h3 id='disc-changer-proxy-commands-dash-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-dash-name'>Name</h3>
 
 <p><code>DASH ()</code></p>
 
@@ -14627,7 +14631,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse down navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-down-name'>Name</h3>
 
 <p><code>DOWN ()</code></p>
 
@@ -14643,7 +14647,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Eject disc/tape.</p>
 
-<h3 id='disc-changer-proxy-commands-eject-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-eject-name'>Name</h3>
 
 <p><code>EJECT ()</code></p>
 
@@ -14659,18 +14663,20 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Emit IR/Serial code (used by AVGen IR/Serial Proxy).</p>
 
-<h3 id='disc-changer-proxy-commands-emit_code-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-emit_code-name'>Name</h3>
 
 <p><code>EMIT_CODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Int</td>
+<td>IRCodeID</td>
+<td>INT</td>
 <td>ID OF IR Code</td>
 </tr>
 </tbody></table>
@@ -14683,19 +14689,21 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Emit IR/Serial code macro (used by AVGen IR/Serial Proxy)</p>
 
-<h3 id='disc-changer-proxy-commands-emit_macro-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-emit_macro-name'>Name</h3>
 
 <p><code>EMIT_MACRO ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MacroCodeName</td>
+<td>MacroCodeNam</td>
+<td>STR</td>
+<td>Macro Code Name</td>
 </tr>
 </tbody></table>
 
@@ -14707,7 +14715,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigate Enter key</p>
 
-<h3 id='disc-changer-proxy-commands-enter-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-enter-name'>Name</h3>
 
 <p><code>Enter ()</code></p>
 
@@ -14723,22 +14731,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Select specified disc and track.</p>
 
-<h3 id='disc-changer-proxy-commands-go_to_disc_track-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-go_to_disc_track-name'>Name</h3>
 
 <p><code>GO_TO_DISC_TRACK ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>DiscNumber</td>
+<td>INT</td>
 <td>Disc Number</td>
 </tr>
 <tr>
-<td>int</td>
+<td>TrackNUMBER</td>
+<td>INT</td>
 <td>Track Number</td>
 </tr>
 </tbody></table>
@@ -14751,18 +14762,20 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Select specified track.</p>
 
-<h3 id='disc-changer-proxy-commands-go_to_track-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-go_to_track-name'>Name</h3>
 
 <p><code>GO_TO_TRACK ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>TrackNUMBER</td>
+<td>INT</td>
 <td>Track Number</td>
 </tr>
 </tbody></table>
@@ -14775,7 +14788,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘-’ button</p>
 
-<h3 id='disc-changer-proxy-commands-hyphen-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-hyphen-name'>Name</h3>
 
 <p><code>HYPHEN ()</code></p>
 
@@ -14791,7 +14804,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse Info button</p>
 
-<h3 id='disc-changer-proxy-commands-info-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-info-name'>Name</h3>
 
 <p><code>INFO ()</code></p>
 
@@ -14807,7 +14820,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse left navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-left-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-left-name'>Name</h3>
 
 <p><code>LEFT ()</code></p>
 
@@ -14823,7 +14836,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Navigate menu.</p>
 
-<h3 id='disc-changer-proxy-commands-menu-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-menu-name'>Name</h3>
 
 <p><code>MENU ()</code></p>
 
@@ -14839,7 +14852,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘0’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_0-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_0-name'>Name</h3>
 
 <p><code>Number_0 ()</code></p>
 
@@ -14855,7 +14868,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘1’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_1-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_1-s-name'>S Name</h3>
 
 <p><code>Number_1 ()</code></p>
 
@@ -14871,7 +14884,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘2’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_2-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_2-name'>Name</h3>
 
 <p><code>Number_2 ()</code></p>
 
@@ -14887,7 +14900,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘3’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_3-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_3-name'>Name</h3>
 
 <p><code>Number_3 ()</code></p>
 
@@ -14903,7 +14916,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘4’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_4-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_4-name'>Name</h3>
 
 <p><code>Number_4 ()</code></p>
 
@@ -14919,7 +14932,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘5’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_5-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_5-name'>Name</h3>
 
 <p><code>Number_5 ()</code></p>
 
@@ -14935,7 +14948,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘6’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_6-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_6-name'>Name</h3>
 
 <p><code>Number_6 ()</code></p>
 
@@ -14951,7 +14964,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘7’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_7-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_7-name'>Name</h3>
 
 <p><code>Number_7 ()</code></p>
 
@@ -14967,7 +14980,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘8’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_8-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_8-name'>Name</h3>
 
 <p><code>Number_8 ()</code></p>
 
@@ -14983,7 +14996,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse ‘9’ button</p>
 
-<h3 id='disc-changer-proxy-commands-number_9-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-number_9-name'>Name</h3>
 
 <p><code>Number_9 ()</code></p>
 
@@ -14999,7 +15012,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Turn device Off.</p>
 
-<h3 id='disc-changer-proxy-commands-off-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -15019,7 +15032,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Turn device On.</p>
 
-<h3 id='disc-changer-proxy-commands-on-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -15039,7 +15052,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Open/close disc tray.</p>
 
-<h3 id='disc-changer-proxy-commands-open_close-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-open_close-name'>Name</h3>
 
 <p><code>OPEN_CLOSE ()</code></p>
 
@@ -15049,14 +15062,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-open_close-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-pause'>PAUSE</h2>
 
 <p>Place device in stop state.</p>
 
-<h3 id='disc-changer-proxy-commands-pause-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-pause-name'>Name</h3>
 
 <p><code>PAUSE ()</code></p>
 
@@ -15066,14 +15078,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-pause-returns'>Returns</h3>
 
-<p><code>None
-</code></p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-page_down'>PAGE_DOWN</h2>
 
 <p>Pulse menu Page down.</p>
 
-<h3 id='disc-changer-proxy-commands-page_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-page_down-name'>Name</h3>
 
 <p><code>PAGE_DOWN ()</code></p>
 
@@ -15083,14 +15094,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-page_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-page_up'>PAGE_UP</h2>
 
 <p>Pulse menu Page up.</p>
 
-<h3 id='disc-changer-proxy-commands-page_up-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-page_up-name'>Name</h3>
 
 <p><code>PAGE_UP ()</code></p>
 
@@ -15100,14 +15110,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-page_up-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-play'>PLAY</h2>
 
 <p>Place device in a playback state.</p>
 
-<h3 id='disc-changer-proxy-commands-play-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-play-name'>Name</h3>
 
 <p><code>PLAY ()</code></p>
 
@@ -15117,14 +15126,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-play-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-pound'>POUND</h2>
 
 <p>Pulse # button.</p>
 
-<h3 id='disc-changer-proxy-commands-pound-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-pound-name'>Name</h3>
 
 <p><code>POUND ()</code></p>
 
@@ -15134,14 +15142,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-pound-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-pulse_aspect_ratio'>Pulse_Aspect_Ratio</h2>
 
 <p>Toggle (cycle though) aspect ratio.</p>
 
-<h3 id='disc-changer-proxy-commands-pulse_aspect_ratio-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-pulse_aspect_ratio-name'>Name</h3>
 
 <p><code>PULSE_ASPECT_RATIO ()</code></p>
 
@@ -15151,13 +15158,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-pulse_aspect_ratio-returns'>Returns</h3>
 
-<p>`None</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-recall'>RECALL</h2>
 
 <p>Pulse Recall button.</p>
 
-<h3 id='disc-changer-proxy-commands-recall-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-recall-name'>Name</h3>
 
 <p><code>RECALL ()</code></p>
 
@@ -15167,14 +15174,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-recall-returns'>Returns</h3>
 
-<p><code>None
-</code></p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-right'>RIGHT</h2>
 
 <p>Pulse Right Navigation button.</p>
 
-<h3 id='disc-changer-proxy-commands-right-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-right-name'>Name</h3>
 
 <p><code>RIGHT ()</code></p>
 
@@ -15191,7 +15197,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Pulse/scan forward within track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-scan_fwd-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-scan_fwd-name'>Name</h3>
 
 <p><code>SCAN_FWD ()</code></p>
 
@@ -15201,14 +15207,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-scan_fwd-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-scan_rev'>SCAN_REV</h2>
 
 <p>Pulse scan reverse within track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-scan_rev-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-scan_rev-name'>Name</h3>
 
 <p><code>SCAN_REV ()</code></p>
 
@@ -15218,14 +15223,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-scan_rev-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-skip_fwd'>SKIP_FWD</h2>
 
 <p>Advance to next track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-skip_fwd-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-skip_fwd-name'>Name</h3>
 
 <p><code>CSKIP_FWD ()</code></p>
 
@@ -15235,14 +15239,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-skip_fwd-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-skip_rev'>SKIP_REV</h2>
 
 <p>Seek to previous track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-skip_rev-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-skip_rev-name'>Name</h3>
 
 <p><code>SKIP_REV ()</code></p>
 
@@ -15252,39 +15255,39 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-skip_rev-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-set_up_down_swap'>SET_UP_DOWN_SWAP</h2>
 
 <p>Swap page UP/DOWN buttons.</p>
 
-<h3 id='disc-changer-proxy-commands-set_up_down_swap-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-set_up_down_swap-name'>Name</h3>
 
 <p><code>SET_UP_DOWN_SWAP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td>SWAPFLAG</td>
+<td>BOOL</td>
+<td>Ability to swap page buttons.</td>
 </tr>
 </tbody></table>
 
 <h3 id='disc-changer-proxy-commands-set_up_down_swap-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-star'>STAR</h2>
 
 <p>Pulse <code>*</code> button.</p>
 
-<h3 id='disc-changer-proxy-commands-star-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-star-name'>Name</h3>
 
 <p><code>STAR ()</code></p>
 
@@ -15294,14 +15297,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-star-returns'>Returns</h3>
 
-<p><code>None
-</code></p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_down'>START_DOWN</h2>
 
 <p>Initiate down arrow navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-start_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_down-name'>Name</h3>
 
 <p><code>START_DOWN ()</code></p>
 
@@ -15311,14 +15313,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_left'>START_LEFT</h2>
 
 <p>Pulse left navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-start_left-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_left-name'>Name</h3>
 
 <p><code>START_LEFT ()</code></p>
 
@@ -15328,14 +15329,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_left-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_page_down'>START_PAGE_DOWN</h2>
 
 <p>Start menu Page down.</p>
 
-<h3 id='disc-changer-proxy-commands-start_page_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_page_down-name'>Name</h3>
 
 <p><code>START_PAGE_DOWN ()</code></p>
 
@@ -15345,14 +15345,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_page_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_page_up'>START_PAGE_UP</h2>
 
 <p>Start menu Page up.</p>
 
-<h3 id='disc-changer-proxy-commands-start_page_up-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_page_up-name'>Name</h3>
 
 <p><code>START_PAGE_UP ()</code></p>
 
@@ -15362,14 +15361,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_page_up-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_page_right'>START_PAGE_RIGHT</h2>
 
 <p>Initiate right-arrow navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-start_page_right-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_page_right-name'>Name</h3>
 
 <p><code>START_RIGHT ()</code></p>
 
@@ -15377,16 +15375,11 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p><code>None</code></p>
 
-<h3 id='disc-changer-proxy-commands-start_page_right-returns'>Returns</h3>
-
-<p>`None
-`</p>
-
+<h3 id='disc-changer-proxy-commands-start_page_right-returns'>Returns</h3><div class="highlight"><pre class="highlight plaintext"><code>None`
+</code></pre></div>
 <h2 id='disc-changer-proxy-commands-star-_scan_fwd'>STAR _SCAN_FWD</h2>
-
 <p>Initiate scan forward within track/chapter.</p>
-
-<h3 id='disc-changer-proxy-commands-star-_scan_fwd-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-star-_scan_fwd-name'>Name</h3>
 
 <p><code>START_SCAN_FWD ()</code></p>
 
@@ -15396,14 +15389,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-star-_scan_fwd-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_scan_rev'>START_SCAN_REV</h2>
 
 <p>Initiate scan backwards within track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-start_scan_rev-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_scan_rev-name'>Name</h3>
 
 <p><code>START_SCAN_REV ()</code></p>
 
@@ -15413,14 +15405,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_scan_rev-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-start_up'>START_UP</h2>
 
 <p>Initiate up-arrow navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-start_up-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-start_up-name'>Name</h3>
 
 <p><code>START_UP ()</code></p>
 
@@ -15430,14 +15421,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-start_up-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop'>STOP</h2>
 
 <p>Place device in stop state.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-name'>Name</h3>
 
 <p><code>STOP ()</code></p>
 
@@ -15447,14 +15437,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop-returns'>Returns</h3>
 
-<p><code>None
-</code></p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop_left'>STOP_LEFT</h2>
 
 <p>Terminate left navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-stop_left-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop_left-name'>Name</h3>
 
 <p><code>STOP_LEFT ()</code></p>
 
@@ -15464,14 +15453,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop_left-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop_page_down'>STOP_PAGE_DOWN</h2>
 
 <p>Stop menu page down.</p>
 
-<h3 id='disc-changer-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_DOWN ()</code></p>
 
@@ -15487,7 +15475,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Terminate down-arrow navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-stop_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop_down-name'>Name</h3>
 
 <p><code>STOP_DOWN ()</code></p>
 
@@ -15497,14 +15485,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop-_page-_down'>STOP _PAGE _DOWN</h2>
 
 <p>Stop menu page up.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-_page-_down-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-_page-_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_UP ()</code></p>
 
@@ -15514,14 +15501,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop-_page-_down-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop-_right'>STOP _RIGHT</h2>
 
 <p>Terminate RIGHT navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-_right-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-_right-name'>Name</h3>
 
 <p><code>STOP_RIGHT ()</code></p>
 
@@ -15537,7 +15523,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Terminate scan forward within track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-_scan-_fwd-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-_scan-_fwd-name'>Name</h3>
 
 <p><code>STOP_SCAN_FWD ()</code></p>
 
@@ -15547,14 +15533,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop-_scan-_fwd-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop-_scan-_rev'>STOP _SCAN _REV</h2>
 
 <p>Terminate reverse scan within track/chapter.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-_scan-_rev-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-_scan-_rev-name'>Name</h3>
 
 <p><code>STOP_SCAN_REV ()</code></p>
 
@@ -15564,14 +15549,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop-_scan-_rev-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-stop-_up'>STOP _UP</h2>
 
 <p>Stop menu Page down.</p>
 
-<h3 id='disc-changer-proxy-commands-stop-_up-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-stop-_up-name'>Name</h3>
 
 <p><code>STOP_UP ()</code></p>
 
@@ -15581,14 +15565,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-stop-_up-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-tv-_video'>TV _VIDEO</h2>
 
 <p>Toggle TV/video input.</p>
 
-<h3 id='disc-changer-proxy-commands-tv-_video-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-tv-_video-name'>Name</h3>
 
 <p><code>TV_VIDEO ()</code></p>
 
@@ -15598,14 +15581,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-tv-_video-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-up'>UP</h2>
 
 <p>Pulse up navigation.</p>
 
-<h3 id='disc-changer-proxy-commands-up-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-up-name'>Name</h3>
 
 <p><code>CUP ()</code></p>
 
@@ -15615,8 +15597,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h3 id='disc-changer-proxy-commands-up-returns'>Returns</h3>
 
-<p><code>None
-</code></p>
+<p><code>None</code></p>
 
 <h2 id='disc-changer-proxy-commands-update-_progress-_scan-_media'>UPDATE _PROGRESS _SCAN _MEDIA</h2>
 
@@ -15629,16 +15610,19 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>total number of discs to be scanned</td>
+<td>TOTAL COUNT</td>
+<td>NUM</td>
+<td>Total number of discs to be scanned.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>CURRENT INDEX - how many currently have been scanned</td>
+<td>CURRENT INDEX</td>
+<td>Num</td>
+<td>How many currently have been scanned.</td>
 </tr>
 </tbody></table>
 
@@ -15650,18 +15634,20 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <p>Select specified disc.</p>
 
-<h3 id='disc-changer-proxy-commands-go_to_disc-signature'>Signature</h3>
+<h3 id='disc-changer-proxy-commands-go_to_disc-name'>Name</h3>
 
 <p><code>GO_TO_DISC ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>DiscNumber</td>
+<td>INT</td>
 <td>Disc Number</td>
 </tr>
 </tbody></table>
