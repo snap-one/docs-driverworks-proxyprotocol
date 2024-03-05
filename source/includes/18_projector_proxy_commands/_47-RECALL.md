@@ -3,7 +3,7 @@
 Pulse Recall button.
 
 
-### Signature
+### Name
 
 `RECALL ()`
 
@@ -15,5 +15,4 @@ Pulse Recall button.
 
 ### Returns
 
-`None
-`
+`None`

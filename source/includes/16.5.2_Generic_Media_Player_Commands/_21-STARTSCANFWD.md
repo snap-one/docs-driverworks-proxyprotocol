@@ -3,7 +3,7 @@
 Command to start scan forward or fast forward through the current playing media item.
 
 
-### Signature
+### Name
 
 `START_SCAN_FWD ()`
 

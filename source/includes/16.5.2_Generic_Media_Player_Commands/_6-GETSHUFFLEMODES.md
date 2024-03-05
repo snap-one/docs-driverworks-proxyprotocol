@@ -3,7 +3,7 @@
 Command to obtain supported repeat modes.
 
 
-### Signature
+### Name
 
 `GET_SHUGGLE_MODES ()`
 

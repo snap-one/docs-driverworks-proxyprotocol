@@ -3,15 +3,16 @@
 Selected channel has changed
 
 
-### Signature
+### Name
 
 `CHANNEL_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Channel Number |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| ChannelNumnber  | INT  | Channel value     |
+| OutputBindingID | INT  | Output Binding ID |
+
 
 
 ### Returns

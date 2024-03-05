@@ -3,15 +3,15 @@
 Loudness state (On/Off) has changed.
 
 
-### Signature
+### Name
 
 `LOUDNESS_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
-| int | Output Binding ID |
+| Parameter | Description | Description     |
+| --------- | ----------- | --------------- |
+|           | BOOL        |                 |
+|           | INT         | OutputBindingID |
 
 
 ### Returns

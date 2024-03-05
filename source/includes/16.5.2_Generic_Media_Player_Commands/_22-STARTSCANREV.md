@@ -3,7 +3,7 @@
 Command to start scan backwards or rewind through the currently playing media item.
 
 
-### Signature
+### Name
 
 `START_SCAN_REV ()`
 

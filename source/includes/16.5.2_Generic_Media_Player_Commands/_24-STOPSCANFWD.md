@@ -3,7 +3,7 @@
 Command to stop scanning forward through the current media.
 
 
-### Signature
+### Name
 
 `STOP_SCAN_FWD ()`
 

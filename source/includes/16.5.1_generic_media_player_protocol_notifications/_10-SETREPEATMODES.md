@@ -1,10 +1,10 @@
 ## SET\_REPEAT\_MODES
 
-### Signature
+### Name
 
 `SET_REPEAT_MODES ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| repeat\_modes |
+| Parameter       | Description |
+| --------------- | ----------- |
+| repeat\\\_modes |             |

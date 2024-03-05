@@ -1,10 +1,10 @@
 ## MEDIA\ LABELS\_CHANGED
 
-### Signature
+### Name
 
 `MEDIA_LABELS_CHNAGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| repeat\_modes |
+| Parameter       | Description |
+| --------------- | ----------- |
+| repeat\\\_modes |             |

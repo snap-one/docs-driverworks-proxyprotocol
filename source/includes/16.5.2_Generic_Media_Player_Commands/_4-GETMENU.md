@@ -3,7 +3,7 @@
 Command to obtain the list of items in the menu.
 
 
-### Signature
+### Name
 
 `GET_MENU ()`
 

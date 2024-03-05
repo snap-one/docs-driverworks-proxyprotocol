@@ -1,10 +1,10 @@
 ## LIST\_TYPE\_CHANGED
 
-### Signature
+### Name
 
 `LIST_TYPE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
+| Parameter | Description     |
+| --------- | --------------- |
 | list type | Watch or Listen |

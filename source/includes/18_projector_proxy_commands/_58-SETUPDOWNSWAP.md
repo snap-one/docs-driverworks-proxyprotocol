@@ -3,17 +3,16 @@
 Swap page UP/DOWN buttons.
 
 
-### Signature
+### Name
 
 `POUND ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                      |
+| --------- | ---- | -------------------------------- |
+| SWAPFLAG  | BOOL | Ability to swap UP/DOWN buttons. |
 
 
 ### Returns
 
-\`None
-\`
+`None`

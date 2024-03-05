@@ -1,10 +1,10 @@
 ## SHUFFLE\_CHANGED
 
-### Signature
+### Name
 
 `SHUFFLE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| shuffle\_mode |
+| Parameter       | Description |
+| --------------- | ----------- |
+| shuffle\\\_mode |             |

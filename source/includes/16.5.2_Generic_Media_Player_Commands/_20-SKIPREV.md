@@ -3,7 +3,7 @@
 Command that starts playback of the previous media item.
 
 
-### Signature
+### Name
 
 `SKIP_REV ()`
 

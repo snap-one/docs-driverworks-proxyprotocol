@@ -3,14 +3,15 @@
 Stop ramping balance up.
 
 
-### Signature
+### Name
 
 `STOP_BALANCE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
+
 
 
 ### Returns

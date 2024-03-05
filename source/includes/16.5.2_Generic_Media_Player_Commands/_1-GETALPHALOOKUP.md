@@ -3,14 +3,14 @@
 Command that returns the index of the first item in the list that begins with the specified character.
 
 
-### Signature
+### Name
 
 `GET_ALPHA_LOOKUP ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| String | Letter |
+| --------- | ----------- |
+| String    | Letter      |
 
 
 ### SendToProxy

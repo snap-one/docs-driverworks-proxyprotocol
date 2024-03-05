@@ -1,10 +1,10 @@
 ## SET\_SHUFFLE\_MODES
 
-### Signature
+### Name
 
 `SET_SHUFFLE_MODES ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| shuffle\_modes |
+| Parameter        | Description |
+| ---------------- | ----------- |
+| shuffle\\\_modes |             |

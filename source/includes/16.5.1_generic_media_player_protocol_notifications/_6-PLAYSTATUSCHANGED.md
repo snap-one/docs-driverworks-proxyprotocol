@@ -1,10 +1,10 @@
 ## PLAY\_STATUS\_CHANGED
 
-### Signature
+### Name
 
 `PLAY_STATUS_CHNAGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| play\_status |
+| Parameter      | Description |
+| -------------- | ----------- |
+| play\\\_status |             |

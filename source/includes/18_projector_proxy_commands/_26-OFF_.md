@@ -3,7 +3,7 @@
 Turn device Off.
 
 
-### Signature
+### Name
 
 `OFF ()`
 
@@ -15,8 +15,8 @@ Turn device Off.
 
 ### Returns
 
-`None
-`
+`None`
+
 
 ### Usage Note
 

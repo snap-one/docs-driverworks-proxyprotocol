@@ -3,7 +3,7 @@
 Command to scan backwards through current media.
 
 
-### Signature
+### Name
 
 `SCAN_REV ()`
 

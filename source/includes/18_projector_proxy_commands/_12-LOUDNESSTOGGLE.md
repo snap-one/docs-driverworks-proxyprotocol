@@ -3,14 +3,15 @@
 Toggle loudness on/off.
 
 
-### Signature
+### Name
 
 `LOUDNESS_TOGGLE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
+
 
 
 ### Returns

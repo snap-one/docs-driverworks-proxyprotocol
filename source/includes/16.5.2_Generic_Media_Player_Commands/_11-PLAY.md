@@ -3,7 +3,7 @@
 Command to start media playback.
 
 
-### Signature
+### Name
 
 `PLAY ()`
 

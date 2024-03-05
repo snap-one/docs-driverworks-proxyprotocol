@@ -3,15 +3,16 @@
 MUTE state (On/Off) has changed.
 
 
-### Signature
+### Name
 
 `MUTE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
-| int | Output Binding ID |
+| Parameter | Description | Description     |
+| --------- | ----------- | --------------- |
+|           | BOOL        |                 |
+|           | INT         | OutputBindingID |
+
 
 
 ### Returns

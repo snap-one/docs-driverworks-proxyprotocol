@@ -3,7 +3,7 @@
 Command to pause media playback on the GenericMediaPlayer.
 
 
-### Signature
+### Name
 
 `PAUSE ()`
 

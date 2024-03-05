@@ -3,17 +3,16 @@
 Pulse menu PIP button..
 
 
-### Signature
+### Name
 
 `PIP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MacroCodeName |
+| Parameter     | Type | Description     |
+| ------------- | ---- | --------------- |
+| MacroCodeName | STR  | Macro Code Name |
 
 
 ### Returns
 
-\`None
-\`
+`None`

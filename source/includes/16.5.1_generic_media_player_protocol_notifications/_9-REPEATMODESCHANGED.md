@@ -1,10 +1,10 @@
 ## REPEAT\_MODES\_CHANGED
 
-### Signature
+### Name
 
 `REPEAT_MODES_CHNAGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| repeat\_modes |
+| Parameter       | Description |
+| --------------- | ----------- |
+| repeat\\\_modes |             |

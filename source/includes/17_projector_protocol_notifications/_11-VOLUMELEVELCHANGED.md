@@ -3,15 +3,15 @@
 Selected volume level has changed.
 
 
-### Signature
+### Name
 
 `VOLUME_LEVEL_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| Level           | INT  | Level value       |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

@@ -3,7 +3,7 @@
 Command to stop media playback.
 
 
-### Signature
+### Name
 
 `STOP ()`
 

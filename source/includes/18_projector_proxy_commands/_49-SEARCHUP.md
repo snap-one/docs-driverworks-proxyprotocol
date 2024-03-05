@@ -3,7 +3,7 @@
 Pulse tuning search UP
 
 
-### Signature
+### Name
 
 `SEARCH_UP ()`
 

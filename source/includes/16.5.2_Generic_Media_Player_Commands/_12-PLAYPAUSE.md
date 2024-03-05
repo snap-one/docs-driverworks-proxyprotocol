@@ -3,7 +3,7 @@
 Command to start media playback if currently paused or pause media playback if currently playing.
 
 
-### Signature
+### Name
 
 `PLAYPAUSE ()`
 

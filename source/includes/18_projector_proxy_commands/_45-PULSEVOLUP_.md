@@ -3,14 +3,15 @@
 Pulse volume level up.
 
 
-### Signature
+### Name
 
 `PULSE_VOL_UP`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
+
 
 
 ### Returns

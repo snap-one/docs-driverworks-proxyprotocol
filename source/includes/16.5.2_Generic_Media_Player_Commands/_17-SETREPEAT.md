@@ -3,14 +3,14 @@
 Command to set the repeat mode on the GenericMediaPlayer.
 
 
-### Signature
+### Name
 
 `SELECT_REPEAT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| MODE | One of the modes returned with the \<repeat\_modes\> tag |
+| Parameter | Description                                                |
+| --------- | ---------------------------------------------------------- |
+| MODE      | One of the modes returned with the `<repeat\_modes\>` tag. |
 
 
 ### SendToProxy

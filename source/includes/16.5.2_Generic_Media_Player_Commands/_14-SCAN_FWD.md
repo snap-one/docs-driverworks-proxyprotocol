@@ -3,7 +3,7 @@
 Command to scan forward through current media.
 
 
-### Signature
+### Name
 
 `SCAN_FWD ()`
 

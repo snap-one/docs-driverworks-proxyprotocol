@@ -3,7 +3,7 @@
 Command to obtain the current list.
 
 
-### Signature
+### Name
 
 `GET_LIST ()`
 

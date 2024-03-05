@@ -1,11 +1,11 @@
 ## QUEUE\_PROGRESS\_CHANGED
 
-### Signature
+### Name
 
 `QUEUE_PROGRESSS_CHNAGED ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| play |
-| total |
+| --------- | ----------- |
+| play      |             |
+| total     |             |

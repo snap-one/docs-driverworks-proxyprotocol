@@ -3,7 +3,7 @@
 Initiate up-arrow navigation.
 
 
-### Signature
+### Name
 
 `START_UP ()`
 
@@ -15,5 +15,4 @@ Initiate up-arrow navigation.
 
 ### Returns
 
-\`None
-\`
+`None`

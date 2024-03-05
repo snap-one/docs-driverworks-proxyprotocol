@@ -3,13 +3,13 @@
 Command to filter items based on the search string.
 
 
-### Signature
+### Name
 
 `SEARCH ()`
 
 
-| Parameter | Description |
-| --- | --- |
+| Parameter    | Description                        |
+| ------------ | ---------------------------------- |
 | SEARCHSTRING | The string used to filter results. |
 
 

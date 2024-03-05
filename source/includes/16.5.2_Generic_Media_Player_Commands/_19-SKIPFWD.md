@@ -3,7 +3,7 @@
 Command that starts playback of the next media item.
 
 
-### Signature
+### Name
 
 `SKIP_FWD ()`
 

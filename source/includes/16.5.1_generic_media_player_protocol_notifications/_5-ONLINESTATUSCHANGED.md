@@ -1,10 +1,10 @@
 ## ONLINE\_STATUS\_CHANGED
 
-### Signature
+### Name
 
 `ONLINE_STATUS_CHNAGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| online\_status |
+| Parameter        | Description |
+| ---------------- | ----------- |
+| online\\\_status |             |
