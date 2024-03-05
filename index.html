@@ -29551,22 +29551,25 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Displays current artist.</p>
 
-<h3 id='xm-tuner-protocol-notifications-available_channel_map-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-available_channel_map-name'>Name</h3>
 
 <p><code>AVAILBLE_CHANNEL_MAP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>MAP_HALF</td>
+<td>INT</td>
 <td>MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255.</td>
 </tr>
 <tr>
-<td>str</td>
+<td>MAP_STRING</td>
+<td>STR</td>
 <td>MAP STRING: 32 character (hex values) string representing the binary (1 = available or 0 = not) state of each of the channels in all possible combinations. Each hex digit covers all the possible available combinations of 4 channels.</td>
 </tr>
 </tbody></table>
@@ -29589,18 +29592,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </code></pre></div>
 <h2 id='xm-tuner-protocol-notifications-signal_strength'>SIGNAL_STRENGTH</h2>
 <p>Displays strength of signal.</p>
-<h3 id='xm-tuner-protocol-notifications-signal_strength-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-signal_strength-name'>Name</h3>
 
 <p><code>SIGNAL_STRENGTH ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>0 = “None”, 1 = “Weak”, 2 = “Fair”, 3 = “Good”</td>
 </tr>
 </tbody></table>
@@ -29613,18 +29618,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Displays current song information.</p>
 
-<h3 id='xm-tuner-protocol-notifications-song_info_changed-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-song_info_changed-name'>Name</h3>
 
 <p><code>SONG_INFO_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td></td>
+<td>STRE</td>
 <td>ARTIST, TITLE, CATEGORY, CHANNEL, NAME</td>
 </tr>
 </tbody></table>
@@ -29637,18 +29644,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Satellite Digital Audio Radio Service</p>
 
-<h3 id='xm-tuner-protocol-notifications-xmards_id-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xmards_id-name'>Name</h3>
 
 <p><code>XMARDS_ID ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>ID_TEXT</td>
+<td>STR</td>
 <td>Value representing the XM SDARS value of the satellite device.</td>
 </tr>
 </tbody></table>
@@ -29661,22 +29670,25 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Displays current station name.</p>
 
-<h3 id='xm-tuner-protocol-notifications-xm_category_name_change-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_category_name_change-name'>Name</h3>
 
 <p><code>XM_CATEGORY_NAME_CHANGE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td></td>
+<td>INT</td>
 <td>Channel</td>
 </tr>
 <tr>
-<td>str</td>
+<td></td>
+<td>STR</td>
 <td>Channel name</td>
 </tr>
 </tbody></table>
@@ -29689,18 +29701,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Displays available XM channels.</p>
 
-<h3 id='xm-tuner-protocol-notifications-xm_get_available_channels-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_available_channels-name'>Name</h3>
 
 <p><code>XM_GET_AVAILABLE_CHANNELS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>MAP_HALF</td>
+<td>INT</td>
 <td>MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255.</td>
 </tr>
 </tbody></table>
@@ -29727,7 +29741,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </code></pre></div>
 <h2 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed'>XM_GET_CHANNEL_DETAILS_CHANGED</h2>
 <p>Displays current channel details.</p>
-<h3 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed-signature'>Signature</h3>
+<h3 id='xm-tuner-protocol-notifications-xm_get_channel_details_changed-name'>Name</h3>
 
 <p><code>XM_GET_CHANNEL_DETAILS_CHANGED ()</code></p>
 
