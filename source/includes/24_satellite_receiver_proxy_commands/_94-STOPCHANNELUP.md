@@ -3,7 +3,7 @@
 Stop ramping channel up.
 
 
-### Signature
+### Name
 
 `STOP_CHANNEL_UP ()`
 

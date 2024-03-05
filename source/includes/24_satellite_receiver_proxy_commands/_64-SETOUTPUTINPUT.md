@@ -3,15 +3,15 @@
 Specify input and output selection of device.
 
 
-### Signature
+### Name
 
 `SET_OUTPUT_INPUT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Input Binding ID |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| InputBindingID  | INT  | Input Binding ID  |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

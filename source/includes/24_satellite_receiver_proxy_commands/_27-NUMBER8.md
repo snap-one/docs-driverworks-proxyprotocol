@@ -3,7 +3,7 @@
 Pulse ‘8’ button
 
 
-### Signature
+### Name
 
 `Number_8 ()`
 

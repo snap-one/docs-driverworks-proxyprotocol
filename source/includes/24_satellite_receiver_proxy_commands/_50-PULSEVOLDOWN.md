@@ -3,14 +3,14 @@
 Pulse volume level down.
 
 
-### Signature
+### Name
 
 `PULSE_VOL_DOWN`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

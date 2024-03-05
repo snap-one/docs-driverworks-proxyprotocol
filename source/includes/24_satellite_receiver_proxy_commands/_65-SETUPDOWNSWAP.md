@@ -3,14 +3,14 @@
 Swap page UP/DOWN buttons (used by AVGen)
 
 
-### Signature
+### Name
 
 `POUND ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| --------- | ----------- |
+| bool      | True/False  |
 
 
 ### Returns

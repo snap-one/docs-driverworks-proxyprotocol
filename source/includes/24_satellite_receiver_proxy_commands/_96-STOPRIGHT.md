@@ -3,7 +3,7 @@
 Stop right arrow navigation.
 
 
-### Signature
+### Name
 
 `STOP_RIGHT ()`
 

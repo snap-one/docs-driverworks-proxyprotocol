@@ -3,14 +3,14 @@
 Pulse bass down (Left)
 
 
-### Signature
+### Name
 
 `PULSE_BASS_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

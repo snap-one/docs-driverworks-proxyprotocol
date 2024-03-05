@@ -3,7 +3,7 @@
 Stop scan forward within track/chapter.
 
 
-### Signature
+### Name
 
 `STOP_SCAN_FWD ()`
 

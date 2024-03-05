@@ -3,7 +3,7 @@
 Initiate right arrow navigation.
 
 
-### Signature
+### Name
 
 `START_RIGHT ()`
 

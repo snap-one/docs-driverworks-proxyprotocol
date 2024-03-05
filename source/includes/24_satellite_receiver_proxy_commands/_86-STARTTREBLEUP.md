@@ -3,14 +3,14 @@
 Start ramping treble up.
 
 
-### Signature
+### Name
 
 `START_TREBLE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

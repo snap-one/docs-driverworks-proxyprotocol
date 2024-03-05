@@ -3,7 +3,7 @@
 Pulse channel value down.
 
 
-### Signature
+### Name
 
 `PULSE_CHANNEL_DOWN ()`
 

@@ -3,7 +3,7 @@
 Pulse scan reverse within track/chapter.
 
 
-### Signature
+### Name
 
 `SCAN_REV ()`
 

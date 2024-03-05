@@ -3,14 +3,14 @@
 Set specified tuning preset
 
 
-### Signature
+### Name
 
 `SET_PRESET () `
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Preset Number |
+| Parameter | Type | Description   |
+| --------- | ---- | ------------- |
+| PresetNum | INT  | Preset Number |
 
 
 ### Returns

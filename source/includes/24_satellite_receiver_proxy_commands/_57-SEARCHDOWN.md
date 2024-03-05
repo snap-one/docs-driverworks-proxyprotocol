@@ -3,7 +3,7 @@
 Pulse tuning search down
 
 
-### Signature
+### Name
 
 `SEARCH_DOWN ()`
 

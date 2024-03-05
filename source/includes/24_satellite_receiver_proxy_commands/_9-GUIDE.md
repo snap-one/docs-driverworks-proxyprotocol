@@ -3,7 +3,7 @@
 Pulse info button.
 
 
-### Signature
+### Name
 
 `GUIDE ()`
 

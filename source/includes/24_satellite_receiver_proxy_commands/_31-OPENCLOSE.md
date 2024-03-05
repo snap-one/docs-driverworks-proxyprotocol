@@ -3,7 +3,7 @@
 Open/Close disc tray.
 
 
-### Signature
+### Name
 
 `OPEN_CLOSE ()`
 

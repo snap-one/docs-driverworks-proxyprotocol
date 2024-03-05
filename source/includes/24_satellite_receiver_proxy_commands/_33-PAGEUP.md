@@ -3,7 +3,7 @@
 Pulse menu Page up.
 
 
-### Signature
+### Name
 
 `PAGE_UP ()`
 

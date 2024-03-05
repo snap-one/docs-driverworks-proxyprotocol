@@ -3,7 +3,7 @@
 Start ramping channel up.
 
 
-### Signature
+### Name
 
 `START_CHANNEL_UP ()`
 

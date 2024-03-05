@@ -3,14 +3,14 @@
 Toggle muting on/off.
 
 
-### Signature
+### Name
 
 `MUTE_TOGGLE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

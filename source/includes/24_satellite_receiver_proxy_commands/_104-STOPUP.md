@@ -3,7 +3,7 @@
 Stop up arrow navigation.
 
 
-### Signature
+### Name
 
 `STOP_UP ()`
 

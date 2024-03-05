@@ -2,14 +2,14 @@
 Stop ramping the volume up.
 
 
-### Signature
+### Name
 
 `STOP_VOL_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

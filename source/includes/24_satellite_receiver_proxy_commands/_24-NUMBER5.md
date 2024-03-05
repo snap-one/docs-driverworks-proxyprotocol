@@ -3,7 +3,7 @@
 Pulse ‘5’ button
 
 
-### Signature
+### Name
 
 `Number_5 ()`
 

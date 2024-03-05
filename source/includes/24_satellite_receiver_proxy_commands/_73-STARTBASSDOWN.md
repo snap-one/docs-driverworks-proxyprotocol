@@ -3,15 +3,14 @@
 Start ramping bass down.
 
 
-### Signature
+### Name
 
 `START_BASS_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
-
+| Parameter       | Type | Description             |
+| --------------- | ---- | ----------------------- |
+| OutputBindingID | INT  | Output Binding ID value |
 
 
 ### Returns

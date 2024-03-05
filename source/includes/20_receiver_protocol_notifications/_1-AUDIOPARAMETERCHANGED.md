@@ -8,9 +8,9 @@ Audio parameter has changed
 `AUDIO_PARAMETER_CHANGED ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

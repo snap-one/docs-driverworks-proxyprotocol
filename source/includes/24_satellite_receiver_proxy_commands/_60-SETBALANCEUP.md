@@ -3,15 +3,15 @@
 Set balance to a specified position.
 
 
-### Signature
+### Name
 
 `SET_BALANCE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| Level           | INT  | Level value       |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

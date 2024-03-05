@@ -3,14 +3,14 @@
 Emit IR/Serial code.
 
 
-### Signature
+### Name
 
 `EMIT_CODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| Int | ID of the IR Code |
+| Parameter | Type | Description   |
+| --------- | ---- | ------------- |
+| IRCodeID  | INT  | IR Code value |
 
 
 ### Returns

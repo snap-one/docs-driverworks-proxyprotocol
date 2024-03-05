@@ -3,7 +3,7 @@
 Place device in a playback state.
 
 
-### Signature
+### Name
 
 `PLAY ()`
 

@@ -3,15 +3,15 @@
 Selected treble level has changed.
 
 
-### Signature
+### Name
 
 `TREBLE_LEVEL_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Level |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Level             |
+| int       | Output Binding ID |
 
 
 ### Returns

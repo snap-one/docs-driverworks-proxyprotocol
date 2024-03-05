@@ -3,15 +3,15 @@
 Surround mode setting has changed.
 
 
-### Signature
+### Name
 
 `SURROUND_MODE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
-| int | Surround Mode ID value |
+| Parameter | Type | Description            |
+| --------- | ---- | ---------------------- |
+|           | INT  | Output Binding ID      |
+|           | INT  | Surround Mode ID value |
 
 
 ### Returns

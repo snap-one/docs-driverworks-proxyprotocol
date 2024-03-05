@@ -3,7 +3,7 @@
 Navigate Enter key
 
 
-### Signature
+### Name
 
 `Enter ()`
 

@@ -3,14 +3,14 @@
 Tune device to the specified channel.
 
 
-### Signature
+### Name
 
 `SET_CHANNEL ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | Channel value in string format. |
+| Parameter | Type | Description                     |
+| --------- | ---- | ------------------------------- |
+|           | STR  | Channel value in string format. |
 
 
 ### Returns

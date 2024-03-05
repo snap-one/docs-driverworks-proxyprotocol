@@ -3,7 +3,7 @@
 Pulse left navigation button.
 
 
-### Signature
+### Name
 
 `LEFT ()`
 

@@ -3,14 +3,14 @@
 Stop ramping the treble up.
 
 
-### Signature
+### Name
 
 `STOP_TREBLE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

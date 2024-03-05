@@ -3,14 +3,14 @@
 Pulse treble up.
 
 
-### Signature
+### Name
 
 `PULSE_TREBLE_UP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Output Binding ID |
+| Parameter | Description       |
+| --------- | ----------------- |
+| int       | Output Binding ID |
 
 
 ### Returns

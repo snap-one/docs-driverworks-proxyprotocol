@@ -3,7 +3,7 @@
 Pulse channel value up.
 
 
-### Signature
+### Name
 
 `PULSE_CHANNEL_UP ()`
 

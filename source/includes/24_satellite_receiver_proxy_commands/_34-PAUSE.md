@@ -3,7 +3,7 @@
 Place device in pause state.
 
 
-### Signature
+### Name
 
 `PAUSE ()`
 
