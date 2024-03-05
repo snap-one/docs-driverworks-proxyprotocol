@@ -2,7 +2,7 @@
 
 Device has entered a playback state.
 
-### Signature
+### Name
 
 `PLAY ()`
 

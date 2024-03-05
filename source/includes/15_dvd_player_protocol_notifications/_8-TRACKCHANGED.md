@@ -3,14 +3,14 @@
 Selected track has changed.
 
 
-### Signature
+### Name
 
 `TRACK_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Track Number |
+| Parameter  | Type | Description  |
+| ---------- | ---- | ------------ |
+| DiscNumber | INT  | Track Number |
 
 
 ### Returns

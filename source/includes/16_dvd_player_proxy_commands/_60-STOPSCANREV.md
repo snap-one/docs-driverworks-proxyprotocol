@@ -3,7 +3,7 @@
 Terminate reverse scan within track/chapter.
 
 
-### Signature
+### Name
 
 `STOP_SCAN_REV ()`
 
@@ -15,5 +15,4 @@ Terminate reverse scan within track/chapter.
 
 ### Returns
 
-\`None
-\`
+`None`

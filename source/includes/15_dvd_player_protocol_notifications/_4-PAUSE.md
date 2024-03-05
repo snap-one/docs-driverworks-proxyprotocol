@@ -2,7 +2,7 @@
 
 Device is paused.
 
-### Signature
+### Name
 
 `PAUSE ()`
 

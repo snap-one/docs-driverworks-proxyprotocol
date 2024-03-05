@@ -3,7 +3,7 @@
 Pulse ‘6’ button
 
 
-### Signature
+### Name
 
 `Number_6 ()`
 

@@ -3,7 +3,7 @@
 Pulse down navigation.
 
 
-### Signature
+### Name
 
 `DOWN ()`
 

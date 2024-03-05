@@ -3,7 +3,7 @@
 Navigate Guide key.
 
 
-### Signature
+### Name
 
 `GUIDE ()`
 

@@ -3,14 +3,14 @@
 Select specified track.
 
 
-### Signature
+### Name
 
 `GO_TO_TRACK ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Track Number |
+| Parameter   | Type | Description  |
+| ----------- | ---- | ------------ |
+| TrackNUMBER | INT  | Track Number |
 
 
 ### Returns

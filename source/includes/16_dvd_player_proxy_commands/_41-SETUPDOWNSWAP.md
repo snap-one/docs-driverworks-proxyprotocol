@@ -3,17 +3,16 @@
 Swap page UP/DOWN buttons (used by AVGen)
 
 
-### Signature
+### Name
 
 `SET_UP_DOWN_SWAP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                      |
+| --------- | ---- | -------------------------------- |
+| SWAPFLAG  | BOOL | Ability to swap UP/DOWN buttons. |
 
 
 ### Returns
 
-\`None
-\`
+`None`

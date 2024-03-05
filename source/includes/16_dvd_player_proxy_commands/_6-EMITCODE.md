@@ -3,14 +3,14 @@
 Emit IR/Serial code (used by AVGen IR/Serial Proxy).
 
 
-### Signature
+### Name
 
 `EMIT_CODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| Int | ID OF IR Code |
+| Parameter | Type | Description   |
+| --------- | ---- | ------------- |
+| IRCodeID  | INT  | ID OF IR Code |
 
 
 ### Returns

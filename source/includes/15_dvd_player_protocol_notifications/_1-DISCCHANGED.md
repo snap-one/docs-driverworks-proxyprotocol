@@ -3,14 +3,14 @@
 Selected disc has changed.
 
 
-### Signature
+### Name
 
 `DISC_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Disc Number |
+| Parameter  | Type | Description |
+| ---------- | ---- | ----------- |
+| DiscNumber | INT  | Disc Number |
 
 
 ### Returns

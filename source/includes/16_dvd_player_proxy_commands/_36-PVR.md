@@ -3,7 +3,7 @@
 Pulse PVR button.
 
 
-### Signature
+### Name
 
 `PVR ()`
 

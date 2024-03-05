@@ -3,7 +3,7 @@
 Seek to previous track/chapter.
 
 
-### Signature
+### Name
 
 `SKIP_REV ()`
 

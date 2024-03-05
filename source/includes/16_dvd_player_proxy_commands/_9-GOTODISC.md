@@ -3,14 +3,14 @@
 Select specified disc.
 
 
-### Signature
+### Name
 
 `GO_TO_DISC ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Disc Number |
+| Parameter  | Type | Description |
+| ---------- | ---- | ----------- |
+| DiscNUMBER | INT  | Disc Number |
 
 
 ### Returns
