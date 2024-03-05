@@ -3321,6 +3321,9 @@
                     <a href="#tuner-proxy-commands-search_up" class="toc-h2 toc-link" data-title="SEARCH_UP">SEARCH_UP</a>
                   </li>
                   <li>
+                    <a href="#tuner-proxy-commands-set_channel" class="toc-h2 toc-link" data-title="SET_CHANNEL">SET_CHANNEL</a>
+                  </li>
+                  <li>
                     <a href="#tuner-proxy-commands-set_preset" class="toc-h2 toc-link" data-title="SET_PRESET">SET_PRESET</a>
                   </li>
                   <li>
@@ -26122,19 +26125,21 @@ OUTPUT             0
 
 <p>Selected disc has changed.</p>
 
-<h3 id='tuner-protocol-notifications-channel_changed-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-channel_changed-name'>Name</h3>
 
 <p><code>CHANNEL_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>CHANNEL Number</td>
+<td>ChannelNumber</td>
+<td>INT</td>
+<td>Channel Number</td>
 </tr>
 </tbody></table>
 
@@ -26163,34 +26168,40 @@ OUTPUT             0
 
 <h2 id='tuner-protocol-notifications-input_changed'>INPUT_CHANGED</h2>
 <p>Selected input has changed.</p>
-<h3 id='tuner-protocol-notifications-input_changed-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-input_changed-name'>Name</h3>
 
 <p><code>INPUT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Binding ID of RF cloud</td>
 </tr>
 <tr>
-<td>str</td>
+<td></td>
+<td>STR</td>
 <td>One of the following case sensitive values: “AMBand”  “FMBand”</td>
 </tr>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Lowest tune-able channel e.g. 8750 for FM, 530 for AM</td>
 </tr>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Highest tunable channel e.g. 10790 for FM, 1760 for AM</td>
 </tr>
 <tr>
-<td>int</td>
+<td></td>
+<td>INT</td>
 <td>Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S.</td>
 </tr>
 </tbody></table>
@@ -26221,7 +26232,7 @@ OUTPUT             0
 
 <h2 id='tuner-protocol-notifications-off'>OFF</h2>
 <p>Device has turned Off.</p>
-<h3 id='tuner-protocol-notifications-off-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -26237,7 +26248,7 @@ OUTPUT             0
 
 <p>Device has turned On.</p>
 
-<h3 id='tuner-protocol-notifications-on-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -26253,25 +26264,27 @@ OUTPUT             0
 
 <p>Text from RDS has changed.</p>
 
-<h3 id='tuner-protocol-notifications-radio_text_changed-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-radio_text_changed-name'>Name</h3>
 
 <p><code>RADIO_TEXT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Radio information/text from RDS. Currently playing title.</td>
+<td>RADIO_TEXT_</td>
+<td>STR</td>
+<td>Two free-form text strings. Radio information/text from RDS and currently playing title.</td>
 </tr>
 </tbody></table>
 
 <h3 id='tuner-protocol-notifications-radio_text_changed-usage-note'>Usage Note</h3>
 
-<p>MaxImum 64 characters is two free form text strings.</p>
+<p>MaxImum 64 characters in two free form text strings.</p>
 
 <h3 id='tuner-protocol-notifications-radio_text_changed-returns'>Returns</h3>
 
@@ -26281,25 +26294,27 @@ OUTPUT             0
 
 <p>Text from PSN has changed.</p>
 
-<h3 id='tuner-protocol-notifications-psn_changed-signature'>Signature</h3>
+<h3 id='tuner-protocol-notifications-psn_changed-name'>Name</h3>
 
 <p><code>PSN_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Radio information/text from the station ID. Periodically updated from the station.</td>
+<td>PSN</td>
+<td>STR</td>
+<td>Two free-form text strings. Radio information and text from the station ID. Periodically updated from the station.</td>
 </tr>
 </tbody></table>
 
 <h3 id='tuner-protocol-notifications-psn_changed-usage-note'>Usage Note</h3>
 
-<p>MaxImum 64 characters is two free form text strings.</p>
+<p>MaxImum 64 characters in two free form text strings.</p>
 
 <h3 id='tuner-protocol-notifications-psn_changed-returns'>Returns</h3>
 
@@ -26315,7 +26330,7 @@ OUTPUT             0
 
 <p>Pulse Back button</p>
 
-<h3 id='tuner-proxy-commands-back-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-back-name'>Name</h3>
 
 <p><code>BACK ()</code></p>
 
@@ -26331,7 +26346,7 @@ OUTPUT             0
 
 <p>Pulse Cancel button</p>
 
-<h3 id='tuner-proxy-commands-cancel-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-cancel-name'>Name</h3>
 
 <p><code>CANCEL ()</code></p>
 
@@ -26347,7 +26362,7 @@ OUTPUT             0
 
 <p>Pulses the ‘-’ button.</p>
 
-<h3 id='tuner-proxy-commands-dash-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-dash-name'>Name</h3>
 
 <p><code>DASH ()</code></p>
 
@@ -26363,7 +26378,7 @@ OUTPUT             0
 
 <p>Pulse ‘-’ button</p>
 
-<h3 id='tuner-proxy-commands-hyphen-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-hyphen-name'>Name</h3>
 
 <p><code>HYPHEN ()</code></p>
 
@@ -26379,7 +26394,7 @@ OUTPUT             0
 
 <p>Pulse Info button</p>
 
-<h3 id='tuner-proxy-commands-info-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-info-name'>Name</h3>
 
 <p><code>INFO ()</code></p>
 
@@ -26395,7 +26410,7 @@ OUTPUT             0
 
 <p>Pulse ‘0’ button</p>
 
-<h3 id='tuner-proxy-commands-number_0-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_0-name'>Name</h3>
 
 <p><code>Number_0 ()</code></p>
 
@@ -26411,7 +26426,7 @@ OUTPUT             0
 
 <p>Pulse ‘1’ button</p>
 
-<h3 id='tuner-proxy-commands-number_1-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_1-name'>Name</h3>
 
 <p><code>Number_1 ()</code></p>
 
@@ -26427,7 +26442,7 @@ OUTPUT             0
 
 <p>Pulse ‘2’ button</p>
 
-<h3 id='tuner-proxy-commands-number_2-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_2-name'>Name</h3>
 
 <p><code>Number_2 ()</code></p>
 
@@ -26443,7 +26458,7 @@ OUTPUT             0
 
 <p>Pulse ‘3’ button</p>
 
-<h3 id='tuner-proxy-commands-number_3-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_3-name'>Name</h3>
 
 <p><code>Number_3 ()</code></p>
 
@@ -26459,7 +26474,7 @@ OUTPUT             0
 
 <p>Pulse ‘4’ button</p>
 
-<h3 id='tuner-proxy-commands-number_4-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_4-name'>Name</h3>
 
 <p><code>Number_4 ()</code></p>
 
@@ -26475,7 +26490,7 @@ OUTPUT             0
 
 <p>Pulse ‘5’ button</p>
 
-<h3 id='tuner-proxy-commands-number_5-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_5-name'>Name</h3>
 
 <p><code>Number_5 ()</code></p>
 
@@ -26491,7 +26506,7 @@ OUTPUT             0
 
 <p>Pulse ‘6’ button</p>
 
-<h3 id='tuner-proxy-commands-number_6-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_6-name'>Name</h3>
 
 <p><code>Number_6 ()</code></p>
 
@@ -26507,7 +26522,7 @@ OUTPUT             0
 
 <p>Pulse ‘7’ button</p>
 
-<h3 id='tuner-proxy-commands-number_7-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_7-name'>Name</h3>
 
 <p><code>Number_7 ()</code></p>
 
@@ -26523,7 +26538,7 @@ OUTPUT             0
 
 <p>Pulse ‘8’ button</p>
 
-<h3 id='tuner-proxy-commands-number_8-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_8-name'>Name</h3>
 
 <p><code>Number_8 ()</code></p>
 
@@ -26539,7 +26554,7 @@ OUTPUT             0
 
 <p>Pulse ‘9’ button</p>
 
-<h3 id='tuner-proxy-commands-number_9-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-number_9-name'>Name</h3>
 
 <p><code>Number_9 ()</code></p>
 
@@ -26555,7 +26570,7 @@ OUTPUT             0
 
 <p>Turn device Off.</p>
 
-<h3 id='tuner-proxy-commands-off-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -26575,7 +26590,7 @@ OUTPUT             0
 
 <p>Turn device On.</p>
 
-<h3 id='tuner-proxy-commands-on-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -26595,7 +26610,7 @@ OUTPUT             0
 
 <p>Pulse menu Page down.</p>
 
-<h3 id='tuner-proxy-commands-page_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-page_down-name'>Name</h3>
 
 <p><code>PAGE_DOWN ()</code></p>
 
@@ -26611,7 +26626,7 @@ OUTPUT             0
 
 <p>Pulse menu Page up.</p>
 
-<h3 id='tuner-proxy-commands-page_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-page_up-name'>Name</h3>
 
 <p><code>PAGE_UP ()</code></p>
 
@@ -26627,7 +26642,7 @@ OUTPUT             0
 
 <p>Pulse # button.</p>
 
-<h3 id='tuner-proxy-commands-pound-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-pound-name'>Name</h3>
 
 <p><code>POUND ()</code></p>
 
@@ -26643,7 +26658,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) tuning preset.</p>
 
-<h3 id='tuner-proxy-commands-preset_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-preset_down-name'>Name</h3>
 
 <p><code>PRESET_DOWN ()</code></p>
 
@@ -26659,7 +26674,7 @@ OUTPUT             0
 
 <p>Toggle (cycle UP) tuning preset.</p>
 
-<h3 id='tuner-proxy-commands-preset_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-preset_up-name'>Name</h3>
 
 <p><code>PRESET_UP ()</code></p>
 
@@ -26675,7 +26690,7 @@ OUTPUT             0
 
 <p>Pulse channel value down.</p>
 
-<h3 id='tuner-proxy-commands-pulse_channel_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-pulse_channel_down-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_DOWN ()</code></p>
 
@@ -26691,7 +26706,7 @@ OUTPUT             0
 
 <p>Pulse channel value up.</p>
 
-<h3 id='tuner-proxy-commands-pulse_channel_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-pulse_channel_up-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_UP ()</code></p>
 
@@ -26707,7 +26722,7 @@ OUTPUT             0
 
 <p>Pulse Recall button.</p>
 
-<h3 id='tuner-proxy-commands-recall-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-recall-name'>Name</h3>
 
 <p><code>RECALL ()</code></p>
 
@@ -26723,7 +26738,7 @@ OUTPUT             0
 
 <p>Pulse tuning search down</p>
 
-<h3 id='tuner-proxy-commands-search_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-search_down-name'>Name</h3>
 
 <p><code>SEARCH_DOWN ()</code></p>
 
@@ -26739,7 +26754,7 @@ OUTPUT             0
 
 <p>Pulse tuning search UP</p>
 
-<h3 id='tuner-proxy-commands-search_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-search_up-name'>Name</h3>
 
 <p><code>SEARCH_UP ()</code></p>
 
@@ -26751,22 +26766,91 @@ OUTPUT             0
 
 <p><code>None</code></p>
 
+<h2 id='tuner-proxy-commands-set_channel'>SET_CHANNEL</h2>
+
+<p>Tune device tot he specifies channel.</p>
+
+<h3 id='tuner-proxy-commands-set_channel-name'>Name</h3>
+
+<p><code>SET_CHANNEL ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td>STR</td>
+<td>Channel value in string format</td>
+</tr>
+<tr>
+<td></td>
+<td>STR</td>
+<td>Band Type</td>
+</tr>
+</tbody></table>
+
+<h3 id='tuner-proxy-commands-set_channel-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='tuner-proxy-commands-set_channel-example'>Example</h3>
+
+<p>The example to the right detail the table of information that is received from the proxy when a channel is selected:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>FM:
+ReceivedFromProxy:      SET_CHANNEL
+BindingID               5002
+CHANNEL                 96.3
+INPUT                   3028
+OUTPUT                  0
+
+AM:
+ReceivedFromProxy:      SET_CHANNEL
+INPUT                   3027
+BindingID               5002
+CHANNEL                 1100
+INPUT                   3027
+OUTPUT                  0
+
+</code></pre></div>
+
+<p>In the FM example, channel 96.3 has been selected in the tuner protocol. The 96.3 value is passed into the data table as a string. It is important to note that if the bandwidth type (AM, FM) is not provided (and the proxy in question is not TV) a manner in which to identify the bandwidth type will need to be developed. An example of this code follows:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>  if tParams['BANDTYPE'] == nil then
+   if (string.find(tParams['CHANNEL'],"%p") ~= nil) then
+    tParams['BANDTYPE'] = 'FM'
+    local ChannelLen = string.len(tParams['CHANNEL'] )
+    local ChannelFix = string.sub(tParams['CHANNEL'],1,ChannelLen-2) ..
+    string.sub(tParams['CHANNEL'],ChannelLen-1,ChannelLen-1)
+    tParams ['CHANNEL'] = ChannelFix
+   else
+    tParams['BANDTYPE'] = 'AM'
+end end
+end
+</code></pre></div>
+
 <h2 id='tuner-proxy-commands-set_preset'>SET_PRESET</h2>
 
 <p>Select specified tuning preset.</p>
 
-<h3 id='tuner-proxy-commands-set_preset-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-set_preset-name'>Name</h3>
 
 <p><code>SET_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PresetNum</td>
+<td>INT</td>
 <td>Preset Number</td>
 </tr>
 </tbody></table>
@@ -26779,7 +26863,7 @@ OUTPUT             0
 
 <p>Pulse <code>*</code> button.</p>
 
-<h3 id='tuner-proxy-commands-star-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-star-name'>Name</h3>
 
 <p><code>STAR ()</code></p>
 
@@ -26795,7 +26879,7 @@ OUTPUT             0
 
 <p>Start ramping channel down.</p>
 
-<h3 id='tuner-proxy-commands-start_ch_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_ch_down-name'>Name</h3>
 
 <p><code>START_CH_DOWN ()</code></p>
 
@@ -26811,7 +26895,7 @@ OUTPUT             0
 
 <p>Start ramping channel UP.</p>
 
-<h3 id='tuner-proxy-commands-start_ch_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_ch_up-name'>Name</h3>
 
 <p><code>START_CH_UP ()</code></p>
 
@@ -26827,7 +26911,7 @@ OUTPUT             0
 
 <p>StOP ramping channel UP.</p>
 
-<h3 id='tuner-proxy-commands-stop_ch_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_ch_up-name'>Name</h3>
 
 <p><code>STOP_CH_UP ()</code></p>
 
@@ -26843,7 +26927,7 @@ OUTPUT             0
 
 <p>Start menu Page down.</p>
 
-<h3 id='tuner-proxy-commands-start_page_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_page_down-name'>Name</h3>
 
 <p><code>START_PAGE_DOWN ()</code></p>
 
@@ -26859,7 +26943,7 @@ OUTPUT             0
 
 <p>Start menu Page up.</p>
 
-<h3 id='tuner-proxy-commands-start_page_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_page_up-name'>Name</h3>
 
 <p><code>START_PAGE_UP ()</code></p>
 
@@ -26875,7 +26959,7 @@ OUTPUT             0
 
 <p>Begin tuning search down.</p>
 
-<h3 id='tuner-proxy-commands-start_search_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_search_down-name'>Name</h3>
 
 <p><code>START_SEARCH_DOWN ()</code></p>
 
@@ -26891,7 +26975,7 @@ OUTPUT             0
 
 <p>Begin tuning search UP.</p>
 
-<h3 id='tuner-proxy-commands-start_search_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-start_search_up-name'>Name</h3>
 
 <p><code>START_SEARCH_UP ()</code></p>
 
@@ -26907,7 +26991,7 @@ OUTPUT             0
 
 <p>Stop ramping channel down.</p>
 
-<h3 id='tuner-proxy-commands-stop_ch_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_ch_down-name'>Name</h3>
 
 <p><code>STOP_CH_DOWN ()</code></p>
 
@@ -26923,7 +27007,7 @@ OUTPUT             0
 
 <p>Stop menu page down.</p>
 
-<h3 id='tuner-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_DOWN ()</code></p>
 
@@ -26939,7 +27023,7 @@ OUTPUT             0
 
 <p>Stop menu page up.</p>
 
-<h3 id='tuner-proxy-commands-stop_page_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_page_up-name'>Name</h3>
 
 <p><code>STOP_PAGE_UP ()</code></p>
 
@@ -26955,7 +27039,7 @@ OUTPUT             0
 
 <p>Stop tuning search up.</p>
 
-<h3 id='tuner-proxy-commands-stop_search_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_search_up-name'>Name</h3>
 
 <p><code>STOP_SEARCH_UP ()</code></p>
 
@@ -26971,7 +27055,7 @@ OUTPUT             0
 
 <p>Stop tuning search down.</p>
 
-<h3 id='tuner-proxy-commands-stop_search_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-stop_search_down-name'>Name</h3>
 
 <p><code>STOP_SEARCH_DOWN ()</code></p>
 
@@ -26987,7 +27071,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) frequency or channel</p>
 
-<h3 id='tuner-proxy-commands-tune_down-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-tune_down-name'>Name</h3>
 
 <p><code>TUNE_DOWN ()</code></p>
 
@@ -27003,7 +27087,7 @@ OUTPUT             0
 
 <p>Toggle (cycle up) frequency or channel</p>
 
-<h3 id='tuner-proxy-commands-tune_up-signature'>Signature</h3>
+<h3 id='tuner-proxy-commands-tune_up-name'>Name</h3>
 
 <p><code>TUNE_UP ()</code></p>
 
@@ -27020,7 +27104,7 @@ OUTPUT             0
 
 <p>Pulse Back button</p>
 
-<h3 id='tv-proxy-commands-back-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-back-name'>Name</h3>
 
 <p><code>BACK ()</code></p>
 
@@ -27036,7 +27120,7 @@ OUTPUT             0
 
 <p>Pulse Cancel button</p>
 
-<h3 id='tv-proxy-commands-cancel-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-cancel-name'>Name</h3>
 
 <p><code>CANCEL ()</code></p>
 
@@ -27052,7 +27136,7 @@ OUTPUT             0
 
 <p>This command toggles closed caption services on the TV.</p>
 
-<h3 id='tv-proxy-commands-closed_caption-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-closed_caption-name'>Name</h3>
 
 <p><code>CLOSED_CAPTION ()</code></p>
 
@@ -27061,11 +27145,13 @@ OUTPUT             0
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -27078,7 +27164,7 @@ OUTPUT             0
 
 <p>Pulses the ‘-’ button.</p>
 
-<h3 id='tv-proxy-commands-dash-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-dash-name'>Name</h3>
 
 <p><code>DASH ()</code></p>
 
@@ -27094,7 +27180,7 @@ OUTPUT             0
 
 <p>Disconnect (turn off) selected output on device.</p>
 
-<h3 id='tv-proxy-commands-disconnect_output-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-disconnect_output-name'>Name</h3>
 
 <p><code>DISCONNECT_OUTPUT ()</code></p>
 
@@ -27118,18 +27204,20 @@ OUTPUT             0
 
 <p>Emit IR/Serial code.</p>
 
-<h3 id='tv-proxy-commands-emit-code-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-emit-code-name'>Name</h3>
 
 <p><code>EMIT_CODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Int</td>
+<td>IRCodeID</td>
+<td>INT</td>
 <td>ID of the IR Code</td>
 </tr>
 </tbody></table>
@@ -27142,19 +27230,21 @@ OUTPUT             0
 
 <p>Emit IR/Serial code macro.</p>
 
-<h3 id='tv-proxy-commands-emit-macro-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-emit-macro-name'>Name</h3>
 
 <p><code>EMIT_MACRO ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>MacroCodeName</td>
+<td>INT</td>
+<td>Macro Code Name</td>
 </tr>
 </tbody></table>
 
@@ -27166,7 +27256,7 @@ OUTPUT             0
 
 <p>Command sent to the protocol during the proxy initialization. Returns the input designated as the default  from the protocol device.</p>
 
-<h3 id='tv-proxy-commands-get_default_input-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-get_default_input-name'>Name</h3>
 
 <p><code>GET_DEFAULT_INPUT ()</code></p>
 
@@ -27182,7 +27272,7 @@ OUTPUT             0
 
 <p>Pulse ‘-’ button</p>
 
-<h3 id='tv-proxy-commands-hyphen-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-hyphen-name'>Name</h3>
 
 <p><code>HYPHEN ()</code></p>
 
@@ -27198,7 +27288,7 @@ OUTPUT             0
 
 <p>Pulse Info button</p>
 
-<h3 id='tv-proxy-commands-info-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-info-name'>Name</h3>
 
 <p><code>INFO ()</code></p>
 
@@ -27214,7 +27304,7 @@ OUTPUT             0
 
 <p>Turn loudness off.</p>
 
-<h3 id='tv-proxy-commands-loudness_off-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-loudness_off-name'>Name</h3>
 
 <p><code>LOUDNESS_OFF ()</code></p>
 
@@ -27238,7 +27328,7 @@ OUTPUT             0
 
 <p>Turn loudness on.</p>
 
-<h3 id='tv-proxy-commands-loudness_on-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-loudness_on-name'>Name</h3>
 
 <p><code>LOUDNESS_ON ()</code></p>
 
@@ -27262,7 +27352,7 @@ OUTPUT             0
 
 <p>Toggle loudness on/off.</p>
 
-<h3 id='tv-proxy-commands-loudness_toggle-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-loudness_toggle-name'>Name</h3>
 
 <p><code>LOUDNESS_TOGGLE ()</code></p>
 
@@ -27286,7 +27376,7 @@ OUTPUT             0
 
 <p>Turn muting off.</p>
 
-<h3 id='tv-proxy-commands-mute_off-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-mute_off-name'>Name</h3>
 
 <p><code>MUTE_OFF ()</code></p>
 
@@ -27310,7 +27400,7 @@ OUTPUT             0
 
 <p>Turn muting on.</p>
 
-<h3 id='tv-proxy-commands-mute_on-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-mute_on-name'>Name</h3>
 
 <p><code>MUTE_ON ()</code></p>
 
@@ -27334,7 +27424,7 @@ OUTPUT             0
 
 <p>Toggle muting on/off.</p>
 
-<h3 id='tv-proxy-commands-mute_toggle-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-mute_toggle-name'>Name</h3>
 
 <p><code>MUTE_TOGGLE ()</code></p>
 
@@ -27358,7 +27448,7 @@ OUTPUT             0
 
 <p>Pulse ‘0’ button</p>
 
-<h3 id='tv-proxy-commands-number_0-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_0-name'>Name</h3>
 
 <p><code>Number_0 ()</code></p>
 
@@ -27374,7 +27464,7 @@ OUTPUT             0
 
 <p>Pulse ‘1’ button</p>
 
-<h3 id='tv-proxy-commands-number_1-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_1-name'>Name</h3>
 
 <p><code>Number_1 ()</code></p>
 
@@ -27390,7 +27480,7 @@ OUTPUT             0
 
 <p>Pulse ‘2’ button</p>
 
-<h3 id='tv-proxy-commands-number_2-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_2-name'>Name</h3>
 
 <p><code>Number_2 ()</code></p>
 
@@ -27406,7 +27496,7 @@ OUTPUT             0
 
 <p>Pulse ‘3’ button</p>
 
-<h3 id='tv-proxy-commands-number_3-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_3-name'>Name</h3>
 
 <p><code>Number_3 ()</code></p>
 
@@ -27422,7 +27512,7 @@ OUTPUT             0
 
 <p>Pulse ‘4’ button</p>
 
-<h3 id='tv-proxy-commands-number_4-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_4-name'>Name</h3>
 
 <p><code>Number_4 ()</code></p>
 
@@ -27438,7 +27528,7 @@ OUTPUT             0
 
 <p>Pulse ‘5’ button</p>
 
-<h3 id='tv-proxy-commands-number_5-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_5-name'>Name</h3>
 
 <p><code>Number_5 ()</code></p>
 
@@ -27454,7 +27544,7 @@ OUTPUT             0
 
 <p>Pulse ‘6’ button</p>
 
-<h3 id='tv-proxy-commands-number_6-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_6-name'>Name</h3>
 
 <p><code>Number_6 ()</code></p>
 
@@ -27470,7 +27560,7 @@ OUTPUT             0
 
 <p>Pulse ‘7’ button</p>
 
-<h3 id='tv-proxy-commands-number_7-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_7-name'>Name</h3>
 
 <p><code>Number_7 ()</code></p>
 
@@ -27486,7 +27576,7 @@ OUTPUT             0
 
 <p>Pulse ‘8’ button</p>
 
-<h3 id='tv-proxy-commands-number_8-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_8-name'>Name</h3>
 
 <p><code>Number_8 ()</code></p>
 
@@ -27502,7 +27592,7 @@ OUTPUT             0
 
 <p>Pulse ‘9’ button</p>
 
-<h3 id='tv-proxy-commands-number_9-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-number_9-name'>Name</h3>
 
 <p><code>Number_9 ()</code></p>
 
@@ -27518,7 +27608,7 @@ OUTPUT             0
 
 <p>Turn device Off.</p>
 
-<h3 id='tv-proxy-commands-off-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -27538,7 +27628,7 @@ OUTPUT             0
 
 <p>Turn device On.</p>
 
-<h3 id='tv-proxy-commands-on-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -27558,7 +27648,7 @@ OUTPUT             0
 
 <p>Pulse menu Page down.</p>
 
-<h3 id='tv-proxy-commands-page_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-page_down-name'>Name</h3>
 
 <p><code>PAGE_DOWN ()</code></p>
 
@@ -27574,7 +27664,7 @@ OUTPUT             0
 
 <p>Pulse menu Page up.</p>
 
-<h3 id='tv-proxy-commands-page_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-page_up-name'>Name</h3>
 
 <p><code>PAGE_UP ()</code></p>
 
@@ -27590,18 +27680,20 @@ OUTPUT             0
 
 <p>Pulse menu PIP button..</p>
 
-<h3 id='tv-proxy-commands-pip-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pip-name'>Name</h3>
 
 <p><code>PIP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>MacroCodeName</td>
+<td>STR</td>
 <td>MacroCodeName</td>
 </tr>
 </tbody></table>
@@ -27614,7 +27706,7 @@ OUTPUT             0
 
 <p>Pulse # button.</p>
 
-<h3 id='tv-proxy-commands-pound-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pound-name'>Name</h3>
 
 <p><code>POUND ()</code></p>
 
@@ -27630,7 +27722,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) tuning preset.</p>
 
-<h3 id='tv-proxy-commands-preset_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-preset_down-name'>Name</h3>
 
 <p><code>PRESET_DOWN ()</code></p>
 
@@ -27646,7 +27738,7 @@ OUTPUT             0
 
 <p>Toggle (cycle UP) tuning preset.</p>
 
-<h3 id='tv-proxy-commands-preset_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-preset_up-name'>Name</h3>
 
 <p><code>PRESET_UP ()</code></p>
 
@@ -27662,7 +27754,7 @@ OUTPUT             0
 
 <p>Toggle (cycle though) aspect ratio.</p>
 
-<h3 id='tv-proxy-commands-pulse_aspect_ratio-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_aspect_ratio-name'>Name</h3>
 
 <p><code>PULSE_ASPECT_RATIO ()</code></p>
 
@@ -27678,13 +27770,23 @@ OUTPUT             0
 
 <p>Pulse balance down (Left)</p>
 
-<h3 id='tv-proxy-commands-pulse_balance_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_balance_down-name'>Name</h3>
 
 <p><code>PULSE_BALNCE_DOWN ()</code></p>
 
-<h3 id='tv-proxy-commands-pulse_balance_down-parameters'>Parameters</h3>
-
-<p><code>None</code></p>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
+</tr>
+</tbody></table>
 
 <h3 id='tv-proxy-commands-pulse_balance_down-returns'>Returns</h3>
 
@@ -27694,18 +27796,20 @@ OUTPUT             0
 
 <p>Pulse balance up (Right)</p>
 
-<h3 id='tv-proxy-commands-pulse_balance_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_balance_up-name'>Name</h3>
 
 <p><code>PULSE_BALNCE_RIGHT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -27718,18 +27822,20 @@ OUTPUT             0
 
 <p>Pulse bass down (Left)</p>
 
-<h3 id='tv-proxy-commands-pulse_bass_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_bass_down-name'>Name</h3>
 
 <p><code>PULSE_BASS_DOWN ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -27742,13 +27848,23 @@ OUTPUT             0
 
 <p>Pulse bass up (Right)</p>
 
-<h3 id='tv-proxy-commands-pulse_bass_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_bass_up-name'>Name</h3>
 
 <p><code>PULSE_BASS_UP ()</code></p>
 
-<h3 id='tv-proxy-commands-pulse_bass_up-parameters'>Parameters</h3>
-
-<p><code>None</code></p>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
+</tr>
+</tbody></table>
 
 <h3 id='tv-proxy-commands-pulse_bass_up-returns'>Returns</h3>
 
@@ -27758,7 +27874,7 @@ OUTPUT             0
 
 <p>Pulse channel value down.</p>
 
-<h3 id='tv-proxy-commands-pulse_channel_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_channel_down-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_DOWN ()</code></p>
 
@@ -27774,7 +27890,7 @@ OUTPUT             0
 
 <p>Pulse channel value up.</p>
 
-<h3 id='tv-proxy-commands-pulse_channel_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_channel_up-name'>Name</h3>
 
 <p><code>PULSE_CHANNEL_UP ()</code></p>
 
@@ -27790,7 +27906,7 @@ OUTPUT             0
 
 <p>Toggle (cycle through) input selection on device.</p>
 
-<h3 id='tv-proxy-commands-pulse_input-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_input-name'>Name</h3>
 
 <p><code>PULSE_INPUT</code></p>
 
@@ -27806,7 +27922,7 @@ OUTPUT             0
 
 <p>Pulse treble down.</p>
 
-<h3 id='tv-proxy-commands-pulse_treble_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_treble_down-name'>Name</h3>
 
 <p><code>PULSE_TREBLE_DOWN ()</code></p>
 
@@ -27830,7 +27946,7 @@ OUTPUT             0
 
 <p>Pulse treble up.</p>
 
-<h3 id='tv-proxy-commands-pulse_treble_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_treble_up-name'>Name</h3>
 
 <p><code>PULSE_TREBLE_UP ()</code></p>
 
@@ -27854,7 +27970,7 @@ OUTPUT             0
 
 <p>Pulse volume level down.</p>
 
-<h3 id='tv-proxy-commands-pulse_vol_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_vol_down-name'>Name</h3>
 
 <p><code>PULSE_VOL_DOWN</code></p>
 
@@ -27878,7 +27994,7 @@ OUTPUT             0
 
 <p>Pulse volume level up.</p>
 
-<h3 id='tv-proxy-commands-pulse_vol_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pulse_vol_up-name'>Name</h3>
 
 <p><code>PULSE_VOL_UP</code></p>
 
@@ -27902,7 +28018,7 @@ OUTPUT             0
 
 <p>Pulse PVR button.</p>
 
-<h3 id='tv-proxy-commands-pvr-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-pvr-name'>Name</h3>
 
 <p><code>PVR ()</code></p>
 
@@ -27918,7 +28034,7 @@ OUTPUT             0
 
 <p>Pulse Recall button.</p>
 
-<h3 id='tv-proxy-commands-recall-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-recall-name'>Name</h3>
 
 <p><code>RECALL ()</code></p>
 
@@ -27934,7 +28050,7 @@ OUTPUT             0
 
 <p>Pulse tuning search down</p>
 
-<h3 id='tv-proxy-commands-search_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-search_down-name'>Name</h3>
 
 <p><code>SEARCH_DOWN ()</code></p>
 
@@ -27950,7 +28066,7 @@ OUTPUT             0
 
 <p>Pulse tuning search UP</p>
 
-<h3 id='tv-proxy-commands-search_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-search_up-name'>Name</h3>
 
 <p><code>SEARCH_UP ()</code></p>
 
@@ -27966,18 +28082,25 @@ OUTPUT             0
 
 <p>Set balance to a specified position.</p>
 
-<h3 id='tv-proxy-commands-set_balance-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_balance-name'>Name</h3>
 
 <p><code>SET_BALANCE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Level</td>
+<td>INT</td>
+<td>Level value</td>
+</tr>
+<tr>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -27990,7 +28113,7 @@ OUTPUT             0
 
 <p>Set balance to a specified position.</p>
 
-<h3 id='tv-proxy-commands-set_balance_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_balance_up-name'>Name</h3>
 
 <p><code>SET_BALANCE_UP ()</code></p>
 
@@ -28018,18 +28141,20 @@ OUTPUT             0
 
 <p>Set bass to a specified level.</p>
 
-<h3 id='tv-proxy-commands-set_bass_level-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_bass_level-name'>Name</h3>
 
 <p><code>SET_BASS_LEVEL</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -28042,19 +28167,26 @@ OUTPUT             0
 
 <p>Tune device to the specified channel.</p>
 
-<h3 id='tv-proxy-commands-set_channel-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_channel-name'>Name</h3>
 
 <p><code>SET_CHANNEL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>CHANNEL</td>
+<td>STR</td>
 <td>Channel value in string format.</td>
+</tr>
+<tr>
+<td>BANDTYPE</td>
+<td>STR</td>
+<td>Band Type</td>
 </tr>
 </tbody></table>
 
@@ -28062,27 +28194,66 @@ OUTPUT             0
 
 <p><code>None</code></p>
 
+<h3 id='tv-proxy-commands-set_channel-example'>Example</h3>
+
+<p>The example to the right detail the table of information that is received from the proxy when a channel is selected:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>FM:
+ReceivedFromProxy:      SET_CHANNEL
+BindingID               5002
+CHANNEL                 96.3
+INPUT                   3028
+OUTPUT                  0
+
+AM:
+ReceivedFromProxy:      SET_CHANNEL
+INPUT                   3027
+BindingID               5002
+CHANNEL                 1100
+INPUT                   3027
+OUTPUT                  0
+
+</code></pre></div>
+
+<p>In the FM example, channel 96.3 has been selected in the tuner protocol. The 96.3 value is passed into the data table as a string. It is important to note that if the bandwidth type (AM, FM) is not provided (and the proxy in question is not TV) a manner in which to identify the bandwidth type will need to be developed. An example of this code follows:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>  if tParams['BANDTYPE'] == nil then
+   if (string.find(tParams['CHANNEL'],"%p") ~= nil) then
+    tParams['BANDTYPE'] = 'FM'
+    local ChannelLen = string.len(tParams['CHANNEL'] )
+    local ChannelFix = string.sub(tParams['CHANNEL'],1,ChannelLen-2) ..
+    string.sub(tParams['CHANNEL'],ChannelLen-1,ChannelLen-1)
+    tParams ['CHANNEL'] = ChannelFix
+   else
+    tParams['BANDTYPE'] = 'AM'
+end end
+end
+</code></pre></div>
+
 <h2 id='tv-proxy-commands-set_default_input'>SET_DEFAULT_INPUT</h2>
 
 <p>Specify the default input selection of device.</p>
 
-<h3 id='tv-proxy-commands-set_default_input-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_default_input-name'>Name</h3>
 
 <p><code>SET_DEAFULT_INPUT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>InputBindingID</td>
+<td>INT</td>
 <td>Input Binding ID - should be in the BindingID range.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>Optional. Output Binding ID - should be in the BindingID range.</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>IOptional. Output Binding ID - should be in the BindingID range.</td>
 </tr>
 </tbody></table>
 
@@ -28108,22 +28279,25 @@ OUTPUT             0
 
 <p>Specify the input selection of device.</p>
 
-<h3 id='tv-proxy-commands-set_input-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_input-name'>Name</h3>
 
 <p><code>SET_INPUT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>InputBindingID</td>
+<td>INT.</td>
 <td>Input Binding ID - should be in the BindingID range.</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Optional. Output Binding ID - should be in the BindingID range.</td>
 </tr>
 </tbody></table>
@@ -28150,22 +28324,25 @@ OUTPUT             0
 
 <p>Turn loudness on.</p>
 
-<h3 id='tv-proxy-commands-set_loudness-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_loudness-name'>Name</h3>
 
 <p><code>SET_LOUDNESS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Level</td>
+<td>INT</td>
 <td>Level</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -28178,18 +28355,20 @@ OUTPUT             0
 
 <p>Select specified tuning preset.</p>
 
-<h3 id='tv-proxy-commands-set_preset-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_preset-name-e'>Name e</h3>
 
 <p><code>SET_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PresetNum</td>
+<td>INT</td>
 <td>Preset Number</td>
 </tr>
 </tbody></table>
@@ -28202,22 +28381,25 @@ OUTPUT             0
 
 <p>Set treble to a specified level.</p>
 
-<h3 id='tv-proxy-commands-set_treble_level-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_treble_level-name'>Name</h3>
 
 <p><code>SET_TREBLE_LEVEL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Level</td>
+<td>INT</td>
 <td>Level</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -28230,19 +28412,21 @@ OUTPUT             0
 
 <p>Swap page UP/DOWN buttons.</p>
 
-<h3 id='tv-proxy-commands-set_up_down_swap-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_up_down_swap-name'>Name</h3>
 
 <p><code>SET_UP_DOWN_SWAP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td></td>
 </tr>
 </tbody></table>
 
@@ -28254,7 +28438,7 @@ OUTPUT             0
 
 <p>Set volume to a specified level.</p>
 
-<h3 id='tv-proxy-commands-set_volume_level-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_volume_level-name'>Name</h3>
 
 <p><code>SET_VOLUME_LEVEL () </code></p>
 
@@ -28282,18 +28466,20 @@ OUTPUT             0
 
 <p>Begin ramping volume up.</p>
 
-<h3 id='tv-proxy-commands-set_vol_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-set_vol_up-name'>Name</h3>
 
 <p><code>SET_VOL_UP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Output indingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -28306,7 +28492,7 @@ OUTPUT             0
 
 <p>Pulse <code>*</code> button.</p>
 
-<h3 id='tv-proxy-commands-star-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-star-name'>Name</h3>
 
 <p><code>STAR ()</code></p>
 
@@ -28322,7 +28508,7 @@ OUTPUT             0
 
 <p>Start ramping balance down (left).</p>
 
-<h3 id='tv-proxy-commands-start_balance_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_balance_down-name'>Name</h3>
 
 <p><code>START_BALANCE_DOWN ()</code></p>
 
@@ -28346,7 +28532,7 @@ OUTPUT             0
 
 <p>Start ramping balance UP (right).</p>
 
-<h3 id='tv-proxy-commands-start_balance_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_balance_up-name'>Name</h3>
 
 <p><code>START_BALANCE_UP ()</code></p>
 
@@ -28370,7 +28556,7 @@ OUTPUT             0
 
 <p>Start ramping bass down.</p>
 
-<h3 id='tv-proxy-commands-start_bass_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_bass_down-name'>Name</h3>
 
 <p><code>START_BASS_DOWN ()</code></p>
 
@@ -28394,7 +28580,7 @@ OUTPUT             0
 
 <p>Start ramping bass up.</p>
 
-<h3 id='tv-proxy-commands-start_-bass_-up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_-bass_-up-name'>Name</h3>
 
 <p><code>START_BASS_UP ()</code></p>
 
@@ -28418,7 +28604,7 @@ OUTPUT             0
 
 <p>Start ramping channel down.</p>
 
-<h3 id='tv-proxy-commands-start_ch_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_ch_down-name'>Name</h3>
 
 <p><code>START_CH_DOWN ()</code></p>
 
@@ -28434,7 +28620,7 @@ OUTPUT             0
 
 <p>Start ramping channel up.</p>
 
-<h3 id='tv-proxy-commands-start_ch_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_ch_up-name'>Name</h3>
 
 <p><code>START_CH_UP ()</code></p>
 
@@ -28450,7 +28636,7 @@ OUTPUT             0
 
 <p>Initiate down-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-start_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_down-name'>Name</h3>
 
 <p><code>START_DOWN ()</code></p>
 
@@ -28466,7 +28652,7 @@ OUTPUT             0
 
 <p>Initiate left-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-start_left-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_left-name'>Name</h3>
 
 <p><code>START_LEFT ()</code></p>
 
@@ -28482,7 +28668,7 @@ OUTPUT             0
 
 <p>Start menu Page down.</p>
 
-<h3 id='tv-proxy-commands-start_page_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_page_down-name'>Name</h3>
 
 <p><code>START_PAGE_DOWN ()</code></p>
 
@@ -28498,7 +28684,7 @@ OUTPUT             0
 
 <p>Start menu Page up.</p>
 
-<h3 id='tv-proxy-commands-start_page_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_page_up-name'>Name</h3>
 
 <p><code>START_PAGE_UP ()</code></p>
 
@@ -28514,7 +28700,7 @@ OUTPUT             0
 
 <p>Initiate right-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-start_page_right-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_page_right-name'>Name</h3>
 
 <p><code>START_RIGHT ()</code></p>
 
@@ -28530,7 +28716,7 @@ OUTPUT             0
 
 <p>Begin tuning search down.</p>
 
-<h3 id='tv-proxy-commands-start_search_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_search_down-name'>Name</h3>
 
 <p><code>START_SEARCH_DOWN ()</code></p>
 
@@ -28546,7 +28732,7 @@ OUTPUT             0
 
 <p>Begin tuning search UP.</p>
 
-<h3 id='tv-proxy-commands-start_search_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_search_up-name'>Name</h3>
 
 <p><code>START_SEARCH_UP ()</code></p>
 
@@ -28562,7 +28748,7 @@ OUTPUT             0
 
 <p>Start ramping treble up.</p>
 
-<h3 id='tv-proxy-commands-start_treble_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_treble_up-name'>Name</h3>
 
 <p><code>START_TREBLE_UP ()</code></p>
 
@@ -28586,7 +28772,7 @@ OUTPUT             0
 
 <p>Start ramping treble down.</p>
 
-<h3 id='tv-proxy-commands-start_treble_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_treble_down-name'>Name</h3>
 
 <p><code>START_TREBLE_DOWN ()</code></p>
 
@@ -28610,7 +28796,7 @@ OUTPUT             0
 
 <p>Initiate up-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-start_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_up-name'>Name</h3>
 
 <p><code>START_UP ()</code></p>
 
@@ -28626,7 +28812,7 @@ OUTPUT             0
 
 <p>Start ramping volume down.</p>
 
-<h3 id='tv-proxy-commands-start_vol_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_vol_down-name'>Name</h3>
 
 <p><code>START_VOL_DOWN ()</code></p>
 
@@ -28650,7 +28836,7 @@ OUTPUT             0
 
 <p>Start ramping volume up.</p>
 
-<h3 id='tv-proxy-commands-start_vol_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_vol_up-name'>Name</h3>
 
 <p><code>START_VOL_UP ()</code></p>
 
@@ -28674,7 +28860,7 @@ OUTPUT             0
 
 <p>Start ramping balance.</p>
 
-<h3 id='tv-proxy-commands-stop_balance_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_balance_down-name'>Name</h3>
 
 <p><code>STOP_BALANCE_DOWN ()</code></p>
 
@@ -28698,7 +28884,7 @@ OUTPUT             0
 
 <p>Stop ramping bass </p>
 
-<h3 id='tv-proxy-commands-stop_balance_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_balance_up-name'>Name</h3>
 
 <p><code>STOP_BALANCE_UP ()</code></p>
 
@@ -28722,7 +28908,7 @@ OUTPUT             0
 
 <p>Stop ramping bass down.</p>
 
-<h3 id='tv-proxy-commands-stop_bass_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_bass_down-name'>Name</h3>
 
 <p><code>STOP_BASS_DOWN ()</code></p>
 
@@ -28746,7 +28932,7 @@ OUTPUT             0
 
 <p>Stop ramping bass up.</p>
 
-<h3 id='tv-proxy-commands-stop_bass_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_bass_up-name'>Name</h3>
 
 <p><code>STOP_BASS_UP ()</code></p>
 
@@ -28770,7 +28956,7 @@ OUTPUT             0
 
 <p>Stop ramping channel down.</p>
 
-<h3 id='tv-proxy-commands-stop_ch_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_ch_down-name'>Name</h3>
 
 <p><code>STOP_CH_DOWN ()</code></p>
 
@@ -28786,7 +28972,7 @@ OUTPUT             0
 
 <p>Stop ramping channel up.</p>
 
-<h3 id='tv-proxy-commands-stop_ch_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_ch_up-name'>Name</h3>
 
 <p><code>STOP_CH_UP ()</code></p>
 
@@ -28802,7 +28988,7 @@ OUTPUT             0
 
 <p>Stop down-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-stop_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_down-name'>Name</h3>
 
 <p><code>STOP_DOWN ()</code></p>
 
@@ -28818,7 +29004,7 @@ OUTPUT             0
 
 <p>Stop left-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-start_left-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-start_left-name'>Name</h3>
 
 <p><code>STOP_LEFT ()</code></p>
 
@@ -28834,7 +29020,7 @@ OUTPUT             0
 
 <p>Stop menu page down.</p>
 
-<h3 id='tv-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_DOWN ()</code></p>
 
@@ -28850,7 +29036,7 @@ OUTPUT             0
 
 <p>Stop menu page up.</p>
 
-<h3 id='tv-proxy-commands-stop_page_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_page_down-name'>Name</h3>
 
 <p><code>STOP_PAGE_UP ()</code></p>
 
@@ -28866,7 +29052,7 @@ OUTPUT             0
 
 <p>Stop right-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-stop_page_right-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_page_right-name'>Name</h3>
 
 <p><code>STOP_RIGHT ()</code></p>
 
@@ -28882,7 +29068,7 @@ OUTPUT             0
 
 <p>Stop tuning search down.</p>
 
-<h3 id='tv-proxy-commands-stop_search_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_search_down-name'>Name</h3>
 
 <p><code>STOP_SEARCH_DOWN ()</code></p>
 
@@ -28898,7 +29084,7 @@ OUTPUT             0
 
 <p>Stop tuning search UP.</p>
 
-<h3 id='tv-proxy-commands-stop_search_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_search_up-name'>Name</h3>
 
 <p><code>STOP_SEARCH_UP ()</code></p>
 
@@ -28914,7 +29100,7 @@ OUTPUT             0
 
 <p>Stop ramping treble down.</p>
 
-<h3 id='tv-proxy-commands-stop_treble_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_treble_down-name'>Name</h3>
 
 <p><code>STOP_TREBLE_DOWN ()</code></p>
 
@@ -28938,7 +29124,7 @@ OUTPUT             0
 
 <p>Stop ramping treble up.</p>
 
-<h3 id='tv-proxy-commands-stop_treble_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_treble_up-name'>Name</h3>
 
 <p><code>STOP_TREBLE_UP ()</code></p>
 
@@ -28962,7 +29148,7 @@ OUTPUT             0
 
 <p>Initiate up-arrow navigation.</p>
 
-<h3 id='tv-proxy-commands-stop_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-stop_up-name'>Name</h3>
 
 <p><code>STOP_UP ()</code></p>
 
@@ -28978,7 +29164,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) frequency or channel.</p>
 
-<h3 id='tv-proxy-commands-tune_down-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-tune_down-name'>Name</h3>
 
 <p><code>TUNE_DOWN ()</code></p>
 
@@ -28994,7 +29180,7 @@ OUTPUT             0
 
 <p>Toggle (cycle down) frequency or channel.</p>
 
-<h3 id='tv-proxy-commands-tune_up-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-tune_up-name'>Name</h3>
 
 <p><code>TUNE_UP ()</code></p>
 
@@ -29010,7 +29196,7 @@ OUTPUT             0
 
 <p>Toggle TV/video input.</p>
 
-<h3 id='tv-proxy-commands-tv_video-signature'>Signature</h3>
+<h3 id='tv-proxy-commands-tv_video-name'>Name</h3>
 
 <p><code>TV_VIDEO ()</code></p>
 
@@ -29027,19 +29213,21 @@ OUTPUT             0
 
 <p>Audio parameter has changed</p>
 
-<h3 id='tv-protocol-notifications-audio_parameter_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-audio_parameter_changed-name'>Name</h3>
 
 <p><code>AUDIO_PARAMETER_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID value</td>
 </tr>
 </tbody></table>
 
@@ -29051,7 +29239,7 @@ OUTPUT             0
 
 <p>Selected balance level has changed.</p>
 
-<h3 id='tv-protocol-notifications-balance_level_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-balance_level_changed-name'>Name</h3>
 
 <p><code>BALANCE_LEVEL_CHANGED ()</code></p>
 
@@ -29079,7 +29267,7 @@ OUTPUT             0
 
 <p>Selected bass level has changed</p>
 
-<h3 id='tv-protocol-notifications-bass_level_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-bass_level_changed-name'>Name</h3>
 
 <p><code>BASS_LEVEL_CHANGED ()</code></p>
 
@@ -29107,18 +29295,20 @@ OUTPUT             0
 
 <p>Selected channel has changed</p>
 
-<h3 id='tv-protocol-notifications-channel_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-channel_changed-name'>Name</h3>
 
 <p><code>CHANNEL_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>ChannelNumber</td>
+<td>INT</td>
 <td>Channel Number</td>
 </tr>
 </tbody></table>
@@ -29127,23 +29317,63 @@ OUTPUT             0
 
 <p><code>None</code></p>
 
+<h3 id='tv-protocol-notifications-channel_changed-usage-note'>Usage Note</h3>
+
+<p>If the BANDTYPE is not supplied, as in older drivers, the INPUT binding # will be used to determine which band the tuner is on. All DriverWorks drivers need to use the BANDTYPE parameter if they want the band to propagate up to Navigator to display the channel properly. If the DriverWorks driver does not know the current channel and the “has_feedback” capability is not set to “True”, none of this matters and everything will keep working as it previously has.
+A CHANNEL_CHANGED must be issued immediately after the INPUT_CHANGED in order for the UI to update. See the example to the right.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToproxy(5002,'INPUT_CHANGED',
+{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
+MAXCHANNEL=10790,CHANNELSPACING=20})
+C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
+</code></pre></div>
+
+<p>Note that in the example, 5002 is the ProxyBindingID for the Tuner. INPUT 3009 is the ID for the FM Antenna on the 5002 Tuner. Navigator determines AM/FM/XM with the following rule:</p>
+
+<ul>
+<li>ID 3000 and 3001 are AM</li>
+<li>ID 3002 and 3003 are FM</li>
+</ul>
+
 <h2 id='tv-protocol-notifications-input_changed'>INPUT_CHANGED</h2>
 
 <p>Selected Input has changed.</p>
 
-<h3 id='tv-protocol-notifications-input_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-input_changed-name'>Name</h3>
 
 <p><code>INPUT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>INPUT</td>
+<td>INT</td>
 <td>Input Binding ID</td>
+</tr>
+<tr>
+<td>BANDTYPE</td>
+<td>STR</td>
+<td>One of the following case sensitive values: &quot;AMBand” , “FMBand”</td>
+</tr>
+<tr>
+<td>MINCHANNEL</td>
+<td>INT</td>
+<td>Lowest tunable channel e.g. 8750 for FM, 530 for AM</td>
+</tr>
+<tr>
+<td>MAXCHANNEL</td>
+<td>INT</td>
+<td>Highest tunable channel e.g. 10790 for FM, 1760 for AM</td>
+</tr>
+<tr>
+<td>CHANNELSPACING</td>
+<td>INT</td>
+<td>Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S</td>
 </tr>
 </tbody></table>
 
@@ -29151,26 +29381,47 @@ OUTPUT             0
 
 <p><code>None</code></p>
 
+<h3 id='tv-protocol-notifications-input_changed-usage-note'>Usage Note</h3>
+
+<p>If the BANDTYPE is not supplied, as in older drivers, the INPUT binding # will be used to determine which band the tuner is on. All DriverWorks drivers need to use the BANDTYPE parameter if they want the band to propagate up to Navigator to display the channel properly. If the DriverWorks driver does not know the current channel and the “has_feedback” capability is not set to “True”, none of this matters and everything will keep working as it previously has.
+A CHANNEL_CHANGED must be issued immediately after the INPUT_CHANGED in order for the UI to update. See the example to the right.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>C4:SendToproxy(5002,'INPUT_CHANGED',
+{INPUT=3009,BANDTYPE='FMBand',MINCHANNEL=8750,
+MAXCHANNEL=10790,CHANNELSPACING=20})
+C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
+</code></pre></div>
+
+<p>Note that in the example, 5002 is the ProxyBindingID for the Tuner. INPUT 3009 is the ID for the FM Antenna on the 5002 Tuner. Navigator determines AM/FM/XM with the following rule:</p>
+
+<ul>
+<li>ID 3000 and 3001 are AM</li>
+<li>ID 3002 and 3003 are FM</li>
+</ul>
+
 <h2 id='tv-protocol-notifications-loudness_changed'>LOUDNESS_CHANGED</h2>
 
 <p>Loudness state (On/Off) has changed.</p>
 
-<h3 id='tv-protocol-notifications-loudness_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-loudness_changed-name'>Name</h3>
 
 <p><code>LOUDNESS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>True/False</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -29183,7 +29434,7 @@ OUTPUT             0
 
 <p>MUTE state (On/Off) has changed.</p>
 
-<h3 id='tv-protocol-notifications-mute_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-mute_changed-name'>Name</h3>
 
 <p><code>MUTE_CHANGED ()</code></p>
 
@@ -29211,7 +29462,7 @@ OUTPUT             0
 
 <p>Device has turned off.</p>
 
-<h3 id='tv-protocol-notifications-off-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-off-name'>Name</h3>
 
 <p><code>OFF ()</code></p>
 
@@ -29227,7 +29478,7 @@ OUTPUT             0
 
 <p>Device has turned on.</p>
 
-<h3 id='tv-protocol-notifications-on-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-on-name'>Name</h3>
 
 <p><code>ON ()</code></p>
 
@@ -29243,7 +29494,7 @@ OUTPUT             0
 
 <p>Selected treble level has changed.</p>
 
-<h3 id='tv-protocol-notifications-treble_level_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-treble_level_changed-name'>Name</h3>
 
 <p><code>TREBLE_LEVEL_CHANGED ()</code></p>
 
@@ -29271,7 +29522,7 @@ OUTPUT             0
 
 <p>Selected volume level has changed.</p>
 
-<h3 id='tv-protocol-notifications-volume_level_changed-signature'>Signature</h3>
+<h3 id='tv-protocol-notifications-volume_level_changed-name'>Name</h3>
 
 <p><code>VOLUME_LEVEL_CHANGED ()</code></p>
 
