@@ -3,14 +3,14 @@
 Displays current song information.
 
 
-### Signature
+### Name
 
 `SONG_INFO_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | ARTIST, TITLE, CATEGORY, CHANNEL, NAME |
+| Parameter | Type | Description                            |
+| --------- | ---- | -------------------------------------- |
+|           | STRE | ARTIST, TITLE, CATEGORY, CHANNEL, NAME |
 
 
 ### Returns

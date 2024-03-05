@@ -3,15 +3,15 @@
 Displays current artist.
 
 
-### Signature
+### Name
 
 `AVAILBLE_CHANNEL_MAP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255. |
-| str |MAP STRING: 32 character (hex values) string representing the binary (1 = available or 0 = not) state of each of the channels in all possible combinations. Each hex digit covers all the possible available combinations of 4 channels. |
+| Parameter   | Type | Description                                                                                                                                                                                                                              |
+| ----------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MAP\_HALF   | INT  | MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255.                                                                                                                                                                |
+| MAP\_STRING | STR  | MAP STRING: 32 character (hex values) string representing the binary (1 = available or 0 = not) state of each of the channels in all possible combinations. Each hex digit covers all the possible available combinations of 4 channels. |
 
 
 ### Example

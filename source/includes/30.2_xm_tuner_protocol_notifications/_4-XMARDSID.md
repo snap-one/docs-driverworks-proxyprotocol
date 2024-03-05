@@ -3,14 +3,14 @@
 Satellite Digital Audio Radio Service
 
 
-### Signature
+### Name
 
 `XMARDS_ID ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | Value representing the XM SDARS value of the satellite device. |
+| Parameter | Type | Description                                                    |
+| --------- | ---- | -------------------------------------------------------------- |
+| ID\_TEXT  | STR  | Value representing the XM SDARS value of the satellite device. |
 
 
 ### Returns

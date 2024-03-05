@@ -3,15 +3,15 @@
 Displays current channel details.
 
 
-### Signature
+### Name
 
 `XM_GET_CHANNEL_DETAILS_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | Channel |
-| str | Channel name |
+| Parameter | Description  |
+| --------- | ------------ |
+| num       | Channel      |
+| str       | Channel name |
 
 
 ### Returns

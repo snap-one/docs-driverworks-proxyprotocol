@@ -3,14 +3,14 @@
 Displays available XM channels.
 
 
-### Signature
+### Name
 
 `XM_GET_AVAILABLE_CHANNELS ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255. |
+| Parameter | Type | Description                                                               |
+| --------- | ---- | ------------------------------------------------------------------------- |
+| MAP\_HALF | INT  | MAP HALF: 1 is used for channels 0-127. 0 is used for channels 128 - 255. |
 
 
 ### Returns
