@@ -7,10 +7,10 @@ Start ramping treble up.
 
 `START_TREBLE_UP ()`
 
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Output Binding ID |
 
 
 ### Returns

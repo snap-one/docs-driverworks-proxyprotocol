@@ -8,9 +8,9 @@ Disconnect (turn off) selected output on device.
 `DISCONNECT_OUTPUT ()`
 
 
-| Parameter | Description      |
-| --------- | ---------------- |
-| Int       | Output BindingID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns
