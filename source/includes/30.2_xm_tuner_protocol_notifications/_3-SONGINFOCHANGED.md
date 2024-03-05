@@ -10,7 +10,7 @@ Displays current song information.
 
 | Parameter | Type | Description                            |
 | --------- | ---- | -------------------------------------- |
-|           | STRE | ARTIST, TITLE, CATEGORY, CHANNEL, NAME |
+|           | STR  | ARTIST, TITLE, CATEGORY, CHANNEL, NAME |
 
 
 ### Returns

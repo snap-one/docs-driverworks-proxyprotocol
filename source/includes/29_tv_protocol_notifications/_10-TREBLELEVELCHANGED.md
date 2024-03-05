@@ -8,10 +8,10 @@ Selected treble level has changed.
 `TREBLE_LEVEL_CHANGED ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Level             |
-| int       | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| Level           | INT  | Level             |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns
