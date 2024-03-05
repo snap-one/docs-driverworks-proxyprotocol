@@ -8,9 +8,9 @@ Start ramping bass up.
 `START_BASS_UP ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Output Binding ID |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

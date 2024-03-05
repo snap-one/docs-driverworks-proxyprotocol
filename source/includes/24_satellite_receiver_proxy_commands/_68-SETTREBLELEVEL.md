@@ -8,10 +8,10 @@ Set treble to a specified level.
 `SET_TREBLE_LEVEL ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Level             |
-| int       | Output Binding ID |
+| Parameter         | Type | Description       |
+| ----------------- | ---- | ----------------- |
+| Level             | INT  | Level             |
+| Output Binding ID | INT  | Output Binding ID |
 
 
 ### Returns
