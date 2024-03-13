@@ -30477,23 +30477,26 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Requests a blind to go to a different position.</p>
 
-<h3 id='blind-proxy-commands-set_level_target-signature'>Signature</h3>
+<h3 id='blind-proxy-commands-set_level_target-name'>Name</h3>
 
 <p><code>SET_LEVEL_TARGET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Int</td>
-<td>LEVEL TARGET - Integer of level that includes or is between level closed and level open (or level open  + level closed secondary if level closed secondary is used).</td>
+<td>LEVEL_TARGET</td>
+<td>INT</td>
+<td>Integer of level that includes or is between level closed and level open (or level open  + level closed secondary if level closed secondary is used).</td>
 </tr>
 <tr>
-<td>str</td>
-<td>Level Target Name - String of the level value, such as Open, Closed, Secondary Closed</td>
+<td>Level_Target_Nam</td>
+<td>STR</td>
+<td>String of the level value, such as Open, Closed, Secondary Closed</td>
 </tr>
 </tbody></table>
 
@@ -30501,17 +30504,19 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p><code>None</code></p>
 
-<h2 id='blind-proxy-commands-set_movement'>SET_MOVEMENT</h2><h3 id='blind-proxy-commands-set_movement-signature'>Signature</h3>
+<h2 id='blind-proxy-commands-set_movement'>SET_MOVEMENT</h2><h3 id='blind-proxy-commands-set_movement-name'>Name</h3>
 <p><code>SET_MOVEMENT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>SET_MOVEMENT</td>
+<td>NUM</td>
 <td>Enumeration of the blind movement.</td>
 </tr>
 </tbody></table>
@@ -30522,18 +30527,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Sets the blind type for the proxy.</p>
 
-<h3 id='blind-proxy-commands-set_type-signature'>Signature</h3>
+<h3 id='blind-proxy-commands-set_type-name'>Name</h3>
 
 <p><code>SET_TYPE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>INT</td>
+<td>SET_Type</td>
+<td>NUM</td>
 <td>Enumeration of the blind  type.</td>
 </tr>
 </tbody></table>
@@ -30565,18 +30572,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Configuration Notification used by the protocol to inform the proxy if the blind supports stopping or not.</p>
 
-<h3 id='blind-protocol-notifications-set_can_stop-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-set_can_stop-name'>Name</h3>
 
 <p><code>SET_CAN_STOP ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
+<td>SET_CAN_STOP</td>
+<td>BOOL</td>
 <td>A boolean indicating if the blind control supports stop.</td>
 </tr>
 </tbody></table>
@@ -30593,39 +30602,46 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Configuration Notification used by the protocol to inform the proxy that the driver does or does not support level control.</p>
 
-<h3 id='blind-protocol-notifications-set_has_level-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-set_has_level-name'>Name</h3>
 
 <p><code>SET_HAS_LEVEL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>HAS LEVEL</td>
 <td>bool</td>
-<td>HAS LEVEL - Boolean indicating if level support is available</td>
+<td>Boolean indicating if level support is available</td>
 </tr>
 <tr>
+<td>LEVEL OPEN</td>
 <td>int</td>
-<td>LEVEL OPEN - Open value. Blinds without feedback, regardless of stop support, should use 0.</td>
+<td>Open value. Blinds without feedback, regardless of stop support, should use 0.</td>
 </tr>
 <tr>
+<td>LEVEL CLOSED</td>
 <td>int</td>
-<td>LEVEL CLOSED - Closed value. Blinds without feedback and without a stop function should use 1.  Blinds without feedback but with stop function should use 2 as the value of 1 is to indicate an unknown state in the case that someone pressed up or down and then pressed stop before the blind was able to get to the target open/close state.</td>
+<td>Closed value. Blinds without feedback and without a stop function should use 1.  Blinds without feedback but with stop function should use 2 as the value of 1 is to indicate an unknown state in the case that someone pressed up or down and then pressed stop before the blind was able to get to the target open/close state.</td>
 </tr>
 <tr>
+<td>HAS LEVEL CLOSED SECONDARY</td>
 <td>bool</td>
-<td>HAS LEVEL CLOSED SECONDARY - Boolean indicating if the blind is using a secondary closed level</td>
+<td>Boolean indicating if the blind is using a secondary closed level</td>
 </tr>
 <tr>
+<td>LEVEL CLOSED SECONDARY</td>
 <td>int</td>
-<td>LEVEL CLOSED SECONDARY - Secondary closed value for blinds that can go both directions from an Open state.</td>
+<td>Secondary closed value for blinds that can go both directions from an Open state.</td>
 </tr>
 <tr>
+<td>LEVEL DISCRETE CONTROL</td>
 <td>bool</td>
-<td>LEVEL DISCRETE CONTROL - Boolean indicating if the blind control has discrete level input. If false a UI will only send the specific <code>level_closed</code> and<code> level_open</code> values to the proxy/driver but a driver can still notify of various levels interpolated based on movement duration/time in each direction or using another formula. If true, the driver should support all level values in the range.  This could be discrete percentages or even include using level values of 1,2,3,... to execute presets but the driver should always be developed for close (<code>level_close</code>) and open (<code>level_open</code>) levels respectively.</td>
+<td>Boolean indicating if the blind control has discrete level input. If false a UI will only send the specific <code>level_closed</code> and<code> level_open</code> values to the proxy/driver but a driver can still notify of various levels interpolated based on movement duration/time in each direction or using another formula. If true, the driver should support all level values in the range.  This could be discrete percentages or even include using level values of 1,2,3,... to execute presets but the driver should always be developed for close (<code>level_close</code>) and open (<code>level_open</code>) levels respectively.</td>
 </tr>
 </tbody></table>
 
@@ -30641,18 +30657,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Configuration Notification used by the protocol to inform the proxy that the driver is a particular blind movement function.  If this is used, the proxy will disable the pull-down from being select-able by a dealer.</p>
 
-<h3 id='blind-protocol-notifications-set_movement-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-set_movement-name'>Name</h3>
 
 <p><code>SET_MOVEMENT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>SET MOVEMENT</td>
+<td>INT</td>
 <td>Enumeration of the blind  movement type.</td>
 </tr>
 </tbody></table>
@@ -30682,18 +30700,20 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>Configuration Notification used by the protocol to inform the proxy that the driver is a particular blind type.  If this is used, the proxy will disable the pulldown from being selectable by a dealer.</p>
 
-<h3 id='blind-protocol-notifications-set_type-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-set_type-name'>Name</h3>
 
 <p><code>SET_TYPE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>SET  TYPE</td>
+<td>INT</td>
 <td>Enumeration of the blind type.</td>
 </tr>
 </tbody></table>
@@ -30728,19 +30748,21 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <p>State Notification used by the protocol to inform the proxy the blinds have stopped moving.  A Stop notification that uses the optional LEVEL parameter should be used if a blind is moving and changes direction.</p>
 
-<h3 id='blind-protocol-notifications-stopped-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-stopped-name'>Name</h3>
 
 <p><code>STOPPED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>LEVEL</td>
 <td>INT</td>
-<td>LEVEL - Where the blinds stopped at. This will also set the general level as well to this value.</td>
+<td>Where the blinds stopped at. This will also set the general level as well to this value.</td>
 </tr>
 </tbody></table>
 
@@ -30758,27 +30780,31 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>State Notification Used by the protocol to inform the proxy the blinds have started to move.</p>
 
-<h3 id='blind-protocol-notifications-moving-signature'>Signature</h3>
+<h3 id='blind-protocol-notifications-moving-name'>Name</h3>
 
 <p><code>MOVING ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>LEVEL TARGET -  Integer of the target level that the blinds are currently expected to stop at.</td>
+<td>LEVEL TARGET</td>
+<td>INT</td>
+<td>Integer of the target level that the blinds are currently expected to stop at.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>RAMP RATE - Number of milliseconds it is expected to take to get to the <code>level_target</code>.</td>
+<td>RAMP RATE</td>
+<td>NUM</td>
+<td>Number of milliseconds it is expected to take to get to the <code>level_target</code>.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-protocol-notifications-stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
+<td>LEVEL</td>
+<td>INT</td>
+<td>Optional. Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-protocol-notifications-stopped">STOPPED</a> Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began.</td>
 </tr>
 </tbody></table>
 
@@ -31131,7 +31157,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Command to turn camera image capturing off.</p>
 
-<h3 id='camera-proxy-commands-camera_off-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-camera_off-name'>Name</h3>
 
 <p><code>CAMERA_OFF ()</code></p>
 
@@ -31147,7 +31173,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Command to turn camera image capturing on.</p>
 
-<h3 id='camera-proxy-commands-camera_on-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-camera_on-name'>Name</h3>
 
 <p><code>CAMERA_ON ()</code></p>
 
@@ -31163,7 +31189,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Change theme of a Preset.</p>
 
-<h3 id='camera-proxy-commands-change_preset_name-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-change_preset_name-name'>Name</h3>
 
 <p><code>CHANGE_PRESET_NAME ()</code></p>
 
@@ -31191,7 +31217,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Change the order of the Presets</p>
 
-<h3 id='camera-proxy-commands-change_preset_order-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-change_preset_order-name'>Name</h3>
 
 <p><code>CHANGE_PRESET_ORDER ()</code></p>
 
@@ -31215,7 +31241,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Composer Pro command used in the Camera Test/Validation area. Verifies the camera Address and Port ID.</p>
 
-<h3 id='camera-proxy-commands-check_address_port-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-check_address_port-name'>Name</h3>
 
 <p><code>CHECK_ADDRESS_PORT ()</code></p>
 
@@ -31243,30 +31269,35 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Composer Pro command used in the Camera Test/Validation area. Verifies the camera &#39;s URL components.</p>
 
-<h3 id='camera-proxy-commands-check_url-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-check_url-name'>Name</h3>
 
 <p><code>CHECK_URL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>A Mode</td>
+<td>STR</td>
 <td>A Mode: SNAPSHOT, MJPEG OR H264</td>
 </tr>
 <tr>
-<td>str</td>
+<td>Address</td>
+<td>STR</td>
 <td>Address. The address to verify.</td>
 </tr>
 <tr>
-<td>int</td>
+<td>Port ID</td>
+<td>INT</td>
 <td>Port ID to verify.</td>
 </tr>
 <tr>
-<td>str</td>
+<td>Query</td>
+<td>STR.</td>
 <td>Query. The path/query of the URL.</td>
 </tr>
 </tbody></table>
@@ -31279,7 +31310,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Creates a new preset.</p>
 
-<h3 id='camera-proxy-commands-create_preset-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-create_preset-name'>Name</h3>
 
 <p><code>CREATE_PRESET ()</code></p>
 
@@ -31303,17 +31334,19 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Deletes a Preset.</p>
 
-<h3 id='camera-proxy-commands-delete_preset-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-delete_preset-name'>Name</h3>
 
 <p><code>DELETE_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>PRESET ID</td>
 <td>INT</td>
 <td>Preset ID, required.</td>
 </tr>
@@ -31327,7 +31360,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for MJPEG server push request.</p>
 
-<h3 id='camera-proxy-commands-get_mjpeg_query-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-get_mjpeg_query-name'>Name</h3>
 
 <p><code>GET_MJPEG_QUERY ()</code></p>
 
@@ -31363,7 +31396,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Command called once by a UI entity to learn how to access a camera. It returns a block of XML reporting the properties of the camera.</p>
 
-<h3 id='camera-proxy-commands-get_properties-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-get_properties-name'>Name</h3>
 
 <p><code>GET_PROPERTIES ()</code></p>
 
@@ -31380,7 +31413,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </code></pre></div>
 <h2 id='camera-proxy-commands-get_-rtsp_h264_query_-string'>GET_ RTSP_H264_QUERY_ STRING</h2>
 <p>Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for RTSP H264 stream request.</p>
-<h3 id='camera-proxy-commands-get_-rtsp_h264_query_-string-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-get_-rtsp_h264_query_-string-name'>Name</h3>
 
 <p><code>GET_RTSP_H264_QUERY ()</code></p>
 
@@ -31416,7 +31449,7 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 
 <p>Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for HTTP snapshot request.</p>
 
-<h3 id='camera-proxy-commands-get_snapshot_query_string-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-get_snapshot_query_string-name'>Name</h3>
 
 <p><code>GET_SNAPSHOT_QUERY_STRING ()</code></p>
 
@@ -31427,11 +31460,11 @@ Sends DataToUI &quot;Stopped&quot; including: <code>level</code> - The level it 
 </tr>
 </thead><tbody>
 <tr>
-<td>SIZE_X</td>
+<td>SIZE X</td>
 <td>The desired resolution x-axis value.</td>
 </tr>
 <tr>
-<td>SIZE_Y</td>
+<td>SIZE Y</td>
 <td>The desired resolution y-axis value.</td>
 </tr>
 </tbody></table>
@@ -31500,7 +31533,7 @@ or
 
 <p>Move the camera to its home position.</p>
 
-<h3 id='camera-proxy-commands-home-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-home-name'>Name</h3>
 
 <p><code>HOME ()</code></p>
 
@@ -31516,17 +31549,19 @@ or
 
 <p>Modify an existing Preset.</p>
 
-<h3 id='camera-proxy-commands-modify_preset-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-modify_preset-name'>Name</h3>
 
 <p><code>MODIFY_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>PRESET ID</td>
 <td>INT</td>
 <td>Preset ID, required.</td>
 </tr>
@@ -31540,7 +31575,7 @@ or
 
 <p>Have the camera move to location x and y within the specified window.</p>
 
-<h3 id='camera-proxy-commands-move_to-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-move_to-name'>Name</h3>
 
 <p><code>MOVE_TO ()</code></p>
 
@@ -31576,19 +31611,21 @@ or
 
 <p>Enable/disable night mode.</p>
 
-<h3 id='camera-proxy-commands-night_mode-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-night_mode-name'>Name</h3>
 
 <p><code>NIGHT_MODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>bool</td>
-<td>True/False</td>
+<td>BOOL</td>
+<td>Enable/disable night mode.</td>
 </tr>
 </tbody></table>
 
@@ -31600,7 +31637,7 @@ or
 
 <p>Pan to the left.</p>
 
-<h3 id='camera-proxy-commands-pan_left-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-pan_left-name'>Name</h3>
 
 <p><code>PAN_LEFT ()</code></p>
 
@@ -31616,7 +31653,7 @@ or
 
 <p>Pan to the right.</p>
 
-<h3 id='camera-proxy-commands-pan_right-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-pan_right-name'>Name</h3>
 
 <p><code>PAN_RIGHT ()</code></p>
 
@@ -31632,7 +31669,7 @@ or
 
 <p>Have the camera execute a complete scan from left to right.</p>
 
-<h3 id='camera-proxy-commands-pan_scan-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-pan_scan-name'>Name</h3>
 
 <p><code>PAN_SCAN ()</code></p>
 
@@ -31648,18 +31685,20 @@ or
 
 <p>Set the camera to preset location.</p>
 
-<h3 id='camera-proxy-commands-preset-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-preset-name'>Name</h3>
 
 <p><code>NIGHT_MODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>Index Unit</td>
+<td>NUM</td>
 <td>Index Unit. Valid values: 1 – n, where n is max preset defined by capabilities</td>
 </tr>
 </tbody></table>
@@ -31672,17 +31711,19 @@ or
 
 <p>Select the Preset.</p>
 
-<h3 id='camera-proxy-commands-select_preset-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-select_preset-name'>Name</h3>
 
 <p><code>SELECT_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>PRESET ID</td>
 <td>INT</td>
 <td>Preset ID, required.</td>
 </tr>
@@ -31696,7 +31737,7 @@ or
 
 <p>Set the camera address.</p>
 
-<h3 id='camera-proxy-commands-set_address-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_address-name'>Name</h3>
 
 <p><code>SET_ADDRESS ()</code></p>
 
@@ -31720,7 +31761,7 @@ or
 
 <p>Composer Pro command to set whether or not authentication is required</p>
 
-<h3 id='camera-proxy-commands-set_authentication_required-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_authentication_required-name'>Name</h3>
 
 <p><code>SET_AUTHENTICATION_REQUIRED ()</code></p>
 
@@ -31748,7 +31789,7 @@ or
 
 <p>Composer Pro command to set whether or not authentication is required</p>
 
-<h3 id='camera-proxy-commands-set_authentication_type-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_authentication_type-name'>Name</h3>
 
 <p><code>SET_AUTHENTICATION_TYPE ()</code></p>
 
@@ -31776,7 +31817,7 @@ or
 
 <p>Composer Pro command to set the Authentication username.</p>
 
-<h3 id='camera-proxy-commands-set_username-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_username-name'>Name</h3>
 
 <p><code>SET_USERNAME ()</code></p>
 
@@ -31804,18 +31845,20 @@ or
 
 <p>Composer Pro command to set the HTTP Port</p>
 
-<h3 id='camera-proxy-commands-set_http_port-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_http_port-name'>Name</h3>
 
 <p><code>SET_HTTP_PORT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PORT ID</td>
+<td>INT</td>
 <td>Port ID</td>
 </tr>
 </tbody></table>
@@ -31828,18 +31871,20 @@ or
 
 <p>Composer Pro Command to set the Rapid Spanning Tree Protocol port.</p>
 
-<h3 id='camera-proxy-commands-set_rstp_port-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_rstp_port-name'>Name</h3>
 
 <p><code>SET_RSTP_PORT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PORT ID</td>
+<td>INT</td>
 <td>Port ID</td>
 </tr>
 </tbody></table>
@@ -31852,7 +31897,7 @@ or
 
 <p>ComposerPro command to set the Authentication password.</p>
 
-<h3 id='camera-proxy-commands-set_password-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_password-name'>Name</h3>
 
 <p><code>SET_PASSWORD ()</code></p>
 
@@ -31876,7 +31921,7 @@ or
 
 <p>Composer Pro command to set whether or not the camera can be accessed from public Internet.</p>
 
-<h3 id='camera-proxy-commands-set_publicly_accessible-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_publicly_accessible-name'>Name</h3>
 
 <p><code>SET_PUBLICLY_ACCESSIBLE ()</code></p>
 
@@ -31900,18 +31945,20 @@ or
 
 <p>Sets image refresh rate in seconds.</p>
 
-<h3 id='camera-proxy-commands-set_snapshot_refresh_rate-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-set_snapshot_refresh_rate-name'>Name</h3>
 
 <p><code>SET_SNAPSHOT_REFRESH_RATE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>RATE UNIT</td>
+<td>NUM</td>
 <td>Rate Unit in seconds.</td>
 </tr>
 </tbody></table>
@@ -31924,7 +31971,7 @@ or
 
 <p>Tilt camera down.</p>
 
-<h3 id='camera-proxy-commands-tilt_down-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-tilt_down-name'>Name</h3>
 
 <p><code>TILT_DOWN ()</code></p>
 
@@ -31940,7 +31987,7 @@ or
 
 <p>Have the camera execute a complete scan from top to bottom.</p>
 
-<h3 id='camera-proxy-commands-tilt_scan-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-tilt_scan-name'>Name</h3>
 
 <p><code>TILT_SCAN ()</code></p>
 
@@ -31956,7 +32003,7 @@ or
 
 <p>Tilt camera down.</p>
 
-<h3 id='camera-proxy-commands-tilt_up-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-tilt_up-name'>Name</h3>
 
 <p><code>TILT_UP ()</code></p>
 
@@ -31972,7 +32019,7 @@ or
 
 <p>Command to use the camera&#39;s factory defaults as defined by the driver capabilities.</p>
 
-<h3 id='camera-proxy-commands-use_defaults-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-use_defaults-name'>Name</h3>
 
 <p><code>USE_DEFAULTS ()</code></p>
 
@@ -31988,7 +32035,7 @@ or
 
 <p>Zoom canera in.</p>
 
-<h3 id='camera-proxy-commands-zoom_in-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-zoom_in-name'>Name</h3>
 
 <p><code>ZOOM_IN ()</code></p>
 
@@ -32004,7 +32051,7 @@ or
 
 <p>Zoom camera out.</p>
 
-<h3 id='camera-proxy-commands-zoom_out-signature'>Signature</h3>
+<h3 id='camera-proxy-commands-zoom_out-name'>Name</h3>
 
 <p><code>ZOOM_OUT ()</code></p>
 
@@ -32021,7 +32068,7 @@ or
 
 <p>Notification that the camera&#39;s address has a changed. Sent from the API <a href="https://snap-one.github.io/docs-driverworks-api/#serial-and-network-interface-onnetworkbindingchanged">OnNetworkBindingChanged</a>.</p>
 
-<h3 id='camera-protocol-notifications-address_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-address_changed-name'>Name</h3>
 
 <p><code>ADDRESS_CHANGED ()</code></p>
 
@@ -32045,7 +32092,7 @@ or
 
 <p>Notify used when the configured camera URLS have been changed. The Camera proxy will then force Navigators to refresh any cached URLs.</p>
 
-<h3 id='camera-protocol-notifications-dynamic_urls_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-dynamic_urls_changed-name'>Name</h3>
 
 <p><code>DYNAMIC_URLS_CHANGED ()</code></p>
 
@@ -32061,7 +32108,7 @@ or
 </code></pre></div>
 <h2 id='camera-protocol-notifications-http_port_changed'>HTTP_PORT_CHANGED</h2>
 <p>Notification that the HTTP port has changed. Used rarely but applicable in instances where the protocol driver sets the HTTP port.</p>
-<h3 id='camera-protocol-notifications-http_port_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-http_port_changed-name'>Name</h3>
 
 <p><code>HTTP_PORT_CHANGED ()</code></p>
 
@@ -32077,18 +32124,20 @@ or
 
 <p>Used to update the HTTPS port that will be used when constructing HTTPS URLs.</p>
 
-<h3 id='camera-protocol-notifications-https_port_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-https_port_changed-name'>Name</h3>
 
 <p><code>HTTPS_PORT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PORT</td>
+<td>INT</td>
 <td>PORT - The new HTTPS port to be used.</td>
 </tr>
 </tbody></table>
@@ -32101,7 +32150,7 @@ or
 
 <p>Used to Notify the Proxy that the driver would like to change a capabilities value.  This is only applicable to capabilities denoted as &quot;Yes&quot; in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities">Dynamic Capabilities</a> section of this Proxy’s Capabilities section.</p>
 
-<h3 id='camera-protocol-notifications-dynamic_capability_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-dynamic_capability_changed-name'>Name</h3>
 
 <p><code>DYNAMIC_CAPABILITY_CHANGED ()</code></p>
 
@@ -32129,7 +32178,7 @@ or
 
 <p>The camera driver should send this notification to the Proxy on startup with the current presets list. The driver should also notify again whenever presets are changed: created, renamed, updated, deleted, or re-ordered. </p>
 
-<h3 id='camera-protocol-notifications-presets_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-presets_changed-name'>Name</h3>
 
 <p><code>PRESETS_CHANGED ()</code></p>
 
@@ -32158,38 +32207,45 @@ or
 </code></pre></div>
 <h2 id='camera-protocol-notifications-property_defaults'>PROPERTY_DEFAULTS</h2>
 <p>Notification sent from the protocol driver through <a href="https://snap-one.github.io/docs-driverworks-api/#miscellaneous-interface-ondriverlateinit">ON DRIVER LATE INIT</a> containing the camera&#39;s default properties</p>
-<h3 id='camera-protocol-notifications-property_defaults-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-property_defaults-name'>Name</h3>
 
 <p><code>PROPERTY_DEFAULTS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
+<td>HTTP Port.</td>
+<td>NUM</td>
 <td>HTTP Port. Default port is 80.</td>
 </tr>
 <tr>
-<td>num</td>
+<td>RTSP Port</td>
+<td>NUM</td>
 <td>RTSP Port. Default port is 554.</td>
 </tr>
 <tr>
-<td>bool</td>
+<td><code>AUTHENTICATION_REQUIRED</code></td>
+<td>BOOL</td>
 <td><code>AUTHENTICATION_REQUIRED</code>  True/False.</td>
 </tr>
 <tr>
-<td>str</td>
+<td><code>AUTHENTICATION_TYPE</code></td>
+<td>STR</td>
 <td><code>AUTHENTICATION_TYPE</code>  “BASIC” or “DIGEST”.</td>
 </tr>
 <tr>
-<td>str</td>
+<td><code>deafult_username</code></td>
+<td>STR</td>
 <td>Username - <code>deafult_username</code></td>
 </tr>
 <tr>
-<td>str</td>
+<td><code>deafult_password</code></td>
+<td>STR</td>
 <td>Password - <code>deafult_password</code></td>
 </tr>
 </tbody></table>
@@ -32253,19 +32309,21 @@ or
 
 <p>Used to update the proxy to tell it to generate HTTPS URLs instead of HTTP URLs.</p>
 
-<h3 id='camera-protocol-notifications-use_https_changed-signature'>Signature</h3>
+<h3 id='camera-protocol-notifications-use_https_changed-name'>Name</h3>
 
 <p><code>USE_HTTPS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>boolean</td>
-<td>USE_HTTPS - A flag that indicates an HTTPS URL should be generated instead of an HTTP URL.</td>
+<td>USE HTTPS</td>
+<td>BOOL</td>
+<td>A flag that indicates an HTTPS URL should be generated instead of an HTTP URL.</td>
 </tr>
 </tbody></table>
 
