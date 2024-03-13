@@ -3,14 +3,14 @@
 Set the current speed of the fan to the designated level.  Setting to 0 will turn the fan off.
 
 
-### Signature
+### Name
 
 `SET_SPEED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | SPEED valid values: 0 – N |
+| Parameter | Type | Description               |
+| --------- | ---- | ------------------------- |
+| SPEED     | NUM  | SPEED valid values: 0 – N |
 
 
 ### Returns

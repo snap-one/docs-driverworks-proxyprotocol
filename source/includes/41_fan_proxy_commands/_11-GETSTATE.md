@@ -3,7 +3,7 @@
 Command handled by the proxy driver.  Immediately returns a block of XML information to the caller. Reports the current state of the device.
 
 
-### Signature
+### Name
 
 `GET_STATE ()`
 

@@ -3,14 +3,14 @@
 Received from the proxy when the preset speed changes. 
 
 
-### Signature
+### Name
 
 `PRESET_SPEED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int |  SPEED  valid values: 1 - N |
+| Parameter | Type | Description                |
+| --------- | ---- | -------------------------- |
+| SPEED     | INT  | SPEED  valid values: 1 - N |
 
 
 ### Returns

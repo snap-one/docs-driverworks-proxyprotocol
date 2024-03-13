@@ -3,14 +3,14 @@
 Received from the protocol driver when the fan direction changes.
 
 
-### Signature
+### Name
 
 `DIRECTION ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str |  FORWARD/REVERSE |
+| Parameter | Description     |
+| --------- | --------------- |
+| str       | FORWARD/REVERSE |
 
 
 ### Returns

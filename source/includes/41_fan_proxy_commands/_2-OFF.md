@@ -3,7 +3,7 @@
 Turn the fan OFF.
 
 
-### Signature
+### Name
 
 `OFF ()`
 

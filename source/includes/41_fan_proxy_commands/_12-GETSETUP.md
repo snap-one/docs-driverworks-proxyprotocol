@@ -3,7 +3,7 @@
 Command handled by the proxy driver.  Immediately returns a block of XML information to the caller. Usually called just once by a UI entity to know how to setup the UI. This would report such things as how many settings the device has and what the name of those settings are.
 
 
-### Signature
+### Name
 
 `GET_SETUP ()`
 
