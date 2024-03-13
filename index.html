@@ -48631,29 +48631,24 @@ Fired when the partition state changes</p>
 
 <h2 id='security-partition-notifications-arm_failed'>ARM_FAILED</h2>
 
-<p>An attempt to arm the partition failed.  The two most common reasons are because a user code is required to arm this partition or because one or more unbypassed zones are open.</p>
+<p>An attempt to arm the partition failed.  The two most common reasons are because a user code is required to arm this partition or because one or more un-bypassed zones are open.</p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>ACTION: Supported values include: “keypad”: Will cause Navigator to ask for a user code and then retry.</td>
+<td>ACTION</td>
+<td>STR</td>
+<td style="text-align: left">Supported values include: “keypad”: Will cause Navigator to ask for a user code and then retry. “bypass”: Will cause Navigator to show a list of zones that are in fault and ask the user if they wish to continue. If continue chosen, the arm command will be resent.  However, it will try to bypass each faulted zone before it tries to arm again. “NA”: Failed for some other reason.  Navigator will take no further action on the arming.</td>
 </tr>
 <tr>
-<td></td>
-<td>“bypass”: Will cause Navigator to show a list of zones that are in fault and ask the user if they wish to continue. If continue chosen, the arm command will be resent.  However, it will try to bypass each faulted zone before it tries to arm again.</td>
-</tr>
-<tr>
-<td></td>
-<td>“NA”: Failed for some other reason.  Navigator will take no further action on the arming.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td style="text-align: left">Commands receiveD from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
 </tr>
 </tbody></table>
 
@@ -48673,12 +48668,14 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>CODE_REQUIRED_TO_ARM: “true&quot; if the user code should be sent with the arm command.</td>
+<td>CODE REQUIRED TO ARM:</td>
+<td>BOOL</td>
+<td>“true&quot; if the user code should be sent with the arm command.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-code_required-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"CODE_REQUIRED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">CODE_REQUIRED_TO_ARM</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48690,11 +48687,13 @@ Fired when the partition state changes</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NTERFACE_ID: Commands receiveD from Director will have an interface_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE_ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td>Commands receiveD from Director will have an interface id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-disarm_failed-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"DISARM_FAILED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">ID</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48705,12 +48704,14 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>TYPE: Specifies the type of emergency just triggered.  It can be anything, but standard types that Navigator has icons for are: Fire, Medical, Police, and Panic.</td>
+<td>TYPE</td>
+<td>STR</td>
+<td>Specifies the type of emergency just triggered.  It can be anything, but standard types that Navigator has icons for are: Fire, Medical, Police, and Panic.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-emergency_triggered-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"EMERRGENCY_TRIGGERED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"Fire"</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48721,12 +48722,14 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>ZONE_ID: The zone ID of the zone to be included in this partition&#39;s zone list.</td>
+<td>ZONE ID:</td>
+<td>NUM</td>
+<td>The zone ID of the zone to be included in this partition&#39;s zone list.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-has_zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"HAS_ZONE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48737,12 +48740,14 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>ENABLED: &quot;true&quot; if this partition is enabled.</td>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if this partition is enabled.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-partition_enabled-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_ENABLED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ENABLED</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">Enabled</span><span class="p">)</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48754,27 +48759,33 @@ Fired when the partition state changes</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>STATE: Supported values include: &quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</td>
+<td>STATE</td>
+<td>STR</td>
+<td>Supported values include: <code>&quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT\\\_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
 </tr>
 <tr>
-<td>str</td>
-<td>TYPE: Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>DELAY_TIME_TOTAL:  For Entry or Exit delays. The total time of the delay.</td>
+<td>DELAY TIME TOTAL:</td>
+<td>NUM</td>
+<td>For Entry or Exit delays. The total time of the delay.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>DELAY_TIME_REMAINING: For Entry or Exit delays, the time remaining in the delay.</td>
+<td>DELAY TIME REMAINING</td>
+<td>NUM</td>
+<td>For Entry or Exit delays, the time remaining in the delay.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>CODE_REQUIRED_TO_CLEAR: &quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
+<td>CODE REQUIRED TO CLEAR</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-partition_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ALARM"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"BURGLARY"</span><span class="p">,</span> <span class="n">DELAY_TIME_TOTAL</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">DELAY_TIME_REMAINING</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">CODE_REQUIRED_TO_CLEAR</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48785,28 +48796,34 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>STATE: Supported values include: &quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</td>
+<td>STATE</td>
+<td>STR</td>
+<td>Supported values include: &quot;<code>ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
 </tr>
 <tr>
-<td>str</td>
-<td>TYPE: Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>DELAY_TIME_TOTAL:  For Entry or Exit delays. The total time of the delay.</td>
+<td>DELAY TIME TOTAL:</td>
+<td>NUM</td>
+<td>For Entry or Exit delays. The total time of the delay.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>DELAY_TIME_REMAINING: For Entry or Exit delays, the time remaining in the delay.</td>
+<td>DELAY TIME REMAINING</td>
+<td>NUM</td>
+<td>For Entry or Exit delays, the time remaining in the delay.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>CODE_REQUIRED_TO_CLEAR: &quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
+<td>CODE REQUIRED TO CLEAR</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-partition_state_init-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_STATE_INIT"</span><span class="p">,</span> <span class="p">{</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ALARM"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"BURGLARY"</span><span class="p">,</span> <span class="n">DELAY_TIME_TOTAL</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">DELAY_TIME_REMAINING</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">CODE_REQUIRED_TO_CLEAR</span> <span class="o">=</span> <span class="kc">true</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48817,28 +48834,34 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>PROMPT: The prompt string that will show up above the keypad on the Navigator string.</td>
+<td>INFO STRING</td>
+<td>STR</td>
+<td>This is a string that will not be shown to the user, but will be returned with the ADDITIONAL\_INFO command.  It provides a way for information to be built up through multiple iterations of calls to <code>REQUEST_ADDITIONAL_INFO</code></td>
 </tr>
 <tr>
-<td>str</td>
-<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the ADDITIONAL_INFO command.  It provides a way for information to be built up through multiple iterations of calls to REQUEST_ADDITIONAL_INFO</td>
+<td>FUNCTION NAME</td>
+<td>STR</td>
+<td>This will not be shown to the user but will also be returned with the ADDITIONAL INFO command. It is the function name of the handler in the driver code that should be called when the new information arrives.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>FUNCTION_NAME: This will not be shown to the user but will also be returned with the ADDITIONAL_INFO command. It is the function name of the handler in the driver code that should be called when the new information arrives.</td>
+<td>MASK\_DATA:</td>
+<td>STR</td>
+<td>“true&quot; if the information being entered on the screen (such as a user code) should not be readable. If the flag is true, then each character will show up on the Navigator screen as a dot.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>MASK_DATA: “true&quot; if the information being entered on the screen (such as a user code) should not be readable. If the flag is true, then each character will show up on the Navigator screen as a dot.</td>
+<td>INTERFACE ID</td>
+<td>BOOL</td>
+<td>Commands received from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>INTERFACE_ID: Commands received from Director will have an interface_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE_ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td>Commands received from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
 </tr>
 </tbody></table>
 <h3 id='security-partition-notifications-request_additional_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span>
@@ -48858,37 +48881,43 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>ZONE_ID: The zone ID of the zone to be removed from the partition&#39;s zone list.</td>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>The zone ID of the zone to be removed from the partition&#39;s zone list.</td>
 </tr>
 </tbody></table>
 
 <p><h3 id='security-partition-notifications-remove_zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;REMOVE_ZONE&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h2 id='security-partition-notifications-zone_state'>ZONE_STATE</h2>
-<p>Reports if a specific zone is open/closed and bypassed/unbypassed.</p></p>
+<p>Reports if a specific zone is open/closed and bypassed/un-bypassed.</p></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>ZONE_ID: Number</td>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>Number</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>ZONE_OPEN: &quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
+<td>ZONE OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>ZONE_BYPASSED: &quot;true&quot; if the zone is bypassed. &quot;false&quot; if it is not bypassed.</td>
+<td>ZONE BYPASSED</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is bypassed. &quot;false&quot; if it is not bypassed.</td>
 </tr>
 </tbody></table>
 
@@ -48904,23 +48933,28 @@ Fired when the partition state changes</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Info: A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
+<td>Info</td>
+<td>STR</td>
+<td>A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>FunctionName:  A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
+<td>FunctionName</td>
+<td>STR</td>
+<td>A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>NewInfo: The new info provided by the UI in response to the <code>equest_additional_info</code> request.</td>
+<td>NewInfo</td>
+<td>STR</td>
+<td>The new info provided by the UI in response to the <code>equest_additional_info</code> request.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID: A unique (str) to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique (str) to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -48931,12 +48965,14 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>InterfaceID: A unique string to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -48947,16 +48983,19 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td></td>
+<td>STR</td>
 <td>A unique string to identify which interface is sending this command.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>Interface ID: Unique string ID indicating from where the command originated</td>
+<td>Interface ID</td>
+<td>STR</td>
+<td>I Unique string ID indicating from where the command originated</td>
 </tr>
 </tbody></table>
 
@@ -48968,15 +49007,18 @@ Fired when the partition state changes</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Function.</td>
+<td>Function</td>
+<td>STR</td>
+<td>Function string</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID:  A unique string to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -48988,15 +49030,18 @@ Fired when the partition state changes</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Key Name: The single key that we should emulate a press for.</td>
+<td>Key Name</td>
+<td>STR</td>
+<td>The single key that we should emulate a press for.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID:  A unique string to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -49023,24 +49068,29 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>ArmType: Request the partition to arm.</td>
+<td>ArmType</td>
+<td>STR</td>
+<td>Request the partition to arm.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>UserCode: Optional. Specifies the user code to use with the arm command (if needed).</td>
+<td>UserCode</td>
+<td>STR</td>
+<td>Optional. Specifies the user code to use with the arm command (if needed).</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>Bypass: Optional. Specify whether currently open zones should be bypassed.</td>
+<td>Bypass</td>
+<td>BOOL</td>
+<td>Optional. Specify whether currently open zones should be bypassed.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID: A unique string to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -49051,16 +49101,19 @@ Fired when the partition state changes</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>User Code: The user code needed for disarming.</td>
+<td>User Code:</td>
+<td>STR</td>
+<td>The user code needed for disarming.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID: A unique string to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 <h1 id='security-partition-states'>Security Partition States</h1>
