@@ -3,14 +3,14 @@
 Runs a Preset regardless if there is an event scheduled for it.
 
 
-### Signature
+### Name
 
 `SET_PRESET ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| NAME      | STR  | Preset Name |
 
 
 ### Returns

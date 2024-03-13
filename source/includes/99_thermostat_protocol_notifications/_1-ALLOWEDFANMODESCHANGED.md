@@ -3,14 +3,14 @@
 Changes the value of the variable `FAN_MODES_LIST`.
 
 
-### Signature
+### Name
 
 `ALLOWED_FAN_MODES_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `Modes` | A comma delimited list of available modes. |
+| Parameter | Type  | Description                                |
+| --------- | ----- | ------------------------------------------ |
+| `Modes`   | LIST. | A comma delimited list of available modes. |
 
 
 ### Returns

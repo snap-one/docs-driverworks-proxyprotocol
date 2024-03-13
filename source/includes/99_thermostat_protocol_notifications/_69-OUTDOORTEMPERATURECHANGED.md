@@ -3,14 +3,14 @@
 Used to inform the proxy that the outdoor temperature has changed.
 
 
-### Signature
+### Name
 
 `OUTDOOR_TEMPERATURE_CHANGED ()` 
 
 
 | Parameter | Description |
-| --- | --- |
-| int | Default 1. |
+| --------- | ----------- |
+| int       | Default 1.  |
 
 
 ### Returns

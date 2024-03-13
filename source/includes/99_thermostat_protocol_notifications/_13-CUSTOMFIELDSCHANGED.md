@@ -3,14 +3,14 @@
 Update the template Custom Fields that UI's display for a new Preset Event.
 
 
-### Signature
+### Name
 
 `CUSTOM FIELDS CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| XML | Text string of XML matching the Preset Schedule schema. To UI comes through as `preset_custom_fields`.
+| Parameter | Type | Description                                                                                            |
+| --------- | ---- | ------------------------------------------------------------------------------------------------------ |
+|           | XML  | Text string of XML matching the Preset Schedule schema. To UI comes through as `preset_custom_fields`. |
 
 
 

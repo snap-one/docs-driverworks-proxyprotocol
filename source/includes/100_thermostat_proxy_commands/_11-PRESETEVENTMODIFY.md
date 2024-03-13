@@ -3,20 +3,20 @@
 Modifies an existing Preset Schedule Event (If protocol driver has the `can_preset_schedule` capability)
 
 
-### Signature
+### Name
 
 `PRESET_EVENT_MODIFY ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME |
-| int  | WEEKDAY: 0-6 with Sunday being 0. |
-| int | HOUR:  0-23 |
-| int | MINUTE: 0-60 |
-| int | NEW WEEKDAY: 0-6 with Sunday being 0 |
-| int | NEW HOUR: 0-23 |
-| int | NEW MINUTE: 0-60 |
+| Parameter   | Type | Description              |
+| ----------- | ---- | ------------------------ |
+| NAME        | STR  | Event Name               |
+| WEEKDAY:    | INT  | 0-6 with Sunday being 0. |
+| HOUR        | INT  | 0-23                     |
+| MINUTE      | INT  | 0-60                     |
+| NEW WEEKDAY | INT  | 0-6 with Sunday being 0  |
+| NEW HOUR    | INT  | 0-23                     |
+| NEW MINUTE  | INT  | 0-60                     |
 
 
 ### Returns

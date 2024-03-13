@@ -3,14 +3,14 @@
 Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the device supports this feature, default is false
 
 
-### Signature
+### Name
 
 `HAS_OUTDOOR_TEMPERATURE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                                                           |
+| --------- | ---- | --------------------------------------------------------------------- |
+|           | BOOL | True/False. enable/disable [`has_outdoor_temperature`][2] capability. |
 
 
 ### Returns
@@ -18,3 +18,4 @@ Boolean to enable/disable [`has_outdoor_temperature`][1] capability, if the devi
 `None`
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

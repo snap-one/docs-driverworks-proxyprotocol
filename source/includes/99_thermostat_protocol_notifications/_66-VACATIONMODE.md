@@ -3,14 +3,14 @@
 Notification that should be sent to the proxy when vacation mode is turned on or off.
 
 
-### Signature
+### Name
 
 `VACATION_MODE ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| str | ON VACATION: True or False |
+| Parameter   | Type | Description   |
+| ----------- | ---- | ------------- |
+| ON VACATION | STR  | True or False |
 
 
 ### Returns

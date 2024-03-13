@@ -2,7 +2,7 @@
 
 The minimum dehumidify setpoint has changed.
 
-### Signature
+### Name
 
 `DEHUMIDIFY_SETPOINT_MIN ()`
 
@@ -14,7 +14,7 @@ The minimum dehumidify setpoint has changed.
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

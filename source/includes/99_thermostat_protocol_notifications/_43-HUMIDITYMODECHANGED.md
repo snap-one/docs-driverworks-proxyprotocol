@@ -3,14 +3,14 @@
 MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). To UI comes through as `humidity_mode`
 
 
-### Signature
+### Name
 
 `HUMIDITY_MODE_CHANGED ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). |
+| Parameter | Type | Description                                                              |
+| --------- | ---- | ------------------------------------------------------------------------ |
+| MODE      | STR  | Typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). |
 
 
 

@@ -3,17 +3,17 @@
 Adds a Preset Schedule Preset Event to be run at the specified day/time (If protocol driver has the `can_preset_schedule` capability.
 
 
-### Signature
+### Name
 
 `PRESET_EVENT_ADD ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME |
-| int  | WEEKDAY: 0-6 with Sunday being 0 |
-| int | HOUR:  0-23 |
-| int | MINUTE: 0-60 |
+| Parameter | Description | Description             |
+| --------- | ----------- | ----------------------- |
+| NAME      | STR         | Event Name              |
+| WEEKDAY   | INT         | 0-6 with Sunday being 0 |
+| HOUR      | INT         | 0-23                    |
+| MINUTE    | INT         | 0-60                    |
 
 
 ### Returns

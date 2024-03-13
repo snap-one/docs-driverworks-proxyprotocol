@@ -2,20 +2,20 @@
 
 The dehumidify setpoint has changed.
 
-### Signature
+### Name
 
 `DEHUMIDIFY_SETPOINT_CHANGE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | SETPOINT: (0-100). To UI comes through as `dehumidify_setpoint` |
+| Parameter | Description                                                     |
+| --------- | --------------------------------------------------------------- |
+| int       | SETPOINT: (0-100). To UI comes through as `dehumidify_setpoint` |
 
 
 ### Returns
 
-\`None
-\`
+`None
+`
 
 
 

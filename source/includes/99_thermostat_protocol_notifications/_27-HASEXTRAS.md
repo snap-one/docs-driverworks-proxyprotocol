@@ -4,14 +4,14 @@ Boolean to enable/disable [`has_extras capability`][1].  If the device supports 
 Updates the XML that will be consumed by the Navigator UI’s.
 
 
-### Signature
+### Name
 
 `HAS_EXTRAS ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| XML | Text string of XML that matches the Preset Schedule A. |
+| Parameter | Type | Description                                            |
+| --------- | ---- | ------------------------------------------------------ |
+| XML       | STR  | Text string of XML that matches the Preset Schedule A. |
 
 
 ### Returns

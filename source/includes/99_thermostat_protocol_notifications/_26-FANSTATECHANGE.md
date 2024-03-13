@@ -3,14 +3,14 @@
 Notification that should be sent to the proxy when the fan state has changed.
 
 
-### Signature
+### Name
 
 `FAN_STATE_CHANGE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | STATE: One of the following Off, On. |
+| Parameter | Type | Description                   |
+| --------- | ---- | ----------------------------- |
+| STATE     | STR  | One of the following Off, On. |
 
 
 ### Returns

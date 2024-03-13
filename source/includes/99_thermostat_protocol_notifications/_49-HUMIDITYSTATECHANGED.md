@@ -3,14 +3,14 @@
 State has changed on the thermostat. To UI comes through as `humidity_state`.
 
 
-### Signature
+### Name
 
 `HUMIDITY_STATE_CHANGED ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| str | STATE -  typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto |
+| Parameter | Type | Description                                                            |
+| --------- | ---- | ---------------------------------------------------------------------- |
+| STATE     | STR  | Typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto |
 
 
 ### Returns

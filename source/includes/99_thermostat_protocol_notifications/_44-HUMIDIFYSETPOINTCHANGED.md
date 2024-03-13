@@ -3,14 +3,14 @@
 The humidity setpoint has changed. To UI comes through as `humidify_setpoint`
 
 
-### Signature
+### Name
 
 `HUMIDIFY_SETPOINT_CHANGED ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| num | SETPOINT (0-100) |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| SETPOINT  | NUM  | (0-100)     |
 
 
 

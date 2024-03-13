@@ -3,14 +3,14 @@
 Boolean to enable/disable `can_humidify` capability. If the device supports this feature, default is False.
 
 
-### Signature
+### Name
 
 `CAN_HUMIDIFY ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                                          |
+| --------- | ---- | ---------------------------------------------------- |
+|           | BOOL | True/False. Enable/disable `can_humidify` capability |
 
 ### Returns
 

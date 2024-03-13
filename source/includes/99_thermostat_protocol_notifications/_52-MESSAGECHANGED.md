@@ -3,14 +3,15 @@
 Update the text message displayed in the UI.  Multiple lines can be specified by using \n to separate lines, although UI's will display each line in its own way. Could be a paragraph, ticker scrolling, cycling, etc. To UI comes through as `message`.
 
 
-### Signature
+### Name
 
 `MESSAGE_CHANGED ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MESSAGE text string, max length of the string is not set, though driver developers need to keep in mind that this information shows up in Navigators in a ticker or similar scrolling text display and should not be cluttered but kept to key things like HVAC system errors, and CRITICAL information. |
+| Parameter | Type | Description                                                                                                                                                                                                                                                                                      |
+| --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| MESSAGE   | STR  | Text string, max length of the string is not set, though driver developers need to keep in mind that this information shows up in Navigators in a ticker or similar scrolling text display and should not be cluttered but kept to key things like HVAC system errors, and CRITICAL information. |
+
  
 
 ### Returns

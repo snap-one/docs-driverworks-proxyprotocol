@@ -1,19 +1,19 @@
 ## COOL\_SETPOINT\_RESOLUTION C
 
 
-### Signature
+### Name
 
 `COOL_SETPOINT_RESOLUTION_C ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoint_cool_resolution`][1] capability, default 1 |
+| Parameter | Type | Description                                                                                                                  |
+| --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
+| SETPOINT  | INT  | What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoint_cool_resolution`][1] capability, default 1 |
 
 
 ### Returns
 
-\`None
-\`
+None
+
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities

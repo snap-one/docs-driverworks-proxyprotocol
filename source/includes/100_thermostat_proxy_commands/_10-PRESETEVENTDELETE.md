@@ -3,17 +3,17 @@
 Deletes a Preset Schedule Preset if the protocol driver has the `can_preset_schedule` capability.
 
 
-### Signature
+### Name
 
 `PRESET_EVENT_DELETE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME: Using `""` (an empty string) will match all presets to make deleting all events of a given preset name easier. |
-| int  | WEEKDAY: 0-6 with Sunday being 0. Using -1 will match any weekday. |
-| int | HOUR:  0-23 Using -1 Will match any Hour. |
-| int | MINUTE: 0-60 Using -1 will match any Minute. |
+| Parameter | Type | Description                                                                                                    |
+| --------- | ---- | -------------------------------------------------------------------------------------------------------------- |
+| NAME      | STR  | Using `""` (an empty string) will match all presets to make deleting all events of a given preset name easier. |
+| WEEKDAY   | INT  | 0-6 with Sunday being 0. Using -1 will match any weekday.                                                      |
+| HOUR      | INT  | 0-23 Using -1 Will match any Hour.                                                                             |
+| MINUTE    | INT  | 0-60 Using -1 will match any Minute.                                                                           |
 
 
 ### Returns

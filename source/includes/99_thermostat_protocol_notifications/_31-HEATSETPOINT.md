@@ -3,7 +3,7 @@
 Fires event: `Heat_Setpoint_Changed`.
 
 
-### Signature
+### Name
 
 `HEAT_SETPOINT ()`
 

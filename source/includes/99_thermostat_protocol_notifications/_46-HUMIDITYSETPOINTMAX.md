@@ -3,14 +3,14 @@
 Minimum Setpoint, int 0-100 that will do the same thing as the `setpoint_humidify_max` capability, 
 
 
-### Signature
+### Name
 
 `HUMIDITY_SETPOINT_MAX ()` 
 
 
 | Parameter | Description |
-| --- | --- |
-| num | Default 100 |
+| --------- | ----------- |
+| num       | Default 100 |
 
 
 

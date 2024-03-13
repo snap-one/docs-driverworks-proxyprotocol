@@ -3,14 +3,14 @@
 What increment to use (ie 1,3,5,10,etc), will do the same thing as the [`setpoint_heat_resolution`][1] capability.
 
 
-### Signature
+### Name
 
 `HEAT_SETPOINT_RESOLUTION_F ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| num | Default 1 |
+| --------- | ----------- |
+| num       | Default 1   |
 
 
 ### Returns

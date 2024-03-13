@@ -3,14 +3,14 @@
 Boolean to enable/disable `can_dehumidify` capability. If the device supports this feature, default is False.
 
 
-### Signature
+### Name
 
 `CAN_DEHUMIDIFY ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                                              |
+| --------- | ---- | -------------------------------------------------------- |
+|           | BOOL | True/False.  Enable/disable `can_dehumidify` capability. |
 
 ### Returns
 

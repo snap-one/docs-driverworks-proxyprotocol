@@ -3,14 +3,14 @@
 Used to inform the proxy if the buttons on the device should be locked or not.
 
 
-### Signature
+### Name
 
 `ALLOWED_HVAC_MODES_CHNAGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | LOCK |
+| Parameter | Type | Description                                           |
+| --------- | ---- | ----------------------------------------------------- |
+| LOCK      | BOOL | If the buttons on the device should be locked or not. |
 
 ### Returns
 

@@ -3,16 +3,16 @@
 Modifies an existing Preset Schedule Event (If protocol driver has the `can_preset_schedule` capability)
 
 
-### Signature
+### Name
 
 `PRESET_MODIFY ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME |
-| XML | PRESET FIELDS:  XML DATA. |
-| str | NEW NAME |
+| Parameter     | Type | Description     |
+| ------------- | ---- | --------------- |
+| NAME          | STR  | Preset Name     |
+| PRESET FIELDS | XML  | XML DATA        |
+| NEW NAME      | STR  | New Preset Name |
 
 ### Returns
 

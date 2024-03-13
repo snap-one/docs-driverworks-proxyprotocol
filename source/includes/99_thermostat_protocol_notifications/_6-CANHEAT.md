@@ -3,14 +3,14 @@
 Boolean to enable/disable `can_heat` capability. If the device supports this feature, default is False.
 
 
-### Signature
+### Name
 
 `CAN_HEAT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                                       |
+| --------- | ---- | ------------------------------------------------- |
+|           | BOOL | True/False. enable/disable `can_heat` capability. |
 
 ### Returns
 
