@@ -1,14 +1,14 @@
 ## SET\_MOVEMENT
 
 
-### Signature
+### Name
 
 `SET_MOVEMENT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | Enumeration of the blind movement. |
+| Parameter     | Type | Description                        |
+| ------------- | ---- | ---------------------------------- |
+| SET\_MOVEMENT | NUM  | Enumeration of the blind movement. |
 
 
 ### Returns

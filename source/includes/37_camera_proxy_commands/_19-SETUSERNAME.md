@@ -3,14 +3,14 @@
 Composer Pro command to set the Authentication username.
 
 
-### Signature
+### Name
 
 `SET_USERNAME ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| str | Username |
+| --------- | ----------- |
+| str       | Username    |
 
 
 ### Returns

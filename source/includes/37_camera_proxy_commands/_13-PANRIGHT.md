@@ -3,7 +3,7 @@
 Pan to the right.
 
 
-### Signature
+### Name
 
 `PAN_RIGHT ()`
 

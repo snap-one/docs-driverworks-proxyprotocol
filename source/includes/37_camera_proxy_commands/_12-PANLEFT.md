@@ -3,7 +3,7 @@
 Pan to the left.
 
 
-### Signature
+### Name
 
 `PAN_LEFT ()`
 

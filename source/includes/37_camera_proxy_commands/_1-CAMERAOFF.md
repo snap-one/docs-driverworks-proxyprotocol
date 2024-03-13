@@ -3,7 +3,7 @@
 Command to turn camera image capturing off.
 
 
-### Signature
+### Name
 
 `CAMERA_OFF ()`
 

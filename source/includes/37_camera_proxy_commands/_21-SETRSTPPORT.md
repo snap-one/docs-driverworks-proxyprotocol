@@ -3,14 +3,14 @@
 Composer Pro Command to set the Rapid Spanning Tree Protocol port.
 
 
-### Signature
+### Name
 
 `SET_RSTP_PORT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Port ID |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| PORT ID   | INT  | Port ID     |
 
 
 ### Returns

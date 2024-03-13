@@ -3,14 +3,14 @@
 Composer Pro command to set the HTTP Port
 
 
-### Signature
+### Name
 
 `SET_HTTP_PORT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | Port ID |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| PORT ID   | INT  | Port ID     |
 
 
 ### Returns

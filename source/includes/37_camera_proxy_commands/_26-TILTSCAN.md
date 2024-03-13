@@ -2,7 +2,7 @@
 
 Have the camera execute a complete scan from top to bottom.
 
-### Signature
+### Name
 
 `TILT_SCAN ()`
 

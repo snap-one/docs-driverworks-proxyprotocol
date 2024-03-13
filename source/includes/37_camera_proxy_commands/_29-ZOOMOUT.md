@@ -2,7 +2,7 @@
 
 Zoom camera out.
 
-### Signature
+### Name
 
 `ZOOM_OUT ()`
 

@@ -3,14 +3,14 @@
 ComposerPro command to set the Authentication password.
 
 
-### Signature
+### Name
 
 `SET_PASSWORD ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| str | Password |
+| --------- | ----------- |
+| str       | Password    |
 
 
 ### Returns

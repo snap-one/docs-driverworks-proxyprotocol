@@ -3,7 +3,7 @@
 Move the camera to its home position.
 
 
-### Signature
+### Name
 
 `HOME ()`
 

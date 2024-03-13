@@ -3,14 +3,14 @@
 Composer Pro command to set whether or not authentication is required
 
 
-### Signature
+### Name
 
 `SET_AUTHENTICATION_TYPE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | BASIC or DIGEST |
+| Parameter | Description     |
+| --------- | --------------- |
+| str       | BASIC or DIGEST |
 
 
 ### Returns

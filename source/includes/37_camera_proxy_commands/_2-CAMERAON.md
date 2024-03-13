@@ -3,7 +3,7 @@
 Command to turn camera image capturing on.
 
 
-### Signature
+### Name
 
 `CAMERA_ON ()`
 

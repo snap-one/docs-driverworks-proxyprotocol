@@ -3,14 +3,14 @@
 Sets the blind type for the proxy.
 
 
-### Signature
+### Name
 
 `SET_TYPE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| INT | Enumeration of the blind  type. |
+| Parameter | Type | Description                     |
+| --------- | ---- | ------------------------------- |
+| SET\_Type | NUM  | Enumeration of the blind  type. |
 
 Blind Types:
 

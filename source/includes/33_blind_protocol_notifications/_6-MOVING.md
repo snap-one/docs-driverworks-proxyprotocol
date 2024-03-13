@@ -2,16 +2,16 @@
 
 State Notification Used by the protocol to inform the proxy the blinds have started to move.
 
-### Signature
+### Name
 
 `MOVING ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | LEVEL TARGET -  Integer of the target level that the blinds are currently expected to stop at. |
-| num | RAMP RATE - Number of milliseconds it is expected to take to get to the `level_target`. |
-| int | LEVEL (optional) - Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a [STOPPED][1] Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began. |
+| Parameter    | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------ | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| LEVEL TARGET | INT  | Integer of the target level that the blinds are currently expected to stop at.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| RAMP RATE    | NUM  | Number of milliseconds it is expected to take to get to the `level_target`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| LEVEL        | INT  | Optional. Integer of the level the blind started moving from. If not specified, the proxy assumes the last level sent by a [STOPPED][1] Notification. This optional parameter should be sent in the case the blind was moving to a level but is interrupted/commanded to go to a different level.  Without specifying this parameter in an interruption case, Toggle on UIs and UI display of blind movement and direction will be inaccurate. Drivers might need to do a STOP or GET for hardware position before the blind direction is commanded to go to the new position in order to obtain an accurate LEVEL for this value of where the blind was before the new movement began. |
 
 
 ### Returns

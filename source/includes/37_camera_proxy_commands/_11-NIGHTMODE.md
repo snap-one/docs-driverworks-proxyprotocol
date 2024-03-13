@@ -3,14 +3,14 @@
 Enable/disable night mode.
 
 
-### Signature
+### Name
 
 `NIGHT_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | True/False |
+| Parameter | Type | Description                |
+| --------- | ---- | -------------------------- |
+| bool      | BOOL | Enable/disable night mode. |
 
 
 ### Returns

@@ -3,7 +3,7 @@
 Tilt camera down.
 
 
-### Signature
+### Name
 
 `TILT_DOWN ()`
 

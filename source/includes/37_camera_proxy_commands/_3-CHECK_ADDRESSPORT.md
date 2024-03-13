@@ -3,15 +3,15 @@
 Composer Pro command used in the Camera Test/Validation area. Verifies the camera Address and Port ID.
 
 
-### Signature
+### Name
 
 `CHECK_ADDRESS_PORT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | Address to verify. |
-| int | Port ID to verify. |
+| Parameter | Description        |
+| --------- | ------------------ |
+| str       | Address to verify. |
+| int       | Port ID to verify. |
 
 
 ### Returns

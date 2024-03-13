@@ -3,15 +3,15 @@
 Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for HTTP snapshot request.
 
 
-### Signature
+### Name
 
 `GET_SNAPSHOT_QUERY_STRING ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| SIZE\_X | The desired resolution x-axis value. |
-| SIZE\_Y | The desired resolution y-axis value. |
+| Parameter | Description                          |
+| --------- | ------------------------------------ |
+| SIZE X    | The desired resolution x-axis value. |
+| SIZE Y    | The desired resolution y-axis value. |
 
 
 ### Returns

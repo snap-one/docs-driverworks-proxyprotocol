@@ -2,7 +2,7 @@
 
 Zoom canera in.
 
-### Signature
+### Name
 
 `ZOOM_IN ()`
 

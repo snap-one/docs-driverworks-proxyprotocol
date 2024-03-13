@@ -3,14 +3,14 @@
 Set the camera address.
 
 
-### Signature
+### Name
 
 `SET_ADDRESS ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| STR | Camera Address |
+| Parameter | Description    |
+| --------- | -------------- |
+| STR       | Camera Address |
 
 
 ### Returns

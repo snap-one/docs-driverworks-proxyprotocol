@@ -3,7 +3,7 @@
 Have the camera execute a complete scan from left to right.
 
 
-### Signature
+### Name
 
 `PAN_SCAN ()`
 

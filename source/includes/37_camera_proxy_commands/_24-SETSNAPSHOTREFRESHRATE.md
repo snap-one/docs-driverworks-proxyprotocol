@@ -3,14 +3,14 @@
 Sets image refresh rate in seconds.
 
 
-### Signature
+### Name
 
 `SET_SNAPSHOT_REFRESH_RATE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | Rate Unit in seconds. |
+| Parameter | Type | Description           |
+| --------- | ---- | --------------------- |
+| RATE UNIT | NUM  | Rate Unit in seconds. |
 
 
 ### Returns

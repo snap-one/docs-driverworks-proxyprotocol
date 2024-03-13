@@ -3,17 +3,17 @@
 Command that is initiated in Composer Pro and immediately returns a block of XML information. It returns the query string needed to create the URL for MJPEG server push request.
 
 
-### Signature
+### Name
 
 `GET_MJPEG_QUERY ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | The desired resolution x-axis value. |
-| num | The desired resolution y-axis value. |
-| num|  The delay in milliseconds between pushed frames |
-| str | Query. The path/query of the URL. |
+| Parameter | Description                                     |
+| --------- | ----------------------------------------------- |
+| num       | The desired resolution x-axis value.            |
+| num       | The desired resolution y-axis value.            |
+| num       | The delay in milliseconds between pushed frames |
+| str       | Query. The path/query of the URL.               |
 
 
 ### Returns

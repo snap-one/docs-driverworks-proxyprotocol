@@ -2,14 +2,14 @@
 
 Configuration Notification used by the protocol to inform the proxy if the blind supports stopping or not.
 
-### Signature
+### Name
 
 `SET_CAN_STOP ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| bool | A boolean indicating if the blind control supports stop. |
+| Parameter      | Type | Description                                              |
+| -------------- | ---- | -------------------------------------------------------- |
+| SET\_CAN\_STOP | BOOL | A boolean indicating if the blind control supports stop. |
 
 
 ### Returns

@@ -3,14 +3,14 @@
 Set the camera to preset location.
 
 
-### Signature
+### Name
 
 `NIGHT_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | Index Unit. Valid values: 1 – n, where n is max preset defined by capabilities |
+| Parameter  | Type | Description                                                                    |
+| ---------- | ---- | ------------------------------------------------------------------------------ |
+| Index Unit | NUM  | Index Unit. Valid values: 1 – n, where n is max preset defined by capabilities |
 
 
 ### Returns

@@ -3,14 +3,14 @@
 Used to update the proxy to tell it to generate HTTPS URLs instead of HTTP URLs.
 
 
-### Signature
+### Name
 
 `USE_HTTPS_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| boolean | USE\_HTTPS - A flag that indicates an HTTPS URL should be generated instead of an HTTP URL. |
+| Parameter | Type | Description                                                                    |
+| --------- | ---- | ------------------------------------------------------------------------------ |
+| USE HTTPS | BOOL | A flag that indicates an HTTPS URL should be generated instead of an HTTP URL. |
 
 
 ### Returns
