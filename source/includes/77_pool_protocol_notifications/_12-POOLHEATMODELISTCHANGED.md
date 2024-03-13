@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the pool heat mode list has changed.
 
 
-### Signature
+### Name
 
 `POOL_HEATMODE_LIST_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `XML` | `POOL_HEATMODE.` |
+| Parameter | Description      |
+| --------- | ---------------- |
+| `XML`     | `POOL_HEATMODE.` |
 
 
 ### Returns

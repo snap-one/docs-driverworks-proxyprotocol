@@ -3,14 +3,14 @@
 This notification provides a way to override capabilities.
 
 
-### Signature
+### Name
 
 `AUX_NAMES_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `AUXNAMES` | XML UPDATE LIST - True | False. Whole new list or a partial list to update existing names |
+| Parameter  | Type | Description            |
+| ---------- | ---- | :--------------------- |
+| `AUXNAMES` | BOOL | XML UPDATE LIST - True |
 
 
 ### Returns

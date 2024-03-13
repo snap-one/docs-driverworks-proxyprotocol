@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the pump mode has changed.
 
 
-### Signature
+### Name
 
 `PUMP_MODE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `PUMPMODE` | From `<pool_pumpmodes>`True/False |
+| Parameter  | Description | Description                       |
+| ---------- | ----------- | --------------------------------- |
+| `PUMPMODE` | BOOL        | From `<pool_pumpmodes>`True/False |
 
 
 ### Returns

@@ -3,14 +3,14 @@
 Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator
 
 
-### Signature
+### Name
 
 `POOL_PUMPMODES_LIST_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `POOL_PUMPMODES ` | Comma delimited list. |
+| Parameter         | Type | Description                          |
+| ----------------- | ---- | ------------------------------------ |
+| `POOL_PUMPMODES ` | LIST | Comma delimited list of Aux buttons. |
 
 
 ### Returns

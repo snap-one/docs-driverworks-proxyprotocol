@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the Temperature scale has changed.
 
 
-### Signature
+### Name
 
 `SCALE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SCALE` | “C” or “F” |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| `SCALE`   | STR  | “C” or “F”  |
 
 
 ### Returns

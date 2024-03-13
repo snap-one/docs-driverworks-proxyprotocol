@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the pool temperature has changed.
 
 
-### Signature
+### Name
 
 `POOL_TEMP_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `TEMPERATURE` | New temperature value. |
+| Parameter     | Type | Description            |
+| ------------- | ---- | ---------------------- |
+| `TEMPERATURE` | NUM  | New temperature value. |
 
 
 ### Returns

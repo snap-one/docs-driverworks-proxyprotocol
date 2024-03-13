@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that there is a Pool available on this controller. If ‘False’, Pool Setpoint is unavailable to set.
 
 
-### Signature
+### Name
 
 `HAS_POOL_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `HASPOOL` | (“True/False”) |
+| Parameter | Description | Description                                           |
+| --------- | ----------- | ----------------------------------------------------- |
+| `HASPOOL` | BOOL        | (“True/False”) Is a Pool available on this controller |
 
 
 ### Returns

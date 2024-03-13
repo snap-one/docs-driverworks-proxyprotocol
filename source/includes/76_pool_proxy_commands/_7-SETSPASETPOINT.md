@@ -3,14 +3,14 @@
 Received from the proxy when Spa Setpoint has been changed.
 
 
-### Signature
+### Name
 
 `SET_SPA_SETPOINT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SETPOINT` | int: Temperature |
+| Parameter  | Type | Description |
+| ---------- | ---- | ----------- |
+| `SETPOINT` | INT  | Temperature |
 
 
 ### Returns

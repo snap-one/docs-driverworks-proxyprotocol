@@ -3,13 +3,13 @@
 Received from the proxy when spa pump mode has been changed.
 
 
-### Signature
+### Name
 
 `SET_SPA_PUMPMODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
+| Parameter  | Description                          |
+| ---------- | ------------------------------------ |
 | `PUMPMODE` | From : `<SPA_pumpmodes>` capability. |
 
 

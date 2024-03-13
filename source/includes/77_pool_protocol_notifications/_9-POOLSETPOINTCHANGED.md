@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the setpoint on the pool controller has changed.
 
 
-### Signature
+### Name
 
 `POOL_SETPOINT_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SETPOINT` | New setpoint. |
+| Parameter  | DType | Description   |
+| ---------- | ----- | ------------- |
+| `SETPOINT` | NUM   | New setpoint. |
 
 
 ### Returns

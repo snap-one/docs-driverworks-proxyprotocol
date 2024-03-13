@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the spa temperature has changed.
 
 
-### Signature
+### Name
 
 `SPA_TEMP_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `TEMPERATURE` | New temperature value. |
+| Parameter     | Type | Description            |
+| ------------- | ---- | ---------------------- |
+| `TEMPERATURE` | NUM  | New temperature value. |
 
 
 ### Returns

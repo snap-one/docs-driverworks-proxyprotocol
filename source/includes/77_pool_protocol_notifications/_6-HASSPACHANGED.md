@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that there is a Spa available on this controller. If ‘False’, Spa Setpoint is unavailable to set.
 
 
-### Signature
+### Name
 
 `HAS_SPA_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `HASSPA` | (“True/False”) |
+| Parameter | Type | Description                                           |
+| --------- | ---- | ----------------------------------------------------- |
+| `HASSPA`  | BOOL | (“True/False”) Is a Spa available on this controller. |
 
 
 ### Returns

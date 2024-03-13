@@ -3,14 +3,14 @@
 Sent to the proxy to indicate whether the ‘Spa’ Aux button on the right side of the UI is On or Off.
 
 
-### Signature
+### Name
 
 `SPA_MODE_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SPAMODE` | From `<spa_pumpmodes>`True/False |
+| Parameter | Type | Description                      |
+| --------- | ---- | -------------------------------- |
+| `SPAMODE` | BOOL | From `<spa_pumpmodes>`True/False |
 
 
 ### Returns

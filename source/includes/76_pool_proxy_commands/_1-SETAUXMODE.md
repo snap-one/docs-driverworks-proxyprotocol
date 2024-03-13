@@ -3,15 +3,15 @@
 Received from the proxy when the auxiliary mode has been changed.
 
 
-### Signature
+### Name
 
 `SET_AUX_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `ID` | ID value of the auxiliary to set. |
-| `MODE` | ON/OFF |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| `ID`      | NUM  | ID value of the auxiliary to set. |
+| `MODE`    | STR  | ON/OFF                            |
 
 
 ### Returns

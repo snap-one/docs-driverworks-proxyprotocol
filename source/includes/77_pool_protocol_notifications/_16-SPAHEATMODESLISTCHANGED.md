@@ -3,14 +3,14 @@
 This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa heat modes has changed.
 
 
-### Signature
+### Name
 
 `SPA_HEATMODES_LIST_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SPA_HEATPMODES ` | XML. |
+| Parameter         | Description |
+| ----------------- | ----------- |
+| `SPA_HEATPMODES ` | XML.        |
 
 
 ### Returns

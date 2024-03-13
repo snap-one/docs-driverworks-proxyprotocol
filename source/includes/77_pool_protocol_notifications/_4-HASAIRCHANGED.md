@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that there is an outdoor air temperature available on this pool controller.  Determines whether the outdoor temperature is shown on the Navigator UI.
 
 
-### Signature
+### Name
 
 `HAS_AIR_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `HASAIR` | (“True/False”) |
+| Parameter | Description | Description                                             |
+| --------- | ----------- | ------------------------------------------------------- |
+| `HASAIR`  | BOOL        | (“True/False”) Is an outdoor air temperature available. |
 
 
 ### Returns

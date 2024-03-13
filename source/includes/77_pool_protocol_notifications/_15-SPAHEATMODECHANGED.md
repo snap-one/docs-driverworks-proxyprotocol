@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the spa heat mode has changed.
 
 
-### Signature
+### Name
 
 `SPA_HEATMODE_CHANGED ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| `XML` | HEATMODE. |
+| --------- | ----------- |
+| `XML`     | HEATMODE.   |
 
 
 ### Returns

@@ -3,15 +3,15 @@
 Received from the proxy when pool het mode has been changed.
 
 
-### Signature
+### Name
 
 `SET_POOL_HEATMODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `MODE` | string: ON/OFF |
-| `ID` | int: heat mode ID |
+| Parameter | Description | Description        |
+| --------- | ----------- | ------------------ |
+| `MODE`    | STR         | ON/OFF             |
+| `ID`      | INT         | Heat mode ID value |
 
 
 ### Returns

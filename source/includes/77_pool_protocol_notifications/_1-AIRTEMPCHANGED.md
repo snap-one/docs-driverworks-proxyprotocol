@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the air temperature has changed
 
 
-### Signature
+### Name
 
 `AIR_TEMP_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `TEMPERATURE` | Temperature value. |
+| Parameter     | Type | Description        |
+| ------------- | ---- | ------------------ |
+| `TEMPERATURE` | NUM  | Temperature value. |
 
 
 ### Returns

@@ -3,14 +3,14 @@
 Received from the proxy when pool temperature etpoint has been changed.
 
 
-### Signature
+### Name
 
 `SET_POOL_SETPOINT ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SETPOINT` | int: Temperature |
+| Parameter  | Description | Description       |
+| ---------- | ----------- | ----------------- |
+| `SETPOINT` | INT         | Temperature Value |
 
 
 ### Returns

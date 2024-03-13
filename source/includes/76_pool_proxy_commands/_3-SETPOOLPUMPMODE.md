@@ -3,13 +3,13 @@
 Received from the proxy when pool pump mode has been changed.
 
 
-### Signature
+### Name
 
 `SET_POOL_PUMPMODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
+| Parameter  | Description                           |
+| ---------- | ------------------------------------- |
 | `PUMPMODE` | From : `<pool_pumpmodes>` capability. |
 
 

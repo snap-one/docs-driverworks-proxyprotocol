@@ -3,14 +3,14 @@
 Sent to the proxy to indicate that the temperature setpoint on the spa controller has changed.
 
 
-### Signature
+### Name
 
 `SPA_SETPOINT_CHANGED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `SETPOINT` | New setpoint value. |
+| Parameter  | Type | Description         |
+| ---------- | ---- | ------------------- |
+| `SETPOINT` | NUM  | New setpoint value. |
 
 
 ### Returns

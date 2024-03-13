@@ -3,15 +3,15 @@
 Received from the proxy when spa heat mode been changed.
 
 
-### Signature
+### Name
 
 `SET_SPA_HEATMODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| `MODE` | string: ON/OFF |
-| `ID` | int: heat mode ID |
+| Parameter | Type | Description  |
+| --------- | ---- | ------------ |
+| `MODE`    | STR  | ON/OFF       |
+| `ID`      | INT  | Heat mode ID |
 
 
 ### Returns
