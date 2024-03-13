@@ -47475,24 +47475,29 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>Info: A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
+<td>Info</td>
+<td>STR</td>
+<td>A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>FunctionName:  A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
+<td>FunctionName</td>
+<td>STR</td>
+<td>A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>NewInfo: The new info provided by the UI in response to the <code>Request_additional_info</code> request.</td>
+<td>NewInfo</td>
+<td>STR</td>
+<td>The new info provided by the UI in response to the <code>Request_additional_info</code> request.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>InterfaceID: A unique (str) to identify which interface is sending this command.</td>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique (str) to identify which interface is sending this command.</td>
 </tr>
 </tbody></table>
 
@@ -47512,14 +47517,17 @@ mode: OFF | ON | ENABLED
 <tr>
 <th>Return</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>PGM ID</td>
+<td>INT</td>
 <td>PGM ID</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>True, False: True if PGM is Open.</td>
 </tr>
 </tbody></table>
@@ -47535,23 +47543,28 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Return</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Partition ID</td>
+<td>INT</td>
 <td>Partition ID</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>True, False: True if this partition is Open.</td>
 </tr>
 <tr>
-<td>int</td>
+<td>Binding ID</td>
+<td>INT</td>
 <td>Binding ID</td>
 </tr>
 <tr>
-<td>str</td>
+<td>State</td>
+<td>STR</td>
 <td>State</td>
 </tr>
 </tbody></table>
@@ -47567,35 +47580,43 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Return</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>ZONE ID</td>
+<td>INT</td>
 <td>Zone ID</td>
 </tr>
 <tr>
-<td>str</td>
+<td>ZONE NAME</td>
+<td>STR</td>
 <td>Zone Name</td>
 </tr>
 <tr>
-<td>int</td>
+<td>ZONE TYPE</td>
+<td>INT</td>
 <td>Zone Type ID</td>
 </tr>
 <tr>
-<td>table</td>
+<td></td>
+<td>TABLE</td>
 <td>Partitions the Zone is included in.</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>True, False: True if Zone can be bypassed.</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>TBOOL</td>
 <td>True, False: True if Zone is currently Open.</td>
 </tr>
 <tr>
-<td>str</td>
+<td>State</td>
+<td>STR</td>
 <td>State</td>
 </tr>
 </tbody></table>
@@ -47612,11 +47633,13 @@ mode: OFF | ON | ENABLED
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>PGM ID: The id of the targeted PGM.</td>
+<td>PGM ID</td>
+<td>PINT</td>
+<td>The id of the targeted PGM.</td>
 </tr>
 </tbody></table>
 
@@ -47627,12 +47650,14 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>PGM ID: The id of the targeted PGM.</td>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
 </tr>
 </tbody></table>
 
@@ -47643,12 +47668,14 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>PGM ID: The id of the targeted PGM.</td>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
 </tr>
 </tbody></table>
 
@@ -47660,11 +47687,13 @@ mode: OFF | ON | ENABLED
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>PGM ID: The id of the targeted PGM.</td>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
 </tr>
 </tbody></table>
 
@@ -47679,36 +47708,44 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>YEAR: The current year (4 digits)</td>
+<td>YEAR</td>
+<td>INT</td>
+<td>The current year (4 digits)</td>
 </tr>
 <tr>
-<td>int</td>
-<td>MONTH: The current month (2 digits 01-12)</td>
+<td>MONTH</td>
+<td>INT</td>
+<td>The current month (2 digits 01-12)</td>
 </tr>
 <tr>
-<td>int</td>
-<td>DAY: The current day of the month (2 digits 01-31)</td>
+<td>DAY</td>
+<td>INT</td>
+<td>The current day of the month (2 digits 01-31)</td>
 </tr>
 <tr>
-<td>int</td>
-<td>HOUR: The current hour in 24-hour time (2 digits 00-23)</td>
+<td>HOUR:</td>
+<td>INT</td>
+<td>The current hour in 24-hour time (2 digits 00-23)</td>
 </tr>
 <tr>
-<td>int</td>
-<td>MINUTE: The current minute in the hour (2 digits 00-59)</td>
+<td>MINUTE</td>
+<td>INT</td>
+<td>The current minute in the hour (2 digits 00-59)</td>
 </tr>
 <tr>
-<td>int</td>
-<td>SECOND: The current second in the minute (2 digits 00-59)</td>
+<td>SECOND</td>
+<td>INT</td>
+<td>The current second in the minute (2 digits 00-59)</td>
 </tr>
 <tr>
-<td>str</td>
-<td>INTERFACE_ID: Unique string ID indicating from where the command originated.</td>
+<td>INTERFACE ID:</td>
+<td>STR</td>
+<td>Unique string ID indicating from where the command originated.</td>
 </tr>
 </tbody></table>
 
@@ -47719,16 +47756,19 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>PARTITION_ID: The id number of the targeted partition.</td>
+<td>PARTITION ID</td>
+<td>STR</td>
+<td>PARTITION ID: The id number of the targeted partition.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>ENABLED: ‘True’ if this partition should now be enabled, False if not.</td>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>ENABLED ‘True’ if this partition should now be enabled, False if not.</td>
 </tr>
 </tbody></table>
 
@@ -47739,20 +47779,24 @@ mode: OFF | ON | ENABLED
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>PGM ID: The id of the targeted PGM.</td>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>ENABLED: ‘True’ if this partition should now be enabled, False if not.</td>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>‘True’ if this partition should now be enabled, False if not.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>COMMAND: Possible commands are: ‘open’, ‘close’, ‘toggle’, and ‘trigger’.</td>
+<td>COMMAND</td>
+<td>STR</td>
+<td>Possible commands are: ‘open’, ‘close’, ‘toggle’, and ‘trigger’.</td>
 </tr>
 </tbody></table>
 
@@ -48034,11 +48078,13 @@ Defaults to true.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>PGM_ID: ID of the new PGM</td>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the new PGM</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_add_pgm-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ADD_PGM"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48057,20 +48103,24 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>PARTITION_ID: ID of the target partition.</td>
+<td>PARTITION ID</td>
+<td>NUM</td>
+<td>ID of the target partition.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>STATE: A string listing its state. Supported values include: &quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</td>
+<td>STATE</td>
+<td>STR</td>
+<td>A string listing its state. Supported values include: <code>&quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
 </tr>
 <tr>
-<td>str</td>
-<td>TYPE:  Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_partition_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span> <span class="s2">"PANEL_PARTITION_STATE"</span><span class="p">,</span> <span class="p">{</span><span class="n">PARTITION_ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ARMED"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"Stay"</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48081,20 +48131,24 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>PGM_ID: ID of the target PGM</td>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the target PGM</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>PGM_OPEN: &quot;true&quot; if the PGM is opened. &quot;false&quot; if it is closed.</td>
+<td>PGM OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the PGM is opened. &quot;false&quot; if it is closed.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>INITIALIZING: &quot;true&quot; if the PGM is initializing. This will prevent programming from firing.</td>
+<td>INITIALIZING</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the PGM is initializing. This will prevent programming from firing.</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_pgm_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_PGM_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">PGM_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48105,12 +48159,14 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>PGM_ID: ID of the PGM being removed</td>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the PGM being removed</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_remove_pgm-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_REMOVE_PGM"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48122,11 +48178,13 @@ Defaults to true.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>ID: ID of the target zone.</td>
+<td>ID</td>
+<td>NUM</td>
+<td>ID of the target zone.</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_remove_-zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_REMOVE_ZONE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48138,91 +48196,113 @@ Defaults to true.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th style="text-align: left"></th>
 </tr>
 </thead><tbody>
 <tr>
 <td>num</td>
 <td>ID: ID of the target zone.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>NAME: The zone&#39;s name either read from the panel or assigned by the user. Will default to &quot;Zone NN&quot;</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>num</td>
-<td>TYPE_ID: The type of zone so that the Control4 system can map its sensor binding to a type of sensor. Current valid types with their ids are:</td>
+<td>TYPE ID: The type of zone so that the Control4 system can map its sensor binding to a type of sensor. Current valid types with their ids are:</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>UNKNOWN = 0</td>
+<td>UNKNOWN   = 0</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>CONTACT_SENSOR= 1</td>
+<td>CONTACT SENSOR= 1</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>EXTERIOR_DOOR= 2</td>
+<td>EXTERIOR DOOR= 2</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>EXTERIOR_WINDOW= 3</td>
+<td>EXTERIOR WINDOW= 3</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>INTERIOR_DOOR  = 4</td>
+<td>INTERIOR DOOR = 4</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>MOTION_SENSOR = 5</td>
+<td>MOTION SENSOR = 5</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>FIRE = 6</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>GAS = 7</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>CARBON_MONOXIDE    = 8</td>
+<td>CARBON MONOXIDE   = 8</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>HEAT = 9</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>WATER = 10</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>SMOKE = 11</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>PRESSURE = 12</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>GLASS_BREAK= 13</td>
+<td>GLASSBREAK= 13</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
 <td>GATE = 14</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td></td>
-<td>GARAGE_DOOR = 15</td>
+<td>GARAGE DOOR = 15</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>PARTITIONS: Comma-delimited string of numbers indicating which partitions this zone is a  member of.  For example, if this zone is included in both partitions 1 and 3, the string would be &quot;1,3&quot;</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>bool</td>
-<td>IS_OPEN: &quot;true&quot; = open. &quot;false&quot; = closed.</td>
+<td>IS\_OPEN: &quot;true&quot; = open. &quot;false&quot; = closed.</td>
+<td style="text-align: left"></td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_zone_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ZONE_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">NAME</span> <span class="o">=</span> <span class="s2">"ENTRYWAY"</span><span class="p">,</span> <span class="n">TYPE_ID</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">PARTITIONS</span> <span class="o">=</span> <span class="s2">"1,3"</span><span class="p">,</span> <span class="n">IS_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48233,20 +48313,24 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>ZONE_ID: ID of the target zone</td>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>ID of the target zone</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>ZONE_OPEN: &quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
+<td>ZONE OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>INITIALIZING: &quot;true&quot; if the zone is initializing. This will prevent programming from firing.</td>
+<td>INITIALIZING</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is initializing. This will prevent programming from firing.</td>
 </tr>
 </tbody></table>
 <h3 id='security-panel-notifications-panel_zone_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ZONE_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
@@ -48267,10 +48351,6 @@ Defaults to true.</p>
 <tr>
 <td>str</td>
 <td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>str</td>
@@ -48302,12 +48382,14 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>IDENTIFIER:  Unique number for the trouble instance that has been resolved.</td>
+<td>IDENTIFIER</td>
+<td>NUM</td>
+<td style="text-align: left">Unique number for the trouble instance that has been resolved.</td>
 </tr>
 </tbody></table>
 
@@ -48319,16 +48401,19 @@ Defaults to true.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>TROUBLE_TEXT: Text listing the type of trouble. “For example: “Battery&quot;, &quot;Communication&quot;, etc.)</td>
+<td>TROUBLE TEXT</td>
+<td>STR</td>
+<td style="text-align: left">Text listing the type of trouble. “For example: “Battery&quot;, &quot;Communication&quot;, etc.)</td>
 </tr>
 <tr>
-<td>num</td>
-<td>IDENTIFIER:  Unique number for this instance of trouble.</td>
+<td>DENTIFIER</td>
+<td>NUM</td>
+<td style="text-align: left">Unique number for this instance of trouble.</td>
 </tr>
 </tbody></table>
 
