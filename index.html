@@ -37661,7 +37661,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>Used to delete a specific button from the keypad</p>
 
-<h3 id='keypad-proxy-commands-delete_keypad_button-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-delete_keypad_button-name'>Name</h3>
 
 <p><code>DELETE_KEYPAD_BUTTON ()</code></p>
 
@@ -37685,26 +37685,30 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>Used to set the color for all buttons on a keypad.</p>
 
-<h3 id='keypad-proxy-commands-keypad_all_button_color-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-keypad_all_button_color-name'>Name</h3>
 
 <p><code>KEYPAD_ALL_BUTTON_COLOR ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>OFF_COLOR</code></td>
+<td>INT</td>
 <td>ID value of the button to be deleted</td>
 </tr>
 <tr>
 <td><code>ON_COLOR</code></td>
+<td>INT</td>
 <td>The new on/push color for the keypad</td>
 </tr>
 <tr>
 <td><code>CURRENT_COLOR</code></td>
+<td>INT</td>
 <td>The color the keypad should immediately go to</td>
 </tr>
 </tbody></table>
@@ -37717,22 +37721,25 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>Used to send remote commands to the keypad to have it act as if a button on the keypad was actually used.</p>
 
-<h3 id='keypad-proxy-commands-keypad_button_action-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-keypad_button_action-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_ACTION ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>ACTION</td>
+<td>NUM</td>
 <td>The action performed on the keypad: 0 = Release, 1 = Push, 2 = Click</td>
 </tr>
 <tr>
 <td>BUTTON ID</td>
+<td>INT</td>
 <td>The ID of the button where the action is performed.</td>
 </tr>
 </tbody></table>
@@ -37745,7 +37752,7 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>Used to set the color for a specific button on a keypad.</p>
 
-<h3 id='keypad-proxy-commands-keypad_button_color-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-keypad_button_color-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_COLOR ()</code></p>
 
@@ -37777,50 +37784,60 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p>Used to change the settings on a particular button.</p>
 
-<h3 id='keypad-proxy-commands-keypad_button_info-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-keypad_button_info-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_INFO ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>BUTTON ID</td>
+<td>INT</td>
 <td>The ID of the button being changed</td>
 </tr>
 <tr>
 <td>NAME</td>
+<td>STR</td>
 <td>The name of the button (optional)</td>
 </tr>
 <tr>
-<td>ON COLOR (string)</td>
+<td>ON COLOR</td>
+<td>STR</td>
 <td>The on/press color for the button (optional)</td>
 </tr>
 <tr>
-<td>OFF COLOR  (string)</td>
+<td>OFF COLOR</td>
+<td>STR</td>
 <td>The off/release color for the button (optional)</td>
 </tr>
 <tr>
-<td>ENGRAVING (string)</td>
+<td>ENGRAVING</td>
+<td>STR</td>
 <td>The engraved name for the button (optional)</td>
 </tr>
 <tr>
-<td>BUTTON BEHAVIOR (INT)</td>
+<td>BUTTON BEHAVIOR</td>
+<td>INT</td>
 <td>The behavior for the button (optional)</td>
 </tr>
 <tr>
-<td>LED BEHAVIOR (INT)</td>
+<td>LED BEHAVIOR</td>
+<td>INT</td>
 <td>The LED behavior for the button (optional)</td>
 </tr>
 <tr>
-<td>STATE (bool)</td>
+<td>STATE</td>
+<td>BOOL</td>
 <td>Used to indicate which color the button should use. A value of true means use the on/push color, a value of false means use the off/release color.</td>
 </tr>
 <tr>
 <td>MATCH LED STATE</td>
+<td>BOOL</td>
 <td>Similar to state, but should only be applied if the LED is tracking a bound device.</td>
 </tr>
 </tbody></table>
@@ -37858,42 +37875,50 @@ Valid values are:</p>
 
 <p>Used to create a new button on the keypad. This is sent to the protocol by the proxy when the proxy is loaded. Thus the protocol doesn&#39;t have to store all its buttons settings, the proxy will do it.</p>
 
-<h3 id='keypad-proxy-commands-new_keypad_button-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-new_keypad_button-name'>Name</h3>
 
 <p><code>NEW_KEYPAD_BUTTON ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>BUTTON ID</td>
+<td>INT</td>
 <td>The ID of the button being changed</td>
 </tr>
 <tr>
 <td>NAME</td>
+<td>STR</td>
 <td>The name of the button (optional)</td>
 </tr>
 <tr>
-<td>ON COLOR (string)</td>
+<td>ON COLOR</td>
+<td>STR</td>
 <td>The on/press color for the button (optional)</td>
 </tr>
 <tr>
-<td>OFF COLOR  (string)</td>
+<td>OFF COLOR</td>
+<td>STR</td>
 <td>The off/release color for the button (optional)</td>
 </tr>
 <tr>
-<td>BUTTON BEHAVIOR (INT)</td>
+<td>BUTTON BEHAVIOR</td>
+<td>INT</td>
 <td>The behavior for the button (optional)</td>
 </tr>
 <tr>
-<td>LED BEHAVIOR (INT)</td>
+<td>LED BEHAVIOR</td>
+<td>INT</td>
 <td>The LED behavior for the button (optional)</td>
 </tr>
 <tr>
 <td>SLOTS</td>
+<td>NUM</td>
 <td>The number of slots the button takes up on the keypad.</td>
 </tr>
 </tbody></table>
@@ -37906,19 +37931,21 @@ Valid values are:</p>
 
 <p>Indicates whether the keypad should track the previous button being used. This mainly for Control4 Configurable keypad devices (zigbee, wired, combo, etc)</p>
 
-<h3 id='keypad-proxy-commands-set_track_prev_button-signature'>Signature</h3>
+<h3 id='keypad-proxy-commands-set_track_prev_button-name'>Name</h3>
 
 <p><code>SET_TRACK_PREV_BUTTON N ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>MODE</td>
-<td>Boolean value.</td>
+<td>BOOL</td>
+<td>Support button tracking</td>
 </tr>
 </tbody></table>
 
@@ -37931,7 +37958,7 @@ Valid values are:</p>
 
 <p>Used to inform (or update) the proxy of a button behavior name</p>
 
-<h3 id='keypad-protocol-notifications-behavior_name-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-behavior_name-name'>Name</h3>
 
 <p><code>BEHAVIOR_NAME ()</code></p>
 
@@ -37939,15 +37966,18 @@ Valid values are:</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the behavior to send when selected by the user.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the behavior to send when selected by the user.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>NAME: The string to display to the user for the behavior.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>The string to display to the user for the behavior.</td>
 </tr>
 </tbody></table>
 
@@ -37959,23 +37989,26 @@ Valid values are:</p>
 
 <p>Used to inform the proxy that a button has been clicked multiple times. This is used by the proxy to fire the proper event (single, double, triple click, etc).</p>
 
-<h3 id='keypad-protocol-notifications-click_count-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-click_count-name'>Name</h3>
 
 <p><code>CLICK_COUNT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the button clicked by the user.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the button clicked by the user.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>COUNT:  The number of times the button was clicked</td>
+<td>COUNT</td>
+<td>NUM</td>
+<td>The number of times the button was clicked</td>
 </tr>
 </tbody></table>
 
@@ -37987,19 +38020,21 @@ Valid values are:</p>
 
 <p>Used to inform the proxy that a button is being deleted</p>
 
-<h3 id='keypad-protocol-notifications-delete_keypad_button-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-delete_keypad_button-name'>Name</h3>
 
 <p><code>DELETE_KEYPAD_BUTTON ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the button to be deleted.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the button to be deleted.</td>
 </tr>
 </tbody></table>
 
@@ -38011,23 +38046,26 @@ Valid values are:</p>
 
 <p>Used by the protocol to inform the proxy that some type of action occurred on a button. The proxy will then update colors, send the proper command to the bound device, etc.</p>
 
-<h3 id='keypad-protocol-notifications-keypad_button_action-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-keypad_button_action-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_ACTION ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>TypeDescription</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the button to be deleted.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the button to be deleted.</td>
 </tr>
 <tr>
+<td>ACTION</td>
 <td>NUM</td>
-<td>ACTION: The action performed on the keypad: 0 = Release, 1 = Push, 2 = Click, 3 = Double Click, 4 = Triple Click</td>
+<td>The action performed on the keypad: 0 = Release, 1 = Push, 2 = Click, 3 = Double Click, 4 = Triple Click</td>
 </tr>
 </tbody></table>
 
@@ -38039,31 +38077,36 @@ Valid values are:</p>
 
 <p>Used by the protocol to inform the proxy of a change in color for every button on the keypad.</p>
 
-<h3 id='keypad-protocol-notifications-keypad_all_button_color-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-keypad_all_button_color-name'>Name</h3>
 
 <p><code>KEYPAD_ALL_BUTTON_COLOR ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>ON COLOR: The new on color for the button in RGB hex string.</td>
+<td>ON COLOR</td>
+<td>STR</td>
+<td>The new on color for the button in RGB hex string.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>OFF COLOR: The new off color for the button in RGB hex string.</td>
+<td>OFF COLOR</td>
+<td>OFF COLOR</td>
+<td>OFF COLOR</td>
 </tr>
 <tr>
-<td>str</td>
-<td>CURRENT COLOR:  The new current color for the button in RGB hex string.</td>
+<td>CURRENT COLOR</td>
+<td>STR</td>
+<td>The new current color for the button in RGB hex string.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>COLOR:  The new on and off color for the button in RGB hex string.</td>
+<td>COLOR</td>
+<td>STR</td>
+<td>The new on and off color for the button in RGB hex string.</td>
 </tr>
 </tbody></table>
 
@@ -38075,35 +38118,41 @@ Valid values are:</p>
 
 <p>This is used by the protocol to inform the proxy that it has been instructed to change the color of a button.</p>
 
-<h3 id='keypad-protocol-notifications-keypad_button_color-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-keypad_button_color-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_COLOR ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the button whose color is changing.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the button whose color is changing.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>ON COLOR: The new on color for the button in RGB hex string.</td>
+<td>ON COLOR</td>
+<td>STR</td>
+<td>The new on color for the button in RGB hex string.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>OFF COLOR: The new off color for the button in RGB hex string.</td>
+<td>OFF COLOR</td>
+<td>STR</td>
+<td>The new off color for the button in RGB hex string.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>CURRENT COLOR:  The new current color for the button in RGB hex string.</td>
+<td>CURRENT COLOR</td>
+<td>STR</td>
+<td>The new current color for the button in RGB hex string.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>COLOR:  The new on and off color for the button in RGB hex string.</td>
+<td>COLOR</td>
+<td>STR</td>
+<td>The new on and off color for the button in RGB hex string.</td>
 </tr>
 </tbody></table>
 
@@ -38115,7 +38164,7 @@ Valid values are:</p>
 
 <p>Used by the protocol to inform the proxy of a changed setting for a particular button. It can have multiple parameters, but the only required one is <code>BUTTON_ID</code>.</p>
 
-<h3 id='keypad-protocol-notifications-keypad_button_info-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-keypad_button_info-name'>Name</h3>
 
 <p><code>KEYPAD_BUTTON_INFO ()</code></p>
 
@@ -38155,7 +38204,7 @@ Valid values are:</p>
 </tr>
 <tr>
 <td>STATE</td>
-<td>The current state of the button, so the proxy knows what color the button is using (state &gt; 0 means on-color)</td>
+<td>The current state of the button, so the proxy knows what color the button is using (state \&gt; 0 means on-color)</td>
 </tr>
 <tr>
 <td>LED BEHAVIOR</td>
@@ -38175,23 +38224,26 @@ Valid values are:</p>
 
 <p>Used to inform (or update) the proxy of a LED&#39;s behavior name</p>
 
-<h3 id='keypad-protocol-notifications-led_behavior_name-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-led_behavior_name-name'>Name</h3>
 
 <p><code>LED_BEHAVIOR_NAME ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>BUTTON ID: The ID of the LED behavior to send when selected by the user.</td>
+<td>BUTTON ID</td>
+<td>NUM</td>
+<td>The ID of the LED behavior to send when selected by the user.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>NAME: The name of the button This will cause binding names to be updated.</td>
+<td>NAME</td>
+<td>STER</td>
+<td>The name of the button This will cause binding names to be updated.</td>
 </tr>
 </tbody></table>
 
@@ -38203,7 +38255,7 @@ Valid values are:</p>
 
 <p>Used to inform the proxy about the existence of a new button on the keypad. If the specified button already exists, this notification will do nothing.</p>
 
-<h3 id='keypad-protocol-notifications-new_keypad_button-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-new_keypad_button-name'>Name</h3>
 
 <p><code>NEW_KEYPAD_BUTTON ()</code></p>
 
@@ -38259,7 +38311,7 @@ Valid values are:</p>
 
 <p>Used by the protocol to notify the proxy if the device is online or offline. The payload of the notify message is a boolean indicating true/false</p>
 
-<h3 id='keypad-protocol-notifications-online_changed-signature'>Signature</h3>
+<h3 id='keypad-protocol-notifications-online_changed-name'>Name</h3>
 
 <p><code>ONLINE_CHANGED ()</code></p>
 
