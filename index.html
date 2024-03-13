@@ -46231,22 +46231,25 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when the auxiliary mode has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_aux_mode-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_aux_mode-name'>Name</h3>
 
 <p><code>SET_AUX_MODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>ID</code></td>
+<td>NUM</td>
 <td>ID value of the auxiliary to set.</td>
 </tr>
 <tr>
 <td><code>MODE</code></td>
+<td>STR</td>
 <td>ON/OFF</td>
 </tr>
 </tbody></table>
@@ -46259,7 +46262,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when pool het mode has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_pool_heat_mode-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_pool_heat_mode-name'>Name</h3>
 
 <p><code>SET_POOL_HEATMODE ()</code></p>
 
@@ -46267,15 +46270,18 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>MODE</code></td>
-<td>string: ON/OFF</td>
+<td>STR</td>
+<td>ON/OFF</td>
 </tr>
 <tr>
 <td><code>ID</code></td>
-<td>int: heat mode ID</td>
+<td>INT</td>
+<td>Heat mode ID value</td>
 </tr>
 </tbody></table>
 
@@ -46287,7 +46293,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when pool pump mode has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_pool_pump_mode-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_pool_pump_mode-name'>Name</h3>
 
 <p><code>SET_POOL_PUMPMODE ()</code></p>
 
@@ -46311,7 +46317,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when pool temperature etpoint has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_pool_setpoint-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_pool_setpoint-name'>Name</h3>
 
 <p><code>SET_POOL_SETPOINT ()</code></p>
 
@@ -46319,11 +46325,13 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SETPOINT</code></td>
-<td>int: Temperature</td>
+<td>INT</td>
+<td>Temperature Value</td>
 </tr>
 </tbody></table>
 
@@ -46335,23 +46343,26 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when spa heat mode been changed.</p>
 
-<h3 id='pool-proxy-commands-set_spa_heat_mode-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_spa_heat_mode-name'>Name</h3>
 
 <p><code>SET_SPA_HEATMODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>MODE</code></td>
-<td>string: ON/OFF</td>
+<td>STR</td>
+<td>ON/OFF</td>
 </tr>
 <tr>
 <td><code>ID</code></td>
-<td>int: heat mode ID</td>
+<td>INT</td>
+<td>Heat mode ID</td>
 </tr>
 </tbody></table>
 
@@ -46363,7 +46374,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when spa pump mode has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_spa_pump_mode-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_spa_pump_mode-name'>Name</h3>
 
 <p><code>SET_SPA_PUMPMODE ()</code></p>
 
@@ -46387,19 +46398,21 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when Spa Setpoint has been changed.</p>
 
-<h3 id='pool-proxy-commands-set_spa_setpoint-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-set_spa_setpoint-name'>Name</h3>
 
 <p><code>SET_SPA_SETPOINT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SETPOINT</code></td>
-<td>int: Temperature</td>
+<td>INT</td>
+<td>Temperature</td>
 </tr>
 </tbody></table>
 
@@ -46411,23 +46424,26 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when the auxiliary id is changed in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
 
-<h3 id='pool-proxy-commands-update_aux_item-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-update_aux_item-name'>Name</h3>
 
 <p><code>AUX_ITEM_UPDATED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>ID</code></td>
-<td>str: Current aux ID</td>
+<td>STR</td>
+<td>Current aux ID</td>
 </tr>
 <tr>
 <td><code>NEW_ID</code></td>
-<td>str: New aux ID</td>
+<td>STR</td>
+<td>New aux ID</td>
 </tr>
 </tbody></table>
 
@@ -46439,19 +46455,21 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when an auxiliary item is added by clicking on the + icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list </a>capability is set to true.</p>
 
-<h3 id='pool-proxy-commands-add_aux_item-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-add_aux_item-name'>Name</h3>
 
 <p><code>AUX_ITEM_ADDED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>AUX_ID</code></td>
-<td>str: ID of the aux added</td>
+<td>STR</td>
+<td>ID of the aux added</td>
 </tr>
 </tbody></table>
 
@@ -46463,7 +46481,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Received from the proxy when an auxiliary item is removed by clicking on the - icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
 
-<h3 id='pool-proxy-commands-remove_aux_item-signature'>Signature</h3>
+<h3 id='pool-proxy-commands-remove_aux_item-name'>Name</h3>
 
 <p><code>AUX_ITEM_ADDED ()</code></p>
 
@@ -46471,11 +46489,13 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>ID</code></td>
-<td>str: ID of the aux removed</td>
+<td>STR</td>
+<td>ID of the aux removed</td>
 </tr>
 </tbody></table>
 
@@ -46488,18 +46508,20 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the air temperature has changed</p>
 
-<h3 id='pool-protocol-notifications-air_temp_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-air_temp_changed-name'>Name</h3>
 
 <p><code>AIR_TEMP_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>TEMPERATURE</code></td>
+<td>NUM</td>
 <td>Temperature value.</td>
 </tr>
 </tbody></table>
@@ -46516,19 +46538,21 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>This notification provides a way to override capabilities.</p>
 
-<h3 id='pool-protocol-notifications-aux_names_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-aux_names_changed-name'>Name</h3>
 
 <p><code>AUX_NAMES_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>AUXNAMES</code></td>
-<td>XML UPDATE LIST - True</td>
+<td>BOOL</td>
+<td style="text-align: left">XML UPDATE LIST - True</td>
 </tr>
 </tbody></table>
 
@@ -46557,26 +46581,30 @@ Should be true (false by default) when the pool controller device provides aux l
 </code></pre></div>
 <h2 id='pool-protocol-notifications-auxmode_changed'>AUXMODE_CHANGED</h2>
 <p>Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify. Mode Y is On, N is Off.</p>
-<h3 id='pool-protocol-notifications-auxmode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-auxmode_changed-name'>Name</h3>
 
 <p><code>AUXMODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>ID</code></td>
+<td>INT</td>
 <td>ID of auxiliary</td>
 </tr>
 <tr>
 <td><code>MODE</code></td>
+<td>STR</td>
 <td>ON/OFF</td>
 </tr>
 <tr>
 <td><code>SELECTED</code></td>
+<td>LIST</td>
 <td>For type LIST from <code>&lt;aux_types&gt; &lt;items&gt;</code> item selected if is provided by the device.</td>
 </tr>
 </tbody></table>
@@ -46600,7 +46628,7 @@ Should be true (false by default) when the pool controller device provides aux l
 </code></pre></div>
 <h2 id='pool-protocol-notifications-has_air_changed'>HAS_AIR_CHANGED</h2>
 <p>Sent to the proxy to indicate that there is an outdoor air temperature available on this pool controller.  Determines whether the outdoor temperature is shown on the Navigator UI.</p>
-<h3 id='pool-protocol-notifications-has_air_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-has_air_changed-name'>Name</h3>
 
 <p><code>HAS_AIR_CHANGED ()</code></p>
 
@@ -46608,11 +46636,13 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>HASAIR</code></td>
-<td>(“True/False”)</td>
+<td>BOOL</td>
+<td>(“True/False”) Is an outdoor air temperature available.</td>
 </tr>
 </tbody></table>
 
@@ -46628,7 +46658,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that there is a Pool available on this controller. If ‘False’, Pool Setpoint is unavailable to set.</p>
 
-<h3 id='pool-protocol-notifications-has_pool_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-has_pool_changed-name'>Name</h3>
 
 <p><code>HAS_POOL_CHANGED ()</code></p>
 
@@ -46636,11 +46666,13 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>HASPOOL</code></td>
-<td>(“True/False”)</td>
+<td>BOOL</td>
+<td>(“True/False”) Is a Pool available on this controller</td>
 </tr>
 </tbody></table>
 
@@ -46656,19 +46688,21 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that there is a Spa available on this controller. If ‘False’, Spa Setpoint is unavailable to set.</p>
 
-<h3 id='pool-protocol-notifications-has_spa_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-has_spa_changed-name'>Name</h3>
 
 <p><code>HAS_SPA_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>HASSPA</code></td>
-<td>(“True/False”)</td>
+<td>BOOL</td>
+<td>(“True/False”) Is a Spa available on this controller.</td>
 </tr>
 </tbody></table>
 
@@ -46684,18 +46718,20 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator</p>
 
-<h3 id='pool-protocol-notifications-num_auxs_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-num_auxs_changed-name'>Name</h3>
 
 <p><code>NUM_AUXS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>AUXS</code></td>
+<td>NUM</td>
 <td>Maximum number of auxiliaries.</td>
 </tr>
 </tbody></table>
@@ -46712,19 +46748,21 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator</p>
 
-<h3 id='pool-protocol-notifications-pool_pumpmodes_-list_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pool_pumpmodes_-list_changed-name'>Name</h3>
 
 <p><code>POOL_PUMPMODES_LIST_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>POOL_PUMPMODES </code></td>
-<td>Comma delimited list.</td>
+<td>LIST</td>
+<td>Comma delimited list of Aux buttons.</td>
 </tr>
 </tbody></table>
 
@@ -46736,18 +46774,20 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the setpoint on the pool controller has changed.</p>
 
-<h3 id='pool-protocol-notifications-pool_setpoint_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pool_setpoint_changed-name'>Name</h3>
 
 <p><code>POOL_SETPOINT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>DType</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SETPOINT</code></td>
+<td>NUM</td>
 <td>New setpoint.</td>
 </tr>
 </tbody></table>
@@ -46764,18 +46804,20 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the pool temperature has changed.</p>
 
-<h3 id='pool-protocol-notifications-pool_temp_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pool_temp_changed-name'>Name</h3>
 
 <p><code>POOL_TEMP_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>TEMPERATURE</code></td>
+<td>NUM</td>
 <td>New temperature value.</td>
 </tr>
 </tbody></table>
@@ -46792,7 +46834,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the pool heat mode has changed.</p>
 
-<h3 id='pool-protocol-notifications-pool_heatmode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pool_heatmode_changed-name'>Name</h3>
 
 <p><code>POOL_HEATMODE_CHANGED ()</code></p>
 
@@ -46826,7 +46868,7 @@ Should be true (false by default) when the pool controller device provides aux l
 </code></pre></div>
 <h2 id='pool-protocol-notifications-pool_heatmode_list_changed'>POOL_HEATMODE_LIST_CHANGED</h2>
 <p>Sent to the proxy to indicate that the pool heat mode list has changed.</p>
-<h3 id='pool-protocol-notifications-pool_heatmode_list_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pool_heatmode_list_changed-name'>Name</h3>
 
 <p><code>POOL_HEATMODE_LIST_CHANGED ()</code></p>
 
@@ -46861,7 +46903,7 @@ Should be true (false by default) when the pool controller device provides aux l
 </code></pre></div>
 <h2 id='pool-protocol-notifications-pump_mode_changed'>PUMP_MODE_CHANGED</h2>
 <p>Sent to the proxy to indicate that the pump mode has changed.</p>
-<h3 id='pool-protocol-notifications-pump_mode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-pump_mode_changed-name'>Name</h3>
 
 <p><code>PUMP_MODE_CHANGED ()</code></p>
 
@@ -46869,10 +46911,12 @@ Should be true (false by default) when the pool controller device provides aux l
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>PUMPMODE</code></td>
+<td>BOOL</td>
 <td>From <code>&lt;pool_pumpmodes&gt;</code>True/False</td>
 </tr>
 </tbody></table>
@@ -46889,18 +46933,20 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the Temperature scale has changed.</p>
 
-<h3 id='pool-protocol-notifications-scale_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-scale_changed-name'>Name</h3>
 
 <p><code>SCALE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SCALE</code></td>
+<td>STR</td>
 <td>“C” or “F”</td>
 </tr>
 </tbody></table>
@@ -46917,7 +46963,7 @@ Should be true (false by default) when the pool controller device provides aux l
 
 <p>Sent to the proxy to indicate that the spa heat mode has changed.</p>
 
-<h3 id='pool-protocol-notifications-spa_heatmode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_heatmode_changed-name'>Name</h3>
 
 <p><code>SPA_HEATMODE_CHANGED ()</code></p>
 
@@ -46950,7 +46996,7 @@ mode: OFF | ON | ENABLED
 </code></pre></div>
 <h2 id='pool-protocol-notifications-spa_heatmodes_list_changed'>SPA_HEATMODES_LIST_CHANGED</h2>
 <p>This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa heat modes has changed.</p>
-<h3 id='pool-protocol-notifications-spa_heatmodes_list_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_heatmodes_list_changed-name'>Name</h3>
 
 <p><code>SPA_HEATMODES_LIST_CHANGED ()</code></p>
 
@@ -46981,18 +47027,20 @@ mode: OFF | ON | ENABLED
 </code></pre></div>
 <h2 id='pool-protocol-notifications-spa_mode_changed'>SPA_MODE_CHANGED</h2>
 <p>Sent to the proxy to indicate whether the ‘Spa’ Aux button on the right side of the UI is On or Off.</p>
-<h3 id='pool-protocol-notifications-spa_mode_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_mode_changed-name'>Name</h3>
 
 <p><code>SPA_MODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SPAMODE</code></td>
+<td>BOOL</td>
 <td>From <code>&lt;spa_pumpmodes&gt;</code>True/False</td>
 </tr>
 </tbody></table>
@@ -47009,7 +47057,7 @@ mode: OFF | ON | ENABLED
 
 <p>This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa pump modes has changed</p>
 
-<h3 id='pool-protocol-notifications-spa_pumpmodes_list_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_pumpmodes_list_changed-name'>Name</h3>
 
 <p><code>SPA_PUMPMODES_LIST_CHANGED ()</code></p>
 
@@ -47017,11 +47065,13 @@ mode: OFF | ON | ENABLED
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SPA_PUMPMODES </code></td>
-<td>Comma delimited list.</td>
+<td>LIST</td>
+<td>Comma delimited list of available spa pump modes.</td>
 </tr>
 </tbody></table>
 
@@ -47033,18 +47083,20 @@ mode: OFF | ON | ENABLED
 
 <p>Sent to the proxy to indicate that the temperature setpoint on the spa controller has changed.</p>
 
-<h3 id='pool-protocol-notifications-spa_setpoint_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_setpoint_changed-name'>Name</h3>
 
 <p><code>SPA_SETPOINT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>SETPOINT</code></td>
+<td>NUM</td>
 <td>New setpoint value.</td>
 </tr>
 </tbody></table>
@@ -47061,18 +47113,20 @@ mode: OFF | ON | ENABLED
 
 <p>Sent to the proxy to indicate that the spa temperature has changed.</p>
 
-<h3 id='pool-protocol-notifications-spa_temp_changed-signature'>Signature</h3>
+<h3 id='pool-protocol-notifications-spa_temp_changed-name'>Name</h3>
 
 <p><code>SPA_TEMP_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>TEMPERATURE</code></td>
+<td>NUM</td>
 <td>New temperature value.</td>
 </tr>
 </tbody></table>
