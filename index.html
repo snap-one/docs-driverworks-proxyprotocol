@@ -44885,7 +44885,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Lock if status is unlocked. Called by bound relay.</p>
 
-<h3 id='lock-proxy-commands-close-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-close-name'>Name</h3>
 
 <p><code>CLOSE ()</code></p>
 
@@ -44901,7 +44901,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Deletes a user.</p>
 
-<h3 id='lock-proxy-commands-delete_user-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-delete_user-name'>Name</h3>
 
 <p><code>DELETE_USER ()</code></p>
 
@@ -44917,7 +44917,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Edits the user&#39;s schedule and status.</p>
 
-<h3 id='lock-proxy-commands-edit_user-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-edit_user-name'>Name</h3>
 
 <p><code>ADD_USER ()</code></p>
 
@@ -44925,67 +44925,83 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th style="text-align: left"></th>
 </tr>
 </thead><tbody>
 <tr>
 <td>int</td>
 <td>USER ID</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>USER NAME</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>PASSCODE</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
 </tr>
 <tr>
 <td>int</td>
 <td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
 </tr>
 </tbody></table>
 
@@ -44997,7 +45013,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Lock if status is unlocked. </p>
 
-<h3 id='lock-proxy-commands-lock-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-lock-name'>Name</h3>
 
 <p><code>LOCK ()</code></p>
 
@@ -45013,7 +45029,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Unlock if status is unlocked. Called by bound relay.</p>
 
-<h3 id='lock-proxy-commands-open-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-open-name'>Name</h3>
 
 <p><code>OPEN ()</code></p>
 
@@ -45029,7 +45045,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-capability_changed"><code>CAPABILITY_CHANGED</code></a>being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-request_capabilities-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-request_capabilities-name'>Name</h3>
 
 <p><code>REQUEST_CAPABILITIES ()</code></p>
 
@@ -45045,7 +45061,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-request_custom_settings-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-request_custom_settings-name'>Name</h3>
 
 <p><code>REQUEST_CUSTOM_SETTINGS ()</code></p>
 
@@ -45061,7 +45077,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-history"><code>HISTORY</code></a> being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-request_custom_settings-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-request_custom_settings-name'>Name</h3>
 
 <p><code>REQUEST_HISTORY ()</code></p>
 
@@ -45077,7 +45093,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-settings"><code>SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-request_settings-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-request_settings-name'>Name</h3>
 
 <p><code>REQUEST_SETTINGS ()</code></p>
 
@@ -45093,7 +45109,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-users"><code>USERS</code></a> being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-request_users-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-request_users-name'>Name</h3>
 
 <p><code>REQUEST_USERS ()</code></p>
 
@@ -45109,7 +45125,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the lock&#39;s administrator code.</p>
 
-<h3 id='lock-proxy-commands-set_admn_code-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_admn_code-name'>Name</h3>
 
 <p><code>PSET_ADMIN_CODE ()</code></p>
 
@@ -45117,11 +45133,13 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>PASSCODE</td>
+<td>STR</td>
+<td>Admin code</td>
 </tr>
 </tbody></table>
 
@@ -45133,19 +45151,21 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the number of seconds to wait before locking automatically after unlocked. A value of 0 means do not auto lock. Range determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_auto_lock_seconds-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_auto_lock_seconds-name'>Name</h3>
 
 <p><code>SET_AUTO_LOCK_SECONDS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>unti</td>
-<td>SECONDSE</td>
+<td>SECONDS</td>
+<td>NUM</td>
+<td>Number of seconds</td>
 </tr>
 </tbody></table>
 
@@ -45157,23 +45177,26 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>This command results in the Protocol Notification <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#lock-protocol-notifications-custom_settings"><code>CUSTOM_SETTINGS</code></a> being sent from the Protocol to the Proxy.</p>
 
-<h3 id='lock-proxy-commands-set_custom_settings-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_custom_settings-name'>Name</h3>
 
 <p><code>SET_CUSTOM_SETTINGS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NAME: Required.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Required.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>VALUE: Required. Value type must be converted based on custom setting type.</td>
+<td>VALUE</td>
+<td>STR</td>
+<td>Required. Value type must be converted based on custom setting type.</td>
 </tr>
 </tbody></table>
 
@@ -45185,19 +45208,21 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the lock&#39;s language. Values determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_language-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_language-name'>Name</h3>
 
 <p><code>SET_ LANGUAGE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>LANGUAGE.</td>
+<td>LANGUAGE</td>
+<td>STR</td>
+<td>Lock language.</td>
 </tr>
 </tbody></table>
 
@@ -45209,19 +45234,21 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the lock’s mode. The supported modes are determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_lock_mode-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_lock_mode-name'>Name</h3>
 
 <p><code>SET_ LOCK_MODE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MODE: Required: normal</td>
+<td>MODE</td>
+<td>STR</td>
+<td style="text-align: left">MODE: Required: normal, vacation</td>
 </tr>
 </tbody></table>
 
@@ -45233,7 +45260,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>For lock’s that have internal log storage, sets whether or not to log failed attempts.</p>
 
-<h3 id='lock-proxy-commands-set_log_failed_attempts-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_log_failed_attempts-name'>Name</h3>
 
 <p><code>SET_LOG_FAILED_ATTEMPTS ()</code></p>
 
@@ -45257,19 +45284,21 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>For locks that have internal log storage, set the maximum number of log items to store. Range determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_number_log_items-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_number_log_items-name'>Name</h3>
 
 <p><code>SET_NUMBER_LOG_ITEMS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>unit</td>
-<td>count</td>
+<td>NUM</td>
+<td>Log count</td>
 </tr>
 </tbody></table>
 
@@ -45281,7 +45310,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set whether or not keypad activation will extend bolt if unlocked.</p>
 
-<h3 id='lock-proxy-commands-set_one_touch_locking-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_one_touch_locking-name'>Name</h3>
 
 <p><code>SET_ONE_TOUCH_LOCKING ()</code></p>
 
@@ -45305,7 +45334,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Disable or enable all user passcode access.</p>
 
-<h3 id='lock-proxy-commands-set_scheduled_lockout_enabled-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_scheduled_lockout_enabled-name'>Name</h3>
 
 <p><code>SET_SCHEDULED_LOCKOUT_ENABLED ()</code></p>
 
@@ -45329,7 +45358,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the number of seconds to wait after wrong code attempts has been reached. Range determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_shut_out_timer-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_shut_out_timer-name'>Name</h3>
 
 <p><code>SET_SHUT_OUT_TIMER ()</code></p>
 
@@ -45353,7 +45382,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Set the number of failed passcode attempts before users are temporarily shut out. Range determined by capabilities.</p>
 
-<h3 id='lock-proxy-commands-set_wrong_code_attempts-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_wrong_code_attempts-name'>Name</h3>
 
 <p><code>SET_WRONG_CODE_ATTEMPTS ()</code></p>
 
@@ -45377,9 +45406,9 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sets the lock’s volume.</p>
 
-<h3 id='lock-proxy-commands-set_volume-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-set_volume-name'>Name</h3>
 
-<p><code>SET_ VOLUME ()</code></p>
+<p><code>SET_VOLUME ()</code></p>
 
 <table><thead>
 <tr>
@@ -45401,7 +45430,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Toggle the state of the lock. If the lock status is unknown or default, the resulting status is indeterminable</p>
 
-<h3 id='lock-proxy-commands-toggle-signature'>Signature</h3>
+<h3 id='lock-proxy-commands-toggle-name'>Name</h3>
 
 <p><code>TOGGLE ()</code></p>
 
@@ -45434,19 +45463,21 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent when battery status changed.</p>
 
-<h3 id='lock-protocol-notifications-battery_status_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-battery_status_changed-name'>Name</h3>
 
 <p><code>BATTERY_STATUS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>BATTERY STATUS: Required parameter: normal, warning, or critical. Fires Events: BatteryNormal, BatteryWarning, BatteryCritical.</td>
+<td>BATTERY STATUS</td>
+<td>STR</td>
+<td>Required parameter: normal, warning, or critical. Fires Events: BatteryNormal, BatteryWarning, BatteryCritical.</td>
 </tr>
 </tbody></table>
 
@@ -45454,23 +45485,26 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent when a capability changes; or when requested by the protocol driver command <code>REQUEST_CAPABILITES</code>, and a capability has changed from what is defined in the driver capabilities XML</p>
 
-<h3 id='lock-protocol-notifications-capability_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-capability_changed-name'>Name</h3>
 
-<p><code>CCAPABILITY_CHANGED ()</code></p>
+<p><code>CAPABILITY_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NAME: Required parameter: The name of the setting is its XML tag as defined in <code>&lt;lock_setup&gt;</code>.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Required parameter: The name of the setting is its XML tag as defined in <code>&lt;lock_setup&gt;</code>.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>VALUE: Required parameter: The capabilities new value.</td>
+<td>VALUE</td>
+<td>STR</td>
+<td>Required parameter: The capabilities new value.</td>
 </tr>
 </tbody></table>
 
@@ -45478,7 +45512,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent in response to the command <code>REQUEST_HISTORY</code>.</p>
 
-<h3 id='lock-protocol-notifications-history-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-history-name'>Name</h3>
 
 <p><code>HISTORY ()</code></p>
 
@@ -45502,7 +45536,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 </code></pre></div>
 <h2 id='lock-protocol-notifications-custom_settings'>CUSTOM_SETTINGS</h2>
 <p>Sent in response to the command <code>REQUEST_CUSTOM_SETTINGS</code>.</p>
-<h3 id='lock-protocol-notifications-custom_settings-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-custom_settings-name'>Name</h3>
 
 <p><code>CUSTOM_SETTINGS ()</code></p>
 
@@ -45531,7 +45565,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 </code></pre></div>
 <h2 id='lock-protocol-notifications-custom_settings_changed'>CUSTOM_SETTINGS_CHANGED</h2>
 <p>Sent in when a custom setting changes</p>
-<h3 id='lock-protocol-notifications-custom_settings_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-custom_settings_changed-name'>Name</h3>
 
 <p><code>CUSTOM_SETTINGS_CHANGED ()</code></p>
 
@@ -45547,31 +45581,36 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent in when a lock status changes for any reason.</p>
 
-<h3 id='lock-protocol-notifications-lock_status_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-lock_status_changed-name'>Name</h3>
 
 <p><code>LOCK_STAUS_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>LOCK STATUS: Required parameter: unknown, locked, unlocked, or fault.</td>
+<td>LOCK STATUS</td>
+<td>STR</td>
+<td style="text-align: left">Required parameter: unknown, locked, unlocked, or fault.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>LAST ACTION DESCRIPTION: Optional parameter.</td>
+<td>LAST ACTION DESCRIPTION</td>
+<td>STR</td>
+<td style="text-align: left">Optional parameter.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>SOURCE: Optional parameter: the source that affected the status change.</td>
+<td>SOURCE</td>
+<td>STR</td>
+<td style="text-align: left">Optional parameter: the source that affected the status change.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>MANUAL: Optional parameter: true</td>
+<td>MANUAL</td>
+<td>BOOL</td>
+<td style="text-align: left">Optional parameter: true, false, assumed false if not specified.</td>
 </tr>
 </tbody></table>
 
@@ -45583,7 +45622,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent in response to the command <code>REQUEST_SETTINGS</code>.</p>
 
-<h3 id='lock-protocol-notifications-settings-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-settings-name'>Name</h3>
 
 <p><code>SETTINGS ()</code></p>
 
@@ -45611,7 +45650,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 </code></pre></div>
 <h2 id='lock-protocol-notifications-settings_changed'>SETTINGS_CHANGED</h2>
 <p>Sent when a setting changes.</p>
-<h3 id='lock-protocol-notifications-settings_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-settings_changed-name'>Name</h3>
 
 <p><code>SETTINGS_CHANGED ()</code></p>
 
@@ -45635,7 +45674,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent in response to the command <code>REQUEST_HISTORY</code>.</p>
 
-<h3 id='lock-protocol-notifications-users-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-users-name'>Name</h3>
 
 <p><code>USERS ()</code></p>
 
@@ -45651,7 +45690,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent when a user is added.</p>
 
-<h3 id='lock-protocol-notifications-user_added-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-user_added-name'>Name</h3>
 
 <p><code>USER_ADDED ()</code></p>
 
@@ -45659,67 +45698,83 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th style="text-align: left"></th>
 </tr>
 </thead><tbody>
 <tr>
 <td>int</td>
 <td>USER ID</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>USER NAME</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>PASSCODE</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
 </tr>
 <tr>
 <td>int</td>
 <td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
 </tr>
 </tbody></table>
 
@@ -45731,7 +45786,7 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent when a user setting is changed.</p>
 
-<h3 id='lock-protocol-notifications-user_changed-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-user_changed-name'>Name</h3>
 
 <p><code>USER_CHANGED ()</code></p>
 
@@ -45739,67 +45794,83 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th style="text-align: left"></th>
 </tr>
 </thead><tbody>
 <tr>
 <td>int</td>
 <td>USER ID</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>USER NAME</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>PASSCODE</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS ACTIVE: Optional, true</td>
+<td style="text-align: left">false. A user can be enabled or disabled without affecting schedule. Defaults to true.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>SCHEDULED DAYS: Comma delimited BOOLEAN. Optional. Sunday – Saturday, true</td>
+<td style="text-align: left">false. Defaults all true.</td>
 </tr>
 <tr>
 <td>int</td>
 <td>START DAY:  1-31.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START MONTH: 1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END DAY: 1-31</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END MONTH:  1-12.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END YEAR:  YYYY.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>START TIME:  optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>int</td>
 <td>END TIME: optional, minutes from midnight.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td>str</td>
 <td>SCHEDULE TYPE: Optional. daily</td>
+<td style="text-align: left">date range. A daily schedule will specify <code>SCHEDULED_DAYS</code>. A <code>date_range</code> will specify a start date and an end date. Both schedule types may be restricted to a <code>START_TIME</code> and <code>END_TIME</code>. Defaults to daily.</td>
 </tr>
 <tr>
 <td>bool</td>
 <td>IS RESTRICTED SCHEDULE: Optional, true/false. Specifies whether or not to enforce the user’s schedule. Defaults to false.</td>
+<td style="text-align: left"></td>
 </tr>
 </tbody></table>
 
@@ -45811,23 +45882,26 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
 
 <p>Sent when a user setting is deleted.</p>
 
-<h3 id='lock-protocol-notifications-user_deleted-signature'>Signature</h3>
+<h3 id='lock-protocol-notifications-user_deleted-name'>Name</h3>
 
 <p><code>USER_DELETED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
 <td>USER ID</td>
+<td>INT</td>
+<td>User ID</td>
 </tr>
 <tr>
-<td>str</td>
 <td>USER NAME</td>
+<td>STR</td>
+<td>User Name</td>
 </tr>
 </tbody></table>
 
