@@ -1,13 +1,13 @@
 ## ZONE\_STATE
 
-Reports if a specific zone is open/closed and bypassed/unbypassed.
+Reports if a specific zone is open/closed and bypassed/un-bypassed.
 
 
-| Parameter | Description |
-| --- | --- |
-| num | ZONE\_ID: Number |
-| bool | ZONE\_OPEN: "true" if the zone is opened. "false" if it is closed. |
-| bool | ZONE\_BYPASSED: "true" if the zone is bypassed. "false" if it is not bypassed. |
+| Parameter     | Description | Description                                                    |
+| ------------- | ----------- | -------------------------------------------------------------- |
+| ZONE ID       | NUM         | Number                                                         |
+| ZONE OPEN     | BOOL        | "true" if the zone is opened. "false" if it is closed.         |
+| ZONE BYPASSED | BOOL        | "true" if the zone is bypassed. "false" if it is not bypassed. |
 
 
 ### Example

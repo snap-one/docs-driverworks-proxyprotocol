@@ -3,9 +3,9 @@
 Tells the proxy that a particular zone is no longer a part of this partition.
 
 
-| Parameter | Description |
-| --- | --- |
-| num | ZONE\_ID: The zone ID of the zone to be removed from the partition's zone list. |
+| Parameter | Type | Description                                                           |
+| --------- | ---- | --------------------------------------------------------------------- |
+| ZONE ID   | NUM  | The zone ID of the zone to be removed from the partition's zone list. |
 
 
 ### Example
