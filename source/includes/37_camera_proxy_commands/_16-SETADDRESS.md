@@ -8,9 +8,9 @@ Set the camera address.
 `SET_ADDRESS ()`
 
 
-| Parameter | Description    |
-| --------- | -------------- |
-| STR       | Camera Address |
+| Parameter | Type | Description    |
+| --------- | ---- | -------------- |
+|           | STR  | Camera Address |
 
 
 ### Returns
