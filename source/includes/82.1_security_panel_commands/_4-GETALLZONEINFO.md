@@ -8,12 +8,12 @@ Request to return information about each zone on the panel. The information cons
 `None`
 
 
-| Return | Description |
-| --- | --- |
-| int | Zone ID |
-|str | Zone Name |
-| int | Zone Type ID |
-| table | Partitions the Zone is included in. |
-| bool | True, False: True if Zone can be bypassed. |
-| bool | True, False: True if Zone is currently Open. |
-| str | State |
+| Return    | Type  | Description                                  |
+| --------- | ----- | -------------------------------------------- |
+| ZONE ID   | INT   | Zone ID                                      |
+| ZONE NAME | STR   | Zone Name                                    |
+| ZONE TYPE | INT   | Zone Type ID                                 |
+|           | TABLE | Partitions the Zone is included in.          |
+|           | BOOL  | True, False: True if Zone can be bypassed.   |
+|           | TBOOL | True, False: True if Zone is currently Open. |
+| State     | STR   | State                                        |

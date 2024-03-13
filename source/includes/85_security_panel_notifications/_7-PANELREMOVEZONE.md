@@ -3,9 +3,9 @@
 Remove a zone from the panel.  
 
 
-| Parameter | Description |
-| --- | --- |
-| num | ID: ID of the target zone. |
+| Parameter | Description | Description            |
+| --------- | ----------- | ---------------------- |
+| ID        | NUM         | ID of the target zone. |
 
 
 ### Example

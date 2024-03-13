@@ -7,8 +7,8 @@ Request to return information about each PGM active on the panel.  The informati
 `None`
 
 
-| Return | Description |
-| --- | --- |
-| int | PGM ID |
-| bool | True, False: True if PGM is Open. |
+| Return | Description | Description                       |
+| ------ | ----------- | --------------------------------- |
+| PGM ID | INT         | PGM ID                            |
+|        | BOOL        | True, False: True if PGM is Open. |
 

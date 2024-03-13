@@ -3,9 +3,9 @@
 Remove a PGM (relay) from the panel.
 
 
-| Parameter | Description |
-| --- | --- |
-| num | PGM\_ID: ID of the PGM being removed |
+| Parameter | Type | Description                 |
+| --------- | ---- | --------------------------- |
+| PGM ID    | NUM  | ID of the PGM being removed |
 
 
 ### Example

@@ -7,9 +7,9 @@ Request to return information to the panel proxy about each of its partitions.  
 `None`
 
 
-| Return | Description |
-| --- | --- |
-| int | Partition ID |
-| bool | True, False: True if this partition is Open. |
-| int | Binding ID |
-| str | State |
+| Return       | Type | Description                                  |
+| ------------ | ---- | -------------------------------------------- |
+| Partition ID | INT  | Partition ID                                 |
+|              | BOOL | True, False: True if this partition is Open. |
+| Binding ID   | INT  | Binding ID                                   |
+| State        | STR  | State                                        |

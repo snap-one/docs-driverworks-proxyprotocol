@@ -3,9 +3,9 @@
 Clear the trouble flag.  
 
 
-| Parameter | Description |
-| --- | --- |
-| num | IDENTIFIER:  Unique number for the trouble instance that has been resolved. | \_ 
+| Parameter  | Type | Description                                                    |
+| ---------- | ---- | :------------------------------------------------------------- |
+| IDENTIFIER | NUM  | Unique number for the trouble instance that has been resolved. |
 
 
 ### Example

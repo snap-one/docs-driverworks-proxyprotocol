@@ -3,9 +3,9 @@
 Add a PGM (relay) to the panel.
 
 
-| Parameter | Description |
-| --- | --- |
-| num | PGM\_ID: ID of the new PGM |
+| Parameter | Description | Description       |
+| --------- | ----------- | ----------------- |
+| PGM ID    | NUM         | ID of the new PGM |
 
 
 ### Example
