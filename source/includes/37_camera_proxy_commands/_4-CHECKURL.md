@@ -10,7 +10,7 @@ Composer Pro command used in the Camera Test/Validation area. Verifies the camer
 
 | Parameter | Type | Description                       |
 | --------- | ---- | --------------------------------- |
-| A Mode    | STR  | A Mode: SNAPSHOT, MJPEG OR H264   |
+| Mode      | STR  | SNAPSHOT, MJPEG OR H264           |
 | Address   | STR  | Address. The address to verify.   |
 | Port ID   | INT  | Port ID to verify.                |
 | Query     | STR. | Query. The path/query of the URL. |

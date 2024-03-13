@@ -8,9 +8,9 @@ Tell the fan which direction to spin.  This command would only be valid if the `
 `SET_DIRECTION ()`
 
 
-| Parameter | Description     |
-| --------- | --------------- |
-| str       | FORWARD/REVERSE |
+| Parameter | Description         |
+| --------- | ------------------- |
+| str       | “FORWARD” “REVERSE” |
 
 
 

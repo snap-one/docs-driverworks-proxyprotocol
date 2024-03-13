@@ -8,9 +8,9 @@ Specifies which fan preset value should be the default one to go to when an ON o
 `DESIGNATE_PRESET ()`
 
 
-| Parameter | Type | Description                |
-| --------- | ---- | -------------------------- |
-| PRESET    | NUM  | PRESET valid values: 1 – N |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| PRESET    | NUM  | PRESET value. Valid values: 1 – N |
 
 
 ### Returns
