@@ -3,14 +3,14 @@
 Disable or enable all user passcode access.
 
 
-### Signature
+### Name
 
 `SET_SCHEDULED_LOCKOUT_ENABLED ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| bool | true/false |
+| --------- | ----------- |
+| bool      | true/false  |
 
 
 ### Returns

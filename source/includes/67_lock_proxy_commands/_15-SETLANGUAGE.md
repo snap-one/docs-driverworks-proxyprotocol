@@ -3,14 +3,14 @@
 Set the lock's language. Values determined by capabilities.
 
 
-### Signature
+### Name
 
 `SET_ LANGUAGE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | LANGUAGE. |
+| Parameter | Type | Description    |
+| --------- | ---- | -------------- |
+| LANGUAGE  | STR  | Lock language. |
 
 
 

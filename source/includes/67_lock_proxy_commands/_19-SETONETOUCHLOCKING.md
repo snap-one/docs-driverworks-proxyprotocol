@@ -3,14 +3,14 @@
 Set whether or not keypad activation will extend bolt if unlocked.
 
 
-### Signature
+### Name
 
 `SET_ONE_TOUCH_LOCKING ()`
 
 
 | Parameter | Description |
-| --- | --- |
-| bool | true/false |
+| --------- | ----------- |
+| bool      | true/false  |
 
 
 ### Returns

@@ -3,15 +3,15 @@
 This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being sent from the Protocol to the Proxy.
 
 
-### Signature
+### Name
 
 `SET_CUSTOM_SETTINGS ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | NAME: Required. |
-| str | VALUE: Required. Value type must be converted based on custom setting type. |
+| Parameter | Type | Description                                                          |
+| --------- | ---- | -------------------------------------------------------------------- |
+| NAME      | STR  | Required.                                                            |
+| VALUE     | STR  | Required. Value type must be converted based on custom setting type. |
 
 
 ### Returns

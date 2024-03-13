@@ -3,7 +3,7 @@
 This command results in the Protocol Notification [`CUSTOM_SETTINGS`][1] being sent from the Protocol to the Proxy.
 
 
-### Signature
+### Name
 
 `REQUEST_CUSTOM_SETTINGS ()`
 

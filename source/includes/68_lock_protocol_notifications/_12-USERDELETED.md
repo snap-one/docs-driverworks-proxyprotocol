@@ -3,15 +3,15 @@
 Sent when a user setting is deleted.
 
 
-### Signature
+### Name
 
 `USER_DELETED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | USER ID |
-| str | USER NAME |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| USER ID   | INT  | User ID     |
+| USER NAME | STR  | User Name   |
 
 
 ### Returns

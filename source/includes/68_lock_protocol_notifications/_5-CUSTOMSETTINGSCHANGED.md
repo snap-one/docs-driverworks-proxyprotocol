@@ -3,7 +3,7 @@
 Sent in when a custom setting changes
 
 
-### Signature
+### Name
 
 `CUSTOM_SETTINGS_CHANGED ()`
 

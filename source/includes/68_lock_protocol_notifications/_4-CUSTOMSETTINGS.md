@@ -3,7 +3,7 @@
 Sent in response to the command `REQUEST_CUSTOM_SETTINGS`.
 
 
-### Signature
+### Name
 
 `CUSTOM_SETTINGS ()`
 

@@ -3,7 +3,7 @@
 Lock if status is unlocked. 
 
 
-### Signature
+### Name
 
 `LOCK ()`
 

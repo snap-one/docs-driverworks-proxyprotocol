@@ -3,14 +3,14 @@
 Set the lock’s mode. The supported modes are determined by capabilities.
 
 
-### Signature
+### Name
 
 `SET_ LOCK_MODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | MODE: Required: normal|vacation|privacy. |
+| Parameter | Type | Description                      |
+| --------- | ---- | :------------------------------- |
+| MODE      | STR  | MODE: Required: normal, vacation |
 
 
 

@@ -3,7 +3,7 @@
 Sent in response to the command `REQUEST_HISTORY`.
 
 
-### Signature
+### Name
 
 `HISTORY ()`
 

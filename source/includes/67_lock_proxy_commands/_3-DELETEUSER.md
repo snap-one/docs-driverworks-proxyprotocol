@@ -3,7 +3,7 @@
 Deletes a user.
 
 
-### Signature
+### Name
 
 `DELETE_USER ()`
 

@@ -3,7 +3,7 @@
 Unlock if status is unlocked. Called by bound relay.
 
 
-### Signature
+### Name
 
 `OPEN ()`
 

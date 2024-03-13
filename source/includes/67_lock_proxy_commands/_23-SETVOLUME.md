@@ -3,14 +3,14 @@
 Sets the lock’s volume.
 
 
-### Signature
+### Name
 
-`SET_ VOLUME ()`
+`SET_VOLUME ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | high/low/silent |
+| Parameter | Description     |
+| --------- | --------------- |
+| str       | high/low/silent |
 
 
 

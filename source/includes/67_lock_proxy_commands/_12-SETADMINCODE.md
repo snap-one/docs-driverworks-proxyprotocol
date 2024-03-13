@@ -3,14 +3,14 @@
 Set the lock's administrator code.
 
 
-### Signature
+### Name
 
 `PSET_ADMIN_CODE ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | PASSCODE |
+| Parameter | Description | Description |
+| --------- | ----------- | ----------- |
+| PASSCODE  | STR         | Admin code  |
 
 
 ### Returns
