@@ -5,7 +5,7 @@ Used to update capabilities and proxy functionality without requiring a differen
 Example for parameters are `Notify("supports_broadcast_scenes=true","dimmer=true"`  
 
 
-### Signature
+### Name
 
 `DYANAMIC_CAPABILITIES_CHANGED ()`
 
@@ -16,27 +16,27 @@ DYNAMIC\_CAPABILITIES\_CHANGED requires different parameters base on capability:
 
 **Supports Zigbee Broadcast Scenes**
 
-| Name | Value |
-| --- | --- |
-|supports\_broadcast\_scenes | true/false
+| Parameter                 | Type | Description                      |
+| ------------------------- | ---- | -------------------------------- |
+| supports broadcast scenes | BOOL | Supports Zigbee Broadcast Scenes |
 
 
 **Level Target Support **
 
 If the driver supports the new level target API: LIGHT\_BRIGHTNESS\_CHANGING and LIGHT\_BRIGHTNESS\_CHANGED. This provides better light level tracking for UI's, ALS Scenes, and Composer Programming interaction by allowing drivers to specify the current level, their target level and the number of milliseconds it will take for the light to reach the target level.  
 
-| Name | Value |
-| --- | --- |
-| supports\_target | true/false |
+| Parameter       | Type | Description                       |
+| --------------- | ---- | --------------------------------- |
+| supports target | BOOL | Supports the new level target API |
 
 
 **Dimmer**
 
 Used to change if a light is a dimmer or switch at any time. This is very useful for having a single driver provide both functionality depending on what hardware is connected or detected.  Can also provide a dealer the ability to make a dimmer act as a switch for UI's and system functionality.
 
-| Name | Value |
-| --- | --- |
-| dimmer | true/false |
+| Parameter | Type | Description                                   |
+| --------- | ---- | --------------------------------------------- |
+| dimmer    | BOOL | If a light is a dimmer or switch at any time. |
 
 Note: If true, updates the following feature capabilities:
 
@@ -53,105 +53,105 @@ If false - Sets the following:
 
 **Supports Brightness Stop**
 
-| Name | Value |
-| --- | --- |
-| dimmer | true/false |
-| supports\_brightness\_stop | true/false |
+| Parameter                | Type       | Description |
+| ------------------------ | ---------- | ----------- |
+| dimmer                   | BOOL       |             |
+| supports brightness stop | true/false |             |
 
 
 **Ramp Level **
 
-| Name | Value |
-| --- | --- |
-| ramp\_level | true/false |
+| Parameter  | Type | Description        |
+| ---------- | ---- | ------------------ |
+| ramp level | BOOL | Support ramp level |
 
 
 **Default Brightness Rate Min**
 
-| Name | Value |
-| --- | --- |
-| brightness\_rate\_min | 0-INT16\_MAX |
+| Parameter           | Type | Description |
+| ------------------- | ---- | ----------- |
+| brightness rate min | INT  | 0-INT16 MAX |
 
 
 **Default Brightness Rate Max**
 
-| Name | Value |
-| --- | --- |
-| brightness\_rate\_max | 0-INT16\_MAX |
+| Parameter           | Type | Description |
+| ------------------- | ---- | ----------- |
+| brightness rate max | INT  | 0-INT16 MAX |
 
 
 **Supports Color**
 
-| Name | Value |
-| --- | --- |
-| supports\_color | true/false |
+| Parameter      | Type | Description    |
+| -------------- | ---- | -------------- |
+| supports color | BOOL | Supports color |
 
 
 **Supports Color Correlated Temperature **
 
-| Name | Value |
-| --- | --- | 
-| supports\_color\_correlated\_temperature | true/false |
+| Parameter                             | Type       | Description                           |
+| ------------------------------------- | ---------- | ------------------------------------- |
+| supports color correlated temperature | true/false | Supports color correlated temperature |
 
 
 **Color Temperature Correlated Min** 
 
 What is the lowest supported CCT value. Must be increment of 10. Set both min/max to the same value if the CCT value can not be changed.
 
-| Name | Value |
-| --- | --- |
-| color\_correlated\_temperature\_min | 500-20000 |
+| Parameter                        | Type      | Description                |
+| -------------------------------- | --------- | -------------------------- |
+| color correlated temperature min | 500-20000 | Lowest supported CCT value |
 
 
 **Color Temperature Correlated Max** 
 
 What is the highest supported CCT value. Must be increment of 10. Set both min/max to the same value if the CCT value can not be changed.
 
-| Name | Value |
-| --- | --- |
-| color\_correlated\_temperature\_max | 500-20000 |
+| Parameter                        | Type      | Description                 |
+| -------------------------------- | --------- | --------------------------- |
+| color correlated temperature max | 500-20000 | Highest supported CCT value |
 
 
 **Supports Color Stop**
 
-| Name | Value |
-| --- | --- |
-| supports\_color\_stop | true/false |
+| Parameter           | Type | Description         |
+| ------------------- | ---- | ------------------- |
+| supports color stop | BOOL | Supports color stop |
 
 
 **Color Rate Behavior**
 
-| Name | Value |
-| --- | --- |
-| color\_rate\_behavior | Value. Values include: 0 - Unchangeable Rate, 1 - Device only supports one rate for brightness and color, 2 - Device supports ramping brightness and color at two different rates.|
+| Parameter           | Type                                                                                                                                                                               | Description         |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| color rate behavior | Value. Values include: 0 - Unchangeable Rate, 1 - Device only supports one rate for brightness and color, 2 - Device supports ramping brightness and color at two different rates. | Color Rate Behavior |
 
 
 **Default Color Rate Min**
 
-| Name | Value |
-| --- | --- |
-| color\_rate\_min | 0-INT16\_MAX|
+| Parameter      | Type | Description |
+| -------------- | ---- | ----------- |
+| color rate min | INT  | 0-INT16 MAX |
 
 
 **Default Color Rate Max**
 
-| Name | Value |
-| --- | --- |
-| color\_rate\_max | 0-INT16\_MAX |
+| Parameter      | Type | Description |
+| -------------- | ---- | ----------- |
+| color rate max | 0INT | 0-INT16 MAX |
 
 
 **Color Trace Tolerance**
 
-| Name | Value |
-| --- | --- |
-|color\_trace\_tolerance | 0-20 \* See capability documentation for more information.|
+| Parameter             | Type | Description                                               |
+| --------------------- | ---- | --------------------------------------------------------- |
+| color trace tolerance | NUM  | 0-20 * See capability documentation for more information. |
 
 
 **Has Extras**
 
-| Name | Value |
-| --- | --- |
-| has\_extras | true/false |
+| Parameter  | Type | Description |
+| ---------- | ---- | ----------- |
+| has extras | BOOL |             |
 
 
 ### Returns

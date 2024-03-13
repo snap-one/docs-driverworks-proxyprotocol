@@ -2,15 +2,15 @@
 
 Received when group start hold ramp operation.
 
-### Signature
+### Name
 
 `GROUP_START_RAMP ()`
 
-| Parameter | Description |
-| --- | --- |
-| String | GROUP\_ID Driver ID of the Load Group |
-| String | RAMP\_UP Value 1 |
-| String | RATE Rate time in ms |
+| Parameter | Type | Description                          |
+| --------- | ---- | ------------------------------------ |
+| GROUP ID  | STR  | GROUP ID Driver ID of the Load Group |
+| RAMP UP   | STR  | RAMP UP Value 1                      |
+| RATE      | STR  | Rate time in ms                      |
 
 ### Returns
 

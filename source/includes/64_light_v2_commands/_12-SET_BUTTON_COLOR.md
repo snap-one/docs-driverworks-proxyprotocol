@@ -2,16 +2,16 @@
 
 Used to set the color for a particular button for when the light is on/off
 
-### Signature
+### Name
 
 `SET_BUTTON_COLOR ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| Number | BUTTON\_ID |\_
-| hex string | ON\_COLOR Optional. 6 character hex string, representing an RGB value. |\_ 
-| hex string | OFF\_COLOR Optional. 6 character hex string, representing an RGB value. |\_
+| Parameter | Type    | Description                                                  |
+| --------- | ------- | :----------------------------------------------------------- |
+| Number    | NUM     | BUTTON ID                                                    |
+| ON COLOR  | hex STR | Optional. 6 character hex string, representing an RGB value. |
+| OFF COLOR | hex STR | Optional. 6 character hex string, representing an RGB value. |
 
 
 ### Returns

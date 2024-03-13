@@ -2,16 +2,16 @@
 
 Used to tell the proxy that a button has been clicked multiple times.
 
-### Signature
+### Name
 
 `CLICK_COUNT ()`
 
 
 
-| Parameter | Description |
-| --- | --- |
-| int | BUTTON\_ID: Index of the button being controlled. |\_
-| int | COUNT: Number of clicks. |
+| Parameter | Type | Description                           |
+| --------- | ---- | :------------------------------------ |
+| BUTTON\ID | INT  | Index of the button being controlled. |
+| COUNT     | INT  | Number of clicks.                     |
 
 
 ### Returns

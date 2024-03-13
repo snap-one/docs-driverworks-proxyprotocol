@@ -2,13 +2,13 @@
 
 Received when group stop hold ramp.
 
-### Signature
+### Name
 
 `GROUP_STOP_RAMP ()`
 
-| Parameter | Description |
-| --- | --- |
-| String | GROUP\_ID Driver ID of the Load Group |
+| Parameter | Type | Description                 |
+| --------- | ---- | --------------------------- |
+| GROUP ID  | STR  | Driver ID of the Load Group |
 
 ### Returns
 

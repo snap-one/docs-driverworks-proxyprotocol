@@ -2,13 +2,13 @@
 
 Received when group is setting light level.
 
-### Signature
+### Name
 
 `GROUP_SET_LEVEL ()`
 
-| Parameter | Description |
-| --- | --- |
-| String | GROUP\_ID Driver ID of the Load Group |
-| String | LEVEL Light level to be set on the Light driver |
+| Parameter | Type | Description                               |
+| --------- | ---- | ----------------------------------------- |
+| GROUP ID  | STR  | Driver ID of the Load Group               |
+| LEVEL     | STR  | Light level to be set on the Light driver |
 
 `None`

@@ -2,13 +2,13 @@
 
 Received when Load Group driver pop the light driver from the group.
 
-### Signature
+### Name
 
 `LEAVE_GROUP`
 
-| Parameter | Description |
-| --- | --- |
-| String | GROUP\_ID Driver ID of the Load Group |
+| Parameter | Type | Description                          |
+| --------- | ---- | ------------------------------------ |
+| GROUP ID  | STR  | GROUP ID Driver ID of the Load Group |
 
 ### Returns
 

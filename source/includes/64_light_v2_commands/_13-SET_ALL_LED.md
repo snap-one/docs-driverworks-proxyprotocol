@@ -2,14 +2,14 @@
 
 Used to set the LED color of all the buttons on the device to one color (both on/off colors).
 
-### Signature
+### Name
 
 `SET_ALL_LED ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| hex string | COLOR: 6 character hex string, representing an RGB value. |
+| Parameter | Type    | Description                                               |
+| --------- | ------- | --------------------------------------------------------- |
+| COLOR     | hex STR | COLOR: 6 character hex string, representing an RGB value. |
 
 
 ### Returns

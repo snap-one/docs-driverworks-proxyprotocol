@@ -22,20 +22,20 @@ Beginning with 3.3.0, the LightV2 proxy 'Dim' and 'On' color presets can be chan
 The intention of this checkbox was to help reduce dealer confusion, but it added potential driver developer confusion. Upon 'disabling' the Dim color, Composer is just setting the Dim preset color to the On preset color. The LightV2 proxy always has an On and Dim preset defined, regardless of the checkbox in Composer being checked or unchecked. If Drivers want to know if this checkbox is 'checked' there isn't a 100% safe way to know. However, drivers could consider it potentially checked if the Dim and On preset colors are not the same color
 
 
-### Signature
+### Name
 
 `UPDATE_COLOR_PRESET ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| COMMAND | String. This will be one of the following strings:
-| | ADDED, MODIFIED, REMOVED. |
-| ID | Number. Preset ID. |
-| NAME | String. Name of the preset. |
-| COLOR\_X | Double - CIE 1931 Chromaticity Color. |
-| COLOR\_Y | Double - CIE 1931 Chromaticity Color. |
-| COLOR\_MODE | UInt - Color Mode (0 Full Color, 1 CCT) |
+| Parameter  | Type   | Description                                |
+| ---------- | ------ | ------------------------------------------ |
+| COMMAND    | STR    | This will be one of the following strings: |
+|            |        | ADDED, MODIFIED, REMOVED.                  |
+| ID         | NUM    | Preset ID.                                 |
+| NAME       | STR    | Name of the preset.                        |
+| COLOR X    | DOUBLE | CIE 1931 Chromaticity Color.               |
+| COLOR Y    | DOUBLE | CIE 1931 Chromaticity Color.               |
+| COLOR MODE | UInt   | Color Mode (0 Full Color, 1 CCT)           |
 
 
 ### Returns

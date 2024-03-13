@@ -2,15 +2,15 @@
 
 Received when group is ramping to level.
 
-### Signature
+### Name
 
 `GROUP_RAMP_TO_LEVEL ()`
 
-| Parameter | Description |
-| --- | --- |
-| String | GROUP\_ID Driver ID of the Load Group |
-| String | LEVEL Level to ramp |
-| String | TIME Time rate for ramping |
+| Parameter | Type | Description                 |
+| --------- | ---- | --------------------------- |
+| GROUP ID  | STR  | Driver ID of the Load Group |
+| LEVEL     | STR  | Level to ramp               |
+| TIME      | STR  | Time rate for ramping       |
 
 ### Returns
 

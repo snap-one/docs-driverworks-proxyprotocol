@@ -3,15 +3,15 @@
 Used to inform the proxy that the light level has changed.
 
 
-### Signature
+### Name
 
 `LIGHT_LEVEL ()`
 
 
 
-| Parameter | Description |
-| --- | --- |
-| int | LEVEL: Percent from 0-100 of the current light level. |
+| Parameter | Type | Description                                    |
+| --------- | ---- | ---------------------------------------------- |
+| LEVEL     | INT  | Percent from 0-100 of the current light level. |
 
 
 ### Returns

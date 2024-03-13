@@ -2,14 +2,14 @@
 
 Used to set the hold rate down for the device.
 
-### Signature
+### Name
 
 `SET_HOLD_RATE_DOWN ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| Integer | RATE in milliseconds |
+| Parameter | Type | Description          |
+| --------- | ---- | -------------------- |
+| RATE      | INT  | RATE in milliseconds |
 
 
 ### Returns
