@@ -8,9 +8,9 @@ TRIGGER relay.
 `TRIGGER ()` 
 
 
-| Parameter | Description |
-| --- | --- |
-| int | TIME: Milliseconds |
+| Parameter | Type | Description  |
+| --------- | ---- | ------------ |
+| TIME      | INT  | Milliseconds |
 
 
 
