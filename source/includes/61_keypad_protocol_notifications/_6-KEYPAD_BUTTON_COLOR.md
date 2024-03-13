@@ -3,18 +3,18 @@
 This is used by the protocol to inform the proxy that it has been instructed to change the color of a button.
 
 
-### Signature
+### Name
 
 `KEYPAD_BUTTON_COLOR ()`
 
 
-| Parameter | Description                                                             |
-| --------- | ----------------------------------------------------------------------- |
-| num       | BUTTON ID: The ID of the button whose color is changing.                |
-| str       | ON COLOR: The new on color for the button in RGB hex string.            |
-| str       | OFF COLOR: The new off color for the button in RGB hex string.          |
-| str       | CURRENT COLOR:  The new current color for the button in RGB hex string. |
-| str       | COLOR:  The new on and off color for the button in RGB hex string.      |
+| Parameter     | Type | Description                                                |
+| ------------- | ---- | ---------------------------------------------------------- |
+| BUTTON ID     | NUM  | The ID of the button whose color is changing.              |
+| ON COLOR      | STR  | The new on color for the button in RGB hex string.         |
+| OFF COLOR     | STR  | The new off color for the button in RGB hex string.        |
+| CURRENT COLOR | STR  | The new current color for the button in RGB hex string.    |
+| COLOR         | STR  | The new on and off color for the button in RGB hex string. |
 
 
 ### Returns

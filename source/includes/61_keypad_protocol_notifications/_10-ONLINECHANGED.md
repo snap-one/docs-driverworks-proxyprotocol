@@ -4,7 +4,7 @@ Used by the protocol to notify the proxy if the device is online or offline. The
 
 
 
-### Signature
+### Name
 
 `ONLINE_CHANGED ()`
 

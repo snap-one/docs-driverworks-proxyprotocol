@@ -3,14 +3,14 @@
 Used to delete a specific button from the keypad
 
 
-### Signature
+### Name
 
 `DELETE_KEYPAD_BUTTON ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | ID value of the button to be deleted |
+| Parameter | Description                          |
+| --------- | ------------------------------------ |
+| num       | ID value of the button to be deleted |
 
 
 ### Returns

@@ -3,15 +3,15 @@
 Used to inform (or update) the proxy of a button behavior name
 
 
-### Signature
+### Name
 
 `BEHAVIOR_NAME ()`
 
 
-| Parameter | Description |
-| --- | --- |
-| num | BUTTON ID: The ID of the behavior to send when selected by the user. |
-| str | NAME: The string to display to the user for the behavior. |
+| Parameter | Description | Description                                               |
+| --------- | ----------- | --------------------------------------------------------- |
+| BUTTON ID | NUM         | The ID of the behavior to send when selected by the user. |
+| NAME      | STR         | The string to display to the user for the behavior.       |
 
 
 ### Returns
