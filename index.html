@@ -49700,18 +49700,20 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Changes the value of the variable <code>FAN_MODES_LIST</code>.</p>
 
-<h3 id='thermostat-notifications-allowed_fan_modes-_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-allowed_fan_modes-_changed-name'>Name</h3>
 
 <p><code>ALLOWED_FAN_MODES_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>Modes</code></td>
+<td>LIST.</td>
 <td>A comma delimited list of available modes.</td>
 </tr>
 </tbody></table>
@@ -49724,18 +49726,20 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Changes the value of the variable <code>HUMIDITY_MODES_LIST</code></p>
 
-<h3 id='thermostat-notifications-allowed_humidity_modes_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-allowed_humidity_modes_changed-name'>Name</h3>
 
 <p><code>ALLOWED_HUMIDITY_MODES_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>Modes</code></td>
+<td>LIST</td>
 <td>A comma delimited list of available modes. Will do the same thing as <code>humidity_modes</code> capability</td>
 </tr>
 </tbody></table>
@@ -49748,22 +49752,25 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Changes the value of the variable <code>HVAC_MODES_LIST</code></p>
 
-<h3 id='thermostat-notifications-allowed-hvac-modes-changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-allowed-hvac-modes-changed-name'>Name</h3>
 
 <p><code>ALLOWED_HVAC_MODES_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><code>Modes</code></td>
+<td>LIST</td>
 <td>A comma delimited list of available modes.</td>
 </tr>
 <tr>
-<td>bool</td>
+<td></td>
+<td>BOOL</td>
 <td>Option parameters: <code>CAN_HEAT</code>, <code>CAN_COOL</code>, <code>CAN_AUTO</code>. These modify the capabilities: <code>can_heat</code>, <code>can_cool</code>, <code>can_do_auto</code>.</td>
 </tr>
 </tbody></table>
@@ -49776,19 +49783,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Used to inform the proxy if the buttons on the device should be locked or not.</p>
 
-<h3 id='thermostat-notifications-buttons_lock_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-buttons_lock_changed-name'>Name</h3>
 
 <p><code>ALLOWED_HVAC_MODES_CHNAGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
 <td>LOCK</td>
+<td>BOOL</td>
+<td>If the buttons on the device should be locked or not.</td>
 </tr>
 </tbody></table>
 
@@ -49800,19 +49809,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Boolean to enable/disable <code>can_cool</code> capability. If the device supports this feature, default is False.</p>
 
-<h3 id='thermostat-notifications-can_cool-signature'>Signature</h3>
+<h3 id='thermostat-notifications-can_cool-name'>Name</h3>
 
 <p><code>CAN_COOL ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. Supports cooling.</td>
 </tr>
 </tbody></table>
 
@@ -49824,19 +49835,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Boolean to enable/disable <code>can_heat</code> capability. If the device supports this feature, default is False.</p>
 
-<h3 id='thermostat-notifications-can_heat-signature'>Signature</h3>
+<h3 id='thermostat-notifications-can_heat-name'>Name</h3>
 
 <p><code>CAN_HEAT ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. enable/disable <code>can_heat</code> capability.</td>
 </tr>
 </tbody></table>
 
@@ -49848,19 +49861,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Boolean to enable/disable <code>can_humidify</code> capability. If the device supports this feature, default is False.</p>
 
-<h3 id='thermostat-notifications-can_humidify-signature'>Signature</h3>
+<h3 id='thermostat-notifications-can_humidify-name'>Name</h3>
 
 <p><code>CAN_HUMIDIFY ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. Enable/disable <code>can_humidify</code> capability</td>
 </tr>
 </tbody></table>
 
@@ -49872,19 +49887,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Boolean to enable/disable <code>can_dehumidify</code> capability. If the device supports this feature, default is False.</p>
 
-<h3 id='thermostat-notifications-can_dehumidify-signature'>Signature</h3>
+<h3 id='thermostat-notifications-can_dehumidify-name'>Name</h3>
 
 <p><code>CAN_DEHUMIDIFY ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False.  Enable/disable <code>can_dehumidify</code> capability.</td>
 </tr>
 </tbody></table>
 
@@ -49896,7 +49913,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>can_dehumidify</code></a> capability. If the device supports this feature, default is False.</p>
 
-<h3 id='thermostat-notifications-connection-signature'>Signature</h3>
+<h3 id='thermostat-notifications-connection-name'>Name</h3>
 
 <p><code>CONNECTION ()</code></p>
 
@@ -49904,14 +49921,17 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>CONNECTED: true/false.</td>
+<td>CONNECTED</td>
+<td>BOOL</td>
+<td>true/false.</td>
 </tr>
 <tr>
 <td>DataToUI name</td>
+<td></td>
 <td>If  <code>is_connected</code> and is a boolean value. If <code>IS_CONNECTED</code> is false, the UI will show &quot;–&quot; where the temperature would be, indicating the device is off line. Also, sending a false will prevent any of the Control Buttons from appearing on the UI.</td>
 </tr>
 </tbody></table>
@@ -49924,61 +49944,66 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Notification that should be sent to the proxy when the cooling setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-cool_setpoint_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-cool_setpoint_changed-name'>Name</h3>
 
 <p><code>COOL_SETPOINT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>SETPOINT: New cooling setpoint temperature.</td>
+<td>SETPOINT</td>
+<td>NUM</td>
+<td>New cooling setpoint temperature.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>SCALE: The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
+<td>SCALE</td>
+<td>STR</td>
+<td>The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
 </tr>
 </tbody></table>
 
 <h3 id='thermostat-notifications-cool_setpoint_changed-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p>None</p>
 
-<h2 id='thermostat-notifications-cool_setpoint_resolution-c'>COOL_SETPOINT_RESOLUTION C</h2><h3 id='thermostat-notifications-cool_setpoint_resolution-c-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_resolution-c'>COOL_SETPOINT_RESOLUTION C</h2><h3 id='thermostat-notifications-cool_setpoint_resolution-c-name'>Name</h3>
 <p><code>COOL_SETPOINT_RESOLUTION_C ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
 </tr>
 </tbody></table>
 <h3 id='thermostat-notifications-cool_setpoint_resolution-c-returns'>Returns</h3>
-<p>`None
-`</p>
+<p>None</p>
 
-<h2 id='thermostat-notifications-cool_setpoint_resolution_f'>COOL_SETPOINT_RESOLUTION_F</h2><h3 id='thermostat-notifications-cool_setpoint_resolution_f-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_resolution_f'>COOL_SETPOINT_RESOLUTION_F</h2><h3 id='thermostat-notifications-cool_setpoint_resolution_f-name'>Name</h3>
 <p><code>COOL_SETPOINT_RESOLUTION_F ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_resolution</code></a> capability, default 1</td>
 </tr>
 </tbody></table>
 <h3 id='thermostat-notifications-cool_setpoint_resolution_f-returns'>Returns</h3>
@@ -49988,17 +50013,19 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Update the template Custom Fields that UI&#39;s display for a new Preset Event.</p>
 
-<h3 id='thermostat-notifications-custom_fields_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-custom_fields_changed-name'>Name</h3>
 
 <p><code>CUSTOM FIELDS CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td></td>
 <td>XML</td>
 <td>Text string of XML matching the Preset Schedule schema. To UI comes through as <code>preset_custom_fields</code>.</td>
 </tr>
@@ -50019,19 +50046,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
  <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/preset_custom_fields&gt;</span>
 </code></pre></div>
-<h2 id='thermostat-notifications-cool_setpoint_max_c'>COOL_SETPOINT_MAX_C</h2><h3 id='thermostat-notifications-cool_setpoint_max_c-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_max_c'>COOL_SETPOINT_MAX_C</h2><h3 id='thermostat-notifications-cool_setpoint_max_c-name'>Name</h3>
 
 <p><code>COOL_SETPOINT_ MAX_C ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
+<td>Minimum Setpoint</td>
+<td>INT</td>
+<td>0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 
@@ -50040,65 +50069,69 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 <p>`None
 `</p>
 
-<h2 id='thermostat-notifications-cool_setpoint_max_f'>COOL_SETPOINT_MAX_F</h2><h3 id='thermostat-notifications-cool_setpoint_max_f-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_max_f'>COOL_SETPOINT_MAX_F</h2><h3 id='thermostat-notifications-cool_setpoint_max_f-name'>Name</h3>
 <p><code>COOL_SETPOINT_ MAX_F ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
+<td>Minimum Setpoint</td>
+<td>INT</td>
+<td>0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_max</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='thermostat-notifications-cool_setpoint_max_f-returns'>Returns</h3>
 <p>`None
 `</p>
 
-<h2 id='thermostat-notifications-cool_setpoint_min_c'>COOL_SETPOINT_MIN_C</h2><h3 id='thermostat-notifications-cool_setpoint_min_c-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_min_c'>COOL_SETPOINT_MIN_C</h2><h3 id='thermostat-notifications-cool_setpoint_min_c-name'>Name</h3>
 <p><code>COOL_SETPOINT_ MIN_C ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
+<td>Minimum Setpoint</td>
+<td>INT</td>
+<td>0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='thermostat-notifications-cool_setpoint_min_c-returns'>Returns</h3>
-<p>`None
-`</p>
+<p><code>None</code></p>
 
-<h2 id='thermostat-notifications-cool_setpoint_min_f'>COOL_SETPOINT_MIN_F</h2><h3 id='thermostat-notifications-cool_setpoint_min_f-signature'>Signature</h3>
+<h2 id='thermostat-notifications-cool_setpoint_min_f'>COOL_SETPOINT_MIN_F</h2><h3 id='thermostat-notifications-cool_setpoint_min_f-name'>Name</h3>
 <p><code>COOL_SETPOINT_ MIN_F ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
+<td>Minimum Setpoint</td>
+<td>INT</td>
+<td>0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_cool_min</code></a> capability, default 100</td>
 </tr>
 </tbody></table>
 <h3 id='thermostat-notifications-cool_setpoint_min_f-returns'>Returns</h3>
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='thermostat-notifications-dehumidify_setpoint_change'>DEHUMIDIFY_SETPOINT_CHANGE</h2>
 
 <p>The dehumidify setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint_change-signature'>Signature</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint_change-name'>Name</h3>
 
 <p><code>DEHUMIDIFY_SETPOINT_CHANGE ()</code></p>
 
@@ -50116,14 +50149,14 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h3 id='thermostat-notifications-dehumidify_setpoint_change-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None
+</code></p>
 
 <h2 id='thermostat-notifications-dehumidify_setpoint_min'>DEHUMIDIFY_SETPOINT_MIN</h2>
 
 <p>The minimum dehumidify setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint_min-signature'>Signature</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint_min-name'>Name</h3>
 
 <p><code>DEHUMIDIFY_SETPOINT_MIN ()</code></p>
 
@@ -50143,14 +50176,14 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h3 id='thermostat-notifications-dehumidify_setpoint_min-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None
+</code></p>
 
 <h2 id='thermostat-notifications-dehumidify_setpoint_max'>DEHUMIDIFY_SETPOINT_MAX</h2>
 
 <p>The maximun dehumidify setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint_max-signature'>Signature</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint_max-name'>Name</h3>
 
 <p><code>DEHUMIDIFY_SETPOINT_MAX ()</code></p>
 
@@ -50168,14 +50201,13 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <h3 id='thermostat-notifications-dehumidify_setpoint_max-returns'>Returns</h3>
 
-<p>`None
-`</p>
+<p><code>None</code></p>
 
 <h2 id='thermostat-notifications-dehumidify_setpoint-_resolution'>DEHUMIDIFY_SETPOINT _RESOLUTION</h2>
 
 <p>The  dehumidify setpoint resolution has changed.</p>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint-_resolution-signature'>Signature</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint-_resolution-name'>Name</h3>
 
 <p><code>DEHUMIDIFY_SETPOINT_RESOLUTION ()</code></p>
 
@@ -50187,7 +50219,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 </thead><tbody>
 <tr>
 <td>int</td>
-<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifyresolution</code></a>` capability, default 1</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpointdehumidifyresolution</code></a>\` capability, default 1</td>
 </tr>
 </tbody></table>
 
@@ -50199,59 +50231,71 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max and resolution of changes are for the setpoint. </p>
 
-<h3 id='thermostat-notifications-dynamic_capabilities_changed-tstat-signature'>Signature</h3>
+<h3 id='thermostat-notifications-dynamic_capabilities_changed-tstat-name'>Name</h3>
 
 <p><code>DYNAMIC_CAPABILITIES_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td><code>HAS_OUTDOOR_TEMPERATURE</code>: boolean to enable/disable <code>hasoutdoortemperature</code> capability, if the device supports this feature, default is false.</td>
+<td><code>HAS_OUTDOOR_TEMPERATURE</code></td>
+<td>BOOL</td>
+<td>boolean to enable/disable <code>hasoutdoortemperature</code> capability, if the device supports this feature, default is false.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td><code>CAN_CHANGE_SCALE</code>: boolean to enable/disable Navigators UI&#39;s and composer from being able to change the scale of the hardware.</td>
+<td><code>CAN_CHANGE_SCALE</code></td>
+<td>BOOL</td>
+<td>boolean to enable/disable Navigators UI&#39;s and composer from being able to change the scale of the hardware.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td><code>HAS_HUMIDITY</code>: boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false</td>
+<td><code>HAS_HUMIDITY</code></td>
+<td>BOOL</td>
+<td>boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false</td>
 </tr>
 <tr>
-<td>bool</td>
-<td><code>HAS_SINGLE_SETPOINT</code>: Boolean used to turn single setpoint mode to on or off. Defaults to false (off).</td>
+<td><code>HAS_SINGLE_SETPOINT</code></td>
+<td>BOOL</td>
+<td>Boolean used to turn single setpoint mode to on or off. Defaults to false (off).</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>HUMIDIFY_SETPOINT_MIN</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_min</code></a> capability, default 0 </td>
+<td><code>HUMIDIFY_SETPOINT_MIN</code></td>
+<td>INT</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="hhttps://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_min</code></a> capability, default 0</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>HUMIDIFY_SETPOINT_MAX</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_max</code></a> capability, default 100</td>
+<td><code>HUMIDIFY_SETPOINT_MAX</code></td>
+<td>INT</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_max</code></a> capability, default 100</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>HUMIDIFY_SETPOINT_RESOLUTION</code>:  What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_humidify_resolution</code> capability, default 1</td>
+<td><code>HUMIDIFY_SETPOINT_RESOLUTION</code></td>
+<td>INT</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_humidify_resolution</code> capability, default 1</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>HUMIDITY_SETPOINT_DEADBAND</code>: What the deadband between humidify and dehumidify is, will do the same thing as the <code>setpoint_humidity_deadband</code> capability, default 10</td>
+<td><code>HUMIDITY_SETPOINT_DEADBAND</code></td>
+<td>INT</td>
+<td>What the deadband between humidify and dehumidify is, will do the same thing as the <code>setpoint_humidity_deadband</code> capability, default 10</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>DEHUMIDIFY_SETPOINT_MIN</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_min</code> capability, default 0</td>
+<td><code>DEHUMIDIFY_SETPOINT_MIN</code>:</td>
+<td>INT</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_min</code> capability, default 0</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>DEHUMIDIFY_SETPOINT_MAX</code>: Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_max</code> capability, default 100</td>
+<td><code>DEHUMIDIFY_SETPOINT_MAX</code></td>
+<td>INT</td>
+<td>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_max</code> capability, default 100</td>
 </tr>
 <tr>
-<td>int</td>
-<td><code>DEHUMIDIFY_SETPOINT_RESOLUTION</code>: What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_dehumidify_resolution</code> capability, default 1</td>
+<td><code>DEHUMIDIFY_SETPOINT_RESOLUTION</code></td>
+<td>INT</td>
+<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_dehumidify_resolution</code> capability, default 1</td>
 </tr>
 </tbody></table>
 
@@ -50263,7 +50307,7 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Update the Extras Setup, displayed in the UI </p>
 
-<h3 id='thermostat-notifications-extras_setup_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-extras_setup_changed-name'>Name</h3>
 
 <p><code>EXTRAS_SETUP_CHANGED ()</code></p>
 
@@ -50271,9 +50315,11 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>XML</td>
 <td>XML</td>
 <td>XML text string of XML matching the Preset Schedule schema. Comes through to the UI as <code>extras_setup</code>. Note that as of OS 3, sending only a singular XML string is supported. For example, sending an array of Extras can result in Navigator performance issues.</td>
 </tr>
@@ -50287,17 +50333,19 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Update the Extras Setup, displayed in the UI </p>
 
-<h3 id='thermostat-notifications-extras_state_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-extras_state_changed-name'>Name</h3>
 
 <p><code>EXTRAS_STATE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>XML</td>
 <td>XML</td>
 <td>XML text string of XML matching the Preset Schedule schema. To UI comes through as <code>extras_state</code>.</td>
 </tr>
@@ -50311,19 +50359,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Notification that should be sent to the proxy when Fan mode has changed. Changes the variables: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>FAN_MODE</code></a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>V1 FANMODE,</code></a> .</p>
 
-<h3 id='thermostat-notifications-fan_mode_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-fan_mode_changed-name'>Name</h3>
 
 <p><code>FAN_MODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MODE: One of the supported modes for example: Auto, On.</td>
+<td>MODE</td>
+<td>STR</td>
+<td>One of the supported modes for example: Auto, On.</td>
 </tr>
 </tbody></table>
 
@@ -50335,19 +50385,21 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 
 <p>Notification that should be sent to the proxy when the fan state has changed.</p>
 
-<h3 id='thermostat-notifications-fan_state_change-signature'>Signature</h3>
+<h3 id='thermostat-notifications-fan_state_change-name'>Name</h3>
 
 <p><code>FAN_STATE_CHANGE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>STATE: One of the following Off, On.</td>
+<td>STATE</td>
+<td>STR</td>
+<td>One of the following Off, On.</td>
 </tr>
 </tbody></table>
 
@@ -50360,18 +50412,20 @@ Double indicating the increments that the setpoint will follow, such as .2, .5, 
 <p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_extras capability</code></a>.  If the device supports this feature, default is false
 Updates the XML that will be consumed by the Navigator UI’s.</p>
 
-<h3 id='thermostat-notifications-has_extras-signature'>Signature</h3>
+<h3 id='thermostat-notifications-has_extras-name'>Name</h3>
 
 <p><code>HAS_EXTRAS ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>XML</td>
+<td>STR</td>
 <td>Text string of XML that matches the Preset Schedule A.</td>
 </tr>
 </tbody></table>
@@ -50390,7 +50444,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Boolean to enable/disable <code>has_heat_pump</code>. If the device supports this feature, default is false.</p>
 
-<h3 id='thermostat-notifications-has_heat_pump-signature'>Signature</h3>
+<h3 id='thermostat-notifications-has_heat_pump-name'>Name</h3>
 
 <p><code>HAS_HEAT_PUMP ()</code></p>
 
@@ -50398,11 +50452,13 @@ XML text string of XML that matches the Preset Schedule API.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. enable/disable <code>has_heat_pump</code></td>
 </tr>
 </tbody></table>
 
@@ -50414,19 +50470,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability. If the device supports this feature, default is false</p>
 
-<h3 id='thermostat-notifications-has_humidity-signature'>Signature</h3>
+<h3 id='thermostat-notifications-has_humidity-name'>Name</h3>
 
 <p><code>HAS_ HUMIDITY ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability.</td>
 </tr>
 </tbody></table>
 
@@ -50438,19 +50496,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_outdoor_temperature</code></a> capability, if the device supports this feature, default is false</p>
 
-<h3 id='thermostat-notifications-has_outdoor_temperature-signature'>Signature</h3>
+<h3 id='thermostat-notifications-has_outdoor_temperature-name'>Name</h3>
 
 <p><code>HAS_OUTDOOR_TEMPERATURE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td></td>
+<td>BOOL</td>
+<td>True/False. enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_outdoor_temperature</code></a> capability.</td>
 </tr>
 </tbody></table>
 
@@ -50462,7 +50522,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Fires event: <code>Heat_Setpoint_Changed</code>.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT ()</code></p>
 
@@ -50478,23 +50538,26 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when the heating setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_changed-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>SETPOINT: New heating setpoint temperature.</td>
+<td>SETPOINT</td>
+<td>NUM</td>
+<td>New heating setpoint temperature.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>SCALE: The scale being used for the setpoint. The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
+<td>SCALE</td>
+<td>STR</td>
+<td>The scale being used for the setpoint. The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
 </tr>
 </tbody></table>
 
@@ -50506,7 +50569,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint difference between heat and will do the same thing as <code>setpoint_heatcool_deadband</code>. </p>
 
-<h3 id='thermostat-notifications-heatcool_setpoints_deadband_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heatcool_setpoints_deadband_c-name'>Name</h3>
 
 <p><code>HEATCOOL_SETPOINTS_DEADBAND_C</code></p>
 
@@ -50530,7 +50593,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint difference between heat and will do the same thing as <code>setpoint_heatcool_deadband</code>. </p>
 
-<h3 id='thermostat-notifications-heatcool_setpoints_deadband_f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heatcool_setpoints_deadband_f-name'>Name</h3>
 
 <p><code>HEATCOOL_SETPOINTS_DEADBAND_F</code> </p>
 
@@ -50554,7 +50617,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_resolution_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_resolution_c-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_RESOLUTION_C ()</code></p>
 
@@ -50578,7 +50641,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_resolution</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_resolution_f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_resolution_f-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_RESOLUTION_F ()</code></p>
 
@@ -50602,7 +50665,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_max_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_max_c-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_MAX_C ()</code></p>
 
@@ -50626,7 +50689,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Maximum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_max</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_max_f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_max_f-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_MAX_F ()</code></p>
 
@@ -50650,7 +50713,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_min_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_min_c-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_MIN_C ()</code></p>
 
@@ -50674,7 +50737,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint, int 0-100 that will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_heat_min</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-heat_setpoint_min_f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-heat_setpoint_min_f-name'>Name</h3>
 
 <p><code>HEAT_SETPOINT_MIN_F ()</code></p>
 
@@ -50698,19 +50761,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when hold mode has changed. Changes the variables <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE</code></a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>ANA_HOLDMODE</code></a>. Fires event <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables"><code>HOLD_MODE_CHANGED</code></a>.</p>
 
-<h3 id='thermostat-notifications-hold_mode_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-hold_mode_changed-name'>Name</h3>
 
 <p><code>HOLD_MODE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MODE: One of the supported hold modes for example: Off, 2 Hours, Permanent. Required parameter options if Hold Mode is &quot;Hold Until&quot; : YEAR - integer 2000+,  MONTH - integer 0-11,  DAY - integer 0-31,  HOUR - integer 0-23, MINUTE - integer 0-60.</td>
+<td>MODE</td>
+<td>STR</td>
+<td>One of the supported hold modes for example: Off, 2 Hours, Permanent. Required parameter options if Hold Mode is &quot;Hold Until&quot; : YEAR - integer 2000+,  MONTH - integer 0-11,  DAY - integer 0-31,  HOUR - integer 0-23, MINUTE - integer 0-60.</td>
 </tr>
 </tbody></table>
 
@@ -50722,7 +50787,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>The actual humidity percent (integer 0-100) value detected by the thermostat has changed. To UI comes through as <code>humidity</code>.</p>
 
-<h3 id='thermostat-notifications-humidity_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_changed-name'>Name</h3>
 
 <p><code>HUMIDITY_CHANGED ()</code> </p>
 
@@ -50730,10 +50795,12 @@ XML text string of XML that matches the Preset Schedule API.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>HUMIDITY</td>
+<td>INT</td>
 <td>HUMIDITY: (0-100)</td>
 </tr>
 </tbody></table>
@@ -50746,19 +50813,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto). To UI comes through as <code>humidity_mode</code></p>
 
-<h3 id='thermostat-notifications-humidity_mode_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_mode_changed-name'>Name</h3>
 
 <p><code>HUMIDITY_MODE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MODE, typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto).</td>
+<td>MODE</td>
+<td>STR</td>
+<td>Typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto).</td>
 </tr>
 </tbody></table>
 
@@ -50770,19 +50839,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>The humidity setpoint has changed. To UI comes through as <code>humidify_setpoint</code></p>
 
-<h3 id='thermostat-notifications-humidify_setpoint_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidify_setpoint_changed-name'>Name</h3>
 
 <p><code>HUMIDIFY_SETPOINT_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>SETPOINT (0-100)</td>
+<td>SETPOINT</td>
+<td>NUM</td>
+<td>(0-100)</td>
 </tr>
 </tbody></table>
 
@@ -50794,7 +50865,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What the deadband between humidify and dehumidify is, will do the same thing as the <code>setpoint_humidity_deadband</code> capability.</p>
 
-<h3 id='thermostat-notifications-humidity_setpoint_deadband-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_setpoint_deadband-name'>Name</h3>
 
 <p><code>HUMIDITY_SETPOINT_DEADBAND ()</code> </p>
 
@@ -50818,7 +50889,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_humidify_max</code> capability, </p>
 
-<h3 id='thermostat-notifications-humidity_setpoint_max-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_setpoint_max-name'>Name</h3>
 
 <p><code>HUMIDITY_SETPOINT_MAX ()</code> </p>
 
@@ -50842,7 +50913,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_humidify_min</code> capability, </p>
 
-<h3 id='thermostat-notifications-humidity_setpoint_min-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_setpoint_min-name'>Name</h3>
 
 <p><code>HUMIDITY_SETPOINT_MIN ()</code> </p>
 
@@ -50866,7 +50937,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>setpoint_humidify_resolution</code></a> capability.</p>
 
-<h3 id='thermostat-notifications-humidity_setpoint_resolution-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_setpoint_resolution-name'>Name</h3>
 
 <p><code>HUMIDITY_SETPOINT_RESOLUTION ()</code></p>
 
@@ -50890,19 +50961,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>State has changed on the thermostat. To UI comes through as <code>humidity_state</code>.</p>
 
-<h3 id='thermostat-notifications-humidity_state_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-humidity_state_changed-name'>Name</h3>
 
 <p><code>HUMIDITY_STATE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>STATE -  typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto</td>
+<td>STATE</td>
+<td>STR</td>
+<td>Typically: humidify, humidifyAuto (aggressiveness), dehumidify or auto</td>
 </tr>
 </tbody></table>
 
@@ -50914,19 +50987,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification sent when the mode of the HVAC system has changed. Changes the variable <code>HVAC_MODE</code>.</p>
 
-<h3 id='thermostat-notifications-hvac_mode_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-hvac_mode_changed-name'>Name</h3>
 
 <p><code>HVAC_MODE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MODE: One of the supported modes for example: Off, Heat,Cool, Auto, Emergency</td>
+<td>MODE</td>
+<td>STR</td>
+<td>One of the supported modes for example: Off, Heat,Cool, Auto, Emergency</td>
 </tr>
 </tbody></table>
 
@@ -50938,19 +51013,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when the HVAC state has changed. Changes the variable <code>HVAC_STATE</code>.</p>
 
-<h3 id='thermostat-notifications-hvac_state_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-hvac_state_changed-name'>Name</h3>
 
 <p><code>HVAC_STATE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>STATE: One of the supported HVAC states for example: Off, Heat, Cool</td>
+<td>STATE:</td>
+<td>STR</td>
+<td>One of the supported HVAC states for example: Off, Heat, Cool</td>
 </tr>
 </tbody></table>
 
@@ -50962,19 +51039,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Update the text message displayed in the UI.  Multiple lines can be specified by using \n to separate lines, although UI&#39;s will display each line in its own way. Could be a paragraph, ticker scrolling, cycling, etc. To UI comes through as <code>message</code>.</p>
 
-<h3 id='thermostat-notifications-message_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-message_changed-name'>Name</h3>
 
 <p><code>MESSAGE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>MESSAGE text string, max length of the string is not set, though driver developers need to keep in mind that this information shows up in Navigators in a ticker or similar scrolling text display and should not be cluttered but kept to key things like HVAC system errors, and CRITICAL information.</td>
+<td>MESSAGE</td>
+<td>STR</td>
+<td>Text string, max length of the string is not set, though driver developers need to keep in mind that this information shows up in Navigators in a ticker or similar scrolling text display and should not be cluttered but kept to key things like HVAC system errors, and CRITICAL information.</td>
 </tr>
 </tbody></table>
 
@@ -50990,7 +51069,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Updates the current Preset State displayed in the UI. Sent to the UI as <code>preset</code>.</p>
 
-<h3 id='thermostat-notifications-preset_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-preset_changed-name'>Name</h3>
 
 <p><code>PRESET_CHANGED ()</code> </p>
 
@@ -51014,17 +51093,19 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Updates the  Preset FIELDS TEMPLATE that UIs display for a Preset Event. To UI comes through as <code>preset_fields</code>.  If this is modified, it is possible that existing presets will have data that is not in compliance. However, a protocol driver can modify this to have new <code>preset_fields</code> which are compatible. Do not delete this as Events are erased when presets are deleted. </p>
 
-<h3 id='thermostat-notifications-preset_fields_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-preset_fields_changed-name'>Name</h3>
 
 <p><code>PRESET_FIELDS_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>XML</td>
 <td>XML</td>
 <td>XML text string of XML matching the Preset Schedule schema</td>
 </tr>
@@ -51038,19 +51119,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Changes the scale the proxy tracks for the temperature.  This is primarily important for Composer Pro when programming as it will use this scale for setting temperatures.  Navigators also use this scale. </p>
 
-<h3 id='thermostat-notifications-scale_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-scale_changed-name'>Name</h3>
 
 <p><code>SCALE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>SCALE: CELSIUS, FAHRENHEIT, C, c, F, f</td>
+<td>SCALE</td>
+<td>STR</td>
+<td>CELSIUS, FAHRENHEIT, C, c, F, f</td>
 </tr>
 </tbody></table>
 
@@ -51062,43 +51145,51 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when a change is made to the HVAC schedules. Every entry that is changed will send one protocol notification.</p>
 
-<h3 id='thermostat-notifications-schedule_entry_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-schedule_entry_changed-name'>Name</h3>
 
 <p><code>SCHEDULE_ENTRY_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>DayIndex: Number representing day of week: 0= Sunday, 1=Monday</td>
+<td>DayIndex</td>
+<td>NUM</td>
+<td>Number representing day of week: 0= Sunday, 1=Monday</td>
 </tr>
 <tr>
-<td>num</td>
-<td>EntryIndex : 0 to the number of entries the day can support. 0 = the first entry, 1 = the second entry.</td>
+<td>EntryIndex</td>
+<td>NUM</td>
+<td>0 to the number of entries the day can support. 0 = the first entry, 1 = the second entry.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>TimeMinutes: Number of minutes past midnight for the entry change.  For example 360= 6:00AM.</td>
+<td>TimeMinutes</td>
+<td>NUM</td>
+<td>Number of minutes past midnight for the entry change.  For example 360= 6:00AM.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td>EnabledFlag: Enables or disables a schedule. By default, the first four schedules are enabled.</td>
+<td>EnabledFlag</td>
+<td>BOOL</td>
+<td>Enables or disables a schedule. By default, the first four schedules are enabled.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>HeatSetpoint: Temperature designated to start the heating system.</td>
+<td>HeatSetpoint</td>
+<td>NUM</td>
+<td>Temperature designated to start the heating system.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>CoolSetpoint: Temperature designated to start the cooling system.</td>
+<td>CoolSetpoint:</td>
+<td>NUM</td>
+<td>Temperature designated to start the cooling system.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>Units  (string): F or C – Fahrenheit or Celsius.</td>
+<td>Units</td>
+<td>STR</td>
+<td>F or C – Fahrenheit or Celsius.</td>
 </tr>
 </tbody></table>
 
@@ -51110,23 +51201,26 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to inform the proxy that the single setpoint has changed. This notification changes variables <code>SINGLE_SETPOINT_F</code> and <code>SINGLE_SETPOINT_C</code>. It fires the event <code>Single Setpoint Changed</code>.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_changed-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: he new temperature setpoint value.</td>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>The new temperature setpoint value.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>SCALE: The scale being used for the setpoint. The values allowed are CELSIUS, C, FAHRENHEIT, or F</td>
+<td>SCALE</td>
+<td>STR</td>
+<td>The scale being used for the setpoint. The values allowed are CELSIUS, C, FAHRENHEIT, or F</td>
 </tr>
 </tbody></table>
 
@@ -51138,19 +51232,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Maximum Setpoint. Will do the same thing as the <code>setpoint_single_max</code> capability.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_max_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_max_c-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_MAX_C ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: 0-100 default 100</td>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>0-100 default 100</td>
 </tr>
 </tbody></table>
 
@@ -51162,19 +51258,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Maximum Setpoint. Will do the same thing as the <code>setpoint_single_max</code> capability.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_max_-f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_max_-f-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_MAX_F ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: 0-100 default 100</td>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>0-100 default 100</td>
 </tr>
 </tbody></table>
 
@@ -51186,19 +51284,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint. Will do the same thing as the <code>setpoint_single_min</code> capability.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_min_-c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_min_-c-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_MIN_C ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: 0-100 default 0</td>
+<td>SETPOINT:</td>
+<td>INT</td>
+<td>0-100 default 0</td>
 </tr>
 </tbody></table>
 
@@ -51210,19 +51310,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Minimum Setpoint. Will do the same thing as the <code>setpoint_single_min</code> capability.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_min_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_min_c-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_MIN_F ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>SETPOINT: 0-100 default 0</td>
+<td>SETPOINT:</td>
+<td>INT</td>
+<td>0-100 default 0</td>
 </tr>
 </tbody></table>
 
@@ -51234,7 +51336,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_single_resolution</code> capability.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_resolution_c-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_resolution_c-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_RESOLUTION_C ()</code> </p>
 
@@ -51258,7 +51360,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Indicates the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc.  Note that .2 is the lowest F resolution supported.</p>
 
-<h3 id='thermostat-notifications-single_setpoint_resolution_f-signature'>Signature</h3>
+<h3 id='thermostat-notifications-single_setpoint_resolution_f-name'>Name</h3>
 
 <p><code>SINGLE_SETPOINT_RESOLUTION_F ()</code> </p>
 
@@ -51282,23 +51384,26 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when the temperature has changed.</p>
 
-<h3 id='thermostat-notifications-temperature_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-temperature_changed-name'>Name</h3>
 
 <p><code>TEMPERATURE_CHANGED ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>TEMPERATURE: New temperature value.</td>
+<td>TEMPERATURE</td>
+<td>NUM</td>
+<td>New temperature value.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>SCALE: The scale being used for the temperature. The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
+<td>SCALE:</td>
+<td>STR</td>
+<td>The scale being used for the temperature. The values allowed are KELVIN, K, CELSIUS, C, FAHRENHEIT, or F.</td>
 </tr>
 </tbody></table>
 
@@ -51310,7 +51415,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie .1,.5,1,3,5,10,etc), will do the same thing as the <code>temperature_resolution</code> capability, default 1</p>
 
-<h3 id='thermostat-notifications-temperature_resolution-signature'>Signature</h3>
+<h3 id='thermostat-notifications-temperature_resolution-name'>Name</h3>
 
 <p><code>TEMPERATURE_RESOLUTION ()</code> </p>
 
@@ -51334,19 +51439,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when vacation mode is turned on or off.</p>
 
-<h3 id='thermostat-notifications-vacation_mode-signature'>Signature</h3>
+<h3 id='thermostat-notifications-vacation_mode-name'>Name</h3>
 
 <p><code>VACATION_MODE ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>ON VACATION: True or False</td>
+<td>ON VACATION</td>
+<td>STR</td>
+<td>True or False</td>
 </tr>
 </tbody></table>
 
@@ -51362,27 +51469,31 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Notification that should be sent to the proxy when setpoints have been changed for vacation mode. This Notification is not to be used with Preset Scheduling. The capability  <code>has_vacation_mode</code> must be set to true for the vacation commands and notifications to be executed. </p>
 
-<h3 id='thermostat-notifications-vacation_setpoints-signature'>Signature</h3>
+<h3 id='thermostat-notifications-vacation_setpoints-name'>Name</h3>
 
 <p><code>VACATION_ SETPOINTS ()</code> </p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>num</td>
-<td>VAC HEAT SETPOINT: New temperature for the heating setpoint while in vacation mode.</td>
+<td>VAC HEAT SETPOINT</td>
+<td>NUM</td>
+<td>New temperature for the heating setpoint while in vacation mode.</td>
 </tr>
 <tr>
-<td>num</td>
-<td>VAC COOL SETPOINT: New temperature for the cooling setpoint while in vacation mode.</td>
+<td>VAC COOL SETPOINT:</td>
+<td>NUM</td>
+<td>New temperature for the cooling setpoint while in vacation mode.</td>
 </tr>
 <tr>
-<td>str</td>
-<td>UNITS: F or C – Fahrenheit or Celsius.</td>
+<td>UNITS</td>
+<td>STR</td>
+<td>F or C – Fahrenheit or Celsius.</td>
 </tr>
 </tbody></table>
 
@@ -51394,7 +51505,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to inform the proxy that the outdoor temperature has changed.</p>
 
-<h3 id='thermostat-notifications-outdoor_temperature_changed-signature'>Signature</h3>
+<h3 id='thermostat-notifications-outdoor_temperature_changed-name'>Name</h3>
 
 <p><code>OUTDOOR_TEMPERATURE_CHANGED ()</code> </p>
 
@@ -51418,7 +51529,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>What increment to use (ie .1, .5, 1, 3, 5, 10, etc), will do the same thing as the <code>outdoor_temperature_resolution</code> capability.</p>
 
-<h3 id='thermostat-notifications-outdoor_temperature_resolution-signature'>Signature</h3>
+<h3 id='thermostat-notifications-outdoor_temperature_resolution-name'>Name</h3>
 
 <p><code>OUTDOOR_TEMPERATURE_RESOLUTION ()</code> </p>
 
@@ -51443,7 +51554,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to decrease the cool set point by 1. This command is handled by the proxy, and ends up creating a <code>SET_SETPOINT_COOL</code> command to send to the protocol driver, unless the capability <code>can_inc_dec_setpoints</code> is set to true.</p>
 
-<h3 id='thermostat-proxy-commands-dec_setpoint_cool-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-dec_setpoint_cool-name'>Name</h3>
 
 <p><code>DEC_SETPOINT_COOL ()</code></p>
 
@@ -51459,19 +51570,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Runs a Preset regardless if there is an event scheduled for it.</p>
 
-<h3 id='thermostat-proxy-commands-set_preset-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-set_preset-name'>Name</h3>
 
 <p><code>SET_PRESET ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>NAME</td>
+<td>STR</td>
+<td>Preset Name</td>
 </tr>
 </tbody></table>
 
@@ -51483,7 +51596,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to decrease the heat set point by 1. This command is handled by the proxy, and ends up creating a <code>SET_SETPOINT_HEAT</code> command to send to the protocol driver, unless the capability <code>can_inc_dec_setpoints</code> is set to true</p>
 
-<h3 id='thermostat-proxy-commands-dec_setpoint_heat-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-dec_setpoint_heat-name'>Name</h3>
 
 <p><code>DEC_SETPOINT_HEAT ()</code></p>
 
@@ -51499,7 +51612,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to increase the cool set point by 1. This command is handled by the proxy, and ends up creating a <code>SET_SETPOINT_COOL</code> command to send to the protocol driver, unless the capability <code>can_inc_dec_setpoints</code> is set to true.</p>
 
-<h3 id='thermostat-proxy-commands-inc_setpoint_cool-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-inc_setpoint_cool-name'>Name</h3>
 
 <p><code>INC_SETPOINT_COOL ()</code></p>
 
@@ -51515,7 +51628,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to increase the heat set point by 1. This command is handled by the proxy, and ends up creating a <code>SET_SETPOINT_HEAT</code> command to send to the protocol driver, unless the capability <code>can_inc_dec_setpoints</code> is set to true.</p>
 
-<h3 id='thermostat-proxy-commands-inc_setpoint_heat-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-inc_setpoint_heat-name'>Name</h3>
 
 <p><code>INC_SETPOINT_HEAT ()</code></p>
 
@@ -51531,23 +51644,26 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Adds a new Preset Schedule Preset (If protocol driver has the <code>can_preset_schedule</code> capability)</p>
 
-<h3 id='thermostat-proxy-commands-preset_add-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_add-name'>Name</h3>
 
 <p><code>PRESET_ADD ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NAME: Required.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Preset Name. Required.</td>
 </tr>
 <tr>
-<td>xml</td>
-<td>PRESET FIELDS: If a UI or Driver sends a bound call with a string that has invalid XML syntax, this field will be set to <code>&lt;preset_field/&gt;</code> and an error message will be logged to director.log when this occurs. Note that only a driver OR UI should specify the<code> _f or c. </code> For example: <code>heat_setpoint_f</code>, <code>cool_setpoint_f</code>, <code>heat_setpoint_c</code>, <code>cool_setpoint_c</code> but not both. The proxy will auto insert the missing<code> _f or _c </code>based on the scales resolution if it detects one side is not supplied. This makes it so UI&#39;s and drivers do not need to calculate the correct value for the scale.  However, if a driver or UI does want to calculate it, the proxy will leave the value alone. In the same manner the proxy will not correct or anything if the<code> _f and _c </code>do not resolve to the equivalent temperature.</td>
+<td>PRESET FIELDS</td>
+<td>XML</td>
+<td>If a UI or Driver sends a bound call with a string that has invalid XML syntax, this field will be set to <code>&lt;preset_field/&gt;</code> and an error message will be logged to director.log when this occurs. Note that only a driver OR UI should specify the<code> _f or c. </code> For example: <code>heat_setpoint_f</code>, <code>cool_setpoint_f</code>, <code>heat_setpoint_c</code>, <code>cool_setpoint_c</code> but not both. The proxy will auto insert the missing<code> _f or _c </code>based on the scales resolution if it detects one side is not supplied. This makes it so UI&#39;s and drivers do not need to calculate the correct value for the scale.  However, if a driver or UI does want to calculate it, the proxy will leave the value alone. In the same manner the proxy will not correct or anything if the<code> _f and _c </code>do not resolve to the equivalent temperature.</td>
 </tr>
 </tbody></table>
 
@@ -51564,23 +51680,26 @@ XML text string of XML that matches the Preset Schedule API.</p>
 </code></pre></div>
 <h2 id='thermostat-proxy-commands-preset_delete'>PRESET_DELETE</h2>
 <p>Adds a new Preset Schedule Preset (If protocol driver has the <code>can_preset_schedule</code> capability)</p>
-<h3 id='thermostat-proxy-commands-preset_delete-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_delete-name'>Name</h3>
 
 <p><code>PRESET_DELETE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NAME: Required.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Preset Name. Required.</td>
 </tr>
 <tr>
-<td>xml</td>
-<td>PRESET FIELDS: If a UI or Driver sends a bound call with a string that has invalid XML syntax, this field will be set to <code>&lt;preset_field/&gt;</code> and an error message will be logged to director.log when this occurs. Note that only a driver OR UI should specify the<code> _f or c. </code> For example: <code>heat_setpoint_f</code>, <code>cool_setpoint_f</code>, <code>heat_setpoint_c</code>, <code>cool_setpoint_c</code> but not both. The proxy will auto insert the missing<code> _f or _c </code>based on the scales resolution if it detects one side is not supplied. This makes it so UI&#39;s and drivers do not need to calculate the correct value for the scale.  However, if a driver or UI does want to calculate it, the proxy will leave the value alone. In the same manner the proxy will not correct or anything if the<code> _f and _c </code>do not resolve to the equivalent temperature.</td>
+<td>PRESET FIELDS</td>
+<td>XML</td>
+<td>If a UI or Driver sends a bound call with a string that has invalid XML syntax, this field will be set to <code>&lt;preset_field/&gt;</code> and an error message will be logged to director.log when this occurs. Note that only a driver OR UI should specify the<code> _f or c. </code> For example: <code>heat_setpoint_f</code>, <code>cool_setpoint_f</code>, <code>heat_setpoint_c</code>, <code>cool_setpoint_c</code> but not both. The proxy will auto insert the missing<code> _f or _c </code>based on the scales resolution if it detects one side is not supplied. This makes it so UI&#39;s and drivers do not need to calculate the correct value for the scale.  However, if a driver or UI does want to calculate it, the proxy will leave the value alone. In the same manner the proxy will not correct or anything if the<code> _f and _c </code>do not resolve to the equivalent temperature.</td>
 </tr>
 </tbody></table>
 
@@ -51592,7 +51711,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Adds a Preset Schedule Preset Event to be run at the specified day/time (If protocol driver has the <code>can_preset_schedule</code> capability.</p>
 
-<h3 id='thermostat-proxy-commands-preset_event_add-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_event_add-name'>Name</h3>
 
 <p><code>PRESET_EVENT_ADD ()</code></p>
 
@@ -51600,23 +51719,28 @@ XML text string of XML that matches the Preset Schedule API.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>NAME</td>
+<td>STR</td>
+<td>Event Name</td>
 </tr>
 <tr>
-<td>int</td>
-<td>WEEKDAY: 0-6 with Sunday being 0</td>
+<td>WEEKDAY</td>
+<td>INT</td>
+<td>0-6 with Sunday being 0</td>
 </tr>
 <tr>
-<td>int</td>
-<td>HOUR:  0-23</td>
+<td>HOUR</td>
+<td>INT</td>
+<td>0-23</td>
 </tr>
 <tr>
-<td>int</td>
-<td>MINUTE: 0-60</td>
+<td>MINUTE</td>
+<td>INT</td>
+<td>0-60</td>
 </tr>
 </tbody></table>
 
@@ -51632,31 +51756,36 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Deletes a Preset Schedule Preset if the protocol driver has the <code>can_preset_schedule</code> capability.</p>
 
-<h3 id='thermostat-proxy-commands-preset_event_delete-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_event_delete-name'>Name</h3>
 
 <p><code>PRESET_EVENT_DELETE ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
-<td>NAME: Using <code>&quot;&quot;</code> (an empty string) will match all presets to make deleting all events of a given preset name easier.</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Using <code>&quot;&quot;</code> (an empty string) will match all presets to make deleting all events of a given preset name easier.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>WEEKDAY: 0-6 with Sunday being 0. Using -1 will match any weekday.</td>
+<td>WEEKDAY</td>
+<td>INT</td>
+<td>0-6 with Sunday being 0. Using -1 will match any weekday.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>HOUR:  0-23 Using -1 Will match any Hour.</td>
+<td>HOUR</td>
+<td>INT</td>
+<td>0-23 Using -1 Will match any Hour.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>MINUTE: 0-60 Using -1 will match any Minute.</td>
+<td>MINUTE</td>
+<td>INT</td>
+<td>0-60 Using -1 will match any Minute.</td>
 </tr>
 </tbody></table>
 
@@ -51674,43 +51803,51 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Modifies an existing Preset Schedule Event (If protocol driver has the <code>can_preset_schedule</code> capability)</p>
 
-<h3 id='thermostat-proxy-commands-preset_event_modify-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_event_modify-name'>Name</h3>
 
 <p><code>PRESET_EVENT_MODIFY ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>NAME</td>
+<td>STR</td>
+<td>Event Name</td>
 </tr>
 <tr>
-<td>int</td>
-<td>WEEKDAY: 0-6 with Sunday being 0.</td>
+<td>WEEKDAY:</td>
+<td>INT</td>
+<td>0-6 with Sunday being 0.</td>
 </tr>
 <tr>
-<td>int</td>
-<td>HOUR:  0-23</td>
+<td>HOUR</td>
+<td>INT</td>
+<td>0-23</td>
 </tr>
 <tr>
-<td>int</td>
-<td>MINUTE: 0-60</td>
+<td>MINUTE</td>
+<td>INT</td>
+<td>0-60</td>
 </tr>
 <tr>
-<td>int</td>
-<td>NEW WEEKDAY: 0-6 with Sunday being 0</td>
+<td>NEW WEEKDAY</td>
+<td>INT</td>
+<td>0-6 with Sunday being 0</td>
 </tr>
 <tr>
-<td>int</td>
-<td>NEW HOUR: 0-23</td>
+<td>NEW HOUR</td>
+<td>INT</td>
+<td>0-23</td>
 </tr>
 <tr>
-<td>int</td>
-<td>NEW MINUTE: 0-60</td>
+<td>NEW MINUTE</td>
+<td>INT</td>
+<td>0-60</td>
 </tr>
 </tbody></table>
 
@@ -51726,27 +51863,31 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Modifies an existing Preset Schedule Event (If protocol driver has the <code>can_preset_schedule</code> capability)</p>
 
-<h3 id='thermostat-proxy-commands-preset_modify-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-preset_modify-name'>Name</h3>
 
 <p><code>PRESET_MODIFY ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
 <td>NAME</td>
+<td>STR</td>
+<td>Preset Name</td>
 </tr>
 <tr>
+<td>PRESET FIELDS</td>
 <td>XML</td>
-<td>PRESET FIELDS:  XML DATA.</td>
+<td>XML DATA</td>
 </tr>
 <tr>
-<td>str</td>
 <td>NEW NAME</td>
+<td>STR</td>
+<td>New Preset Name</td>
 </tr>
 </tbody></table>
 
@@ -51763,7 +51904,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 </code></pre></div>
 <h2 id='thermostat-proxy-commands-query_schedule'>QUERY_SCHEDULE</h2>
 <p>Used for the old .ccz and a few older thermostats for scheduling purposes.</p>
-<h3 id='thermostat-proxy-commands-query_schedule-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-query_schedule-name'>Name</h3>
 
 <p><code>QUERY_SCHEDULE ()</code></p>
 
@@ -51771,7 +51912,7 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used for the old .ccz and a few older thermostats for scheduling purposes.</p>
 
-<h3 id='thermostat-proxy-commands-query_schedule_events-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-query_schedule_events-name'>Name</h3>
 
 <p><code>QUERY_SCHEDULE_EVENTS ()</code></p>
 
@@ -51779,19 +51920,21 @@ XML text string of XML that matches the Preset Schedule API.</p>
 
 <p>Used to indicate if the buttons on the thermostat should be locked out from controlling the temperature.</p>
 
-<h3 id='thermostat-proxy-commands-set_buttons_lock-signature'>Signature</h3>
+<h3 id='thermostat-proxy-commands-set_buttons_lock-name'>Name</h3>
 
 <p><code>SET_BUTTONS_LOCK ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>LOCK: 1 or 0 indicating if the buttons should be locked out or not.</td>
+<td>LOCK</td>
+<td>BOOL</td>
+<td>1 or 0 indicating if the buttons should be locked out or not.</td>
 </tr>
 </tbody></table>
 <h1 id='thermostat-unhandled-commands'>Thermostat Unhandled Commands</h1>
