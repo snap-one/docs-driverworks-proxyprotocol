@@ -1,0 +1,22 @@
+<h2 id='_22-reducedalssupport'>_22-REDUCEDALSSUPPORT</h2><h2 id='reduced_als_support'>reduced_als_support</h2>
+<p>Whether the device supports the Advanced Lighting Scenes agent, excluding multi-action scene elements.</p>
+
+<p>This capability has been greatly improved for 3.3.2. Most drivers should use this reduced_als_support capability as it provides 99% of all lighting scene functionality and doesn&#39;t require the driver to implement any ALS API&#39;s.</p>
+
+<p>The primary downside of reduced ALS support is the lack of multi-action scene elements.</p>
+
+<p>Drivers using this capability will receive SET_BRIGHTNESS_TARGET and SET_COLOR_TARGET, SET_BRIGHTNESS_STOP, and SET_COLOR_STOP commands when a scene is activated rather than ALS API commands.</p>
+
+<p>Drivers should verify that scene ramping via a held scene ramp up/down button works with their drivers via the supports_target capability and properly handle SET_COLOR_STOP and SET_BRIGHTNESS_STOP commands.</p>
+
+<p>Note: This cannot be enabled if advanced_scene_support is enabled.</p>
+<h3 id='reduced_als_support-signature'>Signature</h3>
+<p><code>&lt;reduced_als_support&gt;&lt;/reduced_als_support&gt;</code></p>
+<h3 id='reduced_als_support-type'>Type</h3>
+<p>Boolean</p>
+<h3 id='reduced_als_support-dynamic-capability'>Dynamic Capability</h3>
+<p>No</p>
+<h3 id='reduced_als_support-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;reduced_als_support&gt;</span>false<span class="nt">&lt;/reduced_als_support&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>

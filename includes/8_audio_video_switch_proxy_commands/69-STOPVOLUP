@@ -1,0 +1,20 @@
+<h2 id='stop_vol_up'>STOP_VOL_UP</h2>
+<p>Stop ramping the volume up.</p>
+<h3 id='stop_vol_up-name'>Name</h3>
+<p><code>STOP_VOL_UP ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OUTPUT</td>
+<td>INT</td>
+<td>Output Binding ID</td>
+</tr>
+</tbody></table>
+<h3 id='stop_vol_up-returns'>Returns</h3>
+<p><code>None</code></p>
