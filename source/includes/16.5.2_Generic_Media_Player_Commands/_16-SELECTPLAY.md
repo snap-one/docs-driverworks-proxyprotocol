@@ -8,9 +8,9 @@ Command to select the specified item for playback. If an album, this will playba
 `SELECT_PLAY ()`
 
 
-| Parameter | Description                         |
-| --------- | ----------------------------------- |
-| ITEM      | The index of the item to be played. |
+| Parameter | Type | Description                         |
+| --------- | ---- | ----------------------------------- |
+| ITEM      | INT. | The index of the item to be played. |
 
 
 ### SendToProxy

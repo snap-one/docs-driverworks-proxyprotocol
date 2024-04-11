@@ -8,9 +8,10 @@ Command that returns the index of the first item in the list that begins with th
 `GET_ALPHA_LOOKUP ()`
 
 
-| Parameter | Description |
-| --------- | ----------- |
-| String    | Letter      |
+| Parameter | Type | Description  |
+| --------- | ---- | ------------ |
+| LETTER    | STR  | Index letter |
+| ROOMID    | INT  | Room         |
 
 
 ### SendToProxy

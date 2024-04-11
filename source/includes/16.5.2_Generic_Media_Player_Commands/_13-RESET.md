@@ -8,9 +8,9 @@ Command to reset the GenericMediaPlayer. This command is used to switch between 
 `RESET ()`
 
 
-| Parameter | Description                    |
-| --------- | ------------------------------ |
-| TYPE      | The new media type tp be shown |
+| Parameter | Type | Description                    |
+| --------- | ---- | ------------------------------ |
+| TYPE      | STR  | The new media type tp be shown |
 
 
 ### SendToProxy

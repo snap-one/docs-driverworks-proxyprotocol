@@ -8,9 +8,9 @@ Command to obtain the shuffle mode for the GenericMediaPlayer.
 `SELECT_SHUFFLE ()`
 
 
-| Parameter | Description                                               |
-| --------- | --------------------------------------------------------- |
-| MODE      | One of the modes returned with the `<shuffle_modes\>` tag |
+| Parameter | Type | Description                                               |
+| --------- | ---- | --------------------------------------------------------- |
+| MODE      | INT  | One of the modes returned with the `<shuffle_modes\>` tag |
 
 
 ### SendToProxy
