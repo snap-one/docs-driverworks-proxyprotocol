@@ -23476,7 +23476,7 @@ ID 3002 and 3003 are FM</p>
 
 <h2 id='satellite-receiver-protocol-notifications-input_output_changed'>INPUT_OUTPUT_CHANGED</h2>
 
-<p>Selected inputs &amp; outputs have changed.</p>
+<p>Notification indicating that the input or output binding has changed.      </p>
 
 <h3 id='satellite-receiver-protocol-notifications-input_output_changed-name'>Name</h3>
 
@@ -23490,14 +23490,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
-<td>BOOL</td>
-<td>True/False</td>
+<td>OUTPUT</td>
+<td>INT</td>
+<td>OutputBindingID</td>
 </tr>
 <tr>
-<td>OutputBindingID</td>
+<td>INPUT</td>
 <td>INT</td>
-<td>Output Binding ID</td>
+<td>Input Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -23521,9 +23521,9 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>LOUDNESS</td>
 <td>BOOL</td>
-<td></td>
+<td>True/False</td>
 </tr>
 <tr>
 <td>Output indingID</td>
@@ -23552,14 +23552,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>BOOL</td>
-<td></td>
-</tr>
-<tr>
-<td>Output Binding ID</td>
+<td>output</td>
 <td>INT</td>
 <td>Output Binding ID</td>
+</tr>
+<tr>
+<td>MUTE</td>
+<td>BOOL</td>
+<td>True/False</td>
 </tr>
 </tbody></table>
 
@@ -23671,12 +23671,12 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>output</td>
 <td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 <tr>
-<td></td>
+<td>SURROUND MODE</td>
 <td>INT</td>
 <td>Surround Mode ID value</td>
 </tr>
@@ -24873,7 +24873,7 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>CHANNEL</td>
 <td>STR</td>
 <td>Channel value in string format.</td>
 </tr>
@@ -24990,11 +24990,13 @@ OUTPUT             0
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
+<td>SWAPFLAG</td>
+<td>BOOL</td>
 <td>True/False</td>
 </tr>
 </tbody></table>
