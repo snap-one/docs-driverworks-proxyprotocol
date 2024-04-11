@@ -8,9 +8,9 @@ Swap page UP/DOWN buttons (used by AVGen)
 `POUND ()`
 
 
-| Parameter | Description |
-| --------- | ----------- |
-| bool      | True/False  |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| SWAPFLAG  | BOOL | True/False  |
 
 
 ### Returns

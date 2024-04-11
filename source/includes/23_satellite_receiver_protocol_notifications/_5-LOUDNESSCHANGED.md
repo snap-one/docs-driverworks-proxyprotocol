@@ -10,7 +10,7 @@ Loudness state (On/Off) has changed.
 
 | Parameter       | Type | Description             |
 | --------------- | ---- | ----------------------- |
-|                 | BOOL |                         |
+| LOUDNESS        | BOOL | True/False              |
 | Output indingID | INT  | Output Binding ID value |
 
 

@@ -1,6 +1,6 @@
 ## INPUT\_OUTPUT\_CHANGED
 
-Selected inputs & outputs have changed.
+Notification indicating that the input or output binding has changed.      
 
 
 ### Name
@@ -8,10 +8,10 @@ Selected inputs & outputs have changed.
 `INPUT_OUTPUT_CHANGED ()`
 
 
-| Parameter       | Type | Description       |
-| --------------- | ---- | ----------------- |
-|                 | BOOL | True/False        |
-| OutputBindingID | INT  | Output Binding ID |
+| Parameter | Type | Description      |
+| --------- | ---- | ---------------- |
+| OUTPUT    | INT  | OutputBindingID  |
+| INPUT     | INT  | Input Binding ID |
 
 
 ### Returns

@@ -10,7 +10,7 @@ Tune device to the specified channel.
 
 | Parameter | Type | Description                     |
 | --------- | ---- | ------------------------------- |
-|           | STR  | Channel value in string format. |
+| CHANNEL   | STR  | Channel value in string format. |
 
 
 ### Returns
