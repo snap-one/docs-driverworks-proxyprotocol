@@ -8,9 +8,9 @@ Numerical value of the output. Switch the output to passed ID.
 `CONNECT OUTPUT ()`
 
 
-| Parameter | Description       |
-| --------- | ----------------- |
-| int       | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| OUTPUT ID | INT  | Output Binding ID |
 
 
 ### Returns

@@ -8,10 +8,10 @@ Navigator EQ notification of the current names for the equalizer presets.
 `EQ_NAMES_CHANGED`
 
 
-| Parameter       | Type           | Description     |
-| --------------- | -------------- | --------------- |
-| OutputBindingID | INT            | OutputBindingID |
-|                 | Table of names | Table of names  |
+| Parameter | Type           | Description     |
+| --------- | -------------- | --------------- |
+| OUTPUT    | INT            | OutputBindingID |
+| INDEX     | Table of names | Table of names  |
 
 
 ### Returns

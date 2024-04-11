@@ -10,7 +10,7 @@ Navigator EQ command called to change the selected preset for an output.
 
 | Parameter         | Description | Description                    |
 | ----------------- | ----------- | ------------------------------ |
-| DEX               | INT         | Index for the selected preset. |
+| INDEX             | INT         | Index for the selected preset. |
 | Output Binding ID | INT         | Output Binding ID              |
 
 

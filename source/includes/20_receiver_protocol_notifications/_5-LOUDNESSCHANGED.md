@@ -10,7 +10,7 @@ Loudness state (On/Off) has changed.
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| LOOUDNESS | BOOL | True/False  |
+| LOUDNESS  | BOOL | True/False  |
 
 
 ### Returns

@@ -8,10 +8,10 @@ Navigator EQ notification of the order that the names from EQ\_NAMES\_CHANGED sh
 `EQ_DISPLAY_ORDER_CHANGED`
 
 
-| Parameter       | Type             | Description                                                                                                                                                                                                                                            |
-| --------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| OutputBindingID | INT              | OutputBindingID                                                                                                                                                                                                                                        |
-|                 | Table of indexes | Table of indexes that represents display order of the names.  Note that any programming for selecting a preset will be INDEX based, not name based.  Hence the names can be changed but the programming will be tied to the index at time of creation. |
+| Parameter | Type             | Description                                                                                                                                                                                                                                            |
+| --------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| OUTPUT    | INT              | OutputBindingID                                                                                                                                                                                                                                        |
+| INDEX     | Table of indexes | Table of indexes that represents display order of the names.  Note that any programming for selecting a preset will be INDEX based, not name based.  Hence the names can be changed but the programming will be tied to the index at time of creation. |
 
 
 ### Returns
