@@ -1,6 +1,6 @@
 ## SIGNAL\_STRENGTH
 
-Displays strength of signal.
+Notification indicating the signal strength has changed.
 
 
 ### Name
@@ -10,7 +10,7 @@ Displays strength of signal.
 
 | Parameter | Type | Description                                    |
 | --------- | ---- | ---------------------------------------------- |
-|           | INT  | 0 = “None”, 1 = “Weak”, 2 = “Fair”, 3 = “Good” |
+| STRENGTH  | INT  | 0 = “None”, 1 = “Weak”, 2 = “Fair”, 3 = “Good” |
 
 
 ### Returns

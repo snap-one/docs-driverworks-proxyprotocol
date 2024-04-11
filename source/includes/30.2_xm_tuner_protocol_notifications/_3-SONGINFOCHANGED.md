@@ -8,9 +8,13 @@ Displays current song information.
 `SONG_INFO_CHANGED ()`
 
 
-| Parameter | Type | Description                            |
-| --------- | ---- | -------------------------------------- |
-|           | STR  | ARTIST, TITLE, CATEGORY, CHANNEL, NAME |
+| Parameter | Type | Description          |
+| --------- | ---- | -------------------- |
+| ARTIST    | STR  | ARTIST information   |
+| TITLE     | STR  | TITLE information    |
+| CATEGORY  | STR  | CATEGORY information |
+| CHANNEL   | STR  | CHANNEL information  |
+| NAME      | STR  | NAME information     |
 
 
 ### Returns

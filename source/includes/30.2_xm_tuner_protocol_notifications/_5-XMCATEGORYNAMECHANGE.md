@@ -1,6 +1,6 @@
 ## XM\_CATEGORY\_NAME\_CHANGE
 
-Displays current station name.
+Notification indicating that the name of the current station's category has changed.
 
 
 ### Name
@@ -10,8 +10,8 @@ Displays current station name.
 
 | Parameter | Type | Description  |
 | --------- | ---- | ------------ |
-|           | INT  | Channel      |
-|           | STR  | Channel name |
+| NUMBER    | INT  | Channel      |
+| NAME      | STR  | Channel name |
 
 
 ### Returns
