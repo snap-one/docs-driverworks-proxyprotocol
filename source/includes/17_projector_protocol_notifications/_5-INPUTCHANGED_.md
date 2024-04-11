@@ -1,6 +1,6 @@
 ## INPUT\_CHANGED
 
-Selected input has changed.
+Selected input source has changed.
 
 
 ### Name
@@ -8,13 +8,9 @@ Selected input has changed.
 `INPUT_CHANGED ()`
 
 
-| Parameter | Type | Description                                                    |
-| --------- | ---- | -------------------------------------------------------------- |
-|           | INT  | Binding ID of RF cloud                                         |
-|           | STR  | One of the following case sensitive values: “AMBand”  “FMBand” |
-|           | INT  | Lowest tune-able channel e.g. 8750 for FM, 530 for AM          |
-|           | INT  | Highest tunable channel e.g. 10790 for FM, 1760 for AM         |
-|           | INT  | Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S.    |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| INPUT     | INT  | INPUT       |
 
 
 ### Returns

@@ -8,9 +8,10 @@ Set bass to a specified level.
 `SET_BASS_LEVEL`
 
 
-| Parameter       | Type | Description       |
-| --------------- | ---- | ----------------- |
-| OutputBindingID | INT  | Output Binding ID |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| Output    | INT  | Output Binding ID |
+| LEVEL     | INT  | Bass Level        |
 
 
 ### Returns

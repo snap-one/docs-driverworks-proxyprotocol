@@ -8,10 +8,9 @@ MUTE state (On/Off) has changed.
 `MUTE_CHANGED ()`
 
 
-| Parameter | Description | Description     |
-| --------- | ----------- | --------------- |
-|           | BOOL        |                 |
-|           | INT         | OutputBindingID |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| MUTE      | BOOL | True/False  |
 
 
 
