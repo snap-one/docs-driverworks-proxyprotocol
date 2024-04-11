@@ -8168,8 +8168,8 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>BINDING_ID</td>
-<td>str</td>
+<td>BINDING ID</td>
+<td>STR</td>
 <td>BindingID of the changed binding.</td>
 </tr>
 </tbody></table>
@@ -10839,7 +10839,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>DEX</td>
+<td>INDEX</td>
 <td>INT</td>
 <td>Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
 </tr>
@@ -10906,7 +10906,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>DEX</td>
+<td>INDEX</td>
 <td>INT</td>
 <td>Index for the selected preset.</td>
 </tr>
@@ -10993,14 +10993,14 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>OUTPUT</td>
 <td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 <tr>
-<td></td>
+<td>AUDIOMODE</td>
 <td>INT</td>
-<td>1 = TONE_CONTROL: This is sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
+<td>1 = TONE\_CONTROL: This is sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
 </tr>
 </tbody></table>
 
@@ -11098,12 +11098,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>OUTPUT</td>
 <td>INT</td>
 <td>OutputBindingID</td>
 </tr>
 <tr>
-<td></td>
+<td>INDEX</td>
 <td>Table of indexes</td>
 <td>Table of indexes that represents display order of the names.  Note that any programming for selecting a preset will be INDEX based, not name based.  Hence the names can be changed but the programming will be tied to the index at time of creation.</td>
 </tr>
@@ -11131,12 +11131,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>OUTPUT</td>
 <td>INT</td>
 <td>OutputBindingID</td>
 </tr>
 <tr>
-<td></td>
+<td>INDEX</td>
 <td>Table of names</td>
 <td>Table of names</td>
 </tr>
@@ -11164,13 +11164,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>OUTPUT</td>
 <td>INT</td>
 <td>OutputBindingID</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>VALUES</td>
+<td>INT</td>
 <td>Table of comma delimited frequencies.</td>
 </tr>
 </tbody></table>
@@ -11464,11 +11464,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OUTPUT ID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -11560,11 +11562,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>NAME</td>
+<td>STR</td>
 <td>MacroCodeName</td>
 </tr>
 </tbody></table>
@@ -13293,9 +13297,9 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>ID</td>
-<td>ID of IR Code</td>
+<td>NAME</td>
+<td>STR</td>
+<td>Emit IR/Serial code macro specified by the macro name.</td>
 </tr>
 </tbody></table>
 
@@ -16331,12 +16335,17 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <td>LETTER</td>
 <td>STR</td>
-<td>Index letter</td>
+<td>Letter used for Index</td>
 </tr>
 <tr>
 <td>ROOMID</td>
 <td>INT</td>
-<td>Room</td>
+<td>Room ID value</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody></table>
 
@@ -21074,7 +21083,7 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>LOOUDNESS</td>
+<td>LOUDNESS</td>
 <td>BOOL</td>
 <td>True/False</td>
 </tr>
@@ -21708,9 +21717,19 @@ ID 3002 and 3003 are FM</p>
 
 <p><code>ON ()</code></p>
 
-<h3 id='receiver-proxy-commands-on-parameters'>Parameters</h3>
-
-<p><code>None</code></p>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CONNECT</td>
+<td>INT</td>
+<td>Turns the device on.</td>
+</tr>
+</tbody></table>
 
 <h3 id='receiver-proxy-commands-on-usage-note'>Usage Note</h3>
 
