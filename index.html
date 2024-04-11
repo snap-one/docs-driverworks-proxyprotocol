@@ -10842,12 +10842,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>DEX</td>
 <td>INT</td>
 <td>Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
 </tr>
 <tr>
-<td></td>
+<td>NAME</td>
 <td>STR</td>
 <td>Name for the new custom index.  Base64 encoded.</td>
 </tr>
@@ -10909,7 +10909,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>DEX</td>
 <td>INT</td>
 <td>Index for the selected preset.</td>
 </tr>
@@ -10940,7 +10940,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>VALUES</td>
 <td>STR</td>
 <td>Comma delimited string of updated numeric gain values, one value per band.</td>
 </tr>
@@ -11201,13 +11201,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>OUTPUT</td>
 <td>INT</td>
-<td>Output Binding ID</td>
+<td>Output Binding ID. Notifies that the EQ band gain values have been updated for the specified output.</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>VALUES</td>
+<td>STR</td>
 <td>VALUES: Comma delimited list of current equalizer values.</td>
 </tr>
 </tbody></table>
@@ -11235,12 +11235,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>Output</td>
 <td>INT</td>
-<td>Output Binding ID</td>
+<td>Output Binding ID. Selects a specific EQ preset for the associated output.</td>
 </tr>
 <tr>
-<td></td>
+<td>EQPRESET</td>
 <td>INT</td>
 <td>QPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  <code>&lt;eq_preset_nav_count&gt;</code> capability.</td>
 </tr>
