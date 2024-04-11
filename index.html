@@ -18552,7 +18552,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </ul>
 
 <h2 id='projector-protocol-notifications-input_changed'>INPUT_CHANGED</h2>
-<p>Selected input has changed.</p>
+<p>Selected input source has changed.</p>
 <h3 id='projector-protocol-notifications-input_changed-name'>Name</h3>
 
 <p><code>INPUT_CHANGED ()</code></p>
@@ -18565,29 +18565,9 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>INPUT</td>
 <td>INT</td>
-<td>Binding ID of RF cloud</td>
-</tr>
-<tr>
-<td></td>
-<td>STR</td>
-<td>One of the following case sensitive values: “AMBand”  “FMBand”</td>
-</tr>
-<tr>
-<td></td>
-<td>INT</td>
-<td>Lowest tune-able channel e.g. 8750 for FM, 530 for AM</td>
-</tr>
-<tr>
-<td></td>
-<td>INT</td>
-<td>Highest tunable channel e.g. 10790 for FM, 1760 for AM</td>
-</tr>
-<tr>
-<td></td>
-<td>INT</td>
-<td>Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S.</td>
+<td>INPUT</td>
 </tr>
 </tbody></table>
 
@@ -18620,19 +18600,14 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>LOUDNESS</td>
 <td>BOOL</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>INT</td>
-<td>OutputBindingID</td>
+<td>True/False</td>
 </tr>
 </tbody></table>
 
@@ -18651,19 +18626,14 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>MUTE</td>
 <td>BOOL</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>INT</td>
-<td>OutputBindingID</td>
+<td>True/False</td>
 </tr>
 </tbody></table>
 
@@ -19812,9 +19782,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
+<td>Output</td>
 <td>INT</td>
 <td>Output Binding ID</td>
+</tr>
+<tr>
+<td>LEVEL</td>
+<td>INT</td>
+<td>Bass Level</td>
 </tr>
 </tbody></table>
 
@@ -20002,7 +19977,7 @@ ID 3002 and 3003 are FM</p>
 
 <h2 id='projector-proxy-commands-set_up_down_swap'>SET_UP_DOWN_SWAP</h2>
 
-<p>Swap page UP/DOWN buttons.</p>
+<p>Swap page UP/DOWN buttons (used by AVGen). <code>TRUE</code> to enable swap, <code>FALSE</code> to disable. </p>
 
 <h3 id='projector-proxy-commands-set_up_down_swap-name'>Name</h3>
 
