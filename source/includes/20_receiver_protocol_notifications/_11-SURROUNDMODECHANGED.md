@@ -8,10 +8,10 @@ Surround mode setting has changed.
 `SURROUND_MODE_CHANGED ()`
 
 
-| Parameter       | Type                   | Description             |
-| --------------- | ---------------------- | ----------------------- |
-| OutputBindingID | INT                    | Output Binding ID value |
-|                 | Surround Mode ID value | Surround Mode ID value  |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| Output        | INT  | Output Binding ID value |
+| SURROUND MODE | INT  | Surround Mode ID value  |
 
 
 ### Returns
