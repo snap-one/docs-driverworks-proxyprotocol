@@ -28562,7 +28562,7 @@ end
 
 <h2 id='tv-proxy-commands-set_up_down_swap'>SET_UP_DOWN_SWAP</h2>
 
-<p>Swap page UP/DOWN buttons.</p>
+<p>Swap page UP/DOWN buttons (used by AVGen). <code>TRUE</code> to enable swap, <code>FALSE</code> to disable. </p>
 
 <h3 id='tv-proxy-commands-set_up_down_swap-name'>Name</h3>
 
@@ -28576,9 +28576,9 @@ end
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>SWAPFLAG</td>
 <td>BOOL</td>
-<td></td>
+<td>True/False</td>
 </tr>
 </tbody></table>
 
@@ -29517,7 +29517,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <h2 id='tv-protocol-notifications-input_changed'>INPUT_CHANGED</h2>
 
-<p>Selected Input has changed.</p>
+<p>Notification indicating that the TV&#39;s input source has changed.</p>
 
 <h3 id='tv-protocol-notifications-input_changed-name'>Name</h3>
 
@@ -29533,27 +29533,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 <tr>
 <td>INPUT</td>
 <td>INT</td>
-<td>Input Binding ID</td>
-</tr>
-<tr>
-<td>BANDTYPE</td>
-<td>STR</td>
-<td>One of the following case sensitive values: &quot;AMBand” , “FMBand”</td>
-</tr>
-<tr>
-<td>MINCHANNEL</td>
-<td>INT</td>
-<td>Lowest tunable channel e.g. 8750 for FM, 530 for AM</td>
-</tr>
-<tr>
-<td>MAXCHANNEL</td>
-<td>INT</td>
-<td>Highest tunable channel e.g. 10790 for FM, 1760 for AM</td>
-</tr>
-<tr>
-<td>CHANNELSPACING</td>
-<td>INT</td>
-<td>Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S</td>
+<td>Changed Input</td>
 </tr>
 </tbody></table>
 
@@ -29595,14 +29575,9 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>LOUDNESS</td>
 <td>BOOL</td>
 <td>True/False</td>
-</tr>
-<tr>
-<td>OutputBindingID</td>
-<td>INT</td>
-<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -29622,15 +29597,18 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
-<td>True/False</td>
+<td>output</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>Output Binding ID</td>
+<td>MUTE</td>
+<td>BOOL</td>
+<td>True/False</td>
 </tr>
 </tbody></table>
 
