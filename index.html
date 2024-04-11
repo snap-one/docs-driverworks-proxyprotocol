@@ -13297,7 +13297,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>INT</td>
+<td>ID</td>
 <td>ID of IR Code</td>
 </tr>
 </tbody></table>
@@ -13308,7 +13308,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h2 id='cd-player-proxy-commands-emit_macro'>EMIT_MACRO</h2>
 
-<p>Emit IR/Serial code macro.</p>
+<p>Emit IR/Serial code macro specified by the macro name.</p>
 
 <h3 id='cd-player-proxy-commands-emit_macro-name'>Name</h3>
 
@@ -13322,7 +13322,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>MacroCodeName</td>
+<td>NAME</td>
 <td>STR</td>
 <td>Macro Code Name</td>
 </tr>
@@ -13858,7 +13858,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 
 <h2 id='cd-player-proxy-commands-set_up_down_swap'>SET_UP_DOWN_SWAP</h2>
 
-<p>Swap page UP/DOWN buttons.</p>
+<p>Swap page UP/DOWN buttons (used by AVGen). <code>TRUE</code> to enable swap, <code>FALSE</code> to disable. </p>
 
 <h3 id='cd-player-proxy-commands-set_up_down_swap-name'>Name</h3>
 
@@ -13867,11 +13867,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>bool</td>
+<td>SWAPFLAG</td>
+<td>BOOL</td>
 <td>True/False</td>
 </tr>
 </tbody></table>
@@ -14575,18 +14577,18 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>INDEX</td>
 <td>INT</td>
 <td>Index of the disc being scanned</td>
 </tr>
 <tr>
-<td>str</td>
+<td>DISCTYPE</td>
 <td>STR</td>
 <td>‘cd’ for CD or ‘dvd’ for DVD</td>
 </tr>
 <tr>
-<td>data</td>
 <td>DATA</td>
+<td>XML</td>
 <td>table of contents</td>
 </tr>
 </tbody></table>
@@ -15829,18 +15831,18 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>INDEX</td>
 <td>INT</td>
 <td>Index of the disc being scanned</td>
 </tr>
 <tr>
-<td>str</td>
+<td>DISCTYPE</td>
 <td>STR</td>
 <td>‘cd’ for CD or ‘dvd’ for DVD</td>
 </tr>
 <tr>
-<td>data</td>
 <td>DATA</td>
+<td>XML</td>
 <td>table of contents</td>
 </tr>
 </tbody></table>
@@ -16272,12 +16274,19 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>String</td>
-<td>Letter</td>
+<td>LETTER</td>
+<td>STR</td>
+<td>Index letter</td>
+</tr>
+<tr>
+<td>ROOMID</td>
+<td>INT</td>
+<td>Room</td>
 </tr>
 </tbody></table>
 
@@ -16407,20 +16416,24 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>ITEM</td>
+<td>INT</td>
 <td>The id of the item selected</td>
 </tr>
 <tr>
-<td>TYPE</td>
-<td>The item type returned in the list.</td>
+<td>TITLE</td>
+<td>STR</td>
+<td>The name of the item.</td>
 </tr>
 <tr>
-<td>TITLE</td>
-<td>The name of the item.</td>
+<td>TYPE</td>
+<td>INT</td>
+<td>he item type returned in the list.</td>
 </tr>
 </tbody></table>
 
@@ -16440,18 +16453,22 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>ITEM</td>
+<td>INT</td>
 <td>The id of the item selected</td>
 </tr>
 <tr>
 <td>TYPE</td>
+<td>STR</td>
 <td>The item type returned in the list.</td>
 </tr>
 <tr>
 <td>TITLE</td>
+<td>STR</td>
 <td>The name of the item.</td>
 </tr>
 </tbody></table>
@@ -16519,11 +16536,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>TYPE</td>
+<td>STR</td>
 <td>The new media type tp be shown</td>
 </tr>
 </tbody></table>
@@ -16599,11 +16618,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>ITEM</td>
+<td>INT.</td>
 <td>The index of the item to be played.</td>
 </tr>
 </tbody></table>
@@ -16623,11 +16644,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>MODE</td>
+<td>INT</td>
 <td>One of the modes returned with the <code>&lt;repeat\_modes\&gt;</code> tag.</td>
 </tr>
 </tbody></table>
@@ -16647,11 +16670,13 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>MODE</td>
+<td>INT</td>
 <td>One of the modes returned with the <code>&lt;shuffle_modes\&gt;</code> tag</td>
 </tr>
 </tbody></table>
