@@ -8,9 +8,9 @@ Swap page UP/DOWN buttons (used by AVGen)
 `SET_UP_DOWN_SWAP ()`
 
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| SWAPFLAG  | BOOL |             |
+| Parameter | Type | Description                                                                           |
+| --------- | ---- | ------------------------------------------------------------------------------------- |
+| SWAPFLAG  | BOOL | Swap page UP/DOWN buttons (used by AVGen). `TRUE` to enable swap, `FALSE` to disable. |
 
 
 ### Returns

@@ -7,9 +7,9 @@ Command sent when a bound binding changes. Performs any actions needed to the pr
 
 `BINDING_CHANGE_ACTION ()`
 
-| Parameter | Description                       |
-| --------- | --------------------------------- |
-| str       | BindingID of the changed binding. |
+| Parameter   | Type | Description                       |
+| ----------- | ---- | --------------------------------- |
+| BINDING\_ID | str  | BindingID of the changed binding. |
 
 
 ### Returns
