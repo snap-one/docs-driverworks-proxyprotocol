@@ -10,8 +10,8 @@ Navigator EQ command called to save the current EQ values to a custom preset wit
 
 | Parameter       | Type | Description                                                                                                                                                                                                                     |
 | --------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                 | INT  | Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the `<eq_preset_nav_count>` capability, minus one due to the range being zero-based. |
-|                 | STR  | Name for the new custom index.  Base64 encoded.                                                                                                                                                                                 |
+| DEX             | INT  | Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the `<eq_preset_nav_count>` capability, minus one due to the range being zero-based. |
+| NAME            | STR  | Name for the new custom index.  Base64 encoded.                                                                                                                                                                                 |
 | OutputBindingID | INT  | OutputBindingID                                                                                                                                                                                                                 |
 
 

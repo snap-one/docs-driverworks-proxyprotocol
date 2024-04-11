@@ -9,10 +9,10 @@ Navigator EQ notification used when a different preset is selected for an output
 `EQPRESET_CHANGED`
 
 
-| Parameter       | Type | Description                                                                                                               |
-| --------------- | ---- | ------------------------------------------------------------------------------------------------------------------------- |
-| OutputBindingID | INT  | Output Binding ID                                                                                                         |
-|                 | INT  | QPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  `<eq_preset_nav_count>` capability. |
+| Parameter | Type | Description                                                                                                               |
+| --------- | ---- | ------------------------------------------------------------------------------------------------------------------------- |
+| Output    | INT  | Output Binding ID. Selects a specific EQ preset for the associated output.                                                |
+| EQPRESET  | INT  | QPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  `<eq_preset_nav_count>` capability. |
 
 
 ### Returns

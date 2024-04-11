@@ -8,10 +8,10 @@ Navigator EQ notification that the gains of an equalizer have been modified.
 `EQGAINS_CHANGED`
 
 
-| Parameter       | Type | Description                                               |
-| --------------- | ---- | --------------------------------------------------------- |
-| OutputBindingID | INT  | Output Binding ID                                         |
-|                 |      | VALUES: Comma delimited list of current equalizer values. |
+| Parameter | Type | Description                                                                                          |
+| --------- | ---- | ---------------------------------------------------------------------------------------------------- |
+| OUTPUT    | INT  | Output Binding ID. Notifies that the EQ band gain values have been updated for the specified output. |
+| VALUES    | STR  | VALUES: Comma delimited list of current equalizer values.                                            |
 
 
 ### Returns
