@@ -1,6 +1,6 @@
 ## INPUT\_CHANGED
 
-Selected Input has changed.
+Notification indicating that the TV's input source has changed.
 
 
 ### Name
@@ -8,13 +8,9 @@ Selected Input has changed.
 `INPUT_CHANGED ()`
 
 
-| Parameter      | Type | Description                                                     |
-| -------------- | ---- | --------------------------------------------------------------- |
-| INPUT          | INT  | Input Binding ID                                                |
-| BANDTYPE       | STR  | One of the following case sensitive values: "AMBand” , “FMBand” |
-| MINCHANNEL     | INT  | Lowest tunable channel e.g. 8750 for FM, 530 for AM             |
-| MAXCHANNEL     | INT  | Highest tunable channel e.g. 10790 for FM, 1760 for AM          |
-| CHANNELSPACING | INT  | Channel increment e.g. 20 for FM in U.S., 10 for AM in U.S      |
+| Parameter | Type | Description   |
+| --------- | ---- | ------------- |
+| INPUT     | INT  | Changed Input |
 
 
 ### Returns

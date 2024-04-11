@@ -8,10 +8,9 @@ Loudness state (On/Off) has changed.
 `LOUDNESS_CHANGED ()`
 
 
-| Parameter       | Type | Description       |
-| --------------- | ---- | ----------------- |
-|                 | BOOL | True/False        |
-| OutputBindingID | INT  | Output Binding ID |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| LOUDNESS  | BOOL | True/False  |
 
 
 ### Returns
