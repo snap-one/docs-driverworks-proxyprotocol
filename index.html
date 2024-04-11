@@ -6873,12 +6873,12 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <tr>
 <td></td>
 <td>BOOL</td>
-<td></td>
+<td>True/False</td>
 </tr>
 <tr>
-<td>OutputBindingID</td>
+<td>Output</td>
 <td>INT</td>
-<td>Output Binding ID</td>
+<td>Indicates a change in loudness for the specified output binding ID.</td>
 </tr>
 </tbody></table>
 
@@ -6904,12 +6904,12 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <tr>
 <td></td>
 <td>BOOL</td>
-<td></td>
+<td>True/False</td>
 </tr>
 <tr>
-<td>OutputBindingID</td>
+<td>Output</td>
 <td>INT</td>
-<td>Output Binding ID</td>
+<td>Indicates a change in mute state for the specified output binding ID.</td>
 </tr>
 </tbody></table>
 
@@ -8166,10 +8166,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>BINDING_ID</td>
 <td>str</td>
 <td>BindingID of the changed binding.</td>
 </tr>
@@ -9542,7 +9544,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <td>SWAPFLAG</td>
 <td>BOOL</td>
-<td></td>
+<td>Swap page UP/DOWN buttons (used by AVGen). <code>TRUE</code> to enable swap, <code>FALSE</code> to disable.</td>
 </tr>
 </tbody></table>
 
