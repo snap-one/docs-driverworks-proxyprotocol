@@ -29755,7 +29755,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 `0000000000000000000000000000000F indicates that channels 0, 1, 2 &amp; 3 (or 128, 129, 130 &amp; 131) are the only channels available.`
 </code></pre></div>
 <h2 id='xm-tuner-protocol-notifications-signal_strength'>SIGNAL_STRENGTH</h2>
-<p>Displays strength of signal.</p>
+<p>Notification indicating the signal strength has changed.</p>
 <h3 id='xm-tuner-protocol-notifications-signal_strength-name'>Name</h3>
 
 <p><code>SIGNAL_STRENGTH ()</code></p>
@@ -29768,7 +29768,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>STRENGTH</td>
 <td>INT</td>
 <td>0 = “None”, 1 = “Weak”, 2 = “Fair”, 3 = “Good”</td>
 </tr>
@@ -29794,9 +29794,29 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>ARTIST</td>
 <td>STR</td>
-<td>ARTIST, TITLE, CATEGORY, CHANNEL, NAME</td>
+<td>ARTIST information</td>
+</tr>
+<tr>
+<td>TITLE</td>
+<td>STR</td>
+<td>TITLE information</td>
+</tr>
+<tr>
+<td>CATEGORY</td>
+<td>STR</td>
+<td>CATEGORY information</td>
+</tr>
+<tr>
+<td>CHANNEL</td>
+<td>STR</td>
+<td>CHANNEL information</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>STR</td>
+<td>NAME information</td>
 </tr>
 </tbody></table>
 
@@ -29832,7 +29852,7 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 
 <h2 id='xm-tuner-protocol-notifications-xm_category_name_change'>XM_CATEGORY_NAME_CHANGE</h2>
 
-<p>Displays current station name.</p>
+<p>Notification indicating that the name of the current station&#39;s category has changed.</p>
 
 <h3 id='xm-tuner-protocol-notifications-xm_category_name_change-name'>Name</h3>
 
@@ -29846,12 +29866,12 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>NUMBER</td>
 <td>INT</td>
 <td>Channel</td>
 </tr>
 <tr>
-<td></td>
+<td>NAME</td>
 <td>STR</td>
 <td>Channel name</td>
 </tr>
@@ -29917,12 +29937,17 @@ C4:SendToProxy(5002,'CHANNEL_CHANGED',{CHANNEL=10290})
 </tr>
 </thead><tbody>
 <tr>
-<td></td>
+<td>CHANNEL</td>
 <td>INT</td>
 <td>Channel</td>
 </tr>
 <tr>
-<td></td>
+<td>CATEGORY</td>
+<td>STR</td>
+<td>Channel category</td>
+</tr>
+<tr>
+<td>NAME</td>
 <td>STR</td>
 <td>Channel name</td>
 </tr>
