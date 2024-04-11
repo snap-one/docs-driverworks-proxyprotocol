@@ -11,9 +11,9 @@ Issued when scanning the table of contents for a particular disc or cd.  Direct
 
 | Parameter | Type | Description                     |
 | --------- | ---- | ------------------------------- |
-| int       | INT  | Index of the disc being scanned |
-| str       | STR  | ‘cd’ for CD or ‘dvd’ for DVD    |
-| data      | DATA | table of contents               |
+| INDEX     | INT  | Index of the disc being scanned |
+| DISCTYPE  | STR  | ‘cd’ for CD or ‘dvd’ for DVD    |
+| DATA      | XML  | table of contents               |
 
 
 ### Returns

@@ -1,6 +1,6 @@
 ## EMIT\_MACRO
 
-Emit IR/Serial code macro.
+Emit IR/Serial code macro specified by the macro name.
 
 
 ### Name
@@ -8,9 +8,9 @@ Emit IR/Serial code macro.
 `EMIT_MACRO ()`
 
 
-| Parameter     | Type | Description     |
-| ------------- | ---- | --------------- |
-| MacroCodeName | STR  | Macro Code Name |
+| Parameter | Type | Description     |
+| --------- | ---- | --------------- |
+| NAME      | STR  | Macro Code Name |
 
 
 ### Returns

@@ -10,7 +10,7 @@ Emit IR/Serial code (used by AVGen IR/Serial Proxy).
 
 | Parameter | Type | Description   |
 | --------- | ---- | ------------- |
-| ID        | INT  | ID of IR Code |
+| ID        | ID   | ID of IR Code |
 
 
 ### Returns
