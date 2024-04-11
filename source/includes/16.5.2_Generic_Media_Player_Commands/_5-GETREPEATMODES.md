@@ -1,6 +1,6 @@
 ## GET\_REPEAT\_MODES
 
-Command to obtain supported repeat modes.
+Command to set the available repeat modes in the GenericMediaPlayer.
 
 
 ### Name
@@ -8,9 +8,10 @@ Command to obtain supported repeat modes.
 `GET_REPEAT_MODES ()`
 
 
-### Parameters
+| Parameter    | Type | Description   |
+| ------------ | ---- | ------------- |
+| repeat modes | STR  | Repeat modes. |
 
-`None`
 
 
 ### SendToProxy

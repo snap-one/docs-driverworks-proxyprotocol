@@ -5,6 +5,6 @@
 `LIST_TYPE_CHANGED ()`
 
 
-| Parameter | Description     |
-| --------- | --------------- |
-| list type | Watch or Listen |
+| Parameter | Type | Description     |
+| --------- | ---- | --------------- |
+| listtype  | STR  | Watch or Listen |
