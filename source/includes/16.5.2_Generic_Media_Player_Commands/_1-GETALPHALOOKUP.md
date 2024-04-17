@@ -12,7 +12,6 @@ Command that returns the index of the first item in the list that begins with th
 | --------- | ---- | --------------------- |
 | LETTER    | STR  | Letter used for Index |
 | ROOMID    | INT  | Room ID value         |
-|           |      |                       |
 
 
 ### SendToProxy

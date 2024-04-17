@@ -10,8 +10,8 @@ Navigator EQ notification that the equalizer should be shown or hidden from Navi
 
 | Parameter | Type | Description                                                                                                         |
 | --------- | ---- | ------------------------------------------------------------------------------------------------------------------- |
-| int       | INT  | OutputB inding ID                                                                                                   |
-|           | BOOL | ENABLED: True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True. |
+| Output    | INT  | OutputBinding ID                                                                                                    |
+| ENABLED   | BOOL | ENABLED: True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True. |
 
 
 ### Returns

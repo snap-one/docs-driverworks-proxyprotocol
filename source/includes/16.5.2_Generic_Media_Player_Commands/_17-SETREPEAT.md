@@ -8,9 +8,9 @@ Command to set the repeat mode on the GenericMediaPlayer.
 `SELECT_REPEAT ()`
 
 
-| Parameter | Type | Description                                                |
-| --------- | ---- | ---------------------------------------------------------- |
-| MODE      | INT  | One of the modes returned with the `<repeat\_modes\>` tag. |
+| Parameter | Type | Description                                              |
+| --------- | ---- | -------------------------------------------------------- |
+| MODE      | INT  | One of the modes returned with the `<repeat_modes>` tag. |
 
 
 ### SendToProxy
