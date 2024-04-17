@@ -11264,12 +11264,12 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>Output</td>
 <td>INT</td>
-<td>OutputB inding ID</td>
+<td>OutputBinding ID</td>
 </tr>
 <tr>
-<td></td>
+<td>ENABLED</td>
 <td>BOOL</td>
 <td>ENABLED: True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True.</td>
 </tr>
@@ -16257,18 +16257,25 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </tbody></table>
 
-<h2 id='generic-media-player-protocol-notifications-set_repeat_modes'>SET_REPEAT_MODES</h2><h3 id='generic-media-player-protocol-notifications-set_repeat_modes-name'>Name</h3>
+<h2 id='generic-media-player-protocol-notifications-set_repeat_modes'>SET_REPEAT_MODES</h2>
+
+<p>Notification indicating that the available repeat modes of the GenericMediaPlayer have changed.</p>
+
+<h3 id='generic-media-player-protocol-notifications-set_repeat_modes-name'>Name</h3>
+
 <p><code>SET_REPEAT_MODES ()</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>repeat\_modes</td>
-<td></td>
+<td>repeat modes</td>
+<td>STR</td>
+<td>Changed Modes</td>
 </tr>
 </tbody></table>
 
@@ -16341,11 +16348,6 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <td>ROOMID</td>
 <td>INT</td>
 <td>Room ID value</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody></table>
 
@@ -16720,7 +16722,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <td>MODE</td>
 <td>INT</td>
-<td>One of the modes returned with the <code>&lt;repeat\_modes\&gt;</code> tag.</td>
+<td>One of the modes returned with the <code>&lt;repeat_modes&gt;</code> tag.</td>
 </tr>
 </tbody></table>
 
@@ -16746,7 +16748,7 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 <tr>
 <td>shuffle modes</td>
 <td>STR</td>
-<td>One of the modes returned with the <code>&lt;shuffle_modes\&gt;</code> tag</td>
+<td>One of the modes returned with the <code>&lt;shuffle_modes&gt;</code> tag</td>
 </tr>
 </tbody></table>
 
@@ -25000,7 +25002,7 @@ OUTPUT             0
 
 <h2 id='satellite-receiver-proxy-commands-set_up_down_swap'>SET_UP_DOWN_SWAP</h2>
 
-<p>Swap page UP/DOWN buttons (used by AVGen)</p>
+<p>Swap page UP/DOWN buttons (used by AVGen). <code>TRUE</code> to enable swap, <code>FALSE</code> to disable. </p>
 
 <h3 id='satellite-receiver-proxy-commands-set_up_down_swap-name'>Name</h3>
 
