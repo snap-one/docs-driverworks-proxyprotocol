@@ -4309,6 +4309,9 @@
                     <a href="#fan-capabilities-preset_speed" class="toc-h2 toc-link" data-title="preset_speed">preset_speed</a>
                   </li>
                   <li>
+                    <a href="#fan-capabilities-proxy_fan_speed_connections" class="toc-h2 toc-link" data-title="proxy_fan_speed_connections">proxy_fan_speed_connections</a>
+                  </li>
+                  <li>
                     <a href="#fan-capabilities-speed_names" class="toc-h2 toc-link" data-title="speed_names">speed_names</a>
                   </li>
               </ul>
@@ -35293,8 +35296,8 @@ Defaults to false.</p>
 <p><code>None</code></p>
 <h1 id='fan-capabilities'>Fan Capabilities</h1>
 
-<p><h2 id='fan-capabilities-can_reverse'>can_reverse</h2><h3 id='fan-capabilities-can_reverse-signature'>Signature</h3>
-<p><code>&lt;can_reverse&gt;&lt;/can_reverse&gt;</code></p></p>
+<h2 id='fan-capabilities-can_reverse'>can_reverse</h2><h3 id='fan-capabilities-can_reverse-signature'>Signature</h3>
+<p><code>&lt;can_reverse&gt;&lt;/can_reverse&gt;</code></p>
 
 <table><thead>
 <tr>
@@ -35307,13 +35310,11 @@ Defaults to false.</p>
 <td>TRUE/FALSE. Defaults to False.</td>
 </tr>
 </tbody></table>
-
 <h3 id='fan-capabilities-can_reverse-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;can_reverse&gt;</span>true<span class="nt">&lt;/can_reverse&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='fan-capabilities-can_set_preset'>can_set_preset</h2><h3 id='fan-capabilities-can_set_preset-signature'>Signature</h3>
-
 <p><code>&lt;can_set_preset&gt;&lt;/can_set_preset&gt;</code></p>
 
 <table><thead>
@@ -35327,13 +35328,11 @@ Defaults to false.</p>
 <td>TRUE/FALSE. Defaults to False.</td>
 </tr>
 </tbody></table>
-
 <h3 id='fan-capabilities-can_set_preset-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;can_set_preset&gt;</span>true<span class="nt">&lt;/an_set_preset&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='fan-capabilities-discrete_levels'>discrete_levels</h2><h3 id='fan-capabilities-discrete_levels-signature'>Signature</h3>
-
 <p><code>&lt;discrete_levels&gt;&lt;/discrete_levels&gt;</code></p>
 
 <table><thead>
@@ -35347,13 +35346,11 @@ Defaults to false.</p>
 <td>0 to N. Defaults to 1. A count of 0 would mean that the speeds are analog rather than discreet.</td>
 </tr>
 </tbody></table>
-
 <h3 id='fan-capabilities-discrete_levels-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;discrete_levels&gt;</span>1<span class="nt">&lt;/discrete_levels&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='fan-capabilities-preset_speed'>preset_speed</h2><h3 id='fan-capabilities-preset_speed-signature'>Signature</h3>
-
 <p><code>&lt;preset_speed&gt;&lt;/preset_speed&gt;</code></p>
 
 <table><thead>
@@ -35367,9 +35364,31 @@ Defaults to false.</p>
 <td>1 to N. Defaults to the highest available speed.</td>
 </tr>
 </tbody></table>
-
 <h3 id='fan-capabilities-preset_speed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
    <span class="nt">&lt;preset_speed&gt;</span>1<span class="nt">&lt;/preset_speed&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='fan-capabilities-proxy_fan_speed_connections'>proxy_fan_speed_connections</h2>
+
+<p>This capability is applicable to newer fan drivers which create BUTTON_LINK connections dynamically in association with fan speeds in the fan proxy. Setting this capability to true simply enables this ability. It relies on two other capabilities to successfully implement the dynamic connection functionality. They include: discreet_levels and speed_name.</p>
+
+<p><h6 id='fan-capabilities-proxy_fan_speed_connections-example-support-for-caching-urls-type-available-from-3-4-2'>Available from 3.4.2.</h6><h3 id='fan-capabilities-proxy_fan_speed_connections-signature'>Signature</h3>
+<p><code>&lt;proxy_fan_speed_connections&gt;&lt;/proxy_fan_speed_connections&gt;</code></p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bool</td>
+<td>True = Creates BUTTON LINK connections dynamically.</td>
+</tr>
+</tbody></table>
+
+<h3 id='fan-capabilities-proxy_fan_speed_connections-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+   <span class="nt">&lt;proxy_fan_speed_connections&gt;</span>true<span class="nt">&lt;/proxy_fan_speed_connections&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='fan-capabilities-speed_names'>speed_names</h2><h3 id='fan-capabilities-speed_names-signature'>Signature</h3>
