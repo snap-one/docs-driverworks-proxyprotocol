@@ -111,3 +111,11 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
   <hold_rate_max>86400000</hold_rate_max>
 </DynamicCapabilities>
 ```
+
+
+**VAR\_C4\_NESTING\_PARENTS\_CHILD\_DEVICES**
+Set this variable to a comma delimited list of ID values for the secondary device(s) required by the parent driver. This list represents the drivers that will be nested under the parent driver in Composer Pro. This is the associated driver(s) with the nested\_driver\_is\_child capability set to true.
+
+
+**VAR\_C4\_NESTED\_CHILDS\_PARENT\_DEVICE** 
+Set the variable to the ID of primary driver requiring its use. This is the associated driver with the nesting\_driver\_is\_parent capability set to true.

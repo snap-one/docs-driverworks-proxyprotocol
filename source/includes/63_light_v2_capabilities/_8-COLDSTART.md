@@ -1,9 +1,8 @@
 ## cold\_start
 
-Note that this capability will be deprecated from the proxy in the near future. 
+Ramping API indicating if the lighting hardware supports cold start. Defaults to false. In conjunction with O.S. release 3.4.2, this capability was modified to be a Dynamic Capability. This change has no impact on existing drivers using the cold\_start capability. Going forward a driver can now change this capability if needed.
 
-Ramping API indicating if the lighting hardware supports cold start. Defaults to false.
-
+###### Available from 3.4.2.
 
 ### Signature
 
@@ -17,7 +16,7 @@ Boolean
 
 ### Dynamic Capability
 
-No
+Yes
 
 
 ### Example
@@ -26,4 +25,10 @@ No
 <capabilities>
     <cold_start>true</cold_start>
 </capabilities>
+```
+
+```
+-- The following command can be sued to dynamically change the cold_start capability: 
+
+C4:SendToProxy(PROXY_ID, 'DYNAMIC_CAPABILITIES_CHANGED', { cold_start = gColdStartEnabled }, "NOTIFY", true)
 ```
