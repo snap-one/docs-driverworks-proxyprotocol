@@ -46,19 +46,19 @@ The [nesting\_driver\_is\_parent][13] capability indicates whether or not a driv
 The [nested\_driver\_is\_child][15] capability indicates whether or not this driver is a dependent driver required by primary driver for use.  When used correctly, it will setup the dependent driver(s) to be nested under the primary driver in Composer Pro. This capability must be used in conjunction with the new variable: [VAR\_C4\_NESTED\_CHILDS\_PARENT\_DEVICE][16]. 
 This variable includes the ID of primary (parent) driver requiring its use. This is the associated driver with the nesting\_driver\_is\_parent capability set to true.
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#receiver-proxy-commands-connect_output
-[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#receiver-proxy-commands-disconnect_output
-[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#receiver-proxy-commands-set_input
-[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#fan-capabilities-proxy_fan_speed_connections
-[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#keypad-button-link-bindings-keypad-button-link-bindings
-[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#keypad-capabilities
-[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#keypad-proxy-commands-keypad_button_color_clear
-[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#keypad-proxy-commands-keypad_all_button_color_clear
-[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-capabilities-cold_start
-[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#camera-protocol-notifications-dynamic_capability_changed
-[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-capabilities-disable_flash
-[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-capabilities-multi_click
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#receiver-proxy-commands-connect_output
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#receiver-proxy-commands-disconnect_output
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#receiver-proxy-commands-set_input
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#fan-capabilities-proxy_fan_speed_connections
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-button-link-bindings-keypad-button-link-bindings
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-capabilities-clear_led_current_color_support
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-proxy-commands-keypad_button_color_clear
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-proxy-commands-keypad_all_button_color_clear
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-cold_start
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-dynamic_capability_changed
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-disable_flash
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-multi_click
 [13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-capabilities-nesting_driver_is_parent
-[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-variables
-[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-capabilities-nested_driver_is_child
-[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-342-beta/#light-v2-variables
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-nesting_driver_is_parent
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables
