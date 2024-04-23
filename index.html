@@ -9339,14 +9339,19 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
+<td>Input Binding ID</td>
 <td>int</td>
-<td>INT</td>
-<td>Input Binding ID - should be in the BindingID range below.</td>
+<td>Binding ID in the BindingID range below.</td>
 </tr>
 <tr>
+<td>PATH  DEV LIST</td>
+<td>str</td>
+<td>Value of the devices directly upstream in the AV path.</td>
+</tr>
+<tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>INT</td>
-<td>Optional. Output Binding ID - should be in the BindingID range below.</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
 </tr>
 </tbody></table>
 
@@ -9879,9 +9884,14 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OUTPUT</td>
-<td>INT</td>
-<td>Output BindingID</td>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PATH DEV LIST</td>
+<td>str</td>
+<td>Value of the devices directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -11469,9 +11479,14 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OUTPUT ID</td>
-<td>INT</td>
 <td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PATH  DEV LIST</td>
+<td>str</td>
+<td>Value of the devices directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -11515,9 +11530,14 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OUTPUT</td>
-<td>INT</td>
-<td>Output BindingID</td>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -12389,14 +12409,19 @@ Capability that requires the minimum value (integer) for tone controls.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>INPUT</td>
-<td>INT</td>
-<td>Input Binding ID - should be in the BindingID range below.</td>
+<td>Input Binding ID</td>
+<td>int</td>
+<td>Binding ID in the BindingID range below.</td>
 </tr>
 <tr>
-<td>OUTPUT</td>
-<td>INT</td>
-<td>Optional. Output Binding ID - should be in the BindingID range below.</td>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
+</tr>
+<tr>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
 </tr>
 </tbody></table>
 
@@ -18811,9 +18836,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>Output BindingID</td>
-<td>INT</td>
 <td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PATH DEV LIST</td>
+<td>str</td>
+<td>Value of the devices directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -19869,14 +19899,19 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>InputBindingID</td>
-<td>INT</td>
-<td>Input Binding ID - should be in the BindingID range below.</td>
+<td>Input Binding ID</td>
+<td>int</td>
+<td>Binding ID in the BindingID range below.</td>
 </tr>
 <tr>
-<td>outputBindingID</td>
-<td>INT</td>
-<td>Optional. Output Binding ID - should be in the BindingID range below.</td>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
+</tr>
+<tr>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
 </tr>
 </tbody></table>
 
@@ -21195,15 +21230,18 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>LEVEL</td>
+<td>INT</td>
 <td>Level</td>
 </tr>
 <tr>
-<td>int</td>
+<td>OUTPUT</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -21297,9 +21335,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
-<td>INT</td>
 <td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PATH DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -21343,9 +21386,14 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
-<td>INT</td>
 <td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -21498,11 +21546,13 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
+<td>OutputBindingID</td>
+<td>INT</td>
 <td>Output Binding ID</td>
 </tr>
 </tbody></table>
@@ -22134,14 +22184,19 @@ ID 3002 and 3003 are FM</p>
 </tr>
 </thead><tbody>
 <tr>
-<td>InutputBindingID</td>
-<td>INT</td>
-<td>Input Binding ID - should be in the BindingID range below.</td>
+<td>Input Binding ID</td>
+<td>int</td>
+<td>Binding ID in the BindingID range below.</td>
 </tr>
 <tr>
-<td>OutputBindingID</td>
-<td>INT</td>
-<td>Output Binding ID - should be in the BindingID range below.</td>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
+</tr>
+<tr>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
 </tr>
 </tbody></table>
 
@@ -27343,9 +27398,14 @@ end
 </tr>
 </thead><tbody>
 <tr>
-<td>OutputBindingID</td>
-<td>INT</td>
 <td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
+</tr>
+<tr>
+<td>PATH DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
 </tr>
 </tbody></table>
 
@@ -28464,14 +28524,19 @@ end
 </tr>
 </thead><tbody>
 <tr>
-<td>InputBindingID</td>
-<td>INT.</td>
-<td>Input Binding ID - should be in the BindingID range.</td>
+<td>Input Binding ID</td>
+<td>int</td>
+<td>Binding ID in the BindingID range below.</td>
 </tr>
 <tr>
-<td>OutputBindingID</td>
-<td>INT</td>
-<td>Optional. Output Binding ID - should be in the BindingID range.</td>
+<td>PREV DEV LIST</td>
+<td>str</td>
+<td>Value of the device directly upstream in the AV path.</td>
+</tr>
+<tr>
+<td>Output Binding ID</td>
+<td>int</td>
+<td>Optional. Output Binding ID - should be in the BindingID range in the usage note below.</td>
 </tr>
 </tbody></table>
 
