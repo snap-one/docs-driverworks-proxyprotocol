@@ -4703,6 +4703,12 @@
                     <a href="#keypad-proxy-commands-keypad_all_button_color" class="toc-h2 toc-link" data-title="KEYPAD_ALL_BUTTON_COLOR">KEYPAD_ALL_BUTTON_COLOR</a>
                   </li>
                   <li>
+                    <a href="#keypad-proxy-commands-keypad_all_button_color_clear" class="toc-h2 toc-link" data-title="KEYPAD_ALL_BUTTON_COLOR_CLEAR">KEYPAD_ALL_BUTTON_COLOR_CLEAR</a>
+                  </li>
+                  <li>
+                    <a href="#keypad-proxy-commands-keypad_button_color_clear" class="toc-h2 toc-link" data-title="KEYPAD_BUTTON_COLOR_CLEAR">KEYPAD_BUTTON_COLOR_CLEAR</a>
+                  </li>
+                  <li>
                     <a href="#keypad-proxy-commands-keypad_button_action" class="toc-h2 toc-link" data-title="KEYPAD_BUTTON_ACTION">KEYPAD_BUTTON_ACTION</a>
                   </li>
                   <li>
@@ -37886,6 +37892,70 @@ This command can be issued by an intercom device that has already paused the cal
 </tbody></table>
 
 <h3 id='keypad-proxy-commands-keypad_all_button_color-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='keypad-proxy-commands-keypad_all_button_color_clear'>KEYPAD_ALL_BUTTON_COLOR_CLEAR</h2>
+
+<p>Used to clear the color for all buttons on a keypad.</p>
+
+<h3 id='keypad-proxy-commands-keypad_all_button_color_clear-signature'>Signature</h3>
+
+<p><code>KEYPAD_ALL_BUTTON_COLOR_CLEAR ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OFF_COLOR</code></td>
+<td>ID value of the buttons to be deleted</td>
+</tr>
+<tr>
+<td><code>ON_COLOR</code></td>
+<td>The new on/push color for the keypad</td>
+</tr>
+<tr>
+<td><code>CURRENT_COLOR</code></td>
+<td>The color the keypad should immediately go to</td>
+</tr>
+</tbody></table>
+
+<h3 id='keypad-proxy-commands-keypad_all_button_color_clear-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='keypad-proxy-commands-keypad_button_color_clear'>KEYPAD_BUTTON_COLOR_CLEAR</h2>
+
+<p>Used to clear the color for a button on a keypad.</p>
+
+<h3 id='keypad-proxy-commands-keypad_button_color_clear-signature'>Signature</h3>
+
+<p><code>KEYPAD_BUTTON_COLOR_CLEAR ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OFF_COLOR</code></td>
+<td>ID value of the button to be deleted</td>
+</tr>
+<tr>
+<td><code>ON_COLOR</code></td>
+<td>The new on/push color for the keypad</td>
+</tr>
+<tr>
+<td><code>CURRENT_COLOR</code></td>
+<td>The color the keypad should immediately go to</td>
+</tr>
+</tbody></table>
+
+<h3 id='keypad-proxy-commands-keypad_button_color_clear-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
