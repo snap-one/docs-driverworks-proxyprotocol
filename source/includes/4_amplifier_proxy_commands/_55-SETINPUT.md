@@ -7,10 +7,11 @@ Specify input selection of device.
 
 `SET_INPUT ()`
 
-| Parameter | Type | Description                                                           |
-| --------- | ---- | --------------------------------------------------------------------- |
-| int       | INT  | Input Binding ID - should be in the BindingID range below.            |
-| int       | INT  | Optional. Output Binding ID - should be in the BindingID range below. |
+| Parameter         | Type | Description                                                                             |
+| ----------------- | ---- | --------------------------------------------------------------------------------------- |
+| Input Binding ID  | int  | Binding ID in the BindingID range below.                                                |
+| PATH  DEV LIST    | str  | Value of the devices directly upstream in the AV path.                                  |
+| Output Binding ID | int  | Optional. Output Binding ID - should be in the BindingID range in the usage note below. |
 
 
 ### Returns

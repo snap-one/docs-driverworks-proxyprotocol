@@ -8,9 +8,10 @@ Numerical value of the output. Switch the output to passed ID.
 `CONNECT OUTPUT ()`
 
 
-| Parameter | Type | Description       |
-| --------- | ---- | ----------------- |
-| OUTPUT ID | INT  | Output Binding ID |
+| Parameter         | Type | Description                                                                             |
+| ----------------- | ---- | --------------------------------------------------------------------------------------- |
+| Output Binding ID | int  | Optional. Output Binding ID - should be in the BindingID range in the usage note below. |
+| PATH  DEV LIST    | str  | Value of the devices directly upstream in the AV path.                                  |
 
 
 ### Returns
