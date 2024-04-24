@@ -5,7 +5,7 @@ This command only applies to an established call session. If a call has not been
 
 ### Signature
 
-`MUTE_CALL ()`
+`MUTE_CALL `
 
 
 Call Flow:
@@ -17,9 +17,9 @@ Call Flow:
 5. When the call is to be muted or un-muted, the MUTE\_CALL command is sent from the intercom proxy to the device driver.
 
 
-| Parameter | Description |
-| --- | --- |
-| bool |  muteAudio - A Boolean flag indicating whether to mute or un-mute the indicated session. (0=false, 1=true) |
+| Parameter | Description                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------------------- |
+| bool      | muteAudio - A Boolean flag indicating whether to mute or un-mute the indicated session. (0=false, 1=true) |
 
 
 ### Returns
