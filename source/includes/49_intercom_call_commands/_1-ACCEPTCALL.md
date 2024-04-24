@@ -16,13 +16,13 @@ Call Flow:
 4. Upon call acceptance, this is followed by the device driver sending a CALL\_ACCEPTED notification to the Proxy.
 
 
-| Parameter | Description                                                                                                                                                                   |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| num       | `DEVICE_ID` - The proxy ID of the caller                                                                                                                                      |
-| num       | `REMOTE_DEVICE` - The proxy ID of the callee                                                                                                                                  |
-| num       | `SESSION_ID` -  The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call.                                 |
-| num       | AUDIO - The requested audio capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only (RECV\_ONLY),                               |
-| num       | VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only (RECV\_ONLY).  3 = Inactive (NO\_SEND RECV) |
+| Parameter | Description                                                                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| num       | `DEVICE_ID` - The proxy ID of the caller                                                                                                                                        |
+| num       | `REMOTE_DEVICE` - The proxy ID of the callee                                                                                                                                    |
+| num       | `SESSION_ID` -  The session ID of the call. Session ID is established when a call is initiated and serves as a unique identifier of the call.                                   |
+| num       | AUDIO - The requested audio capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only (RECV\_ONLY),                                 |
+| num       | VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only (RECV\_ONLY).  3 = Inactive (NO\_SEND\_ RECV) |
 
 
 ### Returns
