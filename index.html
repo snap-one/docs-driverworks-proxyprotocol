@@ -4432,7 +4432,7 @@
                     <a href="#intercom-call-commands-resume_call" class="toc-h2 toc-link" data-title="RESUME_CALL">RESUME_CALL</a>
                   </li>
                   <li>
-                    <a href="#intercom-call-commands-start-_call" class="toc-h2 toc-link" data-title="START _CALL">START _CALL</a>
+                    <a href="#intercom-call-commands-start_call" class="toc-h2 toc-link" data-title="START_CALL">START_CALL</a>
                   </li>
                   <li>
                     <a href="#intercom-call-commands-start_monitor_call" class="toc-h2 toc-link" data-title="START_MONITOR_CALL">START_MONITOR_CALL</a>
@@ -35702,11 +35702,11 @@ Defaults to false.</p>
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
+<td>AUDIO - The requested audio capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only (RECV_ONLY),</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only (RECV_ONLY).  3 = Inactive (NO_SEND RECV)</td>
 </tr>
 </tbody></table>
 
@@ -35767,7 +35767,7 @@ Defaults to false.</p>
 
 <h3 id='intercom-call-commands-mute_call-signature'>Signature</h3>
 
-<p><code>MUTE_CALL ()</code></p>
+<p><code>MUTE_CALL </code></p>
 
 <p>Call Flow:</p>
 
@@ -35930,11 +35930,11 @@ This command can be issued by an intercom device that has already paused the cal
 
 <p><code>None</code></p>
 
-<h2 id='intercom-call-commands-start-_call'>START _CALL</h2>
+<h2 id='intercom-call-commands-start_call'>START_CALL</h2>
 
 <p>The START_CALL command is initiated through Programming or Control/Control in ComposerPro. It is sent to the Intercom Proxy, which then sends a START_CALL to the device driver. When the driver receives the START_CALL command, it must handle the command in a manner that enables the device to begin a call. When implemented successfully, receipt of the START_CALL command is followed by the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#intercom-call-notifications-call_accepted">CALL_ACCEPTED</a> notification being sent from the device driver to the Proxy.</p>
 
-<h3 id='intercom-call-commands-start-_call-signature'>Signature</h3>
+<h3 id='intercom-call-commands-start_call-signature'>Signature</h3>
 
 <p><code>START_CALL ()</code></p>
 
@@ -35964,11 +35964,11 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 <tr>
 <td>num</td>
-<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY), 3 = Inactive (NO_SEND_RECV)</td>
+<td>AUDIO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only RECV\_ONLY), 3 = Inactive (NO\_SEND\_RECV)</td>
 </tr>
 <tr>
 <td>num</td>
-<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND_RECV), 1 = Transmit Only (SEND_ONLY), 2 = Receive Only RECV_ONLY). The Audio channel cannot be Inactive.</td>
+<td>VIDEO - The requested video capacity for the call. 0 = Full Duplex (SEND\_RECV), 1 = Transmit Only (SEND\_ONLY), 2 = Receive Only RECV\_ONLY). The Audio channel cannot be Inactive.</td>
 </tr>
 <tr>
 <td>num</td>
@@ -35976,7 +35976,7 @@ This command can be issued by an intercom device that has already paused the cal
 </tr>
 </tbody></table>
 
-<h3 id='intercom-call-commands-start-_call-returns'>Returns</h3>
+<h3 id='intercom-call-commands-start_call-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
