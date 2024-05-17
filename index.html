@@ -7594,12 +7594,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7618,12 +7620,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7642,12 +7646,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7666,12 +7672,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7690,12 +7698,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Output Binding ID</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7715,19 +7725,23 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>INDEX: Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>INDEX</td>
+<td>int</td>
+<td>Zero based custom preset index value used to save the custom preset.  The index range is from 0 to the number of custom presets defined in the <code>&lt;eq_preset_nav_count&gt;</code> capability, minus one due to the range being zero-based.</td>
+</tr>
+<tr>
+<td>NAME</td>
 <td>str</td>
-<td>NAME: Name for the new custom index.  Base64 encoded.</td>
-</tr>
-<tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Name for the new custom index.  Base64 encoded.</td>
 </tr>
 </tbody></table>
 
@@ -7746,16 +7760,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>LEVEL: Bass level. range is -12 to 12</td>
+<td>LEVEL</td>
+<td>INT</td>
+<td>Bass Level</td>
 </tr>
 </tbody></table>
 
@@ -7774,16 +7791,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>INDEX</td>
 <td>int</td>
-<td>INDEX: Index for the selected preset.</td>
+<td>Index for the selected preset.</td>
 </tr>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7802,12 +7822,14 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>VALUES</td>
 <td>str</td>
-<td>VALUES: Comma delimited string of updated numeric gain values, one value per band.</td>
+<td>Comma delimited string of updated numeric gain values, one value per band.</td>
 </tr>
 </tbody></table>
 
@@ -7827,15 +7849,18 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th></th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OUTPUT</td>
+<td>Output Binding ID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>int</td>
-<td>LEVEL: Treble level. Range is -12 to 12.</td>
+<td>LEVEL</td>
+<td>Treble level</td>
+<td>Range is -12 to 12.</td>
 </tr>
 </tbody></table>
 
@@ -7856,16 +7881,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>OutputBindingID</td>
 </tr>
 <tr>
+<td>AUDIOMODE</td>
 <td>int</td>
-<td>AUDIOMODE: 1 = TONE_CONTROL: This is sent sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
+<td>1 = TONE\_CONTROL: This is sent sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass.</td>
 </tr>
 </tbody></table>
 
@@ -7884,16 +7912,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Level</td>
+<td>INT</td>
+<td>Level value</td>
 </tr>
 <tr>
-<td>int</td>
-<td>LEVEL: New balance level. Range is 0 to 100.</td>
+<td>OutputBindingID</td>
+<td>INT</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7923,16 +7954,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>LEVEL</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Level</td>
 </tr>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>LEVEL: New bass level. Range is -12 to 12.</td>
+<td>Output Binding ID</td>
 </tr>
 </tbody></table>
 
@@ -7955,15 +7989,18 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
 <td>table</td>
+<td>int</td>
 <td>Table of indexes that represents display order of the names.  Note that any programming for selecting a preset will be INDEX based, not name based.  Hence the names can be changed but the programming will be tied to the index at time of creation.</td>
 </tr>
 </tbody></table>
@@ -7985,15 +8022,18 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
-<td>table</td>
+<td>TABLE</td>
+<td>Ttble</td>
 <td>Table of names.</td>
 </tr>
 </tbody></table>
@@ -8015,16 +8055,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>VALUES</td>
 <td>num</td>
-<td>VALUES: Comma delimited list of current equalizer frequencies.</td>
+<td>Comma delimited list of current equalizer frequencies.</td>
 </tr>
 </tbody></table>
 
@@ -8046,16 +8089,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>VALUES</td>
 <td>num</td>
-<td>VALUES: Comma delimited list of current equalizer values.</td>
+<td>Comma delimited list of current equalizer frequencies.</td>
 </tr>
 </tbody></table>
 
@@ -8077,16 +8123,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>EQPRESET</td>
 <td>int</td>
-<td>EQPRESET: Newly selected equalizer index. Range is 0 to maximum number defined in the  <code>&lt;eq_preset_nav_count&gt;</code> capability.</td>
+<td>Newly selected equalizer index. Range is 0 to maximum number defined in the  <code>&lt;eq_preset_nav_count&gt;</code> capability.</td>
 </tr>
 </tbody></table>
 
@@ -8106,16 +8155,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT:</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>ENABLED</td>
 <td>bool</td>
-<td>ENABLED: True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True.</td>
+<td>True to hide this output from Navigators. False to allow output eq controls to be shown.  Default is True.</td>
 </tr>
 </tbody></table>
 
@@ -8135,16 +8187,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>LOUDNESS</td>
 <td>bool</td>
-<td>ENABLED: LOUDNESS: True for loudness on, False for loudness off.</td>
+<td>Enabled True for loudness on, False for loudness off.</td>
 </tr>
 </tbody></table>
 
@@ -8163,16 +8218,19 @@ A new section called Best Practices has been added to the Proxy and Protocol Gui
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
-<td>OUTPUT: OutputBindingID</td>
+<td>Output Binding ID</td>
 </tr>
 <tr>
+<td>LEVEL</td>
 <td>int</td>
-<td>LEVEL: LOUDNESS: New treble level. Range is -12 to 12.</td>
+<td>New treble level. Range is -12 to 12.</td>
 </tr>
 </tbody></table>
 
@@ -21128,14 +21186,17 @@ ID 3002 and 3003 are FM</p>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>LEVEL</td>
 <td>int</td>
 <td>Level</td>
 </tr>
 <tr>
+<td>OUTPUT</td>
 <td>int</td>
 <td>Output Binding ID</td>
 </tr>
