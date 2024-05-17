@@ -8,9 +8,9 @@ Navigator EQ command called to change the output's mode to EQUALIZER. This is an
 `SET_AUDIOMODE_EQ`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
+| Parameter         | Type | Description       |
+| ----------------- | ---- | ----------------- |
+| Output Binding ID | int  | Output Binding ID |
 
 
 ### Returns

@@ -8,10 +8,10 @@ Navigator EQ notification that the balance has changed.
 `BALANCE_LEVEL_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | LEVEL: New balance level. Range is 0 to 100. |
+| Parameter       | Type | Description       |
+| --------------- | ---- | ----------------- |
+| Level           | INT  | Level value       |
+| OutputBindingID | INT  | Output Binding ID |
 
 
 ### Returns

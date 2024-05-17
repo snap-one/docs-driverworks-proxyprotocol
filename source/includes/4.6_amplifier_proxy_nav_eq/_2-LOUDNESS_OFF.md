@@ -8,9 +8,10 @@ Navigator EQ command called to set the loudness off for indicated output. The dr
 `LOUDNESS_OFF`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
+| Parameter         | Type | Description       |
+| ----------------- | ---- | ----------------- |
+| Output Binding ID | int  | Output Binding ID |
+
 
 
 ### Returns

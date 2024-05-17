@@ -8,10 +8,10 @@ Navigator EQ notification that the treble level has changed.
 `TREBLE_LEVEL_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | LEVEL: LOUDNESS: New treble level. Range is -12 to 12. |
+| Parameter | Type | Description                           |
+| --------- | ---- | ------------------------------------- |
+| OUTPUT    | int  | Output Binding ID                     |
+| LEVEL     | int  | New treble level. Range is -12 to 12. |
 
 
 ### Returns

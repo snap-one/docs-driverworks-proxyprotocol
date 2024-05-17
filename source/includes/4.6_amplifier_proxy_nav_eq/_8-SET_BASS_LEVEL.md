@@ -8,10 +8,13 @@ Navigator EQ command called to set the bass level for tone control. The driver s
 `SET_BASS_LEVEL`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | LEVEL: Bass level. range is -12 to 12 |
+| Parameter | Type | Description       |
+| --------- | ---- | ----------------- |
+| Output    | INT  | Output Binding ID |
+| LEVEL     | INT  | Bass Level        |
+
+
+
 
 ### Returns
 

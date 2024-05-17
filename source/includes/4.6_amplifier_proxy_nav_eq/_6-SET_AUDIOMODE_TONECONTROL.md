@@ -8,9 +8,9 @@ Navigator EQ command called to change the output's mode to TONE\_CONTROL. This i
 `SET_AUDIOMODE_TONECONTROL`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
+| Parameter         | Type | Description       |
+| ----------------- | ---- | ----------------- |
+| Output Binding ID | int  | Output Binding ID |
 
 
 ### Returns

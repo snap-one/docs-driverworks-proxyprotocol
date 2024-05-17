@@ -8,10 +8,10 @@ Navigator EQ command called to set the treble level for tone control. The driver
 `SET_TREBLE_LEVEL`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | LEVEL: Treble level. Range is -12 to 12. |
+| Parameter | Description       |                     |
+| --------- | ----------------- | ------------------- |
+| OUTPUT    | Output Binding ID | Output Binding ID   |
+| LEVEL     | Treble level      | Range is -12 to 12. |
 
 
 ### Returns

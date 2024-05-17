@@ -8,9 +8,9 @@ Navigator EQ command called to set the current equalizer’s gain values.
 `SET_EQ_GAIN_VALUES`
 
 
-| Parameter | Description |
-| --- | --- |
-| str | VALUES: Comma delimited string of updated numeric gain values, one value per band. |
+| Parameter | Type | Description                                                                |
+| --------- | ---- | -------------------------------------------------------------------------- |
+| VALUES    | str  | Comma delimited string of updated numeric gain values, one value per band. |
 
 
 ### Returns

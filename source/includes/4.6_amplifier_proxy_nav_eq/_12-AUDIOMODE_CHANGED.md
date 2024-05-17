@@ -8,10 +8,10 @@ Navigator EQ notification that the output's audio mode has changed to either Ton
 `AUDIOMODE_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| int | AUDIOMODE: 1 = TONE\_CONTROL: This is sent sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass. |
+| Parameter | Type | Description                                                                                                                                                 |
+| --------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OUTPUT    | int  | OutputBindingID                                                                                                                                             |
+| AUDIOMODE | int  | 1 = TONE\\\_CONTROL: This is sent sent when a Tone Control value is changed. 2 = EQUALIZER: This is sent when a EQ value is changed such as Treble or Bass. |
 
 
 ### Returns

@@ -8,9 +8,9 @@ Navigator EQ command called to change the output's mode to BYPASS. This is an op
 `SET_AUDIOMODE_BYPASS`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
+| Parameter         | Type | Description       |
+| ----------------- | ---- | ----------------- |
+| Output Binding ID | int  | Output Binding ID |
 
 
 ### Returns

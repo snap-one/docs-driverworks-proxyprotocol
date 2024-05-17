@@ -8,10 +8,10 @@ Navigator EQ notification that the loudness has changed.
 `LOUDNESS_CHANGED`
 
 
-| Parameter | Description |
-| --- | --- |
-| int | OUTPUT: OutputBindingID |
-| bool | ENABLED: LOUDNESS: True for loudness on, False for loudness off. |
+| Parameter | Type | Description                                           |
+| --------- | ---- | ----------------------------------------------------- |
+| OUTPUT    | int  | Output Binding ID                                     |
+| LOUDNESS  | bool | Enabled True for loudness on, False for loudness off. |
 
 
 ### Returns
