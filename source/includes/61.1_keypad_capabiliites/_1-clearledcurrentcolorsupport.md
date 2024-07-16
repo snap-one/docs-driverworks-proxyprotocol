@@ -35,5 +35,5 @@ In conjunction with this capabilities’ use, Drivers need to implement the foll
 </capabilities>
 ```
 
-[1]:	https://miniature-adventure-p8z6k7k.pages.github.io/#keypad-proxy-commands-keypad_button_color_clear
-[2]:	https://miniature-adventure-p8z6k7k.pages.github.io/#keypad-proxy-commands-keypad_all_button_color_clear
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-proxy-commands-keypad_button_color_clear
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#keypad-proxy-commands-keypad_all_button_color_clear
