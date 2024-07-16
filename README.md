@@ -1,4 +1,8 @@
-# Driverworks Proxy/Protocol Guide - Source Markdown
+# WARNING - CONTENT NOW DEPRECATED
+
+The content from this repository has been broken down into multiple smaller repositories, each focussed on one proxy.  For the complete list, please [see the main landing page for Driverworks](https://github.com/snap-one/docs-driverworks?tab=readme-ov-file#driverWorks_proxy_documentation)
+
+## Driverworks Proxy/Protocol Guide - Source Markdown
 
 ![Documentation deployed?][image-1]
 
